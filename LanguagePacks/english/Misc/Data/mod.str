@@ -1,0 +1,11 @@
+DESC:UpgradeMinorForcefieldGenerator
+	"Adds a minor Forcefield to Seekers and Gun Walkers \n \n Left-click to begin researching"
+END
+
+DESC:UpgradeReaper17MinorForcefieldGenerator
+	"Adds a minor Forcefield to Seekers and Shard Walkers \n \n Left-click to begin researching"
+END
+
+DESC:Traveler59RazorDrones
+	"Abilities:\n      » Explodes when crushed \n Upgrades: \n      » Advanced Articulators (Stasis Chamber)"
+End
