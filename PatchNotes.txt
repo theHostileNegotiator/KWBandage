@@ -227,6 +227,9 @@ Nod:
  - Militant Rocket Squad
 	   1. Black Hand Militant Rocket Squad can be upgraded with Tiberium Infusion with NOD or MOK Secret Shrine.
 		   - Removed upgrade
+ - Redeemer
+	   1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze
+		   - Added NOD Confesor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
  - Mantis
 	   1. Turret is not effective at tracking Air Units, often misfiring
 		   - Improved Turret Settings to match Slingshot
