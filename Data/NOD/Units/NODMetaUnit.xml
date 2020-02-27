@@ -1679,8 +1679,8 @@
 				AllowNeutralInside="false"
 				AllowOwnPlayerInsideOverride="true"
 				ShowPips="true"
-				EnterSound="VehicleEnter"
-				ExitSound="VehicleExit"
+				EnterSound="AudioEvent:VehicleEnter"
+				ExitSound="AudioEvent:VehicleExit"
 				KillPassengersOnDeath="true">
 				<CanAlwaysEnterObjectFilter
 					Rule="ANY"

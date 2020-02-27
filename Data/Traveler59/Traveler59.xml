@@ -9,6 +9,7 @@
 		<Include type="all" source="Units/Traveler59CultistSquad.xml" />
 		<Include type="all" source="Units/Traveler59CustomizableVehicle.xml" />	
 		<Include type="all" source="Units/Traveler59DevastatorWarship.xml" />
+		<Include type="all" source="Units/Traveler59EradicatorHexapod.xml" />	
 		<Include type="all" source="Units/Traveler59MillipedeBody.xml" />	
 		<Include type="all" source="Units/Traveler59MillipedeHead.xml" />	
 		<Include type="all" source="Units/Traveler59RazorDroneSquad.xml" />
