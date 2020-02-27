@@ -30,7 +30,7 @@
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:ALIENStalker</DisplayName>
 		<GameDependency>
-			<RequiredObject>Reaper17StatisChamber</RequiredObject>
+			<RequiredObject>Reaper17StasisChamber</RequiredObject>
 			<RequiredObject>Reaper17ControlCenter</RequiredObject>
 		</GameDependency>
 		<DisplayUpgrade>Upgrade_AlienBlueShardWeapon</DisplayUpgrade>
