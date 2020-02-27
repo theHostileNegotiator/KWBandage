@@ -245,7 +245,7 @@
 			</OCLSpecialPower>
 			<AISpecialPowerUpdate
 				id="ModuleTag_AlienSwarmAI"
-				CommandButtonName="Command_SpecialPowerSwarm"
+				CommandButtonName="Command_Traveler59SpecialPowerSwarm"
 				ReinforceDistance="0.0"
 				SpecialPowerRadius="250.0"
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" />

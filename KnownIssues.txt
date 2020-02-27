@@ -37,3 +37,6 @@ Redeemer
 Sonic Repulsion Field and Laser Fencing
  - If structure was already targeted by a commando or engineer when the special power was added, commandos will still destroy the structure and engineers will still capture
  - Your own engineer cannot enter your own structure to repair when Field or Fence is in effect.
+ 
+Mechapede
+ - Mechapede Head does not spawn from the Warp Sphere, instead spawning at the rally point due to the BannerCarrier squad position

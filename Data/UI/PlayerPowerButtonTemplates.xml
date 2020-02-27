@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<PlayerPowerButtonTemplate
+		id="ButtonZOCOMHunterKillerTeam"
+		SpecialPower="SpecialPowerCallSupportZOCOMHunterKillerTeam">
+		<Data>
+			<TargetedPower
+				RadiusCursor="TargetingDecalHunterKillerTeam"
+				StateData="ButtonStatePlayerPowerZOCOMHunterKillerTeam"/>
+		</Data>
+	</PlayerPowerButtonTemplate>
+
+	<PlayerPowerButtonTemplate
 		id="ButtonMarkedOfKaneShadowStrikeTeam"
 		SpecialPower="SpecialPowerMarkedOfKaneRedShadowStrikeTeam">
 		<Data>

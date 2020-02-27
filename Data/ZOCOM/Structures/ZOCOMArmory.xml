@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Added ZOCOM Hunter Killer AI-->
+<!--Added ZOCOM Sharpshooter Team AI-->
 	<GameObject
 		id="ZOCOMArmory"
 		SelectPortrait="Portrait_GDITechCenter"

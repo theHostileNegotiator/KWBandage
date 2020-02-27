@@ -243,7 +243,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPower_ManipulateObject"
 		TargetType="OBJECT"
-		InitiateSound="ALI_MasterMind_ManipulateStart"
+		InitiateSound="AudioEvent:ALI_MasterMind_ManipulateStart"
 		ReloadTime="30s"
 		DisallowedTargetObjectStatus="UNATTACKABLE"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateManipulateObject"
@@ -411,7 +411,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPower_Reaper17Swarm"
 		TargetType="LOCATION"
-		InitiateAtLocationSound="ALI_BuzzerSwarm"
+		InitiateAtLocationSound="AudioEvent:ALI_BuzzerSwarm"
 		ReloadTime="150s"
 		Flags="IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS NOT_CLIFF_CELL SHARED_SYNC"
 		Money="-1500"
@@ -424,7 +424,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPower_Traveler59Swarm"
 		TargetType="LOCATION"
-		InitiateAtLocationSound="ALI_BuzzerSwarm"
+		InitiateAtLocationSound="AudioEvent:ALI_BuzzerSwarm"
 		ReloadTime="150s"
 		Flags="IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS NOT_CLIFF_CELL SHARED_SYNC"
 		Money="-1500"
@@ -444,7 +444,7 @@
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		Money="-2000"
-		InitiateAtLocationSound="NOD_Shadow_VoiceStrikeTeamCreate">
+		InitiateAtLocationSound="AudioEvent:NOD_Shadow_VoiceStrikeTeamCreate">
 	</SpecialPowerTemplate>
 
 <!--Can no longer teleport sub faction Drone Platforms-->

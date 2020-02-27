@@ -239,6 +239,18 @@
 				id="ModuleTag_PlayerPowerManager_Swarm"
 				SpecialPowerTemplate="SpecialPower_Swarm"
 			/>
+			
+      <!-- Reaper17 Swarm -->
+      <PlayerPowerManager
+				id="ModuleTag_PlayerPowerManager_Reaper17Swarm"
+				SpecialPowerTemplate="SpecialPower_Reaper17Swarm"
+			/>
+			
+      <!-- Traveler59 Swarm -->
+      <PlayerPowerManager
+				id="ModuleTag_PlayerPowerManager_Traveler59Swarm"
+				SpecialPowerTemplate="SpecialPower_Traveler59Swarm"
+			/>
 
       <!-- Phase Shield -->
       <PlayerPowerManager
@@ -342,6 +354,12 @@
       <PlayerPowerManager
 				id="ModuleTag_PlayerPowerManager_CallSupportZOCOMBloodhound"
 				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMBloodhound" 
+			/>
+			
+      <!-- ZOCOM Call Support HunterKiller  -->
+      <PlayerPowerManager
+				id="ModuleTag_PlayerPowerManager_CallSupportZOCOMHunterKiller"
+				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMHunterKillerTeam" 
 			/>
 
        <!-- STEEL TALON Call Support Bloodhound -->

@@ -279,6 +279,9 @@ Scrin
  - Seeker
        1. Will prioritise infantry over aircraft or vehicles
 		   - Changed Weapon Category from GUN to MISSILE
+ - Corrupter
+       1. Healing ability may not work on certain sub faction units (such as the Explorer)
+		   - Added missing units into the ability
  - Devastator Warship
        1. Has target priority representative of Cannon based weapon despite GRENADE damage type
 		   - Changed Weapon Category from CANNON to BLAST

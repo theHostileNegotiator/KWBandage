@@ -3,6 +3,7 @@
 	<Includes>
 		<Include type="all" source="Neutral/Neutral.xml" />
 
+		<Include type="all" source="Alien/AlienMapSpecific.xml" />
 		<Include type="all" source="GDI/GDIMapSpecific.xml" />
 		<Include type="all" source="NOD/NODMapSpecific.xml" />
 		
