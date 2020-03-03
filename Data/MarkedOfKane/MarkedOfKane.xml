@@ -2,6 +2,8 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
 		<Include type="all" source="Structures/MarkedOfKaneHangar.xml" />
+		<Include type="all" source="Structures/MarkedOfKaneLaserCannon.xml" />
+		<Include type="all" source="Structures/MarkedOfKaneRocketBunker.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneSecretShrine.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneShredderTurretHub.xml" />
 	

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!--Removed Charged Particle Beams Upgrade-->
-<!--Fixed Build Animation for Quad Turret Build-->
+<!--Fixing Quad Turrets-->
 	<Includes>
 		<Include type="all" source="ART:NBDHub_QSBLD_SKN.w3x" />
-		<Include type="all" source="ART:NBDHUB_QS_SKN.w3x" />
 		<Include type="all" source="ART:NBDHub_QSBld_AAN.w3x" />
+		<Include type="all" source="ART:NBDHUB_QS_SKN.w3x" />
+		<Include type="all" source="ART:NBDHUB_QS_D2_SKN.w3x" />
+		<Include type="all" source="ART:NBDHUB_QS_D2_AAN.w3x" />
 	</Includes>
 	<GameObject
 		id="NODShredderTurretHub"
@@ -117,6 +119,9 @@
 					<Texture
 						Original="NBDHub"
 						New="NBDHub_D" />
+					<Texture
+						Original="NBShredder"
+						New="NBShredderD" />
 					<ParticleSysBone
 						BoneName="RootTransform"
 						FXParticleSystemTemplate="NODBunkerSmoke"
@@ -131,8 +136,8 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Script>
-						CurDrawableHideSubObject("NEWSKIN")
-						CurDrawableHideSubObject("NBDHUB_Q")
+						CurDrawableHideSubObject("NEWSKIN_HUB")
+						CurDrawableHideSubObject("NEWSKIN_SHREDDER")
 						CurDrawableHideSubObject("MUZZLEFLASH01")
 						CurDrawableHideSubObject("MUZZLEFLASH02")						
 					</Script>
@@ -188,7 +193,7 @@
 					StateName="STATE_ReallyDamaged"
 					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="NBDHub_QSBld_SKN"
+						AnimationName="NBDHub_QS_D2_AAN"
 						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
@@ -201,7 +206,7 @@
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_IntoReallyDamaged">
 					<Animation
-						AnimationName="NBDHub_QSBld_SKN"
+						AnimationName="NBDHub_QS_D2_AAN"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>
@@ -282,6 +287,9 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantUpgradeCreate" 
+				UpgradeToGrant="Upgrade_NoQuadHub" />
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="3.0s"
@@ -344,10 +352,15 @@
 			</ModelConditionUpgrade-->
 			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_ShowQuadTurretShredderHub"
-				ShowSubObjects="NEWSKIN NBDHUB_Q">
+				ShowSubObjects="NEWSKIN_HUB NEWSKIN_SHREDDER"
+				HideSubObjects="NBDHUB">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</SubObjectsUpgrade>	
-			
+			<RemoveUpgradeUpgrade
+				id="ModuleTag_RemoveForQuad">
+				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
+				<UpgradeToRemove>Upgrade_NoQuadHub</UpgradeToRemove>
+			</RemoveUpgradeUpgrade>
 			<GatherSlavesUpdate
 				id="ModuleTag_GatherSlaves"
 				SlaveTemplate="NODShredderTurret"

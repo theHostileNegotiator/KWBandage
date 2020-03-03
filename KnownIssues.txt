@@ -2,11 +2,13 @@ Here are issues that are known that have not been fixed in this package
 
 R17 Assimilator
  - Reaper 17 uses Scrin Assimilator instead of it's own. However in order to implement their own Assimilator, will need to find and edit every structure in the game.
- 
+
+NOD Turrets
+ - Shredder turrets and Laser Cannons have no visual update when upgraded. Need to reuse models and create unique visuals for the Hubs, like Tibcore upgrade
+
 Quad Turrets
  - Quad Turrets cause Desyncs in online multiplayer. A theory on the cause is the object is given a weapon after having none.
- - Bugged Animations
- - Want to refine models so only one is used between upgrades, especially SAM turrets (Still use different models depending on damage state)
+ - Models have been worked around but still want to refine it, and create proper damage animations. Still need to create RUBBLE animations
 
 Aircraft ammo Counter in unit portrait
  - Feature added in TW 1.05. Since KW was built before this version, this feature was not added in. Don't think it is possible to add back in
@@ -15,7 +17,7 @@ Space Command Uplink Effects
  - It is possible the devs intended to add a distortion effect but instead broke everything, removing the smoke. While the smoke has been fixed, the distortion has been removed.
 
 EMP
- - EMP effects have the tendency to lag the game, most notable with EMP grenade probably due to overlap
+ - EMP effects have the tendency to lag online games, most notable with EMP grenade probably due to overlap
  
 Cultist
  - AI are not able to use mind control
@@ -40,3 +42,9 @@ Sonic Repulsion Field and Laser Fencing
  
 Mechapede
  - Mechapede Head does not spawn from the Warp Sphere, instead spawning at the rally point due to the BannerCarrier squad position
+
+GDI Foxhole
+ - An exploit exist where the infantry creating the structure can be crushed by a unit in formation move when garrisoned
+ 
+Rig
+ - Cannons do not have railgun models when railguns are upgraded

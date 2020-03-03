@@ -1,100 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Added Charged Particle Beams Upgrade Sound-->
-<!--Fixing Quad Turrets-->
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!--Refer to Nod SAM Hub-->
+	<Tags></Tags>
 	<Includes>
 	</Includes>
 	<GameObject
-		id="BlackHandShredderTurretHub"
-		SelectPortrait="Portrait_NODHub"
-		ButtonImage="Portrait_NODShredderTurret"
-		Side="BlackHand"
+		id="MarkedOfKaneRocketBunker"
+		inheritFrom="NODRocketBunker"
+		SelectPortrait="Portrait_NODRocketBunker"
+		ButtonImage="Portrait_NODSAMTurret"
+		Side="MarkedOfKane"
 		EditorSorting="STRUCTURE"
-		BuildCost="600"
-		BuildTime="6"
+		BuildCost="800"
+		BuildTime="8"
 		EnergyProduction="-6"
-		CommandSet="NODShredderTurretHubCommandSet"
-		KindOf="STRUCTURE IMMOBILE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_SEE_THROUGH_STRUCTURE LINE_OF_SIGHT_IGNORES_BUILDINGS SELECTABLE CAN_CAST_REFLECTIONS FS_BASE_DEFENSE POWERED COVER"
+		CommandSet="NODRocketBunkerCommandSet"
+		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS FS_BASE_DEFENSE POWERED AUTO_ACQUIRABLE_BY_AI COVER CAN_SEE_THROUGH_STRUCTURE ATTACK_NEEDS_LINE_OF_SIGHT LINE_OF_SIGHT_IGNORES_BUILDINGS AA_STRUCT"
 		RadarPriority="STRUCTURE"
 		PlacementViewAngle="225d"
 		ProductionQueueType="OTHER_STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
-		EditorName="BlackHandShredderTurretHub"
-		WeaponCategory="GUN"
+		EditorName="MarkedOfKaneRocketBunker"
+		WeaponCategory="MISSILE"
+		Description="Desc:MarkedOfKaneRocketBunker"
+		TypeDescription="Type:MarkedOfKaneRocketBunker"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
-		Description="Desc:BlackHandShredderTurret"
-		TypeDescription="Type:BlackHandShredderTurret">
-		<DisplayName>Name:NODShredderTurret</DisplayName>
-		<DisplayUpgrade>Upgrade_NODQuadTurrets</DisplayUpgrade>
+		UnitCategory="STRUCTURE">
+		<DisplayName
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODRocketBunker</DisplayName>
 		<DisplayUpgrade
-			id="Tag_DisplayUpgrade1">Upgrade_NodTechCenterChargedParticleBeam</DisplayUpgrade>
+			id="Tag_DisplayUpgrade1">Upgrade_NODQuadTurrets</DisplayUpgrade>
+		<DisplayUpgrade>Upgrade_NODTechCenterTibCoreMissiles</DisplayUpgrade>
 		<GameDependency>
-			<RequiredObject>BlackHandPowerPlant</RequiredObject>
+			<RequiredObject>MarkedOfKaneOperationsCenter</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="NODBaseDefenceArmor"
 			DamageFX="FactionStructureDamageFX" />
 		<SkirmishAIInformation
-			BaseBuildingLocation="SPREAD" />
+			BaseBuildingLocation="CENTER" />
 		<Draws>
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
 				OkToChangeModelColor="true"
-				InitialRecoilSpeed="16.0"
-				MaxRecoilDistance="10.0"
-				RecoilDamping="2.0"
-				RecoilSettleSpeed="3.0"
-				ExtraPublicBone="MuzzleFlash01 MuzzleFlash02 FX_WEAPON01 FX_WEAPON02">				
+				ExtraPublicBone="FX_WEAPEN01 FX_WEAPEN02 FX_WEAPEN03">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBDHub_QS_SKN" />
+						Name="NBDHub_QMBld_SKN" />					
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FX_WEAPON" />
-					<WeaponRecoilBone
-						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="MuzzleFlash" />
-					<WeaponMuzzleFlash
-						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="MuzzleFlash" />
+						WeaponSlotID="1"
+						BoneName="FX_WEAPEN" />
 					<WeaponLaunchBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FX_WEAPON" />
+						BoneName="FX_WEAPEN" />
 					<Turret
-						TurretNameKey="TURRET"
-						TurretPitch="TURRET_PITCH"
+						TurretNameKey="TORRET"
+						TurretPitch="TORRET_PITCH"
 						TurretID="1" />
-				</ModelConditionState>	
+				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Model
-						Name="NBDHub_QS_SKN" />
-				</ModelConditionState>				
+						Name="NBDHub_QM_SKN" />
+				</ModelConditionState>	
+			
 				
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Model
-						Name="NBDHub_QSBld_SKN" />
-				</ModelConditionState>				
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="RUBBLE">
-					<Model
-						Name="NBDHub_D3SN" />
-				</ModelConditionState>
-				
-				<!-- quads states -->
+				<!-- D2 quad and tibcore -->
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="NBDHub_QS_D2_SKN" />
+						Name="NBDHub_QM_D2_SKN" />
 					<ParticleSysBone
 						BoneName="RootTransform"
 						FXParticleSystemTemplate="NODBunkerDist"
@@ -112,19 +93,29 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED">
 					<Model
-						Name="NBDHub_QS_SKN" />
+						Name="NBDHub_QM_SKN" />
 					<Texture
 						Original="NBDHub"
 						New="NBDHub_D" />
 					<Texture
-						Original="NBShredder"
-						New="NBShredderD" />
+						Original="NBDefense"
+						New="NBDefenseD" />
+					<Texture
+						Original="NUTibCoreMissles"
+						New="NUTibCoreMissles_D" />
 					<ParticleSysBone
 						BoneName="RootTransform"
 						FXParticleSystemTemplate="NODBunkerSmoke"
 						FollowBone="true" />
 				</ModelConditionState>
-				
+
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="RUBBLE">
+					<Model
+						Name="NBDHub_D3SN" />
+				</ModelConditionState>	
+
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT">
 					<!-- no anim -->
@@ -134,41 +125,20 @@
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Script>
 						CurDrawableHideSubObject("NEWSKIN_HUB")
-						CurDrawableHideSubObject("NEWSKIN_SHREDDER")
-						CurDrawableHideSubObject("MUZZLEFLASH01")
-						CurDrawableHideSubObject("MUZZLEFLASH02")						
+						CurDrawableHideSubObject("NEWSKIN_SAM")
+						CurDrawableHideSubObject("TIBCOREMISSILE")
+						CurDrawableHideSubObject("HOSE")
+						CurDrawableHideSubObject("TCMHUB_UPGRADE")
 					</Script>
 				</AnimationState>
-				
-				
-				<!--AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING USER_7">
-					<Animation
-						AnimationName="NBDHub_QSBld_SKN"
-						AnimationMode="ONCE" />
-					<Script>
-						CurDrawableHideSubObject("NEWSKIN")
-						CurDrawableHideSubObject("NBDHUB_Q")
-						CurDrawableHideSubObject("MUZZLEFLASH01")
-						CurDrawableHideSubObject("MUZZLEFLASH02")						
-					</Script>
-				</AnimationState-->	
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="STRUCTURE_UNPACKING">
 					<Animation
-						AnimationName="NBDHub_QSBld_AAN"
+						AnimationName="NBDHub_QMBld_AAN"
 						AnimationMode="ONCE" />
 				</AnimationState>
-				<!--AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Animation
-						AnimationName="NBDHub_AAN"
-						AnimationMode="ONCE" />
-				</AnimationState-->
-				
+
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
@@ -190,7 +160,7 @@
 					StateName="STATE_ReallyDamaged"
 					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="NBDHub_QS_D2_AAN"
+						AnimationName="NBDHub_QM_D2_AAN"
 						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
@@ -203,7 +173,7 @@
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_IntoReallyDamaged">
 					<Animation
-						AnimationName="NBDHub_QS_D2_AAN"
+						AnimationName="NBDHub_QM_D2_AAN"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>
@@ -237,8 +207,8 @@
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Script>
 						CurDrawableHideSubObject("Plane01")
-					</Script>
-				</AnimationState>
+					</Script>	
+				</AnimationState>		
 			</SpotlightDraw>
 		</Draws>
 		<Behaviors>
@@ -247,14 +217,12 @@
 				id="ModuleTag_CatalystDeathWeapon"
 				InitiallyActive="true"
 				DeathWeapon="CatalystBuildingDeathWeapon"
-				ContinueToBezierDestination="false" >
+				ContinueToBezierDestination="false">
 				<DieMuxData DeathTypes="CATALYST" />
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="ModuleTag_TemporarilyDefect"
 				DefectionFrameCount="100" />
-			<SquishCollide
-				id ="DefaultSquishCollide"/>
 			<WeaponSetUpdate
 				id="ModuleTag_WeaponSetUpdate">
 				<WeaponSlotTurret
@@ -264,17 +232,17 @@
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">					
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="NODShredderTurretHubWeapon"
-						ObjectStatus="WEAPON_UPGRADED_01" />
+						Template="NODRocketBunkerHubWeapon" 
+						ObjectStatus="WEAPON_UPGRADED_01"/>
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="NODShredderTurretSpawnChargedParticleBeamWeapon"
+						Template="NODRocketBunkerSpawnTibCoreWeapon"
 						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
-						TurretTurnRate="200"
+						TurretTurnRate="360"
 						TurretPitchRate="100"
 						AllowsPitch="true"
-						MinimumPitch="-30d"
+						MinimumPitch="-60d"
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="5.0s"
@@ -286,7 +254,8 @@
 			</WeaponSetUpdate>
 			<GrantUpgradeCreate
 				id="ModuleTag_GrantUpgradeCreate" 
-				UpgradeToGrant="Upgrade_NoQuadHub" />
+				UpgradeToGrant="Upgrade_NoQuadHub"
+			/>
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="3.0s"
@@ -317,10 +286,15 @@
 				id="ModuleTag_StealthDetect"
 				DetectionRange="200" />
 			<StructureUnpackUpdate
-				UnpackTime="1.5s" />
+				UnpackTime="3.3s" />
+			<GatherSlavesUpdate
+				id="ModuleTag_GatherSlaves"
+				SlaveTemplate="MarkedOfKaneRocketBunkerSpawn"
+				Radius="500.0"
+				Amount="3" />
 			<CompositeStructureInfoModule
 				id="ModuleTag_CompositeStructureInfoModule"
-				ThingTemplate="BlackHandShredderTurret"
+				ThingTemplate="MarkedOfKaneRocketBunkerSpawn"
 				Count="3"
 				BuildableDistance="150">
 				<ConnectionShadowInfo
@@ -334,40 +308,39 @@
 					OpacityEnd="0"
 					OverrideLODVisibility="true"
 					Texture="wire" />
-			</CompositeStructureInfoModule>		
-			
+			</CompositeStructureInfoModule>
 			<StatusBitsUpgrade
-				id="ModuleTag_UpgradeWeapon_01"
+				id="ModuleTag_UpgradeWeapon"
 				StatusToSet="WEAPON_UPGRADED_01">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</StatusBitsUpgrade>
 			<StatusBitsUpgrade
-				id="ModuleTag_UpgradeWeapon_02"
+				id="ModuleTag_UpgradeWeapon2"
 				StatusToSet="WEAPON_UPGRADED_02">
-				<TriggeredBy>Upgrade_NodTechCenterChargedParticleBeam</TriggeredBy>
-			</StatusBitsUpgrade>		
-			<!--ModelConditionUpgrade
-				id="ModuleTag_ShowQuadTurretShredderHub"
-				AddConditionFlags="USER_5"
-				RemoveConditionFlags="USER_7">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</ModelConditionUpgrade-->
+				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
+			</StatusBitsUpgrade>
 			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_ShowQuadTurretShredderHub"
-				ShowSubObjects="NEWSKIN_HUB NEWSKIN_SHREDDER"
+				id="ModuleTag_Upgrade_ShowQuadTurret"
+				ShowSubObjects="NEWSKIN_HUB NEWSKIN_SAM"
 				HideSubObjects="NBDHUB">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</SubObjectsUpgrade>	
+			</SubObjectsUpgrade>
+			<SubObjectsUpgrade
+				id="ModuleTag_Upgrade_ShowTibCore"
+				ShowSubObjects="TCMHUB_UPGRADE">
+				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
+			</SubObjectsUpgrade>
 			<RemoveUpgradeUpgrade
 				id="ModuleTag_RemoveForQuad">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 				<UpgradeToRemove>Upgrade_NoQuadHub</UpgradeToRemove>
 			</RemoveUpgradeUpgrade>
-			<GatherSlavesUpdate
-				id="ModuleTag_GatherSlaves"
-				SlaveTemplate="BlackHandShredderTurret"
-				Radius="500.0"
-				Amount="3" />
+			<SubObjectsUpgrade
+				id="ModuleTag_Upgrade_ShowTibCoreQuad"
+				ShowSubObjects="HOSE TIBCOREMISSILE">
+				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
+				<ConflictsWith>Upgrade_NoQuadHub</ConflictsWith>
+			</SubObjectsUpgrade>
 			<RepairUpdate
 				id="ModuleTag_RepairUpdate">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
@@ -375,7 +348,7 @@
 			</RepairUpdate>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_GenericNODBuildingSuicide" >
+				CreationList="OCL_GenericMarkedOfKaneBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 			<EngineerContain
@@ -399,19 +372,19 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
-			<AudioLoopUpgrade id="NOD_QuadTurrets_ShredderHubUpgrade" SoundToPlay="AudioEvent:NOD_QuadTurrets_ShredderHubUpgrade">
+			<AudioLoopUpgrade id="NOD_TiberiumCoreMissile_Upgrade" SoundToPlay="AudioEvent:NOD_TiberiumCoreMissile_Upgrade">
+				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
+				<ConflictsWith>Upgrade_NoQuadHub</ConflictsWith>
+			</AudioLoopUpgrade> 
+			<AudioLoopUpgrade id="NOD_QuadTurrets_RocketHubUpgrade" SoundToPlay="AudioEvent:NOD_QuadTurrets_RocketHubUpgrade">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</AudioLoopUpgrade> 
-			<AudioLoopUpgrade id="ChargedParticleBeamUpgrade" SoundToPlay="AudioEvent:NOD_Awakened_ChargedParticleBeamGunAvailable" RequiresAllTriggers="true">
-				<TriggeredBy>Upgrade_NodTechCenterChargedParticleBeam</TriggeredBy>
-				<ConflictsWith>Upgrade_NoQuadHub</ConflictsWith>
-			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate
 				id="AIUpdate"
 				AutoAcquireEnemiesWhenIdle="YES"
-				AILuaEventsList="NODShredderHubFunction">
+				AILuaEventsList="NODRocketBunkerHubFunction">
 				<UnitAITargetChooserData
 					CanPickDynamicTargets="false"
 					CheckVisionRange="false" />
@@ -420,30 +393,33 @@
 		<Body>
 			<ActiveBody
 				id="ModuleTag_Body"
-				MaxHealth="3600.0" />
+				MaxHealth="7000.0" />
 		</Body>
 		<Geometry
 			IsSmall="false">
 			<Shape
 				Type="CYLINDER"
 				MajorRadius="25.0"
-				Height="30.0" />
+				Height="30.0"></Shape>
 		</Geometry>
 		<AudioArrayVoice>
-			<AudioEntry
-				Sound="AudioEvent:NOD_ShredderTurretHubSelect"
-				AudioType="voiceSelect" />
 			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
 			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
+			<AudioEntry
+				Sound="AudioEvent:NOD_RocketBunkerHubSelect"
+				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
+			<AudioEntry
+				Sound="AudioEvent:NOD_GenericTurret_MoveStart"
+				AudioType="soundTurretMoveLoop" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_GenericTurret_Deploy"
 				AudioType="soundPrepositioned" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
-		</AudioArraySound> 
+		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 
 			EvaEventProductionComplete="BuildingConstructionComplete" 
@@ -466,7 +442,5 @@
 		<ProjectedBuildabilityInfo
 			Radius="0.0"
 			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
-		<CrusherInfo
-			CrushableLevel="2" />
 	</GameObject>
 </AssetDeclaration>

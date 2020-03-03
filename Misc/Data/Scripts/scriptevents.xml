@@ -417,4 +417,12 @@
 		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODShredderHubCreated" DebugSingleStep="false"/>
 	</EventList>
 	
+	<EventList Name="NODLaserCannonHubFunction" Inherit="BaseScriptFunctions">
+		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODLaserCannonHubCreated" DebugSingleStep="false"/>
+	</EventList>
+	
+	<EventList Name="NODRocketBunkerHubFunction" Inherit="BaseScriptFunctions">
+		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODRocketBunkerHubCreated" DebugSingleStep="false"/>
+	</EventList>
+	
 </SageLuaScriptSection>

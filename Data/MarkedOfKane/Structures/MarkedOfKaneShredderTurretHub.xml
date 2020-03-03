@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!--Added Super Charged Particle Beams Upgrade Sound-->
-<!--Fixed Build Animation for Quad Turret Build-->
+<!--Fixing Quad Turrets-->
 	<Includes>
 	</Includes>
 	<GameObject
@@ -115,6 +115,9 @@
 					<Texture
 						Original="NBDHub"
 						New="NBDHub_D" />
+					<Texture
+						Original="NBShredder"
+						New="NBShredderD" />
 					<ParticleSysBone
 						BoneName="RootTransform"
 						FXParticleSystemTemplate="NODBunkerSmoke"
@@ -129,8 +132,8 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Script>
-						CurDrawableHideSubObject("NEWSKIN")
-						CurDrawableHideSubObject("NBDHUB_Q")
+						CurDrawableHideSubObject("NEWSKIN_HUB")
+						CurDrawableHideSubObject("NEWSKIN_SHREDDER")
 						CurDrawableHideSubObject("MUZZLEFLASH01")
 						CurDrawableHideSubObject("MUZZLEFLASH02")						
 					</Script>
@@ -186,7 +189,7 @@
 					StateName="STATE_ReallyDamaged"
 					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="NBDHub_QSBld_SKN"
+						AnimationName="NBDHub_QS_D2_AAN"
 						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
@@ -199,7 +202,7 @@
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_IntoReallyDamaged">
 					<Animation
-						AnimationName="NBDHub_QSBld_SKN"
+						AnimationName="NBDHub_QS_D2_AAN"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>
@@ -280,6 +283,9 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantUpgradeCreate" 
+				UpgradeToGrant="Upgrade_NoQuadHub" />
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="3.0s"
@@ -328,15 +334,16 @@
 					OverrideLODVisibility="true"
 					Texture="wire" />
 			</CompositeStructureInfoModule>		
-			<StatusBitsUpgrade
-				id="ModuleTag_UpgradeWeapon_02"
-				StatusToSet="WEAPON_UPGRADED_02">
-				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
-			</StatusBitsUpgrade>
+			
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon_01"
 				StatusToSet="WEAPON_UPGRADED_01">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_UpgradeWeapon_02"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
 			</StatusBitsUpgrade>
 			<!--ModelConditionUpgrade
 				id="ModuleTag_ShowQuadTurretShredderHub"
@@ -346,9 +353,15 @@
 			</ModelConditionUpgrade-->
 			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_ShowQuadTurretShredderHub"
-				ShowSubObjects="NEWSKIN NBDHUB_Q">
+				ShowSubObjects="NEWSKIN_HUB NEWSKIN_SHREDDER"
+				HideSubObjects="NBDHUB">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</SubObjectsUpgrade>	
+			<RemoveUpgradeUpgrade
+				id="ModuleTag_RemoveForQuad">
+				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
+				<UpgradeToRemove>Upgrade_NoQuadHub</UpgradeToRemove>
+			</RemoveUpgradeUpgrade>
 			<GatherSlavesUpdate
 				id="ModuleTag_GatherSlaves"
 				SlaveTemplate="MarkedOfKaneShredderTurret"
@@ -388,9 +401,9 @@
 			<AudioLoopUpgrade id="NOD_QuadTurrets_ShredderHubUpgrade" SoundToPlay="AudioEvent:NOD_QuadTurrets_ShredderHubUpgrade">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</AudioLoopUpgrade> 
-			<AudioLoopUpgrade id="SuperChargedParticleBeamUpgrade" SoundToPlay="AudioEvent:NOD_Enlightened_SuperChargedParticleBeamUpgrade" RequiresAllTriggers="true">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
+			<AudioLoopUpgrade id="SuperChargedParticleBeamUpgrade" SoundToPlay="AudioEvent:NOD_Enlightened_SuperChargedParticleBeamUpgrade">
 				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
+				<ConflictsWith>Upgrade_NoQuadHub</ConflictsWith>
 			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>

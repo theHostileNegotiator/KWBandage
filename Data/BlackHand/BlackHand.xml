@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
+		<Include type="all" source="Structures/BlackHandLaserCannon.xml" />
+		<Include type="all" source="Structures/BlackHandRocketBunker.xml" />
 		<Include type="all" source="Structures/BlackHandTechAssemblyPlant.xml" />
 		<Include type="all" source="Structures/BlackHandSecretShrine.xml" />
+		<Include type="all" source="Structures/BlackHandShredderTurret.xml" />
 		<Include type="all" source="Structures/BlackHandShredderTurretHub.xml" />
 	
 		<Include type="all" source="Units/BlackHandAttackBike.xml" />
