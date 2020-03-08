@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
+		<Include type="all" source="Structures/SteelTalonsAirSupport.xml" />
 		<Include type="all" source="Structures/SteelTalonsAirTower.xml" />
 		<Include type="all" source="Structures/SteelTalonsGolumCannon.xml" />
 		<Include type="all" source="Structures/SteelTalonsTechCenter.xml" />

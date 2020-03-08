@@ -143,6 +143,13 @@ GDI:
  - Space Command Uplink
 	   1. Smoke Effects do not appear. It is possible an attempt was made to add distortion affect but removed the smoke
 		   - Fixed Particle Effects to match TW (Will need to find a way to add distortion effect)
+ - Combat Support Airfield
+	   1. Online Games causes desyncs when Structure is created
+		   - Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs
+	   2. Particle Effects at damage states were borrowed from Airfield
+		   - Removed Particle Effects
+	   3. Landing Pad order is different to the Airfield
+		   - Changed the order to represent the Airfield
 
 Nod:
  - Airtower
@@ -265,6 +272,16 @@ Nod:
  - Cloaking Field
        1. Advanced Units have a damage reduction to ability except for Sub-factions
 		   - Applied damage reduction to Sub-faction Advanced Units
+ - Air Support Tower
+	   1. Online Games causes desyncs when Structure is created
+		   - Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs
+	   2. Building and ReallyDamaged states models used the incorrect shader (ObjectsGDI.fx)
+		   - Changed meshes to use the correct shader (ObjectsNOD.fx)
+	   3. Particle Effects at damage states were borrowed from GDI Airfield
+		   - Removed Particle Effects
+	   4. All air units faced the same direction when docked
+		   - Reoriented direction of landing pads, based on the Air Tower (AKA, facing away from the center)
+		      * Changed order to represent Air Tower
 		   
 Scrin
  - Drone Platform

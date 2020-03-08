@@ -48,3 +48,9 @@ GDI Foxhole
  
 Rig
  - Cannons do not have railgun models when railguns are upgraded
+
+OCL_Generic_Tree_Crusher
+ - The intended purpose of this OCL is to remove objects in RubbleState, however this has the side effect of permanently destroying NOD Turrets. Best solution would be to remove it from all weapons
+ 
+Force Fire
+ - Some units cannot Forcefire onto friendly or own objects and more importantly; own husks

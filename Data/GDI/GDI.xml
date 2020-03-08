@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
 
+		<Include type="all" source="Structures/GDIAirSupport.xml" />
 		<Include type="all" source="Structures/GDIAirTower.xml" />
 		<Include type="all" source="Structures/GDIArmory.xml" />
 		<Include type="all" source="Structures/GDIDigInBuilding.xml" />

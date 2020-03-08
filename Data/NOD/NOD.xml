@@ -3,6 +3,7 @@
 	<Includes>
 		<Include type="all" source="Props/NODBlackHandFlamerProjectile.xml" />	
 	
+		<Include type="all" source="Structures/NODAirSupport.xml" />
 		<Include type="all" source="Structures/NODHangar.xml" />
 		<Include type="all" source="Structures/NODLaserCannon.xml" />
 		<Include type="all" source="Structures/NODRocketBunker.xml" />
