@@ -11,6 +11,7 @@
 		<Include type="all" source="Units/MarkedOfKaneAttackBike.xml" />
 		<Include type="all" source="Units/MarkedOfKaneAvatar.xml" />
 		<Include type="all" source="Units/MarkedOfKaneAvatarHusk.xml" />
+		<Include type="all" source="Units/MarkedOfKaneMCV.xml" />
 		<Include type="all" source="Units/MarkedOfKaneMetaUnit.xml" />
 		<Include type="all" source="Units/MarkedOfKaneMilitantRocket.xml" />
 		<Include type="all" source="Units/MarkedOfKaneImprovedCyborgInfantry.xml" />
