@@ -282,6 +282,9 @@ Nod:
  - Cloaking Field
        1. Advanced Units have a damage reduction to ability except for Sub-factions
 		   - Applied damage reduction to Sub-faction Advanced Units
+ - Decoy Army
+       1. Can select and clone Drone Ships
+		   - Removed Drone ships from being cloned
  - Air Support Tower
 	   1. Online Games causes desyncs when Structure is created
 		   - Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs

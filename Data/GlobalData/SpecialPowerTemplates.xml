@@ -434,6 +434,38 @@
 			Rule="ANY"
 			Include="INFANTRY VEHICLE STRUCTURE" />
 	</SpecialPowerTemplate>
+	
+<!--Can no longer target Drone Ships-->	
+	<SpecialPowerTemplate
+		id="SpecialPowerCloneObjectSelect"
+		TargetType="LOCATION"
+		RadiusCursorRadius="100"
+		EvaEventToPlayWhenSelectingTarget="SelectUnit"
+		Flags="NEEDS_OBJECT_FILTER IS_PLAYER_POWER NOT_CLIFF_CELL SHARED_SYNC">
+		<ObjectFilter
+			Relationship="ALLIES"
+			Rule="ANY"
+			Include="INFANTRY VEHICLE"
+			Exclude="SUMMONED AIRCRAFT">
+			<ExcludeThing>AlienMCV</ExcludeThing>
+			<ExcludeThing>AlienMCVUnpacking</ExcludeThing>
+			<ExcludeThing>Reaper17MCV</ExcludeThing>
+			<ExcludeThing>Reaper17MCVUnpacking</ExcludeThing>
+			<ExcludeThing>Traveler59MCV</ExcludeThing>
+			<ExcludeThing>Traveler59MCVUnpacking</ExcludeThing>
+			<ExcludeThing>AlienBuzzers_Slaved</ExcludeThing>
+			<ExcludeThing>Viceroid</ExcludeThing>
+			<ExcludeThing>GDIJuggernaughtHusk</ExcludeThing>
+			<ExcludeThing>SteelTalonsBehemothHusk</ExcludeThing>
+			<ExcludeThing>NODAvatarHusk</ExcludeThing>
+			<ExcludeThing>BlackHandCustomWarmechHusk</ExcludeThing>
+			<ExcludeThing>MarkedOfKaneAvatarHusk</ExcludeThing>
+			<ExcludeThing>AlienAnnihilatorTripodHusk</ExcludeThing>
+			<ExcludeThing>Reaper17AnnihilatorTripodHusk</ExcludeThing>
+			<ExcludeThing>Traveler59AnnihilatorTripodHusk</ExcludeThing>
+			<ExcludeThing>NODShadowSquadBeacon</ExcludeThing>
+		</ObjectFilter>
+	</SpecialPowerTemplate>
 
 <!--For New Marked of Kane Shadow Team-->
 	<SpecialPowerTemplate
