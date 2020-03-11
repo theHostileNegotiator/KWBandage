@@ -336,10 +336,14 @@ Scrin
  - Mastermind
        1. Can control subfaction base defense
 		   - Removed ability to target base defense structures
+       2. Teleport ability can target Drone Ships
+		   - Removed ability to teleport Drone Ships
  - Prodigy
        1. Can control subfaction base defense
 		   - Removed ability to target base defense structures
-       2. AI does not use Area Mind Control
+       2. Teleport ability can target Drone Ships
+		   - Removed ability to teleport Drone Ships
+       3. AI does not use Area Mind Control
 		   - AI will now use Area Mind Control on ground units
  - Mothership
        1. Weapon would affect Subfaction Motherships but not Scrin

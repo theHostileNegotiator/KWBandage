@@ -347,7 +347,7 @@
 			<ExcludeThing>AlienMCV</ExcludeThing>
 			<ExcludeThing>AlienMCVUnpacking</ExcludeThing>
 			<ExcludeThing>Reaper17MCV</ExcludeThing>
-			<ExcludeThing>Reaper1MCVUnpacking</ExcludeThing>
+			<ExcludeThing>Reaper17MCVUnpacking</ExcludeThing>
 			<ExcludeThing>Traveler59MCV</ExcludeThing>
 			<ExcludeThing>Traveler59MCVUnpacking</ExcludeThing>
 			<ExcludeThing>Viceroid</ExcludeThing>
@@ -455,6 +455,31 @@
 		RadiusCursorRadius="50"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999997"
+		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="TeleportObject"
+		WaypointModeTerminal="false"
+		DisallowedTargetObjectStatus="INSIDE_GARRISON AIRBORNE_TARGET OUT_OF_PHASE POWERED_DOWN_EMP">
+		<ObjectFilter
+			Relationship="ALLIES"
+			Rule="ANY"
+			Exclude="AIRCRAFT"
+			Include="INFANTRY VEHICLE">
+			<ExcludeThing>AlienBuzzers_Slaved</ExcludeThing>
+			<ExcludeThing>AlienMCV</ExcludeThing>
+			<ExcludeThing>AlienMCVUnpacking</ExcludeThing>
+			<ExcludeThing>Reaper17MCV</ExcludeThing>
+			<ExcludeThing>Reaper17MCVUnpacking</ExcludeThing>
+			<ExcludeThing>Traveler59MCV</ExcludeThing>
+			<ExcludeThing>Traveler59MCVUnpacking</ExcludeThing>
+		</ObjectFilter>
+	</SpecialPowerTemplate>
+	<SpecialPowerTemplate
+		id="SpecialPowerProdigyTeleportObjectSelect"
+		ReloadTime="20s"
+		TargetType="LOCATION"
+		RadiusCursorRadius="50"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		MaxCastRange="9999999"
 		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="TeleportObject"
 		WaypointModeTerminal="false"
