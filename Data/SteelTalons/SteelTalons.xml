@@ -3,6 +3,7 @@
 	<Includes>
 		<Include type="all" source="Structures/SteelTalonsAirSupport.xml" />
 		<Include type="all" source="Structures/SteelTalonsAirTower.xml" />
+		<Include type="all" source="Structures/SteelTalonsBattleBase.xml" />
 		<Include type="all" source="Structures/SteelTalonsGolumCannon.xml" />
 		<Include type="all" source="Structures/SteelTalonsTechCenter.xml" />
 	
@@ -13,6 +14,7 @@
 		<Include type="all" source="Units/SteelTalonsMARV.xml" />
 		<Include type="all" source="Units/SteelTalonsMammoth.xml" />
 		<Include type="all" source="Units/SteelTalonsRepairAPC.xml" />
+		<Include type="all" source="Units/SteelTalonsRig.xml" />
 		<Include type="all" source="Units/SteelTalonsTitan.xml" />
 		<Include type="all" source="Units/SteelTalonsV350x_Summoned.xml" />
 		<Include type="all" source="Units/SteelTalonsV350x_SummonedForVehicle.xml" />

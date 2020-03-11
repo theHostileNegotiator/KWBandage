@@ -140,6 +140,13 @@ GDI:
  - FireHawk
 	   1. ZOCOM Firehawks would not display Stratofigher thrusters properly, especially when upgraded with Ceramic Armor
 		   - Fixed Animations
+ - Rig/Battlebase
+	   1. Subfaction Rigs when unpacking would create GDI Battlebase instead of their own. The same happens with Subfaction Battlebase packing GDI Rigs
+		   - Packing and unpacking will now create the corresponding faction version
+	   2. When upgraded with railguns does not display upgraded models
+		   - Railgun subobjects were added to the models, railguns will now be displayed when upgraded
+	   3. GDI and Steel Talons has no upgrades listed in the description
+		   - Added railguns upgrade in the description
  - Space Command Uplink
 	   1. Smoke Effects do not appear. It is possible an attempt was made to add distortion affect but removed the smoke
 		   - Fixed Particle Effects to match TW (Will need to find a way to add distortion effect)

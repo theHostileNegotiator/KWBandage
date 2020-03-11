@@ -386,28 +386,31 @@ end
 function OnUsingWeaponC(self)
 	ObjectHideSubObjectPermanently( self, "UGRAIL_01", true )
 	ObjectHideSubObjectPermanently( self, "UGRAIL_02", true )
-	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL", true )
+	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL01", true )
+	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL02", true )
 	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_01", false )
 	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_02", false )
-	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL", false )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL01", false )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL02", false )
 end
 function OnNotUsingWeaponC(self)
 	ObjectHideSubObjectPermanently( self, "UGRAIL_01", false )
 	ObjectHideSubObjectPermanently( self, "UGRAIL_02", false )
-	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL", false )
+	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL01", false )
+	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL02", false )
 	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_01", true )
 	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_02", true )
-	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL", true )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL01", true )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL02", true )
 end
 
 function OnTitanCreated(self)
 	ObjectHideSubObjectPermanently( self, "UGRail_01", true )
-	ObjectHideSubObjectPermanently( self, "UGRail_Barrel", true )
+	ObjectHideSubObjectPermanently( self, "UGRail_Barrel01", true )
 	ObjectHideSubObjectPermanently( self, "MUZZLEFLASH_01", true )
 	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_01", true )
-	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL", true )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL01", true )
 end
-
 function OnAlienHexapodCreated(self)
 	ObjectHideSubObjectPermanently( self, "AUTELEPORT_LR", true )
 	ObjectHideSubObjectPermanently( self, "AUTELEPORT_LM", true )
@@ -415,6 +418,7 @@ function OnAlienHexapodCreated(self)
 
 	ObjectHideSubObjectPermanently( self, "AUSHOCKBASE_LR", true )
 	ObjectHideSubObjectPermanently( self, "AUSHOCKBASE_LM", true )
+
 	ObjectHideSubObjectPermanently( self, "AUSHOCKBASE_LF", true )
 	ObjectHideSubObjectPermanently( self, "AUSHOCKTURRET_LR", true )
 	ObjectHideSubObjectPermanently( self, "AUSHOCKTURRET_LM", true )
@@ -589,9 +593,9 @@ end
 function OnGDIGuardianCannonCreated(self)
 	ObjectHideSubObjectPermanently( self, "UGRAIL_01", true )
 	--ObjectHideSubObjectPermanently( self, "UG_RAILBARREL2", true )
-	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL", true )
+	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL01", true )
 	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_01", true )
-	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL", true )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL01", true )
 end
 
 function OnAlienPhotonCannonCreated(self)
@@ -722,6 +726,8 @@ function OnBlackHandStealthTankCreated(self)
 end
 
 function OnNODShredderHubCreated(self)
+	ObjectHideSubObjectPermanently( self, "MUZZLEFLASH_01", true )
+	ObjectHideSubObjectPermanently( self, "MUZZLEFLASH_02", true )
 	ObjectHideSubObjectPermanently( self, "NEWSKIN_HUB", true )
 	ObjectHideSubObjectPermanently( self, "NEWSKIN_SHREDDER", true )
 end
@@ -737,4 +743,15 @@ function OnNODRocketBunkerHubCreated(self)
 	ObjectHideSubObjectPermanently( self, "TIBCOREMISSILE", true )
 	ObjectHideSubObjectPermanently( self, "HOSE", true )
 	ObjectHideSubObjectPermanently( self, "TCMHUB_UPGRADE", true )
+end
+
+function OnGDIBattleBaseCreated(self)
+	ObjectHideSubObjectPermanently( self, "UGRAIL_01", true )
+	ObjectHideSubObjectPermanently( self, "UGRAIL_02", true )
+	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL01", true )
+	ObjectHideSubObjectPermanently( self, "UGRAIL_BARREL02", true )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_01", true )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_02", true )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL01", true )
+	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL02", true )
 end

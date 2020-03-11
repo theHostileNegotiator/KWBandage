@@ -4,6 +4,7 @@
 		<Include type="all" source="Structures/ZOCOMAirSupport.xml" />
 		<Include type="all" source="Structures/ZOCOMAirTower.xml" />
 		<Include type="all" source="Structures/ZOCOMArmory.xml" />
+		<Include type="all" source="Structures/ZOCOMBattleBase.xml" />
 		<Include type="all" source="Structures/ZOCOMConstructionYard.xml" />
 		<Include type="all" source="Structures/ZOCOMGolumCannon.xml" />
 		<Include type="all" source="Structures/ZOCOMMedicalBay.xml" />
@@ -21,6 +22,7 @@
 		<Include type="all" source="Units/ZOCOMMissileSoldier.xml" />
 		<Include type="all" source="Units/ZOCOMOrca.xml" />
 		<Include type="all" source="Units/ZOCOMRifleSoldier.xml" />
+		<Include type="all" source="Units/ZOCOMRig.xml" />
 		<Include type="all" source="Units/ZOCOMV350x_CallSupportHunterKillerTeam.xml" />
 		<Include type="all" source="Units/ZOCOMV350x_CallSupportZOCOMAirport.xml" />
 		<Include type="all" source="Units/ZOCOMV350x_CallSupportZOCOMAirportRockets.xml" />

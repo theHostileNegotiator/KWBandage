@@ -34347,7 +34347,7 @@
 			</Node>
 		</AABTree>
 	</W3DMesh>
-	<W3DMesh id="GBGOLUMCAN_SKN.UGRAILACCELERATOR_BARREL" GeometryType="Normal">
+	<W3DMesh id="GBGOLUMCAN_SKN.UGRAILACCELERATOR_BARREL01" GeometryType="Normal">
 		<BoundingBox>
 			<Min X="7.213203" Y="-3.376753" Z="-4.520692"/>
 			<Max X="41.063396" Y="3.327805" Z="1.302500"/>
@@ -37403,7 +37403,7 @@
 			</Node>
 		</AABTree>
 	</W3DMesh>
-	<W3DMesh id="GBGOLUMCAN_SKN.UGRAIL_BARREL" CastShadow="true" GeometryType="Normal">
+	<W3DMesh id="GBGOLUMCAN_SKN.UGRAIL_BARREL01" CastShadow="true" GeometryType="Normal">
 		<BoundingBox>
 			<Min X="7.213203" Y="-3.376753" Z="-4.520692"/>
 			<Max X="41.063396" Y="3.327805" Z="1.302500"/>
@@ -38689,9 +38689,9 @@
 				<Mesh>GBGOLUMCAN_SKN.UGRAILACCELERATOR_01</Mesh>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="UGRAILACCELERATOR_BARREL" BoneIndex="5">
+		<SubObject SubObjectID="UGRAILACCELERATOR_BARREL01" BoneIndex="5">
 			<RenderObject>
-				<Mesh>GBGOLUMCAN_SKN.UGRAILACCELERATOR_BARREL</Mesh>
+				<Mesh>GBGOLUMCAN_SKN.UGRAILACCELERATOR_BARREL01</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="UGRAIL_01" BoneIndex="5">
@@ -38699,9 +38699,9 @@
 				<Mesh>GBGOLUMCAN_SKN.UGRAIL_01</Mesh>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="UGRAIL_BARREL" BoneIndex="5">
+		<SubObject SubObjectID="UGRAIL_BARREL01" BoneIndex="5">
 			<RenderObject>
-				<Mesh>GBGOLUMCAN_SKN.UGRAIL_BARREL</Mesh>
+				<Mesh>GBGOLUMCAN_SKN.UGRAIL_BARREL01</Mesh>
 			</RenderObject>
 		</SubObject>
 	</W3DContainer>

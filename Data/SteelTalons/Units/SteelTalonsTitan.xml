@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!--Added Upgrade Sounds-->
-<!--Fixing Railguns Accelerator Animation Bug-->
+<!--Fixed Railguns Accelerator Animation Bug-->
 <!--Fixed AdaptiveArmor Specular and NormalMap Texture-->
 <!--Added EMP Animation-->
 <!--Changed AdaptiveArmor and Railgun Accelerator Shaders-->
@@ -161,9 +161,6 @@
 						if Prev == "STATE_Selected" or Prev == "ATNB" or Prev == "STATE_Run" then
 						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
 						end
-
-						CurDrawableHideSubObject("UGRailAccelerator_01")
-						CurDrawableHideSubObject("UGRailAccelerator_Barrel")
 					</Script>
 				</AnimationState>
 
@@ -176,10 +173,6 @@
 						AnimationName="GUVehicleF_BLDA" 
 						AnimationBlendTime="0" 
 						AnimationMode="ONCE_BACKWARDS" />
-					<Script>
-						CurDrawableHideSubObject("UGRailAccelerator_01")
-						CurDrawableHideSubObject("UGRailAccelerator_Barrel")
-					</Script>
 				</AnimationState>
 				<AnimationState 
 					ParseCondStateType="PARSE_NORMAL" 
@@ -1077,7 +1070,7 @@
 			</StatusBitsUpgrade>
 			<SubObjectsUpgrade 
 				id="ModuleTag_ShowRail" 
-				ShowSubObjects="UGRail_01 UGRail_Barrel" 
+				ShowSubObjects="UGRail_01 UGRail_Barrel01" 
 				HideSubObjects="MUZZLEFLASH_01"> 
 				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
 			</SubObjectsUpgrade>

@@ -425,4 +425,10 @@
 		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODRocketBunkerHubCreated" DebugSingleStep="false"/>
 	</EventList>
 	
+	<EventList Name="GDIBattleBaseFunctions" Inherit="BaseScriptFunctions">
+		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnGDIBattleBaseCreated" DebugSingleStep="false"/>
+		<EventHandler EventName="UsingWeaponC"	ScriptFunctionName="OnUsingWeaponC" DebugSingleStep="false"/>
+		<EventHandler EventName="NotUsingWeaponC"	ScriptFunctionName="OnNotUsingWeaponC" DebugSingleStep="false"/>
+	</EventList>
+	
 </SageLuaScriptSection>

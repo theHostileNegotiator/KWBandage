@@ -308,7 +308,7 @@
 			</StatusBitsUpgrade>			
 			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_ShowRailguns"
-				ShowSubObjects="UGRAIL_01 UGRAIL_BARREL">
+				ShowSubObjects="UGRAIL_01 UGRAIL_BARREL01">
 				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
 			</SubObjectsUpgrade>
 			<AudioLoopUpgrade 
