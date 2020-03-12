@@ -68,7 +68,7 @@
 					<Turret
 						TurretNameKey="TurretR"
 						TurretPitch="Bone_PodR_Pitch"
-						TurretID="2" />
+						TurretID="1" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -223,8 +223,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic"
-				/>
+				StanceTemplate="Generic" />
 			<LevelUpUpgrade
 				id="ModuleTag_LevelUpUpgrade_Veteran"
 				LevelCap="4"
@@ -268,31 +267,6 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="NODAttackBikeRocketTibCore"
 						ObjectStatus="WEAPON_UPGRADED_01" />
-					<TurretSettings
-						TurretTurnRate="360"
-						MaxDeflectionAntiClockwise="180d"
-						MaxDeflectionClockwise="180d"
-						TurretPitchRate="360"
-						AllowsPitch="true"
-						MinimumPitch="-10d"
-						PitchHeight="90%"
-						MinIdleScanTime="1.0s"
-						MaxIdleScanTime="5.0s"
-						MinIdleScanAngle="0.0"
-						MaxIdleScanAngle="90.0">
-						<TurretAITargetChooserData
-							CanAcquireDynamicIfAssignedOutOfRange="true" />
-					</TurretSettings>
-				</WeaponSlotTurret>
-				<WeaponSlotTurret
-					ID="2">
-					<!--Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODAttackBikeRocket" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODAttackBikeRocketTibCore"
-						ObjectStatus="WEAPON_UPGRADED_01" /-->
 					<TurretSettings
 						TurretTurnRate="360"
 						MaxDeflectionAntiClockwise="180d"
