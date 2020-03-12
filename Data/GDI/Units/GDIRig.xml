@@ -6,6 +6,9 @@
 	<Includes>
 		<Include
 			type="all"
+			source="ART:GURigUPAK_AN.w3x" />
+		<Include
+			type="all"
 			source="ART:GURigUPAK_SN.w3x" />
 	</Includes>
 	<GameObject
