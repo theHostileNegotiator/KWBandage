@@ -175,6 +175,8 @@ Nod:
 		   - Removed Upgrade for Nod Shredder Turret
 	   2. Black Hand turrets do not display Quad Turret upgrade in the UI
 		   - Added Quad Turrets to the display list
+	   3. When use as a cursor, the Muzzleflash fx is shown when no Shredders have been placed
+		   - Added animation state to hide Subobjects when used as cursor
  - Tech Lab
 	   1. AI would use the Redemption Power on friendly vehicles when it is only used on friendly infantry
 		   - Changed Includes to Infantry
@@ -229,7 +231,7 @@ Nod:
 	   9. AI does not garrison this unit despite basic infantry status (Squad seems to be modified Black Hand squad)
 		   - Removed "SKIRMISH_AI_DONT_GARRISON" Kindof Flag
 	   10. Unit has range change when upgrading to Charged Particle Beam
-		   - Reduced base weapon Range from 350 to 300 matching upgraded version
+		   - Reduced base weapon Range from 325 to 300 matching upgraded version
  - Confessor
 	   1. Unit in squads does not properly path through infantry
 		   - Added "PATH_THROUGH_INFANTRY" Kindof flag
