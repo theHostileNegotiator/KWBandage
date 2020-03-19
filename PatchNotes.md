@@ -321,6 +321,25 @@
 #### Devastator Warship
 1. Has target priority representative of Cannon based weapon despite GRENADE damage type
 	* Changed Weapon Category from CANNON to BLAST
+2. Turret doesn't rotate when under the effect of the Ion Storm
+	* Fixed model so turret can rotate
+3. Unit when under Ion Storm does not show Traveler Engines
+	* Added Traveler Engine to the model
+4. Traveler Engine will flash unit starts moving
+	* Traveler Engines will show when Accelerating.
+		* The FX are not supposed to show until it reaches top speed but unfortunately this is the best workaround at the moment
+5. Ion Model Hierarchy
+	* Ion model will now refer to the base Hierarchy (AUDevWar_SKL) rather than it's own (AUDevWarIon)
+#### Planetary Assault Carrier
+1. Unit when under Ion Storm does not show Traveler Engines
+	* Added Traveler Engine to the model
+2. Traveler Engine will flash when unit starts moving
+	* Traveler Engines will show when Accelerating.
+		* The FX are not supposed to show until it reaches top speed but unfortunately this is the best workaround at the moment
+3. Ion Model Hierarchy
+	* Ion model will now refer to the base Hierarchy (AUPACarrier_SKL) rather than it's own (AUPACarrierIon)
+4. Fighters use different textures when under Ion Storm
+	* Changed textures to match default
 #### Mechapede
 1. Hexapod recycling is not proportional to the segment cost
 	* Change BuildCost (and BuildTime appropriately) from 1400 to 100
