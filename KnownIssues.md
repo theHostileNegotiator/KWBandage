@@ -45,9 +45,6 @@
 
 #### GDI Foxhole
 * An exploit exist where the infantry creating the structure can be crushed by a unit in formation move when garrisoned
- 
-#### Rig
-* Cannons do not have railgun models when railguns are upgraded
 
 #### OCL_Generic_Tree_Crusher
 * The intended purpose of this OCL is to remove objects in RubbleState, however this has the side effect of permanently destroying NOD Turrets. Best solution would be to remove it from all weapons

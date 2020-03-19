@@ -64,7 +64,7 @@
 	* Removed audioloopupgrade for Railguns
 #### Hardpoints (And ZOCOM Orca Cannon)
 1. When aircraft with Harpoints would dock to reload, sound would not play
-	*Added sound effects to reload
+	* Added sound effects to reload
 #### Composite Armor and Tiberium Field Suits
 1. When Missile Squad is upgraded, the extra 50% damage against GUN is removed
 	* Increased GUN damage by 50% for upgrades
@@ -178,7 +178,7 @@
 #### Tech Lab
 1. AI would use the Redemption Power on friendly vehicles when it is only used on friendly infantry
 	* Changed Includes to Infantry
-2. When selected to be deployed, some of the upgrade subobjects will appear when replacing cursor.
+2. When Black Hand Tech Lab is selected to be deployed, some of the upgrade subobjects will appear when replacing cursor.
 	* Hide the existing subobjects in animation state
 #### Tiberium Core Missiles
 1. Units with this upgrade would use two models for 'Base' and 'Upgrade' when it could of just hide and show subobjects
@@ -272,7 +272,7 @@
 1. Supercharged Particle Beam upgrade sound would use Railgun sound instead of it's own
 	* Swapped upgrade sounds
 #### Tiberium Trooper
-1. Health, speed and weapon damage values were inherited from Black Hand pre TW1.05
+1. Health, speed and weapon damage values were inherited from Black Hand pre TW 1.05
 	* Changed values to match Black Hand
 #### Flame Weaponry (+Tiberium Goo)
 1. New units that use flame weaponry and purifying flame will de-garrison units the instant it fires
@@ -334,6 +334,8 @@
 #### Reaper Tripod
 1. Conversion Reserves would significantly decrease the damage of the conversion beams
 	* Increased Damage to match unupgraded counterpart
+2. Husk would use Annihilator Tripod Husk Model with the Reaper Tripod Texture
+	* Created a new Reaper Tripod Husk model to be used instead
 #### Mastermind
 1. Can control subfaction base defense
 	* Removed ability to target base defense structures
