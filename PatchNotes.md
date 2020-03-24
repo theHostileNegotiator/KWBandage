@@ -26,6 +26,10 @@
 #### Sonic Repulsion Field and Laser Fencing
 1. Structures when entering DAMAGED state (66%) removes the special power which would suggest that the upgrade cannot be applied. However the upgrade can be applied at state, but will not display.
 	* Removed ability to be able to apply to damaged structures
+#### Tiberium Based Units
+1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
+	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based
+		* Unlike Nod Power Plants with Tiberium Core upgrade, units and structures with Tiberium Core Missiles upgrade will not have the "HAVE_TIBERIUM_UPGRADE" flag, making it 'immune' to Tiberium Vibration Scan as it would be able to counter Cloaking Field and Stealth Tanks with a simple click of a button, making the upgrade less desireable against Scrin factions.
 #### AI
 1. Campaign AI design was not designed properly, structure based on Multiplayer AI. In TW, there are clear differences between Campaign and Multiplayer Skirmish AI in terms of structure and design.
 	* Redesign Campaign AI
@@ -37,7 +41,7 @@
 #### Railgun Accelerator
 1. Railgun Accelerator effect on the railgun is bugged with all units either not displaying properly or at all
 	* Instead of using Animations, Scripts are used
-		* Guardian Cannon Railgun meshs were renamed to match other units (Naming conventions guys, seriously)
+		* Guardian Cannon Railgun meshs were renamed to match other units
 #### Sub Faction Harvesters
 1. Steel Talons and ZOCOM Harvesters harvests at a slower rate. Rate is based of TW Pre 1.05 Patch.
 	* Normalised values with GDI Harvester
