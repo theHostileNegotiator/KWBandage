@@ -6,7 +6,6 @@
 		<Include type="all" source="ART:NBDHub_QMBld_SKN.w3x" />
 		<Include type="all" source="ART:NBDHub_QMBld_AAN.w3x" />
 		<Include type="all" source="ART:NBDHub_QM_SKN.w3x" />
-		<Include type="all" source="ART:NBDHub_QM_AAN.w3x" />
 		<Include type="all" source="ART:NBDHub_QM_D2_SKN.w3x" />
 		<Include type="all" source="ART:NBDHub_QM_D2_AAN.w3x" />
 	</Includes>
@@ -54,7 +53,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBDHub_QMBld_SKN" />					
+						Name="NBDHub_QM_SKN" />					
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						WeaponSlotID="1"
@@ -74,9 +73,12 @@
 					<Model
 						Name="NBDHub_QM_SKN" />
 				</ModelConditionState>	
-			
-				
-				<!-- D2 quad and tibcore -->
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBDHub_QMBld_SKN" />
+				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
