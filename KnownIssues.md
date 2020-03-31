@@ -51,3 +51,6 @@
  
 #### Force Fire
 * Some units cannot Forcefire onto friendly or own objects and more importantly; own husks
+
+#### LOW LOD Mammoth Tank
+* Right railguns are offset

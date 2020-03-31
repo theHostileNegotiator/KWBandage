@@ -132,6 +132,10 @@
 #### Titan
 1. Units limping animation is used in the DAMAGED state (Below 66% health)
 	* Decided to remove it so it would only be used in the REALLYDAMAGED state (Below 33% health)
+#### Mammoth Tank
+1. If playing with Low model LOD setting, uses Low LOD model. Adaptive armor uses High LOD model
+	* Added Low LOD model for Adaptive Armor
+		* Also fixed shaders for Low LOD Railguns
 #### Construction Yard
 1. Selling ZOCOM Con Yard would give you GDI Rifle Squad and GDI Engineer
 	* Changed OCL to spawn ZOCOM Rifle Squad and ZOCOM Engineer instead
