@@ -218,7 +218,6 @@
 	</WeaponTemplate>
 	
 <!--Damage scalar added like it's unupgraded counterparts-->
-<!--Changed Damage FX from GDI_RAILGUN to NOD_LASER for consistency-->
 	<WeaponTemplate
 		id="AlienDevourerBeamLaser_TiberiumEnhanced"
 		Name="AlienDevourerBeamLaser_TiberiumEnhanced"
@@ -242,7 +241,7 @@
 				Radius="0.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="CANNON"
-				DamageFXType="NOD_LASER"
+				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL">
 				<DamageScalarDetails
 					Scalar= "200%">
@@ -260,6 +259,7 @@
 				AmountToSpend="10" />
 		</Nuggets>
 	</WeaponTemplate>
+<!--Changed Damage FX from NOD_LASER to GDI_RAILGUN for consistency (Change from TW 1.09 to KW 1.00)-->
 	<WeaponTemplate
 		id="AlienDevourerBeamLaser_SuperDuperTiberiumEnhanced"
 		Name="AlienDevourerBeamLaser_SuperDuperTiberiumEnhanced"
@@ -283,7 +283,7 @@
 				Radius="0.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="CANNON"
-				DamageFXType="NOD_LASER"
+				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL">
 				<DamageScalarDetails
 					Scalar= "200%">
@@ -1830,6 +1830,7 @@
 
 <!--Damage scalar towards civillian buildings have been added like it's unupgraded counterparts-->
 <!--Fixed Damage for Conversion Reserves upgrade-->	
+<!--Changed Damage FX from NOD_LASER to GDI_RAILGUN for consistency (Change from TW 1.09 to KW 1.00)-->
 	<WeaponTemplate
 		id="Reaper17TripodPulseCannonA_TiberiumEnhanced"
 		Name="Reaper17TripodPulseCannonA_TiberiumEnhanced"
@@ -1854,7 +1855,7 @@
 				Damage="700.0"
 				Radius="0.0"
 				DamageType="CANNON"
-				DamageFXType="NOD_LASER"
+				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL">
 				<DamageScalarDetails
 					Scalar= "200%">
@@ -1896,7 +1897,7 @@
 				Damage="700.0"
 				Radius="0.0"
 				DamageType="CANNON"
-				DamageFXType="NOD_LASER"
+				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL">
 				<DamageScalarDetails
 					Scalar= "200%">
@@ -1938,7 +1939,7 @@
 				Damage="700.0"
 				Radius="0.0"
 				DamageType="CANNON"
-				DamageFXType="NOD_LASER"
+				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL">
 				<DamageScalarDetails
 					Scalar= "200%">
@@ -1980,7 +1981,7 @@
 				Damage="700.0"
 				Radius="0.0"
 				DamageType="CANNON"
-				DamageFXType="NOD_LASER"
+				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL">
 				<DamageScalarDetails
 					Scalar= "200%">
@@ -2022,7 +2023,7 @@
 				Damage="700.0"
 				Radius="0.0"
 				DamageType="CANNON"
-				DamageFXType="NOD_LASER"
+				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL">
 				<DamageScalarDetails
 					Scalar= "200%">
@@ -2064,7 +2065,7 @@
 				Damage="700.0"
 				Radius="0.0"
 				DamageType="CANNON"
-				DamageFXType="NOD_LASER"
+				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL">
 				<DamageScalarDetails
 					Scalar= "200%">
