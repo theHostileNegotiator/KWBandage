@@ -1739,6 +1739,175 @@
 		</Nuggets>
 	</WeaponTemplate>
 
+<!--Weapon will no longer De garrison at the same instant as it starts firing-->		
+	<WeaponTemplate 
+		id="NODWarmechTibWeaponRight"
+		Name="NODWarmechTibWeaponRight"
+		AttackRange="250.0"
+		WeaponSpeed="999999.0"
+		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
+		FiringLoopSoundContinuesDuringReload="false"
+		AcceptableAimDelta="10d"
+		RadiusDamageAffects="ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
+		ClipSize="20"
+		ReAcquireDetailType="PER_CLIP">
+		<PreAttackDelay
+			MinSeconds="0s"
+			MaxSeconds="1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.2s"
+			MaxSeconds="0.4s" />
+		<Nuggets>
+			<ActivateStreamNugget
+				Lifetime="0.75s"
+				StreamId="0"/>
+			<!-- Damage to all infantry, with spawning if dead 40 default-->
+			<DamageNugget
+				Damage="75.0"
+				Radius="40.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="INFANTRY" >
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- regular damage to corrupted infantry -->
+			<DamageNugget
+				Damage="75.0"
+				Radius="25.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter Rule="NONE">
+					<IncludeThing>CorruptedInfantry</IncludeThing>
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- Damage to all non-infantry -->
+			<DamageNugget
+				Damage="75.0"
+				Radius="25.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="INFANTRY HORDE"/>
+			</DamageNugget>
+			<!-- Garrison clear -->
+			<ProjectileNugget
+				WarheadTemplate="NODMetaTiberiumGooWarhead"
+				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<!-- VEHICLE SLOW -->
+			<AttributeModifierNugget
+				Radius="25.0"
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="AttributeModifier_TibGoo">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="VEHICLE" >
+					<ExcludeThing>NODAvatar</ExcludeThing>
+					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>
+					<ExcludeThing>BlackHandCustomWarmech</ExcludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate 
+		id="NODWarmechTibWeaponLeft"
+		Name="NODWarmechTibWeaponLeft"
+		AttackRange="250.0"
+		WeaponSpeed="999999.0"
+		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
+		FiringLoopSoundContinuesDuringReload="false"
+		AcceptableAimDelta="10d"
+		RadiusDamageAffects="ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
+		ClipSize="20"
+		ReAcquireDetailType="PER_CLIP">
+		<PreAttackDelay
+			MinSeconds="0s"
+			MaxSeconds="1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.2s"
+			MaxSeconds="0.4s" />
+		<Nuggets>
+			<ActivateStreamNugget
+				Lifetime="0.75s"
+				StreamId="1"/>
+			<!-- Damage to all infantry, with spawning if dead 40 default-->
+			<DamageNugget
+				Damage="75.0"
+				Radius="40.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="INFANTRY" >
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- regular damage to corrupted infantry -->
+			<DamageNugget
+				Damage="75.0"
+				Radius="25.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter Rule="NONE">
+					<IncludeThing>CorruptedInfantry</IncludeThing>
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- Damage to all non-infantry -->
+			<DamageNugget
+				Damage="75.0"
+				Radius="25.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="INFANTRY HORDE"/>
+			</DamageNugget>
+			<!-- Garrison clear -->
+			<ProjectileNugget
+				WarheadTemplate="NODMetaTiberiumGooWarhead"
+				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<!-- VEHICLE SLOW -->
+			<AttributeModifierNugget
+				Radius="25.0"
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="AttributeModifier_TibGoo">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="VEHICLE" >
+					<ExcludeThing>NODAvatar</ExcludeThing>
+					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>
+					<ExcludeThing>BlackHandCustomWarmech</ExcludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODMetaTiberiumGooWarhead"
+		Name="NODMetaTiberiumGooWarhead"
+		HitStoredTarget="true"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageContainedNugget
+				MaxUnitsToDamage="100"
+				WindowBlastFX="FX_LiquidTiberiumClearGarrison"
+				Damage="1500000"
+				DamageType="GRENADE"
+				DeathType="BURNED">
+				<DamageObjectFilter
+					Rule="NONE"
+					Include="INFANTRY" />
+			</DamageContainedNugget>
+		</Nuggets>
+	</WeaponTemplate>
 <!--Weapon will no longer De garrison at the same instant as it starts firing-->	
 	<WeaponTemplate
 		id="NODWarmechFlamer"
