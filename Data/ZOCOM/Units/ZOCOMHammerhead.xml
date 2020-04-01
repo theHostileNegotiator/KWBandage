@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!--Refer to GDI Hammerhead-->
 <!--Added Specular and Normal map for Ceramic Armor-->
+<!--Added upgrade sound for Ceramic Armor-->
 	<Includes>
 		<Include type="all" source="ART:GUHamhead_UGCA_NRM.xml" />
 		<Include type="all" source="ART:GUHamhead_UGCA_SPM.xml" />
@@ -953,6 +954,11 @@
 			
 			<AudioLoopUpgrade id="GDI_CommandPost_APammoUpgrade" SoundToPlay="AudioEvent:GDI_CommandPost_APammoUpgrade">
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
+			</AudioLoopUpgrade>
+			<AudioLoopUpgrade 
+				id="ZOCOMCeramicArmorUpgradeSound" 
+				SoundToPlay="AudioEvent:GDI_Hammerhead_CeramicArmorUpgraded">
+				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
 			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>

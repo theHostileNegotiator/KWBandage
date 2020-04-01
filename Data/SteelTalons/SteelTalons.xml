@@ -9,10 +9,12 @@
 	
 		<Include type="all" source="Units/SteelTalonsAAScout.xml" />
 		<Include type="all" source="Units/SteelTalonsBehemoth.xml" />
+		<Include type="all" source="Units/SteelTalonsFirehawk.xml" />
 		<Include type="all" source="Units/SteelTalonsHammerhead.xml" />
-		<Include type="all" source="Units/SteelTalonsHeavyHarvester.xml" />		
+		<Include type="all" source="Units/SteelTalonsHeavyHarvester.xml" />	
+		<Include type="all" source="Units/SteelTalonsMammoth.xml" />		
 		<Include type="all" source="Units/SteelTalonsMARV.xml" />
-		<Include type="all" source="Units/SteelTalonsMammoth.xml" />
+		<Include type="all" source="Units/SteelTalonsOrca.xml" />
 		<Include type="all" source="Units/SteelTalonsRepairAPC.xml" />
 		<Include type="all" source="Units/SteelTalonsRig.xml" />
 		<Include type="all" source="Units/SteelTalonsTitan.xml" />

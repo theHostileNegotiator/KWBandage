@@ -12,10 +12,12 @@
 		<Include type="all" source="Units/GDIAAScout.xml" />
 		<Include type="all" source="Units/GDIAPC.xml" />
 		<Include type="all" source="Units/GDIAPC_Veteran.xml" />
+		<Include type="all" source="Units/GDIFirehawk.xml" />
 		<Include type="all" source="Units/GDIGrenadeSoldierSquad.xml" />
 		<Include type="all" source="Units/GDIHammerhead.xml" />
-		<Include type="all" source="Units/GDIMARV.xml" />
 		<Include type="all" source="Units/GDIMammoth.xml" />
+		<Include type="all" source="Units/GDIMARV.xml" />
+		<Include type="all" source="Units/GDIOrca.xml" />
 		<Include type="all" source="Units/GDIPredator.xml" />
 		<Include type="all" source="Units/GDIRig.xml" />	
 		<Include type="all" source="Units/GDISonicTank.xml" />	

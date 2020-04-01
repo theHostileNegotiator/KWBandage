@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Changed Normal Map Texture and Added Specular Texture for Ceramic Armor-->
-<!--Added upgrade sound for Ceramic Armor-->
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--Added sounds for Hardpoints upgrade-->
+	<Tags></Tags>
 	<Includes>
-		<Include type="all" source="ART:GUOrca_UGCA_SPM.xml" />
 	</Includes>
 	<GameObject
-		id="ZOCOMOrca"
-		inheritFrom="GDIOrca"
-		SelectPortrait="Portrait_ZOCOMOrca"
-		ButtonImage="Portrait_ZOCOMOrca"
-		Side="ZOCOM"
+		id="GDIOrca"
+		inheritFrom="BaseVehicle"
+		SelectPortrait="Portrait_GDIOrca"
+		ButtonImage="Portrait_GDIOrca"
+		Side="GDI"
 		EditorSorting="UNIT"
 		TransportSlotCount="0"
-		BuildCost="1500"
-		BuildTime="15"
+		BuildCost="1100"
+		BuildTime="11"
 		CommandSet="GDIOrcaCommandSet"
 		CommandPoints="100" 
 		KindOf="PRELOAD CAN_CAST_REFLECTIONS CAN_ATTACK SELECTABLE SCORE AIRCRAFT VEHICLE ASSAULT_AIRCRAFT ATTACK_NEEDS_LINE_OF_SIGHT LINE_OF_SIGHT_IGNORES_BUILDINGS NO_COLLIDE CAN_BE_FAVORITE_UNIT RELOAD_AIRCRAFT"
@@ -24,21 +23,18 @@
 		UnitCategory="AIRCRAFT"
 		WeaponCategory="MISSILE"
 		VoicePriority="148"
-		EditorName="ZOCOMOrca"
-		Description="Desc:ZOCOMOrca"
-		WorldMapArmoryUpgradesAllowed="Upgrade_CeramicArmor Upgrade_OrcaSensorPod"
+		EditorName="GDIOrca"
+		Description="Desc:GDIOrca"
+		WorldMapArmoryUpgradesAllowed="Upgrade_GDIHardpoints Upgrade_OrcaSensorPod"
 		TypeDescription="Type:GDIOrca"
 		ShockwaveResistance="100"
 		ReinvisibilityDelay="7s">
-		<DisplayName>Name:ZOCOMOrca</DisplayName>
+		<DisplayName
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIOrca</DisplayName>
 		<DisplayUpgrade>Upgrade_OrcaSensorPod</DisplayUpgrade>
-		<DisplayUpgrade>Upgrade_CeramicArmor</DisplayUpgrade>
+		<DisplayUpgrade id="ModuleTag_DisplayUpgradeGDIHardpoints">Upgrade_GDIHardpoints</DisplayUpgrade>
 		<ArmorSet
 			Armor="GDIOrcaArmor"
-			DamageFX="VehicleDamageFX" />
-		<ArmorSet
-			Conditions="PLAYER_UPGRADE"
-			Armor="ZOCOMOrcaCeramicArmor"
 			DamageFX="VehicleDamageFX" />
 		<LocomotorSet
 			Locomotor="BasicHelicopterTaxiLocomotor"
@@ -67,11 +63,11 @@
 						OpacityFadeInTime="3s"
 						OpacityPeak="1"
 						OpacityFadeOutTime="3s"
-						OpacityEnd="0" />					
+						OpacityEnd="0"/>						
 					<WeaponLaunchBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="fx_weapon" />
+						BoneName="Msl_pos" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -81,89 +77,14 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED USER_6">
+					ConditionsYes="DAMAGED">
 					<Model
 						Name="GUOrca_SKN" />
-					<Texture
-						Original="GUOrca_07"
-						New="GUOrca_UGCA" />
-					<Texture
-						Original="GUOrca_07_NRM"
-						New="GUOrca_UGCA_NRM" />
-					<Texture
-						Original="GUOrca_07_SPM"
-						New="GUOrca_UGCA_SPM" />
-					<ParticleSysBone
-						BoneName="FX_Rfan"
-						FXParticleSystemTemplate="orcadamagefire"
-						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FX_Rfan"
 						FXParticleSystemTemplate="orcadamagesmoke"
 						FollowBone="true" />
 				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED USER_6">
-					<Model
-						Name="GUOrca_SKN" />
-					<Texture
-						Original="GUOrca_07"
-						New="GUOrca_UGCA" />
-					<Texture
-						Original="GUOrca_07_NRM"
-						New="GUOrca_UGCA_NRM" />
-					<Texture
-						Original="GUOrca_07_SPM"
-						New="GUOrca_UGCA_SPM" />
-					<ParticleSysBone
-						BoneName="FX_Rfan"
-						FXParticleSystemTemplate="orcadamagesmoke"
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING USER_6">
-					<Model
-						Name="GUOrcaR_SKN" />
-					<Texture
-						Original="GUOrca_07D"
-						New="GUOrca_UGCA" />
-					<Texture
-						Original="GUOrca_07_NRM"
-						New="GUOrca_UGCA_NRM" />
-					<Texture
-						Original="GUOrca_07_SPM"
-						New="GUOrca_UGCA_SPM" />
-					<ParticleSysBone
-						BoneName="ROOTTRANSFORM"
-						FXParticleSystemTemplate="GDIDebrisSmallFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="ROOTTRANSFORM"
-						FXParticleSystemTemplate="GDIDebrisSmallFireDistortion"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="ROOTTRANSFORM"
-						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6">
-					<Model
-						Name="GUOrca_SKN" />
-					<Texture
-						Original="GUOrca_07"
-						New="GUOrca_UGCA" />
-					<Texture
-						Original="GUOrca_07_NRM"
-						New="GUOrca_UGCA_NRM" />
-					<Texture
-						Original="GUOrca_07_SPM"
-						New="GUOrca_UGCA_SPM" />
-				</ModelConditionState>
-				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
@@ -176,16 +97,6 @@
 						BoneName="FX_Rfan"
 						FXParticleSystemTemplate="orcadamagefire"
 						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_Rfan"
-						FXParticleSystemTemplate="orcadamagesmoke"
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
-					<Model
-						Name="GUOrca_SKN" />
 					<ParticleSysBone
 						BoneName="FX_Rfan"
 						FXParticleSystemTemplate="orcadamagesmoke"
@@ -360,7 +271,7 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
-			<AttributeModifierPoolUpdate 
+		<AttributeModifierPoolUpdate 
 				id="DefaultAttributeModifierPoolUpdate"/>
 			<SquishCollide
 				id ="DefaultSquishCollide"/>
@@ -399,7 +310,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic"/>
+				StanceTemplate="Generic" />
 			<LevelUpUpgrade
 				id="ModuleTag_LevelUpUpgrade_Veteran"
 				LevelCap="4"
@@ -438,7 +349,11 @@
 					ID="1">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="OrcaEchoCannon"  />
+						Template="GDIOrcaRocketWeapon" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="GDIOrcaHardpointsUpgradedRocketWeapon" 
+						ObjectStatus="WEAPON_UPGRADED_01" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<ModelConditionUpgrade
@@ -459,7 +374,7 @@
 				AddConditionFlags="USER_1">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
 			</ModelConditionUpgrade>
-	<!-- gravity mult of 30 is temporary -->
+      <!-- gravity mult of 30 is temporary -->
 			<Physics
 				id="ModuleTag_07"
 				GravityMultiplier="30" />
@@ -470,7 +385,12 @@
 				id="ModuleTag_ShowSensorPod"
 				ShowSubObjects="UG_PROBE">
 				<TriggeredBy>Upgrade_OrcaSensorPod</TriggeredBy>
-			</SubObjectsUpgrade>		
+			</SubObjectsUpgrade>
+			<SubObjectsUpgrade
+				id="ModuleTag_ShowHardpoints"
+				ShowSubObjects="UG_HARDPOINTS">
+				<TriggeredBy>Upgrade_GDIHardpoints</TriggeredBy>
+			</SubObjectsUpgrade>			
 			<OCLSpecialPower
 				id="ModuleTag_OCL"
 				SpecialPowerTemplate="SpecialPowerPulseScan"
@@ -515,6 +435,11 @@
 			<ReturnToProducerSpecialPower
 				id="ModuleTag_ReturnToProducerSpecialPower"
 				SpecialPowerTemplate="SpecialPowerReturnToProducer" />
+			<StatusBitsUpgrade
+				id="ModuleTag_UpgradeWeapon"
+				StatusToSet="WEAPON_UPGRADED_01">
+				<TriggeredBy>Upgrade_GDIHardpoints</TriggeredBy>
+			</StatusBitsUpgrade>
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="0s"
@@ -551,21 +476,10 @@
 				SoundToPlay="AudioEvent:GDI_Orca_SensorPodInstalled">
 				<TriggeredBy>Upgrade_OrcaSensorPod</TriggeredBy>
 			</AudioLoopUpgrade>
-			<ArmorUpgrade
-				id="ModuleTag_CeramicArmorUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE">
-				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
-			</ArmorUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ZOCOMFireHawkCeramicArmorUpgrade"
-				AddConditionFlags="USER_6">
-				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
-			</ModelConditionUpgrade>
 			<AudioLoopUpgrade 
-				id="ZOCOMCeramicArmorUpgradeSound" 
-				SoundToPlay="AudioEvent:GDI_Hammerhead_CeramicArmorUpgraded">
-				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
+				id="HardpointsUpgradeSound" 
+				SoundToPlay="AudioEvent:GDI_Airfield_hardPointsUpgrade">
+				<TriggeredBy>Upgrade_GDIHardpoints</TriggeredBy>
 			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
@@ -576,7 +490,7 @@
 				KeepsParkingSpaceWhenAirborne="true"
 				OutOfAmmoDamagePerSecond="1.5"
 				ReturnToBaseWhenVictimDead="true"
-				AILuaEventsList="ZOCOMOrcaFunctions">
+				AILuaEventsList="GDIOrcaFunctions">
 				<UnitAITargetChooserData
 					SympathyRange="100.0" />
 				<LockonInfo />
@@ -640,7 +554,7 @@
 			<NamedEntry
 				Sound="AudioEvent:GDI_Orca_VoiceLaunchSensorPod"
 				Name="VoiceSensorPod" />
-		<NamedEntry
+			<NamedEntry
 				Sound="AudioEvent:GDI_Orca_VoiceMoveHelopad"
 				Name="ReturnToProducer" />
 			<NamedEntry
@@ -657,19 +571,20 @@
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
-			EvaEventDamagedOwner="UnitUnderAttack"
+			EvaEventProductionStarted="UnitConstructionStarted" 
+			EvaEventDamagedOwner="UnitUnderAttack" 	
 			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
-			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"
-			EvaEventSecondDamageFarFromFirstScanRange="600"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
-			EvaEventAmbushed="UnitAmbushed"
-			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted"
+			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
+			EvaEventAmbushed="UnitAmbushed" 
+			EvaEventSecondDamageFarFromFirstScanRange="600"    
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted" 
 			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
 			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventProductionStarted="UnitConstructionStarted"
 			EvaEventBuildOnHold="BuildOnHold"
-			EvaEventBuildCancelled="BuildCancelled"
+			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventPromotedOwner="UnitPromoted" />
+			<!-- EvaEventSecondDamageFarFromFirstOwner="UnitUnderAttackAgain"  -->
 		<ShadowInfo
 			Type="VOLUME" 
 			MaxHeight="131"
@@ -677,9 +592,9 @@
 			OpacityFadeInTime="3s"
 			OpacityPeak="1"
 			OpacityFadeOutTime="3s"
-			OpacityEnd="0"/>
+			OpacityEnd="0" />
 		<VisionInfo
-			VisionRange="275"
-			ShroudClearingRange="325" />
+			VisionRange="250"
+			ShroudClearingRange="300" />
 	</GameObject>
 </AssetDeclaration>
