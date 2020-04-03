@@ -283,10 +283,14 @@
 1. Health, speed and weapon damage values were inherited from Black Hand pre TW 1.05
 	* Changed values to match Black Hand
 #### Flame Weaponry (+Tiberium Goo)
-1. New units that use flame weaponry and purifying flame will de-garrison units the instant it fires
-	* Added separate projectile to add delay to de-garrisoning
-2. Some units are missing garrison clearing effect
+1. Purifying Flame, Tiberium Goo and new units that use flame weaponry are missing garrison clearing effect as they inherit the base weapons before TW 1.05
 	* Added garrison clearing effect to affected units
+2. Purifying Flame, Tiberium Goo and new units that use flame weaponry will de-garrison units the instant it fires
+	* Added separate projectile to add delay to de-garrisoning
+		* This was an undocumented change for TW 1.05 relating to the addition of garrison clearing effects.
+3. Purifying Flame, Tiberium Goo and new units that use flame weaponry Reacquire targets differently to the base weapons use as they inherit the values before TW 1.05
+	* Changed ReAcquireDetailType to PER_CLIP
+		* This was an undocumented change for TW 1.05
 #### Cloaking Field
 1. Advanced Units have a damage reduction to ability except for Sub-factions
 	* Applied damage reduction to Sub-faction Advanced Units
