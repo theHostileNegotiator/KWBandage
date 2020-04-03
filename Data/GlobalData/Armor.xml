@@ -44,6 +44,27 @@
 			Damage="TIBERIUM"
 			Percent="0" />
 	</ArmorTemplate>
+	<!--Removed Directional Armor-->
+	<ArmorTemplate
+		id="NODSaboteurArmor"
+		SideDamageScalar="100"
+		RearDamageScalar="100">
+		<Armor
+			Damage="CANNON"
+			Percent="25" />
+		<Armor
+			Damage="ROCKET"
+			Percent="25" />
+		<Armor
+			Damage="GRENADE"
+			Percent="75" />
+		<Armor
+			Damage="GUN"
+			Percent="100" />
+		<Armor
+			Damage="SNIPER"
+			Percent="100"/>
+	</ArmorTemplate>
 	<!--Normalised Tiberium Infused Armor Gun Damage for Fanatic to unupgraded armor-->
 	<ArmorTemplate
 		id="NODFanaticArmor_TiberiumInfused">

@@ -203,6 +203,9 @@
 	* Included MOK Attack Bike to be targeted in special power
 3. Caputuring MOK Avatar Husk would spawn NOD Avatar instead of MOK Avatar
 	* Changed OCL to spawn MOK Avatar
+#### Saboteur
+1. Has directional armor allowing it to take extra damage from the side and back. Typically infantry do not have directional armor penalties
+	* Remove Directional Armor Penalty
 #### Tiberium Infusion
 1. Upgrade removes Militant Rockets and Fanatics extra GUN penalty damage
 	* Added the penalty damage to Tiberium Infusion Armor (Created new armor for Militant Rocket)
