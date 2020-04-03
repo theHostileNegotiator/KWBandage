@@ -142,6 +142,9 @@
 #### Armory
 1. If owning both GDI and ZOCOM armory and upgraded Composite Armor, subobject will be showed on both despite ZOCOM not having access. It also overlaps Field Suits subobject
 	* Removed Composite Armor upgrade references from ZOCOM Armory
+#### Orca
+1. When playing with Low LOD settings, Wings and Sensor Pod subobject is missing
+	* Fixed subobject bone reference for Sonic Cannon. In the Hierarchy system, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden
 #### FireHawk
 1. ZOCOM Firehawks would not display Stratofigher thrusters properly, especially when upgraded with Ceramic Armor
 	* Fixed Animations
