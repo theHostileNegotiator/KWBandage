@@ -11,16 +11,85 @@
 		- Veteran: Unit Cost * 1.3 (/SquadSize) -:- Unit Cost * 3
 		- Elite: Unit Cost * 1.6 (/SquadSize) -:- Unit Cost * 6
 		- Heroic: Unit Cost * 2 (/SquadSize) -:- Unit Cost * 9
+		* Objects Affected
+			* All Harvesters
+			* All Refineries
+			* All Tiberium Silos
+			* All Air Transports (V35 and Carryalls)
+			* All Epic Units and Corresponding Production Structure
+			* GDI/ST/ZOCOM Slingshot
+			* GDI/ST/ZOCOM Hammerhead
+			* GDI Shatterer
+			* GDI Zone Trooper
+			* GDI/ST/ZOCOM Power Plant
+			* ST Titan
+			* ST Wolverine
+			* ZOCOM Predator
+			* ZOCOM Zone Shatterer
+			* ZOCOM Orca
+			* ZOCOM Zone Raider
+			* NOD/MOK Air Support Structure
+			* NOD/BH/MOK Reckoner
+			* NOD/MOK Commando
+			* NOD/BH Flame Tank
+			* NOD/BH/MOK Specter
+			* NOD/BH/MOK Obelisk of Light
+			* NOD/BH/MOK Raider Buggy
+			* NOD/MOK Stealth Tank
+			* BH Confessor Cabal
+			* BH Mantis
+			* MOK Awakened
+			* MOK Enlightened
+			* Scrin Mechapede
+			* Scrin Mastermind
+			* Scrin/R17/T59 Mothership
+			* Scrin/R17/T59 Disintegrator
+			* Scrin/R17/T59 Ravager
+			* Scrin/R17/T59 Storm Column
+			* R17 Growth Stimulator
+			* R17 Shard Walker
+			* T59 Prodigy
+			* T59 Cultist
 #### Snipers Spotting for bombardment
 1. Veteran and Subfaction Snipers cannot spot for bombardment when garrisoned
 	* Include Veteran and Subfaction Snipers in MemberTemplateStatusInfo in garrison HordeContain Modules
 #### Upgrade Sounds
 1. Units will either play sounds when upgraded with something they can't use or will not play sounds when upgraded
 	* Add or remove "audioloopupgrade"
+		* Objects Affected
+			* GDI/ST/ZOCOM Slingshot (- Railgun)
+			* GDI Shatterer (- Railgun)
+			* GDI/ST Orca (+ Hardpoints)
+			* GDI/ST Firehawk (+ Hardpoints)
+			* ZOCOM Shatterer (- Railgun)
+			* ZOCOM Rifleman (+ Tiberium Field Suits)
+			* ZOCOM Missile Squad (+ Tiberium Field Suits)
+			* ZOCOM Grenadier Squad (+ Tiberium Field Suits)
+			* ZOCOM Orca (+ Ceramic Armor)
+			* ZOCOM Hammerhead (+ Ceramic Armor)
+			* ZOCOM Firehawk (+ Ceramic Armor)
+			* NOD/MOK Avatar (- Purifying Flame)
+			* NOD Black Hand (- Purifying Flame)
+			* NOD Flame Tank (- Purifying Flame)
+			* NOD/MOK Militant Rocket Squad (- Black Disciple)
+			* BH Shredder Turret (+ Charged Particle Beams)
+			* MOK Shredder Turret (+ Super Charged Particle Beams)
+			* MOK Enlightened (- Railgun, + Super Charged Particle Beams)
+			* MOK Militant Rocket Squad (- Confessor, - Black Disciple)
+			* Scrin/R17/T59 Mechapede (- Forcefield Generator)
 #### Upgraded Textures
-1. Units when upgraded would not use the corresponding Specular and NormalMap Texture
+1. Units when upgraded would not use the corresponding Specular, NormalMap or House Color Texture
 	* Added texture change for Specular and NormalMap Textures
 		* Created New Specular Maps for Ceramic Armor Orca and Firehawk
+		* Objects Affected
+			* ST Titan (Adaptive Armor)
+			* ST Mammoth (Adaptive Armor)
+			* ZOCOM Orca (Ceramic Armor)
+			* ZOCOM Firehawk (Ceramic Armor)
+			* ZOCOM Hammerhead (Ceramic Armor)
+			* MOK Engineer (Cybernetic Legs)
+			* Tiberium Trooper (Cybernetic Legs)
+			* MOK Enlightened (Cybernetic Legs)
 2. Units may not use Tiberium Core Missile Upgrade DAMAGED texture
 	* Added texture change for Damaged State
 #### Sonic Repulsion Field and Laser Fencing
@@ -118,7 +187,7 @@
 	* Fixed leash range to 100
 2. Repair Decal radius was not representative of repair radius
 	* Fixed Repair size to 215
-3. Repair Drone would not keep up the the MRT when moving
+3. Repair Drone would not keep up with the MRT when moving
 	* Increased speed of repair drone so that it can keep up with the MRT, including when transported with OX Transport
 4. Repair Drone would repair Structures, Air units and funnily enough Infantry
 	* Removed ability to repair Structures, Air units and Infantry
@@ -367,9 +436,7 @@
 #### Mechapede
 1. Hexapod recycling is not proportional to the segment cost
 	* Change BuildCost (and BuildTime appropriately) from 1400 to 100
-2. Sound plays when upgraded Forcefield Generator despite not having the upgrade
-	* Removed Audio Upgrade
-3. Subfactions use Scrin Mechapede Members instead of their own
+2. Subfactions use Scrin Mechapede Members instead of their own
 	* Create new members for each faction
 #### Stormrider
 1. Weapon has reduced damage applied to 'light' units, but not to sub faction units

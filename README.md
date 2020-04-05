@@ -11,3 +11,7 @@
  
  Bug fixes are detailed in the PatchNotes.txt and any known issues that have not been fixed in this package are detailed in KnownIssues.txt
  
+ ### Required Files
+ WrathEd
+ Skirmish AI Schemas: https://forums.cncnz.com/topic/21564-kanes-wrath-skirmish-ai-schemas/
+ 
