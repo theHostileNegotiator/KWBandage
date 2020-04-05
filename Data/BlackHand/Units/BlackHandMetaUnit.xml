@@ -890,7 +890,11 @@
 						Name="FXInvisBone" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT"></AnimationState>
+					ParseCondStateType="PARSE_DEFAULT">
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="AFFECTED_BY_EMP"/>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_A WEAPONSLOTID_03">
@@ -929,7 +933,11 @@
 						Name="FXInvisBone" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT"></AnimationState>
+					ParseCondStateType="PARSE_DEFAULT">
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="AFFECTED_BY_EMP"/>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_A WEAPONSLOTID_02">

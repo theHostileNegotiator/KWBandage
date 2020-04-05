@@ -202,10 +202,12 @@
 #### Avatar
 1. Particle System when in REALLYDAMAGED mode was not shown when using Kane's Edition Skin
 	* Fixed Model Condition States
-2. Avatar could not comandeer MOK Attack Bike technology
+2. Could not comandeer MOK Attack Bike technology
 	* Included MOK Attack Bike to be targeted in special power
 3. Caputuring MOK Avatar Husk would spawn NOD Avatar instead of MOK Avatar
 	* Changed OCL to spawn MOK Avatar
+4. Flame weapon particle effects would still be used when EMPed
+	* Added new state to disable particle effects when EMPed
 #### Saboteur
 1. Has directional armor allowing it to take extra damage from the side and back. Typically infantry do not have directional armor penalties
 	* Remove Directional Armor Penalty
@@ -257,6 +259,8 @@
 	* Removed Avatar sound
 2. Flame weapon would not display Purifying Flame upgrade
 	* Added Upgraded Flame Tank texture
+3. Flame weapon particle effects would still be used when EMPed
+	* Added new state to disable particle effects when EMPed
 #### Leadership Buff (Confessor, Confessor Cabal, Purifier, Voice of Kane)
 1. Has Fire Rate buff despite being removed in TW 1.09
 	* Removed Rate of Fire bonus
@@ -266,6 +270,8 @@
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze
 	* Added NOD Confesor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
+2. Flame weapon particle effects would still be when after EMPed
+	* Added new state to disable particle effects when EMPed
 #### Mantis
 1. Turret is not effective at tracking Air Units, often misfiring
 	* Improved Turret Settings to match Slingshot
