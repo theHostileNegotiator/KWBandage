@@ -109,4 +109,26 @@
 			Damage="SNIPER"
 			Percent="100"/>	
 	</ArmorTemplate>
+	<!--New Shield Armor for Harvester-->
+	<ArmorTemplate
+		id="AlienHarvesterArmorShieldBodyEnabled"
+		Default="100"
+		SideDamageScalar="100"
+		RearDamageScalar="100">
+		<Armor
+			Damage="SNIPER"
+			Percent="1" />
+		<Armor
+			Damage="CANNON"
+			Percent="50" />
+		<Armor
+			Damage="ROCKET"
+			Percent="50" />
+		<Armor
+			Damage="GRENADE"
+			Percent="50" />
+		<Armor
+			Damage="GUN"
+			Percent="50" />
+	</ArmorTemplate>
 </AssetDeclaration>

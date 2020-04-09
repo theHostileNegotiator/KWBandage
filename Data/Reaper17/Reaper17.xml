@@ -7,6 +7,7 @@
 		<Include type="all" source="Units/Reaper17Buzzers.xml" />
 		<Include type="all" source="Units/Reaper17CustomizableVehicle.xml" />	
 		<Include type="all" source="Units/Reaper17EradicatorHexapod.xml" />	
+		<Include type="all" source="Units/Reaper17Harvester.xml" />	
 		<Include type="all" source="Units/Reaper17MillipedeBody.xml" />	
 		<Include type="all" source="Units/Reaper17MillipedeHead.xml" />	
 		<Include type="all" source="Units/Reaper17RazorDrones.xml" />

@@ -268,6 +268,9 @@
 #### Attack Bike
 1. The rockets fired would only come out of one rocket pod
 	* Changed bone names so burst would alternate between pods
+#### Harvester
+1. Black Hand variant could not be cloaked with NOD Cloaking Field special power
+	* Restored ability for it to be cloaked and defaulted parameters
 #### Avatar
 1. Particle System when in REALLYDAMAGED mode was not shown when using Kane's Edition Skin
 	* Fixed Model Condition States
@@ -408,6 +411,12 @@
 #### Seeker
 1. Will prioritise infantry over aircraft or vehicles
 	* Changed Weapon Category from GUN to MISSILE
+#### Harvester
+1. Will play generic EVA event when attacked instead of a unique Harvester EVA event
+	* Changed EVA event for Harvester Under Attack
+2. Reaper 17 has higher health value under the shields
+	* Normalised health from 6000 to 5000
+		* Reduced shield cooldown from 120 to 100 seconds to further match behaviour with Attenuated Forcefield
 #### Corrupter
 1. Healing ability may not work on certain sub faction units (such as the Explorer)
 	* Added missing units into the ability
