@@ -446,12 +446,6 @@
 				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
 			</LevelUpUpgrade>
 			<!-- Nod Cloaking Field -->
-			<InvisibilityUpdate
-				id="ModuleTag_Invisibility"
-				UpdatePeriod="0.5s">
-				<InvisibilityNugget />
-				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
-			</InvisibilityUpdate>
 			<StealthUpgrade
 				id="ModuleTag_InvisibilityTrigger">
 				<TriggeredBy>Upgrade_CloakingFieldInvisibility</TriggeredBy>
@@ -585,8 +579,6 @@
 				id="ModuleTag_Body"
 				MaxHealth="5200" />
 		</Body>
-		<EvaEvents
-			EvaEventDamagedOwner="HarvesterUnderAttack" />
 		<Geometry
 			IsSmall="false">
 			<Shape
@@ -613,15 +605,10 @@
 			<AudioEntry Sound="AudioEvent:HarvesterMoveStart" AudioType="soundMoveStart" />
 			<AudioEntry Sound="Multisound:HarvesterAmbientLoopMS" AudioType="soundAmbient" />
 		</AudioArraySound>
-		<ShadowInfo
-			Type="VOLUME" />
-		<VisionInfo
-			VisionRange="150"
-			ShroudClearingRange="320" />
 		<EvaEvents
-			EvaEventDieOwner="UnitLost"
+			EvaEventDieOwner="HarvesterLost"
 			EvaEventProductionStarted="UnitConstructionStarted" 
-			EvaEventDamagedOwner="UnitUnderAttack" 	
+			EvaEventDamagedOwner="HarvesterUnderAttack" 	
 			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
 			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
 			EvaEventAmbushed="UnitAmbushed" 
@@ -632,8 +619,12 @@
 			EvaEventAvailableForProduction="NewConstructionOptions"
 			EvaEventBuildOnHold="BuildOnHold"
 			EvaEventBuildCancelled="BuildCancelled" 
-			EvaEventPromotedOwner="UnitPromoted"
-			EvaEventDieOwner="HarvesterLost" />
+			EvaEventPromotedOwner="UnitPromoted" />
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="150"
+			ShroudClearingRange="320" />
 		<CrusherInfo
 			CrusherLevel="1" 
 			CrushableLevel="2" />
