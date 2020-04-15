@@ -98,7 +98,7 @@
 					<Script>
 						CurDrawableHideSubObject("UGRAIL_BARREL")
 						CurDrawableHideSubObject("UGRAIL_01")
-						CurDrawableHideSubObject("UGRAILACCELERATOR_BARREL")
+						CurDrawableHideSubObject("UGRAILACCELERATOR_BARREL01")
 						CurDrawableHideSubObject("UGRAILACCELERATOR_01")
 					</Script>
 				</AnimationState>
