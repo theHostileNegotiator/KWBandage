@@ -1017,6 +1017,49 @@
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
+	
+	<WeaponTemplate
+		id="GDIGolemCannonRailgun"
+		Name="GDIGolemCannonRailgun"
+		AttackRange="350.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="800"
+		WeaponRecoil="0d"
+		FireSound="Multisound:GDI_GuardianCannon_FireUpgradedMS"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		ShotsPerBarrel="1"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="0.8s"
+			MaxSeconds="0.8s" />
+		<ClipReloadTime
+			MinSeconds="1.5s"
+			MaxSeconds="1.5s" />
+
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.75s"
+				LaserId="0"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="670.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" >
+			</DamageNugget>
+
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="40"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
 
 <!--Added reloading sound-->	
 	<WeaponTemplate

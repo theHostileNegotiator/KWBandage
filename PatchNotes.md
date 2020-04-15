@@ -127,14 +127,18 @@
 #### Dig In Structure
 1. Advanced units from the Base Factions can not garrison in structure whereas Sub Factions can
 	* Exclude Sub Faction advanced units from garrison Dig In Structure
-#### Battle Base
-1. Cannons rate of fire and projectile speed is based of TW version. Guardian Cannon ROF and damage was changed between TW and KW
-	* Increased Battle Base cannons ROF and decreased damage to better represent current Guardian Cannon
 #### Guardian Cannon
 1. GDI railgun upgrade is missing in the upgrade icon area and description
 	* Added display upgrade and changed the description to add the detail
 2. ZOCOM plays railgun upgrade sound
 	* Removed audioloopupgrade for Railguns
+3. When affected by Railgun Accelerator, fire rate is too fast for recoil animation
+	* Reduced Rate of Fire overall cooldown from 1.8s to 2.3s and increased damage proportionaly to from 525 to 670
+#### Battle Base
+1. Cannons rate of fire and projectile speed is based of TW version. Guardian Cannon ROF and damage was changed between TW and KW
+	* Increased Battle Base cannons ROF and decreased damage to better represent current Guardian Cannon
+2. Railgun Rate of Fire
+	* Rate of Fire reduced and damage increased due to Guardian Cannon changes
 #### Hardpoints (And ZOCOM Orca Cannon)
 1. When aircraft with Harpoints would dock to reload, sound would not play
 	* Added sound effects to reload
