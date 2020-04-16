@@ -622,6 +622,81 @@
 	</ExperienceLevelTemplate>
 
 	<ExperienceLevelTemplate
+		id="AlienRazorDroneSquadExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="60"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>AlienRazorDroneSquad</Target>
+		<Target>AlienRazorDrones</Target>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="AlienRazorDroneSquadExperienceLevel_2"
+		Prerequisite="AlienRazorDroneSquadExperienceLevel_1"
+		RequiredExperience="900"
+		ExperienceAward="78"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="2">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
+		<LevelUpFxList
+			FxList="FX_AlienLevelUp_01" />
+		<Target>AlienRazorDroneSquad</Target>
+		<Target>AlienRazorDrones</Target>
+		<AttributeModifier>Unit_Veteran</AttributeModifier>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="AlienRazorDroneSquadExperienceLevel_3"
+		Prerequisite="AlienRazorDroneSquadExperienceLevel_2"
+		RequiredExperience="1800"
+		ExperienceAward="96"
+		ModelConditionState="SPECIAL_CHEERING"		
+		Rank="3">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
+		<LevelUpFxList
+			FxList="FX_AlienLevelUp_02" />
+		<Target>AlienRazorDroneSquad</Target>
+		<Target>AlienRazorDrones</Target>
+		<AttributeModifier>Unit_Elite</AttributeModifier>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
 		id="AlienRazorDroneSquadExperienceLevel_4"
 		Prerequisite="AlienRazorDroneSquadExperienceLevel_3"
 		RequiredExperience="2700"
@@ -637,8 +712,6 @@
 			FxList="FX_AlienLevelUp_03" />
 		<Target>AlienRazorDroneSquad</Target>
 		<Target>AlienRazorDrones</Target>
-		<Target>Reaper17RazorDroneSquad</Target>
-		<Target>Reaper17RazorDrones</Target>
 		<AttributeModifier>Unit_Heroic</AttributeModifier>
 		<Decal
 			Texture="decal_A_level1"
@@ -4523,6 +4596,109 @@
 			OpacityMin="80"
 			OpacityMax="100"
 			MinRadius="150"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	
+	<ExperienceLevelTemplate
+		id="Reaper17RazorDroneSquadExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="60"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>Reaper17RazorDroneSquad</Target>
+		<Target>Reaper17RazorDrones</Target>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="Reaper17RazorDroneSquadExperienceLevel_2"
+		Prerequisite="Reaper17RazorDroneSquadExperienceLevel_1"
+		RequiredExperience="900"
+		ExperienceAward="78"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="2">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
+		<LevelUpFxList
+			FxList="FX_AlienLevelUp_01" />
+		<Target>Reaper17RazorDroneSquad</Target>
+		<Target>Reaper17RazorDrones</Target>
+		<AttributeModifier>Unit_Veteran</AttributeModifier>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="Reaper17RazorDroneSquadExperienceLevel_3"
+		Prerequisite="Reaper17RazorDroneSquadExperienceLevel_2"
+		RequiredExperience="1800"
+		ExperienceAward="96"
+		ModelConditionState="SPECIAL_CHEERING"		
+		Rank="3">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
+		<LevelUpFxList
+			FxList="FX_AlienLevelUp_02" />
+		<Target>Reaper17RazorDroneSquad</Target>
+		<Target>Reaper17RazorDrones</Target>
+		<AttributeModifier>Unit_Elite</AttributeModifier>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="Reaper17RazorDroneSquadExperienceLevel_4"
+		Prerequisite="Reaper17RazorDroneSquadExperienceLevel_3"
+		RequiredExperience="2700"
+		ExperienceAward="120"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="4">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_AlienLevelUp_03" />
+		<Target>Reaper17RazorDroneSquad</Target>
+		<Target>Reaper17RazorDrones</Target>
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
 			MaxRadius="200"
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>

@@ -57,55 +57,121 @@
 				RecoilSettleSpeed="3.0">
 				<ModelConditionState 
 					ParseCondStateType="PARSE_DEFAULT">
-					<Model Name="GUVehicleF_SKN" />
-					<WeaponFireFXBone WeaponSlotID="1" WeaponSlotType="PRIMARY_WEAPON" BoneName="FXMUZZLE" />
-					<WeaponRecoilBone WeaponSlotID="1" WeaponSlotType="PRIMARY_WEAPON" BoneName="FXMuzzle" />
-					<WeaponMuzzleFlash WeaponSlotID="1" WeaponSlotType="PRIMARY_WEAPON" BoneName="MuzzleFlash_" />
-					<WeaponLaunchBone WeaponSlotID="1" WeaponSlotType="PRIMARY_WEAPON" BoneName="FXMUZZLE" />
-					<Turret TurretNameKey="Turret" TurretPitch="B_Tilt" TurretID="1" />
+					<Model 
+						Name="GUVehicleF_SKN" />
+					<WeaponFireFXBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXMUZZLE" />
+					<WeaponRecoilBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXMuzzle" />
+					<WeaponMuzzleFlash
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="MuzzleFlash_" />
+					<WeaponLaunchBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXMUZZLE" />
+					<Turret
+						TurretNameKey="Turret"
+						TurretPitch="B_Tilt"
+						TurretID="1" />
 				</ModelConditionState>
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="REALLYDAMAGED USER_8">
-					<Model Name="GUVehicleFAdAr" />
-					<Texture Original="GUVehicleF" New="GUVehicleF_AAUG" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedFire" FollowBone="true" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedFireDistortion" FollowBone="true" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedSmoke" FollowBone="true" />
+					<Model
+						Name="GUVehicleFAdAr" />
+					<Texture
+						Original="GUVehicleF"
+						New="GUVehicleF_AAUG" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedSmoke"
+						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="USER_8">
-					<Model Name="GUVehicleFAdAr" />
-					<Texture Original="GUVehicleF" New="GUVehicleF_AAUG" />
+					<Model 
+						Name="GUVehicleFAdAr" />
+					<Texture 
+						Original="GUVehicleF"
+						New="GUVehicleF_AAUG" />
 				</ModelConditionState>
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="REALLYDAMAGED USER_7">
-					<Model Name="GUVehicleF_SKN" />
-					<Texture Original="GUVehicleF" New="GUVehicleF_AAUG" />
-					<Texture Original="GUVehicleF_SM" New="GUVehicleF_AAUG_SM" />
-					<Texture Original="GUVehicleF_NM" New="GUVehicleF_AAUG_NM" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedFire" FollowBone="true" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedFireDistortion" FollowBone="true" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedSmoke" FollowBone="true" />
+					<Model
+						Name="GUVehicleF_SKN" />
+					<Texture
+						Original="GUVehicleF"
+						New="GUVehicleF_AAUG" />
+					<Texture
+						Original="GUVehicleF_SM"
+						New="GUVehicleF_AAUG_SM" />
+					<Texture
+						Original="GUVehicleF_NM"
+						New="GUVehicleF_AAUG_NM" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedSmoke"
+						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="USER_7">
-					<Model Name="GUVehicleF_SKN" />
-					<Texture Original="GUVehicleF" New="GUVehicleF_AAUG" />
-					<Texture Original="GUVehicleF_SM" New="GUVehicleF_AAUG_SM" />
-					<Texture Original="GUVehicleF_NM" New="GUVehicleF_AAUG_NM" />
+					<Model
+						Name="GUVehicleF_SKN" />
+					<Texture
+						Original="GUVehicleF"
+						New="GUVehicleF_AAUG" />
+					<Texture
+						Original="GUVehicleF_SM"
+						New="GUVehicleF_AAUG_SM" />
+					<Texture
+						Original="GUVehicleF_NM"
+						New="GUVehicleF_AAUG_NM" />
 				</ModelConditionState>
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="REALLYDAMAGED">
-					<Model Name="GUVehicleF_SKN" />
-					<Texture Original="GUVehicleF" New="GUVehicleF_D" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedFire" FollowBone="true" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedFireDistortion" FollowBone="true" />
-					<ParticleSysBone BoneName="VF_LLeg03" FXParticleSystemTemplate="GDIPredDamagedSmoke" FollowBone="true" />
+					<Model
+						Name="GUVehicleF_SKN" />
+					<Texture
+						Original="GUVehicleF"
+						New="GUVehicleF_D" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIPredDamagedSmoke"
+						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -128,7 +194,8 @@
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="FORMATION_PREVIEW">
-					<Model Name="GUVehicleF_FP" />
+					<Model
+						Name="GUVehicleF_FP" />
 				</ModelConditionState>
 				<AnimationState 
 					ParseCondStateType="PARSE_DEFAULT" 
@@ -242,9 +309,20 @@
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="MOVING REALLYDAMAGED USER_8"
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
-					<Animation AnimationName="GUVehicleF_RUND" AnimationMode="LOOP" Distance="45" />
-					<FXEvent Frame="22" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_rfoot2" />
-					<FXEvent Frame="56" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_lfoot2" />
+					<Animation
+						AnimationName="GUVehicleF_RUND"
+						AnimationMode="LOOP"
+						Distance="45" />
+					<FXEvent
+						Frame="22"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_rfoot2" />
+					<FXEvent
+						Frame="56"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_lfoot2" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_built" then
@@ -256,9 +334,20 @@
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="MOVING USER_8" 
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
-					<Animation AnimationName="GUVehicleF_RUNA" AnimationMode="LOOP" Distance="45" />
-					<FXEvent Frame="22" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_rfoot2" />
-					<FXEvent Frame="56" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_lfoot2" />
+					<Animation
+						AnimationName="GUVehicleF_RUNA"
+						AnimationMode="LOOP"
+						Distance="45" />
+					<FXEvent
+						Frame="22"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_rfoot2" />
+					<FXEvent
+						Frame="56"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_lfoot2" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_built" then
@@ -510,9 +599,20 @@
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="MOVING REALLYDAMAGED USER_7"
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
-					<Animation AnimationName="GUVehicleF_RUND" AnimationMode="LOOP" Distance="45" />
-					<FXEvent Frame="22" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_rfoot2" />
-					<FXEvent Frame="56" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_lfoot2" />
+					<Animation
+						AnimationName="GUVehicleF_RUND"
+						AnimationMode="LOOP"
+						Distance="45" />
+					<FXEvent
+						Frame="22"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_rfoot2" />
+					<FXEvent
+						Frame="56"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_lfoot2" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_built" then
@@ -524,9 +624,20 @@
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="MOVING USER_7" 
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
-					<Animation AnimationName="GUVehicleF_RUNA" AnimationMode="LOOP" Distance="45" />
-					<FXEvent Frame="22" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_rfoot2" />
-					<FXEvent Frame="56" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_lfoot2" />
+					<Animation
+						AnimationName="GUVehicleF_RUNA"
+						AnimationMode="LOOP"
+						Distance="45" />
+					<FXEvent
+						Frame="22"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_rfoot2" />
+					<FXEvent
+						Frame="56"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_lfoot2" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_built" then
@@ -778,9 +889,20 @@
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="MOVING REALLYDAMAGED"
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
-					<Animation AnimationName="GUVehicleF_RUND" AnimationMode="LOOP" Distance="45" />
-					<FXEvent Frame="22" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_rfoot2" />
-					<FXEvent Frame="56" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_lfoot2" />
+					<Animation
+						AnimationName="GUVehicleF_RUND"
+						AnimationMode="LOOP"
+						Distance="45" />
+					<FXEvent
+						Frame="22"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_rfoot2" />
+					<FXEvent
+						Frame="56"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_lfoot2" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_built" then
@@ -792,9 +914,20 @@
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="MOVING" 
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
-					<Animation AnimationName="GUVehicleF_RUNA" AnimationMode="LOOP" Distance="45" />
-					<FXEvent Frame="22" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_rfoot2" />
-					<FXEvent Frame="56" FireWhenSkipped="true" Effect="FX_GDITitFootprint" Bone="vf_lfoot2" />
+					<Animation
+						AnimationName="GUVehicleF_RUNA"
+						AnimationMode="LOOP"
+						Distance="45" />
+					<FXEvent
+						Frame="22"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_rfoot2" />
+					<FXEvent
+						Frame="56"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_lfoot2" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_built" then
@@ -1054,9 +1187,17 @@
 			</WeaponSetUpdate>
       <Physics id="ModuleTag_04" />
 			<ProductionUpdate id="ModuleTag_08" />
-			<SlowDeath id="ModuleTag_Death" SinkDelay="3s" SinkRate="1.5" DestructionDelay="7.5s"> 
-				<DieMuxData DeathTypes="ALL" DeathTypesForbidden="TOPPLED" /> 
-				<Sound Type="INITIAL" List="GDI_Generic_VoiceDieMS" />
+			<SlowDeath
+				id="ModuleTag_Death"
+				SinkDelay="3s"
+				SinkRate="1.5"
+				DestructionDelay="7.5s"> 
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="TOPPLED" /> 
+				<Sound
+					Type="INITIAL"
+					List="GDI_Generic_VoiceDieMS" />
 			</SlowDeath>
 			<FXListBehavior 
 				id="ModuleTag_FXList"> 
@@ -1117,11 +1258,15 @@
 				id="ModuleTag_AI" 
 				AutoAcquireEnemiesWhenIdle="YES" 
 				AILuaEventsList="SteelTalonsTitanFunctions">
-				<UnitAITargetChooserData CanPickDynamicTargets="false" SympathyRange="100.0" />
+				<UnitAITargetChooserData
+					CanPickDynamicTargets="false"
+					SympathyRange="100.0" />
 			</AIUpdate>
 		</AI>
 		<Body>
-			<ActiveBody id="ModuleTag_02" MaxHealth="3800" />
+			<ActiveBody
+				id="ModuleTag_02"
+				MaxHealth="3800" />
 		</Body>
 		<ClientBehaviors>
 			<AnimationSoundClientBehavior id="ModuleTag_ASCB">

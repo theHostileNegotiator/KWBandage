@@ -34,4 +34,15 @@
 		<Modifier Type="SUPPRESSABILITY" Value="150"/>
 		<Modifier Type="ARMOR" Value="75%" />
 	</AttributeModifier>
+	
+<!--Hide Confessor or Black Disciple when upgrades are triggered while garrisoned-->
+	<AttributeModifier
+		id="AttributeModifier_Garrisoned"
+		Category="NONE"
+		Duration="1.55s"
+		ModelConditionsSet="INSIDE_GARRISON">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="RANGE" Value="100%"/>
+		<Modifier Type="VISION" Value="200"/>
+	</AttributeModifier>
 </AssetDeclaration>
