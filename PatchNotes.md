@@ -284,6 +284,13 @@
 	* Changed OCL to spawn MOK Avatar
 4. Flame weapon particle effects would still be used when EMPed
 	* Added new state to disable particle effects when EMPed
+#### Specter
+1. Unit will rotate body to fire after deployed
+	* Remove requirement RotateToTargetWhenAiming
+2. Black Hand variant could not be cloaked with NOD Cloaking Field special power
+	* Restored ability for it to be cloaked and defaulted parameters
+3. Black Hand will randomly play NOD voice sounds referencing stealth. (This is due to inheriting NOD Specter and not removing sounds)
+	* Removed NOD variant sound
 #### Saboteur
 1. Has directional armor allowing it to take extra damage from the side and back. Typically infantry do not have directional armor penalties
 	* Remove Directional Armor Penalty
@@ -352,7 +359,9 @@
 1. Turret is not effective at tracking Air Units, often misfiring
 	* Improved Turret Settings to match Slingshot
 2. Unit could not be cloaked with NOD Cloaking Field special power
-	* Restored ability for it to be cloaked and removed unique Stealth Tank parameters
+	* Restored ability for it to be cloaked and defaulted parameters
+3. Damage values were inherited from Stealth Tank TW 1.09. Stealth Tank damage was reduced in KW 1.00.
+	* Reduced Damage of Rockets to match the current Stealth Tank values
 #### Shadow Strike Team
 1. Marked of Kane Strike team spawns NOD Shadows instead of MOK Shadows
 	* Created new support power for MOK Shadows

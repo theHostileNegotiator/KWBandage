@@ -20,6 +20,7 @@
 		<Include type="all" source="Units/NODMCV.xml" />	
 		<Include type="all" source="Units/NODMetaUnit.xml" />	
 		<Include type="all" source="Units/NODMilitantRocket.xml" />	
+		<Include type="all" source="Units/NODMobileArtillery.xml" />
 		<Include type="all" source="Units/NODShadow.xml" />	
 		<Include type="all" source="Units/NODStealthTank.xml" />	
 	</Includes>

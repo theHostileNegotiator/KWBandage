@@ -15,6 +15,7 @@
 		<Include type="all" source="Units/BlackHandCustomWarmech.xml" />
 		<Include type="all" source="Units/BlackHandCustomWarmechHusk.xml" />
 		<Include type="all" source="Units/BlackHandHarvester.xml" />
+		<Include type="all" source="Units/BlackHandMobileArtillery.xml" />
 		<Include type="all" source="Units/BlackHandMCV.xml" />	
 		<Include type="all" source="Units/BlackHandMetaUnit.xml" />	
 		<Include type="all" source="Units/BlackHandMilitantRocket.xml" />

@@ -14,6 +14,7 @@
 		<Include type="all" source="Units/MarkedOfKaneMCV.xml" />
 		<Include type="all" source="Units/MarkedOfKaneMetaUnit.xml" />
 		<Include type="all" source="Units/MarkedOfKaneMilitantRocket.xml" />
+		<Include type="all" source="Units/MarkedOfKaneMobileArtillery.xml" />
 		<Include type="all" source="Units/MarkedOfKaneImprovedCyborgInfantry.xml" />
 		<Include type="all" source="Units/MarkedOfKaneImprovedCyborgInfantrySquad.xml" />
 		<Include type="all" source="Units/MarkedOfKaneSaboteur.xml" />

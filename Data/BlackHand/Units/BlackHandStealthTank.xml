@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xai="uri:ea.com:eala:asset:instance">
 <!--Improved Turret Settings to match Slingshot. Now more effective against air, reducing missfires when aircraft flies overhead-->
-<!--Restored ability to be cloaked from cloaking field, removed certain Stealth Tank parameters-->
+<!--Restored ability to be cloaked from cloaking field, defaulted certain parameters-->
 <!--Changed so it uses only one model between no upgrades and upgrade-->
 <!--Added Damaged TibCore Texture-->
 	<Includes>
@@ -433,12 +433,6 @@
 				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
 			</LevelUpUpgrade>
 			<!-- Nod Cloaking Field -->
-			<InvisibilityUpdate
-				id="ModuleTag_Invisibility"
-				UpdatePeriod="0.5s">
-				<InvisibilityNugget />
-				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
-			</InvisibilityUpdate>
 			<StealthUpgrade
 				id="ModuleTag_InvisibilityTrigger">
 				<TriggeredBy>Upgrade_CloakingFieldInvisibility</TriggeredBy>
@@ -531,6 +525,13 @@
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"
 				DetectionRange="250" />	
+			<!-- Restore Default Cloaking Field Stealth Upgrade -->
+			<InvisibilityUpdate
+				id="ModuleTag_Invisibility"
+				UpdatePeriod="0.5s">
+				<InvisibilityNugget />
+				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
+			</InvisibilityUpdate>
 		</Behaviors>
 		<AI>
 			<AIUpdate
