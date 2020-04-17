@@ -375,7 +375,7 @@
 			</RepairUpdate>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_GenericNODBuildingSuicide" >
+				CreationList="OCL_GenericBlackHandBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 			<EngineerContain

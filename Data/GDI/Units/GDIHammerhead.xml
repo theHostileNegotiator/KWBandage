@@ -120,10 +120,10 @@
 						BoneName="FX_Lfan"
 						FXParticleSystemTemplate="OrcaDustDesert"
 						FollowBone="true" />
-          <ParticleSysBone
-            BoneName="FX_Rfan"
-            FXParticleSystemTemplate="OrcaDustDesert"
-             FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_Rfan"
+						FXParticleSystemTemplate="OrcaDustDesert"
+						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -238,13 +238,13 @@
 						AnimationMode="ONCE"
 						AnimationBlendTime="15" />
 				</AnimationState>
-        <AnimationState
-          ParseCondStateType="PARSE_NORMAL"
-          ConditionsYes="ATTACKING">
-          <Animation
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="ATTACKING">
+					<Animation
 						AnimationName="GUHamhead_ATKA"
-            AnimationMode="LOOP"/>
-        </AnimationState>
+						AnimationMode="LOOP"/>
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING TURN_LEFT_HIGH_SPEED">
