@@ -31,14 +31,26 @@
   </AIStrategicStateDefinition>
 
   <AIStrategicStateDefinition
-    id="CM_2_7_ZOCOMOptimalAttack"
+    id="CM_2_7_ZOCOMUnitKill_Easy"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
+      <ConstantHeuristic Weight="1.0"/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Structure"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
-      <TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="Unit"/>
+    <Tactic Tactic="SimpleAttack" TargetType="Unit">
+      <TeamTemplate MinUnits="6" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    </Tactic>
+  </AIStrategicStateDefinition>
+  
+  <AIStrategicStateDefinition
+    id="CM_2_7_ZOCOMUnitKill_Medium"
+    UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <ConstantHeuristic Weight="1.0"/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="Unit"/>
+    <Tactic Tactic="SimpleAttack" TargetType="Unit">
+      <TeamTemplate MinUnits="8" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
  
@@ -59,13 +71,14 @@
     <Heuristic>
       <IntervalHeuristic IntervalTime="200s" ActiveTime="30s"/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="BombingAirstrike"/>
-    <Tactic Tactic="SimpleAttack" TargetType="BombingAirstrike">
-		<TeamTemplate MinUnits="4" MaxUnits ="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="ASSAULT_AIRCRAFT METAUNIT" AlwaysRelease="false" AlwaysRecruit="false">
+    <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="Airstrike"/>
+    <Tactic Tactic="SimpleAttack" TargetType="Airstrike">
+		<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="METAUNIT" AlwaysRelease="false" AlwaysRecruit="false">
 		</TeamTemplate>
 	</Tactic>
   </AIStrategicStateDefinition>
   
+  <!--
   <AIStrategicStateDefinition
 		id="CM_2_7_ZOCOMAirHarassment"
 		UnitUpgradeMultiplier="0.0">
@@ -76,7 +89,7 @@
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirPowerPlantHeuristic" TargetType="AssaultAirstrike"/>
     <Tactic Tactic="SimpleAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="1" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="1" MaxUnits ="2" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
   
@@ -92,6 +105,7 @@
       <TeamTemplate MinUnits="2" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
+  -->
   
   <AIBudgetStateDefinition
     id="CM_2_7_FullProductionBudget">

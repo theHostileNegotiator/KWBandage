@@ -22,16 +22,9 @@
     UnitBuilderMoneyVersusTimePreference="0.5"
     UnitBuilderOverallOffensivePreference="100%"
     UnitBuilderOverallDefensivePreference="110%"
-    Expansion_TiberiumSearchRadius="1000"
-    Expansion_MaxTiberiumRemaining="999999"
     ReactiveDefenseRadius="1000"
     RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoPowerAtDifficulty=""
-    EmergencyManagerHandleNoIncomeAtDifficulty=""
-    EmergencyManagerHandleNoConyardAtDifficulty=""
-    StructureSaveChanceEasy="0.0"
-    StructureSaveChanceMedium="0.01"
-    StructureSaveChanceHard="1.0"
+    EmergencyManagerHandleNoPowerAtDifficulty="MEDIUM HARD BRUTAL"
 		>
     
     <Side>GDI</Side>
@@ -55,10 +48,8 @@
 	<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 	<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-    
     
     <SpecificUnitCap Unit="GDIOrca" Cap="4"/>
 	<SpecificUnitCap Unit="GDIMammoth" Cap="3"/>

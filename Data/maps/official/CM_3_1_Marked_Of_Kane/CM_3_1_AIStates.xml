@@ -27,7 +27,8 @@
     </Heuristic>
   </AIStrategicStateDefinition>
 
-  <!--AIStrategicStateDefinition
+<!--
+  <AIStrategicStateDefinition
 		id="CM_3_1_GDIStaticDefense"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
@@ -37,9 +38,9 @@
     <Tactic Tactic="StaticDefense" TargetType="Guard">
       <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-  </AIStrategicStateDefinition-->
+  </AIStrategicStateDefinition>
 
-  <!--AIStrategicStateDefinition
+  <AIStrategicStateDefinition
 		id="CM_3_1_GDIHarvesterEscort"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
@@ -49,9 +50,9 @@
     <Tactic Tactic="StaticDefense" TargetType="Guard">
       <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-  </AIStrategicStateDefinition-->
+  </AIStrategicStateDefinition>
 
-  <!--AIStrategicStateDefinition
+  <AIStrategicStateDefinition
 		id="CM_3_1_GDIConyardDefense"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
@@ -61,9 +62,9 @@
     <Tactic Tactic="StaticDefense" TargetType="Guard">
       <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT " AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-  </AIStrategicStateDefinition-->
+  </AIStrategicStateDefinition>
 
-  <!--AIStrategicStateDefinition
+  <AIStrategicStateDefinition
 		id="GDISuperweaponDefense"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
@@ -73,22 +74,22 @@
     <Tactic Tactic="StaticDefense" TargetType="Guard">
       <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-  </AIStrategicStateDefinition-->
+  </AIStrategicStateDefinition>	-->
 
   <AIStrategicStateDefinition
 		id="CM_3_1_GDICounterattack"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
       <TimerHeuristic StartTime="600s" EndTime="-1s"/>
       <CounterattackHeuristic Threshold="3.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="Counterattack"/>
     <Tactic Tactic="SimpleAttack" TargetType="Counterattack">
-      <TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="6" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
+<!--
   <AIStrategicStateDefinition
     id="CM_3_1_GDIFinalAttack"
     UnitUpgradeMultiplier="0.0">
@@ -100,6 +101,7 @@
       <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
+  -->
 
   <AIStrategicStateDefinition
   id="CM_3_1_GDIDefensiveBombingRuns"
@@ -109,7 +111,7 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="SimpleAttack" TargetType="BombingAirstrike">
-      <TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits UnitName="GDIFirehawk"/>
         <CreateUnits UnitName="GDIFirehawk"/>
         <CreateUnits UnitName="GDIFirehawk"/>
@@ -122,7 +124,6 @@
     id="CM_3_1_GDIDefensiveSpotters"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
       <LateGameHeuristic/>
       <SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
     </Heuristic>

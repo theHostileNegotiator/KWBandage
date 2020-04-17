@@ -30,28 +30,52 @@
 
 
   <AIStrategicStateDefinition
-    id="CM_1_2_SteelTalonsOptimal_EASY"
+    id="CM_1_2_SteelTalonsUnitKill_Easy"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
       <IntervalHeuristic IntervalTime="80s" ActiveTime="35s"/>
+	  <ConstantHeuristic Weight="1.0"/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Structure"/>
-    <Tactic Tactic="SimpleAttack" TargetType="Structure">
-      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="Unit"/>
+    <Tactic Tactic="SimpleAttack" TargetType="Unit">
+      <TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
-
   <AIStrategicStateDefinition
-		id="CM_1_2_SteelTalonsOptimalDirectAttack"
+    id="CM_1_2_SteelTalonsStructureKill_Easy"
+    UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <IntervalHeuristic IntervalTime="80s" ActiveTime="35s"/>
+	  <ConstantHeuristic Weight="1.0"/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="Structure"/>
+    <Tactic Tactic="SimpleAttack" TargetType="Structure">
+      <TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    </Tactic>
+  </AIStrategicStateDefinition>
+  
+  <AIStrategicStateDefinition
+		id="CM_1_2_SteelTalonsUnitKill_Medium"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
       <IntervalHeuristic IntervalTime="90s" ActiveTime="25s"/>
+	  <ConstantHeuristic Weight="1.0"/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Structure"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
+    <TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="Unit"/>
+    <Tactic Tactic="SimpleAttack" TargetType="Unit">
       <TeamTemplate MinUnits="3" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    </Tactic>
+  </AIStrategicStateDefinition>
+  <AIStrategicStateDefinition
+		id="CM_1_2_SteelTalonsStructureKill_Medium"
+		UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <IntervalHeuristic IntervalTime="90s" ActiveTime="25s"/>
+	  <ConstantHeuristic Weight="1.0"/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="Structure"/>
+    <Tactic Tactic="SimpleAttack" TargetType="Structure">
+      <TeamTemplate MinUnits="4" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -61,6 +85,7 @@
     <Heuristic>
       <SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
       <FocusedThresholdHeuristic/>
+	  <ConstantHeuristic Weight="1.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirPowerPlantHeuristic" TargetType="AssaultAirstrike"/>
@@ -75,6 +100,7 @@
     <Heuristic>
       <EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>
       <IntervalHeuristic IntervalTime="180s" ActiveTime="20s"/>
+	  <ConstantHeuristic Weight="1.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
     <Tactic Tactic="Engineer" TargetType="CaptureTech">
@@ -89,6 +115,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <ScriptedFlagHeuristic FlagName="OKToAttackLab"/>
+	  <ConstantHeuristic Weight="2.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic_1_2" TargetType="ExtraTarget"/>
     <Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">

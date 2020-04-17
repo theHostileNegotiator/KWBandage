@@ -5,8 +5,8 @@
   <AIPersonalityDefinition
 		id="CM_1_2_Steel_Talons_AIP_SteelTalons_Main"
 		PersonalityType="CM_1_2_Steel_Talons_AIP_SteelTalons_Main"
-    PersonalityUIName="CM_1_2_Steel_Talons_AIP_SteelTalons_Main"
-    SkirmishPersonality="false" 
+		PersonalityUIName="CM_1_2_Steel_Talons_AIP_SteelTalons_Main"
+		SkirmishPersonality="false" 
 		SecondsTillTargetsCanExpire="15.0"
 		ChanceForTargetToExpire="100"
 		MaxBuildingsToBeDefensiveTarget_Small="0"
@@ -17,21 +17,14 @@
 		ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		DesiredExcessPowerBuffer="20"
 		BaseCompactness="0.75"
-    DefaultThreatFindRadius="0"
-    UnitBuilderCostEffectivenessWeight="0.5"
-    UnitBuilderMoneyVersusTimePreference="0.5"
-    UnitBuilderOverallOffensivePreference="100%"
-    UnitBuilderOverallDefensivePreference="50%"
-    Expansion_TiberiumSearchRadius="1000"
-    Expansion_MaxTiberiumRemaining="22000"
-    ReactiveDefenseRadius="1000"
-    RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoPowerAtDifficulty=""
-    EmergencyManagerHandleNoIncomeAtDifficulty=""
-    EmergencyManagerHandleNoConyardAtDifficulty=""
-    StructureSaveChanceEasy="0.0"
-    StructureSaveChanceMedium="0.01"
-    StructureSaveChanceHard="1.0"
+		DefaultThreatFindRadius="0"
+		UnitBuilderCostEffectivenessWeight="0.5"
+		UnitBuilderMoneyVersusTimePreference="0.5"
+		UnitBuilderOverallOffensivePreference="100%"
+		UnitBuilderOverallDefensivePreference="50%"
+		ReactiveDefenseRadius="1000"
+		RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
+		EmergencyManagerHandleNoPowerAtDifficulty="MEDIUM HARD BRUTAL"
 		>
 
     <Side>SteelTalons</Side>
@@ -50,7 +43,8 @@
 	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
     <ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 
-    <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
+	<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 
@@ -61,8 +55,10 @@
 	<States State="CM_1_2_SteelTalonsUnitCap_Medium" Difficulty="MEDIUM"/>
 	<States State="CM_1_2_SteelTalonsUnitCap_Hard" Difficulty="HARD BRUTAL"/>
 	
-    <States State="CM_1_2_SteelTalonsOptimal_EASY" Difficulty="EASY"/>
-    <States State="CM_1_2_SteelTalonsOptimalDirectAttack" Difficulty="MEDIUM HARD BRUTAL"/> 
+    <States State="CM_1_2_SteelTalonsUnitKill_EASY" Difficulty="EASY"/>
+    <States State="CM_1_2_SteelTalonsStructureKill_EASY" Difficulty="EASY"/>
+	<States State="CM_1_2_SteelTalonsUnitKill_Medium" Difficulty="MEDIUM HARD BRUTAL"/> 
+    <States State="CM_1_2_SteelTalonsStructureKill_Medium" Difficulty="MEDIUM HARD BRUTAL"/> 
     <States State="CM_1_2_SteelTalonsOptimalAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="CM_1_2_SteelTalonsCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
     <States State="CM_1_2_SteelTalons_Special_Lab_Attack" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -2,7 +2,6 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Tags></Tags>
   <Includes></Includes>
-  
   <AIPersonalityDefinition
 	id="CM_1_1_Rio_Insurrection_AIP_SplinterNod_Main"
 	PersonalityType="CM_1_1_Rio_Insurrection_AIP_SplinterNod_Main"
@@ -23,16 +22,9 @@
     UnitBuilderMoneyVersusTimePreference="0.5"
     UnitBuilderOverallOffensivePreference="100%"
     UnitBuilderOverallDefensivePreference="50%"
-    Expansion_TiberiumSearchRadius="1000"
-    Expansion_MaxTiberiumRemaining="22000"
     ReactiveDefenseRadius="1000"
     RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
     EmergencyManagerHandleNoPowerAtDifficulty=""
-    EmergencyManagerHandleNoIncomeAtDifficulty=""
-    EmergencyManagerHandleNoConyardAtDifficulty=""
-    StructureSaveChanceEasy="0.0"
-    StructureSaveChanceMedium="0.01"
-    StructureSaveChanceHard="1.0"
 		>
 
     <Side>NOD</Side>
@@ -61,7 +53,7 @@
 	<SpecificUnitCap Unit="NodBunkerTruck" Cap="2"/>
 		
 	<States State="CM_1_1_NODSplinterNod_Attack_1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-	<States State="CM_1_1_NODSplinterNod_Attack_2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+	<States State="CM_1_1_NODSplinterNod_Attack_2" Difficulty="MEDIUM HARD BRUTAL"/>
 	<States State="CM_1_1_NODReactiveDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 	<States State="CM_1_1_NODUnitCap_Easy" Difficulty="EASY"/>
 	<States State="CM_1_1_NODUnitCap_Medium" Difficulty="MEDIUM"/>

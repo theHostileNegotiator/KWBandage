@@ -50,7 +50,7 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Structure"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
-      <TeamTemplate MinUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="4" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 

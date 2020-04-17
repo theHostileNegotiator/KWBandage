@@ -44,18 +44,15 @@
 	<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 
     <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
  
     <States State="CM_1_3_UnitCap_Easy" Difficulty="EASY"/>
     <States State="CM_1_3_UnitCap_Medium" Difficulty="MEDIUM"/>
     <States State="CM_1_3_UnitCap_Hard" Difficulty="HARD BRUTAL"/>
 	
 	<States State="CM_1_3_BlackHandStructureKill_Easy" Difficulty="EASY"/>
-	<States State="CM_1_3_BlackHandUnitKill_Easy" Difficulty="EASY"/>
 	<States State="CM_1_3_BlackHandStructureKill_Medium" Difficulty="MEDIUM"/>
-	<States State="CM_1_3_BlackHandUnitKill_Medium" Difficulty="MEDIUM"/>
 	<States State="CM_1_3_BlackHandStructureKill_Hard" Difficulty="HARD BRUTAL"/>
-	<States State="CM_1_3_BlackHandUnitKill_Hard" Difficulty="HARD BRUTAL"/>
 	
     <!--States State="BlackHandUnitPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/-->
 

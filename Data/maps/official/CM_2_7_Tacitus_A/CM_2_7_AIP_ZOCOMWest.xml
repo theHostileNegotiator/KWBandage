@@ -2,12 +2,11 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Tags></Tags>
 	<Includes></Includes>
-
 	<AIPersonalityDefinition
 		id="CM_2_7_AIP_ZocomWest"
 		PersonalityType="CM_2_7_AIP_ZocomWest"
 	   	PersonalityUIName="Personality:ZocomWestAI"
-    		SkirmishPersonality="false"	
+    	SkirmishPersonality="false"	
 		SecondsTillTargetsCanExpire="15.0"
 		ChanceForTargetToExpire="100"
 		MaxBuildingsToBeDefensiveTarget_Small="0"
@@ -18,21 +17,14 @@
 		ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		DesiredExcessPowerBuffer="20"
 		BaseCompactness="0.75"
-    DefaultThreatFindRadius="0"
-    UnitBuilderCostEffectivenessWeight="1.0"
-    UnitBuilderMoneyVersusTimePreference="0.5"
-    UnitBuilderOverallOffensivePreference="100%"
-    UnitBuilderOverallDefensivePreference="100%"
-    Expansion_TiberiumSearchRadius="1000"
-    Expansion_MaxTiberiumRemaining="22000"
-    ReactiveDefenseRadius="1000"
-    RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoPowerAtDifficulty=""
-    EmergencyManagerHandleNoIncomeAtDifficulty=""
-    EmergencyManagerHandleNoConyardAtDifficulty=""
-    StructureSaveChanceEasy="0.0"
-    StructureSaveChanceMedium="0.01"
-    StructureSaveChanceHard="1.0"
+		DefaultThreatFindRadius="0"
+		UnitBuilderCostEffectivenessWeight="1.0"
+		UnitBuilderMoneyVersusTimePreference="0.5"
+		UnitBuilderOverallOffensivePreference="100%"
+		UnitBuilderOverallDefensivePreference="100%"
+		ReactiveDefenseRadius="1000"
+		RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
+		EmergencyManagerHandleNoPowerAtDifficulty=""
 		>
 
     <Side>ZOCOM</Side>
@@ -52,12 +44,11 @@
     <ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 
     <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
-	<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+	<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
 
-    <States State="CM_2_7_ZOCOMOptimalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="CM_2_7_ZOCOMStructureKill_Easy" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="CM_2_7_ZOCOMReactiveDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="CM_2_7_ZOCOMAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="CM_2_7_ZOCOMAirHarassmentAntiTurtle" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="CM_2_7_ZOCOMAirStrike" Difficulty="MEDIUM HARD BRUTAL"/>
 	<States State="CM_2_7_ZOCOMUnitCap_Easy" Difficulty="EASY"/>
 	<States State="CM_2_7_ZOCOMUnitCap_Medium" Difficulty="MEDIUM"/>
 	<States State="CM_2_7_ZOCOMUnitCap_Hard" Difficulty="HARD BRUTAL"/>

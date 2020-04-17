@@ -38,19 +38,7 @@
       <TeamTemplate MinUnits="5" MaxUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
-  
-  <AIStrategicStateDefinition
-    id="CM_1_3_BlackHandUnitKill_Easy"
-    UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <IntervalHeuristic IntervalTime="40s" ActiveTime="120s"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="Unit"/>
-    <Tactic Tactic="SimpleAttack" TargetType="Unit">
-      <TeamTemplate MinUnits="5" MaxUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-	
+
   <AIStrategicStateDefinition
     id="CM_1_3_BlackHandStructureKill_Medium"
     UnitUpgradeMultiplier="0.0">
@@ -64,18 +52,6 @@
   </AIStrategicStateDefinition>
   
   <AIStrategicStateDefinition
-    id="CM_1_3_BlackHandUnitKill_Medium"
-    UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <IntervalHeuristic IntervalTime="40s" ActiveTime="120s"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="Unit"/>
-    <Tactic Tactic="SimpleAttack" TargetType="Unit">
-      <TeamTemplate MinUnits="7" MaxUnits="9" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-  
-  <AIStrategicStateDefinition
     id="CM_1_3_BlackHandStructureKill_Hard"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
@@ -83,18 +59,6 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="Structure"/>
     <Tactic Tactic="SimpleAttack" TargetType="Structure">
-      <TeamTemplate MinUnits="10" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-  
-  <AIStrategicStateDefinition
-    id="CM_1_3_BlackHandUnitKill_Hard"
-    UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <IntervalHeuristic IntervalTime="40s" ActiveTime="120s"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="Unit"/>
-    <Tactic Tactic="SimpleAttack" TargetType="Unit">
       <TeamTemplate MinUnits="10" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>

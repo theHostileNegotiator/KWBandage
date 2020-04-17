@@ -43,8 +43,8 @@
 	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
     <ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 
-    <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 	
