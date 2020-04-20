@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration
+	xmlns="uri:ea.com:eala:asset"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xai="uri:ea.com:eala:asset:instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+	
+	<Tags/>
+	<Includes>
+	<!--
+			<Include 	type="instance" 	source="DATA:NOD/Units_SinglePlayerCampaign/NODMarcionTransport.xml" />
+			<Include 	type="instance" 	source="DATA:NOD/Units_SinglePlayerCampaign/NODCarryall_SP_Militants.xml" />
+			<Include 	type="instance" 	source="DATA:GlobalData/LogicCommandSet.xml" />
+			<Include 	type="instance" 	source="DATA:NOD/Structures/NODSecretShrine.xml" />
+			<Include 	type="instance" 	source="DATA:NOD/Structures/NODTechAssemblyPlant.xml" />
+			<Include 	type="instance" 	source="DATA:NOD/Structures/NODOperationsCenter.xml" />
+			<Include 	type="instance" 	source="DATA:BlackHand/Structures/BlackHandConstructionYard.xml" />
+			-->
+	</Includes>
+
+</AssetDeclaration>

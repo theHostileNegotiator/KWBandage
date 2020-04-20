@@ -41,7 +41,7 @@
 * Your own engineer cannot enter your own structure to repair when Field or Fence is in effect.
  
 #### Mechapede
-* Mechapede Head does not spawn from the Warp Sphere, instead spawning at the rally point due to the BannerCarrier squad position
+* Mechapede Head does not spawn from the Warp Sphere, instead spawning at the rally point (Bug was introduced in 1.01). Don't think it's possible to fix
 
 #### GDI Foxhole
 * An exploit exist where the infantry creating the structure can be crushed by a unit in formation move when garrisoned

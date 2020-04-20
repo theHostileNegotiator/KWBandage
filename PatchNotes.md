@@ -104,6 +104,22 @@
 	* Redesign Campaign AI
 2. Multiplayer AI was not adjusted for KW 1.01 and 1.02 new economy
 	* Redesign Multiplayer AI
+	
+### Campaign
+
+#### Persuade Him
+1. AI would not attack the player and would instead camp the base
+	* Adjusted scripting to gurantee attacks from AI
+2. One of the Reckoner defending the bases is assigned Team Neutral instead of Black Hand Team.
+	* Changed team of Reckoner
+
+#### MARV Rising
+1. Redeemer was supposed to have both Damage and ROF buff for the mission. Instead ROF was nerfed
+	* Changed Attribute Modifier so Redeemer is fully Buffed
+
+#### Tacitus Interruptus
+1. According to the scripts, Reaper 17 was supposed to send constant waves of it's army, depending if all a specific unit is destroyed (If all Ravagers are killed, send in another wave of Ravagers)
+	* Reaper 17 will now spawn waves of units when army is destroyed
 
 ### GDI:
 
@@ -199,6 +215,8 @@
 	* Remove "Move to Evacuate Ability" in favour of evacuate infantry
 6. Speed of the MRT was based of the APC before TW 1.05
 	* Increased speed to match APC
+7. There are no sounds for units entering and exiting garrison
+	* Added sound effects
 #### Mechs EMP Animation
 1. Titans and Wolverines did not play a seperate animation when EMPed. Instead it continued to loop the animation it was in before EMP strike
 	* Other Mech units used the Bored animation. This technique was used for both the Titan and Wolverine
@@ -373,6 +391,8 @@
 #### Awakened
 1. If there is access to BH Tech Lab, unit can be upgraded with Charged Particle Beam
 	* Remove Upgrade
+2. Individual unit used Black Hand portrait instead of it's own (This is noticable in the mission Will Made Flesh)
+	* Changed unit portrait to Awakened
 #### Enlightened
 1. Supercharged Particle Beam upgrade sound would use Railgun sound instead of it's own
 	* Swapped upgrade sounds
@@ -491,4 +511,4 @@
 	* Created new Veteran Shock Trooper for Reaper 17
 #### Conversion Beam
 1. Inconsistencies with Damage FX between multiple units
-	* Normalised type to NOD_LASER
+	* Normalised type to GDI_RAILGUN

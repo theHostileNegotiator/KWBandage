@@ -3,10 +3,11 @@
 <!--Removed Charged Particle Beams-->
 <!--Fixed Build Cost (For Hexapod Recycling)-->
 <!--Fixed EMP Range-->
+<!--Changed unit portrait to Awakended instead of Black Hand-->
 	<GameObject
 		id="MOKCyborgInfantry"
-		SelectPortrait="Portrait_NODBlackHand"
-		ButtonImage="Portrait_NODBlackHand"
+		SelectPortrait="Portrait_CyborgInfantry"
+		ButtonImage="Portrait_CyborgInfantry"
 		Side="MarkedOfKane"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"

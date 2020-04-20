@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration
+	xmlns="uri:ea.com:eala:asset"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xai="uri:ea.com:eala:asset:instance">
+
+	<Tags/>
+
+	<Includes>
+	<!--
+		<Include 
+			source = "DATA:GlobalData\Weapon.xml"
+			type = "instance"/>
+		<Include 
+			source = "DATA:GlobalData\Armor.xml"
+			type = "instance"/>
+		<Include
+			source = "DATA:NOD\Units\NODCommando.xml"
+			type = "instance"/>
+		<Include 
+			source = "DATA:NOD\Units\NODSaboteur.xml"
+			type = "instance"/>
+		<Include
+			source = "DATA:NOD\Units\NODCarryall.xml"
+			type = "instance"/>
+		<Include
+			source = "DATA:NOD\Structures\NODPowerPlant.xml"
+			type = "instance"/>
+		<Include 
+			source = "DATA:NOD\Structures_SinglePlayerCampaign\NSSilo04.xml"
+			type = "instance"/>
+		<Include 
+			source = "DATA:NOD\Structures_SinglePlayerCampaign\NSSiloCR.xml"
+			type = "instance"/>
+		<Include 
+			source = "DATA:NOD\Structures_SinglePlayerCampaign\NSSiloCL.xml"
+			type = "instance"/>
+		<Include 
+			source = "DATA:NOD\Structures_SinglePlayerCampaign\NSWeaponsLabFacility.xml"
+			type = "instance"/>
+		<Include
+			source = "DATA:GDI\Structures\GDIPowerPlant.xml"
+			type = "instance"/>
+		<Include 
+			source = "DATA:GDI\Props\GDIAirstrikeSPBombingRunTarget.xml"
+			type = "instance"/>
+		<Include 
+			source = "DATA:GDI\Props\GDIAirstrikeSPBombingRunTrigger.xml"
+			type = "instance"/>
+		<Include
+			source = "DATA:Neutral\Units\LiquidTiberiumTransport.xml"
+			type = "instance"/>
+			-->
+	</Includes>
+
+</AssetDeclaration>

@@ -45,4 +45,12 @@
 		<Modifier Type="RANGE" Value="100%"/>
 		<Modifier Type="VISION" Value="200"/>
 	</AttributeModifier>
+	
+<!-- New Mission Specific AttributeModifier to Buff ROF rather than nerf -->
+	<AttributeModifier
+		id="AttributeModifier_CM24MetaUnitBuff"
+		Category="BUFF">
+		<Modifier Type="RATE_OF_FIRE" Value="200%" />
+		<Modifier Type="DAMAGE_MULT" Value="150"/>
+	</AttributeModifier>
 </AssetDeclaration>
