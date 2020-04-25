@@ -32,7 +32,7 @@
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIFirehawk</DisplayName>
 		<GameDependency>
-			<RequiredObject>SteelTalonsArmory</RequiredObject>
+			<RequiredObject>SteelTalonsTechCenter</RequiredObject>
 		</GameDependency>
 		<DisplayUpgrade>Upgrade_FirehawkStratofighterBooster</DisplayUpgrade>
 		<DisplayUpgrade id="ModuleTag_DisplayGDIHardpointsUpgrade">Upgrade_GDIHardpoints</DisplayUpgrade>
