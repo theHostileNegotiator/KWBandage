@@ -18,7 +18,96 @@
 	  -->
   </Includes>
 
-<!-- May add Tiberium Vibration Buff to match KW 1.00 for it's destruction -->
+<!-- May add Tiberium Vein Buff to guarantee Tiberium, Power Plants, Harvesters and Refineries destruction -->
+
+<!-- Bonus Objective Dialog has been fixed -->
+	<MissionObjectiveList id="MissionObjectives">
+
+		<MissionObjectiveTag
+			IsBonusObjective="false"
+			Script="SCRIPT:CM_2_7_Obj_1_Summary"
+			Description="SCRIPT:CM_2_7_Obj_1_Details">
+			<PresentationSettings
+				ID = "CM_2_7_Objective_1"
+				Dialog = "AudioEvent:MN27_NodEVA01"
+				UseDynamicZoom = "false">
+				<Duration>8s</Duration>
+				<CameraStartAngle>0d</CameraStartAngle>
+				<CameraEndAngle>10d</CameraEndAngle>
+				<CameraFieldOfView>55d</CameraFieldOfView>
+			</PresentationSettings>
+		</MissionObjectiveTag>	
+	
+		<MissionObjectiveTag
+			IsBonusObjective="false"
+			Script="SCRIPT:CM_2_7_Obj_2_Summary"
+			Description="SCRIPT:CM_2_7_Obj_2_Details">
+			<PresentationSettings
+				ID = "CM_2_7_Objective_2"
+				Dialog = "AudioEvent:MN27_NodEVA03"
+				UseDynamicZoom = "false">
+				<Duration>8s</Duration>
+				<CameraStartAngle>0d</CameraStartAngle>
+				<CameraEndAngle>10d</CameraEndAngle>
+				<CameraFieldOfView>55d</CameraFieldOfView>
+			</PresentationSettings>
+		</MissionObjectiveTag>	
+		
+		<MissionObjectiveTag
+			IsBonusObjective="false"
+			Script="SCRIPT:CM_2_7_Obj_3_Summary"
+			Description="SCRIPT:CM_2_7_Obj_3_Details">
+			<PresentationSettings
+				ID = "CM_2_7_Objective_3_A"
+				UseDynamicZoom = "false"
+				Dialog = "AudioEvent:MN27_NodEVA05">
+				<Duration>4s</Duration>
+				<CameraStartAngle>0d</CameraStartAngle>
+				<CameraEndAngle>10d</CameraEndAngle>
+				<CameraFieldOfView>55d</CameraFieldOfView>
+			</PresentationSettings>
+			<PresentationSettings
+				ID = "CM_2_7_Objective_3_B"
+				UseDynamicZoom = "false">
+				<Duration>4s</Duration>
+				<CameraStartAngle>0d</CameraStartAngle>
+				<CameraEndAngle>10d</CameraEndAngle>
+				<CameraFieldOfView>55d</CameraFieldOfView>
+			</PresentationSettings>
+		</MissionObjectiveTag>	
+					
+		<MissionObjectiveTag
+			IsBonusObjective="true"
+			Script="SCRIPT:CM_2_7_BonusObj_1_Summary"
+			Description="SCRIPT:CM_2_7_BonusObj_1_Details">
+			<PresentationSettings
+				ID = "CM_2_7_BonusObj_1_A"
+				Dialog = "AudioEvent:MN27_NodEVA13"
+				UseDynamicZoom = "false">
+				<Duration>4s</Duration>
+				<CameraStartAngle>0d</CameraStartAngle>
+				<CameraEndAngle>10d</CameraEndAngle>
+				<CameraFieldOfView>55d</CameraFieldOfView>
+			</PresentationSettings>
+			<PresentationSettings
+				ID = "CM_2_7_BonusObj_1_B"
+				UseDynamicZoom = "false">
+				<Duration>4s</Duration>
+				<CameraStartAngle>0d</CameraStartAngle>
+				<CameraEndAngle>10d</CameraEndAngle>
+				<CameraFieldOfView>55d</CameraFieldOfView>
+			</PresentationSettings>
+			<PresentationSettings
+				ID = "CM_2_7_BonusObj_1_C"
+				UseDynamicZoom = "false">
+				<Duration>4s</Duration>
+				<CameraStartAngle>0d</CameraStartAngle>
+				<CameraEndAngle>10d</CameraEndAngle>
+				<CameraFieldOfView>55d</CameraFieldOfView>
+			</PresentationSettings>
+		</MissionObjectiveTag>	
+				
+	</MissionObjectiveList>
 
 </AssetDeclaration>
 

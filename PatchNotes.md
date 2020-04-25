@@ -112,14 +112,17 @@
 	* Adjusted scripting to gurantee attacks from AI
 2. One of the Reckoner defending the bases is assigned Team Neutral instead of Black Hand Team.
 	* Changed team of Reckoner
-
 #### MARV Rising
 1. Redeemer was supposed to have both Damage and ROF buff for the mission. Instead ROF was nerfed
 	* Changed Attribute Modifier so Redeemer is fully Buffed
-
+#### Hearts and Minds
+1. Player can use Decoy Army and Radar Jamming Missile despite the two abilities never being available in ALL Campaign Missions.
+	* Hidden the Powers
 #### Tacitus Interruptus
 1. According to the scripts, Reaper 17 was supposed to send constant waves of it's army, depending if all a specific unit is destroyed (If all Ravagers are killed, send in another wave of Ravagers)
 	* Reaper 17 will now spawn waves of units when army is destroyed
+2. EVA uses wrong sound file for Tiberium Vein Detonation Bonus Objective
+	* Change dialogue file to "MN27_NodEVA13"
 
 ### GDI:
 
