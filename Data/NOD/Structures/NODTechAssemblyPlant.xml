@@ -276,7 +276,7 @@
 			</EngineerContain>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_AdvancedBlackHandBuildingDestruction" >
+				CreationList="OCL_AdvancedNODBuildingDestruction" >
 				<DieMuxData
 					DeathTypes="ALL"
 					DeathTypesForbidden="DETONATED SUICIDED" />
@@ -284,7 +284,7 @@
 			</CreateObjectDie>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_AdvancedBlackHandBuildingSuicide" >
+				CreationList="OCL_AdvancedNODBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 			<SubObjectsUpgrade
