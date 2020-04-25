@@ -373,6 +373,9 @@
 	* Added NOD Confesor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
 2. Flame weapon particle effects would still be when after EMPed
 	* Added new state to disable particle effects when EMPed
+3. Turrets do not rotate, despite being able to attack 360 degrees
+	* Fixed Models and Turret Data
+		* Also reduced turret idle angles to significantly reduce chance of turrets clipping through each other.
 #### Mantis
 1. Turret is not effective at tracking Air Units, often misfiring
 	* Improved Turret Settings to match Slingshot

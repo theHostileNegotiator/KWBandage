@@ -48,7 +48,7 @@
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
 				OkToChangeModelColor="true" 
-				ExtraPublicBone="MUZZLEFLASH_01 MUZZLEFLASH_02 B_FTturretR FX_FTFireR FX_FTFireL B_FTturretL FX_HvyMGFlashR B_HvyMGturretR B_HvyMGturretR FX_HvyMGFlashL B_HvyMGturretL SecondaryWepBone04 SubSystemBone01 SubSystemBone02 SubSystemBone03">
+				ExtraPublicBone="MUZZLEFLASH_01 MUZZLEFLASH_02 B_FTturretR B_FTpitchR FX_FTFireR FX_FTFireL B_FTpitchL B_FTturretL FX_HvyMGFlashR B_HvyMGturretR B_HvyMGpitchR FX_HvyMGFlashL B_HvyMGturretL B_HvyMGpitchL SecondaryWepBone04 SubSystemBone01 SubSystemBone02 SubSystemBone03 FX_RocketPodR B_RocketPodturretR B_RocketPodpitchR FX_RocketPodL B_RocketPodturretL B_RocketPodpitchL">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
@@ -89,7 +89,7 @@
 						BoneName="FX_FTFireR" />
 					<Turret
 						TurretNameKey="B_FTturretR"
-						TurretPitch="B_FTturretR"
+						TurretPitch="B_FTpitchR"
 						TurretID="2" />	
 					<WeaponFireFXBone
 						WeaponSlotID="3"
@@ -101,7 +101,7 @@
 						BoneName="FX_FTFireL" />
 					<Turret
 						TurretNameKey="B_FTturretL"
-						TurretPitch="B_FTturretL"
+						TurretPitch="B_FTpitchL"
 						TurretID="3" />							
 			<!-- MACHINEGUN -->
 					<WeaponFireFXBone
@@ -114,7 +114,7 @@
 						BoneName="FX_HvyMGFlashR" />
 					<Turret
 						TurretNameKey="B_HvyMGturretR"
-						TurretPitch="B_HvyMGturretR"
+						TurretPitch="B_HvyMGpitchR"
 						TurretID="4" />	
 					<WeaponFireFXBone
 						WeaponSlotID="5"
@@ -126,7 +126,7 @@
 						BoneName="FX_HvyMGFlashL" />
 					<Turret
 						TurretNameKey="B_HvyMGturretL"
-						TurretPitch="B_HvyMGturretL"
+						TurretPitch="B_HvyMGpitchL"
 						TurretID="5" />						
 			
 			<!-- ROCKETPOD -->	
@@ -140,7 +140,7 @@
 						BoneName="FX_RocketPodR" />
 					<Turret
 						TurretNameKey="B_RocketPodturretR"
-						TurretPitch="B_RocketPodturretR"
+						TurretPitch="B_RocketPodpitchR"
 						TurretID="6" />	
 					<WeaponFireFXBone
 						WeaponSlotID="7"
@@ -152,7 +152,7 @@
 						BoneName="FX_RocketPodL" />
 					<Turret
 						TurretNameKey="B_RocketPodturretL"
-						TurretPitch="B_RocketPodturretL"
+						TurretPitch="B_RocketPodpitchL"
 						TurretID="7" />	
 			<!-- TIBERIUM -->						
 					<WeaponFireFXBone
@@ -165,7 +165,7 @@
 						BoneName="FX_FTFireR" />
 					<Turret
 						TurretNameKey="B_FTturretR"
-						TurretPitch="B_FTturretR"
+						TurretPitch="B_FTpitchR"
 						TurretID="8" />	
 					<WeaponFireFXBone
 						WeaponSlotID="9"
@@ -177,7 +177,7 @@
 						BoneName="FX_FTFireL" />
 					<Turret
 						TurretNameKey="B_FTturretL"
-						TurretPitch="B_FTturretL"
+						TurretPitch="B_FTpitchL"
 						TurretID="9" />						
 			<!-- RAGE -->
 					<WeaponFireFXBone
@@ -1519,8 +1519,8 @@
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="3.0s"
-						MinIdleScanAngle="10.0"
-						MaxIdleScanAngle="180.0">
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
@@ -1539,8 +1539,8 @@
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="3.0s"
-						MinIdleScanAngle="10.0"
-						MaxIdleScanAngle="180.0">
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
@@ -1560,8 +1560,8 @@
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="3.0s"
-						MinIdleScanAngle="10.0"
-						MaxIdleScanAngle="180.0">
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
@@ -1580,8 +1580,8 @@
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="3.0s"
-						MinIdleScanAngle="10.0"
-						MaxIdleScanAngle="180.0">
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
@@ -1601,8 +1601,8 @@
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="3.0s"
-						MinIdleScanAngle="10.0"
-						MaxIdleScanAngle="180.0">
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
@@ -1621,8 +1621,8 @@
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="3.0s"
-						MinIdleScanAngle="10.0"
-						MaxIdleScanAngle="180.0">
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
@@ -1642,8 +1642,8 @@
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="3.0s"
-						MinIdleScanAngle="10.0"
-						MaxIdleScanAngle="180.0">
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
@@ -1662,8 +1662,8 @@
 						PitchHeight="90%"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="3.0s"
-						MinIdleScanAngle="10.0"
-						MaxIdleScanAngle="180.0">
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
