@@ -521,3 +521,7 @@
 #### Conversion Beam
 1. Inconsistencies with Damage FX between multiple units
 	* Normalised type to GDI_RAILGUN
+#### Eradicator Hexapod
+1. Disintegrator visual lasers overwrite each other. Therefore if more than one laser is firing, only the latest shot laser will show.
+	* Added new Weapons, Laser Draws and Laser States.
+		* Added Heroic Laser Effects

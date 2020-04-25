@@ -302,6 +302,271 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+	<WeaponTemplate
+		  id="AlienEradicatorLaserWeaponA"
+		  Name="AlienEradicatorLaserWeaponA"
+		  AttackRange="200.0"
+		  ChaseWeapon="true"
+		  FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
+		  FireFX="FX_AlienBuzzerFire"
+		  FireVeteranFX="FX_AlienBuzzerFireHeroic"
+		  WeaponSpeed="999999.0"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		  ReAcquireDetailType="PRE_FIRE"
+		  ClipSize="5"
+		  AcceptableAimDelta="10d"
+		  CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<ClipReloadTime
+			MinSeconds="0.6s"
+			MaxSeconds="0.8s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="1"/>
+			<DamageNugget
+				Damage="240.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.4s"
+				DamageType="ROCKET"
+				DamageFXType="ALIEN_BUZZER"
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar="200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "75%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		  id="AlienEradicatorLaserWeaponB"
+		  Name="AlienEradicatorLaserWeaponB"
+		  AttackRange="200.0"
+		  ChaseWeapon="true"
+		  FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
+		  FireFX="FX_AlienBuzzerFire"
+		  FireVeteranFX="FX_AlienBuzzerFireHeroic"
+		  WeaponSpeed="999999.0"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		  ReAcquireDetailType="PRE_FIRE"
+		  ClipSize="5"
+		  AcceptableAimDelta="10d"
+		  CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<ClipReloadTime
+			MinSeconds="0.6s"
+			MaxSeconds="0.8s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="2"/>
+			<DamageNugget
+				Damage="240.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.4s"
+				DamageType="ROCKET"
+				DamageFXType="ALIEN_BUZZER"
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar="200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "75%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		  id="AlienEradicatorLaserWeaponC"
+		  Name="AlienEradicatorLaserWeaponC"
+		  AttackRange="200.0"
+		  ChaseWeapon="true"
+		  FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
+		  FireFX="FX_AlienBuzzerFire"
+		  FireVeteranFX="FX_AlienBuzzerFireHeroic"
+		  WeaponSpeed="999999.0"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		  ReAcquireDetailType="PRE_FIRE"
+		  ClipSize="5"
+		  AcceptableAimDelta="10d"
+		  CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<ClipReloadTime
+			MinSeconds="0.6s"
+			MaxSeconds="0.8s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="3"/>
+			<DamageNugget
+				Damage="240.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.4s"
+				DamageType="ROCKET"
+				DamageFXType="ALIEN_BUZZER"
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar="200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "75%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		  id="AlienEradicatorLaserWeaponD"
+		  Name="AlienEradicatorLaserWeaponD"
+		  AttackRange="200.0"
+		  ChaseWeapon="true"
+		  FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
+		  FireFX="FX_AlienBuzzerFire"
+		  FireVeteranFX="FX_AlienBuzzerFireHeroic"
+		  WeaponSpeed="999999.0"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		  ReAcquireDetailType="PRE_FIRE"
+		  ClipSize="5"
+		  AcceptableAimDelta="10d"
+		  CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<ClipReloadTime
+			MinSeconds="0.6s"
+			MaxSeconds="0.8s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="4"/>
+			<DamageNugget
+				Damage="240.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.4s"
+				DamageType="ROCKET"
+				DamageFXType="ALIEN_BUZZER"
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar="200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "75%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		  id="AlienEradicatorLaserWeaponE"
+		  Name="AlienEradicatorLaserWeaponE"
+		  AttackRange="200.0"
+		  ChaseWeapon="true"
+		  FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
+		  FireFX="FX_AlienBuzzerFire"
+		  FireVeteranFX="FX_AlienBuzzerFireHeroic"
+		  WeaponSpeed="999999.0"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		  ReAcquireDetailType="PRE_FIRE"
+		  ClipSize="5"
+		  AcceptableAimDelta="10d"
+		  CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<ClipReloadTime
+			MinSeconds="0.6s"
+			MaxSeconds="0.8s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="5"/>
+			<DamageNugget
+				Damage="240.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.4s"
+				DamageType="ROCKET"
+				DamageFXType="ALIEN_BUZZER"
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar="200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "75%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		  id="AlienEradicatorLaserWeaponF"
+		  Name="AlienEradicatorLaserWeaponF"
+		  AttackRange="200.0"
+		  ChaseWeapon="true"
+		  FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
+		  FireFX="FX_AlienBuzzerFire"
+		  FireVeteranFX="FX_AlienBuzzerFireHeroic"
+		  WeaponSpeed="999999.0"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		  ReAcquireDetailType="PRE_FIRE"
+		  ClipSize="5"
+		  AcceptableAimDelta="10d"
+		  CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<ClipReloadTime
+			MinSeconds="0.6s"
+			MaxSeconds="0.8s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="6"/>
+			<DamageNugget
+				Damage="240.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.4s"
+				DamageType="ROCKET"
+				DamageFXType="ALIEN_BUZZER"
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar="200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "75%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
 <!--Added missing and new subfaction units to Healing Abililty-->
 	<WeaponTemplate 
 		id="AlienMechapedeTioxinBlastCannon"

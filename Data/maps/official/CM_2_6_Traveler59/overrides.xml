@@ -1433,7 +1433,7 @@
 
 		<!-- Razor Drones Weapon Laser Draw -->
 			<LaserDraw
-				id="ModuleTag_LaserDraw"
+				id="ModuleTag_LaserDraw01"
 				Texture1_UTile="1"
 				Texture1_VTile=".5"
 				Texture1_UScrollRate="0"
@@ -1446,7 +1446,9 @@
 				Texture2_VScrollRate=".7"
 				Texture2_NumFrames="1"
 				Texture2_FrameRate="30"
-				LaserWidth="8">
+				LaserWidth="8"
+				WeaponSlotID="8"
+				LaserStateID="1">
 				<FXShader
 					ShaderName="Laser.fx"
 					TechniqueIndex="0">
@@ -1461,9 +1463,11 @@
 						</Texture>
 					</Constants>
 				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01" />
 			</LaserDraw>
 			<LaserDraw
-				id="ModuleTag_LaserDistort"
+				id="ModuleTag_LaserDistort01"
 				UseDistortionShader="true"
 				Texture1_UTile="1"
 				Texture1_VTile=".5"
@@ -1477,7 +1481,9 @@
 				Texture2_VScrollRate=".7"
 				Texture2_NumFrames="1"
 				Texture2_FrameRate="30"
-				LaserWidth="12">
+				LaserWidth="12"
+				WeaponSlotID="8"
+				LaserStateID="1">
 				<FXShader
 					ShaderName="Laser.fx"
 					TechniqueIndex="0">
@@ -1493,7 +1499,545 @@
 					</Constants>
 				</FXShader>
 			</LaserDraw>
-
+			<LaserDraw
+				id="ModuleTag_LaserDraw02"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="11"
+				LaserStateID="2">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort02"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile="2"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="12"
+				WeaponSlotID="11"
+				LaserStateID="2">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw03"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="9"
+				LaserStateID="3">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort03"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile="2"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="12"
+				WeaponSlotID="9"
+				LaserStateID="3">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw04"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="12"
+				LaserStateID="4">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort04"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile="2"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="12"
+				WeaponSlotID="12"
+				LaserStateID="4">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw05"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="10"
+				LaserStateID="5">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort05"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile="2"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="12"
+				WeaponSlotID="10"
+				LaserStateID="5">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw06"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="13"
+				LaserStateID="6">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaser</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort06"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile="2"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="12"
+				WeaponSlotID="13"
+				LaserStateID="6">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw01Veterancy"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="8"
+				LaserStateID="1">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw02Veterancy"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="11"
+				LaserStateID="2">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw03Veterancy"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="9"
+				LaserStateID="3">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw04Veterancy"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="12"
+				LaserStateID="4">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw05Veterancy"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="10"
+				LaserStateID="5">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDraw06Veterancy"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".3"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate=".7"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="8"
+				WeaponSlotID="13"
+				LaserStateID="6">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXAlienLaserHeroic</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_01" />
+			</LaserDraw>
 
 			<!-- draw a nice 'combined' effect, PLACEHOLDER -->
 			<ScriptedModelDraw
@@ -1740,7 +2284,7 @@
 					ID="8">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="AlienEradicatorLaserWeapon"
+						Template="AlienEradicatorLaserWeaponA"
 						Upgrade="Upgrade_EradicatorLaserFront" />
 					<TurretSettings
 						TurretTurnRate="200"
@@ -1760,7 +2304,7 @@
 					ID="9">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="AlienEradicatorLaserWeapon"
+						Template="AlienEradicatorLaserWeaponC"
 						Upgrade="Upgrade_EradicatorLaserMiddle" />
 					<TurretSettings
 						TurretTurnRate="200"
@@ -1780,7 +2324,7 @@
 					ID="10">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="AlienEradicatorLaserWeapon"
+						Template="AlienEradicatorLaserWeaponE"
 						Upgrade="Upgrade_EradicatorLaserRear" />
 					<TurretSettings
 						TurretTurnRate="200"
@@ -1801,7 +2345,7 @@
 					ID="11">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="AlienEradicatorLaserWeapon"
+						Template="AlienEradicatorLaserWeaponB"
 						Upgrade="Upgrade_EradicatorLaserFront" />
 					<TurretSettings
 						TurretTurnRate="200"
@@ -1821,7 +2365,7 @@
 					ID="12">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="AlienEradicatorLaserWeapon"
+						Template="AlienEradicatorLaserWeaponD"
 						Upgrade="Upgrade_EradicatorLaserMiddle" />
 					<TurretSettings
 						TurretTurnRate="200"
@@ -1841,7 +2385,7 @@
 					ID="13">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="AlienEradicatorLaserWeapon"
+						Template="AlienEradicatorLaserWeaponF"
 						Upgrade="Upgrade_EradicatorLaserRear" />
 					<TurretSettings
 						TurretTurnRate="200"
@@ -2232,13 +2776,50 @@
 				<DieMuxData
 					DeathTypes="ALL" />
 			</SlowDeath>
+			
 			<SweepingLaserState
-				id="ModuleTag_LaserState"
+				id="ModuleTag_LaserState1"
 				Radius="15.0"
 				SweepFXList="FX_AlienBuzzerHit"
 				VeteranSweepFXList="FX_AlienBuzzerHitHeroic"
 				SweepFXTimeout="0.25s"
-				LaserId="0" />
+				LaserId="1" />
+			<SweepingLaserState
+				id="ModuleTag_LaserState2"
+				Radius="15.0"
+				SweepFXList="FX_AlienBuzzerHit"
+				VeteranSweepFXList="FX_AlienBuzzerHitHeroic"
+				SweepFXTimeout="0.25s"
+				LaserId="2" />
+			<SweepingLaserState
+				id="ModuleTag_LaserState3"
+				Radius="15.0"
+				SweepFXList="FX_AlienBuzzerHit"
+				VeteranSweepFXList="FX_AlienBuzzerHitHeroic"
+				SweepFXTimeout="0.25s"
+				LaserId="3" />
+			<SweepingLaserState
+				id="ModuleTag_LaserState4"
+				Radius="15.0"
+				SweepFXList="FX_AlienBuzzerHit"
+				VeteranSweepFXList="FX_AlienBuzzerHitHeroic"
+				SweepFXTimeout="0.25s"
+				LaserId="4" />
+			<SweepingLaserState
+				id="ModuleTag_LaserState5"
+				Radius="15.0"
+				SweepFXList="FX_AlienBuzzerHit"
+				VeteranSweepFXList="FX_AlienBuzzerHitHeroic"
+				SweepFXTimeout="0.25s"
+				LaserId="5" />
+			<SweepingLaserState
+				id="ModuleTag_LaserState6"
+				Radius="15.0"
+				SweepFXList="FX_AlienBuzzerHit"
+				VeteranSweepFXList="FX_AlienBuzzerHitHeroic"
+				SweepFXTimeout="0.25s"
+				LaserId="6" />
+				
 			<SalvagerInfo
 				id="RecycleModule"
 				SalvageRadius="450.0"
@@ -2349,6 +2930,11 @@
 				CommandButtonName="Command_TeleportEradicator"
 				MinimumCutoff="100"
 				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT" />				
+			<StatusBitsUpgrade
+				id="ModuleTag_VeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_01">
+				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
+			</StatusBitsUpgrade>	
 		</Behaviors>
 		<AI>
 			<AIUpdate
