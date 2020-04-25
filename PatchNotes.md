@@ -99,6 +99,14 @@
 1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
 	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based
 		* Unlike Nod Power Plants with Tiberium Core upgrade, units and structures with Tiberium Core Missiles upgrade will not have the "HAVE_TIBERIUM_UPGRADE" flag, making it 'immune' to Tiberium Vibration Scan as it would be able to counter Cloaking Field and Stealth Tanks with a simple click of a button, making the upgrade less desireable against Scrin factions.
+#### Special Powers
+1. Some new Special Powers do not use unique icons or radius cursors, despite being available and compiled
+	* Swap the icons and radius cursors to the appropriate textures
+		* Powers Affected
+			* Zone Raider Drop Pods (Icon)
+			* Decoy Temple of Nod (Icon)
+			* Ichor Seed (Cursor)
+			* Shock Pods (Cursor)
 #### AI
 1. Campaign AI design was not designed properly, structure based on Multiplayer AI. In TW, there are clear differences between Campaign and Multiplayer Skirmish AI in terms of structure and design.
 	* Redesign Campaign AI

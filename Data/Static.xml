@@ -21,9 +21,9 @@
 
 		<Include type="all" source="SkirmishAI/SkirmishAIIncludes.xml" />
 		
-		<Include type="all" source="UI/ButtonStateDataCommon.xml" />
+		<Include type="all" source="UI/ButtonStateData.xml" />
 		<Include type="all" source="UI/PlayerPowerButtonTemplates.xml" />
-		<Include type="all" source="UI/UnitAbilityButtonTemplatesCommon.xml" />
+		<Include type="all" source="UI/UnitAbilityButtonTemplates.xml" />
 		
 		<!--Include type="all" source="Misc.xml" /-->
 	</Includes>

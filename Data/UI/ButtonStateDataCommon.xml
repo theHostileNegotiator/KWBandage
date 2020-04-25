@@ -9,6 +9,26 @@
 			Description="DESC:PlayerPowerHunterKillerTeam" />
 	</ButtonSingleStateData>
 	
+	<!-- Changed for ZOCOM unique icon -->
+	<ButtonSingleStateData
+		id="ButtonStateZOCOM_SpaceCommandRaiderPods">
+		<State
+			Image="Button_PlayerPower_RaiderPods"
+			Title="NAME:PlayerPowerZOCOMRaiderPods"
+			TypeDescription="TYPE:PlayerPowerZOCOMRaiderPods"
+			Description="DESC:PlayerPowerZOCOMRaiderPods"  />
+	</ButtonSingleStateData>
+	
+	<!-- Changed to use unique icon rather than using the icon used in for unit display -->
+	<ButtonSingleStateData
+		id="ButtonStateDecoyTemple">
+		<State
+			Image="Button_PlayerPower_DecoyTemple"
+			Title="NAME:PlayerPowerDecoyTemple"
+			TypeDescription="TYPE:PlayerPowerDecoyTemple"
+			Description="DESC:PlayerPowerDecoyTemple"  />
+	</ButtonSingleStateData>
+	
 	<ButtonSingleStateData
 		id="ButtonStatePlayerPowerMarkedOfKaneShadowStrikeTeam">
 		<State
