@@ -417,6 +417,9 @@
 #### Decoy Army
 1. Can select and clone Drone Ships
 	* Removed Drone ships from being cloned
+#### Tiberium Vein Detonation
+1. Weapon was not nerfed despite being documented in 1.01
+	* Nerfed detonation damage by 20%
 #### Air Support Tower
 1. Online Games causes desyncs when Structure is created
 	* Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs

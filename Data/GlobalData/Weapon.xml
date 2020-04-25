@@ -2552,4 +2552,49 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- Weapon was supposed to be nerfed in 1.01 by 20%, but values weren't changed -->
+	<WeaponTemplate
+		id="TibVeinDetonation"
+		Name="TibVeinDetonation"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+		AttackRange="50000.0">
+		<Nuggets>
+			<DamageNugget
+				Damage="800"
+				DamageTaperOff="15"
+				Radius="250"
+				DelayTimeSeconds="2.1s"
+				DamageType="CANNON"
+				DeathType="DETONATED" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="AIRCRAFT"/>
+				<DamageScalarDetails Scalar= "100%">
+					<Filter
+						Rule="NONE"
+						Include="TIBERIUM" />
+				</DamageScalarDetails>
+			</DamageNugget>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_GenericTreeCrusher" />
+			<ReportWeaponFiredStatNugget/>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="VeinDetonationRadiusWeapon"
+		Name="VeinDetonationRadiusWeapon"
+		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+		AttackRange="50000.0">
+		<Nuggets>
+			<DamageNugget
+				Damage="80"
+				Radius="100"
+				DelayTimeSeconds="3.5s"
+				DamageType="CANNON"
+				DeathType="DETONATED" >
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
 </AssetDeclaration>
