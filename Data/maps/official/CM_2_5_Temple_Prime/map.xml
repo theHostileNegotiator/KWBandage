@@ -44,9 +44,6 @@
 			source="DATA:civilian/washington_dc_dc/buildings/dcbcargo10.xml"
 			type="all"/>
 		<Include
-			source="ART:NUGarArmor_SPM.xml"
-			type="all"/>
-		<Include
 			source="overrides.xml"
 			type="all"/>
 	</Includes>

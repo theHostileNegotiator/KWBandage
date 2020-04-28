@@ -182,9 +182,6 @@
 			source="DATA:nod/units_singleplayercampaign/nodcarryall_sp.xml"
 			type="all"/>
 		<Include
-			source="ART:NUGarArmor_SPM.xml"
-			type="all"/>
-		<Include
 			source="overrides.xml"
 			type="all"/>
 	</Includes>

@@ -152,9 +152,6 @@
 			source="DATA:neutral/structures/tiberiumspike.xml"
 			type="all"/>
 		<Include
-			source="ART:NUGarArmor_SPM.xml"
-			type="all"/>
-		<Include
 			source="overrides.xml"
 			type="all"/>
 	</Includes>

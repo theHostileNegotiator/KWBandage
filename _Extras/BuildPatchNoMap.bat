@@ -44,17 +44,17 @@ if exist "%cd%\Mods\%modname%\Data\AdditionalMaps\MapMetaData_Global.xml" "%cd%\
 
 if exist "%cd%\Mods\%modname%\Data\AdditionalMaps\MapMetaData_GlobalOverrides.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\AdditionalMaps\MapMetaData_GlobalOverrides.xml" -art:"..\..\Art" -audio:"..\..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data\AdditionalMaps" -version:""
 
-if exist "%cd%\Mods\%modname%\Data\Global.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Global.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"%streamversion%" -bps:"global_common_2.manifest,%cd%\Game Files\Manifest\global_common_2.manifest"
+if exist "%cd%\Mods\%modname%\Data\Global.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Global.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"common%streamversion%" -bps:"global_common_2.manifest,%cd%\Game Files\Manifest\global_common_2.manifest"
 
 if exist "%cd%\Mods\%modname%\Data\Static.xml" (
-	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"%streamversion%" -bps:"static_common_2.manifest,%cd%\Game Files\Manifest\static_common_2.manifest"
+	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_common%streamversion%" -bps:"static_common_2.manifest,%cd%\Game Files\Manifest\static_common_2.manifest"
 
-	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art_L" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_l%streamversion%" -bcn:LowLOD -bps:"static_l_common_2.manifest,%cd%\Game Files\Manifest\static_l_common_2.manifest"
+	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art_L" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_l_common%streamversion%" -bcn:LowLOD -bps:"static_l_common_2.manifest,%cd%\Game Files\Manifest\static_l_common_2.manifest"
 
 	if exist "%cd%\Compilation\Mods\%modname%\Data\Static.version" del "%cd%\Compilation\Mods\%modname%\Data\Static.version"
 	if exist "%cd%\Compilation\Mods\%modname%\Data\Static_l.version" del "%cd%\Compilation\Mods\%modname%\Data\Static_l.version"
-	echo _mod>> "%cd%\Compilation\Mods\%modname%\Data\Static.version"
-	echo _mod>> "%cd%\Compilation\Mods\%modname%\Data\Static_l.version"
+	echo _common%streamversion%>> "%cd%\Compilation\Mods\%modname%\Data\Static.version"
+	echo _common%streamversion%>> "%cd%\Compilation\Mods\%modname%\Data\Static_l.version"
 )
 
 if exist "%cd%\Mods\%modname%\Data\Worldbuilder.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Worldbuilder.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"%streamversion%" -bps:"worldbuilder_2.manifest,%cd%\Game Files\Manifest\worldbuilder_2.manifest"
@@ -83,6 +83,7 @@ if exist "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef" 
 if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Streams.big" echo add-big Core\%modname%_%modversion%_Streams.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
 if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Misc.big" echo add-big Core\%modname%_%modversion%_Misc.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
 if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big" echo add-big Meta\%modname%_%modversion%_Maps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
+
 
 setlocal EnableDelayedExpansion
 
