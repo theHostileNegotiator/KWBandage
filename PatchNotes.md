@@ -95,6 +95,10 @@
 #### Sonic Repulsion Field and Laser Fencing
 1. Structures when entering DAMAGED state (66%) removes the special power which would suggest that the upgrade cannot be applied. However the upgrade can be applied at state, but will not display.
 	* Removed ability to be able to apply to damaged structures
+2. Commands are referenced from the Tier 3 Structure instead of Tier 2 (This may only be important for AI usage)
+	* Changed commands to be referenced by the appropriate structures
+3. Powerstores has the ability to deal Cloaking Field damage with the ability
+	* Removed weapon associations
 #### Tiberium Based Units
 1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
 	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based

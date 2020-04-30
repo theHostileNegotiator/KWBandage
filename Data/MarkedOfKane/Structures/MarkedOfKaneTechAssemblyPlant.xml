@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!-- AI will use Redemption on Infantry rather than Vehicles -->
+<!-- Removed Laser Capacitor Sub Object -->
 <!-- Removed AI Laser Fence Referencing -->
 	<GameObject
-		id="NODTechAssemblyPlant"
-		inheritFrom="BaseStructure"
+		id="MarkedOfKaneTechAssemblyPlant"
+		inheritFrom="NODTechAssemblyPlant"
 		SelectPortrait="Portrait_NODTechLab"
 		ButtonImage="Portrait_NODTechLab"
-		Side="NOD"
+		Side="MarkedOfKane"
 		EditorSorting="STRUCTURE"
 		TransportSlotCount="1"
 		BuildCost="4000"
 		BuildTime="40"
 		EnergyProduction="-15"
-		CommandSet="NODTechAssemblyPlantCommandSet"
+		CommandSet="MarkedOfKaneTechAssemblyPlantCommandSet"
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS FS_TECHNOLOGY POWERED FS_TECH_CENTER NOT_AUTOACQUIRABLE AUTO_ACQUIRABLE_BY_AI COVER"
 		RadarPriority="STRUCTURE"
 		PlacementViewAngle="225d"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
-		EditorName="NODTechAssemblyPlant"
-		Description="Desc:NODTechAssemblyPlant"
-		TypeDescription="Type:NODTechAssemblyPlant"
+		EditorName="MarkedOfKaneTechAssemblyPlant"
+		Description="Desc:MarkedOfKaneTechAssemblyPlant"
+		TypeDescription="Type:MarkedOfKaneTechAssemblyPlant"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">
 		<DisplayName>Name:NODTechAssemblyPlant</DisplayName>
 		<GameDependency>
-			<RequiredObject>NODOperationsCenter</RequiredObject>
+			<RequiredObject>MarkedOfKaneOperationsCenter</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="NODTechAssemblyPlantArmor"
@@ -276,28 +276,10 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
-			<CreateObjectDie
-				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_AdvancedNODBuildingDestruction" >
-				<DieMuxData
-					DeathTypes="ALL"
-					DeathTypesForbidden="DETONATED SUICIDED" />
-				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
-			</CreateObjectDie>
-			<CreateObjectDie
-				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_AdvancedNODBuildingSuicide" >
-				<DieMuxData DeathTypes="SUICIDED" />
-			</CreateObjectDie>
 			<SubObjectsUpgrade
 				id="ModuleTag_EMPBurstSubObject"
 				ShowSubObjects="UG_EMP">
 				<TriggeredBy>Upgrade_NODEmpBurst</TriggeredBy>
-			</SubObjectsUpgrade>
-			<SubObjectsUpgrade
-				id="ModuleTag_LaserCapacitorSubObject"
-				ShowSubObjects="UG_Lasers">
-				<TriggeredBy>Upgrade_NODTechCenterLaserCapacitor</TriggeredBy>
 			</SubObjectsUpgrade>
 			<SubObjectsUpgrade
 				id="ModuleTag_TibCoreMissilesSubObject"
@@ -306,19 +288,25 @@
 			</SubObjectsUpgrade>
 			<StructureUnpackUpdate
 				id="ModuleTag_StructureUnpackUpdate"
-				UnpackTime="1.5s" />
-			<OCLSpecialPower
-				id="ModuleTag_Redemption"
-				SpecialPowerTemplate="SpecialPower_Redemption"
-				TriggerFX="FX_NodCloakingField"
-				OCL="OCL_RedemptionTrigger"
-				CreateLocation="CREATE_AT_LOCATION" />			
-			<AISpecialPowerUpdate
-				id="ModuleTag_NODTechLabRedemptionAI"
-				CommandButtonName="Command_Redemption"
-				AllyUnitInclude="INFANTRY"
-				SpecialPowerRadius="250.0" 
-				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF" />	
+				UnpackTime="1.5s" />						
+			<SubObjectsUpgrade
+				id="ModuleTag_SuperChargedParticleBeamSubObject"
+				ShowSubObjects="SUPERCHARGEDPARTICALBEAM">
+				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
+			</SubObjectsUpgrade>
+			<CreateObjectDie
+				id="ModuleTag_CreateOccupiedDie"
+				CreationList="OCL_AdvancedMarkedOfKaneBuildingDestruction" >
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="DETONATED SUICIDED" />
+				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
+			</CreateObjectDie>
+			<CreateObjectDie
+				id="ModuleTag_CreateOccupiedSuicide"
+				CreationList="OCL_AdvancedMarkedOfKaneBuildingSuicide" >
+				<DieMuxData DeathTypes="SUICIDED" />
+			</CreateObjectDie>
 		</Behaviors>
 		<AI>
 			<AIUpdate

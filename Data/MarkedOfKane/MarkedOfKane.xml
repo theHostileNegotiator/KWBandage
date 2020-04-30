@@ -4,9 +4,11 @@
 		<Include type="all" source="Structures/MarkedOfKaneAirSupport.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneHangar.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneLaserCannon.xml" />
+		<Include type="all" source="Structures/MarkedOfKaneOperationsCenter.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneRocketBunker.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneSecretShrine.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneShredderTurretHub.xml" />
+		<Include type="all" source="Structures/MarkedOfKaneTechAssemblyPlant.xml" />
 	
 		<Include type="all" source="Units/MarkedOfKaneAttackBike.xml" />
 		<Include type="all" source="Units/MarkedOfKaneAvatar.xml" />

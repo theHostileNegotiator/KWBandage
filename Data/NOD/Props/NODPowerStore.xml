@@ -222,15 +222,10 @@
 					Relationship="ALLIES"
 					Include="STRUCTURE"
 				/>
-				<UpgradeTemplate>Upgrade_CloakingFieldInvisibility</UpgradeTemplate>
+				<UpgradeTemplate>Upgrade_LaserFencing</UpgradeTemplate>
 			</GrantUpgradeAreaOfEffectSpecialPower>
-			<WeaponFireSpecialAbilityUpdate
-				id="ModuleTag_WeaponFireSpecialAbilityUpdateLaserFencing"
-				SpecialPowerTemplate="SpecialPower_LaserFencing"
-				SpecialWeapon="CloakingFieldKillInfantryWeapon"
-				WhichSpecialWeapon="2"
-			/>
 			
+			<!-- Decoy Temple -->
 			<OCLSpecialPower
 				id="ModuleTag_SpecialPowerDecoyTemple"
 				SpecialPowerTemplate="SpecialPower_DecoyTemple"

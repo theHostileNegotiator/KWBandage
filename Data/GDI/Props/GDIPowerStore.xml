@@ -222,15 +222,8 @@
 					Relationship="ALLIES"
 					Include="STRUCTURE"
 				/>
-				<UpgradeTemplate>Upgrade_CloakingFieldInvisibility</UpgradeTemplate>
+				<UpgradeTemplate>Upgrade_SonicRepulsionField</UpgradeTemplate>
 			</GrantUpgradeAreaOfEffectSpecialPower>
-			<WeaponFireSpecialAbilityUpdate
-				id="ModuleTag_WeaponFireSpecialAbilityUpdateSonicRepulsionField"
-				SpecialPowerTemplate="SpecialPower_SonicRepulsionField"
-				SpecialWeapon="CloakingFieldKillInfantryWeapon"
-				WhichSpecialWeapon="2"
-			/>
-	
 	
 		</Behaviors>
 		<AI>

@@ -6,6 +6,7 @@
 		<Include type="all" source="Structures/NODAirSupport.xml" />
 		<Include type="all" source="Structures/NODHangar.xml" />
 		<Include type="all" source="Structures/NODLaserCannon.xml" />
+		<Include type="all" source="Structures/NODOperationsCenter.xml" />
 		<Include type="all" source="Structures/NODRocketBunker.xml" />
 		<Include type="all" source="Structures/NODShredderTurret.xml" />
 		<Include type="all" source="Structures/NODShredderTurretHub.xml" />
