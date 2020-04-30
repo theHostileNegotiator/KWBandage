@@ -8,6 +8,7 @@
 		<Include type="all" source="Structures/BlackHandSecretShrine.xml" />
 		<Include type="all" source="Structures/BlackHandShredderTurret.xml" />
 		<Include type="all" source="Structures/BlackHandShredderTurretHub.xml" />
+		<Include type="all" source="Structures/BlackHandTiberiumLiquidationFacility.xml" />
 	
 		<Include type="all" source="Units/BlackHandAttackBike.xml" />
 		<Include type="all" source="Units/BlackHandBlackDisciple.xml" />

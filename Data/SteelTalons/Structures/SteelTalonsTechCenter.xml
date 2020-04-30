@@ -309,6 +309,7 @@
 				id="ModuleTag_RailgunAcceleratorPowerAI"
 				CommandButtonName="Command_SpecialPowerRailgunAccelerator"
 				AllyUnitInclude="VEHICLE"
+				AllyUnitExclude="INFANTRY HARVESTER"
 				SpecialPowerRadius="200.0" 
 				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF" />
 			<!--AISpecialPowerUpdate

@@ -438,6 +438,9 @@
 #### Tiberium Vein Detonation
 1. Weapon was not nerfed despite being documented in 1.01
 	* Nerfed detonation damage by 20%
+2. Special Power is considered to be a Super Weapon to the AI
+	* Changed Special Power Type to SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES
+		* Will need to test it's attack restrictions
 #### Air Support Tower
 1. Online Games causes desyncs when Structure is created
 	* Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs

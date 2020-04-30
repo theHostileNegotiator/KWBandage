@@ -12,6 +12,7 @@
 		<Include type="all" source="Structures/NODShredderTurretHub.xml" />
 		<Include type="all" source="Structures/NODShredderTurretSpawnHole.xml" />
 		<Include type="all" source="Structures/NODTechAssemblyPlant.xml" />
+		<Include type="all" source="Structures/NODTiberiumLiquidationFacility.xml" />
 	
 		<Include type="all" source="Units/NODAttackBike.xml" />		
 		<Include type="all" source="Units/NODAvatar.xml" />	
