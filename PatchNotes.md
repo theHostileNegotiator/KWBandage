@@ -97,8 +97,8 @@
 	* Removed ability to be able to apply to damaged structures
 2. Commands are referenced from the Tier 3 Structure instead of Tier 2 (This may only be important for AI usage)
 	* Changed commands to be referenced by the appropriate structures
-3. Powerstores has the ability to deal Cloaking Field damage with the ability
-	* Removed weapon associations
+3. Powerstores has the ability to deal Cloaking Field damage with the ability and also listed the wrong upgrade.
+	* Fixed upgrade reference and removed weapon associations
 #### Tiberium Based Units
 1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
 	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based
