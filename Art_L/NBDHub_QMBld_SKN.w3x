@@ -59924,7 +59924,7 @@
 		<Extent X="3.336302" Y="19.268978" Z="3.553705"/>
 	</W3DCollisionBox>
 	<W3DContainer id="NBDHUB_QMBLD_SKN" Hierarchy="NBDHUB_QMBLD_SKL">
-		<SubObject SubObjectID="TCMHUB_UPGRADE" BoneIndex="1">
+		<SubObject SubObjectID="TCMHUB_UPGRADE" BoneIndex="27">
 			<RenderObject>
 				<Mesh>NBDHUB_QMBLD_SKN.TCMHUB_UPGRADE</Mesh>
 			</RenderObject>

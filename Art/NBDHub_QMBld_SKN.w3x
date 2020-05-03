@@ -76979,7 +76979,7 @@
 				<CollisionBox>NBDHUB_QMBLD_SKN.OBBOX01</CollisionBox>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="TCMHUB_UPGRADE" BoneIndex="1">
+		<SubObject SubObjectID="TCMHUB_UPGRADE" BoneIndex="27">
 			<RenderObject>
 				<Mesh>NBDHUB_QMBLD_SKN.TCMHUB_UPGRADE</Mesh>
 			</RenderObject>

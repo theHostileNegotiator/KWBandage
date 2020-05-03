@@ -79201,7 +79201,7 @@
 				<CollisionBox>NBDHUB_QM_SKN.OBBOX01</CollisionBox>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="TCMHUB_UPGRADE" BoneIndex="3">
+		<SubObject SubObjectID="TCMHUB_UPGRADE" BoneIndex="23">
 			<RenderObject>
 				<Mesh>NBDHUB_QM_SKN.TCMHUB_UPGRADE</Mesh>
 			</RenderObject>

@@ -60075,7 +60075,7 @@
 		<Extent X="3.336302" Y="19.268978" Z="3.553705"/>
 	</W3DCollisionBox>
 	<W3DContainer id="NBDHUB_QM_D2_SKN" Hierarchy="NBDHUB_QM_D2_SKL">
-		<SubObject SubObjectID="TCMHUB_UPGRADE" BoneIndex="1">
+		<SubObject SubObjectID="TCMHUB_UPGRADE" BoneIndex="23">
 			<RenderObject>
 				<Mesh>NBDHUB_QM_D2_SKN.TCMHUB_UPGRADE</Mesh>
 			</RenderObject>
