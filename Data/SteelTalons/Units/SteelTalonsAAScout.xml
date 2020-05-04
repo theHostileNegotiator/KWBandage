@@ -17,7 +17,7 @@
 		ThreatLevel="10"
 		ProductionQueueType="VEHICLE"
 		UnitCategory="VEHICLE"
-		WeaponCategory="GUN"
+		WeaponCategory="MISSILE"
 		VoicePriority="157"
 		EditorName="SteelTalonsAAScout"
 		Description="Desc:GDIAAScout"
@@ -38,7 +38,8 @@
 			Condition="NORMAL"
 			Speed="125.0" />
 		<SkirmishAIInformation
-			UnitBuilderStandardCombatUnit="true" />
+			UnitBuilderStandardCombatUnit="true"
+			ConquerMetricsOverrideAntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY" />
 		<Draws>
 			<TankDraw
 				id="ModuleTag_Draw"

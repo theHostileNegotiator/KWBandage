@@ -186,6 +186,9 @@
 	* Created animation based on Shatterer LOWA animation
 3. Unit has range change when upgrading to Tungsten Shells
 	* Reduced base weapon Range from 355 to 350 matching upgraded version
+4. SkirmishAIInformation ConquerMetricsOverrideAntiMask
+	* Changed ConquerMetricsOverrideAntiMask from ANTI_GROUND to ANTI_AIRBORNE_VEHICLE and ANTI_AIRBORNE_INFANTRY
+		* Changed WeaponCategory to MISSILE to lessen priority against Infantry and increase priority against Air units.
 #### Grenadier Squad
 1. AI will not use EMP Grenades ability
 	* Added modules that will allow them to use it
