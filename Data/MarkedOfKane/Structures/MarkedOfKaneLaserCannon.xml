@@ -46,7 +46,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBDHub_QL_SKN" />
+						Name="NBDHub_L_SKN" />
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="FX_Weapon" />
@@ -62,13 +62,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Model
-						Name="NBDHub_QL_SKN" />
-				</ModelConditionState>				
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Model
-						Name="NBDHub_QLBld_SKN" />
+						Name="NBDHub_L_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -76,9 +70,16 @@
 					<Model
 						Name="NBDHub_D3SN" />
 				</ModelConditionState>
+				<!-- Quad Turret -->
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
+					ConditionsYes="USER_6 STRUCTURE_UNPACKING">
+					<Model
+						Name="NBDHub_QLBld_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6 REALLYDAMAGED">
 					<Model
 						Name="NBDHub_QL_D2_SKN" />
 					<ParticleSysBone
@@ -96,9 +97,56 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
+					ConditionsYes="USER_6 DAMAGED">
 					<Model
 						Name="NBDHub_QL_SKN" />
+					<Texture
+						Original="NBDHub"
+						New="NBDHub_D" />
+					<Texture
+						Original="NBLsrCann"
+						New="NBLsrCannD" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6">
+					<Model
+						Name="NBDHub_QL_SKN" />
+				</ModelConditionState>
+				<!-- Default -->
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBDHub_LBld_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NBDHub_L_D2_SKN" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerDist"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="NBDHub_L_SKN" />
 					<Texture
 						Original="NBDHub"
 						New="NBDHub_D" />
@@ -117,10 +165,6 @@
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
-					<Script>
-						CurDrawableHideSubObject("NEWSKIN_HUB")
-						CurDrawableHideSubObject("NEWSKIN_LASERCANNON")					
-					</Script>
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -272,9 +316,6 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
-			<GrantUpgradeCreate
-				id="ModuleTag_GrantUpgradeCreate" 
-				UpgradeToGrant="Upgrade_NoQuadHub" />
 			<LaserState
 				id="ModuleTag_LaserState"
 				LaserId="0"></LaserState>
@@ -331,24 +372,16 @@
 				StatusToSet="WEAPON_UPGRADED_01">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</StatusBitsUpgrade>
-			
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon02"
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_NODTechCenterLaserCapacitor</TriggeredBy>
 			</StatusBitsUpgrade>
-			
-			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_ShowQuadTurretLaserCannonHub"
-				ShowSubObjects="NEWSKIN_HUB NEWSKIN_LASERCANNON"
-				HideSubObjects="NBDHUB">
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowQuadTurretLaserHub"
+				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</SubObjectsUpgrade>	
-			<RemoveUpgradeUpgrade
-				id="ModuleTag_RemoveForQuad">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-				<UpgradeToRemove>Upgrade_NoQuadHub</UpgradeToRemove>
-			</RemoveUpgradeUpgrade>
+			</ModelConditionUpgrade>
 
 		<!-- causing weird animation bug
 			<AttributeModifierUpgrade

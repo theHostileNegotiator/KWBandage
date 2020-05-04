@@ -48,7 +48,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBDHub_QM_SKN" />					
+						Name="NBDHub_M_SKN" />					
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						WeaponSlotID="1"
@@ -66,17 +66,24 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Model
-						Name="NBDHub_QM_SKN" />
-				</ModelConditionState>	
+						Name="NBDHub_M_SKN" />
+				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
+					ConditionsYes="RUBBLE">
+					<Model
+						Name="NBDHub_D3SN" />
+				</ModelConditionState>	
+				<!-- Quad Turret -->
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6 STRUCTURE_UNPACKING">
 					<Model
 						Name="NBDHub_QMBld_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
+					ConditionsYes="USER_6 REALLYDAMAGED">
 					<Model
 						Name="NBDHub_QM_D2_SKN" />
 					<ParticleSysBone
@@ -94,7 +101,7 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
+					ConditionsYes="USER_6 DAMAGED">
 					<Model
 						Name="NBDHub_QM_SKN" />
 					<Texture
@@ -113,10 +120,55 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="RUBBLE">
+					ConditionsYes="USER_6">
 					<Model
-						Name="NBDHub_D3SN" />
-				</ModelConditionState>	
+						Name="NBDHub_QM_SKN" />	
+				</ModelConditionState>
+				
+				<!-- Default -->
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBDHub_MBld_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NBDHub_M_D2_SKN" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerDist"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="NBDHub_M_SKN" />
+					<Texture
+						Original="NBDHub"
+						New="NBDHub_D" />
+					<Texture
+						Original="NBDefense"
+						New="NBDefenseD" />
+					<Texture
+						Original="NUTibCoreMissles"
+						New="NUTibCoreMissles_D" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
 
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT">
@@ -126,10 +178,6 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Script>
-						CurDrawableHideSubObject("NEWSKIN_HUB")
-						CurDrawableHideSubObject("NEWSKIN_SAM")
-						CurDrawableHideSubObject("TIBCOREMISSILE")
-						CurDrawableHideSubObject("HOSE")
 						CurDrawableHideSubObject("TCMHUB_UPGRADE")
 					</Script>
 				</AnimationState>
@@ -254,10 +302,6 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
-			<GrantUpgradeCreate
-				id="ModuleTag_GrantUpgradeCreate" 
-				UpgradeToGrant="Upgrade_NoQuadHub"
-			/>
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="3.0s"
@@ -321,27 +365,15 @@
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
 			</StatusBitsUpgrade>
-			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_ShowQuadTurret"
-				ShowSubObjects="NEWSKIN_HUB NEWSKIN_SAM"
-				HideSubObjects="NBDHUB">
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowQuadTurretRocketHub"
+				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</SubObjectsUpgrade>
+			</ModelConditionUpgrade>
 			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_ShowTibCore"
-				ShowSubObjects="TCMHUB_UPGRADE">
+				ShowSubObjects="TCMHUB_UPGRADE HOSE TIBCOREMISSILE">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
-			</SubObjectsUpgrade>
-			<RemoveUpgradeUpgrade
-				id="ModuleTag_RemoveForQuad">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-				<UpgradeToRemove>Upgrade_NoQuadHub</UpgradeToRemove>
-			</RemoveUpgradeUpgrade>
-			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_ShowTibCoreQuad"
-				ShowSubObjects="HOSE TIBCOREMISSILE">
-				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
-				<ConflictsWith>Upgrade_NoQuadHub</ConflictsWith>
 			</SubObjectsUpgrade>
 			<RepairUpdate
 				id="ModuleTag_RepairUpdate">
@@ -376,7 +408,6 @@
 			</EngineerContain>
 			<AudioLoopUpgrade id="NOD_TiberiumCoreMissile_Upgrade" SoundToPlay="AudioEvent:NOD_TiberiumCoreMissile_Upgrade">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
-				<ConflictsWith>Upgrade_NoQuadHub</ConflictsWith>
 			</AudioLoopUpgrade> 
 			<AudioLoopUpgrade id="NOD_QuadTurrets_RocketHubUpgrade" SoundToPlay="AudioEvent:NOD_QuadTurrets_RocketHubUpgrade">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>

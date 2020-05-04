@@ -728,18 +728,18 @@ end
 function OnNODShredderHubCreated(self)
 	ObjectHideSubObjectPermanently( self, "MUZZLEFLASH_01", true )
 	ObjectHideSubObjectPermanently( self, "MUZZLEFLASH_02", true )
-	ObjectHideSubObjectPermanently( self, "NEWSKIN_HUB", true )
-	ObjectHideSubObjectPermanently( self, "NEWSKIN_SHREDDER", true )
+	--ObjectHideSubObjectPermanently( self, "NEWSKIN_HUB", true )
+	--ObjectHideSubObjectPermanently( self, "NEWSKIN_SHREDDER", true )
 end
 
 function OnNODLaserCannonHubCreated(self)
-	ObjectHideSubObjectPermanently( self, "NEWSKIN_HUB", true )
-	ObjectHideSubObjectPermanently( self, "NEWSKIN_LASERCANNON", true )
+	--ObjectHideSubObjectPermanently( self, "NEWSKIN_HUB", true )
+	--ObjectHideSubObjectPermanently( self, "NEWSKIN_LASERCANNON", true )
 end
 
 function OnNODRocketBunkerHubCreated(self)
-	ObjectHideSubObjectPermanently( self, "NEWSKIN_HUB", true )
-	ObjectHideSubObjectPermanently( self, "NEWSKIN_SAM", true )
+	--ObjectHideSubObjectPermanently( self, "NEWSKIN_HUB", true )
+	--ObjectHideSubObjectPermanently( self, "NEWSKIN_SAM", true )
 	ObjectHideSubObjectPermanently( self, "TIBCOREMISSILE", true )
 	ObjectHideSubObjectPermanently( self, "HOSE", true )
 	ObjectHideSubObjectPermanently( self, "TCMHUB_UPGRADE", true )

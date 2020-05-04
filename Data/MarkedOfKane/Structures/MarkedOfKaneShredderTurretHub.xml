@@ -49,7 +49,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBDHub_QS_SKN" />
+						Name="NBDHub_S_SKN" />
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="FX_WEAPON" />
@@ -72,15 +72,8 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Model
-						Name="NBDHub_QS_SKN" />
-				</ModelConditionState>				
-				
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Model
-						Name="NBDHub_QSBld_SKN" />
-				</ModelConditionState>				
+						Name="NBDHub_S_SKN" />
+				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE">
@@ -88,10 +81,16 @@
 						Name="NBDHub_D3SN" />
 				</ModelConditionState>
 				
-				<!-- quads states -->
+				<!-- Quad Turret -->
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
+					ConditionsYes="USER_6 STRUCTURE_UNPACKING">
+					<Model
+						Name="NBDHub_QSBld_SKN" />
+				</ModelConditionState>	
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6 REALLYDAMAGED">
 					<Model
 						Name="NBDHub_QS_D2_SKN" />
 					<ParticleSysBone
@@ -109,9 +108,57 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
+					ConditionsYes="USER_6 DAMAGED">
 					<Model
 						Name="NBDHub_QS_SKN" />
+					<Texture
+						Original="NBDHub"
+						New="NBDHub_D" />
+					<Texture
+						Original="NBShredder"
+						New="NBShredderD" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6">
+					<Model
+						Name="NBDHub_QS_SKN" />
+				</ModelConditionState>
+				
+				<!-- Default -->
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBDHub_SBld_SKN" />
+				</ModelConditionState>	
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NBDHub_S_D2_SKN" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerDist"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="NBDHub_S_SKN" />
 					<Texture
 						Original="NBDHub"
 						New="NBDHub_D" />
@@ -131,28 +178,7 @@
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
-					<Script>
-						CurDrawableHideSubObject("NEWSKIN_HUB")
-						CurDrawableHideSubObject("NEWSKIN_SHREDDER")
-						CurDrawableHideSubObject("MUZZLEFLASH01")
-						CurDrawableHideSubObject("MUZZLEFLASH02")						
-					</Script>
 				</AnimationState>
-				
-				
-				<!--AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING USER_7">
-					<Animation
-						AnimationName="NBDHub_QSBld_SKN"
-						AnimationMode="ONCE" />
-					<Script>
-						CurDrawableHideSubObject("NEWSKIN")
-						CurDrawableHideSubObject("NBDHUB_Q")
-						CurDrawableHideSubObject("MUZZLEFLASH01")
-						CurDrawableHideSubObject("MUZZLEFLASH02")						
-					</Script>
-				</AnimationState-->	
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="STRUCTURE_UNPACKING">
@@ -160,14 +186,6 @@
 						AnimationName="NBDHub_QSBld_AAN"
 						AnimationMode="ONCE" />
 				</AnimationState>
-				<!--AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Animation
-						AnimationName="NBDHub_AAN"
-						AnimationMode="ONCE" />
-				</AnimationState-->
-				
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
@@ -283,9 +301,6 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
-			<GrantUpgradeCreate
-				id="ModuleTag_GrantUpgradeCreate" 
-				UpgradeToGrant="Upgrade_NoQuadHub" />
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="3.0s"
@@ -345,23 +360,11 @@
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
 			</StatusBitsUpgrade>
-			<!--ModelConditionUpgrade
+			<ModelConditionUpgrade
 				id="ModuleTag_ShowQuadTurretShredderHub"
-				AddConditionFlags="USER_5"
-				RemoveConditionFlags="USER_7">
+				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</ModelConditionUpgrade-->
-			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_ShowQuadTurretShredderHub"
-				ShowSubObjects="NEWSKIN_HUB NEWSKIN_SHREDDER"
-				HideSubObjects="NBDHUB">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</SubObjectsUpgrade>	
-			<RemoveUpgradeUpgrade
-				id="ModuleTag_RemoveForQuad">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-				<UpgradeToRemove>Upgrade_NoQuadHub</UpgradeToRemove>
-			</RemoveUpgradeUpgrade>
+			</ModelConditionUpgrade>
 			<GatherSlavesUpdate
 				id="ModuleTag_GatherSlaves"
 				SlaveTemplate="MarkedOfKaneShredderTurret"
@@ -403,7 +406,6 @@
 			</AudioLoopUpgrade> 
 			<AudioLoopUpgrade id="SuperChargedParticleBeamUpgrade" SoundToPlay="AudioEvent:NOD_Enlightened_SuperChargedParticleBeamUpgrade">
 				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
-				<ConflictsWith>Upgrade_NoQuadHub</ConflictsWith>
 			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
