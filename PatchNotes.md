@@ -156,6 +156,7 @@
 #### Tech Center
 1. Tech Center Telescope animation is bugged, socket does not move with telescope
 	* Fix animation to match with correct bones
+		* Additionally, animation will not play when Not Powered or EMPed
 2. ZOCOM AI will not use Sharpshooter ability
 	* Added the ability for the AI to use the special power
 #### Dig In Structure

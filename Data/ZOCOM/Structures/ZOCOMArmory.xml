@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Added ZOCOM Sharpshooter Team AI-->
+<!-- Fixed Idle Animations -->
+<!-- Idle Animations will no longer play when Not Powered -->
+<!-- Added ZOCOM Sharpshooter Team AI -->
+<!-- Will no longer show Railgun Subobjects -->
 	<GameObject
 		id="ZOCOMArmory"
 		SelectPortrait="Portrait_GDITechCenter"
@@ -79,7 +82,8 @@
 						Name="GBTechCenD3_SN" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT">
+					ParseCondStateType="PARSE_DEFAULT"
+					Flags="DO_NOT_PLAY_WHEN_UNPOWERED">
 					<Animation
 						AnimationName="GBTechCen_IDLA"
 						AnimationMode="LOOP" />
@@ -233,8 +237,7 @@
 				id="ModuleTag_CatalystDeathWeapon"
 				InitiallyActive="true"
 				DeathWeapon="CatalystBuildingDeathWeapon"
-				ContinueToBezierDestination="false"
-			>
+				ContinueToBezierDestination="false">
 				<DieMuxData DeathTypes="CATALYST" />
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
@@ -260,13 +263,6 @@
 					DeathTypes="ALL" />
 			</SlowDeath>
 			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_Railguns"
-				ShowSubObjects="UG_Rail">
-				<CustomAnimAndDuration
-					AnimState="USER_1"></CustomAnimAndDuration>
-				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
-			</SubObjectsUpgrade>
-			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_Mortars"
 				ShowSubObjects="UG_Mortar B_MortarRound_1">
 				<CustomAnimAndDuration
@@ -280,7 +276,6 @@
 					AnimState="USER_3"></CustomAnimAndDuration>
 				<TriggeredBy>Upgrade_GDITungstenAAShells</TriggeredBy>
 			</SubObjectsUpgrade>
-
 			<FXListBehavior
 				id="ModuleTag_FXList">
 				<DieMuxData
@@ -297,33 +292,14 @@
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-
-			<OCLSpecialPower
-				id="ModuleTag_CallSupportZOCOMHunterKillerTeam"
-				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMHunterKillerTeam"
-				TriggerFX="FX_GDICallForTransportFlare"
-				OCL="OCL_CallSupportZOCOMHunterKillerTeam"
-				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"
-			/>
-			<AISpecialPowerUpdate
-				id="ModuleTag_CommandPostCallZOCOMHunterKillerAI"
-				CommandButtonName="Command_CommandPostCallZOCOMHunterKiller"
-		        ReinforceDistance="400.0"
-				SpecialPowerRadius="300.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" 
-			/>
-
-
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
 				Type="UPGRADE" 
 				GiveNoXP="true" />
-				
 			<ArmorUpgrade
 				id="ModuleTag_SonicRepulsionFieldUpgrade"
 				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE"
-				>
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</ArmorUpgrade>
 			<StatusBitsUpgrade
@@ -357,13 +333,24 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
+			<OCLSpecialPower
+				id="ModuleTag_CallSupportZOCOMHunterKillerTeam"
+				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMHunterKillerTeam"
+				TriggerFX="FX_GDICallForTransportFlare"
+				OCL="OCL_CallSupportZOCOMHunterKillerTeam"
+				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"/>
+			<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostCallZOCOMHunterKillerAI"
+				CommandButtonName="Command_CommandPostCallZOCOMHunterKiller"
+		        ReinforceDistance="400.0"
+				SpecialPowerRadius="300.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"/>
 			<CreateObjectDie 
 				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_ArmoryZOCOMBuildingDestruction" >
+				CreationList="OCL_ArmoryZOCOMBuildingDestruction">
 				<DieMuxData
 					DeathTypes="ALL"
-					DeathTypesForbidden="DETONATED SUICIDED" 
-				/>
+					DeathTypesForbidden="DETONATED SUICIDED" />
 				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
 			</CreateObjectDie>
 			<CreateObjectDie 

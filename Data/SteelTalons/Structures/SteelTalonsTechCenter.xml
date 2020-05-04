@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Added Railgun Accelerator AI-->
-<!--Fixed Idle Animations-->
+<!-- Added Railgun Accelerator AI -->
+<!-- Fixed Idle Animations -->
+<!-- Idle Animations will no longer play when Not Powered -->
 	<GameObject
 		id="SteelTalonsTechCenter"
 		SelectPortrait="Portrait_GDITechCenter"
@@ -18,12 +19,12 @@
 		PlacementViewAngle="315d"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
-		CampnessValue="2000"
-		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
 		EditorName="SteelTalonsTechCenter"
 		Description="Desc:SteelTalonsTechCenter"
-		TypeDescription="Type:GDIArmory">
+		TypeDescription="Type:GDIArmory"
+		CampnessValue="2000"
+		CampnessValueRadius="300"
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:GDITechCenter</DisplayName>
 		<GameDependency>
 			<RequiredObject>SteelTalonsCommandPost</RequiredObject>
@@ -80,7 +81,8 @@
 						Name="GBTechCenD3_SN" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT">
+					ParseCondStateType="PARSE_DEFAULT"
+					Flags="DO_NOT_PLAY_WHEN_UNPOWERED">
 					<Animation
 						AnimationName="GBTechCen_IDLA"
 						AnimationMode="LOOP" />
@@ -278,11 +280,6 @@
 					AnimState="USER_3"></CustomAnimAndDuration>
 				<TriggeredBy>Upgrade_GDITungstenAAShells</TriggeredBy>
 			</SubObjectsUpgrade>
-			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_AdaptiveArmor"
-				ShowSubObjects="UG_Adaptive UG_Adaptive01 UG_Adaptive02 UG_Adaptive04">
-				<TriggeredBy>Upgrade_AdaptiveArmor</TriggeredBy>
-			</SubObjectsUpgrade>
 			<FXListBehavior
 				id="ModuleTag_FXList">
 				<DieMuxData
@@ -299,27 +296,6 @@
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<OCLSpecialPower
-				id="ModuleTag_RailgunAcceleratorPower"
-				SpecialPowerTemplate="SpecialPower_RailgunAccelerator"
-				TriggerFX=""
-				OCL="OCL_GDIRailgunAcceleratorPowerSucker"
-				CreateLocation="CREATE_AT_LOCATION" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_RailgunAcceleratorPowerAI"
-				CommandButtonName="Command_SpecialPowerRailgunAccelerator"
-				AllyUnitInclude="VEHICLE"
-				AllyUnitExclude="INFANTRY HARVESTER"
-				SpecialPowerRadius="200.0" 
-				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF" />
-			<!--AISpecialPowerUpdate
-				id="ModuleTag_RailgunAcceleratorPowerAI"
-				CommandButtonName="Command_SpecialPowerRailgunAccelerator"
-				AllyUnitInclude="VEHICLE"
-				AllyUnitExclude="INFANTRY HARVESTER MCV EXPANSION_UNIT"
-				SpecialPowerRadius="200.0" 
-				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
-			/-->
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
 				Type="UPGRADE" 
@@ -361,6 +337,24 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
+			<OCLSpecialPower
+				id="ModuleTag_RailgunAcceleratorPower"
+				SpecialPowerTemplate="SpecialPower_RailgunAccelerator"
+				TriggerFX=""
+				OCL="OCL_GDIRailgunAcceleratorPowerSucker"
+				CreateLocation="CREATE_AT_LOCATION" />
+			<AISpecialPowerUpdate
+				id="ModuleTag_RailgunAcceleratorPowerAI"
+				CommandButtonName="Command_SpecialPowerRailgunAccelerator"
+				AllyUnitInclude="VEHICLE"
+				AllyUnitExclude="INFANTRY HARVESTER"
+				SpecialPowerRadius="200.0" 
+				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF" />
+			<SubObjectsUpgrade
+				id="ModuleTag_Upgrade_AdaptiveArmor"
+				ShowSubObjects="UG_Adaptive UG_Adaptive01 UG_Adaptive02 UG_Adaptive04">
+				<TriggeredBy>Upgrade_AdaptiveArmor</TriggeredBy>
+			</SubObjectsUpgrade>
 			<CreateObjectDie 
 				id="ModuleTag_CreateOccupiedDie"
 				CreationList="OCL_ArmorySteelTalonsBuildingDestruction" >
