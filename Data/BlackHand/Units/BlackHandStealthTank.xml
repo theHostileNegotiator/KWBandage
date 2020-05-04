@@ -43,7 +43,8 @@
 			Condition="NORMAL"
 			Speed="100.0" />
 		<SkirmishAIInformation
-			UnitBuilderStandardCombatUnit="true" />
+			UnitBuilderStandardCombatUnit="true"
+			ConquerMetricsOverrideAntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY" />
 		<Draws>
 			<TankDraw
 				id="ModuleTag_Draw"
