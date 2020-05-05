@@ -93,7 +93,7 @@
 2. Units may not use Tiberium Core Missile Upgrade DAMAGED texture
 	* Added texture change for Damaged State
 #### Sonic Repulsion Field and Laser Fencing
-1. Structures when entering DAMAGED state (66%) removes the special power which would suggest that the upgrade cannot be applied. However the upgrade can be applied at state, but will not display.
+1. Structures when entering DAMAGED state (66%) removes the Support Power which would suggest that the upgrade cannot be applied. However the upgrade can be applied at state, but will not display.
 	* Removed ability to be able to apply to damaged structures
 2. Commands are referenced from the Tier 3 Structure instead of Tier 2 (This may only be important for AI usage)
 	* Changed commands to be referenced by the appropriate structures
@@ -106,8 +106,8 @@
 #### Neutral Structures (+ Nod Garrison Armor)
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
-#### Special Powers
-1. Some new Special Powers do not use unique icons or radius cursors, despite being available and compiled
+#### Support Powers
+1. Some new Support Powers do not use unique icons or radius cursors, despite being available and compiled
 	* Swap the icons and radius cursors to the appropriate textures
 		* Powers Affected
 			* Zone Raider Drop Pods (Icon)
@@ -152,13 +152,13 @@
 1. When selected to be deployed, the upgrade subobjects will appear when replacing cursor. This does not happen with other structures
 	* Hide subobjects in animation state
 2. Subfactions AI would not use bombing runs and bloodhouds
-	* Added the ability for the AI to use the special power
+	* Added the ability for the AI to use the Support Power
 #### Tech Center
 1. Tech Center Telescope animation is bugged, socket does not move with telescope
 	* Fix animation to match with correct bones
 		* Additionally, animation will not play when Not Powered or EMPed
 2. ZOCOM AI will not use Sharpshooter ability
-	* Added the ability for the AI to use the special power
+	* Added the ability for the AI to use the Support Power
 #### Dig In Structure
 1. Advanced units from the Base Factions can not garrison in structure whereas Sub Factions can
 	* Exclude Sub Faction advanced units from garrison Dig In Structure
@@ -313,13 +313,13 @@
 1. The rockets fired would only come out of one rocket pod
 	* Changed bone names so burst would alternate between pods
 #### Harvester
-1. Black Hand variant could not be cloaked with NOD Cloaking Field special power
+1. Black Hand variant could not be cloaked with NOD Cloaking Field Support Power
 	* Restored ability for it to be cloaked and defaulted parameters
 #### Avatar
 1. Particle System when in REALLYDAMAGED mode was not shown when using Kane's Edition Skin
 	* Fixed Model Condition States
 2. Could not comandeer MOK Attack Bike technology
-	* Included MOK Attack Bike to be targeted in special power
+	* Included MOK Attack Bike to be targeted in Special Ability
 3. Caputuring MOK Avatar Husk would spawn NOD Avatar instead of MOK Avatar
 	* Changed OCL to spawn MOK Avatar
 4. Flame weapon particle effects would still be used when EMPed
@@ -327,7 +327,7 @@
 #### Specter
 1. Unit will rotate body to fire after deployed
 	* Remove requirement RotateToTargetWhenAiming
-2. Black Hand variant could not be cloaked with NOD Cloaking Field special power
+2. Black Hand variant could not be cloaked with NOD Cloaking Field Support Power
 	* Restored ability for it to be cloaked and defaulted parameters
 3. Black Hand will randomly play NOD voice sounds referencing stealth. (This is due to inheriting NOD Specter and not removing sounds)
 	* Removed NOD variant sound
@@ -401,13 +401,13 @@
 #### Mantis
 1. Turret is not effective at tracking Air Units, often misfiring
 	* Improved Turret Settings to match Slingshot
-2. Unit could not be cloaked with NOD Cloaking Field special power
+2. Unit could not be cloaked with NOD Cloaking Field Support Power
 	* Restored ability for it to be cloaked and defaulted parameters
 3. Damage values were inherited from Stealth Tank TW 1.09. Stealth Tank damage was reduced in KW 1.00.
 	* Reduced Damage of Rockets to match the current Stealth Tank values
 #### Shadow Strike Team
 1. Marked of Kane Strike team spawns NOD Shadows instead of MOK Shadows
-	* Created new support power for MOK Shadows
+	* Created new Support Power for MOK Shadows
 #### Cyborg EMP Ability
 1. Cyborg units had the possibility to misfire ability
 	* Tweeked range for better performance
@@ -442,8 +442,8 @@
 #### Tiberium Vein Detonation
 1. Weapon was not nerfed despite being documented in 1.01
 	* Nerfed detonation damage by 20%
-2. Special Power is considered to be a Super Weapon to the AI
-	* Changed Special Power Type to SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES
+2. Support Power is considered to be a Super Weapon to the AI
+	* Changed Support Power Type to SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES
 		* Will need to test it's attack restrictions
 #### Air Support Tower
 1. Online Games causes desyncs when Structure is created
@@ -464,7 +464,7 @@
 #### Buzzer
 1. Subfactions use Scrin Buzzer instead of their own
 	* Create new buzzer units for each faction
-		* Subfaction Buzzer Swarm Special Power will use the new Buzzers
+		* Subfaction Buzzer Swarm Support Power will use the new Buzzers
 #### Disintegrator
 1. Reaper 17 use Scrin Disintegrator instead of their own
 	* Create new disintegrator units for each faction
@@ -544,6 +544,6 @@
 1. Inconsistencies with Damage FX between multiple units
 	* Normalised type to GDI_RAILGUN
 #### Eradicator Hexapod
-1. Disintegrator visual lasers overwrite each other. Therefore if more than one laser is firing, only the latest shot laser will show.
+1. Disintegrator visual lasers override each other. Therefore if more than one laser is firing, only the latest shot laser will show.
 	* Added new Weapons, Laser Draws and Laser States.
 		* Added Heroic Laser Effects
