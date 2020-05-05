@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Refer to Steel Talons Heavy Harvester-->
+<!-- Refer to Steel Talons Heavy Harvester -->
+<!-- Added new unique Rubble Model instead of Recycling GDI Harvester Model -->
+	<Includes>
+		<Include type="all" source="ART:GUZocomHarvR_SKN.w3x" />
+	</Includes>
 	<GameObject
 		id="ZOCOMHarvester"
 		inheritFrom="BaseVehicle"
@@ -112,7 +116,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="GUHrvstrR_SKN" />
+						Name="GUZocomHarvR_SKN" />
 					<ParticleSysBone
 						BoneName="ROOTTRANSFORM"
 						FXParticleSystemTemplate="GDIDebrisSmallFire"
@@ -438,10 +442,10 @@
 				DeathObjectStatusBits="DONT_CLEAR_FOR_BUILD"
 				SinkDelay="3s"
 				SinkRate="1.0"
-				DestructionDelay="7s">
+				DestructionDelay="8s">
 				<OCL
 					Type="INITIAL">
-					<OCL>OCL_GDIHarvesterDebris</OCL>
+					<OCL>OCL_GDIZOCOMHarvesterDebris</OCL>
 				</OCL>
 				<DieMuxData
 					DeathTypes="ALL"

@@ -145,9 +145,11 @@
 1. Railgun Accelerator effect on the railgun is bugged with all units either not displaying properly or at all
 	* Instead of using Animations, Scripts are used
 		* Guardian Cannon Railgun meshs were renamed to match other units
-#### Sub Faction Harvesters
+#### Harvester
 1. Steel Talons and ZOCOM Harvesters harvests at a slower rate. Rate is based of TW Pre 1.05 Patch.
 	* Normalised values with GDI Harvester
+2. ZOCOM Harvester had no unique Rubble Model, Debris and Damaged Textures, using GDI textures.
+	* Created new models for Rubble, Debris and created new textures.
 #### Airfield
 1. When selected to be deployed, the upgrade subobjects will appear when replacing cursor. This does not happen with other structures
 	* Hide subobjects in animation state

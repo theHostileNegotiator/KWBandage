@@ -177,4 +177,89 @@
 		</CreateObject>	
 	</ObjectCreationList>
 
+	<!-- New Rocket Harvester Debris -->
+	<ObjectCreationList
+		id="OCL_GDIZOCOMHarvesterDebris">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="23.47"
+				y="-10.29"
+				z="8.06"></Offset>
+			<CreateObject>GDIZOCOMHarvesterDebris_01</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="23.47"
+				y="10.39"
+				z="8.06"></Offset>
+			<CreateObject>GDIZOCOMHarvesterDebris_02</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="-19.26"
+				y="-4.58"
+				z="8.88"></Offset>
+			<CreateObject>GDIZOCOMHarvesterDebris_03</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="14.8"
+				y="-0.01"
+				z="10.72"></Offset>
+			<CreateObject>GDIZOCOMHarvesterDebris_04</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="16.2"
+				y="-0.01"
+				z="14.35"></Offset>
+			<CreateObject>GDIZOCOMHarvesterDebris_05</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
 </AssetDeclaration>
