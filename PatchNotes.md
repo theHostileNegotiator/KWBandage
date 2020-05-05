@@ -153,6 +153,8 @@
 	* Hide subobjects in animation state
 2. Subfactions AI would not use bombing runs and bloodhouds
 	* Added the ability for the AI to use the Support Power
+3. Upgrade subobjects uses Generic shader instead of the GDI shader
+	* Changed shader to ObjectsGDI.fx
 #### Tech Center
 1. Tech Center Telescope animation is bugged, socket does not move with telescope
 	* Fix animation to match with correct bones

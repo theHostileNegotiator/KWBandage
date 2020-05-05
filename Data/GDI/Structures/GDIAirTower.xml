@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!--Upgrade SubObjects will no longer appear when Structure is a cursor-->
+	<Includes>
+		<Include type="all" source="ART:GBAirField.w3x" />
+		<Include type="all" source="ART:GBAirField_D2SN.w3x" />
+		<Include type="all" source="ART:GBAirField_D3SN.w3x" />
+	</Includes>
 	<GameObject
 		id="GDIAirTower"
 		SelectPortrait="Portrait_GDIAirfield"
