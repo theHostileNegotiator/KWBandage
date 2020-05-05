@@ -428,6 +428,9 @@
 #### Tiberium Trooper
 1. Health, speed and weapon damage values were inherited from Black Hand pre TW 1.05
 	* Changed values to match Black Hand
+2. Upgraded texture has Nod Emblem instead of Marked of Kane
+	* Adjusted texture
+		* Reduced resolution as texture compile is 256^2, the ArtPack came with 128^2
 #### Flame Weaponry (+Tiberium Goo)
 1. Purifying Flame, Tiberium Goo and new units that use flame weaponry are missing garrison clearing effect as they inherit the base weapons before TW 1.05
 	* Added garrison clearing effect to affected units

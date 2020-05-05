@@ -4,6 +4,7 @@
 <!--Added HouseColor Texture for Cybernetic Legs Upgrade-->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:NUTibTroop_UGCL.xml" />
 		<Include type="all" source="ART:HC_NUTibTroop_UGCL.xml" />
 	</Includes>
 	<GameObject
