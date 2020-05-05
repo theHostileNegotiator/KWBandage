@@ -221,6 +221,8 @@
 #### Adaptive Armor
 1. When Adaptive Armor was used, it gave the unit a weird appearance with the House Color Glowing too much
 	* Created New Shaders
+2. There are no damaged textures for for upgraded units
+	* Created damaged textures (Titan Only)
 #### Behemoth
 1. When recovered by engineer, it plays the animation used to leave Warfactory after the getting up animation
 	* Changed model so only one is used for build and default state

@@ -10,6 +10,7 @@
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
 		<Include type="all" source="ART:GUVehicleFAdAr.w3x" />
+		<Include type="all" source="ART:GUVehicleF_AAUG_D.xml" />
 	</Includes>
 	<GameObject
 		id="SteelTalonsTitan"
@@ -86,8 +87,8 @@
 					<Model
 						Name="GUVehicleFAdAr" />
 					<Texture
-						Original="GUVehicleF"
-						New="GUVehicleF_AAUG" />
+						Original="GUVehicleF_AAUG"
+						New="GUVehicleF_AAUG_D" />
 					<ParticleSysBone
 						BoneName="VF_LLeg03"
 						FXParticleSystemTemplate="GDIPredDamagedFire"
@@ -106,9 +107,6 @@
 					ConditionsYes="USER_8">
 					<Model 
 						Name="GUVehicleFAdAr" />
-					<Texture 
-						Original="GUVehicleF"
-						New="GUVehicleF_AAUG" />
 				</ModelConditionState>
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
@@ -117,7 +115,7 @@
 						Name="GUVehicleF_SKN" />
 					<Texture
 						Original="GUVehicleF"
-						New="GUVehicleF_AAUG" />
+						New="GUVehicleF_AAUG_D" />
 					<Texture
 						Original="GUVehicleF_SM"
 						New="GUVehicleF_AAUG_SM" />
