@@ -261,6 +261,8 @@
 #### FireHawk
 1. ZOCOM Firehawks would not display Stratofigher thrusters properly, especially when upgraded with Ceramic Armor
 	* Fixed Animations
+2. Unit can be seen through, mainly with Ceramic Armor textures due DXT compression creating Alpha pixels
+	* Removed alpha support
 #### Rig/Battlebase
 1. Subfaction Rigs when unpacking would create GDI Battlebase instead of their own. The same happens with Subfaction Battlebase packing GDI Rigs
 	* Packing and unpacking will now create the corresponding faction version
