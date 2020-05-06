@@ -652,25 +652,6 @@
 					y="-80" />
 			</HordeGarrisonContain>
 
-			<FXListBehavior
-				id="ModuleTag_FXList">
-				<DieMuxData
-					DeathTypes="ALL" />
-				<Event
-					Index="onTransitionToDamaged"
-					FX="FX_BuildDamaged_Large" />
-				<Event
-					Index="onTransitionToReallyDamaged"
-					FX="FX_BuildDamaged_Large" />
-				<Event
-					Index="onTransitionToRubble"
-					FX="FX_BuildRubble_Large" />
-				<Event
-					Index="onDeath"
-					ForceUseDoFXObj="true"
-					FX="FX_ScorchMedium" />
-			</FXListBehavior>
-
 			<BuildingBehavior
 				id="ModuleTag_BuildingBehavior"
 				NightWindowObject="LIGHT_01" />
