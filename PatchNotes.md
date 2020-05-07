@@ -157,6 +157,8 @@
 	* Added the ability for the AI to use the Support Power
 3. Upgrade subobjects uses Generic shader instead of the GDI shader
 	* Changed shader to ObjectsGDI.fx
+4. A Hardpoint subobject would appear in REALLYDAMAGED state when upgrade hasn't been purchased
+	* Fixed typo; renamed subobject UG_HARDPOINTS03Z to UG_HARDPOINTS03
 #### Tech Center
 1. Tech Center Telescope animation is bugged, socket does not move with telescope
 	* Fix animation to match with correct bones

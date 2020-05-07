@@ -10597,7 +10597,7 @@
 			</Node>
 		</AABTree>
 	</W3DMesh>
-	<W3DMesh id="GBAIRFIELD_D2SN.UG_HARDPOINTS03Z" CastShadow="true" GeometryType="Normal">
+	<W3DMesh id="GBAIRFIELD_D2SN.UG_HARDPOINTS03" CastShadow="true" GeometryType="Normal">
 		<BoundingBox>
 			<Min X="3.731342" Y="-14.424046" Z="-2.150772"/>
 			<Max X="23.977093" Y="6.316864" Z="6.220436"/>
@@ -20174,4 +20174,96 @@
 			</Node>
 		</AABTree>
 	</W3DMesh>
+	<W3DContainer id="GBAIRFIELD_D2SN" Hierarchy="GBAIRFIELD_D2SK">
+		<SubObject SubObjectID="OBBOX06" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>GBAIRFIELD_D2SN.OBBOX06</CollisionBox>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="UG_BOOST" BoneIndex="21">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.UG_BOOST</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="OBBOX05" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>GBAIRFIELD_D2SN.OBBOX05</CollisionBox>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="OBBOX04" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>GBAIRFIELD_D2SN.OBBOX04</CollisionBox>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="UG_HARDPOINTS02" BoneIndex="20">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.UG_HARDPOINTS02</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="UG_CERAMIC01" BoneIndex="19">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.UG_CERAMIC01</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="UG_CERAMIC" BoneIndex="18">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.UG_CERAMIC</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="UG_HARDPOINTS03" BoneIndex="17">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.UG_HARDPOINTS03</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="UG_HARDPOINTS" BoneIndex="16">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.UG_HARDPOINTS</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="UG_HARDPOINTS01" BoneIndex="15">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.UG_HARDPOINTS01</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="OBBOX03" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>GBAIRFIELD_D2SN.OBBOX03</CollisionBox>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="OBBOX02" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>GBAIRFIELD_D2SN.OBBOX02</CollisionBox>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="OBBOX01" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>GBAIRFIELD_D2SN.OBBOX01</CollisionBox>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="NEWSKIN" BoneIndex="0">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.NEWSKIN</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="OBJECT01" BoneIndex="8">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.OBJECT01</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="MESH01" BoneIndex="7">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.MESH01</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="PLANE07" BoneIndex="6">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.PLANE07</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="BIB" BoneIndex="1">
+			<RenderObject>
+				<Mesh>GBAIRFIELD_D2SN.BIB</Mesh>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>
 </AssetDeclaration>
