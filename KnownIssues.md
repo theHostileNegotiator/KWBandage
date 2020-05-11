@@ -10,9 +10,6 @@
 * Quad Turrets cause Desyncs in online multiplayer. A theory on the cause is the object is given a weapon after having none.
 * Models have been worked around but still want to refine it, and create proper damage animations. Still need to create RUBBLE animations
 
-#### Aircraft ammo Counter in unit portrait
-* Feature added in TW 1.05. Since KW was built before this version, this feature was not added in. Don't think it is possible to add back in
-
 #### Space Command Uplink Effects
 * It is possible the devs intended to add a distortion effect but instead broke everything, removing the smoke. While the smoke has been fixed, the distortion has been removed.
 
@@ -49,3 +46,8 @@
 
 #### LOW LOD Mammoth Tank
 * Right railguns are offset
+
+#### APTUI
+* Will need to investigate every APTUI and update them accordingly
+	* HUDReplayControlPanel (The only missing APTUI which allows Fast Fowarding Replays. Schema modification (InGameUI FixedButtonHelp) is required, attempts to modify results in crashes. High possibility that feature is not possible)
+	* Options (Based in the Apt Code, the geniuses at EA decided to replace the functionality of "Enable Kane Edition Content" for Classic Mouse Option INSTEAD of making different buttons)

@@ -114,6 +114,13 @@
 			* Decoy Temple of Nod (Icon)
 			* Ichor Seed (Cursor)
 			* Shock Pods (Cursor)
+#### UI
+1. In TW, if a single Aircraft with Ammo was selected, ammo would be displayed in the unit portrait. This feature is not in KW
+	* Modified TacticalHUDSelectionDetails, now ammo will be displayed in the unit portrait
+2. In the Settings, the Network Tab had a divided background similar to the Hotkeys Tab. Additionally, the background appears darker
+	* Fixed background for Network Tab and adjusted every background to have the same brightness.
+3. Disconnect Screen design was not updated in KW after being updated in TW 1.06
+	* Changed design of Disconnect Screen
 #### AI
 1. Campaign AI design was not designed properly, structure based on Multiplayer AI. In TW, there are clear differences between Campaign and Multiplayer Skirmish AI in terms of structure and design.
 	* Redesign Campaign AI
