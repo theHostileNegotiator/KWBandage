@@ -3891,7 +3891,7 @@
 	<ExperienceLevelTemplate
 		id="NODMobileArtilleryExperienceLevel_4"
 		Prerequisite="NODMobileArtilleryExperienceLevel_3"
-		RequiredExperience="9000"
+		RequiredExperience="13500"
 		ExperienceAward="3000"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
