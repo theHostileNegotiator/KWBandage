@@ -130,7 +130,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="GARRISONED USER_1">
-					<Model Name="GUGarFlag" />
+					<Model Name="W3DContainer:GUGarFlag" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -143,7 +143,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="GARRISONED USER_2">
-					<Model Name="NUGarFlag" />
+					<Model Name="W3DContainer:NUGarFlag" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -156,7 +156,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="GARRISONED USER_3">
-					<Model Name="AUGarFlag" />
+					<Model Name="W3DContainer:AUGarFlag" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
