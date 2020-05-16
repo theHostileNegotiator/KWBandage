@@ -144,7 +144,7 @@
 				CommandButtonName="Command_NODEMPBlast"
 				SpecialPowerRadius="325"
 				UnitKindOf="VEHICLE FS_POWER"
-				EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING"
+				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"

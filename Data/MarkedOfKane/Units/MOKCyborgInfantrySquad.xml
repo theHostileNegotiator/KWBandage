@@ -139,7 +139,7 @@
 				CommandButtonName="Command_NODEMPBlast"
 				SpecialPowerRadius="300"
 				UnitKindOf="VEHICLE FS_POWER"
-				EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING"
+				EnemyUnitExclude="INFANTRY HUSK AIRCRAFT CIVILIAN_BUILDING"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />
 		<!--
 			<WeaponFireSpecialAbilityUpdate

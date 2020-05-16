@@ -227,7 +227,7 @@
 				CommandButtonName="Command_FireEMPGrenades"
 				SpecialPowerRadius="310"
 				UnitKindOf="VEHICLE FS_POWER"
-				EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING"
+				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />
 		</Behaviors>
 		<AI>
