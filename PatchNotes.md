@@ -182,10 +182,16 @@
 	* Removed audioloopupgrade for Railguns
 3. When affected by Railgun Accelerator, fire rate is too fast for recoil animation
 	* Reduced Rate of Fire overall cooldown from 1.8s to 2.3s and increased damage proportionaly to from 525 to 670
-#### Battle Base
-1. Cannons rate of fire and projectile speed is based of TW version. Guardian Cannon ROF and damage was changed between TW and KW
+#### Rig/Battlebase
+1. Subfaction Rigs when unpacking would create GDI Battlebase instead of their own. The same happens with Subfaction Battlebase packing GDI Rigs
+	* Packing and unpacking will now create the corresponding faction version
+2. When upgraded with railguns does not display upgraded models
+	* Railgun subobjects were added to the models, railguns will now be displayed when upgraded
+3. GDI and Steel Talons has no upgrades listed in the description
+	* Added railguns upgrade in the description
+4. Cannons rate of fire and projectile speed is based of TW version. Guardian Cannon ROF and damage was changed between TW and KW
 	* Increased Battle Base cannons ROF and decreased damage to better represent current Guardian Cannon
-2. Railgun Rate of Fire
+5. Railgun Rate of Fire
 	* Rate of Fire reduced and damage increased due to Guardian Cannon changes
 #### Hardpoints (And ZOCOM Orca Cannon)
 1. When aircraft with Harpoints would dock to reload, sound would not play
@@ -288,13 +294,6 @@
 	* Fixed Animations
 2. Unit can be seen through, mainly with Ceramic Armor textures due DXT compression creating Alpha pixels
 	* Removed alpha support
-#### Rig/Battlebase
-1. Subfaction Rigs when unpacking would create GDI Battlebase instead of their own. The same happens with Subfaction Battlebase packing GDI Rigs
-	* Packing and unpacking will now create the corresponding faction version
-2. When upgraded with railguns does not display upgraded models
-	* Railgun subobjects were added to the models, railguns will now be displayed when upgraded
-3. GDI and Steel Talons has no upgrades listed in the description
-	* Added railguns upgrade in the description
 #### Space Command Uplink
 1. Smoke Effects do not appear. It is possible an attempt was made to add distortion affect but removed the smoke
 	* Fixed Particle Effects to match TW (Will need to find a way to add distortion effect)
