@@ -24,16 +24,9 @@
 		UnitBuilderMoneyVersusTimePreference="0.5"
 		UnitBuilderOverallOffensivePreference="100%"
 		UnitBuilderOverallDefensivePreference="25%"
-		Expansion_TiberiumSearchRadius="1000"
-		Expansion_MaxTiberiumRemaining="22000"
 		ReactiveDefenseRadius="1000"
 		RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
-		EmergencyManagerHandleNoPowerAtDifficulty=""
-		EmergencyManagerHandleNoIncomeAtDifficulty=""
-		EmergencyManagerHandleNoConyardAtDifficulty=""
-		StructureSaveChanceEasy="0.0"
-		StructureSaveChanceMedium="0.01"
-		StructureSaveChanceHard="1.0">
+		EmergencyManagerHandleNoPowerAtDifficulty="">
 
 	<Side>GDI</Side>
 
@@ -51,9 +44,8 @@
 	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 	<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 
-	<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
-	<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
-	<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+	<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
+	<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 
 	<SpecificUnitCap Unit="GDIOrca" Cap="4"/>
 	<SpecificUnitCap Unit="GDIMammoth" Cap="2"/>
@@ -61,15 +53,39 @@
 	<SpecificUnitCap Unit="GDIHammerhead" Cap="4"/>
 	<SpecificUnitCap Unit="GDIFirehawk" Cap="2"/>
 	<SpecificUnitCap Unit="GDIJuggernaught" Cap="4"/>
-		
-	<States State="CM_2_3_GDIOptimal_EASY" Difficulty="EASY"/>
-	<States State="CM_2_3_GDIOptimalAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+	
 	<States State="CM_2_3_GDIDefensiveUnitCap_Easy" Difficulty="EASY" />
 	<States State="CM_2_3_GDIDefensiveUnitCap_Medium" Difficulty="MEDIUM" />
 	<States State="CM_2_3_GDIDefensiveUnitCap_Hard" Difficulty="HARD BRUTAL" />
+
+	<States State="CM_2_3_GDIUnitKill_Easy" Difficulty="EASY"/>
+	<States State="CM_2_3_GDIUnitKill_Medium" Difficulty="MEDIUM"/>
+	<States State="CM_2_3_GDIUnitKill_Hard" Difficulty="HARD BRUTAL"/>
 	<!--States State="CM_2_3_UnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/-->
 
 	<BudgetStates State="CM_2_3_FullProductionBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+	
+    <!-- Vehicle Overrides -->
+	<UnitOverride UnitName="GDIPitbull" Percentage="0%"/>
+	<UnitOverride UnitName="GDIAPC" Percentage="0%"/>
+	<UnitOverride UnitName="GDIPredator" Percentage="0%"/>
+	<UnitOverride UnitName="GDIAAScout" Percentage="0%"/>
+	<UnitOverride UnitName="GDISonicTank" Percentage="0%"/>
+	<UnitOverride UnitName="GDIMammoth" Percentage="0%"/>
+	<UnitOverride UnitName="GDIJuggernaught" Percentage="0%"/>
+	<UnitOverride UnitName="GDIMARV" Percentage="-1%"/>
+
+    <!-- Infantry Overrides -->  
+	<UnitOverride UnitName="GDIRifleSoldierSquad" Percentage="0%"/>
+	<UnitOverride UnitName="GDIMissileSoldierSquad" Percentage="0%"/>
+	<UnitOverride UnitName="GDIGrenadeSoldierSquad" Percentage="0%"/>
+	<UnitOverride UnitName="GDISniperSquad" Percentage="0%"/>
+	<UnitOverride UnitName="GDIZoneTrooperSquad" Percentage="0%"/>
+	
+    <!-- Aircraft Overrides -->
+	<UnitOverride UnitName="GDIOrca" Percentage="0%"/>
+	<UnitOverride UnitName="GDIHammerhead" Percentage="0%"/>
+	<UnitOverride UnitName="GDIFirehawk" Percentage="0%"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>
