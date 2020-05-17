@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!--Removed RailGun Upgrade Sounds-->
+<!--Added AI Override for DPS like with Sonic Emitter (1000/(0.1+2+1.2))-->
 	<GameObject
 		id="GDISonicTank"
 		SelectPortrait="Portrait_SonicTank"
@@ -36,6 +37,8 @@
 			Condition="NORMAL"
 			Speed="60.0" />
 		<SkirmishAIInformation
+			ConquerMetricsOverrideDPS="300"
+			ConquerMetricsOverrideDamageType="CANNON"
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>
 			<TankDraw
@@ -325,22 +328,22 @@
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIShattererShockWaveCannon" />
-          				<TurretSettings
-							TurretTurnRate="80"
-            				MaxDeflectionClockwise="180d"
-            				MaxDeflectionAntiClockwise="180d"
-							TurretPitchRate="80"
-							AllowsPitch="true"
-							MinimumPitch="-60d"
-							PitchHeight="90%"
-							MinIdleScanTime="1.0s"
-							MaxIdleScanTime="5.0s"
-							MaxIdleScanAngle="90.0">
+					<TurretSettings
+						TurretTurnRate="80"
+						MaxDeflectionClockwise="180d"
+						MaxDeflectionAntiClockwise="180d"
+						TurretPitchRate="80"
+						AllowsPitch="true"
+						MinimumPitch="-60d"
+						PitchHeight="90%"
+						MinIdleScanTime="1.0s"
+						MaxIdleScanTime="5.0s"
+						MaxIdleScanAngle="90.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
-          				</TurretSettings>
-        			</WeaponSlotTurret>
-      			</WeaponSetUpdate>
+          			</TurretSettings>
+        		</WeaponSlotTurret>
+      		</WeaponSetUpdate>
 			<LinearDamageUpdate
 				id="ModuleData_LinearDamageUpdate"
 				StartDistanceOffset="50"

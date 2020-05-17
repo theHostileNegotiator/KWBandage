@@ -8,6 +8,7 @@
 		<Include type="all" source="Structures/GDIBattleBase.xml" />
 		<Include type="all" source="Structures/GDIDigInBuilding.xml" />
 		<Include type="all" source="Structures/GDIGolumCannon.xml" />
+		<Include type="all" source="Structures/GDITerraformingStation.xml" />
 	
 		<Include type="all" source="Units/GDIAAScout.xml" />
 		<Include type="all" source="Units/GDIAPC.xml" />

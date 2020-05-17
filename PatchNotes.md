@@ -203,6 +203,16 @@
 4. SkirmishAIInformation ConquerMetricsOverrideAntiMask
 	* Changed ConquerMetricsOverrideAntiMask from ANTI_GROUND to ANTI_AIRBORNE_VEHICLE and ANTI_AIRBORNE_INFANTRY
 		* Changed WeaponCategory to MISSILE to lessen priority against Infantry and increase priority against Air units.
+#### Shatterer
+1. AI will not use the Unit
+	* Added ConquerMetricsOverride for DPS and Damage Type to 300 and CANNON
+		* This may be due to the AI not recognising the damage from LinearDamageUpdate Sweep weapon as this was done with the Sonic Emitter.
+#### Zone Shatterer
+1. AI will not use the Unit
+	* Added ConquerMetricsOverride for DPS and Damage Type to 300 and CANNON
+		* This may be due to the AI not recognising the damage from LinearDamageUpdate Sweep weapon as this was done with the Sonic Emitter.
+2. Weapon Slots had different parameters and behaviours to GDI Shatterer
+	* Normalised weapon slot parameters and behaviours
 #### Grenadier Squad
 1. AI will not use EMP Grenades ability
 	* Added modules that will allow them to use it
@@ -295,6 +305,9 @@
 	* Removed Particle Effects
 3. Landing Pad order is different to the Airfield
 	* Changed the order to represent the Airfield
+#### Sonic Emitter
+1. AI underestimates the DPS output of defensive structure (Damage was buffed in TW 1.05 to counteract a bug fix but AI DPS was never updated in TW or KW)
+	* Increased ConquerMetricsOverrideDPS to 500
 
 ### Nod:
 

@@ -8,6 +8,7 @@
 		<Include type="all" source="Structures/ZOCOMConstructionYard.xml" />
 		<Include type="all" source="Structures/ZOCOMGolumCannon.xml" />
 		<Include type="all" source="Structures/ZOCOMMedicalBay.xml" />
+		<Include type="all" source="Structures/ZOCOMTerraformingStation.xml" />
 
 		<Include type="all" source="Units/ZOCOMAAScout.xml" />	
 		<Include type="all" source="Units/ZOCOMAPC.xml" />	

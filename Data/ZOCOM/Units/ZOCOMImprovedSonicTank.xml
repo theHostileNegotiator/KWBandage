@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!--Removed RailGun Upgrade Sounds-->
+<!--Added AI Override for DPS like with Sonic Emitter (1000/(0.1+2+1.2))-->
+<!--Normalised Weapon Slot with standard Shatterer-->
 	<GameObject
 		id="ZOCOMImprovedSonicTank"
 		inheritFrom="BaseVehicle"
@@ -37,6 +39,8 @@
 			Condition="NORMAL"
 			Speed="60.0" />
 		<SkirmishAIInformation
+			ConquerMetricsOverrideDPS="300"
+			ConquerMetricsOverrideDamageType="CANNON"
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>
 			<TankDraw
@@ -283,7 +287,10 @@
 			<WeaponSetUpdate
 				id="ModuleTag_Weapon01SetUpdate">
 				<WeaponSlotTurret
-					ID="1">
+					ID="1"
+					AllowInterleavedFiring="false"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
+					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="SteelShattererShockWaveCannon" />
@@ -298,7 +305,8 @@
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="5.0s"
 						MaxIdleScanAngle="90.0">
-						<TurretAITargetChooserData />
+						<TurretAITargetChooserData
+							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
