@@ -5,6 +5,7 @@
 <!--Upgrade Sounds Added-->
 	<Includes>
 		<Include type="all" source="ART:GBGolumCan_SKN.w3x" />
+		<Include type="all" source="ART:GBGolumCan_D2AN.w3x" />
 		<Include type="all" source="ART:GBGolumCan_D2SN.w3x" />
 		<Include type="all" source="ART:GBGolumCan_D3SN.w3x" />
 	</Includes>
@@ -101,7 +102,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Script>
-						CurDrawableHideSubObject("UGRAIL_BARREL")
+						CurDrawableHideSubObject("UGRAIL_BARREL01")
 						CurDrawableHideSubObject("UGRAIL_01")
 						CurDrawableHideSubObject("UGRAILACCELERATOR_BARREL01")
 						CurDrawableHideSubObject("UGRAILACCELERATOR_01")
@@ -147,13 +148,6 @@
 						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamaged")
 						end
 					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
-					<!--Animation
-						AnimationName="ABGatewayD1"
-						AnimationMode="MANUAL" /-->
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"

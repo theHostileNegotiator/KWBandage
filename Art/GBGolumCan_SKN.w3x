@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Includes>
+		<Include type="all" source="ART:gbgolumcan_skl.w3x"/>
+	</Includes>
 	<W3DCollisionBox id="GBGOLUMCAN_SKN.OBBOX03" JoypadPickingOnly="true">
 		<Center X="-3.551694" Y="-0.152591" Z="9.900000"/>
 		<Extent X="9.000000" Y="9.000000" Z="9.900000"/>
@@ -38684,22 +38687,22 @@
 				<Mesh>GBGOLUMCAN_SKN.NEWSKIN</Mesh>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="UGRAILACCELERATOR_01" BoneIndex="5">
+		<SubObject SubObjectID="UGRAILACCELERATOR_01" BoneIndex="8">
 			<RenderObject>
 				<Mesh>GBGOLUMCAN_SKN.UGRAILACCELERATOR_01</Mesh>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="UGRAILACCELERATOR_BARREL01" BoneIndex="5">
+		<SubObject SubObjectID="UGRAILACCELERATOR_BARREL01" BoneIndex="8">
 			<RenderObject>
 				<Mesh>GBGOLUMCAN_SKN.UGRAILACCELERATOR_BARREL01</Mesh>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="UGRAIL_01" BoneIndex="5">
+		<SubObject SubObjectID="UGRAIL_01" BoneIndex="7">
 			<RenderObject>
 				<Mesh>GBGOLUMCAN_SKN.UGRAIL_01</Mesh>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="UGRAIL_BARREL01" BoneIndex="5">
+		<SubObject SubObjectID="UGRAIL_BARREL01" BoneIndex="7">
 			<RenderObject>
 				<Mesh>GBGOLUMCAN_SKN.UGRAIL_BARREL01</Mesh>
 			</RenderObject>
