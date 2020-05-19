@@ -9,6 +9,8 @@
 		<Include type="all" source="Structures/GDIDigInBuilding.xml" />
 		<Include type="all" source="Structures/GDIGolumCannon.xml" />
 		<Include type="all" source="Structures/GDITerraformingStation.xml" />
+		<Include type="all" source="structures/MG_GDI_IntelCenter.xml" />
+		<Include type="all" source="structures/MG_GDI_TiberiumProcessingPlant.xml" />
 	
 		<Include type="all" source="Units/GDIAAScout.xml" />
 		<Include type="all" source="Units/GDIAPC.xml" />
@@ -22,6 +24,7 @@
 		<Include type="all" source="Units/GDIPredator.xml" />
 		<Include type="all" source="Units/GDIRig.xml" />	
 		<Include type="all" source="Units/GDISonicTank.xml" />	
+		<Include type="all" source="Units/GDISuperSonicAirAttack.xml" />	
 		<Include type="all" source="Units/GDIZoneTrooper.xml" />
 		<Include type="all" source="Units/ZOCOMAPCRepairDrone.xml" />
 	</Includes>

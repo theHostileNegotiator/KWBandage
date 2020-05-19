@@ -2,5 +2,8 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
   <Includes>
 		<Include type="all" source="props/NodPowerStore.xml" />	  
+		
+		<Include type="all" source="Structures_SinglePlayerCampaign/NODBunker.xml" />	  
+		<Include type="all" source="Structures_SinglePlayerCampaign/NODControlNode.xml" />	  
   </Includes>
 </AssetDeclaration>

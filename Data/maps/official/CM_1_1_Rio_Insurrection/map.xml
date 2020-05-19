@@ -161,6 +161,15 @@
 			source="DATA:civilian/washington_dc_dc/buildings/dcbwse07.xml"
 			type="all"/>
 		<Include
+			source="DATA:gdi/props/gdipowerstore.xml"
+			type="all"/>
+		<Include
+			source="DATA:gdi/structures_singleplayercampaign/gdigovbldg.xml"
+			type="all"/>
+		<Include
+			source="DATA:gdi/structures_singleplayercampaign/gdiradiotower_cm11.xml"
+			type="all"/>
+		<Include
 			source="DATA:neutral/structures/subwaynode.xml"
 			type="all"/>
 		<Include

@@ -91,6 +91,10 @@ echo Compiling Maps...
 
 if exist "%cd%\Compilation\Mods\%modname%" rd "%cd%\Compilation\Mods\%modname%" /S /Q
 
+if exist "%cd%\Mods\%modname%\Data\maps\official\mapmetadata.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\maps\official\mapmetadata.xml" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:""
+
+if exist "%cd%\Mods\%modname%\Data\maps\official\mapmetadata_SinglePlayer.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\maps\official\mapmetadata_SinglePlayer.xml" -out:"%cd%\Compilation\Mods\%modname%\Data\AdditionalMaps" -version:""
+
 setlocal EnableDelayedExpansion
 
 set sdk=!cd!

@@ -5,7 +5,23 @@
 	xmlns:xai="uri:ea.com:eala:asset:instance">
 
 	<Tags/>
-
+	<Includes>
+	<!--
+		<Include
+				type="instance"
+				source="DATA:BlackHand/Props/BlackHandPowerStore.xml" />
+		<Include
+				type="instance"
+				source="DATA:GDI/Props/GDICommandPostRadarScanPing.xml" />
+		<Include
+			type="instance"
+			source="DATA:GlobalData/Armor.xml" />
+		<Include
+			type="instance"
+			source="DATA:Nod/Units/NODHarvester.xml" />
+			-->
+	</Includes>
+	
 	<ArmorTemplate
 		id="NODBunkerTruckArmor"
 		SideDamageScalar="125"

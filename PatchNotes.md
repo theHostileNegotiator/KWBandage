@@ -103,7 +103,7 @@
 1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
 	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based
 		* Unlike Nod Power Plants with Tiberium Core upgrade, units and structures with Tiberium Core Missiles upgrade will not have the "HAVE_TIBERIUM_UPGRADE" flag, making it 'immune' to Tiberium Vibration Scan as it would be able to counter Cloaking Field and Stealth Tanks with a simple click of a button, making the upgrade less desireable against Scrin factions.
-#### Neutral Structures (+ Nod Garrison Armor)
+#### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
 #### Support Powers
@@ -129,14 +129,36 @@
 	
 ### Campaign
 
-#### Persuade Him
+#### The Rio Insurrection
+1. Radio Station would reduce armor of surrounding units instead of increasing
+	* Changed Armor Attribute Modifier to match Confessor
+#### What's Rightfully Ours
+1. Stealth Lab belong to Neutral instead of Steel Talons
+	* Added team for Steel Talons that is NOT enemies with Nod.
+#### Persuade Him...
 1. AI would not attack the player and would instead camp the base
 	* Adjusted scripting to gurantee attacks from AI
 2. One of the Reckoner defending the bases is assigned Team Neutral instead of Black Hand Team.
 	* Changed team of Reckoner
+3. All walls and Bunkers belong to Neutral Team instead of Black Hand
+	* Added team for Black Hand that is not enemies with Nod.
+4. Bunker Doors can be destroyed, breaking the scripts
+	* Bunkers can no longer be destroyed. (They can still be targeted)
+#### A Grand Gesture...
+1. Nod Soldier Dialog commenting on GDI Tiberium Lab was not triggered due to object the sound would come from does not exist
+	* Reassigned object Nod Soldier Dialog would speak out of (MCV)
+#### Keys to the Kingdom
+1. Reckoners provided are Black Hand Reckoners instead of Nod
+	* Changed Reckoners to Nod
+#### The Doctor Vanishes
+1. Girauds Lab, Walls and Spaceport belong to Neutral instead of GDI
+	* Changed Faction owners
 #### MARV Rising
 1. Redeemer was supposed to have both Damage and ROF buff for the mission. Instead ROF was nerfed
 	* Changed Attribute Modifier so Redeemer is fully Buffed
+#### The Betrayal of Killian Qatar
+1. All walls and Bunkers belong to Neutral Team instead of Kanes Nod
+	* Added team for Kanes Nod that is not enemies with LEGION and Alexa.
 #### Hearts and Minds
 1. Player can use Decoy Army and Radar Jamming Missile despite the two abilities never being available in ALL Campaign Missions.
 	* Hidden the Powers
@@ -145,6 +167,12 @@
 	* Reaper 17 will now spawn waves of units when army is destroyed
 2. EVA uses wrong sound file for Tiberium Vein Detonation Bonus Objective
 	* Change dialogue file to "MN27_NodEVA13"
+#### Will Made Flesh
+1. Walls belong to Neutral Team instead of GDI
+	* Changed Faction owners
+#### Tacitus Regained
+1. After the outer barrier is destroyed, units can go through the inner barrier when it is still enabled
+	* Fixed script
 
 ### GDI:
 
@@ -579,3 +607,7 @@
 1. Disintegrator visual lasers override each other. Therefore if more than one laser is firing, only the latest shot laser will show.
 	* Added new Weapons, Laser Draws and Laser States.
 		* Added Heroic Laser Effects
+
+### Behind the Scenes
+1. SP and MP maps use the same MapMetaData streams.
+	* Separated the MapMetaData streams

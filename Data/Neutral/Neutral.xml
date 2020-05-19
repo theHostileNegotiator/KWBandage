@@ -6,15 +6,14 @@
 		<!-- Tech buildings -->
 
 		<Include type="all" source="Structures/CivBunker.xml" />
-		<!--Include type="all" source="Structures/CDMTower.xml" /-->
+		<Include type="all" source="Structures/CDMTower.xml" />
 		<Include type="all" source="Structures/TiberiumSpike.xml" />
 		<Include type="all" source="Structures/TiberiumSilo.xml" />
 		<!--Include type="all" source="Structures/ControlPoint.xml" /-->
 		<Include type="all" source="Structures/SubwayHub.xml" />
 		<Include type="all" source="Structures/SubwayNode.xml" />
 		<Include type="all" source="Structures/DefensiveTower.xml" />
-		<!--
-		<Include type="all" source="Structures/MutantHovel.xml" /-->
+		<Include type="all" source="Structures/MutantHovel.xml" />
 		<Include type="all" source="Structures/ElectromagneticPulseControlCenter.xml" />
 		<!--Include type="all" source="Structures/SatelliteLaunchFacility.xml" />
 		<Include type="all" source="Structures/ReinforcementBay.xml" />

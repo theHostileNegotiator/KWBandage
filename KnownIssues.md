@@ -47,6 +47,9 @@
 #### LOW LOD Mammoth Tank
 * Right railguns are offset
 
+#### Campaign EVA
+* A Grand Gesture... has a bonus objective that is missing an EVA dialogue. Unfortunately, the sound file pertaining to the objective is missing and there are no appropriate substitutes
+
 #### APTUI
 * Will need to investigate every APTUI and update them accordingly
 	* HUDReplayControlPanel (The only missing APTUI which allows Fast Fowarding Replays. Schema modification (InGameUI FixedButtonHelp) is required, attempts to modify results in crashes. High possibility that feature is not possible)

@@ -68,10 +68,45 @@
 			source="DATA:neutral/structures/tiberiumspike.xml"
 			type="all"/>
 		<Include
+			source="DATA:nod/structures_singleplayercampaign/nodbunker.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nodmarcionstatue.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nscommandcenter.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nsdockcargoloadingcrane.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nsmanufacturingfacility1.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nssilo08.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nssilo10.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nssilo11.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nsstrongholdbuilding2.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nsstrongholdbuilding3.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/structures_singleplayercampaign/nsstrongholdbuilding6.xml"
+			type="all"/>
+		<Include
+			source="DATA:nod/units_singleplayercampaign/nodcarryall_sp_militants.xml"
+			type="all"/>
+		<Include
 			source="overrides.xml"
 			type="all"/>
 	</Includes>
-	<!--
 	<GameMap
 		id="CM_1_3_Brother_Marcion">
 		<Waypoint
@@ -865,9 +900,9 @@
 		<Structure
 			Angle="-1.60372"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -878,9 +913,9 @@
 		<Structure
 			Angle="-0.577547"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding3"
 			id="NOD_StrongholdBuilding3">
 			<Position
@@ -891,9 +926,9 @@
 		<Structure
 			Angle="-1.55136"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -904,9 +939,9 @@
 		<Structure
 			Angle="-1.55136"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -917,9 +952,9 @@
 		<Structure
 			Angle="-1.55136"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -930,9 +965,9 @@
 		<Structure
 			Angle="-1.55136"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -943,9 +978,9 @@
 		<Structure
 			Angle="-1.55136"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1021,9 +1056,9 @@
 		<Structure
 			Angle="-0.0366543"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_DockCargoLoadingCrane"
 			id="NOD_DockCargoLoadingCrane">
 			<Position
@@ -1073,9 +1108,9 @@
 		<Structure
 			Angle="-2.39923"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_ManufacturingFacility1"
 			id="NOD_ManufacturingFacility1">
 			<Position
@@ -1086,9 +1121,9 @@
 		<Structure
 			Angle="-1.60372"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1099,9 +1134,9 @@
 		<Structure
 			Angle="-1.60372"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1112,9 +1147,9 @@
 		<Structure
 			Angle="-1.60372"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1125,9 +1160,9 @@
 		<Structure
 			Angle="-2.32288"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding3"
 			id="NOD_StrongholdBuilding3">
 			<Position
@@ -1138,9 +1173,9 @@
 		<Structure
 			Angle="-1.57153"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1151,9 +1186,9 @@
 		<Structure
 			Angle="-1.57153"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1164,9 +1199,9 @@
 		<Structure
 			Angle="0.845824"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding6"
 			id="NOD_StrongholdBuilding6">
 			<Position
@@ -1177,9 +1212,9 @@
 		<Structure
 			Angle="-2.79326"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1190,9 +1225,9 @@
 		<Structure
 			Angle="-2.79326"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1203,9 +1238,9 @@
 		<Structure
 			Angle="2.59895"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding3"
 			id="NOD_StrongholdBuilding3">
 			<Position
@@ -1216,9 +1251,9 @@
 		<Structure
 			Angle="-3.07251"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1229,9 +1264,9 @@
 		<Structure
 			Angle="-3.07251"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1385,9 +1420,9 @@
 		<Structure
 			Angle="0.748903"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding3"
 			id="NOD_StrongholdBuilding3">
 			<Position
@@ -1398,9 +1433,9 @@
 		<Structure
 			Angle="-2.37438"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1411,9 +1446,9 @@
 		<Structure
 			Angle="-2.37438"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1424,9 +1459,9 @@
 		<Structure
 			Angle="-2.37438"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1437,9 +1472,9 @@
 		<Structure
 			Angle="-2.37438"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1450,9 +1485,9 @@
 		<Structure
 			Angle="-2.37438"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1463,9 +1498,9 @@
 		<Structure
 			Angle="3.10866"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1476,9 +1511,9 @@
 		<Structure
 			Angle="3.10866"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1489,9 +1524,9 @@
 		<Structure
 			Angle="3.10866"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1502,9 +1537,9 @@
 		<Structure
 			Angle="3.10866"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1515,9 +1550,9 @@
 		<Structure
 			Angle="-2.88051"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding6"
 			id="NOD_StrongholdBuilding6">
 			<Position
@@ -1528,9 +1563,9 @@
 		<Structure
 			Angle="1.58624"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding6"
 			id="NOD_StrongholdBuilding6">
 			<Position
@@ -1541,9 +1576,9 @@
 		<Structure
 			Angle="0.688745"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding6"
 			id="NOD_StrongholdBuilding6">
 			<Position
@@ -1554,9 +1589,9 @@
 		<Structure
 			Angle="-1.1954"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1567,9 +1602,9 @@
 		<Structure
 			Angle="1.81451"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding3"
 			id="NOD_StrongholdBuilding3">
 			<Position
@@ -1580,9 +1615,9 @@
 		<Structure
 			Angle="-1.54887"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1593,9 +1628,9 @@
 		<Structure
 			Angle="-1.54887"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1606,9 +1641,9 @@
 		<Structure
 			Angle="0.688745"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding6"
 			id="NOD_StrongholdBuilding6">
 			<Position
@@ -1619,9 +1654,9 @@
 		<Structure
 			Angle="-2.35403"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1632,9 +1667,9 @@
 		<Structure
 			Angle="-2.35403"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1645,9 +1680,9 @@
 		<Structure
 			Angle="-2.07258"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -1658,9 +1693,9 @@
 		<Structure
 			Angle="1.06306"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding3"
 			id="NOD_StrongholdBuilding3">
 			<Position
@@ -1671,9 +1706,9 @@
 		<Structure
 			Angle="0.688745"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding6"
 			id="NOD_StrongholdBuilding6">
 			<Position
@@ -1684,9 +1719,9 @@
 		<Structure
 			Angle="-2.07258"
 			EventList=""
-			Faction="PlyrCivilian/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrCivilian"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="NOD_StrongholdBuilding2"
 			id="NOD_StrongholdBuilding2">
 			<Position
@@ -2295,9 +2330,9 @@
 		<Structure
 			Angle="-1.11701"
 			EventList=""
-			Faction="PlyrNeutral/teamPlyrNeutral"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrNeutral"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="Nod_Bunker"
 			id="Nod_Bunker">
 			<Position
@@ -2308,9 +2343,9 @@
 		<Structure
 			Angle="-0.776672"
 			EventList=""
-			Faction="/teamPlyrCivilian"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team=""
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="Nod_Bunker"
 			id="Nod_Bunker">
 			<Position
@@ -2373,9 +2408,9 @@
 		<Structure
 			Angle="-0.414574"
 			EventList=""
-			Faction="PlyrNeutral/teamPlyrNeutral"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrNeutral"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="Nod_Bunker"
 			id="Nod_Bunker">
 			<Position
@@ -2386,9 +2421,9 @@
 		<Structure
 			Angle="-0.824218"
 			EventList=""
-			Faction="PlyrNeutral/teamPlyrNeutral"
+			Faction="PlyrNOD_BKH_Neutral/teamPlyrNOD_BKH_Neutral"
 			Health="100"
-			Team="PlyrNeutral"
+			Team="PlyrNOD_BKH_Neutral"
 			ThingTemplate="Nod_Bunker"
 			id="Nod_Bunker">
 			<Position
@@ -29560,15 +29595,16 @@
 			id="NodBase01"/>
 		<Road
 			id="NodBase02"/>
+		<!--
 		<MapMetaData
 			BorderSize="50"
 			CRC="0"
 			Description="Map:CM_1_3_Brother_Marcion/Desc"
 			DisplayName="CM_1_3_Brother_Marcion"
-			FileName="Data"
+			FileName="Data\maps\official\CM_1_3_Brother_Marcion\CM_1_3_Brother_Marcion.map"
 			Height="500"
 			IsMultiplayer="false"
-			IsOfficial="false"
+			IsOfficial="true"
 			NumPlayers="1"
 			Width="600">
 			<StartPosition
@@ -29586,6 +29622,7 @@
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
+		-->
 		<EnvironmentData
 			Cloud="CM1_cloud"
 			Environment="EVDefault"
@@ -29625,5 +29662,8 @@
 		<PostEffect
 			Effect="BleachByPass_vol"/>
 	</GameMap>
--->
+	<GameScriptList
+		id="PlyrNOD_BKH_Neutral">
+		<ScriptSet/>
+	</GameScriptList>
 </AssetDeclaration>
