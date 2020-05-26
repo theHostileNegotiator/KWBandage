@@ -145,6 +145,10 @@
 	* Added team for Black Hand that is not enemies with Nod.
 4. Bunker Doors can be destroyed, breaking the scripts
 	* Bunkers can no longer be destroyed. (They can still be targeted)
+5. Pulse Scanner idle animation is unused
+	* Added Idle Animation to GameObject, the antennae will spin around
+		* Exist in Worldbuilder stream, has to be recompiled in map
+		* May try to find a way to have it target nearby units as the model Hierarchy hints at this
 #### A Grand Gesture...
 1. Nod Soldier Dialog commenting on GDI Tiberium Lab was not triggered due to object the sound would come from does not exist
 	* Reassigned object Nod Soldier Dialog would speak out of (MCV)
