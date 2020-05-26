@@ -382,14 +382,45 @@
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<xi:include
-				href="../../Includes/GenericBuildingRepair.xml" />
-			<xi:include
-				href="../../Includes/GenericEngineerContain.xml" />
-			<xi:include
-				href="../../Includes/GenericGDIBuildingDestruction.xml" />
-			<xi:include
-				href="../../Includes/GenericGDIBuildingSuicide.xml" />
+			<RepairUpdate
+				id="ModuleTag_RepairUpdate">
+				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
+				<SelfAudio></SelfAudio>
+			</RepairUpdate>
+			<EngineerContain
+				id="ModuleTag_EngineerContain"
+				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
+				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
+				EvaEventForRepair="BuildingRepaired"
+				EvaEventForCapture="EnemyBuildingCaptured"
+				FXForRepair="FX_Building_Repaired" 
+				FXForCapture="FX_Building_Captured"
+				FXForCaptureAndReplace="FX_Building_Captured"
+				ImmediatelyEnabled="true">
+				<CanEnterFilter Rule="NONE">
+					<IncludeThing>GDIEngineer</IncludeThing>
+					<IncludeThing>NODSaboteur</IncludeThing>
+					<IncludeThing>AlienAssimilator</IncludeThing>
+					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
+					<IncludeThing>ZOCOMEngineer</IncludeThing>
+					<IncludeThing>BlackHandSaboteur</IncludeThing>
+					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Traveler59Assimilator</IncludeThing>
+				</CanEnterFilter>
+			</EngineerContain>
+			<CreateObjectDie
+				id="ModuleTag_CreateOccupiedDie"
+				CreationList="OCL_GenericGDIBuildingDestruction" >		
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="DETONATED SUICIDED" />
+				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
+			</CreateObjectDie>
+			<CreateObjectDie
+				id="ModuleTag_CreateOccupiedSuicide"
+				CreationList="OCL_GenericGDIBuildingSuicide" >
+				<DieMuxData DeathTypes="SUICIDED" />
+			</CreateObjectDie>
 		</Behaviors>
 		<AI>
 			<AIUpdate
