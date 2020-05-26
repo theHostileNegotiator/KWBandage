@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Changed AI Target Type of Tiberium Vein from SPECIAL_POWER_SUPERWEAPON -->
+<!-- Changed how Tiberium Vein is fired. Only using OCL so resources is not deducted twice and Weapon timings are controled by the new NODVeinDetonationTrigger -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -276,16 +277,16 @@
 				id="ModuleTag_TibVeinDetonationTrigger"
 				SpecialPowerTemplate="SpecialPowerTibVeinDetonation"
 				AvailableAtStart="true"
-				OCL="OCL_NODVeinDetonation"
+				OCL="OCL_NODVeinDetonationTrigger"
 				CreateLocation="CREATE_AT_LOCATION"
 			/>
-			<WeaponFireSpecialAbilityUpdate
+			<!--<WeaponFireSpecialAbilityUpdate
 				id="ModuleTag_TibVeinDetonationUpdate"
 				SpecialPowerTemplate="SpecialPowerTibVeinDetonation"
 				SpecialWeapon="TibVeinDetonation"
 				UnpackTime="5.0s"
 				WhichSpecialWeapon="1" 
-			/>
+			/>-->
 			<AISpecialPowerUpdate
 				id="ModuleTag_ChemicalPlantTibVeinDetonation"
 				CommandButtonName="Command_ChemicalPlantTibVeinDetonation"

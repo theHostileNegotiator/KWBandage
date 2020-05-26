@@ -517,6 +517,12 @@
 2. Support Power is considered to be a Super Weapon to the AI
 	* Changed Support Power Type to SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES
 		* Will need to test it's attack restrictions
+3. Support Power deducted resources twice, as it deducted for OCL and WeaponFire
+	* Removed WeaponFireSpecialAbilityUpdate, created a new OCL to spawn a "trigger" GameObject that will create another OCL for the GameObject FloodUpdate and a FireWeaponUpdate for the large detonation
+		* This appeared to be a planned fix by EA as it was supplied with APOC's xml files.
+4. If units are in the radius of the Power when it is activated, even if they move away, they will take the full damage. Concurrently, any units outside can enter the radius and not take any damage
+	* Same solution as above. The "trigger" GameObject will control the timings of the weapon with FireWeaponNugget instead of the WeaponTemplate as it only delays damage.
+		* APOC's xml files have different Weapon timings. Instead tried to replicate the current timings of Support Power.
 
 ### Scrin:
 

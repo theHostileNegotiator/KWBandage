@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
 		<Include type="all" source="Props/NODBlackHandFlamerProjectile.xml" />	
+		<Include type="all" source="Props/NODVeinDetonation.xml" />	
 	
 		<Include type="all" source="Structures/NODAirSupport.xml" />
 		<Include type="all" source="Structures/NODHangar.xml" />

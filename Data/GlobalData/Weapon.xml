@@ -2818,6 +2818,7 @@
 	</WeaponTemplate>
 	
 <!-- Weapon was supposed to be nerfed in 1.01 by 20%, but values weren't changed -->
+<!-- Weapon Timings will now be done by NODVeinDetonationTrigger instead of the WeaponTemplates so units will only take damage while they are inside the radius -->
 	<WeaponTemplate
 		id="TibVeinDetonation"
 		Name="TibVeinDetonation"
@@ -2829,7 +2830,6 @@
 				Damage="800"
 				DamageTaperOff="15"
 				Radius="250"
-				DelayTimeSeconds="2.1s"
 				DamageType="CANNON"
 				DeathType="DETONATED" >
 				<SpecialObjectFilter
@@ -2855,10 +2855,35 @@
 			<DamageNugget
 				Damage="80"
 				Radius="100"
-				DelayTimeSeconds="3.5s"
 				DamageType="CANNON"
 				DeathType="DETONATED" >
 			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="VeinDetonationCreationWeapon"
+		Name="VeindDetionationCreationWeapon"
+		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+		AttackRange="50000.0">
+		<Nuggets>
+			<DamageNugget
+				Damage="0"
+				DamageTaperOff="0"
+				Radius="5"
+				DamageType="CANNON"
+				DeathType="DETONATED" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="AIRCRAFT"/>
+				<DamageScalarDetails Scalar= "100%">
+				<Filter
+					Rule="NONE"
+					Include="TIBERIUM" />
+				</DamageScalarDetails>
+			</DamageNugget>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_NODVeinDetonation" />
+			<ReportWeaponFiredStatNugget/>
 		</Nuggets>
 	</WeaponTemplate>
 	
