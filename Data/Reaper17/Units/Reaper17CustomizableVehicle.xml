@@ -69,7 +69,6 @@
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
 				id="DefaultAttributeModifierPoolUpdate"/>
-=
 			<AttributeModifierUpgrade
 				id="ModuleTag_AttributeModifierUpgradeMUCSpeed"
 				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">

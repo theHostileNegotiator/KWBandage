@@ -22,7 +22,7 @@
 		UnitCategory="INFANTRY"
 		WeaponCategory="BLAST"
 		VoicePriority="215"
-		EditorName="Alien17MillipedeHead"
+		EditorName="AlienMillipedeHead"
 		Description="Desc:AlienMillipedeHead"
 		TypeDescription="Type:AlienMillipedeHead">
 		<DisplayName
