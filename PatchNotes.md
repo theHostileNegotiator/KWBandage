@@ -252,6 +252,8 @@
 1. If playing with Low model LOD setting, uses Low LOD model. Adaptive armor uses High LOD model
 	* Added Low LOD model for Adaptive Armor
 		* Also fixed shaders for Low LOD Railguns
+2. Missile Pods do not use Shaders for Adaptive Armor
+	* Changed shaders of ROCKETPODS subobject
 #### Behemoth
 1. When recovered by engineer, it plays the animation used to leave Warfactory after the getting up animation
 	* Changed model so only one is used for build and default state

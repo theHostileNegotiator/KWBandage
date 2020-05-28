@@ -10664,19 +10664,22 @@
 				<Dist>6.690250</Dist>
 			</T>
 		</Triangles>
-		<FXShader ShaderName="ObjectsGDI.fx" TechniqueIndex="0">
+		<FXShader ShaderName="ObjectsGDIIonHull.fx" TechniqueIndex="0">
 			<Constants>
+				<Texture Name="EnvironmentTexture">
+					<Value>FXAdaptiveArmorReflec</Value>
+				</Texture>
 				<Texture Name="DiffuseTexture">
-					<Value>GUMamm</Value>
+					<Value>GUMamm_AAUG</Value>
 				</Texture>
 				<Texture Name="NormalMap">
-					<Value>GUMamm_Nrm</Value>
+					<Value>GUMamm_AAUG_Nrm</Value>
 				</Texture>
 				<Texture Name="SpecMap">
-					<Value>GUMamm_SPM</Value>
+					<Value>GUMamm_AAUG_Spm</Value>
 				</Texture>
 				<Texture Name="RecolorTexture">
-					<Value>HC_GUMamm</Value>
+					<Value>HCToBeRemovedNoAlpha</Value>
 				</Texture>
 				<Float Name="EnvMult">
 					<Value>1.000000</Value>
@@ -10684,6 +10687,9 @@
 				<Bool Name="AlphaTestEnable">
 					<Value>false</Value>
 				</Bool>
+				<Texture Name="IonHullTexture">
+					<Value>FXAdaptiveArmorHull</Value>
+				</Texture>
 			</Constants>
 		</FXShader>
 	</W3DMesh>
