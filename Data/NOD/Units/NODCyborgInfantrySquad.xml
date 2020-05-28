@@ -6,6 +6,10 @@
 <!--Speed Normalised to Marked of Kane Awakened (KW1.01)-->
 <!--AI will now use EMP Blast-->
 <!--Changed Build Cost-->
+<!--Added new Model for Formation Preview-->
+	<Includes>
+		<Include type="all" source="ART:FXSilentOne_FP.w3x" />			
+	</Includes>
 	<GameObject
 		id="NODCyborgInfantrySquad"
 		SelectPortrait="Portrait_CyborgInfantry"
@@ -50,7 +54,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="FXBlackHand_FP" />
+						Name="FXSilentOne_FP" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"

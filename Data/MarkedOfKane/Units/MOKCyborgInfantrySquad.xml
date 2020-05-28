@@ -3,6 +3,10 @@
 <!--Removed Charged Particle Beams-->
 <!--AI will now use EMP Blast-->
 <!--Fixed EMP Range-->
+<!--Added new Model for Formation Preview-->
+	<Includes>
+		<Include type="all" source="ART:FXSilentOne_FP.w3x" />			
+	</Includes>
 	<GameObject
 		id="MOKCyborgInfantrySquad"
 		SelectPortrait="Portrait_CyborgInfantry"
@@ -47,7 +51,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="FXBlackHand_FP" />
+						Name="FXSilentOne_FP" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"

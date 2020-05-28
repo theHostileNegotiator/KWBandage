@@ -568,7 +568,7 @@
 				id="ModuleTag_EMPBlastUpdate"
 				SpecialPowerTemplate="EMPBlast"
 				SpecialWeapon="NODCyborgEMPCannon"
-				TriggerSound="NOD_Awakened_EMPgunFire"
+				TriggerSound="AudioEvent:NOD_Awakened_EMPgunFire"
 				UnpackTime="0.0s"
 				PackTime="0.7s"
 				StartAbilityRange="275.0"

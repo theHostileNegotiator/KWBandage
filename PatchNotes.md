@@ -386,6 +386,8 @@
 	* Remove Upgrade
 2. Individual unit used Black Hand portrait instead of it's own (This is noticable in the mission Will Made Flesh)
 	* Changed unit portrait to Awakened
+3. Unit in Formation Preview uses Black Hand Icon instead of it's own
+	* Added new Formation model for Awakened to have unique icon
 #### Militant Rocket Squad
 1. Black Hand Militant Rocket Squad can be upgraded with Tiberium Infusion with NOD or MOK Secret Shrine.
 	* Removed upgrade
