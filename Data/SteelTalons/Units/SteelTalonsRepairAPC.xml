@@ -4,6 +4,7 @@
 <!--Repair Decal Size Changed-->
 <!--Removed Move to Evacuate Ability in favour of evacuate infantry-->
 <!--Increased speed to match APC (TW1.05)-->
+<!--Removed Turret Bone reference-->
 	<GameObject
 		id="SteelTalonsRepairAPC"
 		SelectPortrait="Portrait_RepairAPC"
@@ -61,6 +62,7 @@
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
 						Name="GUMRT_SKN" />
+						<!--
 					<WeaponFireFXBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
@@ -79,6 +81,7 @@
 						TurretNameKey="Turret"
 						TurretPitch="Turret_Pitch"
 						TurretID="1" />
+						-->
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"

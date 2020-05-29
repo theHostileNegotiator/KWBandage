@@ -204,6 +204,9 @@
 	* Increased speed to match APC
 7. There are no sounds for units entering and exiting garrison
 	* Added sound effects
+8. Unit cannot be ordered to target an object, even when units are garrisoned
+	* Added a weapon template, unit can be ordered to target and enter into range
+		* Removed Turret Bone references in GameObject
 #### Titan
 1. Units limping animation is used in the DAMAGED state (Below 66% health)
 	* Decided to remove it so it would only be used in the REALLYDAMAGED state (Below 33% health)
