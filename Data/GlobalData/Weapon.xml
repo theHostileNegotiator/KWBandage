@@ -302,6 +302,7 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!--Multiple Weapons for Disintigrator Laser as each need a separate LaserID to not override each other-->
 	<WeaponTemplate
 		  id="AlienEradicatorLaserWeaponA"
 		  Name="AlienEradicatorLaserWeaponA"
@@ -1988,6 +1989,33 @@
 				Radius="10.0"
 				Suppression="25"
 				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+<!--Changed Firing Duration and Clip Reload Time to have the animation properly sync (ROF is the same)-->
+	<WeaponTemplate
+		id="NODConfessorGrenade"
+		Name="NODConfessorGrenade"
+		AttackRange="250.0"
+		WeaponSpeed="100"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		FireSound="AudioEvent:NOD_Confessor_GrenadeThrow"
+		AcceptableAimDelta="20d"
+		ForbiddenFiringObjectStatus="CLONED"
+		CanFireWhileMoving="false">
+		<PreAttackDelay
+			MinSeconds="1s"
+			MaxSeconds="1s" />
+		<FiringDuration
+			MinSeconds="0.95s"
+			MaxSeconds="0.95s" />
+		<ClipReloadTime
+			MinSeconds="8.8s"
+			MaxSeconds="8.8s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="NODConfessorGrenadeProjectile"
+				WarheadTemplate="NODHallucinogenicWeapon" />
 		</Nuggets>
 	</WeaponTemplate>
 

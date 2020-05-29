@@ -507,6 +507,8 @@
 	* Added "PATH_THROUGH_INFANTRY" Kindof flag
 2. Weapon Range
 	* Weapon Range is nerfed due to changes to Confessor Cabal
+3. The animation to throw grenades is not synced with the grenade throw
+	* Changed NODConfessorGrenade weapon timing, fire duration is shorter but clip reload time is longer so ROF is the same
 #### Black Disciple
 1. Black Disciple can be upgraded with Purifying Flame. This is an issue as it would mean that Confessor Cabals have access to 3 Tech Upgrades (Charged Particle Beams + Black Disciples) where the max is 2
 	* Remove Purifying Flame upgrade to Black Disciples to ensure max tech upgrade of 2
