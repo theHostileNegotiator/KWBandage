@@ -1397,6 +1397,213 @@
 			</ProjectileNugget>
 		</Nuggets>
 	</WeaponTemplate>
+	
+<!--Increase Range, ROF and Decrease Damage of MARV Sniper Weapon to reflect Sniper Team weapon changes (TW1.09 to KW 1.00)-->
+	<WeaponTemplate
+		id="MARVSniperWeapon"
+		Name="MARVSniperWeapon"
+		AttackRange="470.0"
+		WeaponSpeed="999999.0"
+		PreAttackType="PER_SHOT"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="2"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:GDI_Sniper_RifleFire"
+		FireFX="FX_GDISniperFire"
+		FireVeteranFX="FX_GDISniperFireHeroic">
+		<PreAttackDelay
+		  MinSeconds=".2s"
+		  MaxSeconds=".2s" />
+		<FiringDuration
+				MinSeconds="0.20s"
+				MaxSeconds="0.22s" />
+		<ClipReloadTime
+				MinSeconds="1.7s"
+				MaxSeconds="1.7s" />
+		<Nuggets>
+			<DamageNugget
+				Damage="400.0"
+				Radius="0.0"
+				DelayTimeSeconds="0s"
+				DamageType="SNIPER"
+				DamageFXType="GDI_RIFLE"
+				DeathType="NORMAL">
+				<SpecialObjectFilter Rule="ALL" Exclude="STRUCTURE VEHICLE" />
+			</DamageNugget>
+			<SuppressionNugget
+				Radius="15.0"
+				Suppression="250"
+				DurationSeconds="10s">
+				<SpecialObjectFilter Rule="ALL" Exclude="STRUCTURE" />
+			</SuppressionNugget>
+		</Nuggets>
+	</WeaponTemplate>
+<!--Multiple Weapons for Zone Trooper Railguns as each need a separate LaserID for the Distortion Effect to not override each other-->
+	<WeaponTemplate
+		id="MARVZoneTrooperWeapon01"
+		Name="MARVZoneTrooperWeapon01"
+		AttackRange="325.0"
+		MinTargetPitch="-360d"
+		MaxTargetPitch="360d"
+		WeaponSpeed="1250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND" >
+		<FiringDuration
+			MinSeconds="0.23s"
+			MaxSeconds="0.23s" />
+		<ClipReloadTime
+			MinSeconds="2.0s"
+			MaxSeconds="2.3s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="0"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="840.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="MARVZoneTrooperWeapon02"
+		Name="MARVZoneTrooperWeapon02"
+		AttackRange="325.0"
+		MinTargetPitch="-360d"
+		MaxTargetPitch="360d"
+		WeaponSpeed="1250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND" >
+		<FiringDuration
+			MinSeconds="0.23s"
+			MaxSeconds="0.23s" />
+		<ClipReloadTime
+			MinSeconds="2.0s"
+			MaxSeconds="2.3s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="1"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="840.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="MARVZoneTrooperWeapon03"
+		Name="MARVZoneTrooperWeapon03"
+		AttackRange="325.0"
+		MinTargetPitch="-360d"
+		MaxTargetPitch="360d"
+		WeaponSpeed="1250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND" >
+		<FiringDuration
+			MinSeconds="0.23s"
+			MaxSeconds="0.23s" />
+		<ClipReloadTime
+			MinSeconds="2.0s"
+			MaxSeconds="2.3s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="2"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="840.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="MARVZoneTrooperWeapon04"
+		Name="MARVZoneTrooperWeapon04"
+		AttackRange="325.0"
+		MinTargetPitch="-360d"
+		MaxTargetPitch="360d"
+		WeaponSpeed="1250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND" >
+		<FiringDuration
+			MinSeconds="0.23s"
+			MaxSeconds="0.23s" />
+		<ClipReloadTime
+			MinSeconds="2.0s"
+			MaxSeconds="2.3s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="3"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="840.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
+	</WeaponTemplate>
 
 <!--Added reloading sound-->		
 	<WeaponTemplate
