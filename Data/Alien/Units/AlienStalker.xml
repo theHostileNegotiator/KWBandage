@@ -2,8 +2,23 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!--Fixed Build Cost (For Hexapod Recycling)-->
 <!--Fixed Tiberium Agitation Range-->
+<!--Fixed Animations needlessly moving Weapon Bones-->
 	<Tags></Tags>
-	<Includes></Includes>
+	<Includes>
+		<Include type="all" source="ART:AUStalker_ABTA.w3x" />
+		<Include type="all" source="ART:AUStalker_AIDA.w3x" />
+		<Include type="all" source="ART:AUStalker_ATKA.w3x" />
+		<Include type="all" source="ART:AUStalker_ATKB.w3x" />
+		<Include type="all" source="ART:AUStalker_ATKC.w3x" />
+		<Include type="all" source="ART:AUStalker_ATRA.w3x" />
+		<Include type="all" source="ART:AUStalker_BATA.w3x" />
+		<Include type="all" source="ART:AUStalker_BIDA.w3x" />
+		<Include type="all" source="ART:AUStalker_DIEA.w3x" />
+		<Include type="all" source="ART:AUStalker_DIEB.w3x" />
+		<Include type="all" source="ART:AUStalker_RUNA.w3x" />
+		<Include type="all" source="ART:AUStalker_RUNB.w3x" />
+		<Include type="all" source="ART:AUStalker_CDTA.w3x" />
+	</Includes>
 	<GameObject
 		id="AlienStalker"
 		SelectPortrait="Portrait_Stalker"

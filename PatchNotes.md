@@ -555,6 +555,9 @@
 	* Increased squad speed from 50 to 65
 3. Crush Damage Penalty would be applied to subfaction Scorpion tanks with the Dozer Upgrade
 	* Damage is no longer applied to subfaction Scorpion tanks with the Dozer Upgrade
+#### Ravager
+1. When firing or using Tiberium Agitation, projectiles or laser exits the wrong area, above it's head
+	* Animations moved weapon firing bones above it's head for some reason. Removed ChannelScalars ChannelQuaternions specific for Weapon FX Bones in all animations.
 #### Mastermind
 1. Can control subfaction base defense
 	* Removed ability to target base defense structures
