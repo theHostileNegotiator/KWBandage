@@ -28,6 +28,7 @@
     <Order Time="203s" />
   </SkirmishOpeningMove>
 
+<!--Stasis, not Statis-->
   <SkirmishOpeningMove
    id="Reaper17RavagerRush"
    Side="Reaper17"> <!--Power: +10-->
@@ -41,7 +42,7 @@
     <Order Build="Reaper17Portal" /> <!--Time: 6 Power: -5-->
     <Order Build="Reaper17Portal" /> <!--Time: 6 Power: -5-->
 	<Order Build="Reaper17PowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="Reaper17StatisChamber" /> <!--Time: 12 Power: -8-->
+    <Order Build="Reaper17StasisChamber" /> <!--Time: 12 Power: -8-->
     <Order Build="Reaper17Reactor" /> <!--Time: 40 Power: -10-->
 
     <Order Build="Reaper17StalkerSquad" />
