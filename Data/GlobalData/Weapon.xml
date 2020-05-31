@@ -1398,12 +1398,12 @@
 			</ProjectileNugget>
 		</Nuggets>
 	</WeaponTemplate>
-	
-<!--Increase Range, ROF and Decrease Damage of MARV Sniper Weapon to reflect Sniper Team weapon changes (TW1.09 to KW 1.00)-->
+
+<!--Increase Range (Ommited), ROF and Decrease Damage of MARV Sniper Weapon to reflect Sniper Team weapon changes (TW1.09 to KW 1.00)-->
 	<WeaponTemplate
 		id="MARVSniperWeapon"
 		Name="MARVSniperWeapon"
-		AttackRange="470.0"
+		AttackRange="350.0"
 		WeaponSpeed="999999.0"
 		PreAttackType="PER_SHOT"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"

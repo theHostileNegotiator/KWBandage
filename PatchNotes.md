@@ -267,11 +267,13 @@
 #### MARV
 1. Only required Tier 2 structure (Command Post) compared to other factions which required their respective Tier 3 structure (After Reclamation Hub is deployed)
 	* Changed RequiredObject to Tech Center
-2. Unit when targeting will get into range dependent of the Infantry Modules instead of the Main Cannon. When there is a Sniper Module, unit will enter range for Sniper but will remain outside of the Main Cannon range. At the same time, a module with shorter range will force the unit to move closer into range,
-	* Changed Weapon ID ordering. Now unit will move into range of Main Cannon. Modules with shorter range will require a separate move order to move into range
-3. Sniper Module Range, Rate of Fire and Damage values are representative of Sniper Team before KW (TW 1.09)
-	* Increased Range to 470, reduced Clip Reload Time to 1.7 and Reduced damage to 400
-4. Railgun distortion effect override each other. Therefore if more than one railgun module is firing, only the latest shot will have a distortion effect.
+2. Weapon ID Ordering
+	* Changed Weapon ID ordering. (Only Force Firing Ground) ~~Now unit will move into range of Main Cannon. Modules with shorter range will require a separate move order to move into range~~
+3. When there is a Sniper Module, unit will enter range for Sniper but will remain outside of the Main Cannon range.
+	* Reduced range of Sniper Module to match Main Cannon
+4. Sniper Module Rate of Fire and Damage values are representative of Sniper Team before KW (TW 1.09)
+	* Reduced Clip Reload Time to 1.7 and Reduced damage to 400
+5. Railgun distortion effect override each other. Therefore if more than one railgun module is firing, only the latest shot will have a distortion effect.
 	* Added new Weapons, Laser Draws and Laser States.
 #### Orca
 1. When playing with Low LOD settings, Wings and Sensor Pod subobject is missing
