@@ -161,6 +161,8 @@
 #### MARV Rising
 1. Redeemer was supposed to have both Damage and ROF buff for the mission. Instead ROF was nerfed
 	* Changed Attribute Modifier so Redeemer is fully Buffed
+2. MARV from East ZOCOM base has both missile and sniper modules on the same tread
+	* Changed upgrade unlocks in the map file so missile and sniper use different treads
 #### The Betrayal of Killian Qatar
 1. All walls and Bunkers belong to Neutral Team instead of Kanes Nod
 	* Added team for Kanes Nod that is not enemies with LEGION and Alexa.
