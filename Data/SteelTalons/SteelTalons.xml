@@ -10,6 +10,8 @@
 		<Include type="all" source="Units/SteelTalonsAAScout.xml" />
 		<Include type="all" source="Units/SteelTalonsBehemoth.xml" />
 		<Include type="all" source="Units/SteelTalonsFirehawk.xml" />
+		<Include type="all" source="Units/SteelTalonsGrenadeSoldier.xml" />
+		<Include type="all" source="Units/SteelTalonsGrenadeSoldierSquad.xml" />
 		<Include type="all" source="Units/SteelTalonsHammerhead.xml" />
 		<Include type="all" source="Units/SteelTalonsHeavyHarvester.xml" />	
 		<Include type="all" source="Units/SteelTalonsMammoth.xml" />		

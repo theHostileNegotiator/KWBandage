@@ -135,14 +135,34 @@
 				PackTime="0s"
 				StartAbilityRange="275.0"
 				ChainedButton="Command_NODEMPBlast" />
+			<SpecialPowerDispatchSpecialPower
+				id="ModuleTag_Dispatch"
+				SpecialPowerTemplate="EMPBlastDispatch">
+				<SpecialPower
+					SpecialPowerTemplate="EMPBlast" />
+				<SpecialPower
+					SpecialPowerTemplate="EMPBlastTrigger" />
+			</SpecialPowerDispatchSpecialPower>
 			<HordeDispatchSpecialPower
 				id="ModuleTag_EMPBlast"
 				SpecialPowerTemplate="EMPBlast" 
 				MaxMembersToDispatchTo="1"/>
+			<SpecialPower
+				id="ModuleTag_EMPBlastTrigger"
+				SpecialPowerTemplate="EMPBlastTrigger"
+				UpdateModuleStartsAttack="true"></SpecialPower>
+			<WeaponFireSpecialAbilityUpdate
+				id="ModuleTag_EMPBlastTriggerUpdate"
+				SpecialPowerTemplate="EMPBlastTrigger"
+				SpecialWeapon="HordeSpecialRangeAttack"
+				UnpackTime="0s"
+				PackTime="0.0s"
+				BusyForDuration="0.0s" 
+				WhichSpecialWeapon="1" />
 			<AISpecialPowerUpdate
 				id="ModuleTag_ImprovedCyborgEmpPulse"
-				CommandButtonName="Command_NODEMPBlast"
-				SpecialPowerRadius="325"
+				CommandButtonName="Command_NODImprovedEMPBlastGetInRange"
+				SpecialPowerRadius="275"
 				UnitKindOf="VEHICLE FS_POWER"
 				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />

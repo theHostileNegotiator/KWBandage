@@ -34,8 +34,8 @@
 		<GameDependency>
 			<RequiredObject>ZOCOMCommandPost</RequiredObject>
 		</GameDependency>
-		<DisplayUpgrade id="Tag_DisplayUpgrade1">Upgrade_ZOCOMFieldSuits</DisplayUpgrade>
 		<DisplayUpgrade id="Tag_DisplayUpgrade2">Upgrade_EMPGrenades</DisplayUpgrade>
+		<DisplayUpgrade id="Tag_DisplayUpgrade1">Upgrade_ZOCOMFieldSuits</DisplayUpgrade>
 		<ArmorSet
 			Armor="NoArmor" />
 		<LocomotorSet
@@ -207,6 +207,18 @@
 				Permanent="true">
 				<TriggeredBy>Upgrade_EMPGrenades</TriggeredBy>
 			</UnpauseSpecialPowerUpgrade>
+			<UnpauseSpecialPowerUpgrade
+				id="ModuleTag_EmpGrenadesDispatchUnpause"
+				SpecialPowerTemplate="SpecialPower_EMPGrenadesDispatch"
+				Permanent="true">
+				<TriggeredBy>Upgrade_EMPGrenades</TriggeredBy>
+			</UnpauseSpecialPowerUpgrade>
+			<UnpauseSpecialPowerUpgrade
+				id="ModuleTag_EmpGrenadesTriggerUnpause"
+				SpecialPowerTemplate="SpecialPower_EMPGrenadesTrigger"
+				Permanent="true">
+				<TriggeredBy>Upgrade_EMPGrenades</TriggeredBy>
+			</UnpauseSpecialPowerUpgrade>
 			<SpecialPower
 				id="ModuleTag_EMPGrenadesGetInRange"
 				SpecialPowerTemplate="EMPGrenadesGetInRange"
@@ -218,14 +230,34 @@
 				PackTime="0s"
 				StartAbilityRange="260"
 				ChainedButton="Command_FireEMPGrenades" />
+			<SpecialPowerDispatchSpecialPower
+				id="ModuleTag_Dispatch"
+				SpecialPowerTemplate="SpecialPower_EMPGrenadesDispatch">
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPower_FireEMPGrenades" />
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPower_EMPGrenadesTrigger" />
+			</SpecialPowerDispatchSpecialPower>
 			<HordeDispatchSpecialPower
-				id="ModuleTag_TibAgitation"
+				id="ModuleTag_HordeDispatchSpecialPower"
 				SpecialPowerTemplate="SpecialPower_FireEMPGrenades" 
 				MaxMembersToDispatchTo="4"/>
+			<SpecialPower
+				id="ModuleTag_EMPGrenadesTrigger"
+				SpecialPowerTemplate="SpecialPower_EMPGrenadesTrigger"
+				UpdateModuleStartsAttack="true"></SpecialPower>
+			<WeaponFireSpecialAbilityUpdate
+				id="ModuleTag_EMPGrenadesTriggerUpdate"
+				SpecialPowerTemplate="SpecialPower_EMPGrenadesTrigger"
+				SpecialWeapon="HordeSpecialRangeAttack"
+				UnpackTime="0s"
+				PackTime="0.0s"
+				BusyForDuration="0.4s" 
+				WhichSpecialWeapon="1" />
 			<AISpecialPowerUpdate
 				id="ModuleTag_EmpGrenadesAI"
-				CommandButtonName="Command_FireEMPGrenades"
-				SpecialPowerRadius="310"
+				CommandButtonName="Command_EMPGrenadesGetInRange"
+				SpecialPowerRadius="260"
 				UnitKindOf="VEHICLE FS_POWER"
 				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />

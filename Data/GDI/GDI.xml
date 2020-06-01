@@ -16,6 +16,7 @@
 		<Include type="all" source="Units/GDIAPC.xml" />
 		<Include type="all" source="Units/GDIAPC_Veteran.xml" />
 		<Include type="all" source="Units/GDIFirehawk.xml" />
+		<Include type="all" source="Units/GDIGrenadeSoldier.xml" />
 		<Include type="all" source="Units/GDIGrenadeSoldierSquad.xml" />
 		<Include type="all" source="Units/GDIHammerhead.xml" />
 		<Include type="all" source="Units/GDIMammoth.xml" />

@@ -51,4 +51,30 @@
 		id="Command_Traveler59SpecialPowerSwarm">
 		<SpecialPower>SpecialPower_Traveler59Swarm</SpecialPower>
 	</LogicCommand>
+	
+<!--Adjusted special power commands for Squad ability chain-->
+	 <LogicCommand
+		Options="NEED_TARGET_POS"
+		Type="SPECIAL_POWER"
+		id="Command_BlackHandConfessorCabalFireGrenade">
+		<SpecialPower>SpecialPower_BlackHandConfessorCabalGrenadeDispatch</SpecialPower>
+	</LogicCommand>
+	 <LogicCommand
+		Options="NEED_TARGET_POS"
+		Type="SPECIAL_POWER"
+		id="Command_NODEMPBlast">
+		<SpecialPower>EMPBlastDispatch</SpecialPower>
+	</LogicCommand>
+	<LogicCommand
+		Options="NEED_TARGET_POS"
+		Type="SPECIAL_POWER"
+		id="Command_FireEMPGrenades">
+		<SpecialPower>SpecialPower_EMPGrenadesDispatch</SpecialPower>
+	</LogicCommand>
+	<LogicCommand
+		Type="SPECIAL_POWER"
+    	Options="NEED_TARGET_ENEMY_OBJECT"
+		id="Command_FireTiberiumAgitation">
+		<SpecialPower>SpecialPower_TiberiumAgitationDispatch</SpecialPower>
+	</LogicCommand>
 </AssetDeclaration>

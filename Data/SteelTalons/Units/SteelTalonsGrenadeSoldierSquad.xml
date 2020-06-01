@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Fixing AI use of Tiberium Agitation-->
-<!--Once Squad is in range of ability, unit will be locked in place until agitator has finnished firing (1.5 sec)-->
+<!--Removed references to EMP Grenades and Composite Armor Upgrades-->
 	<Tags></Tags>
-	<Includes></Includes>
+	<Includes>
+	</Includes>
 	<GameObject
-		id="AlienStalkerSquad"
-		SelectPortrait="Portrait_StalkerSquad"
-		ButtonImage="Portrait_StalkerSquad"
-		Side="ALIEN"
+		id="SteelTalonsGrenadeSoldierSquad"
+		SelectPortrait="Portrait_GDIGrenadierSquad"
+		ButtonImage="Portrait_GDIGrenadierSquad"
+		Side="SteelTalons"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
-		BuildCost="1200"
-		BuildTime="12"
-		CommandSet="AlienStalkerSquadCommandSet"
-		CommandPoints="100" 
-		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON CAN_CAPTURE CAN_BE_FAVORITE_UNIT SCORE TIBERIUM_BASED"
+		BuildCost="800"
+		BuildTime="8"
+		CommandSet="SteelTalonsGrenadeSoldierSquadCommandSet"
+		CommandPoints="100"
+		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON ANTI_GARRISON CAN_SHOOT_OVER_WALLS CAN_CAPTURE CAN_BE_FAVORITE_UNIT"
 		IsTrainable="true"
 		FormationWidth="2"
 		FormationDepth="1"
 		ThreatLevel="0"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
-		WeaponCategory="GUN"
-		EditorName="AlienStalkerSquad"
-		Description="Desc:AlienStalker"
-		TypeDescription="Type:AlienStalker"
-		UnitTypeIcon="ScrinStalkerPip"
+		WeaponCategory="BLAST"
+		EditorName="SteelTalonsGrenadeSoldierSquad"
+		Description="Desc:SteelTalonsGrenadierSquad"
+		TypeDescription="Type:GDIGrenadierSquad"
+		WorldMapArmoryUpgradesAllowed=""
+		UnitTypeIcon="GrenadierIcon"
 		RadarPriority="NOT_ON_RADAR">
 		<DisplayName
-			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:ALIENStalker</DisplayName>
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIGrenadierSquad</DisplayName>
 		<GameDependency>
-			<RequiredObject>AlienStatisChamber</RequiredObject>
-			<RequiredObject>AlienControlCenter</RequiredObject>
+			<RequiredObject>SteelTalonsCommandPost</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="NoArmor" />
 		<LocomotorSet
 			Locomotor="NormalRangedSquadLocomotor"
 			Condition="NORMAL"
-			Speed="75.0" />
+			Speed="48" />
 		<SkirmishAIInformation
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>
@@ -56,20 +56,19 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="AUStalker_FP" />
+						Name="FXGrenade_FP" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="WORLD_BUILDER">
 					<Model
-						Name="SquadMarkGUMis" />
+						Name="SquadMarkGUGre" />
 				</ModelConditionState>
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
 				id="DefaultAttributeModifierPoolUpdate"/>
-
 			<AttributeModifierUpgrade
 				id="ModuleTag_AttributeModifierUpgradeMUCSpeed"
 				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
@@ -87,8 +86,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic"
-				/>
+				StanceTemplate="Generic" />
 			<EmotionTrackerUpdate
 				id="Module_ETU">
 				<TauntAndPointExcluded
@@ -126,10 +124,12 @@
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="StalkerRangefinder" />
+						Template="SquadGrenadeRangefinder" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
-
+			<StealthDetectorUpdate
+				id="ModuleTag_StealthDetect"
+				DetectionRange="100" />
 			<Physics
 				id="ModuleTag_Physics"></Physics>
 			<HordeContain
@@ -139,7 +139,7 @@
 				ShowPips="false"
 				Formation="MAIN"
 				MeleeAttackLeashDistance="1"
-				Slots="3"
+				Slots="4"
 				ObjectStatusOfContained=""
 				ConditionForEntry="INVALID">
 				<PassengerFilter
@@ -147,28 +147,46 @@
 					Include="INFANTRY" />
 				<DieMuxData />
 				<InitialPayload
-					Name="AlienStalker"
-					Count="3" />
+					Name="SteelTalonsGrenadeSoldier"
+					Count="4" />
 				<MeleeBehavior
 					Type="AMOEBA" />
 				<RankInfo
 					RankID="1"
-					UnitType="AlienStalker">
-					<Position
-						X="20"
-						Y="-20" />
+					UnitType="SteelTalonsGrenadeSoldier">
 					<Position
 						X="0"
-						Y="0" />
+						Y="-10" />
+					<Position
+						X="0"
+						Y="10" />
+				</RankInfo>
+				<RankInfo
+					RankID="2"
+					UnitType="SteelTalonsGrenadeSoldier">
 					<Position
 						X="-20"
-						Y="20" />
+						Y="-10" />
+					<Position
+						X="-20"
+						Y="10" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
 			</HordeContain>
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
 				GiveNoXP="true" />
+			<CreateAndEnterObjectSpecialPower
+				id="ModuleTag_CallForTransport"
+				SpecialPowerTemplate="SpecialPowerCallForTransportSteelTalons"
+				OCL="OCL_SteelTalonsCallForTransport"
+				CreateLocation="CREATE_ABOVE_LOCATION"
+				TriggerFX="FX_GDICallForTransportFlare"
+				ChildModuleHandlesFX="true"
+				IdleWhenStartingPower="true">
+				<FXOffset x="25" y="0" z="0"></FXOffset>
+			</CreateAndEnterObjectSpecialPower>
 			<SpecialPower
 				id="ModuleTag_CaptureSpecialPower"
 				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
@@ -181,52 +199,6 @@
 				PackTime="1s"
 				StartAbilityRange="30.0"
 				Options="DO_CAPTURE_FX"/>
-			<!--Tiberium Agitation-->
-			<SpecialPower
-				id="ModuleTag_AgitationGetInRange"
-				SpecialPowerTemplate="TiberiumAgitationGetInRange"
-				UpdateModuleStartsAttack="true"/>
-			<SpecialAbilityUpdate
-				id="ModuleTag_AgitationGetInRangeUpdate"
-				SpecialPowerTemplate="TiberiumAgitationGetInRange"
-				UnpackTime="0s"
-				PackTime="0s"
-				StartAbilityRange="350.0"
-				ChainedButton="Command_FireTiberiumAgitation" />
-			<SpecialPowerDispatchSpecialPower
-				id="ModuleTag_Dispatch"
-				SpecialPowerTemplate="SpecialPower_TiberiumAgitationDispatch">
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation" />
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger" />
-			</SpecialPowerDispatchSpecialPower>
-			<HordeDispatchSpecialPower
-				id="ModuleTag_TibAgitation"
-				SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation" 
-				MaxMembersToDispatchTo="3"/>
-			<SpecialPower
-				id="ModuleTag_TibAgitationTrigger"
-				SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger"
-				UpdateModuleStartsAttack="true"></SpecialPower>
-			<WeaponFireSpecialAbilityUpdate
-				id="ModuleTag_TibAgitationTriggerUpdate"
-				SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger"
-				SpecialWeapon="HordeSpecialRangeAttack"
-				UnpackTime="0s"
-				PackTime="0.0s"
-				BusyForDuration="1.5s" 
-				WhichSpecialWeapon="1" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_AlienTiberiumAgitationAI"
-				CommandButtonName="Command_UseTiberiumAgitation"
-				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" 
-				SpecialPowerRadius="350" 
-				UnitKindOf="FS_MONEY_STORAGE TIBERIUM_BASED" />
-		<!--End Tiberium Agitation-->
-			<AimWeapon
-				id="ModuleTag_AimWeapon"
-				AimHighThreshold="0.5"/>
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
@@ -236,7 +208,8 @@
 				MinCowerTime="3.0s"
 				CanAttackWhileContained="true">
 				<UnitAITargetChooserData
-					SympathyRange="25.0" />
+					SympathyRange="100.0"
+					CheckVisionRange="false" />
 			</HordeAIUpdate>
 		</AI>
 		<Body>
@@ -249,8 +222,8 @@
 			<Shape
 				Type="BOX"
 				MajorRadius="20.0"
-				MinorRadius="30.0"
-				Height="13.0" />
+				MinorRadius="20.0"
+				Height="13.0"></Shape>
 		</Geometry>
 		<EvaEvents
 			EvaEventProductionStarted="UnitConstructionStarted"
@@ -271,3 +244,16 @@
 			CrusherLevel="0" />
 	</GameObject>
 </AssetDeclaration>
+<!--Object GDIGrenadeSoldierSquad
+
+	ThreatBreakdown GDIGrenadeSoldierHorde_DetailedThreat
+		AIKindOf = ARCHER
+	End	
+	Behavior = AISpecialPowerUpdate GDIGrenadeSoldierHordeCaptureBuildingAI
+		CommandButtonName = Command_CaptureBuilding
+		SpecialPowerAIType = AI_SPECIAL_POWER_CAPTURE_BUILDING
+	End
+	
+End
+
+-->

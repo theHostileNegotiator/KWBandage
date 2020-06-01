@@ -61,6 +61,7 @@
 			* GDI Shatterer (- Railgun)
 			* GDI/ST Orca (+ Hardpoints)
 			* GDI/ST Firehawk (+ Hardpoints)
+			* ST Grenadier (- Composite Armor, - EMP Grenades)
 			* ZOCOM Shatterer (- Railgun)
 			* ZOCOM Rifleman (+ Tiberium Field Suits)
 			* ZOCOM Missile Squad (+ Tiberium Field Suits)
@@ -119,6 +120,10 @@
 1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
 	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based
 		* Unlike Nod Power Plants with Tiberium Core upgrade, units and structures with Tiberium Core Missiles upgrade will not have the "HAVE_TIBERIUM_UPGRADE" flag, making it 'immune' to Tiberium Vibration Scan as it would be able to counter Cloaking Field and Stealth Tanks with a simple click of a button, making the upgrade less desireable against Scrin factions.
+#### Squad Special Ability Weapons
+1. Once ability is activated, 'interrupting' by issuing other commands can lead to unit still move while firing, leading to lead to jank animations, firing weapon backwards, etc. Playing attacking animations but not shooting if ordered to attack.
+	* Adjusted how special powers are activated. Squad will now be considered to be 'busy' until weapon has been released, therefore new commands will have to wait until unit is no longer busy before executing. Improving presentation significantly
+		* In most cases, special powers have been sped up, to match base weapons speed and to counter fix.
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
@@ -375,6 +380,8 @@
 	* Tweeked range for better performance
 2. AI would not use this ability when against vehicles or structures
 	* Enabled ability for AI to use
+3. Update 1.01 removed pre fire delay of EMP blast ability, however animations were not adjusted as it relys on such delay
+	* Added new EMP blast animation that removes the pre fire and adjusted animation states
 #### Flame Weaponry (+Tiberium Goo)
 1. Purifying Flame, Tiberium Goo and new units that use flame weaponry are missing garrison clearing effect as they inherit the base weapons before TW 1.05
 	* Added garrison clearing effect to affected units

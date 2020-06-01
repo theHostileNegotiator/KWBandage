@@ -14,8 +14,8 @@
 
 		<!-- A small amount of damage at a high frequency. -->
 		<FiringDuration
-				MinSeconds="0.1s"
-				MaxSeconds="0.1s" />
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="100.0"
@@ -798,6 +798,37 @@
 
 		</Nuggets>
 	</WeaponTemplate>
+	
+<!-- Actual range is controlled by WeaponFireSpecialAbilityUpdate -->
+	<WeaponTemplate
+		id="AlienStalkerTiberiumAgitation"
+		Name="AlienStalkerTiberiumAgitation"
+		WeaponSpeed="400.0"
+		FireFX="FX_AlienTibAgitationFire"
+		MinWeaponSpeed="400.0"
+		MaxWeaponSpeed="400.0"
+		AcceptableAimDelta="20d"
+		AutoReloadsClip="AUTO"
+		ClipSize="0"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="false"
+		PreAttackType="PER_SHOT"
+		RadiusDamageAffects="ENEMIES ALLIES NEUTRALS NOT_SIMILAR">
+		<PreAttackDelay
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibAgitationProjectile"
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon"/>
+		</Nuggets>
+	</WeaponTemplate>
 
 <!--Damage Scalar Now affects Sub Faction units-->
 	<WeaponTemplate
@@ -1307,7 +1338,6 @@
 		<ClipReloadTime
 			MinSeconds="1.5s"
 			MaxSeconds="1.5s" />
-
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.75s"
@@ -1325,6 +1355,41 @@
 				Suppression="40"
 				DurationSeconds="5s" />
 		</Nuggets>
+	</WeaponTemplate>
+
+<!-- Actual range is controlled by WeaponFireSpecialAbilityUpdate -->
+	<WeaponTemplate
+		id="GDIGrenadeSoldierEMPGrenade"
+		Name="GDIGrenadeSoldierEMPGrenade"
+		AttackRange="260.0"
+		WeaponSpeed="180"
+		MinWeaponSpeed="180"
+		MaxWeaponSpeed="200"
+		AcceptableAimDelta="20d"
+		PreAttackType="PER_SHOT"
+		ClipSize="0"
+		AutoReloadsClip="AUTO">
+		<PreAttackDelay
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="GDIGrenadeSoldierEMPGrenadeProjectile"
+				WarheadTemplate="GDIGrenadeSoldierEMPGrenadeWarhead">
+			</ProjectileNugget>
+		</Nuggets>
+		<ScatterRadiusVsType
+			Radius="15.0">
+			<Filter
+				Rule="NONE"
+				Include="INFANTRY" />
+		</ScatterRadiusVsType>
 	</WeaponTemplate>
 
 <!--Added reloading sound-->	
@@ -2018,6 +2083,38 @@
 				WarheadTemplate="NODHallucinogenicWeapon" />
 		</Nuggets>
 	</WeaponTemplate>
+<!-- Actual range is controlled by WeaponFireSpecialAbilityUpdate -->
+	<WeaponTemplate
+		id="BlackHandConfessorCabalGrenade"
+		Name="BlackHandConfessorCabalGrenade"
+		AttackRange="999999.0"
+		WeaponSpeed="200"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="0"
+		AcceptableAimDelta="20d"
+		AutoReloadsClip="AUTO"
+		PreAttackType="PER_SHOT"
+		HitPercentage="0%">
+		<PreAttackDelay
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="NODConfessorGrenadeProjectile"
+				WarheadTemplate="NODHallucinogenicWeapon" />
+		</Nuggets>
+		<ScatterRadiusVsType
+			Radius="15.0">
+			<Filter
+				Rule="ALL" />
+		</ScatterRadiusVsType>
+	</WeaponTemplate>
 
 <!--Scalar now affects Sub Faction units-->		
 	<WeaponTemplate
@@ -2125,6 +2222,65 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- Actual range is controlled by WeaponFireSpecialAbilityUpdate -->
+	<WeaponTemplate
+		id="NODCyborgEMPCannon"
+		Name="NODCyborgEMPCannon"
+		AttackRange="999999.0"
+		WeaponSpeed="400"
+		MinWeaponSpeed="750"
+		MaxWeaponSpeed="750"
+		AcceptableAimDelta="10d"
+		ClipSize="0"
+		AutoReloadsClip="AUTO"
+		AntiMask="ANTI_GROUND"
+		FireFX="FX_NODSilent1sEMPMuzzle"
+		FireVeteranFX="FX_NODSilent1sEMPMuzzle">
+		<PreAttackDelay
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<Nuggets>
+			<ProjectileNugget
+				WarheadTemplate="NODEMPBlastWarhead"
+				ProjectileTemplate="NODEMPBlastProjectile">
+			</ProjectileNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODImprovedCyborgEMPCannon"
+		Name="NODImprovedCyborgEMPCannon"
+		AttackRange="999999.0"
+		WeaponSpeed="400"
+		MinWeaponSpeed="750"
+		MaxWeaponSpeed="750"
+		AcceptableAimDelta="10d"
+		ClipSize="0"
+		AutoReloadsClip="AUTO"
+		AntiMask="ANTI_GROUND"
+		FireFX="FX_NODSilent1sEMPMuzzle"
+		FireVeteranFX="FX_NODSilent1sEMPMuzzle">
+		<PreAttackDelay
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<Nuggets>
+			<ProjectileNugget
+				WarheadTemplate="NODImprovedEMPBlastWarhead"
+				ProjectileTemplate="NODEMPBlastProjectile">
+			</ProjectileNugget>
+		</Nuggets>
+	</WeaponTemplate>
 <!--Filter Now affects Sub Faction Drone Ships-->
 	<WeaponTemplate
 		id="NODEMPBlastWarhead"
@@ -3120,6 +3276,22 @@
 				WeaponOCL="OCL_NODVeinDetonation" />
 			<ReportWeaponFiredStatNugget/>
 		</Nuggets>
+	</WeaponTemplate>
+	
+<!--For Squads with Special Ability Ranged attacks-->
+	<WeaponTemplate
+		id="HordeSpecialRangeAttack"
+		Name="HordeSpecialRangeAttack"
+		AttackRange="999999.0">
+		<PreAttackDelay
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
 	</WeaponTemplate>
 	
 </AssetDeclaration>

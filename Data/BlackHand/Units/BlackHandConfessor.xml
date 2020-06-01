@@ -6,6 +6,8 @@
 <!--Fixed Build Cost (For Hexapod)-->
 <!--Removed TibInfusion Upgrade-->
 <!--Tweeked Grenade Special Power Range-->
+<!--Speed to throw Hallucinegenic Grenade increased to match NOD Confessor Secondary Weapon-->
+<!--Removed Slaved Update-->
 	<GameObject
 		id="BlackHandConfessor"
 		SelectPortrait="Portrait_NODConfessor"
@@ -347,12 +349,14 @@
         </AnimationState>
         <AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="UNPACKING"
+					ConditionsYes="SPECIAL_WEAPON_ONE"
 					FrameForPristineBonePositions="57">
           <Animation
 						AnimationName="NU_BlkHnd_THRA"
 						AnimationMode="ONCE"
-						AnimationBlendTime="15"  />
+						AnimationBlendTime="15"
+						AnimationSpeedFactorMin="1.9"
+						AnimationSpeedFactorMax="1.9"/>
         </AnimationState>
         <AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -642,20 +646,13 @@
 				id="ModuleTag_GrenadeWeaponUpdate"
 				SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalFireGrenade"
 				SpecialWeapon="BlackHandConfessorCabalGrenade"
-				UnpackTime="2s"
-				PackTime="1.5s"
+				UnpackTime="1s"
+				PackTime="0.9s"
 				TriggerSound="Multisound:BH_Confessor_GrenadeThrowMS"
-				StartAbilityRange="275.0"
-				BusyForDuration="0.1s" 
+				BusyForDuration="1.0s" 
 				WhichSpecialWeapon="1"
-				WeaponSlotType="SECONDARY_WEAPON" />
-			<SlavedUpdate
-				id="ModuleTag_SlavedConfessorUpdate"
-				LeashRange="10"
-				GuardMaxRange="0"
-				GuardWanderRange="0"
-				AttackRange="0"
-				DieOnMastersDeath="false" />
+				WeaponSlotType="SECONDARY_WEAPON"
+				StartRechargeOnExit="true" />
 			<ModelConditionUpgrade
 				id="ModuleTag_CPBModelCondition"
 				Permanent="true"
@@ -689,24 +686,24 @@
 				<Sound Sound="AudioEvent:Bodyfall" Animation="NU_BlkHnd_LNDA" Frame="5" />
 			</AnimationSoundClientBehavior>
 		</ClientBehaviors>
-    <Geometry
+		<Geometry
 			IsSmall="true">
-      <Shape
+			<Shape
 				Type="CYLINDER"
 				MajorRadius="7.0"
 				Height="13.0" />
-    </Geometry>
-	<AudioArrayVoice>
-		<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceAttack" AudioType="voiceAttack" />
-		<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceCreate" AudioType="voiceFullyCreated" />
-		<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceGarrison" AudioType="voiceGarrison" />
-		<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceMove" AudioType="voiceMove" />
-		<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceMoveAttack" AudioType="voiceAttackAfterMoving" />
-		<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceRetreat" AudioType="voiceRetreatToCastle" />
-		<AudioEntry Sound="Multisound:NOD_Confessor_VoiceSelectMS" AudioType="voiceSelect" />
-		<AudioEntry Sound="Multisound:NOD_Confessor_VoiceSelectBattleMS" AudioType="voiceSelectBattle" />
-		<NamedEntry Sound="AudioEvent:NOD_Confessor_VoiceAttack" Name="VoiceHallucinogenicGrenade" /> <!-- not working!!! -->
-	</AudioArrayVoice>
+		</Geometry>
+		<AudioArrayVoice>
+			<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceAttack" AudioType="voiceAttack" />
+			<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceCreate" AudioType="voiceFullyCreated" />
+			<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceGarrison" AudioType="voiceGarrison" />
+			<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceMove" AudioType="voiceMove" />
+			<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceMoveAttack" AudioType="voiceAttackAfterMoving" />
+			<AudioEntry Sound="AudioEvent:NOD_Confessor_VoiceRetreat" AudioType="voiceRetreatToCastle" />
+			<AudioEntry Sound="Multisound:NOD_Confessor_VoiceSelectMS" AudioType="voiceSelect" />
+			<AudioEntry Sound="Multisound:NOD_Confessor_VoiceSelectBattleMS" AudioType="voiceSelectBattle" />
+			<NamedEntry Sound="AudioEvent:NOD_Confessor_VoiceAttack" Name="VoiceHallucinogenicGrenade" /> <!-- not working!!! -->
+		</AudioArrayVoice>
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
 			EvaEventProductionStarted="UnitConstructionStarted" 
@@ -725,12 +722,12 @@
 			<!-- EvaEventSecondDamageFarFromFirstOwner="UnitUnderAttackAgain"  -->
 		<CrusherInfo
 			CrushableLevel="0" />
-    <ShadowInfo
+		<ShadowInfo
 			Type="DECAL"
 			SizeX="14"
 			SizeY="14"
 			Texture="ShadowI" />
-    <VisionInfo
+		<VisionInfo
 			VisionRange="350"
 			ShroudClearingRange="400" />
   </GameObject>

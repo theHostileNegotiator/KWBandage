@@ -4,6 +4,10 @@
 <!--Fixed Build Cost (For Hexapod Recycling)-->
 <!--Fixed EMP Range-->
 <!--Changed unit portrait to Awakended instead of Black Hand-->
+<!--Added new EMP Attack animation due to instant activation-->
+	<Includes>
+		<Include type="all" source="ART:NUSilent_EMPB.w3x"  />
+	</Includes>
 	<GameObject
 		id="MOKCyborgInfantry"
 		SelectPortrait="Portrait_CyborgInfantry"
@@ -286,7 +290,8 @@
 						AnimationName="NUSilent_RUNB"
 						AnimationMode="LOOP" />
 				</AnimationState>
-<!-- EMP Blast -->			
+<!-- EMP Blast -->
+<!--
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="UNPACKING">
@@ -294,6 +299,17 @@
 						AnimationName="NUSilent_EMPA"
 						AnimationMode="ONCE"
 						AnimationPriority="1"/>
+				</AnimationState>
+				-->
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="PACKING">
+					<Animation
+						AnimationName="NUSilent_EMPB"
+						AnimationMode="ONCE"
+						AnimationPriority="40"
+						AnimationSpeedFactorMin="2.4"
+						AnimationSpeedFactorMax="2.4"/>
 				</AnimationState>			
 			
 				<AnimationState
@@ -570,8 +586,7 @@
 				TriggerSound="AudioEvent:NOD_Awakened_EMPgunFire"
 				UnpackTime="0.0s"
 				PackTime="0.7s"
-				StartAbilityRange="275.0"
-				BusyForDuration="1s"
+				BusyForDuration="0.7s"
 				WhichSpecialWeapon="1" 
 				WeaponSlotType="SECONDARY_WEAPON"
 				WeaponSlotID="2"/>

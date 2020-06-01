@@ -544,4 +544,50 @@
 			ForbiddenModelConditions="TAKING_OFF LANDING"
 			RequiredObjectStatusAny="AIRBORNE_TARGET" />
 	</SpecialPowerTemplate>
+	
+<!-- New Special Powers for Squad Abilities-->
+	<SpecialPowerTemplate
+		id="SpecialPower_BlackHandConfessorCabalGrenadeDispatch"
+		ReloadTime="30s"
+		TargetType="LOCATION" />
+	<SpecialPowerTemplate
+		id="SpecialPower_BlackHandConfessorCabalGrenadeTrigger"
+		ReloadTime="30s"
+		TargetType="LOCATION" />
+		
+	<SpecialPowerTemplate
+		id="EMPBlastDispatch"
+		ReloadTime="30s"
+		TargetType="LOCATION" />
+	<SpecialPowerTemplate
+		id="EMPBlastTrigger"
+		ReloadTime="30s"
+		TargetType="LOCATION" />
+		
+	<SpecialPowerTemplate
+		id="SpecialPower_EMPGrenadesDispatch"
+		ReloadTime="30s"
+		TargetType="LOCATION">
+		<GameDependency>
+			<NeededUpgrade>Upgrade_EMPGrenades</NeededUpgrade>
+		</GameDependency>
+	</SpecialPowerTemplate>
+	<SpecialPowerTemplate
+		id="SpecialPower_EMPGrenadesTrigger"
+		ReloadTime="30s"
+		TargetType="LOCATION">
+		<GameDependency>
+			<NeededUpgrade>Upgrade_EMPGrenades</NeededUpgrade>
+		</GameDependency>
+	</SpecialPowerTemplate>
+	
+	<SpecialPowerTemplate
+		id="SpecialPower_TiberiumAgitationDispatch"
+		ReloadTime="45s"
+		TargetType="OBJECT" />
+	<SpecialPowerTemplate
+		id="SpecialPower_TiberiumAgitationTrigger"
+		ReloadTime="45s"
+		TargetType="OBJECT" />
+		
 </AssetDeclaration>

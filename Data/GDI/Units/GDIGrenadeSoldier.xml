@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Refer to GDI Grenadier-->
-<!--Fixed EMP Grenades Animation-->
-<!--Added Field Suits Upgrade Sound-->
+<!--Speed to throw EMP Grenade increased to match Main weapon grenade throwing-->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
 	<GameObject
-		id="ZOCOMGrenadeSoldier"
+		id="GDIGrenadeSoldier"
 		SelectPortrait="Portrait_GDIGrenadierSquad"
 		ButtonImage="Portrait_GDIGrenadierSquad"
-		Side="ZOCOM"
+		Side="GDI"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="200"
@@ -23,21 +21,21 @@
 		UnitCategory="INFANTRY"
 		WeaponCategory="BLAST"
 		VoicePriority="88"
-		EditorName="ZOCOMGrenadeSoldier"
-		Description="Desc:ZOCOMGrenadierSquad"
-		WorldMapArmoryUpgradesAllowed="Upgrade_ZOCOMFieldSuits Upgrade_EMPGrenades"
+		EditorName="GDIGrenadeSoldier"
+		Description="Desc:GDIGrenadierSquad"
+		WorldMapArmoryUpgradesAllowed="Upgrade_GDICompositeArmor Upgrade_EMPGrenades"
 		TypeDescription="Type:GDIGrenadierSquad">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:GDIGrenadierSquad</DisplayName>
+		<DisplayUpgrade id="ModuleTag_DisplayCompositeArmorUpgrade">Upgrade_GDICompositeArmor</DisplayUpgrade>
 		<DisplayUpgrade id="ModuleTag_DisplayEMPGrenadesUpgrade">Upgrade_EMPGrenades</DisplayUpgrade>
-		<DisplayUpgrade id="ModuleTag_DisplayCompositeArmorUpgrade">Upgrade_ZOCOMFieldSuits</DisplayUpgrade>
 		<ArmorSet
 			Armor="GDIGrenadeSoldierArmor"
 			DamageFX="InfantryDamageFX" />
 		<ArmorSet
 			id="UpgradeTag_UnitArmor"
 			Conditions="PLAYER_UPGRADE"
-			Armor="ZOCOMGrenadeSoldierFieldSuits"
+			Armor="GDIGrenadeSoldierArmorComposite"
 			DamageFX="NormalDamageFX" />
 		<LocomotorSet
 			Locomotor="HumanLocomotor"
@@ -69,12 +67,18 @@
 					ConditionsYes="INSIDE_GARRISON">
 					<Model
 						Name="" />
+					<WeaponLaunchBone
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="UPGRADED_ARMOR">
 					<Model
-						Name="GUGrendr_UGTS_SKN" />
+						Name="GUGrendr_SKN" />
+					<Texture
+						Original="GuGrenadier3"
+						New="GuGrenadier3U" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -577,10 +581,25 @@
 			<xi:include
 				href="../../Includes/GDICallForTransport.xml" />
 				-->
+			<ModelConditionUpgrade xmlns="uri:ea.com:eala:asset"
+				 id="ModuleTag_ArmorCompositeModelCondition"
+				 Permanent="true"
+				 AddConditionFlags="UPGRADED_ARMOR">
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
+				id="ModuleTag_CompositeArmorUpgrade"
+				Permanent="true"
+				ArmorSetFlag="PLAYER_UPGRADE">
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
+			</ArmorUpgrade>
 			<LargeGroupAudioUpdate
 				id="LGAU">
 				<Key>GDI_GrenadierSoldier</Key>
 			</LargeGroupAudioUpdate>
+			<AudioLoopUpgrade id="Generic_Infantry_Upgrade" SoundToPlay="AudioEvent:Generic_Infantry_Upgrade"> 
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy> 
+			</AudioLoopUpgrade> 
 			<AudioLoopUpgrade id="GDI_Armory_EMPGrenadesUpgrade" SoundToPlay="AudioEvent:GDI_Armory_EMPGrenadesUpgrade"> 
 				<TriggeredBy>Upgrade_EMPGrenades</TriggeredBy>
 			</AudioLoopUpgrade> 
@@ -598,31 +617,16 @@
 				id="ModuleTag_EMPGrenadesUpdate"
 				SpecialPowerTemplate="SpecialPower_FireEMPGrenades"
 				SpecialWeapon="GDIGrenadeSoldierEMPGrenade"
-				UnpackTime="0.9s"
-				PackTime="0.5s"
-				BusyForDuration="1.4s"
+				UnpackTime="0.4s"
+				PackTime="0.7s"
+				BusyForDuration="1.1s"
 				WhichSpecialWeapon="1"
 				StartRechargeOnExit="true"/>	
 			<SubObjectsUpgrade
 				id="ModuleTag_ShowEMPGrenadeUpgrade"
 				ShowSubObjects="UG_STRAPS UG_GRENADEEMP_PROJECTILE">
 				<TriggeredBy>Upgrade_EMPGrenades</TriggeredBy>
-			</SubObjectsUpgrade>
-			<ModelConditionUpgrade xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_FieldSuitsModelCondition"
-				Permanent="true"
-				AddConditionFlags="UPGRADED_ARMOR" >
-				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_FieldSuitsUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE">
-				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
-			</ArmorUpgrade>
-			<AudioLoopUpgrade id="GDI_Armory_TiberiumFieldSuitsUpgrade" SoundToPlay="AudioEvent:GDI_Armory_TiberiumFieldSuitsUpgrade"> 
-				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy> 
-			</AudioLoopUpgrade> 
+			</SubObjectsUpgrade>				
 		</Behaviors>
 		<AI>
 			<AIUpdate

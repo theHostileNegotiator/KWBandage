@@ -3,8 +3,10 @@
 <!--Changed Upgrade Sound from Railgun to SuperChargedParticleBeam-->
 <!--Added HouseColor Texture for Cybernetic Legs Upgrade-->
 <!--Fixed EMP Range-->
+<!--Added new EMP Attack animation due to instant activation-->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:NUSilent_EMPB.w3x"  />
 		<Include
 			type="all"
 			source="ART:HC_NUEnlightened_UGCL.xml" />
@@ -335,6 +337,7 @@
 						AnimationMode="LOOP" />
 				</AnimationState>
 <!-- EMP Blast -->			
+<!--
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="UNPACKING SPECIAL_WEAPON_ONE">
@@ -344,7 +347,17 @@
 						AnimationBlendTime="10"
 						AnimationPriority="40" />
 				</AnimationState>			
-			
+			-->
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="PACKING">
+					<Animation
+						AnimationName="NUSilent_EMPB"
+						AnimationMode="ONCE"
+						AnimationPriority="40"
+						AnimationSpeedFactorMin="2.4"
+						AnimationSpeedFactorMax="2.4"/>
+				</AnimationState>	
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="SELECTED"
@@ -532,11 +545,10 @@
 				id="ModuleTag_EMPBlastUpdate"
 				SpecialPowerTemplate="EMPBlast"
 				SpecialWeapon="NODImprovedCyborgEMPCannon"
-				TriggerSound="NOD_Awakened_EMPgunFire"
+				TriggerSound="AudioEvent:NOD_Awakened_EMPgunFire"
 				UnpackTime="0.0s"
 				PackTime="0.7s"
-				StartAbilityRange="275.0"
-				BusyForDuration="1s"
+				BusyForDuration="0.7s"
 				WhichSpecialWeapon="1" 
 				WeaponSlotType="SECONDARY_WEAPON"
 				WeaponSlotID="2"/>

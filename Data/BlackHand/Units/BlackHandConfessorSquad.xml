@@ -7,6 +7,7 @@
 <!--Tweeked Grenade Special Power Range-->
 <!--AI will now use Hallucinogenic Grenades-->
 <!--Changed KindOf to that of most basic Infantry Squad. AI will garrison and removed clear garrison cursor-->
+<!--Once Squad is in range of ability, unit will be locked in place until grenade is airborne (1 sec)-->
 	<GameObject
 		id="BlackHandConfessorSquad"
 		SelectPortrait="Portrait_NODConfessor"
@@ -65,27 +66,26 @@
 			</ScriptedModelDraw>
 			
 			<ScriptedModelDraw
-							id="ModuleTag_Draw_Selected_Repair_Decal"
-							OkToChangeModelColor="true">
-							<ModelConditionState
-								ParseCondStateType="PARSE_DEFAULT">
-								<Model Name="" />
-							</ModelConditionState>
-							<ModelConditionState
-								ParseCondStateType="PARSE_NORMAL"
-								ConditionsYes="SELECTED">
-								<Model Name="FXInvisBone" />
-								<ShadowInfo
-									Type="ADDITIVE_DECAL"
-									SizeX="300"
-									SizeY="300"
-									OverrideLODVisibility="true"
-									MaxHeight="200"
-									UseHouseColor="true"
-									Texture="Decal_LeadershipBuff" 
-									LocalPlayerOnly="true"
-								/>
-							</ModelConditionState>
+				id="ModuleTag_Draw_Selected_Repair_Decal"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model Name="" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="SELECTED">
+					<Model Name="FXInvisBone" />
+					<ShadowInfo
+						Type="ADDITIVE_DECAL"
+						SizeX="300"
+						SizeY="300"
+						OverrideLODVisibility="true"
+						MaxHeight="200"
+						UseHouseColor="true"
+						Texture="Decal_LeadershipBuff" 
+						LocalPlayerOnly="true" />
+				</ModelConditionState>
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
@@ -109,8 +109,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic"
-				/>
+				StanceTemplate="Generic"/>
 			<EmotionTrackerUpdate
 				id="Module_ETU">
 				<TauntAndPointExcluded
@@ -257,14 +256,34 @@
 				PackTime="0s"
 				StartAbilityRange="250"
 				ChainedButton="Command_BlackHandConfessorCabalFireGrenade" />
+			<SpecialPowerDispatchSpecialPower
+				id="ModuleTag_Dispatch"
+				SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalGrenadeDispatch">
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalFireGrenade" />
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalGrenadeTrigger" />
+			</SpecialPowerDispatchSpecialPower>
 			<HordeDispatchSpecialPower
 				id="ModuleTag_ConfessorCabalDispatchFireGrenade"
 				SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalFireGrenade" >
 			</HordeDispatchSpecialPower>
+			<SpecialPower
+				id="ModuleTag_ConfessorCabalFireGrenadeTrigger"
+				SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalGrenadeTrigger"
+				UpdateModuleStartsAttack="true"></SpecialPower>
+			<WeaponFireSpecialAbilityUpdate
+				id="ModuleTag_ConfessorCabalFireGrenadeTriggerUpdate"
+				SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalGrenadeTrigger"
+				SpecialWeapon="HordeSpecialRangeAttack"
+				UnpackTime="0s"
+				PackTime="0.0s"
+				BusyForDuration="1.0s" 
+				WhichSpecialWeapon="1" />
 			<AISpecialPowerUpdate
 				id="ModuleTag_CabalGrenades"
-				CommandButtonName="Command_BlackHandConfessorCabalFireGrenade"
-				SpecialPowerRadius="300"
+				CommandButtonName="Command_BlackHandConfessorCabalSquadFireGrenade"
+				SpecialPowerRadius="250"
 				UnitKindOf="INFANTRY"
 				EnemyUnitExclude="VEHICLE STRUCTURE"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />

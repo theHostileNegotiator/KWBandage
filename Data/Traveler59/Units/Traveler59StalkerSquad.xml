@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!--Refer to Scrin Ravager Squad-->
+<!--Added Advanced Articulators upgrade reference to squad for Global Conquest-->
+<!--Changed CommandSet to Alien as T59 is missing certain commands-->
 	<Tags></Tags>
 	<Includes></Includes>
 	<GameObject
@@ -12,7 +14,7 @@
 		TransportSlotCount="1"
 		BuildCost="1200"
 		BuildTime="12"
-		CommandSet="Traveler59StalkerSquadCommandSet"
+		CommandSet="AlienStalkerSquadCommandSet"
 		CommandPoints="100" 
 		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON CAN_CAPTURE CAN_BE_FAVORITE_UNIT SCORE TIBERIUM_BASED"
 		IsTrainable="true"
@@ -25,6 +27,7 @@
 		EditorName="Traveler59StalkerSquad"
 		Description="Desc:Traveler59Stalker"
 		TypeDescription="Type:Traveler59Stalker"
+		WorldMapArmoryUpgradesAllowed="Upgrade_Traveler59AdvancedArticulators"
 		UnitTypeIcon="ScrinStalkerPip"
 		RadarPriority="NOT_ON_RADAR">
 		<DisplayName
@@ -192,14 +195,36 @@
 				PackTime="0s"
 				StartAbilityRange="350.0"
 				ChainedButton="Command_FireTiberiumAgitation" />
+			<SpecialPowerDispatchSpecialPower
+				id="ModuleTag_Dispatch"
+				SpecialPowerTemplate="SpecialPower_TiberiumAgitationDispatch">
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation" />
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger" />
+			</SpecialPowerDispatchSpecialPower>
 			<HordeDispatchSpecialPower
 				id="ModuleTag_TibAgitation"
 				SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation" 
 				MaxMembersToDispatchTo="3"/>
+			<SpecialPower
+				id="ModuleTag_TibAgitationTrigger"
+				SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger"
+				UpdateModuleStartsAttack="true"></SpecialPower>
+			<WeaponFireSpecialAbilityUpdate
+				id="ModuleTag_TibAgitationTriggerUpdate"
+				SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger"
+				SpecialWeapon="HordeSpecialRangeAttack"
+				UnpackTime="0s"
+				PackTime="0.0s"
+				BusyForDuration="1.5s" 
+				WhichSpecialWeapon="1" />
 			<AISpecialPowerUpdate
 				id="ModuleTag_AlienTiberiumAgitationAI"
 				CommandButtonName="Command_UseTiberiumAgitation"
-				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />
+				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" 
+				SpecialPowerRadius="350" 
+				UnitKindOf="FS_MONEY_STORAGE TIBERIUM_BASED" />
 		<!--End Tiberium Agitation-->
 			<AimWeapon
 				id="ModuleTag_AimWeapon"

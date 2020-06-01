@@ -87,6 +87,11 @@
 					ConditionsYes="INSIDE_GARRISON">
 					<!-- no anim -->
 				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<!-- no anim -->
+				</AnimationState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
@@ -160,12 +165,13 @@
 					FrameForPristineBonePositions="24">
 					<Animation
 						AnimationName="AUStalker_ATKC"
-						AnimationMode="ONCE"  />
+						AnimationMode="ONCE"/>
 				</AnimationState>
 		<!-- Tib Agitation -->		
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="SPECIAL_WEAPON_ONE">
+					ConditionsYes="SPECIAL_WEAPON_ONE"
+					FrameForPristineBonePositions="28">
 					<Animation
 						AnimationName="AUStalker_ATKA"
 						AnimationMode="ONCE" 
@@ -178,16 +184,16 @@
 					<Animation
 						AnimationName="AUStalker_ATKB"
 						AnimationMode="ONCE"
-            					AnimationBlendTime="5" />
+            			AnimationBlendTime="5"/>
 				</AnimationState>
-        			<AnimationState
+        		<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USING_WEAPON_A AIM_HIGH">
-          				<Animation
+          			<Animation
 						AnimationName="AUStalker_ATKB"
 						AnimationMode="ONCE"
-            					AnimationBlendTime="5" />
-            			</AnimationState>		
+            			AnimationBlendTime="5" />
+            	</AnimationState>		
             	
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -435,12 +441,10 @@
 				SpecialWeapon="AlienStalkerTiberiumAgitation"
 				UnpackTime="0.9s"
 				PackTime="1.5s"
-				StartAbilityRange="375.0"
 				BusyForDuration="2.4s"
 				WhichSpecialWeapon="1"
 				FleeRangeAfterCompletion="0"
 				StartRechargeOnExit="true"/>
-				
 			<AttributeModifierUpgrade
 				id="Upgrade_Traveler59AdvancedArticulators"
 				AttributeModifier="AttributeModifier_AdvancedArticulators">
