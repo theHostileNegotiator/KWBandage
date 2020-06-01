@@ -23,7 +23,9 @@
 		<Include type="all" source="Units/GDIOrca.xml" />
 		<Include type="all" source="Units/GDIPredator.xml" />
 		<Include type="all" source="Units/GDIRig.xml" />	
+		<Include type="all" source="Units/GDISniper.xml" />	
 		<Include type="all" source="Units/GDISonicTank.xml" />	
+		<Include type="all" source="Units/GDISpotter.xml" />	
 		<Include type="all" source="Units/GDISuperSonicAirAttack.xml" />	
 		<Include type="all" source="Units/GDIZoneTrooper.xml" />
 		<Include type="all" source="Units/ZOCOMAPCRepairDrone.xml" />

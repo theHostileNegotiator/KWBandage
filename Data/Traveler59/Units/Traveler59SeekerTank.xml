@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!--Refer to Scrin Seeker Tank-->
+<!--Removed Attenuated Forcefied upgrade for Global Conquest-->
 	<GameObject
 		id="Traveler59SeekerTank"
 		SelectPortrait="Portrait_ALIENSeeker"

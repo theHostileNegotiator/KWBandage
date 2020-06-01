@@ -93,6 +93,21 @@
 			* MOK Enlightened (Cybernetic Legs)
 2. Units may not use Tiberium Core Missile Upgrade DAMAGED texture
 	* Added texture change for Damaged State
+#### Unit Cost (For Hexapod Recycling)
+1. Some units and structures have inappropriate build costs. Typically they are members of squads that would not affect anything thing in TW. However it is more important in KW, the Hexapod Recycling is dependent on the build cost.
+	* Adjusted Build Cost (and Build Times) of units to be more appropriate.
+		* Objects Affected
+			* GDI/ZOCOM Sniper (1000 to 500)
+			* GDI/ZOCOM Spotter (10 to 500)
+			* GDI Zone Trooper (313 to 325)
+			* ZOCOM Zone Raider (313 to 325)
+			* NOD/BH/MOK Fanatic (160 to 140)
+			* NOD Awakened (400 to 10)
+			* MOK Awakened (400 to 166)
+			* BH Confessor (10 to 66)
+			* BH Black Disciple (150 to 10)
+			* Scrin/R17/T59 Ravager (333 to 400)
+			* Scrin/R17/T59 Mechapede Body (1400 to 100)
 #### Sonic Repulsion Field and Laser Fencing
 1. Structures when entering DAMAGED state (66%) removes the Support Power which would suggest that the upgrade cannot be applied. However the upgrade can be applied at state, but will not display.
 	* Removed ability to be able to apply to damaged structures
@@ -188,9 +203,6 @@
 	* Added modules that will allow them to use it
 2. When using Formation move, the formation texture uses Rocket Symbols
 	* Fixed Texture Coordinate in FXGrenade_FP.w3x
-#### Zone Trooper
-1. Unit Recycled price (Hexapod passive ability) was not proportional to unit cost
-	* Change BuildCost (and BuildTime appropriately) from 313 to 325
 #### MRT
 1. Leash range of Repair Drone was not changed from KW 1.01 to 1.02, despite specified in change log
 	* Fixed leash range to 100
@@ -380,21 +392,19 @@
 	* Added "PATH_THROUGH_INFANTRY" Kindof flag
 2. Unit is not classed as infantry
 	* Give the UnitCategory="INFANTRY"
-3. Hexapod recycling is not proportional to the squad cost
-	* Changed build cost of individual unit
-4. If there is access to NOD or MOK Secret Shrine, unit can be upgraded with Tiberium infusion
+3. If there is access to NOD or MOK Secret Shrine, unit can be upgraded with Tiberium infusion
 	* Removed Upgrade
-5. Hallucinegetic Grenades
+4. Hallucinegetic Grenades
 	* Tweeked range for better performance
-6. Unit cannot detect stealth units at close range, something that all other infantry unit can do
+5. Unit cannot detect stealth units at close range, something that all other infantry unit can do
 	* Added Stealth detection to squad
-7. Unit prioritise the wrong unit types with weapon
+6. Unit prioritise the wrong unit types with weapon
 	* Changed WeaponCategory from BLAST to GUN
-8. Targetting garrisoned structure changes the cursor representative of garrison clear despite having no ability to do so (Except when upgraded with Black Disciples)
+7. Targetting garrisoned structure changes the cursor representative of garrison clear despite having no ability to do so (Except when upgraded with Black Disciples)
 	* Removed "ANTI_GARRISON" Kindof flag
-9. AI does not garrison this unit despite basic infantry status (Squad seems to be modified Black Hand squad)
+8. AI does not garrison this unit despite basic infantry status (Squad seems to be modified Black Hand squad)
 	* Removed "SKIRMISH_AI_DONT_GARRISON" Kindof Flag
-10. Unit has range change when upgrading to Charged Particle Beam
+9. Unit has range change when upgrading to Charged Particle Beam
 	* Reduced base weapon Range from 325 to 300 matching upgraded version
 #### Awakened
 1. If there is access to BH Tech Lab, unit can be upgraded with Charged Particle Beam
@@ -412,6 +422,10 @@
 #### Fanatic
 1. Subfaction Fanatics would be affected by their own explosion. This does not occur with Nod
 	* Added Subfaction Fanatics to Damage Scalar.
+2. Black Hand Fanatic Squads can be upgraded with Tiberium Infusion with NOD or MOK Secret Shrine.
+	* Removed upgrade
+3. Fanatics contained in Black Hand Upgraded Strike teams in Global Conquest will be upgraded with Tiberium Infusion, despite not being available to the Subfaction
+	* Removed upgrade in WorldMapArmoryUpgradesAllowed
 #### Tiberium Trooper
 1. Health, speed and weapon damage values were inherited from Black Hand pre TW 1.05
 	* Changed values to match Black Hand
@@ -439,6 +453,13 @@
 	* Restored ability for it to be cloaked and defaulted parameters
 3. Damage values were inherited from Stealth Tank TW 1.09. Stealth Tank damage was reduced in KW 1.00.
 	* Reduced Damage of Rockets to match the current Stealth Tank values
+#### Specter
+1. Unit will rotate body to fire after deployed
+	* Remove requirement RotateToTargetWhenAiming
+2. Black Hand variant could not be cloaked with NOD Cloaking Field Support Power
+	* Restored ability for it to be cloaked and defaulted parameters
+3. Black Hand will randomly play NOD voice sounds referencing stealth. (This is due to inheriting NOD Specter and not removing sounds)
+	* Removed NOD variant sound
 #### Avatar
 1. Particle System when in REALLYDAMAGED mode was not shown when using Kane's Edition Skin
 	* Fixed Model Condition States
@@ -455,16 +476,9 @@
 	* Added Upgraded Flame Tank texture
 3. Flame weapon particle effects would still be used when EMPed
 	* Added new state to disable particle effects when EMPed
-#### Specter
-1. Unit will rotate body to fire after deployed
-	* Remove requirement RotateToTargetWhenAiming
-2. Black Hand variant could not be cloaked with NOD Cloaking Field Support Power
-	* Restored ability for it to be cloaked and defaulted parameters
-3. Black Hand will randomly play NOD voice sounds referencing stealth. (This is due to inheriting NOD Specter and not removing sounds)
-	* Removed NOD variant sound
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze
-	* Added NOD Confesor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
+	* Added NOD Confessor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
 2. Flame weapon particle effects would still be when after EMPed
 	* Added new state to disable particle effects when EMPed
 3. Turrets do not rotate, despite being able to attack 360 degrees
@@ -577,6 +591,8 @@
 #### Seeker
 1. Will prioritise infantry over aircraft or vehicles
 	* Changed Weapon Category from GUN to MISSILE
+2. Seekers contained in Traveler59 Upgraded Strike teams in Global Conquest will be upgraded with Attenuated Forcefields, despite not being available to the Subfaction
+	* Removed upgrade in WorldMapArmoryUpgradesAllowed
 #### Harvester
 1. Will play generic EVA event when attacked instead of a unique Harvester EVA event
 	* Changed EVA event for Harvester Under Attack
@@ -586,16 +602,14 @@
 #### Corrupter
 1. Healing ability may not work on certain sub faction units (such as the Explorer)
 	* Added missing units into the ability
-#### Mechapede
-1. Hexapod recycling is not proportional to the segment cost
-	* Change BuildCost (and BuildTime appropriately) from 1400 to 100
-2. Subfactions use Scrin Mechapede Members instead of their own
-	* Create new members for each faction
 #### Reaper Tripod
 1. Conversion Reserves would significantly decrease the damage of the conversion beams
 	* Increased Damage to match unupgraded counterpart
 2. Husk would use Annihilator Tripod Husk Model with the Reaper Tripod Texture
 	* Created a new Reaper Tripod Husk model to be used instead
+#### Mechapede
+1. Subfactions use Scrin Mechapede Members instead of their own
+	* Create new members for each faction
 #### Eradicator Hexapod
 1. Disintegrator visual lasers override each other. Therefore if more than one laser is firing, only the latest shot laser will show.
 	* Added new Weapons, Laser Draws and Laser States.

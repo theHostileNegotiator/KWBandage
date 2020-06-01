@@ -20,6 +20,7 @@
 		<Include type="all" source="Units/NODConfessor.xml" />	
 		<Include type="all" source="Units/NODCyborgInfantry.xml" />	
 		<Include type="all" source="Units/NODCyborgInfantrySquad.xml" />
+		<Include type="all" source="Units/NODFanatic.xml" />	
 		<Include type="all" source="Units/NODMCV.xml" />	
 		<Include type="all" source="Units/NODMetaUnit.xml" />	
 		<Include type="all" source="Units/NODMilitantRocket.xml" />	

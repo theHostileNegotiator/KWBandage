@@ -24,6 +24,8 @@
 		<Include type="all" source="Units/ZOCOMOrca.xml" />
 		<Include type="all" source="Units/ZOCOMRifleSoldier.xml" />
 		<Include type="all" source="Units/ZOCOMRig.xml" />
+		<Include type="all" source="Units/ZOCOMSniper.xml" />	
+		<Include type="all" source="Units/ZOCOMSpotter.xml" />	
 		<Include type="all" source="Units/ZOCOMV350x_CallSupportHunterKillerTeam.xml" />
 		<Include type="all" source="Units/ZOCOMV350x_CallSupportZOCOMAirport.xml" />
 		<Include type="all" source="Units/ZOCOMV350x_CallSupportZOCOMAirportRockets.xml" />
