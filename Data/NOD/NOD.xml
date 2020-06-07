@@ -17,6 +17,7 @@
 	
 		<Include type="all" source="Units/NODAttackBike.xml" />		
 		<Include type="all" source="Units/NODAvatar.xml" />	
+		<Include type="all" source="Units/NODBunkerTruck.xml" />	
 		<Include type="all" source="Units/NODConfessor.xml" />	
 		<Include type="all" source="Units/NODCyborgInfantry.xml" />	
 		<Include type="all" source="Units/NODCyborgInfantrySquad.xml" />

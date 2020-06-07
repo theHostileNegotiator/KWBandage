@@ -12,6 +12,7 @@
 	
 		<Include type="all" source="Units/BlackHandAttackBike.xml" />
 		<Include type="all" source="Units/BlackHandBlackDisciple.xml" />
+		<Include type="all" source="Units/BlackHandBunkerTruck.xml" />
 		<Include type="all" source="Units/BlackHandConfessor.xml" />
 		<Include type="all" source="Units/BlackHandConfessorSquad.xml" />
 		<Include type="all" source="Units/BlackHandCustomWarmech.xml" />
