@@ -494,6 +494,8 @@
 3. Turrets do not rotate, despite being able to attack 360 degrees
 	* Fixed Models and Turret Data
 		* Also reduced turret idle angles to significantly reduce chance of turrets clipping through each other.
+4. Tiberium Trooper module cannot attack while unit is moving
+	* Allowed weapon to attack while unit is moving
 #### Airtower
 1. When selected to be deployed, the upgrade subobjects will appear when replacing cursor. This does not happen with other structures
 	* Hide subobjects in animation state

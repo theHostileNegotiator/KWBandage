@@ -589,7 +589,6 @@
 			MinSeconds="0s"
 			MaxSeconds="0s" />
 		<Nuggets>
-
 			<ActivateStreamNugget
 				Lifetime="0.75s"
 				StreamId="0"/>
@@ -598,23 +597,18 @@
 				Damage="3.0"
 				Radius="5.0"
 				DamageFXType="ALIEN_TIOXIN"
-				DamageType="GRENADE"
-				
-			>
+				DamageType="GRENADE">
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="INFANTRY"
 					Relationship="ENEMIES">
 					<ExcludeThing>Viceroid</ExcludeThing>
 				</SpecialObjectFilter>
-
 				<!-- Removing this for now, it spawns them too fast.-->
 				<!-- Remember to change to DamageAndSpawnNugget if you put it back in
 				<SpawnTemplate>Viceroid</SpawnTemplate>
 				-->
-
 			</DamageNugget>
-
 			<!-- regular damage to corrupted infantry -->
 			<DamageNugget
 				Damage="3.0"
@@ -625,7 +619,6 @@
 					<IncludeThing>CorruptedInfantry</IncludeThing>
 				</SpecialObjectFilter>
 			</DamageNugget>
-
 			<!-- Damage to all enemy non-infantry -->
 			<DamageNugget
 				Damage="15.0"
@@ -635,10 +628,8 @@
 				<SpecialObjectFilter
 					Rule="ALL"
 					Exclude="INFANTRY HORDE"
-					Relationship="ENEMIES NEUTRAL"
-				/>
+					Relationship="ENEMIES NEUTRAL"/>
 			</DamageNugget>
-
 			<!-- Heal to all allies -->
 			<!-- IF YOU ADD A UNIT HERE, ADD IT TO THE CORRUPTER WEAPON AS WELL -->
 			<DamageNugget
@@ -723,8 +714,6 @@
 					<IncludeThing>Traveler59EradicatorHexapod</IncludeThing>
 				</SpecialObjectFilter>
 			</DamageNugget>
-
-
 			<!-- Garrison clear -->
 			<!--
 			<DamageContainedNugget 
@@ -738,7 +727,6 @@
 					Include="INFANTRY" />
 			</DamageContainedNugget>
 			-->
-
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -2443,7 +2431,8 @@
 		id="NODWarmechTibWeaponRight"
 		Name="NODWarmechTibWeaponRight"
 		AttackRange="250.0"
-		WeaponSpeed="999999.0"
+		WeaponSpeed="150.0"
+		CanFireWhileMoving="true"
 		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
 		FiringLoopSoundContinuesDuringReload="false"
 		AcceptableAimDelta="10d"
@@ -2518,7 +2507,8 @@
 		id="NODWarmechTibWeaponLeft"
 		Name="NODWarmechTibWeaponLeft"
 		AttackRange="250.0"
-		WeaponSpeed="999999.0"
+		WeaponSpeed="150.0"
+		CanFireWhileMoving="true"
 		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
 		FiringLoopSoundContinuesDuringReload="false"
 		AcceptableAimDelta="10d"
@@ -2613,7 +2603,7 @@
 		Name="NODWarmechFlamer"
 		AttackRange="200.0"
 		CanFireWhileMoving="true"
-		WeaponSpeed="999999.0"
+		WeaponSpeed="150.0"
 		FiringLoopSound="AudioEvent:NOD_FlameTank_FlameWeaponLoop"
 		FiringLoopSoundContinuesDuringReload="true"
 		RadiusDamageAffects="ENEMIES NEUTRALS"
