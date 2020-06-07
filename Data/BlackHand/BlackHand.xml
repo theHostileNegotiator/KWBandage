@@ -3,11 +3,12 @@
 	<Includes>
 		<Include type="all" source="Structures/BlackHandLaserCannon.xml" />
 		<Include type="all" source="Structures/BlackHandOperationsCenter.xml" />
+		<Include type="all" source="Structures/BlackHandPropagandaTower.xml" />
 		<Include type="all" source="Structures/BlackHandRocketBunker.xml" />
-		<Include type="all" source="Structures/BlackHandTechAssemblyPlant.xml" />
 		<Include type="all" source="Structures/BlackHandSecretShrine.xml" />
 		<Include type="all" source="Structures/BlackHandShredderTurret.xml" />
 		<Include type="all" source="Structures/BlackHandShredderTurretHub.xml" />
+		<Include type="all" source="Structures/BlackHandTechAssemblyPlant.xml" />
 		<Include type="all" source="Structures/BlackHandTiberiumLiquidationFacility.xml" />
 	
 		<Include type="all" source="Units/BlackHandAttackBike.xml" />

@@ -3,6 +3,7 @@
 <!--Removed Avatar Voice-->
 <!--Removed Avatar Special Abilities (For Convenience to the Coder)-->
 <!--Flame Tank will now display upgrade-->
+<!--'Morale Boosting' Aura no longer affects Squad Objects-->
 	<GameObject
 		id="BlackHandCustomWarmech"
 		SelectPortrait="Portrait_CustomWarmech"
@@ -1208,9 +1209,10 @@
 			 	Range="150"
 				InitiallyActive="true">
 				<ObjectFilter
-       				Rule="ANY"
-       				Relationship="ALLIES"
-					Include="INFANTRY">                                     
+					Rule="ANY"
+					Relationship="ALLIES"
+					Include="INFANTRY"
+					Exclude="HORDE">
 				</ObjectFilter>
 			</AttributeModifierAuraUpdate>
 		</Behaviors>

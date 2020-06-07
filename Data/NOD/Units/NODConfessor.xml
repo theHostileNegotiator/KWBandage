@@ -614,7 +614,8 @@
 				<ObjectFilter
 					Rule="NONE"
 					Relationship="ALLIES"
-					Include="INFANTRY">
+					Include="INFANTRY"
+					Exclude="HORDE">
 				</ObjectFilter>
 			</AttributeModifierAuraUpdate>
 			<FindCoverBehavior

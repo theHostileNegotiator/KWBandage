@@ -5,6 +5,7 @@
 		<Include type="all" source="Structures/MarkedOfKaneHangar.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneLaserCannon.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneOperationsCenter.xml" />
+		<Include type="all" source="Structures/MarkedOfKanePropagandaTower.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneRocketBunker.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneSecretShrine.xml" />
 		<Include type="all" source="Structures/MarkedOfKaneShredderTurret.xml" />

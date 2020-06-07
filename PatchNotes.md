@@ -397,6 +397,8 @@
 #### Leadership Buff (Confessor, Confessor Cabal, Purifier, Voice of Kane)
 1. Has Fire Rate buff despite being removed in TW 1.09
 	* Removed Rate of Fire bonus
+2. When affected, each unit has a visual FX. However if closly looked for each squad, there is a visual FX for nothing. This is because the squad object is also affected and an FX is added
+	* Excluded HORDE from being affected by Aura
 #### Confessor Cabal
 1. Unit had Flags that did not allow it to path through infantry
 	* Added "PATH_THROUGH_INFANTRY" Kindof flag
@@ -519,6 +521,11 @@
 	* Added Quad Turrets to the display list
 3. When use as a cursor, the Muzzleflash fx is shown when no Shredders have been placed
 	* Added animation state to hide Subobjects when used as cursor
+#### Voice of Kane
+1. Has Kindof Flag BROADCASTS_INVISIBILITY which may suggest (to the AI) that it has the functionallity of a Disruption Tower
+	* Removed flag
+2. Structure when sold or destroyed are not supposed to create an Infantry squad. However subfaction structures generates units.
+	* Removed OCL from subfaction structures
 #### Air Support Tower
 1. Online Games causes desyncs when Structure is created
 	* Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs

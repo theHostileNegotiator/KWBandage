@@ -7,6 +7,7 @@
 <!--Tweeked Grenade Special Power Range-->
 <!--AI will now use Hallucinogenic Grenades-->
 <!--Changed KindOf to that of most basic Infantry Squad. AI will garrison and removed clear garrison cursor-->
+<!--Confessor Aura no longer affects Squad Objects-->
 <!--Once Squad is in range of ability, unit will be locked in place until grenade is airborne (1 sec)-->
 	<GameObject
 		id="BlackHandConfessorSquad"
@@ -240,9 +241,10 @@
 			 	Range="150"
 				InitiallyActive="true">
 				<ObjectFilter
-       				Rule="ANY"
-       				Relationship="ALLIES"
-					Include="INFANTRY"> 
+					Rule="ANY"
+					Relationship="ALLIES"
+					Include="INFANTRY"
+					Exclude="HORDE"> 
 				</ObjectFilter>
 			</AttributeModifierAuraUpdate>
 			<SpecialPower

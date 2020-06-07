@@ -9,6 +9,7 @@
 		<Include type="all" source="Structures/NODLaserCannon.xml" />
 		<Include type="all" source="Structures/NODOperationsCenter.xml" />
 		<Include type="all" source="Structures/NODRocketBunker.xml" />
+		<Include type="all" source="Structures/NODPropagandaTower.xml" />
 		<Include type="all" source="Structures/NODShredderTurret.xml" />
 		<Include type="all" source="Structures/NODShredderTurretHub.xml" />
 		<Include type="all" source="Structures/NODShredderTurretSpawnHole.xml" />
