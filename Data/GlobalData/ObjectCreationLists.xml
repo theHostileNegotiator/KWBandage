@@ -39,6 +39,45 @@
 		</CreateObject>
 	</ObjectCreationList>
 	
+	<!-- Reduce Confessor Cabal Squad size to 4 when selling structures to prevent getting a full squad at a discount with certain structures (Mainly Shredder Turrets) -->
+	<ObjectCreationList
+		id="OCL_GenericBlackHandBuildingDestruction">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS REQUIRES_LIVE_PLAYER"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHealth="0.3"
+			MaxHealth="0.75"
+			MinHordeDensity="20%"
+			MaxHordeDensity="67%">
+			<CreateObject>BlackHandConfessorSquad</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCL_GenericBlackHandBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHordeDensity="67%"
+			MaxHordeDensity="68%">
+			<CreateObject>BlackHandConfessorSquad</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCL_ConyardBlackHandBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHordeDensity="67%"
+			MaxHordeDensity="68%">
+			<CreateObject>BlackHandConfessorSquad</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>BlackHandSaboteur</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	
 	<!--Replace AlienBuzzer with Reaper17Buzzer-->
 	<ObjectCreationList
 		id="OCL_ConyardReaper17BuildingSuicide">

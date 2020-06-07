@@ -391,6 +391,9 @@
 3. Purifying Flame, Tiberium Goo and new units that use flame weaponry Reacquire targets differently to the base weapons use as they inherit the values before TW 1.05
 	* Changed ReAcquireDetailType to PER_CLIP
 		* This was an undocumented change for TW 1.05
+#### Black Hand Structure Selling
+1. Selling some structures allowed to create Confessor Cabals at a significant discount.
+	* Reduced the amount of infantry units in Confessor Cabal squads to maximum of 4 when strucuture is sold or destroyed.
 #### Leadership Buff (Confessor, Confessor Cabal, Purifier, Voice of Kane)
 1. Has Fire Rate buff despite being removed in TW 1.09
 	* Removed Rate of Fire bonus
