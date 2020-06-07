@@ -131,4 +131,26 @@
 			Damage="GUN"
 			Percent="50" />
 	</ArmorTemplate>
+	<!--Reduced CANNON Vulnerability to represent post TW1.05-->
+	<ArmorTemplate
+		id="Traveler59CultistArmor"
+		Default="100"
+		SideDamageScalar="100"
+		RearDamageScalar="100">
+		<Armor
+			Damage="SNIPER"
+			Percent="100" />
+		<Armor
+			Damage="CANNON"
+			Percent="25" />
+		<Armor
+			Damage="ROCKET"
+			Percent="25" />
+		<Armor
+			Damage="GRENADE"
+			Percent="75" />
+		<Armor
+			Damage="GUN"
+			Percent="100" />
+	</ArmorTemplate>
 </AssetDeclaration>

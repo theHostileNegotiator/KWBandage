@@ -583,6 +583,9 @@
 	* Increased squad speed from 50 to 65
 3. Crush Damage Penalty would be applied to subfaction Scorpion tanks with the Dozer Upgrade
 	* Damage is no longer applied to subfaction Scorpion tanks with the Dozer Upgrade
+#### Cultist
+1. Armor, in particular CANNON vulnerability is representative of general Infantry Armor before TW 1.05
+	* Reduced CANNON vulnerability to 25%
 #### Ravager
 1. When firing or using Tiberium Agitation, projectiles or laser exits the wrong area, above it's head
 	* Animations moved weapon firing bones above it's head for some reason. Removed ChannelScalars ChannelQuaternions specific for Weapon FX Bones in all animations.
