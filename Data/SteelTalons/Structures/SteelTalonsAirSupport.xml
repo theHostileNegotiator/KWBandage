@@ -75,9 +75,10 @@
 						Name="GBAirSupprtD3_SKN" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT">
+					ParseCondStateType="PARSE_DEFAULT"
+					Flags="DO_NOT_PLAY_WHEN_UNPOWERED">
 					<Animation
-						AnimationName="GBAirSupprt_ANM"
+						AnimationName="GBAirSupprt"
 						AnimationMode="LOOP" />
 				</AnimationState>
 				<AnimationState

@@ -354,6 +354,8 @@
 	* Removed Particle Effects
 3. Landing Pad order is different to the Airfield
 	* Changed the order to represent the Airfield
+4. Radar Dish is not present as shown in unit portrait unless under construction or destroyed.
+	* Added Radar Dish to Base and Damaged model and adjusted animations to have it function.
 #### Scanner Pack
 1. After the scanner packs upgrade, Unit will not aproach the range to fire their weapon. In fact they will continue their running animation but will not move.
 	* Allowed scanner pack to upgrade weapon range
