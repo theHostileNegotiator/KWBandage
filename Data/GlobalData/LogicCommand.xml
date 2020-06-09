@@ -38,7 +38,7 @@
 	<LogicCommand
 		Type="PLAYER_UPGRADE"
 		id="Command_PurchaseUpgradeReaper17MinorForcefieldGenerator">
-		<UpgradeTemplate>Upgrade_AlienMinorForcefieldGenerator</UpgradeTemplate>
+		<Upgrade>Upgrade_AlienMinorForcefieldGenerator</Upgrade>
 	</LogicCommand>
 	
 	<LogicCommand
