@@ -551,6 +551,9 @@
 #### Black Disciple
 1. Black Disciple can be upgraded with Purifying Flame. This is an issue as it would mean that Confessor Cabals have access to 3 Tech Upgrades (Charged Particle Beams + Black Disciples) where the max is 2
 	* Remove Purifying Flame upgrade to Black Disciples to ensure max tech upgrade of 2
+#### Purifying Flame
+1. Description
+	* Improved description of upgrade
 #### Tiberium Core Missiles
 1. Units with this upgrade would use two models for 'Base' and 'Upgrade' when it could of just hide and show subobjects
 	* Changed SKN files so it would only require to hide and show objects
