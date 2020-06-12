@@ -359,12 +359,17 @@
 #### Scanner Pack
 1. After the scanner packs upgrade, Unit will not aproach the range to fire their weapon. In fact they will continue their running animation but will not move.
 	* Allowed scanner pack to upgrade weapon range
+2. GDI and ZOCOM upgrades are not shared, despite same cost and upgrade time
+	* Removed ZOCOM variant and will use GDI instead so upgrade is shared between factions.
 #### Hardpoints (And ZOCOM Orca Cannon)
 1. When aircraft with Harpoints would dock to reload, sound would not play
 	* Added sound effects to reload
 #### Composite Armor and Tiberium Field Suits
 1. When Missile Squad is upgraded, the extra 50% damage against GUN is removed
 	* Increased GUN damage by 50% for upgrades
+#### Power Pack
+1. GDI and ZOCOM upgrades are not shared, despite same cost and upgrade time
+	* Removed ZOCOM variant and will use GDI instead so upgrade is shared between factions.
 #### Adaptive Armor
 1. When Adaptive Armor was used, it gave the unit a weird appearance with the House Color Glowing too much
 	* Created New Shaders

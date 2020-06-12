@@ -30,6 +30,7 @@
 		Options="">
 		<Object>Traveler59Buzzers</Object>
 	</LogicCommand>
+	
     <LogicCommand
 		Type="SPECIAL_POWER"
 		id="Command_MarkedOfKaneRedShadowStrikeTeam">
@@ -39,6 +40,17 @@
 		Type="PLAYER_UPGRADE"
 		id="Command_PurchaseUpgradeReaper17MinorForcefieldGenerator">
 		<Upgrade>Upgrade_AlienMinorForcefieldGenerator</Upgrade>
+	</LogicCommand>
+	
+	<LogicCommand
+		Type="PLAYER_UPGRADE"
+		id="Command_UpgradeZoneRaiderAutoInjectors">
+		<Upgrade>Upgrade_ZoneTrooperAutoInjectors</Upgrade>
+	</LogicCommand>
+	<LogicCommand
+		Type="PLAYER_UPGRADE"
+		id="Command_UpgradeZoneRaiderScannerPack">
+		<Upgrade>Upgrade_ZoneTrooperScannerPack</Upgrade>
 	</LogicCommand>
 	
 	<LogicCommand

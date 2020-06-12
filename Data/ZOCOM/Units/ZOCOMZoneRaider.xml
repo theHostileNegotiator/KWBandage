@@ -3,6 +3,7 @@
 <!--Scanner Packs now affects Weapon Range-->
 <!--Changed Upgrade Sounds-->
 <!--Changed Build Cost-->
+<!--Changed upgrades to Zonetrooper instead of Zoneraider to share upgrade between factions-->
 	<GameObject
 		id="ZOCOMZoneRaider"
 		SelectPortrait="Portrait_ZoneRaider"
@@ -21,12 +22,12 @@
 		WeaponCategory="CANNON"
 		VoicePriority="135"
 		EditorName="ZOCOMZoneRaider"
-		WorldMapArmoryUpgradesAllowed="Upgrade_ZoneRaiderScannerPack Upgrade_ZoneRaiderAutoInjectors"
+		WorldMapArmoryUpgradesAllowed="Upgrade_ZoneTrooperScannerPack Upgrade_ZoneTrooperAutoInjectors"
 		Description="Desc:GDIZoneRaider"
 		TypeDescription="Type:GDIZoneRaider">
 		<DisplayName>Name:ZOCOMZoneRaider</DisplayName>
-		<DisplayUpgrade>Upgrade_ZoneRaiderScannerPack</DisplayUpgrade>
-		<DisplayUpgrade>Upgrade_ZoneRaiderAutoInjectors</DisplayUpgrade>
+		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>
+		<DisplayUpgrade>Upgrade_ZoneTrooperAutoInjectors</DisplayUpgrade>
 		<ArmorSet
 			Armor="GDIZoneTrooperArmor"
 			DamageFX="InfantryDamageFX" />
@@ -644,7 +645,7 @@
 			<SubObjectsUpgrade
 				id="ModuleTag_ShowScanner"
 				ShowSubObjects="UGSCANNER">
-				<TriggeredBy>Upgrade_ZoneRaiderScannerPack</TriggeredBy>
+				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>
 			</SubObjectsUpgrade>
 
 			<StatusBitsUpgrade
@@ -656,7 +657,7 @@
 			<AttributeModifierUpgrade
 				id="Upgrade_ScannerPack_02"
 				AttributeModifier="ZoneTrooper_ScannerPack">
-				<TriggeredBy>Upgrade_ZoneRaiderScannerPack</TriggeredBy>
+				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>
 			</AttributeModifierUpgrade>
 			<!--Auto Injectors-->
 			<AutoHealBehavior
@@ -667,17 +668,17 @@
 				StartHealingDelay="5s"
 				HealingAmount="10"
 				HealingDelay="3s">
-				<TriggeredBy>Upgrade_ZoneRaiderAutoInjectors</TriggeredBy>
+				<TriggeredBy>Upgrade_ZoneTrooperAutoInjectors</TriggeredBy>
 			</AutoHealBehavior>
 			<SubObjectsUpgrade
 				id="ModuleTag_ShowInjectors"
 				ShowSubObjects="UGINJECTOR">
-				<TriggeredBy>Upgrade_ZoneRaiderAutoInjectors</TriggeredBy>
+				<TriggeredBy>Upgrade_ZoneTrooperAutoInjectors</TriggeredBy>
 			</SubObjectsUpgrade>
 			<AttributeModifierUpgrade
 				id="Upgrade_AutoInjectors_01"
 				AttributeModifier="ZoneTrooper_AutoInjectors">
-				<TriggeredBy>Upgrade_ZoneRaiderAutoInjectors</TriggeredBy>
+				<TriggeredBy>Upgrade_ZoneTrooperAutoInjectors</TriggeredBy>
 			</AttributeModifierUpgrade>
 			<CreateAndEnterObjectSpecialPower 
 				id="ModuleTag_CallForTransport"
@@ -694,10 +695,10 @@
 				<Key>GDI_ZoneTrooper</Key>
 			</LargeGroupAudioUpdate>
 			<AudioLoopUpgrade id="Generic_Infantry_UpgradeZoneTrooperScannerPack" SoundToPlay="AudioEvent:GDI_ScannerPacks_Upgrade"> 
-				<TriggeredBy>Upgrade_ZoneRaiderScannerPack</TriggeredBy> 
+				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy> 
 			</AudioLoopUpgrade> 
 			<AudioLoopUpgrade id="Generic_Infantry_UpgradeZoneTrooperAutoInjectors" SoundToPlay="AudioEvent:GDI_PowerPacks_Upgrade"> 
-				<TriggeredBy>Upgrade_ZoneRaiderAutoInjectors</TriggeredBy> 
+				<TriggeredBy>Upgrade_ZoneTrooperAutoInjectors</TriggeredBy> 
 			</AudioLoopUpgrade> 
 		</Behaviors>
 		<AI>

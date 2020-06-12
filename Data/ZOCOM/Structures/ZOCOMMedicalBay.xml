@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!--Composite Armor SubObject Removed-->
+<!--Changed upgrades to Zonetrooper instead of Zoneraider to share upgrade between factions-->
 	<GameObject
 		id="ZOCOMMedicalBay"
 		SelectPortrait="Portrait_GDIArmory"
@@ -327,7 +328,7 @@
 				ShowSubObjects="UG_Injector">
 				<CustomAnimAndDuration
 					AnimState="USER_4"></CustomAnimAndDuration>
-				<TriggeredBy>Upgrade_ZoneRaiderAutoInjectors</TriggeredBy>
+				<TriggeredBy>Upgrade_ZoneTrooperAutoInjectors</TriggeredBy>
 			</SubObjectsUpgrade>
 
 			<ArmorUpgrade

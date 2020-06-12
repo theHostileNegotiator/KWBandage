@@ -34,5 +34,7 @@
 		<Include type="all" source="Units/ZOCOMV350x_Summoned.xml" />
 		<Include type="all" source="Units/ZOCOMV350x_SummonedForVehicle.xml" />
 		<Include type="all" source="Units/ZOCOMZoneRaider.xml" />
+		<Include type="all" source="Units/ZOCOMZoneRaiderSquad.xml" />
+		<Include type="all" source="Units/ZOCOMZoneRaiderSquad_Veteran.xml" />
 	</Includes>
 </AssetDeclaration>
