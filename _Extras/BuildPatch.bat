@@ -122,11 +122,7 @@ endlocal EnableDelayedExpansion
 
 if exist "%cd%\Compilation\Mods\%modname%" "%cd%\Tools\MakeBig.exe" -f "%cd%\Compilation\Mods\%modname%" -o:"%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big"
 
-if exist "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef" del "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef" /F /Q
-if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Streams.big" echo add-big Core\%modname%_%modversion%_Streams.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
-if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Misc.big" echo add-big Core\%modname%_%modversion%_Misc.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
-if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big" echo add-big Meta\%modname%_%modversion%_Maps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
-
+if exist "%mydocs%\%userdataleaf%\Mods\%modname%\*.skudef" del "%mydocs%\%userdataleaf%\Mods\%modname%\*.skudef" /F /Q
 
 setlocal EnableDelayedExpansion
 
@@ -194,8 +190,15 @@ if exist "%cd%\Mods\%modname%\LanguagePacks" (
 		cd /D "!dir!"
 		set dir=
 		
-		if exist "!sdk!\Compilation\Mods\%modname%\LanguagePacks\%%A" "!sdk!\Tools\MakeBig.exe" -f "!sdk!\Compilation\Mods\%modname%\LanguagePacks\%%A" -o:"%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Streams_%%A.big"
-		if exist "!cd!\%%A\Misc" "!sdk!\Tools\MakeBig.exe" -f "!cd!\%%A\Misc" -o:"!sdk!\Compilation\Mods\%modname%\LanguagePacks\%%A" -o:"%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Misc_%%A.big"
+		if exist "!sdk!\Compilation\Mods\%modname%\LanguagePacks\%%A" "!sdk!\Tools\MakeBig.exe" -f "!sdk!\Compilation\Mods\%modname%\LanguagePacks\%%A" -o:"%mydocs%\%userdataleaf%\Mods\%modname%\%%AAudio\%%AAudio.big"
+		
+		if exist "!cd!\%%A\Misc" "!sdk!\Tools\MakeBig.exe" -f "!cd!\%%A\Misc" -o:"!sdk!\Compilation\Mods\%modname%\LanguagePacks\%%A" -o:"%mydocs%\%userdataleaf%\Mods\%modname%\Lang-%%A\%modname%_%modversion%_%%A.big"
+
+		if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Lang-%%A\%modname%_%modversion%_%%A.big" echo add-big Lang-%%A\%modname%_%modversion%_%%A.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%%A_%modversion%.skudef"
+		if exist "%mydocs%\%userdataleaf%\Mods\%modname%\%%AAudio\%%AAudio.big" echo add-big %%AAudio\%%AAudio.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%%A_%modversion%.skudef"
+		if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Streams.big" echo add-big Core\%modname%_%modversion%_Streams.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%%A_%modversion%.skudef"
+		if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Misc.big" echo add-big Core\%modname%_%modversion%_Misc.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%%A_%modversion%.skudef"
+		if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big" echo add-big Meta\%modname%_%modversion%_Maps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%%A_%modversion%.skudef"
 	)
 	
 	cd /D "!sdk!"
@@ -203,5 +206,11 @@ if exist "%cd%\Mods\%modname%\LanguagePacks" (
 )
 
 endlocal EnableDelayedExpansion
+
+if not exist "%mydocs%\%userdataleaf%\Mods\%modname%\*.skudef" (
+	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Streams.big" echo add-big Core\%modname%_%modversion%_Streams.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_no-lang_%modversion%.skudef"
+	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Misc.big" echo add-big Core\%modname%_%modversion%_Misc.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_no-lang_%modversion%.skudef"
+	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big" echo add-big Meta\%modname%_%modversion%_Maps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_no-lang_%modversion%.skudef"
+)
 
 :eof
