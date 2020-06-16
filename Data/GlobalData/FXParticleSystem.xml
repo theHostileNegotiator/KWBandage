@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!------------------------TUNGSTEN------------------->
+<!-- TUNGSTEN -->
 	<!--FXParticleSystemTemplate ParticleTexture="FXFireball4x4_02" PerParticleAttachedSystem="" Priority="MEDIUM_OR_ABOVE" SortLevel="1" SystemLifetime="1" Type="GPU_PARTICLE" id="GDIMidAir_AddHeroic">
 		<Lifetime High="15" Low="5"/>
 		<Size High="10" Low="10"/>
