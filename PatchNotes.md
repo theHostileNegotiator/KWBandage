@@ -142,6 +142,8 @@
 	* Fixed background for Network Tab and adjusted every background to have the same brightness.
 3. Disconnect Screen design was not updated in KW after being updated in TW 1.06
 	* Changed design of Disconnect Screen
+4. Unique to Network or online games, when playing with Widescreen, just before the game finishes loading, players can see the map around the background image. This does not occur in Tiberium Wars.
+	* LoadScreen APTUI was missing the HideWideScreen ShellContent. Used modified TW(1.00) version instead.
 #### AI
 1. Campaign AI design was not designed properly, structure based on Multiplayer AI. In TW, there are clear differences between Campaign and Multiplayer Skirmish AI in terms of structure and design.
 	* Redesign Campaign AI
