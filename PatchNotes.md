@@ -677,6 +677,9 @@
 #### Attenuated Forcefield
 1. Scrin and Reaper 17 do not share upgrade, despite cost and time is identical
 	* Reaper 17 units and upgrade refer to Scrin shields
+#### Infestation
+1. The Tiberium Hive when destroyed will spawn a Buzzer. This does not happen with the Lightning Spike
+	* For consistency, Buzzers will no longer spawn when Tiberium Hive is destroyed
 #### Reaper 17 Shock Pods
 1. Uses Scrin Veteran Shock Troopers instead of it's own
 	* Created new Veteran Shock Trooper for Reaper 17
