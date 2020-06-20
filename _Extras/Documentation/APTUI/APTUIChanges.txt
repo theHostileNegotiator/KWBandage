@@ -27,6 +27,15 @@ GUIFX
 	1.0 -> KW:
 		Added Support for New Factions. Necessary?
 		Changed Font (where?).
+Loadscreen
+	1.0 -> 1.5:
+		Design Change to have map display above player list
+	1.0 -> KW1.0:
+		Design Change to Nod Graphics
+		Missing HideWideScreen?
+	KW1.0 -> KW1.1:
+		Change with Load Bar
+		Added Map Display
 Messenger
 	1.0 -> 1.5:
 		_StartMinimized Parameter.

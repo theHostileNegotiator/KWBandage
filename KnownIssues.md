@@ -60,3 +60,4 @@
 * Will need to investigate every APTUI and update them accordingly
 	* HUDReplayControlPanel (The only missing APTUI which allows Fast Fowarding Replays. Schema modification (InGameUI FixedButtonHelp) is required, attempts to modify results in crashes. High possibility that feature is not possible)
 	* Options (Based in the Apt Code, the geniuses at EA decided to replace the functionality of "Enable Kane Edition Content" for Classic Mouse Option INSTEAD of making different buttons)
+	* LoadScreen (Outdated design, will need clean background to begin making changes)
