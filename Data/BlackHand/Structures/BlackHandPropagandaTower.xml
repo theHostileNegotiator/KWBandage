@@ -32,7 +32,7 @@
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODPropagandaTower</DisplayName>
 		<GameDependency>
-			<RequiredObject>NODOperationsCenter</RequiredObject>
+			<RequiredObject>BlackHandOperationsCenter</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="NODBaseDefenceArmor"
