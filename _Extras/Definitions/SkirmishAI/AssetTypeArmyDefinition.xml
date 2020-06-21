@@ -19,7 +19,7 @@
 	<Entry id="UpgradeSciencePriorityImportantHigh" AssetType="SageReal" Default="350.0" IsAttribute="true"/>
 	<Entry id="UnitUpgradePriorityLow" AssetType="SageReal" Default="100.0" IsAttribute="true"/>
 	<Entry id="UnitUpgradePriorityHigh" AssetType="SageReal" Default="200.0" IsAttribute="true"/>
-	<Entry id="MaxThreatForOpportunityTargets" AssetType="SageReal Default="10.0" IsAttribute="true"/>
+	<Entry id="MaxThreatForOpportunityTargets" AssetType="SageReal" Default="10.0" IsAttribute="true"/>
 	<Entry id="ValueToSetForMaxOnDefenseTeam" AssetType="SageInt" Default="10" IsAttribute="true"/>
 	<Entry id="CombatChainSearchDepthForTeamRecruits_AttackTeams" AssetType="SageInt" Default="2" IsAttribute="true"/>
 	<Entry id="CombatChainSearchDepthForTeamRecruits_DefenseTeams" AssetType="SageInt" Default="7" IsAttribute="true"/>
