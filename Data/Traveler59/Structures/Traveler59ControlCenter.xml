@@ -7,6 +7,7 @@
 	<!-- NerveCenter -->
 	<GameObject
 		id="Traveler59ControlCenter"
+		inheritFrom="AlienControlCenter"
 		SelectPortrait="Portrait_ALIENNerveCenter"
 		ButtonImage="Portrait_ALIENNerveCenter"
 		Side="Traveler59"
@@ -181,7 +182,7 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
-		<AttributeModifierPoolUpdate id="DefaultAttributeModifierPoolUpdate"/>
+			<AttributeModifierPoolUpdate id="DefaultAttributeModifierPoolUpdate"/>
 			<FireWeaponWhenDead
 				id="ModuleTag_CatalystDeathWeapon"
 				InitiallyActive="true"
@@ -232,33 +233,28 @@
 				id="ModuleTag_ControlCenterTiberiumVibration"
 				CommandButtonName="Command_TiberiumVibrationScan"
 				SpecialPowerRadius="999999.0"
-				SpecialPowerAIType="SPECIAL_POWER_TARGET_STEALTH" />
+				SpecialPowerAIType="SPECIAL_POWER_TARGET_STEALTH"
+			/>
+
+
 			<StructureUnpackUpdate
 				id="StructureUnpackUpdate"
 				UnpackTime="2.0s" />
-			<OCLSpecialPower
-				id="ModuleTag_SwarmOCL"
-				SpecialPowerTemplate="SpecialPower_Traveler59Swarm"
-				TriggerFX="FX_AlienBlinkSwarm" 
-				OCL="OCL_Traveler59Buzzers"
-				CreateLocation="CREATE_AT_LOCATION">
-			</OCLSpecialPower>
-			<AISpecialPowerUpdate
-				id="ModuleTag_AlienSwarmAI"
-				CommandButtonName="Command_Traveler59SpecialPowerSwarm"
-				ReinforceDistance="0.0"
-				SpecialPowerRadius="250.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" />
+
 			<!-- Seed Tiberium -->
 			<OCLSpecialPower
 				id="ModuleTag_OCLSpecialPowerAlienSeedTiberium"
 				SpecialPowerTemplate="SpecialPower_AlienSeedTiberium"
 				OCL="OCL_AlienSeedTiberiumLaserFX"
-				CreateLocation="CREATE_AT_LOCATION" />
+				CreateLocation="CREATE_AT_LOCATION"
+			/>
 			<AISpecialPowerUpdate
 				id="ModuleTag_AlienCastSeedTiberium"
 				CommandButtonName="Command_AlienSeedTiberium"
-				SpecialPowerAIType="SPECIAL_POWER_SEED_TIBERIUM" />			
+				SpecialPowerAIType="SPECIAL_POWER_SEED_TIBERIUM" 
+			/>			
+			
+
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="3.0s"
@@ -277,27 +273,32 @@
 				id="ModuleTag_LightningSpikeOCL"
 				SpecialPowerTemplate="SpecialPower_LightningSpike"
 				OCL="OCL_AlienControlCenterLightningSpike"
-				CreateLocation="CREATE_AT_LOCATION" />
+				CreateLocation="CREATE_AT_LOCATION"
+			/>
 			<AISpecialPowerUpdate
 				id="ModuleTag_AlienLightningSpike"
 				CommandButtonName="Command_LightningSpike"
 		        ReinforceDistance="100.0" 
 				SpecialPowerRadius="300.0"
-				SpellMakesAStructure="AlienLightningSpike" 
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" />
+        SpellMakesAStructure="AlienLightningSpike" 
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+			/>
 <!-- Tiberium Hive -->			
 			<OCLSpecialPower
 				id="ModuleTag_TibHiveOCL"
 				SpecialPowerTemplate="SpecialPower_SummonTibHive"
 				OCL="OCL_AlienTibHive"
-				CreateLocation="CREATE_AT_LOCATION" />
+				CreateLocation="CREATE_AT_LOCATION"
+			/>
 			<AISpecialPowerUpdate
 				id="ModuleTag_AlienTibHive"
 				CommandButtonName="Command_SummonTibHive"
 		        ReinforceDistance="100.0" 
 				SpecialPowerRadius="300.0"
 				SpellMakesAStructure="AlienTibHive" 
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" />
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+			/>
+
 			<RepairUpdate 
 				id="ModuleTag_RepairUpdate">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
@@ -321,8 +322,9 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
-			</CanEnterFilter>
+				</CanEnterFilter>
 			</EngineerContain>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedDie"
@@ -337,6 +339,21 @@
 				CreationList="OCL_GenericTraveler59BuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
+			
+			<OCLSpecialPower
+				id="ModuleTag_SwarmOCL"
+				SpecialPowerTemplate="SpecialPower_Traveler59Swarm"
+				TriggerFX="FX_AlienBlinkSwarm" 
+				OCL="OCL_Traveler59Buzzers"
+				CreateLocation="CREATE_AT_LOCATION">
+			</OCLSpecialPower>
+			<AISpecialPowerUpdate
+				id="ModuleTag_AlienSwarmAI"
+				CommandButtonName="Command_SpecialPowerTraveler59Swarm"
+				ReinforceDistance="0.0"
+				SpecialPowerRadius="250.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+			/>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -429,26 +446,18 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:ALI_NerveCenter_Select"
 				AudioType="voiceSelect" />
-				<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-				<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_LightDamage" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_HeavyDamage" AudioType="soundOnReallyDamaged" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_Placed" AudioType="soundUnderConstruction" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
-		<ShadowInfo
-			Type="VOLUME" />
-		<VisionInfo
-			VisionRange="200"
-			ShroudClearingRange="500" />
-		<ProjectedBuildabilityInfo
-			Radius="175"
-			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 
 			EvaEventProductionComplete="BuildingConstructionComplete" 
@@ -463,5 +472,13 @@
 			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
 			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="200"
+			ShroudClearingRange="500" />
+		<ProjectedBuildabilityInfo
+			Radius="175"
+			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
 	</GameObject>
 </AssetDeclaration>

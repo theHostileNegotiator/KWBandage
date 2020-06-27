@@ -158,11 +158,12 @@
 	
 	<!-- Command to spawn Reaper 17 Buzzers Instead -->
 	<!-- Command to spawn Reaper 17 Disintigrators -->
+	<!-- Command to spawn Reaper 17 Assimilator -->
 	<LogicCommandSet
 		id="Reaper17PortalCommandSet">
 		<Cmd>Command_ConstructReaper17Buzzers</Cmd>
 		<Cmd>Command_ConstructReaper17RazorDroneSquad</Cmd>
-		<Cmd>Command_ConstructAlienAssimilator</Cmd>
+		<Cmd>Command_ConstructReaper17Assimilator</Cmd>
 		<Cmd>Command_ConstructReaper17ShockTrooperSquad</Cmd>
 		<Cmd>Command_ConstructReaper17StalkerSquad</Cmd>
 	</LogicCommandSet>

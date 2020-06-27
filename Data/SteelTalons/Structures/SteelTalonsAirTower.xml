@@ -844,18 +844,6 @@
 				SpecialPowerRadius="999999.0"
 				UnitKindOf="FS_POWER"
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES" />
-			<OCLSpecialPower
-				id="ModuleTag_CallSupportSTBloodhound"
-				SpecialPowerTemplate="SpecialPowerCallSupportSTBloodhound"
-				TriggerFX="FX_GDICallForTransportFlare"
-				OCL="OCL_CallSupportSTBloodhound"
-				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_CommandPostCallSupportSTBloodhound"
-				CommandButtonName="Command_CommandPostCallSTBloodhound"
-				ReinforceDistance="400.0"
-				SpecialPowerRadius="300.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" />		
 			<ArmorUpgrade
 				id="ModuleTag_SonicRepulsionFieldUpgrade"
 				Permanent="true"
@@ -890,6 +878,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -898,8 +887,7 @@
 				CreationList="OCL_GenericSteelTalonsBuildingDestruction" >		
 				<DieMuxData
 					DeathTypes="ALL"
-					DeathTypesForbidden="DETONATED SUICIDED" 
-				/>
+					DeathTypesForbidden="DETONATED SUICIDED" />
 				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
 			</CreateObjectDie>
 			<CreateObjectDie xmlns="uri:ea.com:eala:asset"
@@ -908,11 +896,23 @@
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 
-      <StancesBehavior
+			<StancesBehavior
 				id="ModuleTag_Stance"
 				StanceTemplate="Generic" />
-
-    </Behaviors>
+				
+			<OCLSpecialPower
+				id="ModuleTag_CallSupportSTBloodhound"
+				SpecialPowerTemplate="SpecialPowerCallSupportSTBloodhound"
+				TriggerFX="FX_GDICallForTransportFlare"
+				OCL="OCL_CallSupportSTBloodhound"
+				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE" />
+			<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostCallSupportSTBloodhound"
+				CommandButtonName="Command_CommandPostCallSTBloodhound"
+				ReinforceDistance="400.0"
+				SpecialPowerRadius="300.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" />		
+		</Behaviors>
 		<AI>
 			<!-- needed for special powers -->
 			<AIUpdate

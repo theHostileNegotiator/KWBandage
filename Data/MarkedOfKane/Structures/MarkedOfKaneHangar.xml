@@ -3,6 +3,7 @@
 <!--Refer to NOD Hangar Changes-->
 	<GameObject
 		id="MarkedOfKaneHangar"
+		inheritFrom="NODHangar"
 		SelectPortrait="Portrait_NODAirTower"
 		ButtonImage="Portrait_NODAirTower"
 		Side="MarkedOfKane"
@@ -674,18 +675,6 @@
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<OCLSpecialPower
-				id="ModuleTag_MagneticMine"
-				SpecialPowerTemplate="SpecialPower_MagneticMines"
-				OCL="OCL_MarkedOfKane_DeployMagneticMines"
-				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE">
-				<!-- <InitiateSound Sound="GDI_GuardianAPC_MineDeployMS" /> -->
-			</OCLSpecialPower>
-			<AISpecialPowerUpdate
-				id="ModuleTag_MarkedOfKaneOpsMagneticMinesAI"
-				CommandButtonName="Command_MarkedOfKaneMagneticMines"
-				SpecialPowerRadius="99999.0"
-				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />
 			<ModelConditionUpgrade
 				id="ModuleTag_UpgradeLaserFencing"
 				AddConditionFlags="USER_6">
@@ -725,6 +714,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -744,6 +734,18 @@
 			<StancesBehavior
 				id="ModuleTag_Stance"
 				StanceTemplate="Generic" />
+			<OCLSpecialPower
+				id="ModuleTag_BurrowMine"
+				SpecialPowerTemplate="SpecialPower_MagneticMines"
+				OCL="OCL_MarkedOfKane_DeployMagneticMines"
+				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE">
+				<!-- <InitiateSound Sound="GDI_GuardianAPC_MineDeployMS" /> -->
+			</OCLSpecialPower>
+			<AISpecialPowerUpdate
+				id="ModuleTag_NODOpsBurrowMinesAI"
+				CommandButtonName="Command_MarkedOfKaneMagneticMines"
+				SpecialPowerRadius="99999.0"
+				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" />
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -839,17 +841,17 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_HangarSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="AudioEvent:NOD_Hangar_AmbientDelayedLoop" AudioType="soundAmbient" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

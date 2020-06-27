@@ -18,7 +18,7 @@
 			type="instance"
 			source="DATA:BaseObjects/BaseTechStructure.xml" /-->
 	</Includes>
-	<!--GameObject
+	<GameObject
 		id="SubwayHub"
 		inheritFrom="BaseTechStructure"
 		SelectPortrait="Portrait_TechBuildingSubwayHub"
@@ -31,7 +31,9 @@
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS FS_TECHNOLOGY NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY NOT_SELLABLE"
 		RadarPriority="STRUCTURE"
 		EditorName="SubwayHub"
-		Description="Desc:TechBuildingSubwayHub">
+		Description="Desc:TechBuildingSubwayHub"
+		CampnessValue="0"
+		UnitCategory="STRUCTURE">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:TechBuildingSubwayHub</DisplayName>
 		<ArmorSet
@@ -64,9 +66,9 @@
 						Name="CBSubStn_D1" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT"-->
+					ParseCondStateType="PARSE_DEFAULT">
 					<!-- no anim -->
-				<!--/AnimationState>
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
@@ -116,9 +118,8 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
-			<CaptureBehavior
-				id="ModuleTag_CaptureBehavior" 
-				SlavedCaptureObject="SubwayNode" />
+			<AttributeModifierPoolUpdate 
+				id="DefaultAttributeModifierPoolUpdate"/>
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="4s"
@@ -128,10 +129,50 @@
 				<DieMuxData
 					DeathTypes="ALL" />
 			</SlowDeath>
-			<xi:include
-				href="../../Includes/GenericEngineerContain.xml" />
-			<xi:include
-				href="../../Includes/GenericBuildingRepair.xml" />
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onTransitionToDamaged"
+					FX="FX_BuildDamaged_Large" />
+				<Event
+					Index="onTransitionToReallyDamaged"
+					FX="FX_BuildDamaged_Large" />
+				<Event
+					Index="onTransitionToRubble"
+					FX="FX_BuildRubble_Large" />
+			</FXListBehavior>
+			<CaptureBehavior
+				id="ModuleTag_CaptureBehavior" 
+				SlavedCaptureObject="SubwayNode" />
+			<EngineerContain 
+				id="ModuleTag_EngineerContain"
+				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
+				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
+				EvaEventForRepair="BuildingRepaired"
+				EvaEventForCapture="EnemyBuildingCaptured"
+				FXForRepair="FX_Building_Repaired" 
+				FXForCapture="FX_Building_Captured"
+				FXForCaptureAndReplace="FX_Building_Captured"
+				ImmediatelyEnabled="true">
+				<CanEnterFilter Rule="NONE">
+					<IncludeThing>GDIEngineer</IncludeThing>
+					<IncludeThing>NODSaboteur</IncludeThing>
+					<IncludeThing>AlienAssimilator</IncludeThing>
+					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
+					<IncludeThing>ZOCOMEngineer</IncludeThing>
+					<IncludeThing>BlackHandSaboteur</IncludeThing>
+					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
+					<IncludeThing>Traveler59Assimilator</IncludeThing>
+				</CanEnterFilter>
+			</EngineerContain>
+			<RepairUpdate 
+				id="ModuleTag_RepairUpdate">
+				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
+				<SelfAudio></SelfAudio>
+			</RepairUpdate>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -248,17 +289,26 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="SubwayHub_Select"
+				Sound="AudioEvent:SubwayHub_Select"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry Sound="Subway_PA_delayedLoop" AudioType="soundAmbient" />
-			<AudioEntry Sound="HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
-			<AudioEntry Sound="HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-		</AudioArraySound>
+			<AudioEntry Sound="AudioEvent:Subway_PA_delayedLoop" AudioType="soundAmbient" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
+		</AudioArraySound> 
+		<EvaEvents
+			EvaEventDamagedOwner="StructureUnderAttack" 	
+			EvaEventSoldOwner="StructureSold"
+			EvaEventRepairingOwner="StructureRepairing"
+			EvaEnemyObjectSightedEvent="EnemyCampSighted" />
+		<ShadowInfo
+			Type="VOLUME" />
 		<VisionInfo
 			VisionRange="100"
 			ShroudClearingRange="200" />
-	</GameObject-->
+	</GameObject>
 </AssetDeclaration>

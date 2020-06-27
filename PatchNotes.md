@@ -58,6 +58,7 @@
 	* Add or remove "audioloopupgrade"
 		* Objects Affected
 			* GDI/ST/ZOCOM Slingshot (- Railgun)
+			* GDI/ST/ZOCOM AA Battery (+ Tungsten)
 			* GDI Shatterer (- Railgun)
 			* GDI/ST Orca (+ Hardpoints)
 			* GDI/ST Firehawk (+ Hardpoints)
@@ -598,12 +599,15 @@
 	* Create new buzzer units for each faction
 		* Subfaction Buzzer Swarm Support Power will use the new Buzzers
 #### Disintegrator
-1. Reaper 17 use Scrin Disintegrator instead of their own
-	* Create new disintegrator units for each faction
+1. Reaper 17 uses Scrin Disintegrator instead of their own
+	* Create new disintegrator units for Reaper 17
 2. Traveler 59 uses speed values before TW 1.05 Patch
 	* Increased squad speed from 50 to 65
 3. Crush Damage Penalty would be applied to subfaction Scorpion tanks with the Dozer Upgrade
 	* Damage is no longer applied to subfaction Scorpion tanks with the Dozer Upgrade
+#### Assimilator
+1. Reaper 17 uses Scrin Assimilator instead of their own
+	* Created Reaper 17 assimilator units for Reaper 17, edited required structures and husks to support new engineer unit.
 #### Cultist
 1. Armor, in particular CANNON vulnerability is representative of general Infantry Armor before TW 1.05
 	* Reduced CANNON vulnerability to 25%

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- aka Technology Assembler -->
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<Tags></Tags>
+	<Includes>
+	</Includes>
 	<!-- TechnologyPlant -->
 	<GameObject
 		id="Traveler59Reactor"
-		inheritFrom="BaseStructure"
+		inheritFrom="AlienReactor"
 		SelectPortrait="Portrait_ALIENTechnologyAssembler"
 		ButtonImage="Portrait_ALIENTechnologyAssembler"
 		Side="Traveler59"
@@ -18,14 +21,15 @@
 		RadarPriority="STRUCTURE"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
-		CampnessValue="2000"
-		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
 		EditorName="Traveler59TechnologyStructure"
 		Description="Desc:Traveler59TechnologyAssembler"
 		TypeDescription="Type:Traveler59TechnologyAssembler"
-		EnergyProduction="-10">
-		<DisplayName>NAME:ALIENTechnologyAssembler</DisplayName>
+		EnergyProduction="-10"
+		CampnessValue="2000"
+		CampnessValueRadius="300"
+		UnitCategory="STRUCTURE">
+		<DisplayName
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:ALIENTechnologyAssembler</DisplayName>
 		<GameDependency>
 			<RequiredObject>Traveler59ControlCenter</RequiredObject>
 		</GameDependency>
@@ -179,8 +183,7 @@
 				id="ModuleTag_CatalystDeathWeapon"
 				InitiallyActive="true"
 				DeathWeapon="CatalystBuildingDeathWeapon"
-				ContinueToBezierDestination="false"
-			>
+				ContinueToBezierDestination="false">
 				<DieMuxData DeathTypes="CATALYST" />
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
@@ -209,23 +212,22 @@
 				<DieMuxData
 					DeathTypes="ALL" />
 			</SlowDeath>
-			<RepairUpdate
+			<RepairUpdate 
 				id="ModuleTag_RepairUpdate">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
 				<SelfAudio></SelfAudio>
 			</RepairUpdate>
-			<EngineerContain
+			<EngineerContain 
 				id="ModuleTag_EngineerContain"
 				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
 				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
 				EvaEventForRepair="BuildingRepaired"
+				EvaEventForCapture="EnemyBuildingCaptured"
 				FXForRepair="FX_Building_Repaired" 
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
 				ImmediatelyEnabled="true">
-				<CanEnterFilter 
-					Rule="NONE"
-					Relationship="ALLIES">
+				<CanEnterFilter Rule="NONE">
 					<IncludeThing>GDIEngineer</IncludeThing>
 					<IncludeThing>NODSaboteur</IncludeThing>
 					<IncludeThing>AlienAssimilator</IncludeThing>
@@ -233,6 +235,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -240,15 +243,17 @@
 				id="ModuleTag_ProductionUpdate"
 				Type="UPGRADE" 
 				GiveNoXP="true" />
-			<CreateObjectDie
+
+
+			<CreateObjectDie xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_CreateOccupiedDie"
 				CreationList="OCL_AdvancedTraveler59BuildingDestruction" >
 				<DieMuxData
 					DeathTypes="ALL"
-					DeathTypesForbidden="DETONATED SUICIDED" />
+					DeathTypesForbidden="DETONATED SUICIDED"/>
 				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
 			</CreateObjectDie>
-			<CreateObjectDie 
+			<CreateObjectDie xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_CreateOccupiedSuicide"
 				CreationList="OCL_AdvancedTraveler59BuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
@@ -256,17 +261,32 @@
 			<StructureUnpackUpdate
 				id="StructureUnpackUpdate"
 				UnpackTime="1.5s" />
+
+
 			<SpecialPower
 				id="ModuleTag_PhaseFieldPower"
 				SpecialPowerTemplate="SpecialPower_PhaseField"
 				UpdateModuleStartsAttack="true"
 				TriggerFX="FX_AlienShieldPower"
 			/>
+			<!--			InitiateSound="" Sound="ALI_PhaseGenerator_Begin" -->
+
 			<WeaponFireSpecialAbilityUpdate
 				id="ModuleTag_PhaseFieldPowerUpdate"
 				SpecialPowerTemplate="SpecialPower_PhaseField"
 				SpecialWeapon="AlienPhaseFieldWeaponTrigger"
 			/>
+<!-- 				TriggerSound="ALI_PhaseGenerator_Begin"
+				UnpackSound="ALI_PhaseGenerator_Begin" -->
+
+			<AISpecialPowerUpdate
+				id="ModuleTag_StasisChamberPhaseField"
+				CommandButtonName="Command_SpecialPowerPhaseField"
+				SpecificUnit="AlienAssimilator"
+				SpecialPowerAIType="SPECIAL_POWER_SPECIFIC_UNIT" 
+			/>
+			
+<!-- TemporalWormhole Power -->
 			<OCLSpecialPower
 				id="ModuleTag_TemporalWormholePower"
 				SpecialPowerTemplate="SpecialPower_TemporalWormhole"
@@ -378,13 +398,14 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:ALI_TechnologyAssembler_Select"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_LightDamage" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_HeavyDamage" AudioType="soundOnReallyDamaged" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_Placed" AudioType="soundUnderConstruction" />

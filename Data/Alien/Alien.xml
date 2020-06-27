@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
-		<Include type="all" source="Structures/AlienTibHive.xml" />
 	
+		<!--Units-->
+		<Include type="all" source="Units/AlienAnnihilatorTripodHusk.xml" />
 		<Include type="all" source="Units/AlienDevastatorWarship.xml" />
 		<Include type="all" source="Units/AlienEradicatorHexapod.xml" />	
 		<Include type="all" source="Units/AlienHarvester.xml" />	
@@ -13,5 +14,34 @@
 		<Include type="all" source="Units/AlienSeekerTank.xml" />
 		<Include type="all" source="Units/AlienStalker.xml" />	
 		<Include type="all" source="Units/AlienStalkerSquad.xml" />	
+		
+		<!--Structures-->
+		<Include type="all" source="structures/AlienBuzzerHive.xml" />
+		<Include type="all" source="structures/AlienControlCenter.xml" /> <!-- Nerve Center -->
+		<Include type="all" source="structures/AlienDronePlatform.xml" />
+		<Include type="all" source="structures/AlienFoundry.xml" />
+		<Include type="all" source="structures/AlienGateway.xml" /> <!-- Assembler -->
+		<Include type="all" source="structures/AlienLightningSpike.xml" />
+		<Include type="all" source="structures/AlienPlasmaMissileBattery.xml" />
+		<Include type="all" source="structures/AlienPortal.xml" />
+		<Include type="all" source="structures/AlienPowerProjector.xml" /> <!-- Power Plant -->
+		<Include type="all" source="structures/AlienReactor.xml" /> <!-- Technology Plant -->
+		<Include type="all" source="structures/AlienRiftGenerator.xml" />
+		<Include type="all" source="structures/AlienSignalTransmitter.xml" /> <!-- Transmission Tower -->
+		<Include type="all" source="structures/AlienStatisChamber.xml" />
+		<Include type="all" source="structures/AlienStormColumn.xml" />
+		<Include type="all" source="structures/AlienTiberiumTower.xml" /> <!-- Extractor (Refinery) -->
+		<Include type="all" source="structures/AlienWarpBeacon.xml" />
+		<Include type="all" source="structures/AlienMiniMCVOutpost.xml" />
+		<Include type="all" source="structures/AlienAVTower.xml" />
+		<Include type="all" source="structures/AlienPhotonCannon.xml"/>
+		<Include type="all" source="structures/AlienTibHive.xml" />
+		
+		
+		<!--	MetaGame Strategic Buildings	-->
+		<Include type="all" source="structures/MG_Alien_Hive.xml" />
+		<Include type="all" source="structures/MG_Alien_LifeFormPlant.xml" />
+		<Include type="all" source="structures/MG_Alien_TerraformingNexus.xml" />
+		<Include type="all" source="structures/MG_Alien_Tower.xml" />		
 	</Includes>
 </AssetDeclaration>

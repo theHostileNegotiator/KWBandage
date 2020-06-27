@@ -243,22 +243,6 @@
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
 
-			<OCLSpecialPower
-				id="ModuleTag_CallSupportZOCOMAirborne"
-				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMAirborne"
-				TriggerFX="FX_GDICallForTransportFlare"
-				OCL="OCL_CallSupportZOCOMAirborne"
-				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"
-			/>
-
-			<AISpecialPowerUpdate
-				id="ModuleTag_CommandPostCallZOCOMAirborneAI"
-				CommandButtonName="Command_CommandPostCallZOCOMAirborne"
-				ReinforceDistance="400.0"
-				SpecialPowerRadius="300.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
-			/>
-
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
 				Type="UPGRADE"
@@ -307,14 +291,6 @@
 					y="0"
 					z="0" />
 			</HealContain>
-			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_ZOCOMFieldSuits"
-				ShowSubObjects="UG_Armor">
-				<CustomAnimAndDuration
-					AnimState="USER_1"></CustomAnimAndDuration>
-				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
-			</SubObjectsUpgrade>
-
 			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_EMPGrenades"
 				ShowSubObjects="UG_GrenadeEMP UG_GrenadeEMP01">
@@ -366,6 +342,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -384,6 +361,28 @@
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 
+			<SubObjectsUpgrade
+				id="ModuleTag_Upgrade_ZOCOMFieldSuits"
+				ShowSubObjects="UG_Armor">
+				<CustomAnimAndDuration
+					AnimState="USER_1"></CustomAnimAndDuration>
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</SubObjectsUpgrade>
+			<OCLSpecialPower
+				id="ModuleTag_CallSupportZOCOMAirborne"
+				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMAirborne"
+				TriggerFX="FX_GDICallForTransportFlare"
+				OCL="OCL_CallSupportZOCOMAirborne"
+				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"
+			/>
+
+			<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostCallZOCOMAirborneAI"
+				CommandButtonName="Command_CommandPostCallZOCOMAirborne"
+				ReinforceDistance="400.0"
+				SpecialPowerRadius="300.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+			/>
 		</Behaviors>
 		<AI>
 			<!-- needed for special powers -->

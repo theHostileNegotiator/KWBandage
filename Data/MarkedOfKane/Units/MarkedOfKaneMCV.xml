@@ -493,6 +493,10 @@
 				SpecialPowerTemplate="SpecialPower_GrantUnpackUpgrade"
 				UpgradeToGive="Upgrade_UnPack"
 			/>
+			<AISpecialPowerUpdate
+				id="ModuleTag_MCVBuildConyardAI"
+				CommandButtonName="Command_UnPackNODMCV"
+				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
 			<ReplaceSelfUpgrade
 				id="ModuleTag_ReplaceSelf"
 				NewObjectUnpackTime="5.0s"
@@ -501,10 +505,6 @@
 				<TriggeredBy>Upgrade_UnPack</TriggeredBy>
 				<ReplacementTemplate>MarkedOfKaneConstructionYard</ReplacementTemplate>
 			</ReplaceSelfUpgrade>
-			<AISpecialPowerUpdate
-				id="ModuleTag_MCVBuildConyardAI"
-				CommandButtonName="Command_UnPackNODMCV"
-				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
 		</Behaviors>
 		<AI>
 			<AIUpdate

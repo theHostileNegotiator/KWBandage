@@ -496,6 +496,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -531,16 +532,16 @@
   		</Body> 
 		<ClientBehaviors>
 			<AnimationSoundClientBehavior id="ModuleTag_ASCB">
-				<Sound Sound="NOD_OperationsCenter_Unlatch" Animation="NBOpCenterX_FIRA" Frame="0" />
-				<Sound Sound="NOD_OperationsCenter_Unlatch" Animation="NBOpCenterX_FIRA" Frame="71" />
-				<Sound Sound="NOD_OperationsCenter_MissileLaunch" Animation="NBOpCenterX_FIRA" Frame="14" />
-				<Sound Sound="NOD_OperationsCenter_Unlatch" Animation="NBOpCenterX_RDY" Frame="0" />
-				<Sound Sound="NOD_OperationsCenter_Unlatch" Animation="NBOpCenterX_RDY" Frame="71" />
-				<Sound Sound="NOD_OperationsCenter_Latch" Animation="NBOpCenterX_RDY" Frame="24" />
+				<Sound Sound="AudioEvent:NOD_OperationsCenter_Unlatch" Animation="NBOpCenterX_FIRA" Frame="0" />
+				<Sound Sound="AudioEvent:NOD_OperationsCenter_Unlatch" Animation="NBOpCenterX_FIRA" Frame="71" />
+				<Sound Sound="AudioEvent:NOD_OperationsCenter_MissileLaunch" Animation="NBOpCenterX_FIRA" Frame="14" />
+				<Sound Sound="AudioEvent:NOD_OperationsCenter_Unlatch" Animation="NBOpCenterX_RDY" Frame="0" />
+				<Sound Sound="AudioEvent:NOD_OperationsCenter_Unlatch" Animation="NBOpCenterX_RDY" Frame="71" />
+				<Sound Sound="AudioEvent:NOD_OperationsCenter_Latch" Animation="NBOpCenterX_RDY" Frame="24" />
 			</AnimationSoundClientBehavior>
 			<ModelConditionAudioLoopClientBehavior
 				id="ModuleTag_NOD_RadarJam_MissileLaunch">
-				<ModelConditionSound Sound="NOD_RadarJam_MissileLaunch" RequiredFlags="UNPACKING" />
+				<ModelConditionSound Sound="AudioEvent:NOD_RadarJam_MissileLaunch" RequiredFlags="UNPACKING" />
 			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>
 		<Geometry

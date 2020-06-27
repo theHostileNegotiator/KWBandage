@@ -15,9 +15,9 @@
 		<Include type="all" source="Structures/DefensiveTower.xml" />
 		<Include type="all" source="Structures/MutantHovel.xml" />
 		<Include type="all" source="Structures/ElectromagneticPulseControlCenter.xml" />
-		<!--Include type="all" source="Structures/SatelliteLaunchFacility.xml" />
+		<Include type="all" source="Structures/SatelliteLaunchFacility.xml" />
 		<Include type="all" source="Structures/ReinforcementBay.xml" />
-		<Include type="all" source="Structures/TrainingStation.xml" />
+		<!--Include type="all" source="Structures/TrainingStation.xml" />
 		<Include type="all" source="Structures/CaptureFlag.xml" />-->
 		
 				

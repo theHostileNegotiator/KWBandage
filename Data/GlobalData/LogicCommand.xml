@@ -12,12 +12,12 @@
 		Options="">
 		<Object>Reaper17Buzzers</Object>
 	</LogicCommand>
-	<!--LogicCommand
+	<LogicCommand
 		id="Command_ConstructReaper17Assimilator"
 		Type="UNIT_BUILD"
 		Options="">
 		<Object>Reaper17Assimilator</Object>
-	</LogicCommand-->
+	</LogicCommand>
 	<LogicCommand
 		id="Command_ConstructReaper17RazorDroneSquad"
 		Type="UNIT_BUILD"

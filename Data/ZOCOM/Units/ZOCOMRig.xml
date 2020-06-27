@@ -346,6 +346,12 @@
 				id="ModuleTag_GiveUnpackUpgradeSpecialPowerUpdate"
 				SpecialPowerTemplate="SpecialPower_GrantUnpackUpgrade"
 				UpgradeToGive="Upgrade_UnPack" />
+			<AISpecialPowerUpdate
+				id="ModuleTag_RigUnpackAI"
+				CommandButtonName="Command_UnpackRig"
+				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
+				UnitKindOf="VEHICLE"
+				MinimumCutoff="5" />
 			<ReplaceSelfUpgrade
 				id="ModuleTag_ReplaceSelf"
 				NewObjectUnpackTime="3s"
@@ -353,12 +359,6 @@
 				<TriggeredBy>Upgrade_UnPack</TriggeredBy>
 				<ReplacementTemplate>ZOCOMBattleBase</ReplacementTemplate>
 			</ReplaceSelfUpgrade>
-			<AISpecialPowerUpdate
-				id="ModuleTag_RigUnpackAI"
-				CommandButtonName="Command_UnpackRig"
-				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
-				UnitKindOf="VEHICLE"
-				MinimumCutoff="5" />
 		</Behaviors>
 		<AI>
 			<AIUpdate

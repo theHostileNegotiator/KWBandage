@@ -15,7 +15,7 @@
 			type="all"
 			source="ART:CBEMPD3.w3x" /-->
 	</Includes>
-	<!--GameObject
+	<GameObject
 		id="ElectroMagneticPulseControlCenter"
 		inheritFrom="BaseTechStructure"
 		SelectPortrait="Portrait_NeutralEMPCenter"
@@ -26,7 +26,11 @@
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS FS_TECHNOLOGY NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY NOT_SELLABLE NEUTRAL_TECH"
 		RadarPriority="STRUCTURE"
 		EditorName="ElectroMagneticPulseControlCenter"
-		Description="Desc:EMPControlCenter">
+		Description="Desc:EMPControlCenter"
+		BuildCost="1000"
+		BuildTime="15"
+		CampnessValue="0"
+		UnitCategory="STRUCTURE">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:EMPControlCenter</DisplayName>
 		<ArmorSet
@@ -62,9 +66,9 @@
 						New="CBEMPD" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT"-->
+					ParseCondStateType="PARSE_DEFAULT">
 					<!-- no anim -->
-				<!--/AnimationState>
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="UNPACKING">
@@ -136,6 +140,8 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
+			<AttributeModifierPoolUpdate 
+				id="DefaultAttributeModifierPoolUpdate"/>
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="4s"
@@ -145,6 +151,20 @@
 				<DieMuxData
 					DeathTypes="ALL" />
 			</SlowDeath>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onTransitionToDamaged"
+					FX="FX_BuildDamaged_Large" />
+				<Event
+					Index="onTransitionToReallyDamaged"
+					FX="FX_BuildDamaged_Large" />
+				<Event
+					Index="onTransitionToRubble"
+					FX="FX_BuildRubble_Large" />
+			</FXListBehavior>
 			<EngineerContain
 				id="ModuleTag_EngineerContain"
 				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
@@ -162,6 +182,7 @@
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>AlienAssimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>					
+					<IncludeThing>Reaper17Assimilator</IncludeThing>					
 					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 				</CanEnterFilter>
@@ -183,20 +204,23 @@
 				SpecialPowerTemplate="SpecialPowerEMPControlCenter"
 				SpecialWeapon="EMPControlCenterWeapon"
 				WhichSpecialWeapon="1"
-			/-->
+			/>
 <!--
 				UnpackSound="EMP_WeaponTarget"
 				TriggerSound="EMP_WeaponTarget"
 -->
-			<!--AISpecialPowerUpdate
+			<AISpecialPowerUpdate
 				id="ModuleTag_EMPControlCenterAI"
 				CommandButtonName="Command_EMPControlCenterEMP"
 				SpecialPowerRadius="99999.0"
 				UnitKindOf="FS_POWER"
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES" 
 			/>
-			<xi:include
-				href="../../Includes/GenericBuildingRepair.xml" />
+			<RepairUpdate 
+				id="ModuleTag_RepairUpdate">
+				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
+				<SelfAudio></SelfAudio>
+			</RepairUpdate>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -209,7 +233,7 @@
 			<ActiveBody
 				id="ModuleTag_Body"
 				MaxHealth="10000.0" />
-		</Body-->
+		</Body>
 		<!-- no worky -->
 		<!--
    		<ClientBehaviors>
@@ -218,7 +242,7 @@
 			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>
 -->
-		<!--Geometry
+		<Geometry
 			IsSmall="false">
 			<Shape
 				Type="BOX"
@@ -290,14 +314,21 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="EMPControlCenter_Select"
+				Sound="AudioEvent:EMPControlCenter_Select"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry Sound="HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
-			<AudioEntry Sound="HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-		</AudioArraySound>
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
+		</AudioArraySound> 
+		<EvaEvents
+			EvaEventDamagedOwner="StructureUnderAttack" 	
+			EvaEventSoldOwner="StructureSold"
+			EvaEventRepairingOwner="StructureRepairing"
+			EvaEnemyObjectSightedEvent="EnemyCampSighted" />
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
@@ -306,5 +337,5 @@
 		<ProjectedBuildabilityInfo
 			Radius="0.0"
 			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
-	</GameObject-->
+	</GameObject>
 </AssetDeclaration>

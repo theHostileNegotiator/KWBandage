@@ -353,13 +353,6 @@
 				id="ModuleTag_GiveUnpackUpgradeSpecialPowerUpdate"
 				SpecialPowerTemplate="SpecialPower_GrantUnpackUpgrade"
 				UpgradeToGive="Upgrade_UnPack" />
-			<ReplaceSelfUpgrade
-				id="ModuleTag_ReplaceSelf"
-				NewObjectUnpackTime="3s"
-				CheckBuildAssistant="true">
-				<TriggeredBy>Upgrade_UnPack</TriggeredBy>
-				<ReplacementTemplate>SteelTalonsBattleBase</ReplacementTemplate>
-			</ReplaceSelfUpgrade>
 			<AISpecialPowerUpdate
 				id="ModuleTag_RigUnpackAI"
 				CommandButtonName="Command_UnpackRig"
@@ -371,6 +364,13 @@
 				SoundToPlay="AudioEvent:GDI_RailCannon_Upgrade">
 				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
 			</AudioLoopUpgrade>
+			<ReplaceSelfUpgrade
+				id="ModuleTag_ReplaceSelf"
+				NewObjectUnpackTime="3s"
+				CheckBuildAssistant="true">
+				<TriggeredBy>Upgrade_UnPack</TriggeredBy>
+				<ReplacementTemplate>SteelTalonsBattleBase</ReplacementTemplate>
+			</ReplaceSelfUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate

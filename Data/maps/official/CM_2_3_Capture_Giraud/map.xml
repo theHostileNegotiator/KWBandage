@@ -151,9 +151,11 @@
 		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbxsh01.xml"
 			type="all"/>
+			<!--
 		<Include
 			source="DATA:gdi/structures_singleplayercampaign/gdilabradarbuilding.xml"
 			type="all"/>
+			-->
 		<Include
 			source="DATA:gdi/structures_singleplayercampaign/gdiwing.xml"
 			type="all"/>

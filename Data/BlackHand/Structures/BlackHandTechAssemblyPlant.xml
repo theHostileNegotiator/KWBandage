@@ -276,6 +276,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -303,14 +304,14 @@
 				ShowSubObjects="TIBCOREMISSILER TIBCOREMISSILER02">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
 			</SubObjectsUpgrade>
+			<StructureUnpackUpdate
+				id="ModuleTag_StructureUnpackUpdate"
+				UnpackTime="1.5s" />
 			<SubObjectsUpgrade
 				id="ModuleTag_ChargedParticleBeamSubObject"
 				ShowSubObjects="CHARGEDPARTICALBEAM_01 CHARGEDPARTICALBEAM_02 CHARGEDPARTICALBEAM_03">
 				<TriggeredBy>Upgrade_NodTechCenterChargedParticleBeam</TriggeredBy>
 			</SubObjectsUpgrade>
-			<StructureUnpackUpdate
-				id="ModuleTag_StructureUnpackUpdate"
-				UnpackTime="1.5s" />
 			<OCLSpecialPower
 				id="ModuleTag_SpecialPowerDecoyTemple"
 				SpecialPowerTemplate="SpecialPower_DecoyTemple"

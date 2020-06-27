@@ -71,6 +71,9 @@
 			source="DATA:neutral/structures/tiberiumspike.xml"
 			type="all"/>
 		<Include
+			source="DATA:nod/structures_singleplayercampaign/nodcontrolnode.xml"
+			type="instance"/>
+		<Include
 			source="overrides.xml"
 			type="all"/>
 	</Includes>

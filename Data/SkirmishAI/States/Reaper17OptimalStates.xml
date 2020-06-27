@@ -19,4 +19,20 @@
       <TeamTemplate MinUnits="7" MaxUnits="11" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
+  
+  <AIStrategicStateDefinition
+		id="Reaper17OptimalEngineer"
+		UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <PathToTargetHeuristic PathExists="true"/>
+      <SiegeThresholdHeuristic SiegeMode="false" Threshold="1.5"/>
+      <IntervalHeuristic IntervalTime="240s" ActiveTime="30s"/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
+    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
+      <TeamTemplate MinUnits="7" MaxUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits UnitName="Reaper17Assimilator"/>
+      </TeamTemplate>
+    </Tactic>
+  </AIStrategicStateDefinition>
 </AssetDeclaration>

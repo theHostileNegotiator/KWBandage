@@ -383,12 +383,6 @@
 				id="ModuleTag_GivePackUpgradeSpecialPowerUpdate"
 				SpecialPowerTemplate="SpecialPower_GrantPackUpgrade"
 				UpgradeToGive="Upgrade_Pack" />
-			<ReplaceSelfUpgrade
-				id="ModuleTag_ReplaceSelf"
-				NewObjectUnpackTime="3s">
-				<TriggeredBy>Upgrade_Pack</TriggeredBy>
-				<ReplacementTemplate>SteelTalonsRig</ReplacementTemplate>
-			</ReplaceSelfUpgrade>
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"
 				DetectionRange="400" />
@@ -431,6 +425,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -442,6 +437,12 @@
 				SoundToPlay="AudioEvent:GDI_RailCannon_Upgrade">
 				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
 			</AudioLoopUpgrade>
+			<ReplaceSelfUpgrade
+				id="ModuleTag_ReplaceSelf"
+				NewObjectUnpackTime="3s">
+				<TriggeredBy>Upgrade_Pack</TriggeredBy>
+				<ReplacementTemplate>SteelTalonsRig</ReplacementTemplate>
+			</ReplaceSelfUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate

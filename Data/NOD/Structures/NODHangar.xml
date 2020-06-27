@@ -3,6 +3,7 @@
 <!--Upgrade SubObjects will no longer appear when Structure is a cursor-->
 	<GameObject
 		id="NODHangar"
+		inheritFrom="BaseStructure"
 		SelectPortrait="Portrait_NODAirTower"
 		ButtonImage="Portrait_NODAirTower"
 		Side="NOD"
@@ -724,6 +725,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>

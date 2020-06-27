@@ -178,6 +178,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -202,13 +203,13 @@
 				MetaGameDescription="Desc:TiberiumProcessingPlant"
 				MetaGameTypeDescription="Type:MetaNODTempleofNod" >
 				<!-- you can list as many powers as you want here -->
-					<Powers
+				<Powers
 					Image="Button_PlayerPowerInfiltration"
 					Title="NAME:PlayerPowerZocomInfiltration"
 					TypeDescription="TYPE:PlayerPowerZocomInfiltration"
 					Description="DESC:PlayerPowerZocomInfiltration" 
 					MetaGameOp="GDI_POWER_ZOCOM_INFILTRATION" />
-					<Powers
+				<Powers
 					Image="Button_PlayerPowerSonicAgitation"
 					Title="NAME:PlayerPowerSonicAgitation"
 					TypeDescription="TYPE:PlayerPowerSonicAgitation"

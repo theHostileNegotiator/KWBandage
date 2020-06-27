@@ -136,9 +136,11 @@
 		<Include
 			source="DATA:nod/structures_singleplayercampaign/nstempleprime.xml"
 			type="all"/>
+		<!--
 		<Include
 			source="DATA:nod/structures_singleplayercampaign/nsweaponslabfacility.xml"
 			type="all"/>
+			-->
 		<Include
 			source="DATA:nod/units_singleplayercampaign/nodcarryall_sp.xml"
 			type="all"/>

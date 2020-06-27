@@ -7,6 +7,7 @@
 	<!-- NerveCenter -->
 	<GameObject
 		id="Reaper17ControlCenter"
+		inheritFrom="AlienControlCenter"
 		SelectPortrait="Portrait_ALIENNerveCenter"
 		ButtonImage="Portrait_ALIENNerveCenter"
 		Side="Reaper17"
@@ -181,7 +182,7 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
-		<AttributeModifierPoolUpdate id="DefaultAttributeModifierPoolUpdate"/>
+			<AttributeModifierPoolUpdate id="DefaultAttributeModifierPoolUpdate"/>
 			<FireWeaponWhenDead
 				id="ModuleTag_CatalystDeathWeapon"
 				InitiallyActive="true"
@@ -207,53 +208,10 @@
 					FX="FX_AlienBuildingRubbleL" />
 			</FXListBehavior>
 
-
-			<SpecialPower
-				id="ModuleTag_TiberiumVibrationScan"
-				SpecialPowerTemplate="SpecialPower_Reaper17TiberiumVibrationScan"
-				UpdateModuleStartsAttack="true"
-			/>
-			<RadarScanMapSpecialAbilityUpdate
-				id="ModuleTag_TiberiumVibrationScanUpdate"
-				SpecialPowerTemplate="SpecialPower_Reaper17TiberiumVibrationScan"
-				PackTime="10s">
-				<IntersectionFlagsFilter
-					ObjectStatus="HAS_TIBERIUM_UPGRADE" />
-				<IntersectionFlagsFilter
-					KindOf="TIBERIUM_BASED HARVESTER FS_MONEY_STORAGE" />
-				<IntersectionFlagsFilter
-					KindOf="VEHICLE"
-					ObjectStatus="HAS_TIBERIUM_AMMO" />
-				<IntersectionFlagsFilter
-					KindOf="TIBERIUM"
-					UseLocalPlayerFilter="false" />
-			</RadarScanMapSpecialAbilityUpdate>
-			<AISpecialPowerUpdate
-				id="ModuleTag_ControlCenterTiberiumVibration"
-				CommandButtonName="Command_Reaper17TiberiumVibrationScan"
-				SpecialPowerRadius="999999.0"
-				SpecialPowerAIType="SPECIAL_POWER_TARGET_STEALTH"
-			/>
-
-
 			<StructureUnpackUpdate
 				id="StructureUnpackUpdate"
 				UnpackTime="2.0s" />
 
-			<OCLSpecialPower
-				id="ModuleTag_SwarmOCL"
-				SpecialPowerTemplate="SpecialPower_Reaper17Swarm"
-				TriggerFX="FX_AlienBlinkSwarm" 
-				OCL="OCL_Reaper17Buzzers"
-				CreateLocation="CREATE_AT_LOCATION">
-			</OCLSpecialPower>
-			<AISpecialPowerUpdate
-				id="ModuleTag_AlienSwarmAI"
-				CommandButtonName="Command_Reaper17SpecialPowerSwarm"
-				ReinforceDistance="0.0"
-				SpecialPowerRadius="250.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
-			/>
 			<!-- Seed Tiberium -->
 			<OCLSpecialPower
 				id="ModuleTag_OCLSpecialPowerAlienSeedTiberium"
@@ -308,7 +266,7 @@
 				CommandButtonName="Command_SummonTibHive"
 		        ReinforceDistance="100.0" 
 				SpecialPowerRadius="300.0"
-				SpellMakesAStructure="AlienTibHive" 
+        SpellMakesAStructure="AlienTibHive" 
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 			/>
 
@@ -335,8 +293,9 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
-			</CanEnterFilter>
+				</CanEnterFilter>
 			</EngineerContain>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedDie"
@@ -351,6 +310,43 @@
 				CreationList="OCL_GenericReaper17BuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
+			<SpecialPower
+				id="ModuleTag_TiberiumVibrationScan"
+				SpecialPowerTemplate="SpecialPower_Reaper17TiberiumVibrationScan"/>
+			<RadarScanMapSpecialAbilityUpdate
+				id="ModuleTag_TiberiumVibrationScanUpdate"
+				SpecialPowerTemplate="SpecialPower_Reaper17TiberiumVibrationScan"
+				PackTime="10s">
+				<IntersectionFlagsFilter
+					ObjectStatus="HAS_TIBERIUM_UPGRADE" />
+				<IntersectionFlagsFilter
+					KindOf="TIBERIUM_BASED HARVESTER FS_MONEY_STORAGE" />
+				<IntersectionFlagsFilter
+					KindOf="VEHICLE"
+					ObjectStatus="HAS_TIBERIUM_AMMO" />
+				<IntersectionFlagsFilter
+					KindOf="TIBERIUM"
+					UseLocalPlayerFilter="false" />
+			</RadarScanMapSpecialAbilityUpdate>
+			<AISpecialPowerUpdate
+				id="ModuleTag_ControlCenterTiberiumVibration"
+				CommandButtonName="Command_Reaper17TiberiumVibrationScan"
+				SpecialPowerRadius="999999.0"
+				SpecialPowerAIType="SPECIAL_POWER_TARGET_STEALTH"/>
+			<OCLSpecialPower
+				id="ModuleTag_SwarmOCL"
+				SpecialPowerTemplate="SpecialPower_Reaper17Swarm"
+				TriggerFX="FX_AlienBlinkSwarm" 
+				OCL="OCL_Reaper17Buzzers"
+				CreateLocation="CREATE_AT_LOCATION">
+			</OCLSpecialPower>
+			<AISpecialPowerUpdate
+				id="ModuleTag_AlienSwarmAI"
+				CommandButtonName="Command_Reaper17SpecialPowerSwarm"
+				ReinforceDistance="0.0"
+				SpecialPowerRadius="250.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+			/>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -443,27 +439,18 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:ALI_NerveCenter_Select"
 				AudioType="voiceSelect" />
-				<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-				<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_LightDamage" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_HeavyDamage" AudioType="soundOnReallyDamaged" />
 			<AudioEntry Sound="AudioEvent:ALI_Building_Placed" AudioType="soundUnderConstruction" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
-
-		<ShadowInfo
-			Type="VOLUME" />
-		<VisionInfo
-			VisionRange="200"
-			ShroudClearingRange="500" />
-		<ProjectedBuildabilityInfo
-			Radius="175"
-			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 
 			EvaEventProductionComplete="BuildingConstructionComplete" 
@@ -478,5 +465,13 @@
 			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
 			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="200"
+			ShroudClearingRange="500" />
+		<ProjectedBuildabilityInfo
+			Radius="175"
+			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
 	</GameObject>
 </AssetDeclaration>

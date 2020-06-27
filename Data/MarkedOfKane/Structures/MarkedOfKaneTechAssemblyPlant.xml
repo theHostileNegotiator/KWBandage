@@ -273,6 +273,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -289,11 +290,6 @@
 			<StructureUnpackUpdate
 				id="ModuleTag_StructureUnpackUpdate"
 				UnpackTime="1.5s" />						
-			<SubObjectsUpgrade
-				id="ModuleTag_SuperChargedParticleBeamSubObject"
-				ShowSubObjects="SUPERCHARGEDPARTICALBEAM">
-				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
-			</SubObjectsUpgrade>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedDie"
 				CreationList="OCL_AdvancedMarkedOfKaneBuildingDestruction" >
@@ -307,6 +303,12 @@
 				CreationList="OCL_AdvancedMarkedOfKaneBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
+
+			<SubObjectsUpgrade
+				id="ModuleTag_SuperChargedParticleBeamSubObject"
+				ShowSubObjects="SUPERCHARGEDPARTICALBEAM">
+				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
+			</SubObjectsUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate

@@ -110,6 +110,7 @@
 	<Include type="all" source="DATA:SkirmishAI\KC_AIS\KC_AIS_09_SCN.xml"/-->
 	</Includes>
 
+  <!--Start repairing broken bridges if the AI has no path to its target-->
   <AIStrategicStateDefinition
 		id="BlackHandBridgeRepair"
 		UnitUpgradeMultiplier="0.0">
@@ -123,7 +124,23 @@
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
+  
+  <!--Start repairing broken bridges if the AI has no path to its target-->
+  <AIStrategicStateDefinition
+		id="Reaper17BridgeRepair"
+		UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <PathToTargetHeuristic PathExists="false"/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+    <Tactic Tactic="Engineer" TargetType="Bridge">
+      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits UnitName="Reaper17Assimilator"/>
+      </TeamTemplate>
+    </Tactic>
+  </AIStrategicStateDefinition>
 
+  <!--Start repairing broken bridges if the AI has no path to its target-->
   <AIStrategicStateDefinition
 		id="Traveler59BridgeRepair"
 		UnitUpgradeMultiplier="0.0">
@@ -149,6 +166,21 @@
     <Tactic Tactic="Engineer" TargetType="Husk">
       <TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits UnitName="BlackHandSaboteur"/>
+      </TeamTemplate>
+    </Tactic>
+  </AIStrategicStateDefinition>
+  
+  <AIStrategicStateDefinition
+		id="Reaper17HuskCapture"
+		UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <ConstantHeuristic Weight="1.0"/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+    <TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+    <Tactic Tactic="Engineer" TargetType="Husk">
+      <TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits UnitName="Reaper17Assimilator"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -362,6 +394,20 @@
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>  
+  
+  <AIStrategicStateDefinition
+		id="Reaper17CaptureTech"
+		UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+    <Tactic Tactic="Engineer" TargetType="CaptureTech">
+      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits UnitName="Reaper17Assimilator"/>
+      </TeamTemplate>
+    </Tactic>
+  </AIStrategicStateDefinition>
 
   <AIStrategicStateDefinition
 		id="Traveler59CaptureTech"

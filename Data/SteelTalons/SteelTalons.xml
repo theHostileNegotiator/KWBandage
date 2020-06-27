@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
-		<Include type="all" source="Structures/SteelTalonsAirSupport.xml" />
-		<Include type="all" source="Structures/SteelTalonsAirTower.xml" />
-		<Include type="all" source="Structures/SteelTalonsBattleBase.xml" />
-		<Include type="all" source="Structures/SteelTalonsGolumCannon.xml" />
-		<Include type="all" source="Structures/SteelTalonsTechCenter.xml" />
-	
+		<!--Units-->
 		<Include type="all" source="Units/SteelTalonsAAScout.xml" />
 		<Include type="all" source="Units/SteelTalonsBehemoth.xml" />
+		<Include type="all" source="Units/SteelTalonsBehemothHusk.xml" />
 		<Include type="all" source="Units/SteelTalonsFirehawk.xml" />
 		<Include type="all" source="Units/SteelTalonsGrenadeSoldier.xml" />
 		<Include type="all" source="Units/SteelTalonsGrenadeSoldierSquad.xml" />
@@ -26,5 +22,30 @@
 		<Include type="all" source="Units/SteelTalonsWolverine_Veteran.xml" />
 		<Include type="all" source="Units/STV350x_CallSupportBloodhound.xml" />
 		<Include type="all" source="Units/STV350x_CallSupportBloodhound_WOL.xml" />
+		
+		<!--Structures-->
+		<Include type="all" source="structures/SteelTalonsAABattery.xml" />
+		<Include type="all" source="structures/SteelTalonsAirTower.xml" />
+		<Include type="all" source="structures/SteelTalonsAirSupport.xml" />
+		<Include type="all" source="structures/SteelTalonsTechCenter.xml" />
+		<Include type="all" source="structures/SteelTalonsBarracks.xml" />
+		<Include type="all" source="structures/SteelTalonsBattleBase.xml" />
+		<Include type="all" source="structures/SteelTalonsCommandPost.xml" />
+		<Include type="all" source="structures/SteelTalonsConstructionYard.xml" />
+		<Include type="all" source="structures/SteelTalonsCrane.xml" />
+		<Include type="all" source="structures/SteelTalonsGolumCannon.xml" />
+		<Include type="all" source="structures/SteelTalonsIonCannonControl.xml" />
+		<Include type="all" source="structures/SteelTalonsPowerPlant.xml" />
+		<Include type="all" source="structures/SteelTalonsRefinery.xml" />
+		<Include type="all" source="structures/SteelTalonsCommandPost.xml" />
+		<Include type="all" source="structures/SteelTalonsTechCenter.xml" />
+		<Include type="all" source="structures/SteelTalonsSpaceCommandUplink.xml" />
+		<Include type="all" source="structures/SteelTalonsTerraformingStation.xml" />
+		<Include type="all" source="structures/SteelTalonsTiberiumSilo.xml" />
+		<Include type="all" source="structures/SteelTalonsWarfactory.xml" />
+		<Include type="all" source="structures/SteelTalonsWatchTower.xml" />
+		<Include type="all" source="structures/SteelTalonsMiniMCVOutpost.xml" />
+		<Include type="all" source="structures/MG_SteelTalons_ReclamatorHub.xml" />		
+		
 	</Includes>
 </AssetDeclaration>

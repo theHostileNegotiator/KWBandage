@@ -31,7 +31,13 @@
 			type = "instance"/>
 			-->
 	</Includes>	
-
+<!--
+	<GameObject
+		id="GDIPowerPlant" inheritFrom="GDIPowerPlant"
+		EnergyProduction="30"
+		EnergyBonus="10">
+	</GameObject>
+-->
 	<GameObject
 		id="GDIPowerPlant"
 		inheritFrom="GDIPowerPlant"
@@ -62,7 +68,6 @@
 			<ObjectFilter
 				Rule="ANY">
 				<IncludeThing>GDIConstructionYard</IncludeThing>
-				<IncludeThing>SteelTalonsConstructionYard</IncludeThing>
 				<IncludeThing>GDICrane</IncludeThing>
 			</ObjectFilter>
 		</GameDependency>
@@ -405,6 +410,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -572,7 +578,6 @@
 			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />			
 	</GameObject>
 	-->
-
 	<GameObject
 		id="MG_GDI_ASATDefense"
 		inheritFrom="MG_GDI_ASATDefense"
@@ -751,6 +756,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -1066,6 +1072,7 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 					<IncludeThing>BlackHandSaboteur</IncludeThing>
 					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
@@ -1180,24 +1187,12 @@
 			<AudioEntry Sound="AudioEvent:GDI_ResearchLab_Select" AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound> 
 		<EvaEvents
-			EvaEventProductionStarted="BuildingConstructionStarted" 
-			EvaEventProductionComplete="BuildingConstructionComplete" 
 			EvaEventDamagedOwner="StructureUnderAttack" 	
-			EvaEventSoldOwner="StructureSold"
-			EvaEventRepairingOwner="StructureRepairing"
-			EvaEnemyObjectSightedEvent="EnemyCampSighted"
-			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventPlacementFailed="StructurePlacementFailed" 
-			EvaEventCannotBuildDueToFullBuildQueue="StructureCannotBuildDueToFullBuildQueue" 
-			EvaEventBuildOnHold="BuildOnHold"
-			EvaEventBuildCancelled="BuildCancelled" 
-			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
-			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
+			EvaEventRepairingOwner="StructureRepairing" />
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
