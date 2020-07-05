@@ -31,7 +31,7 @@
 		WeaponCategory="CANNON"
 		EditorName="GDIGolumCannon"
 		TypeDescription="Type:GDIGolumCannon"
-		Description="Desc:SteelTalonsGuardianCannon">
+		Description="Desc:GDIGolumCannon">
 		<DisplayName>Name:GDIGolumCannon</DisplayName> 
 		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade> 
 		<GameDependency>

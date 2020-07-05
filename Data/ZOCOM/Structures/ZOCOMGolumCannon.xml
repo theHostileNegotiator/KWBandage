@@ -25,7 +25,7 @@
 		WeaponCategory="CANNON"
 		EditorName="ZOCOMGolumCannon"
 		TypeDescription="Type:GDIGolumCannon"
-		Description="Desc:GDIGuardianCannon">
+		Description="DESC:ZOCOMGolumCannon">
 		<DisplayName>Name:GDIGolumCannon</DisplayName> 
 		<GameDependency>
 			<RequiredObject>ZOCOMBarracks</RequiredObject>

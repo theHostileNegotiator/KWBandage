@@ -15135,7 +15135,7 @@ TYPE:GDIGolumCannon
 "Base Defense. Strong vs. Vehicles."
 END
 DESC:GDIGolumCannon
-"Detects Stealth"
+"Detects Stealth \n Upgrades: \n      » Rail Guns (Tech Center)"
 END
 //-----------------------------------------------
 //-----------------------------------------------
@@ -24684,7 +24684,7 @@ END
 TYPE:ZOCOMGolumCannon
 "Base Defense. Strong vs. Vehicles."
 END
-DESC:ZOCOMIGolumCannon
+DESC:ZOCOMGolumCannon
 "Detects Stealth"
 END
 //-----------------------------------------------
@@ -25645,7 +25645,7 @@ TYPE:SteelTalonsGolumCannon
 "Base Defense. Strong vs. Vehicles."
 END
 DESC:SteelTalonsGolumCannon
-"Detects Stealth"
+"Detects Stealth \n Upgrades: \n      » Rail Guns (Tech Center)"
 END
 //-----------------------------------------------
 //-----------------------------------------------
@@ -25996,10 +25996,6 @@ END
 
 Name:SteelTalonsOutpost
 "Outpost"
-END
-
-DESC:SteelTalonsGuardianCannon
-"Detects Stealth \n Upgrades: \n      » Rail Guns (Tech Center)"
 END
 
 Name:AbilityOverloadBeam
