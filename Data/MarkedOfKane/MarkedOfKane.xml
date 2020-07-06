@@ -18,6 +18,7 @@
 		<Include type="all" source="Units/MarkedOfKaneStealthTank.xml" />
 		<Include type="all" source="Units/MarkedOfKaneTiberiumTrooper.xml" />
 		<Include type="all" source="Units/MarkedOfKaneTiberiumTrooperSquad.xml" />
+		<Include type="all" source="Units/MarkedOfKaneVenom.xml" />
 		<Include type="all" source="Units/MOKCyborgInfantry.xml" />	
 		<Include type="all" source="Units/MOKCyborgInfantrySquad.xml" />	
 		
@@ -38,6 +39,7 @@
 		<Include type="all" source="structures/MarkedOfKaneLaserCannon.xml" />
 		<Include type="all" source="structures/MarkedOfKaneObelisk.xml" />
 		<Include type="all" source="structures/MarkedOfKaneRocketBunker.xml" />
+		<Include type="all" source="structures/MarkedOfKaneRocketBunkerSpawn.xml" />
 		<Include type="all" source="structures/MarkedOfKaneShredderTurret.xml" />
 		<Include type="all" source="structures/MarkedOfKaneShredderTurretHub.xml" />
 		<Include type="all" source="structures/MarkedOfKaneTempleOfNOD.xml" />

@@ -189,6 +189,8 @@ end
 
 function OnNODVenomCreated(self)
 	ObjectHideSubObjectPermanently( self, "SigGen", true )
+	ObjectHideSubObjectPermanently( self, "UG_Weapon_ParticleBm", true )
+	ObjectHideSubObjectPermanently( self, "UG_Weapon_SuperChargedParticleBm", true )
 end
 
 function OnNODTechAssembleyPlantCreated(self)

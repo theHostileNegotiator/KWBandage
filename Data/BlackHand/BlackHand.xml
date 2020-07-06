@@ -17,6 +17,7 @@
 		<Include type="all" source="Units/BlackHandMilitantRocket.xml" />
 		<Include type="all" source="Units/BlackHandMilitantRocketSquad.xml" />
 		<Include type="all" source="Units/BlackHandStealthTank.xml" />	
+		<Include type="all" source="Units/BlackHandVenom.xml" />	
 		
 		<Include type="all" source="structures/BlackHandConstructionYard.xml" />
 		<Include type="all" source="structures/BlackHandCrane.xml" />
@@ -29,6 +30,7 @@
 		<Include type="all" source="structures/BlackHandPowerPlant.xml" />
 		<Include type="all" source="structures/BlackHandRefinery.xml" />
 		<Include type="all" source="structures/BlackHandRocketBunker.xml" />
+		<Include type="all" source="structures/BlackHandRocketBunkerSpawn.xml" />
 		<Include type="all" source="structures/BlackHandSecretShrine.xml" />
 		<Include type="all" source="structures/BlackHandShredderTurret.xml" />
 		<Include type="all" source="structures/BlackHandShredderTurretHub.xml" />

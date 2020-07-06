@@ -15,6 +15,7 @@
 		<Include type="all" source="Units/NODMobileArtillery.xml" />
 		<Include type="all" source="Units/NODShadow.xml" />	
 		<Include type="all" source="Units/NODStealthTank.xml" />	
+		<Include type="all" source="Units/NODVenom.xml" />	
 
 		<Include type="all" source="structures/NODConstructionYard.xml" />
 		<Include type="all" source="structures/NODCrane.xml" />
@@ -28,6 +29,7 @@
 		<Include type="all" source="structures/NODPowerPlant.xml" />
 		<Include type="all" source="structures/NODRefinery.xml" />
 		<Include type="all" source="structures/NODRocketBunker.xml" />
+		<Include type="all" source="structures/NODRocketBunkerSpawn.xml" />
 		<Include type="all" source="structures/NODSecretShrine.xml" />
 		<Include type="all" source="structures/NODShredderTurret.xml" />
 		<Include type="all" source="structures/NODShredderTurretHub.xml" />

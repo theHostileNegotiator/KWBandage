@@ -71,6 +71,7 @@
 			* ZOCOM Hammerhead (+ Ceramic Armor)
 			* ZOCOM Firehawk (+ Ceramic Armor)
 			* ZOCOM Guardian Cannon (- Railgun)
+			* NOD/BH/MOK SAM Turret (- Railgun, + Tiberium Core Missiles)
 			* NOD/MOK Avatar (- Purifying Flame)
 			* NOD Black Hand (- Purifying Flame)
 			* NOD Flame Tank (- Purifying Flame)
@@ -121,6 +122,16 @@
 1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
 	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based
 		* Unlike Nod Power Plants with Tiberium Core upgrade, units and structures with Tiberium Core Missiles upgrade will not have the "HAVE_TIBERIUM_UPGRADE" flag, making it 'immune' to Tiberium Vibration Scan as it would be able to counter Cloaking Field and Stealth Tanks with a simple click of a button, making the upgrade less desireable against Scrin factions.
+#### Upgrade Models
+1. Some unit or structure upgrades unnecessarily have game objects use different models instead of hiding and unhiding subobjects
+	* Modified models so subobjects are in the base model and are hidden by scripts
+		* Objects Affected
+			* Attack Bike
+			* Mantis
+			* Stealth Tank
+			* Venom
+			* SAM Turret Hub (Only Tiberium Core Missiles)
+			* SAM Turret
 #### Squad Special Ability Weapons
 1. Once ability is activated, 'interrupting' by issuing other commands can lead to unit still move while firing, leading to lead to jank animations, firing weapon backwards, etc. Playing attacking animations but not shooting if ordered to attack.
 	* Adjusted how special powers are activated. Squad will now be considered to be 'busy' until weapon has been released, therefore new commands will have to wait until unit is no longer busy before executing. Improving presentation significantly
@@ -525,8 +536,8 @@
 #### Turret Hub
 1. Models are bugged, mainly in regards to the turret sections
 	* Fixed models vertices and bone influences (Thanks OpenSAGE Blender Plugin)
-2. Structure would use multiple models between standard and upgraded version
-	* Attempted to use one model for each hub type (Shredder, Laser, SAM) between standard and upgrade
+2. Bones between Standard Hub and Quad Turret Hubs have discrepancy, missing important bones such as StealthDetector
+	* Fixed Bones, Unupgraded Hub and Quad Turret Hub uses the same Hierarchy per turret type.
 #### Shredder Turret
 1. If using Nod Shredder Turret and Black Hand Tech Center, upgrade Charged Particle Beams, the Nod Shredder Turret will be upgraged
 	* Removed Upgrade for Nod Shredder Turret
