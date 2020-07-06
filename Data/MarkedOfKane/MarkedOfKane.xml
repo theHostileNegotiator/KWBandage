@@ -19,6 +19,7 @@
 		<Include type="all" source="Units/MarkedOfKaneTiberiumTrooper.xml" />
 		<Include type="all" source="Units/MarkedOfKaneTiberiumTrooperSquad.xml" />
 		<Include type="all" source="Units/MarkedOfKaneVenom.xml" />
+		<Include type="all" source="Units/MarkedOfKaneVertigo.xml" />
 		<Include type="all" source="Units/MOKCyborgInfantry.xml" />	
 		<Include type="all" source="Units/MOKCyborgInfantrySquad.xml" />	
 		

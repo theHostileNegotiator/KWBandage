@@ -16,6 +16,7 @@
 		<Include type="all" source="Units/NODShadow.xml" />	
 		<Include type="all" source="Units/NODStealthTank.xml" />	
 		<Include type="all" source="Units/NODVenom.xml" />	
+		<Include type="all" source="Units/NODVertigo.xml" />	
 
 		<Include type="all" source="structures/NODConstructionYard.xml" />
 		<Include type="all" source="structures/NODCrane.xml" />

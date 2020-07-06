@@ -757,3 +757,7 @@ function OnGDIBattleBaseCreated(self)
 	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL01", true )
 	ObjectHideSubObjectPermanently( self, "UGRAILACCELERATOR_BARREL02", true )
 end
+
+function OnNODVertigoCreated(self)
+	ObjectHideSubObjectPermanently( self, "UG_RD", true )
+end

@@ -431,4 +431,8 @@
 		<EventHandler EventName="NotUsingWeaponC"	ScriptFunctionName="OnNotUsingWeaponC" DebugSingleStep="false"/>
 	</EventList>
 	
+	<EventList Name="NODVertigoFunctions" Inherit="BaseScriptFunctions">
+		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODVertigoCreated" DebugSingleStep="false"/>
+	</EventList>
+	
 </SageLuaScriptSection>

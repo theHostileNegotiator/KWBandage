@@ -130,6 +130,7 @@
 			* Mantis
 			* Stealth Tank
 			* Venom
+			* Vertigo
 			* SAM Turret Hub (Only Tiberium Core Missiles)
 			* SAM Turret
 #### Squad Special Ability Weapons
@@ -522,6 +523,11 @@
 		* Also reduced turret idle angles to significantly reduce chance of turrets clipping through each other.
 4. Tiberium Trooper module cannot attack while unit is moving
 	* Allowed weapon to attack while unit is moving
+#### Vertigo Bomber
+1. Stealth Model uses it's own Hierarchy instead of the standard version, despite sharing animations
+	* Changed Container and Mesh to refer to the standard version like the Stealth Tank
+2. Stealth Model does not include the Disruption Pod attachment, making the effect seem incomplete
+	* Added Disruption Pod Mesh to Stealth Model
 #### Airtower
 1. When selected to be deployed, the upgrade subobjects will appear when replacing cursor. This does not happen with other structures
 	* Hide subobjects in animation state
