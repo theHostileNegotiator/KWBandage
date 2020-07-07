@@ -5,6 +5,7 @@
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NUStlthTnk_SKN.w3x" />
+		<Include type="all" source="ART:NUStlthTnkStlth.w3x" />
 	</Includes>
 	<GameObject
 		id="NODStealthTank"
