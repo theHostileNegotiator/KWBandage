@@ -653,7 +653,7 @@
 				<Frame>0.000000</Frame>
 				<Frame>0.000000</Frame>
 			</ChannelScalar>
-			<ChannelScalar Pivot="9" Type="Visibility" FirstFrame="0">
+			<ChannelScalar Pivot="13" Type="Visibility" FirstFrame="0">
 				<Frame>1.000000</Frame>
 				<Frame>0.994493</Frame>
 				<Frame>0.978631</Frame>
@@ -13930,7 +13930,7 @@
 				<Mesh>NUVERTSTLTH.DISTORTION01</Mesh>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="UG_RD" BoneIndex="9">
+		<SubObject SubObjectID="UG_RD" BoneIndex="13">
 			<RenderObject>
 				<Mesh>NUVERTSTLTH.UG_RD</Mesh>
 			</RenderObject>

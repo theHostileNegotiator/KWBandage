@@ -477,6 +477,8 @@
 #### Attack Bike
 1. The rockets fired would only come out of one rocket pod
 	* Changed bone names so burst would alternate between pods
+2. Low LOD model turrets do not rotate
+	* While this isn't necessarily a bug, the problem is the Tib Core subobjects would rotate independently on it's own, therefore the bike mesh was changed from normal to skin and now the turrets will move
 #### Harvester
 1. Black Hand variant could not be cloaked with NOD Cloaking Field Support Power
 	* Restored ability for it to be cloaked and defaulted parameters
