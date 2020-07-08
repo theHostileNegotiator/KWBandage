@@ -492,6 +492,9 @@
 	* Restored ability for it to be cloaked and defaulted parameters
 3. Damage values were inherited from Stealth Tank TW 1.09. Stealth Tank damage was reduced in KW 1.00.
 	* Reduced Damage of Rockets to match the current Stealth Tank values
+#### Stealth Tank
+1. Stealth Model does not include the Tib Core Missile attachment, making the effect seem incomplete
+	* Added Tib Core Missile Mesh to Stealth Model
 #### Specter
 1. Unit will rotate body to fire after deployed
 	* Remove requirement RotateToTargetWhenAiming
