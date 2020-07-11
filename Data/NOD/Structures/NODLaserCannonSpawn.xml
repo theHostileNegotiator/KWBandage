@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Refer to Nod Laser Cannon Hub-->
+<!-- Adjusted vision range to be more appropriate to weapon range -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
 	<GameObject
-		id="MarkedOfKaneLaserCannon"
-		inheritFrom="NODLaserCannon"
-		SelectPortrait="Portrait_NODHub"
+		id="NODLaserCannonSpawn"
+		inheritFrom="BaseStructure"
+		SelectPortrait="Portrait_NODLaserTurret"
 		ButtonImage="Portrait_NODLaserTurret"
-		Side="MarkedOfKane"
+		Side="NOD"
 		EditorSorting="STRUCTURE"
-		BuildCost="1200"
-		BuildTime="12"
-		EnergyProduction="-10"
-		CommandSet="NODLaserCannonCommandSet"
-		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS FS_BASE_DEFENSE POWERED AUTO_ACQUIRABLE_BY_AI COVER ATTACK_NEEDS_LINE_OF_SIGHT CAN_SEE_THROUGH_STRUCTURE"
+		TransportSlotCount="1"
+		BuildCost="400"
+		BuildTime="4"
+		CommandSet="GDIWatchTowerCommandSet"
+		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS POWERED AUTO_ACQUIRABLE_BY_AI COVER CAN_ATTACK NOT_SELLABLE KEEP_CLASSIFIED_WHEN_DEAD ATTACK_NEEDS_LINE_OF_SIGHT CANT_TOGGLE_POWER CAN_SEE_THROUGH_STRUCTURE FS_BASE_DEFENSE"
 		RadarPriority="STRUCTURE"
 		PlacementViewAngle="225d"
+		CampnessValue="2000"
 		ProductionQueueType="OTHER_STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
-		EditorName="MarkedOfKaneLaserCannon"
+		EditorName="NODLaserCannonSpawn"
+		Description="Desc:NODLaserCannon"
 		WeaponCategory="CANNON"
-		Description="Desc:MarkedOfKaneLaserCannon"
-		TypeDescription="Type:MarkedOfKaneLaserCannon"
-		CampnessValue="2000"
+		TypeDescription="Type:NODLaserCannon"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODLaserCannon</DisplayName>
+		<DisplayUpgrade
+			id="Tag_DisplayUpgrade1">Upgrade_NODTechCenterLaserCapacitor</DisplayUpgrade>
 		<DisplayUpgrade>Upgrade_NODQuadTurrets</DisplayUpgrade>
-		<GameDependency>
-			<RequiredObject>MarkedOfKaneHandOfNOD</RequiredObject>
-		</GameDependency>
+			
 		<ArmorSet
 			Armor="NODBaseDefenceArmor"
 			DamageFX="FactionStructureDamageFX" />
@@ -46,7 +46,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBDHub_L_SKN" />
+						Name="NBLsrCann_SKN" />
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="FX_Weapon" />
@@ -60,127 +60,74 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="BUILD_PLACEMENT_CURSOR">
+					ConditionsYes="REPAIRING_DISABLED">
 					<Model
-						Name="NBDHub_L_SKN" />
+						Name="NBLsrCann_D3SN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE">
 					<Model
-						Name="NBDHub_D3SN" />
-				</ModelConditionState>
-				<!-- Quad Turret -->
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 STRUCTURE_UNPACKING">
-					<Model
-						Name="NBDHub_QLBld_SKN" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 REALLYDAMAGED">
-					<Model
-						Name="NBDHub_QL_D2_SKN" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerDist"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerSmoke"
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 DAMAGED">
-					<Model
-						Name="NBDHub_QL_SKN" />
-					<Texture
-						Original="NBDHub"
-						New="NBDHub_D" />
-					<Texture
-						Original="NBLsrCann"
-						New="NBLsrCannD" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerSmoke"
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6">
-					<Model
-						Name="NBDHub_QL_SKN" />
-				</ModelConditionState>
-				<!-- Default -->
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Model
-						Name="NBDHub_LBld_SKN" />
+						Name="NBLsrCann_D3SN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="NBDHub_L_D2_SKN" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerDist"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerSmoke"
-						FollowBone="true" />
+						Name="NBLsrCann_D2SN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED">
 					<Model
-						Name="NBDHub_L_SKN" />
-					<Texture
-						Original="NBDHub"
-						New="NBDHub_D" />
+						Name="NBLsrCann_SKN" />
 					<Texture
 						Original="NBLsrCann"
 						New="NBLsrCannD" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerSmoke"
-						FollowBone="true" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT">
-					<!-- no anim -->
+					ParseCondStateType="PARSE_DEFAULT"
+					Flags="RESTART_ANIM_WHEN_COMPLETE">
+					<Animation
+						AnimationName="NBLsrCann_IDLA"
+						AnimationMode="ONCE" />
 				</AnimationState>
+				<!-- REBUILD FROM RUBBLE ANIMATION -->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="BUILD_PLACEMENT_CURSOR">
+					ConditionsYes="USER_1">
+					<Animation
+						AnimationName="NBLsrCann_BLD"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
 				</AnimationState>
+				<!-- BUILDUP ANIMATION -->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="STRUCTURE_UNPACKING">
 					<Animation
-						AnimationName="NBDHub_QLBld_AAN"
-						AnimationMode="ONCE" />
-				</AnimationState>				
+						AnimationName="NBLsrCann_BLD"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REPAIRING_DISABLED"
+					StateName="STATE_Rubble"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="NBLsrCann_D3AN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
 					StateName="STATE_Rubble"
 					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="NBDHub_D3AN"
-						AnimationMode="MANUAL" />
+						AnimationName="NBLsrCann_D3AN"
+						AnimationMode="ONCE" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_IntoRubble" then
@@ -194,7 +141,7 @@
 					StateName="STATE_ReallyDamaged"
 					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="NBDHub_QL_D2_AAN"
+						AnimationName="NBLsrCann_D2AN"
 						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
@@ -207,7 +154,7 @@
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_IntoReallyDamaged">
 					<Animation
-						AnimationName="NBDHub_QL_D2_AAN"
+						AnimationName="NBLsrCann_D2AN"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>
@@ -215,35 +162,11 @@
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_IntoRubble">
 					<Animation
-						AnimationName="NBDHub_D3AN"
+						AnimationName="NBLsrCann_D3AN"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>
 			</ScriptedModelDraw>
-			<SpotlightDraw
-				id="ModuleTag_Spotlight"
-				AttachToBoneInAnotherModule="bone_stealthdetector"
-				RefreshTime="2.0s"
-				SweepTime="1.0s">
-				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT">
-					<Model
-						Name="FXspotlight" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="BUILD_PLACEMENT_CURSOR">
-					<Model
-						Name="" />
-				</ModelConditionState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="BUILD_PLACEMENT_CURSOR">
-					<Script>
-						CurDrawableHideSubObject("Plane01")
-					</Script>	
-				</AnimationState>		
-			</SpotlightDraw>
 			<LaserDraw
 				id="ModuleTag_LaserDraw"
 				Texture1_UTile="1"
@@ -273,9 +196,7 @@
 						</Texture>
 					</Constants>
 				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="WEAPON_UPGRADED_01" />					
-			</LaserDraw>			
+			</LaserDraw>
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate id="DefaultAttributeModifierPoolUpdate"/>
@@ -292,15 +213,14 @@
 			<WeaponSetUpdate
 				id="ModuleTag_WeaponSetUpdate">
 				<WeaponSlotTurret
-					ID="1">				
+					ID="1">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="NODLaserCannonHubWeapon" 
-						ObjectStatus="WEAPON_UPGRADED_01" />
+						Template="NODLaserCannonWeapon" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="NODLaserCannonCapacitorsWeapon" 
-						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
+						ObjectStatus="WEAPON_UPGRADED_01" />
 
 					<TurretSettings
 						TurretTurnRate="360"
@@ -319,22 +239,13 @@
 			<LaserState
 				id="ModuleTag_LaserState"
 				LaserId="0"></LaserState>
-			<SlowDeath
-				id="ModuleTag_Death"
-				SinkDelay="3.0s"
-				SinkRate="4.0"
-				DestructionDelay="8.0s">
-				<Sound Type="INITIAL" List="HumanFaction_SmallBuilding_DieMS" />
-				<DieMuxData
-					DeathTypes="ALL" />
-			</SlowDeath>
 			<FXListBehavior
 				id="ModuleTag_FXList">
 				<DieMuxData
 					DeathTypes="ALL" />
 				<Event
 					Index="onDeath"
-					FX="FX_BuildDamaged_Small" />
+					FX="FX_NOD_DefensiveTurret_Explode" />
 				<Event
 					Index="onTransitionToDamaged"
 					FX="FX_BuildDamaged_Small" />
@@ -344,46 +255,16 @@
 				<Event
 					Index="onTransitionToRubble"
 					FX="FX_BuildRubble_Small" />
-			</FXListBehavior>
-			<StealthDetectorUpdate
-				id="ModuleTag_StealthDetect"
-				DetectionRange="200" />
-			<StructureUnpackUpdate
-				UnpackTime="1.5s" />
-			<CompositeStructureInfoModule
-				id="ModuleTag_CompositeStructureInfoModule"
-				ThingTemplate="MarkedOfKaneLaserCannonSpawn"
-				Count="3"
-				BuildableDistance="150">
-				<ConnectionShadowInfo
-					Type="ALPHA_DECAL_DYNAMIC"
-					SizeX="256"
-					SizeY="32"
-					OpacityStart="0"
-					OpacityFadeInTime="3s"
-					OpacityPeak="1"
-					OpacityFadeOutTime="3s"
-					OpacityEnd="0"
-					OverrideLODVisibility="true"
-					Texture="wire" />
-			</CompositeStructureInfoModule>
+			</FXListBehavior>	
+			
 			<StatusBitsUpgrade
-				id="ModuleTag_UpgradeWeapon01"
+				id="ModuleTag_UpgradeWeapon"
 				StatusToSet="WEAPON_UPGRADED_01">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_UpgradeWeapon02"
-				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_NODTechCenterLaserCapacitor</TriggeredBy>
 			</StatusBitsUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowQuadTurretLaserHub"
-				AddConditionFlags="USER_6">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</ModelConditionUpgrade>
-
+			
 		<!-- causing weird animation bug
+		
 			<AttributeModifierUpgrade
 				id="Upgrade_LaserROF"
 				AttributeModifier="AttributeModifier_LaserROF"
@@ -391,69 +272,93 @@
 				<TriggeredBy>Upgrade_NODTechCenterLaserCapacitor</TriggeredBy>
 			</AttributeModifierUpgrade>
 		-->
-			<GatherSlavesUpdate
-				id="ModuleTag_GatherSlaves"
-				SlaveTemplate="MarkedOfKaneLaserCannonSpawn"
-				Radius="500.0"
-				Amount="3" /> 
-			<RepairUpdate xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_RepairUpdate">
+			<SlavedUpdate
+				id="ModuleTag_SlavedUpdate"
+				DieOnMastersDeath="true"
+				DieOnMastersDeathType="SUICIDED" />
+			<StructureUnpackUpdate
+				UnpackTime="1.5s" />
+			<!-- master was sold or destroyed. Commit suicide by dying slowly -->
+			<SlowDeath
+				id="ModuleTag_Death"
+				SinkDelay="3.0s"
+				SinkRate="4.0"
+				DestructionDelay="8.0s">
+				<DieMuxData
+					DeathTypes="SUICIDED" />
+			</SlowDeath>			
+			<KeepObjectDie
+				id="ModuleTag_KeepObjectForRepair">
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="SUICIDED" />
+			</KeepObjectDie>
+			<InitiateRepairDie
+				id="ModuleTag_InitiateRepair"
+				DelayTime="20s"
+				Options="REPAIR_INSTANT"
+				InstantRepairModelCondition="USER_1"
+				InstantRepairAnimDuration="1.5s"
+				MasterDeadDieFX="FX_TEMPLarge">
+				<Die
+					DeathTypes="ALL"
+					DeathTypesForbidden="SUICIDED" />
+			</InitiateRepairDie>
+			<RepairUpdate 
+				id="ModuleTag_RepairUpdate"
+				Toggleable="false"
+				RepairableWhenDead="true">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
 				<SelfAudio></SelfAudio>
 			</RepairUpdate>
-			<CreateObjectDie xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_GenericMarkedOfKaneBuildingSuicide" >
-				<DieMuxData DeathTypes="SUICIDED" />
-			</CreateObjectDie>
-			<EngineerContain xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_EngineerContain"
-				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
-				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
-				EvaEventForRepair="BuildingRepaired"
-				FXForRepair="FX_Building_Repaired" 
-				FXForCapture="FX_Building_Captured"
-				FXForCaptureAndReplace="FX_Building_Captured"
-				ImmediatelyEnabled="true">
-				<CanEnterFilter 
-					Rule="NONE"
-					Relationship="ALLIES">
-					<IncludeThing>GDIEngineer</IncludeThing>
-					<IncludeThing>NODSaboteur</IncludeThing>
-					<IncludeThing>AlienAssimilator</IncludeThing>
-					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
-					<IncludeThing>ZOCOMEngineer</IncludeThing>
-					<IncludeThing>BlackHandSaboteur</IncludeThing>
-					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
-					<IncludeThing>Reaper17Assimilator</IncludeThing>
-					<IncludeThing>Traveler59Assimilator</IncludeThing>
-				</CanEnterFilter>
-			</EngineerContain>
-			<AudioLoopUpgrade id="NOD_QuadTurrets_LaserHubUpgrade" SoundToPlay="AudioEvent:NOD_QuadTurrets_LaserHubUpgrade">
-				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
-			</AudioLoopUpgrade> 
+			<AudioLoopUpgrade 
+				id="LaserCapacitorUpgradeSound" 
+				SoundToPlay="AudioEvent:NOD_LaserCapacitor_Upgrade">
+				<TriggeredBy>Upgrade_NODTechCenterLaserCapacitor</TriggeredBy>
+			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate
 				id="AIUpdate"
-				AutoAcquireEnemiesWhenIdle="YES"
-				AILuaEventsList="NODLaserCannonHubFunction">
+				AutoAcquireEnemiesWhenIdle="YES">
 				<UnitAITargetChooserData
 					CanPickDynamicTargets="false"
 					CheckVisionRange="false" />
 			</AIUpdate>
+			<!--					
+			<DeployStyleAIUpdate
+				id="ModuleTag_AI"
+				AutoAcquireEnemiesWhenIdle="YES"
+				UnpackTime="1s"
+				PackTime="1s"
+				MustDeployToAttack="true">
+				<UnitAITargetChooserData
+					CheckVisionRange="false"
+					CanPickDynamicTargets="false" />
+			</DeployStyleAIUpdate>
+-->
 		</AI>
 		<Body>
 			<ActiveBody
 				id="ModuleTag_Body"
-				MaxHealth="3600" />
+				MaxHealth="1000.0" />
 		</Body>
+		<ClientBehaviors>
+			<ModelConditionAudioLoopClientBehavior
+				id="MT_MCALCB">
+				<!-- Repaired by InitiateRepairDie -->
+				<ModelConditionSound
+					Sound="AudioEvent:NOD_GenericTurret_Regenerate"
+					RequiredFlags="USER_1" />
+			</ModelConditionAudioLoopClientBehavior>
+		</ClientBehaviors>
 		<Geometry
 			IsSmall="false">
 			<Shape
 				Type="CYLINDER"
-				MajorRadius="25.0"
-				Height="30.0"></Shape>
+				MajorRadius="9.0"
+				Height="23.0"
+				ContactPointGeneration="INFANTRY"/>
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
@@ -464,8 +369,13 @@
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
-			<AudioEntry Sound="AudioEvent:NOD_GenericTurret_MoveStart" AudioType="soundTurretMoveLoop" />
-			<AudioEntry Sound="AudioEvent:NOD_GenericTurret_Deploy" AudioType="soundPrepositioned" />
+			<AudioEntry
+				Sound="AudioEvent:NOD_GenericTurret_MoveStart"
+				AudioType="soundTurretMoveLoop" />
+			<AudioEntry
+				Sound="AudioEvent:NOD_GenericTurret_Deploy"
+				AudioType="soundPrepositioned" />
+			<AudioEntry Sound="AudioEvent:Nod_BuildingPlacedForTurrets" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
@@ -488,8 +398,5 @@
 		<VisionInfo
 			VisionRange="375"
 			ShroudClearingRange="500" />
-		<ProjectedBuildabilityInfo
-			Radius="0.0"
-			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
 	</GameObject>
 </AssetDeclaration>

@@ -25,6 +25,7 @@
 		<Include type="all" source="structures/BlackHandDropZone.xml" />
 		<Include type="all" source="structures/BlackHandHangar.xml" />
 		<Include type="all" source="structures/BlackHandLaserCannon.xml" />
+		<Include type="all" source="structures/BlackHandLaserCannonSpawn.xml" />
 		<Include type="all" source="structures/BlackHandObelisk.xml" />
 		<Include type="all" source="structures/BlackHandOperationsCenter.xml" />
 		<Include type="all" source="structures/BlackHandPowerPlant.xml" />

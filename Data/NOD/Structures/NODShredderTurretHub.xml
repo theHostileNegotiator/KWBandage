@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed Charged Particle Beams Upgrade-->
-<!--Fixing Quad Turrets-->
+<!-- Removed Charged Particle Beams Upgrade -->
+<!-- Fixing Quad Turrets -->
+<!-- Adjusted vision range to be more appropriate to weapon range -->
 	<Includes>
 		<Include type="all" source="ART:NBDHub_QSBLD_SKN.w3x" />
 		<Include type="all" source="ART:NBDHub_SBLD_SKN.w3x" />
@@ -462,7 +463,7 @@
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
-			VisionRange="450"
+			VisionRange="375"
 			ShroudClearingRange="500" />
 		<ProjectedBuildabilityInfo
 			Radius="0.0"

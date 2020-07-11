@@ -25,6 +25,7 @@
 		<Include type="all" source="structures/NODDropZone.xml" />
 		<Include type="all" source="structures/NODHangar.xml" />
 		<Include type="all" source="structures/NODLaserCannon.xml" />
+		<Include type="all" source="structures/NODLaserCannonSpawn.xml" />
 		<Include type="all" source="structures/NODObelisk.xml" />
 		<Include type="all" source="structures/NODOperationsCenter.xml" />
 		<Include type="all" source="structures/NODPowerPlant.xml" />

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed Charged Particle Beams Upgrade-->
-<!--Muzzle Flash will no longer appear when a build cursor-->
+<!-- Removed Charged Particle Beams Upgrade -->
+<!-- Muzzle Flash will no longer appear when a build cursor -->
+<!-- Adjusted vision range to be more appropriate to weapon range -->
 	<GameObject
 		id="NODShredderTurret"
 		SelectPortrait="Portrait_NODShredderTurret"
@@ -352,7 +353,7 @@
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
-			VisionRange="450"
+			VisionRange="375"
 			ShroudClearingRange="500" />
 		<CrusherInfo
 			CrushableLevel="2" />

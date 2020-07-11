@@ -38,6 +38,7 @@
 		<Include type="all" source="structures/MarkedOfKaneMiniMCVOutpost.xml" />
 		<Include type="all" source="structures/MarkedOfKaneDisruptionTower.xml" />
 		<Include type="all" source="structures/MarkedOfKaneLaserCannon.xml" />
+		<Include type="all" source="structures/MarkedOfKaneLaserCannonSpawn.xml" />
 		<Include type="all" source="structures/MarkedOfKaneObelisk.xml" />
 		<Include type="all" source="structures/MarkedOfKaneRocketBunker.xml" />
 		<Include type="all" source="structures/MarkedOfKaneRocketBunkerSpawn.xml" />

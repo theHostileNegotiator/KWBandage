@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Added Laser Capacitor Upgrade Sound-->
-<!--Fixing Quad Turrets-->
+<!-- Added Laser Capacitor Upgrade Sound -->
+<!-- Fixing Quad Turrets -->
+<!-- Adjusted vision range to be more appropriate to weapon range -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NBDHub_QLBld_SKN.w3x" />
@@ -501,7 +502,7 @@
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
-			VisionRange="450"
+			VisionRange="375"
 			ShroudClearingRange="500" />
 		<ProjectedBuildabilityInfo
 			Radius="0.0"

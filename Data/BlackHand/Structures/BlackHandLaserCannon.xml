@@ -485,7 +485,7 @@
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
-			VisionRange="450"
+			VisionRange="375"
 			ShroudClearingRange="500" />
 		<ProjectedBuildabilityInfo
 			Radius="0.0"

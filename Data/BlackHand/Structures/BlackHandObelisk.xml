@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Refer to NOD Obelisk -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -533,7 +534,7 @@
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
-			VisionRange="450"
+			VisionRange="400"
 			ShroudClearingRange="500" />
 		<ProjectedBuildabilityInfo
 			Radius="10.0"
