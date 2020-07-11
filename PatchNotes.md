@@ -76,6 +76,7 @@
 			* NOD Black Hand (- Purifying Flame)
 			* NOD Flame Tank (- Purifying Flame)
 			* NOD/MOK Militant Rocket Squad (- Black Disciple)
+			* BH/MOK Laser Cannon (- Laser Capacitor)
 			* BH Shredder Turret (+ Charged Particle Beams)
 			* MOK Shredder Turret (+ Super Charged Particle Beams)
 			* MOK Enlightened (- Railgun, + Super Charged Particle Beams)
@@ -416,6 +417,9 @@
 3. Purifying Flame, Tiberium Goo and new units that use flame weaponry Reacquire targets differently to the base weapons use as they inherit the values before TW 1.05
 	* Changed ReAcquireDetailType to PER_CLIP
 		* This was an undocumented change for TW 1.05
+#### Defense Structure Vision Range
+1. Vision range for most defensive structures is a lot higher than the weapon range. Therefore when placing the structure, the displayed range would provided misinformation.
+	* Reduced vision range of defensive structure
 #### Black Hand Structure Selling
 1. Selling some structures allowed to create Confessor Cabals at a significant discount.
 	* Reduced the amount of infantry units in Confessor Cabal squads to maximum of 4 when strucuture is sold or destroyed.
