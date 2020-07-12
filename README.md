@@ -24,5 +24,7 @@
  SkirmishAI\\, InGameUI\\, AssetTypeInGameUISettings.  
  * AssetTypeLogicCommand:  
  Element wrongly named "UpgradeTemplate" should be "Upgrade".  
+ * Modules\EngineerContain
+ Attribute "ImmediatelyEnabled" was missing, added it in with default "false"
  * Modules\SpecialAbilityUpdate:  
  Attribute named "Face Target" has the wrong default value. It should be "true".
