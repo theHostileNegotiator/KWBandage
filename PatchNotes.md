@@ -643,6 +643,8 @@
 #### Ravager
 1. When firing or using Tiberium Agitation, projectiles or laser exits the wrong area, above it's head
 	* Animations moved weapon firing bones above it's head for some reason. Removed ChannelScalars ChannelQuaternions specific for Weapon FX Bones in all animations.
+2. Tiberium Agitation target requirements are inconsistent, it does not target Scrin Devourer Tank and BH and Mok Power Plant with Tiberium Core upgrade.
+	* Fixed targeting parameters of Tiberium Agitation. Will now target Scrin Devourer Tank, BH and Mok Power Plant with Tiberium Core upgrade. Additionally will not target units that is empty of Tiberium
 #### Mastermind
 1. Can control subfaction base defense
 	* Removed ability to target base defense structures
