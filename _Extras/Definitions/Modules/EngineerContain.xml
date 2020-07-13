@@ -16,6 +16,7 @@
 		<EntryRelocation id="EvaEventForCaptureAndReplace" AssetType="String" IsAttribute="true" />
 			<EntryRelocation id="CanEnterFilter" AssetType="ObjectFilter" />
 		<Entry id="ImmediatelyEnabled" AssetType="SageBool" Default="false" IsAttribute="true" />
+		<Entry id="fill" AssetType="Byte" IsVoid="true" />
 	</Asset>
 
 </AssetDefinition>
