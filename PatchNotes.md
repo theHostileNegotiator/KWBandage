@@ -161,6 +161,10 @@
 5. Skirmish or Multiplayer games load screen design was not updated in KW after being updated in TW 1.05
 	* Changed design of MP Load Screen
 		* Using a different background as a placeholder as the original background can not be found.
+6. Skirmish or Multiplayer Timeline bottom bar was too long, causing the save replay button to overlap. (This does not affect replay timeline for some reason)
+	* Shorten length of image and geometry
+7. Mission Debrief, the Objective headers were still blue instead of yellow. Additionally two bars that briefly appear before the Medal is revealed is also blue.
+	* Changed header colors to yellow and bars to red.
 #### AI
 1. Campaign AI design was not designed properly, structure based on Multiplayer AI. In TW, there are clear differences between Campaign and Multiplayer Skirmish AI in terms of structure and design.
 	* Redesign Campaign AI

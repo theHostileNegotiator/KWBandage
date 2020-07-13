@@ -32,15 +32,24 @@ Loadscreen
 		Design Change to have map display above player list
 	1.0 -> KW1.0:
 		Design Change to Nod Graphics
-		Missing HideWideScreen?
+		Missing HideWideScreen import
 	KW1.0 -> KW1.1:
 		Change with Load Bar
 		Added Map Display
+	KW1.1 -> Mod
+		Design change to match 1.5
+		Different Background
+		Map Display has Map title now
 Messenger
 	1.0 -> 1.5:
 		_StartMinimized Parameter.
 	1.0 -> KW:
 		No Changes (Text Color to red is about it).
+Mission Summary
+	1.0 -> KW:
+		Design change (made it red)
+	KW -> Mod:
+		Finished design change, Objective headers and two lines that flash when revealing the medal were still blue
 Options
 	1.0 -> 1.1: 
 		Added "Enable Kane Edition Content" Setting.
@@ -64,6 +73,12 @@ TacticalHUDSelectionDetails
 		Added Support for New Factions (And Traveler17 apparently). Necessary?
 	KW -> Mod: 
 		Same changes as 1.0 -> 1.5.
+Timeline
+	1.0 -> KW:
+		Design change (made it red)
+		Bug with bottom bar being too long
+	KW -> Mod:
+		Fixed bottom bar
 
 Already Fully Updated by Devs:
 TacticalHUDRadar
