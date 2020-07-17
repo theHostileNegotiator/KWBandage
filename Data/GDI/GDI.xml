@@ -10,6 +10,7 @@
 		<Include type="all" source="Units/GDIGrenadeSoldier.xml" />
 		<Include type="all" source="Units/GDIGrenadeSoldierSquad.xml" />
 		<Include type="all" source="Units/GDIHammerhead.xml" />
+		<Include type="all" source="Units/GDIHarvester.xml" />
 		<Include type="all" source="Units/GDIJuggernaughtHusk.xml" />
 		<Include type="all" source="Units/GDIMammoth.xml" />
 		<Include type="all" source="Units/GDIMARV.xml" />

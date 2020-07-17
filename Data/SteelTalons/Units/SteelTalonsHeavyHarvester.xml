@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Harvesting Rate Normalised to GDI Harvesters-->
+<!-- Harvesting Rate Normalised to GDI Harvesters -->
+<!-- Tiberium meter on the rear no longer shows when destroyed -->
 	<GameObject
 		id="SteelTalonsHeavyHarvester"
+		inheritFrom="BaseVehicle"
 		SelectPortrait="Portrait_HvyHarvester"
 		ButtonImage="Portrait_HvyHarvester"
 		Side="SteelTalons"
@@ -261,6 +263,20 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Script>
+						CurDrawableHideSubObject("Tib_25")
+						CurDrawableHideSubObject("Tib_50")
+						CurDrawableHideSubObject("Tib_75")
+						CurDrawableHideSubObject("Tib_100")
+						CurDrawableHideSubObject("FXGlows_25")
+						CurDrawableHideSubObject("FXGlows_50")
+						CurDrawableHideSubObject("FXGlows_75")
+						CurDrawableHideSubObject("FXGlows_100")
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MONEY_STORED_AMOUNT_1">
 					<Script>
 						CurDrawableShowSubObject("Tib_25")
@@ -425,8 +441,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic"
-				/>
+				StanceTemplate="Generic" />
 			<LevelUpUpgrade
 				id="ModuleTag_LevelUpUpgrade_Veteran"
 				LevelCap="4"

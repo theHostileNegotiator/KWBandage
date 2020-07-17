@@ -255,9 +255,11 @@
 2. Did not play a seperate animation when EMPed. Instead it continued to loop the animation it was in before EMP strike
 	* Other Mech units used the Bored animation. This technique was applied
 #### Harvester
-1. Steel Talons and ZOCOM Harvesters harvests at a slower rate. Rate is based of TW Pre 1.05 Patch.
+1. The Tiberium meter on the rear of the Harvesters shows when destroyed, conflicting with the destruction model
+	* Tiberium meter is hidden when destroyed
+2. Steel Talons and ZOCOM Harvesters harvests at a slower rate. Rate is based of TW Pre 1.05 Patch.
 	* Normalised values with GDI Harvester
-2. ZOCOM Harvester had no unique Rubble Model, Debris and Damaged Textures, using GDI textures.
+3. ZOCOM Harvester had no unique Rubble Model, Debris and Damaged Textures, using GDI textures.
 	* Created new models for Rubble, Debris and created new textures.
 #### Wolverine
 1. Did not play a seperate animation when EMPed. Instead it continued to loop the animation it was in before EMP strike

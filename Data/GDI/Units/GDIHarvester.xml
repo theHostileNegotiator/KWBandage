@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!-- Refer to Steel Talons Heavy Harvester -->
-<!-- Added new unique Rubble Model instead of Recycling GDI Harvester Model -->
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xai="uri:ea.com:eala:asset:instance">
 <!-- Tiberium meter on the rear no longer shows when destroyed -->
+	<Tags></Tags>
 	<Includes>
-		<Include type="all" source="ART:GUZocomHarvR_SKN.w3x" />
 	</Includes>
 	<GameObject
-		id="ZOCOMHarvester"
+		id="GDIHarvester"
 		inheritFrom="BaseVehicle"
-		SelectPortrait="Portrait_ZOCOMHarvester"
-		ButtonImage="Portrait_ZOCOMHarvester"
-		Side="ZOCOM"
+		SelectPortrait="Portrait_GDIHarvester"
+		ButtonImage="Portrait_GDIHarvester"
+		Side="GDI"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="1600"
@@ -22,16 +20,17 @@
 		ThreatLevel="10"
 		ProductionQueueType="VEHICLE"
 		UnitCategory="VEHICLE"
-		WeaponCategory="MISSILE"
-		VoicePriority="28"
-		EditorName="ZOCOMHarvester"
-		Description="Desc:ZOCOMHarvester"
-		TypeDescription="Type:ZOCOMHarvester"
+		WeaponCategory="GUN"
+		VoicePriority="24"
+		EditorName="GDIHarvester"
+		Description="Desc:GDIHarvester"
+		TypeDescription="Type:GDIHarvester"
 		ShockwaveResistance="100"
 		ReinvisibilityDelay="7s">
-		<DisplayName>Name:ZOCOMHarvester</DisplayName>
+		<DisplayName
+			xai:joinAction="Replace">Name:GDIHarvester</DisplayName>
 		<GameDependency>
-			<RequiredObject>ZOCOMRefinery</RequiredObject>
+			<RequiredObject>GDIRefinery</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="GDIHarvesterArmor"
@@ -41,17 +40,17 @@
 			Condition="NORMAL"
 			Speed="75.0" />
 		<Draws>
-			<TankDraw 
+			<TankDraw
 				id="ModuleTag_Draw"
 				OkToChangeModelColor="true"
 				InitialRecoilSpeed="0.1"
 				MaxRecoilDistance="0.1"
 				RecoilDamping="2.0"
-				RecoilSettleSpeed="3.0"
+				RecoilSettleSpeed="3.0"				
 				ExtraPublicBone="FXTracksL FXTracksR"
 				TrackMarks="EXTnkTrack"
 				TrackMarksLeftBone="FXTracksL"
-				TrackMarksRightBone="FXTracksR"
+				TrackMarksRightBone="FXTracksR"				
 				TreadAnimationRate="0.15"
 				TreadDriveSpeedFraction="0.25"
 				TreadPivotSpeedFraction="0.9">
@@ -60,7 +59,7 @@
 					RetainSubObjects="true"
 					Skeleton="GUHrvstr_SKL">
 					<Model
-						Name="GUZocomHarv_SKN" />
+						Name="GUHrvstr_SKN" />
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="MuzzleFlash_" />
@@ -73,7 +72,7 @@
 					<WeaponLaunchBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="MuzzleFlash_" />
-<!--						
+<!--												
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="FXWeapon01" />
@@ -83,7 +82,7 @@
 					<WeaponLaunchBone
 						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="FXWeapon01" />
--->	
+-->					
 					<Turret
 						TurretNameKey="TURRET"
 						TurretID="1" />
@@ -93,7 +92,7 @@
 					RetainSubObjects="true"
 					ConditionsYes="DAMAGED">
 					<Model
-						Name="GUZocomHarv_SKN" />
+						Name="GUHrvstr_SKN" />
 					<ParticleSysBone
 						BoneName="FXTracksB"
 						FXParticleSystemTemplate="NODDamagedSmoke"
@@ -104,10 +103,10 @@
 					RetainSubObjects="true"
 					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="GUZocomHarv_SKN" />
+						Name="GUHrvstr_SKN" />	
 					<Texture
-						Original="GUZocomHarv"
-						New="GUZocomHarvD" />
+						Original="GUHarvester"
+						New="GUHarvesterD" />											
 					<ParticleSysBone
 						BoneName="FXTracksB"
 						FXParticleSystemTemplate="NODDamagedSmoke"
@@ -117,7 +116,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="GUZocomHarvR_SKN" />
+						Name="GUHrvstrR_SKN" />
 					<ParticleSysBone
 						BoneName="ROOTTRANSFORM"
 						FXParticleSystemTemplate="GDIDebrisSmallFire"
@@ -136,7 +135,7 @@
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
 						Name="GUHrvstr_FP" />
-				</ModelConditionState>
+				</ModelConditionState>					
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Animation
@@ -261,9 +260,9 @@
 			<!-- DRAW TIBERIUM METER -->
 			<ScriptedModelDraw
 				id="ModuleTag_Draw_TIB"
-				OkToChangeModelColor="false"> 
+				OkToChangeModelColor="false">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"> 
+					ParseCondStateType="PARSE_DEFAULT">
 					<Model
 						Name="GUHrvstr_TIB" />
 				</ModelConditionState>
@@ -306,6 +305,7 @@
 						CurDrawableHideSubObject("FXGlows_50")
 						CurDrawableHideSubObject("FXGlows_75")
 						CurDrawableHideSubObject("FXGlows_100")
+
 					</Script>
 				</AnimationState>
 				<AnimationState
@@ -351,6 +351,64 @@
 					</Script>
 				</AnimationState>
 			</ScriptedModelDraw>
+			<TracerModelDraw
+				id="ModuleTag_TracerModelDraw"
+				MinLength="50.0"
+				MaxLength="50.0"
+				Width="3.0"
+				MinSpeed="30"
+				MaxSpeed="30"
+				SweepSpeed="1.0"
+				SpreadAngle="2.0"
+				MinTracersPerFrame="0.2"
+				MaxTracersPerFrame="0.3"
+				FrameLifeTime="35"
+				WeaponSlotType="PRIMARY_WEAPON"
+				Texture="FXTracerGDI"
+				UseAdditiveBlending="true"
+				TracerHitFx="FX_BulletHitGDI">
+				<HeadColor
+					r="1.0"
+					g="1.0"
+					b="1.0"
+					a="1.0" />
+				<TailColor
+					r="0.0"
+					g="0.0"
+					b="0.0"
+					a="0.0" />
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01" />
+			</TracerModelDraw>
+			<TracerModelDraw
+				id="ModuleTag_TracerModelDrawVeterancy"
+				MinLength="50.0"
+				MaxLength="50.0"
+				Width="3.0"
+				MinSpeed="30"
+				MaxSpeed="30"
+				SweepSpeed="1.0"
+				SpreadAngle="2.0"
+				MinTracersPerFrame="0.5"
+				MaxTracersPerFrame="0.5"
+				FrameLifeTime="35"
+				WeaponSlotType="PRIMARY_WEAPON"
+				Texture="FXTracerHeroic"
+				UseAdditiveBlending="true"
+				TracerHitFx="FX_BulletHitGDIHeroic">
+				<HeadColor
+					r="1.0"
+					g="0.0"
+					b="0.0"
+					a="1.0" />
+				<TailColor
+					r="0.0"
+					g="0.0"
+					b="0.0"
+					a="0.0" />
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_01" />
+			</TracerModelDraw>			
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
@@ -392,7 +450,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic" />
+				StanceTemplate="Generic"/>
 			<LevelUpUpgrade
 				id="ModuleTag_LevelUpUpgrade_Veteran"
 				LevelCap="4"
@@ -435,11 +493,9 @@
 					ID="1">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="ZOCOMHarvesterMissileLauncher" />
+						Template="GDIHarvesterMachineGun" />
 					<TurretSettings
-						TurretTurnRate="2000"
-						TurretPitchRate="200"
-						AllowsPitch="true"
+						TurretTurnRate="180"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="5.0s"
 						MinIdleScanAngle="0.0"
@@ -456,10 +512,10 @@
 				DeathObjectStatusBits="DONT_CLEAR_FOR_BUILD"
 				SinkDelay="3s"
 				SinkRate="1.0"
-				DestructionDelay="8s">
+				DestructionDelay="7s">
 				<OCL
 					Type="INITIAL">
-					<OCL>OCL_GDIZOCOMHarvesterDebris</OCL>
+					<OCL>OCL_GDIHarvesterDebris</OCL>
 				</OCL>
 				<DieMuxData
 					DeathTypes="ALL"
@@ -490,7 +546,7 @@
 				id="ModuleTag_VeterancyUpgrade"
 				StatusToSet="WEAPON_UPGRADED_01">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
-			</StatusBitsUpgrade>	
+			</StatusBitsUpgrade>			
 		</Behaviors>
 		<AI>
 			<SupplyTruckAIUpdate
@@ -526,21 +582,50 @@
 				ContactPointGeneration="VEHICLE" />
 		</Geometry>
 		<AudioArrayVoice>
-			<AudioEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceAttack" AudioType="voiceAttack" />
-			<AudioEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceCreate" AudioType="voiceCreated" />
-			<AudioEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceHarvest" AudioType="voiceSupply" />
-			<AudioEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceMove" AudioType="voiceMove" />
-			<AudioEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceMoveAttack" AudioType="voiceAttackAfterMoving" />
-			<AudioEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceMoveRefinery" AudioType="voiceDock" />
-			<AudioEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceRetreat" AudioType="voiceRetreatToCastle" />
-			<AudioEntry Sound="Multisound:GDI_RocketHarvester_VoiceSelectMS" AudioType="voiceSelect" />
-			<AudioEntry Sound="Multisound:GDI_RocketHarvester_VoiceSelectBattleMS" AudioType="voiceSelectBattle" />
-			<NamedEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceMoveRefinery" Name="ReturnToDock" />
-			<NamedEntry Sound="AudioEvent:GDI_RocketHarvester_VoiceRetreat" Name="ReturnToDockWhileUnderAttack" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceAttack"
+				AudioType="voiceAttack" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceCreate"
+				AudioType="voiceCreated" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceHarvest"
+				AudioType="voiceSupply" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceMove"
+				AudioType="voiceMove" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceMoveAttack"
+				AudioType="voiceAttackAfterMoving" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceMove"
+				AudioType="voiceGuard" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceRefinery"
+				AudioType="voiceDock" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceRetreat"
+				AudioType="voiceRetreatToCastle" />
+			<AudioEntry
+				Sound="Multisound:GDI_Harvester_VoiceSelectMS"
+				AudioType="voiceSelect" />
+			<AudioEntry
+				Sound="Multisound:GDI_Harvester_VoiceSelectBattleMS"
+				AudioType="voiceSelectBattle" />
+			<NamedEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceRefinery"
+				Name="ReturnToDock" />
+			<NamedEntry
+				Sound="AudioEvent:GDI_Harvester_VoiceRetreat"
+				Name="ReturnToDockWhileUnderAttack" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry Sound="AudioEvent:HarvesterMoveStart" AudioType="soundMoveStart" />
-			<AudioEntry Sound="Multisound:HarvesterAmbientLoopMS" AudioType="soundAmbient" />
+			<AudioEntry
+				Sound="AudioEvent:HarvesterMoveStart"
+				AudioType="soundMoveStart" />
+			<AudioEntry
+				Sound="Multisound:HarvesterAmbientLoopMS"
+				AudioType="soundAmbient" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventDieOwner="HarvesterLost"
@@ -560,8 +645,8 @@
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
-			VisionRange="350"
-			ShroudClearingRange="400" />
+			VisionRange="150"
+			ShroudClearingRange="320" />
 		<CrusherInfo
 			CrusherLevel="1" 
 			CrushableLevel="2" />
