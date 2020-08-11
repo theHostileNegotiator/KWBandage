@@ -495,6 +495,9 @@
 #### MCV
 1. MCV when unpacking does not have REALLYDAMAGED state
 	* Fixed typo therefore MCV will visually appear damaged when unpacking
+#### Reckoner
+1. Destroyed Model is broken due to incorrect bone references. Additionally destroyed model it too clean
+	* Fixed bone references in model container and added noise modifier to model (Thanks Stygs, in particular the noise modifier)
 #### Mantis
 1. Turret is not effective at tracking Air Units, often misfiring
 	* Improved Turret Settings to match Slingshot
