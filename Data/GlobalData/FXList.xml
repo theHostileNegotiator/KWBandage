@@ -5,8 +5,10 @@
 						 source="FXListGDI.xml" />
 		<!--Include type="all"
 						 source="FXListNOD.xml" />
+						 -->
 		<Include type="all"
 						 source="FXListAlien.xml" />
+	<!--
 		<Include type="all"
 						 source="FXListAudio.xml" /-->
     <!--

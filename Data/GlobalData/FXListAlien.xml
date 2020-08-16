@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+
+	<FXList id="FX_AlienTiberiumInfestation">
+		<NuggetList>
+			<ParticleSystem
+				Particle="TibInfestationLiquidStreamGas1"
+				OrientToObject = "true">
+				<Offset x="3.5" y="0.0" z="2.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibInfestationBugsHuddle"
+				OrientToObject = "true">
+				<Offset x="3.5" y="0.0" z="2.0" />
+			</ParticleSystem>
+
+		</NuggetList>
+	</FXList>
+	
+</AssetDeclaration>

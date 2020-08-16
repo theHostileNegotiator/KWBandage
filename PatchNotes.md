@@ -726,6 +726,8 @@
 #### Infestation
 1. The Tiberium Hive when destroyed will spawn a Buzzer. This does not happen with the Lightning Spike
 	* For consistency, Buzzers will no longer spawn when Tiberium Hive is destroyed
+2. Particle Effects would persist, even when destroyed.
+	* Added SystemLifetime="30" to the TibInfestationBugsHuddle particle system. Also adjusted the offset of the FX.
 #### Reaper 17 Shock Pods
 1. Uses Scrin Veteran Shock Troopers instead of it's own
 	* Created new Veteran Shock Trooper for Reaper 17
