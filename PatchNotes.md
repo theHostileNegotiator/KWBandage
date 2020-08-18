@@ -494,7 +494,7 @@
 	* Restored ability for it to be cloaked and defaulted parameters
 #### MCV
 1. MCV when unpacking does not have REALLYDAMAGED state
-	* Fixed typo therefore MCV will visually appear damaged when unpacking
+	* Fixed typo "REALLY4D" therefore MCV will visually appear damaged when unpacking
 #### Reckoner
 1. Destroyed Model is broken due to incorrect bone references. Additionally destroyed model it too clean
 	* Fixed bone references in model container and added noise modifier to model (Thanks Stygs, in particular the noise modifier)
