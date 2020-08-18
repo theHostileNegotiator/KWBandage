@@ -1660,6 +1660,105 @@
 	</ExperienceLevelTemplate>
 	
 	<ExperienceLevelTemplate
+		id="BlackHandVenomExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="900"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>BlackHandVenom</Target>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="BlackHandVenomExperienceLevel_2"
+		Prerequisite="BlackHandVenomExperienceLevel_1"
+		RequiredExperience="2700"
+		ExperienceAward="1170"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="2">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_01" />
+		<Target>BlackHandVenom</Target>
+		<AttributeModifier>Unit_Veteran</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="BlackHandVenomExperienceLevel_3"
+		Prerequisite="BlackHandVenomExperienceLevel_2"
+		RequiredExperience="5400"
+		ExperienceAward="1440"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="3">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_02" />
+		<Target>BlackHandVenom</Target>
+		<AttributeModifier>Unit_Elite</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="BlackHandVenomExperienceLevel_4"
+		Prerequisite="BlackHandVenomExperienceLevel_3"
+		RequiredExperience="8100"
+		ExperienceAward="1800"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="4">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_03" />
+		<Target>BlackHandVenom</Target>
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	
+	<ExperienceLevelTemplate
 		id="BlackHandTiberiumSilo_1"
 		RequiredExperience="1"
 		ExperienceAward="100"
@@ -3084,6 +3183,105 @@
 	</ExperienceLevelTemplate>
 	
 	<ExperienceLevelTemplate
+		id="MarkedOfKaneVenomExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="900"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>MarkedOfKaneVenom</Target>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="MarkedOfKaneVenomExperienceLevel_2"
+		Prerequisite="MarkedOfKaneVenomExperienceLevel_1"
+		RequiredExperience="2700"
+		ExperienceAward="1170"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="2">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_01" />
+		<Target>MarkedOfKaneVenom</Target>
+		<AttributeModifier>Unit_Veteran</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="MarkedOfKaneVenomExperienceLevel_3"
+		Prerequisite="MarkedOfKaneVenomExperienceLevel_2"
+		RequiredExperience="5400"
+		ExperienceAward="1440"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="3">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_02" />
+		<Target>MarkedOfKaneVenom</Target>
+		<AttributeModifier>Unit_Elite</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="MarkedOfKaneVenomExperienceLevel_4"
+		Prerequisite="MarkedOfKaneVenomExperienceLevel_3"
+		RequiredExperience="8100"
+		ExperienceAward="1800"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="4">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_03" />
+		<Target>MarkedOfKaneVenom</Target>
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	
+	<ExperienceLevelTemplate
 		id="MarkedOfKaneTiberiumSilo_1"
 		RequiredExperience="1"
 		ExperienceAward="100"
@@ -4151,6 +4349,105 @@
 			OpacityMin="80"
 			OpacityMax="100"
 			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	
+	<ExperienceLevelTemplate
+		id="NODVenomExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="900"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>NODVenom</Target>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="NODVenomExperienceLevel_2"
+		Prerequisite="NODVenomExperienceLevel_1"
+		RequiredExperience="2700"
+		ExperienceAward="1170"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="2">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_01" />
+		<Target>NODVenom</Target>
+		<AttributeModifier>Unit_Veteran</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="NODVenomExperienceLevel_3"
+		Prerequisite="NODVenomExperienceLevel_2"
+		RequiredExperience="5400"
+		ExperienceAward="1440"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="3">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_02" />
+		<Target>NODVenom</Target>
+		<AttributeModifier>Unit_Elite</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="NODVenomExperienceLevel_4"
+		Prerequisite="NODVenomExperienceLevel_3"
+		RequiredExperience="8100"
+		ExperienceAward="1800"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="4">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_NODLevelUp_03" />
+		<Target>NODVenom</Target>
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_N_level1"
+			Texture2="decal_Nod_S_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
 			MaxRadius="200"
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>

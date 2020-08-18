@@ -36,6 +36,7 @@
 			* NOD/BH/MOK Obelisk of Light
 			* NOD/BH/MOK Raider Buggy
 			* NOD/MOK Stealth Tank
+			* NOD/MOK Venom
 			* BH Confessor Cabal
 			* BH Mantis
 			* MOK Awakened
