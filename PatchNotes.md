@@ -232,6 +232,9 @@
 	* Added modules that will allow them to use it
 2. When using Formation move, the formation texture uses Rocket Symbols
 	* Fixed Texture Coordinate in FXGrenade_FP.w3x
+#### Sniper Team
+1. ZOCOM Teams would have GDI Sniper and Spotter instead of their own
+	* ZOCOM will now use ZOCOM Sniper and Spotter in their teams
 #### MRT
 1. Leash range of Repair Drone was not changed from KW 1.01 to 1.02, despite specified in change log
 	* Fixed leash range to 100
