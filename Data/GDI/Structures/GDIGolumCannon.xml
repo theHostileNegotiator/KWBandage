@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Upgrade is displayed and part of Description-->
-<!--Fixed Railgun Accelerator Models-->
-<!--Upgrade Sounds Added-->
+<!-- Upgrade is displayed and part of Description -->
+<!-- Fixed Railgun Accelerator -->
+<!-- Upgrade Sounds Added -->
+<!-- Low LOD Rubble Model uses damaged textures instead of standard -->
 	<Includes>
 		<Include type="all" source="ART:GBGolumCan_SKN.w3x" />
 		<Include type="all" source="ART:GBGolumCan_D2AN.w3x" />
@@ -102,10 +103,10 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Script>
-						CurDrawableHideSubObject("UGRAIL_BARREL01")
-						CurDrawableHideSubObject("UGRAIL_01")
-						CurDrawableHideSubObject("UGRAILACCELERATOR_BARREL01")
-						CurDrawableHideSubObject("UGRAILACCELERATOR_01")
+						CurDrawableHideSubObject("UGRAILMAIN")
+						CurDrawableHideSubObject("UG_RAILBARREL1")
+						CurDrawableHideSubObject("UGRAILACCELERATORMAIN")
+						CurDrawableHideSubObject("UG_RAILACCELERATORBARREL1")
 					</Script>
 				</AnimationState>
 				<AnimationState
@@ -305,7 +306,7 @@
 			</StatusBitsUpgrade>			
 			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_ShowRailguns"
-				ShowSubObjects="UGRAIL_01 UGRAIL_BARREL01">
+				ShowSubObjects="UGRAILMAIN UG_RAILBARREL1">
 				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
 			</SubObjectsUpgrade>	
 			<AudioLoopUpgrade 

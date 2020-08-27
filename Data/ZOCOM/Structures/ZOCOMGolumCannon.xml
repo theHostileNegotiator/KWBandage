@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Model name changes-->
-<!--Removed Railgun Upgrade Sound-->
+<!-- Removed Railgun Upgrade Sound -->
 	<GameObject
 		id="ZOCOMGolumCannon"
 		inheritFrom="GDIGolumCannon"
@@ -95,10 +94,10 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Script>
-						CurDrawableHideSubObject("UGRAIL_BARREL01")
-						CurDrawableHideSubObject("UGRAIL_01")
-						CurDrawableHideSubObject("UGRAILACCELERATOR_BARREL01")
-						CurDrawableHideSubObject("UGRAILACCELERATOR_01")
+						CurDrawableHideSubObject("UGRAILMAIN")
+						CurDrawableHideSubObject("UG_RAILBARREL1")
+						CurDrawableHideSubObject("UGRAILACCELERATORMAIN")
+						CurDrawableHideSubObject("UG_RAILACCELERATORBARREL1")
 					</Script>
 				</AnimationState>
 				<AnimationState

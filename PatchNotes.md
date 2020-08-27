@@ -373,6 +373,8 @@
 	* Added display upgrade and changed the description to add the detail
 2. When affected by Railgun Accelerator, fire rate is too fast for recoil animation
 	* Reduced Rate of Fire, increasing overall cooldown from 1.8s to 2.3s and increased damage proportionaly to from 525 to 670
+3. Low LOD Rubble Model uses standard textures instead of damaged
+	* Swapped textures to be the damaged version
 #### Sonic Emitter
 1. AI underestimates the DPS output of defensive structure (Damage was buffed in TW 1.05 to counteract a bug fix but AI DPS was never updated in TW or KW)
 	* Increased ConquerMetricsOverrideDPS to 500
