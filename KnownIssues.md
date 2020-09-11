@@ -1,5 +1,8 @@
 # Here are issues that are known that have not been fixed in this package
 
+#### MOD ONLY
+* Switching Model LOD setting and then navigating to Skirmish, MP or Global Conquest to another menu crashes the game (Something to do with Skirmish AI)
+
 #### R17 Assimilator
 * Reaper 17 uses Scrin Assimilator instead of it's own. However in order to implement their own Assimilator, will need to find and edit every structure in the game.
 
