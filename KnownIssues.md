@@ -3,9 +3,6 @@
 #### MOD ONLY
 * Switching Model LOD setting and then navigating to Skirmish, MP or Global Conquest to another menu crashes the game (Something to do with Skirmish AI)
 
-#### R17 Assimilator
-* Reaper 17 uses Scrin Assimilator instead of it's own. However in order to implement their own Assimilator, will need to find and edit every structure in the game.
-
 #### NOD Turrets
 * Shredder turrets and Laser Cannons have no visual update when upgraded. Need to reuse models and create unique visuals for the Hubs, like Tibcore upgrade
 
@@ -24,6 +21,7 @@
  
 #### Ravager
 * AI are not able to use Tiberium Agitation properly
+* Head bones have issues
  
 #### Railgun Accelerator Heal
 * Objects affected by Railgun Accelerator when healed by repair drone or structure repair will no longer take penalty damage when still under the effect

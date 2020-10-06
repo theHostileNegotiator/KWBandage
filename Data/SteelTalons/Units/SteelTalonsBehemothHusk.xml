@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Changed model to appear more damaged -->
+	<Includes>
+		<Include type="all" source="ART:GUBehemoth_SKNH.W3X" />
+		<Include type="all" source="ART:GUBehemoth_DIEA.W3X" />
+	</Includes>
 	<GameObject
 		id="SteelTalonsBehemothHusk"
 		inheritFrom="BaseVehicle"
@@ -31,21 +36,12 @@
 						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
 						FollowBone="true" />
 				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6">
-					<Model
-						Name="GUBehemoth_SKNH" />
-					<Texture
-						Original="GUJugg_D"
-						New="GUJuggD_K" />						
-				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
 					Flags="START_FRAME_LAST"
 					StateName="STATE_Default">
 					<Animation
-						AnimationName="GUJugg_DIEA"
+						AnimationName="GUBehemoth_DIEA"
 						AnimationMode="MANUAL"
 						AnimationBlendTime="0" />
 					<Script>
@@ -59,7 +55,7 @@
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_ToDefault">
 					<Animation
-						AnimationName="GUJugg_DIEA"
+						AnimationName="GUBehemoth_DIEA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>

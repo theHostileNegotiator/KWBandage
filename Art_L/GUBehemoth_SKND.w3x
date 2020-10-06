@@ -3,7 +3,7 @@
 	<Includes>
 		<Include source="ART:gubehemoth_skl.w3x" type="all"/>
 	</Includes>
-	<W3DMesh id="GUBEHEMOTH_SKN.BEHEMOTH2" CastShadow="true" GeometryType="Skin">
+	<W3DMesh id="GUBEHEMOTH_SKND.BEHEMOTH2" GeometryType="Skin">
 		<BoundingBox>
 			<Min X="-27.649580" Y="-20.245291" Z="36.340778"/>
 			<Max X="37.692524" Y="12.125268" Z="54.214973"/>
@@ -5361,10 +5361,10 @@
 				<Dist>54.668006</Dist>
 			</T>
 		</Triangles>
-		<FXShader ShaderName="ObjectsGDI.fx">
+		<FXShader ShaderName="ObjectsGDI2.fx">
 			<Constants>
 				<Texture Name="DiffuseTexture">
-					<Value>GUBehemot2</Value>
+					<Value>GUBehemot2_D</Value>
 				</Texture>
 				<Texture Name="NormalMap">
 					<Value>GUBehemot2_NRM</Value>
@@ -5375,6 +5375,30 @@
 				<Texture Name="RecolorTexture">
 					<Value>HCToBeRemoved</Value>
 				</Texture>
+				<Float Name="BumpScale">
+					<Value>1.000000</Value>
+				</Float>
+				<Float Name="AmbientColor">
+					<Value>0.400000</Value>
+					<Value>0.400000</Value>
+					<Value>0.400000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="DiffuseColor">
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+				</Float>
+				<Float Name="SpecularColor">
+					<Value>0.800000</Value>
+					<Value>0.800000</Value>
+					<Value>0.800000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="SpecularExponent">
+					<Value>50.000000</Value>
+				</Float>
 				<Float Name="EnvMult">
 					<Value>1.000000</Value>
 				</Float>
@@ -5384,7 +5408,7 @@
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DMesh id="GUBEHEMOTH_SKN.BEHEMOTH" CastShadow="true" GeometryType="Skin">
+	<W3DMesh id="GUBEHEMOTH_SKND.BEHEMOTH" GeometryType="Skin">
 		<BoundingBox>
 			<Min X="-22.580963" Y="-20.611753" Z="0.209994"/>
 			<Max X="37.692528" Y="21.677504" Z="47.478390"/>
@@ -49935,10 +49959,10 @@
 				<Dist>25.784551</Dist>
 			</T>
 		</Triangles>
-		<FXShader ShaderName="ObjectsGDI.fx">
+		<FXShader ShaderName="ObjectsGDI2.fx">
 			<Constants>
 				<Texture Name="DiffuseTexture">
-					<Value>GUBehemoth</Value>
+					<Value>GUBehemoth_D</Value>
 				</Texture>
 				<Texture Name="NormalMap">
 					<Value>GUBehemoth_NRM</Value>
@@ -49949,6 +49973,30 @@
 				<Texture Name="RecolorTexture">
 					<Value>HCToBeRemoved</Value>
 				</Texture>
+				<Float Name="BumpScale">
+					<Value>1.000000</Value>
+				</Float>
+				<Float Name="AmbientColor">
+					<Value>0.400000</Value>
+					<Value>0.400000</Value>
+					<Value>0.400000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="DiffuseColor">
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+				</Float>
+				<Float Name="SpecularColor">
+					<Value>0.800000</Value>
+					<Value>0.800000</Value>
+					<Value>0.800000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="SpecularExponent">
+					<Value>50.000000</Value>
+				</Float>
 				<Float Name="EnvMult">
 					<Value>1.000000</Value>
 				</Float>
@@ -49958,35 +50006,35 @@
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DContainer id="GUBEHEMOTH_SKN" Hierarchy="GUBEHEMOTH_SKL">
+	<W3DContainer id="GUBEHEMOTH_SKND" Hierarchy="GUBEHEMOTH_SKL">
 		<SubObject SubObjectID="BEHEMOTH2" BoneIndex="0">
 			<RenderObject>
-				<Mesh>GUBEHEMOTH_SKN.BEHEMOTH2</Mesh>
+				<Mesh>GUBEHEMOTH_SKND.BEHEMOTH2</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="BEHEMOTH" BoneIndex="0">
 			<RenderObject>
-				<Mesh>GUBEHEMOTH_SKN.BEHEMOTH</Mesh>
+				<Mesh>GUBEHEMOTH_SKND.BEHEMOTH</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="MUZZLEFLASH_02" BoneIndex="27">
 			<RenderObject>
-				<Mesh>GUBEHEMOTH_SKN.MUZZLEFLASH_02</Mesh>
+				<Mesh>GUBEHEMOTH_SKND.MUZZLEFLASH_02</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="MUZZLEFLASH_03" BoneIndex="25">
 			<RenderObject>
-				<Mesh>GUBEHEMOTH_SKN.MUZZLEFLASH_03</Mesh>
+				<Mesh>GUBEHEMOTH_SKND.MUZZLEFLASH_03</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="MUZZLEFLASH_01" BoneIndex="26">
 			<RenderObject>
-				<Mesh>GUBEHEMOTH_SKN.MUZZLEFLASH_01</Mesh>
+				<Mesh>GUBEHEMOTH_SKND.MUZZLEFLASH_01</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="OBBOX" BoneIndex="0">
 			<RenderObject>
-				<CollisionBox>GUBEHEMOTH_SKN.OBBOX</CollisionBox>
+				<CollisionBox>GUBEHEMOTH_SKND.OBBOX</CollisionBox>
 			</RenderObject>
 		</SubObject>
 	</W3DContainer>

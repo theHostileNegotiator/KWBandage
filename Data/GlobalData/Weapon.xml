@@ -885,28 +885,6 @@
 				Include="INFANTRY" />
 		</ScatterRadiusVsType>
 	</WeaponTemplate>
-	
-<!--Behemoth Build Animation Fix-->
-	<!--WeaponTemplate
-		id="BehemothBuildAnimationWeapon"
-		Name="BehemothBuildAnimationWeapon"
-		RadiusDamageAffects="ALLIES SELF"
-		AttackRange="100.0"
-		ClipSize="1">
-		<FiringDuration
-			MinSeconds="0.5s"
-			MaxSeconds="0.5s" />
-		<Nuggets>
-			<AttributeModifierNugget
-				Radius="1.0"
-				RequiredObjectStatus=""
-				AttributeModifierName="AttributeModifier_BehemothBuildAnimation">
-				<SpecialObjectFilter>
-					<IncludeThing>SteelTalonsBehemoth</IncludeThing>
-				</SpecialObjectFilter>
-			</AttributeModifierNugget>
-		</Nuggets>
-	</WeaponTemplate-->	
 
 <!--Added projectile nugget so Garrisoned Infantry die when flame reaches them-->	
 	<WeaponTemplate
@@ -2427,6 +2405,7 @@
 	</WeaponTemplate>
 
 <!--Weapon will no longer De garrison at the same instant as it starts firing-->		
+<!--Weapon will be able to fire while Redeemer is moving-->		
 	<WeaponTemplate 
 		id="NODWarmechTibWeaponRight"
 		Name="NODWarmechTibWeaponRight"

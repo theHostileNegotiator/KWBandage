@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Fixing Getting up Animation-->
+<!--Fixed Getting up Animation-->
 <!--Allow veteran and ZOCOM snipers to spot for bombard-->
 	<Includes>
-		<Include
-			type="all"
-			source="ART:GUBehemoth_SKN.W3X" />
-		<Include
-			type="all"
-			source="ART:GUBehemoth_BLDA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_SKN.W3X" />
+		<Include type="all" source="ART:GUBehemoth_SKND.W3X" />
+		<Include type="all" source="ART:GUBehemoth_SKNR.W3X" />			
+		<Include type="all" source="ART:GUBehmBlda_BLDA.W3X" />
+		<Include type="all" source="ART:GUBehmBlda_SKN.W3X" />
+		<Include type="all" source="ART:GUBehemoth_ABTA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_ACCL.W3X" />
+		<Include type="all" source="ART:GUBehemoth_AIDA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_AIFA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_AIFB.W3X" />
+		<Include type="all" source="ART:GUBehemoth_AIFC.W3X" />
+		<Include type="all" source="ART:GUBehemoth_AIFD.W3X" />
+		<Include type="all" source="ART:GUBehemoth_ATKA1.W3X" />
+		<Include type="all" source="ART:GUBehemoth_ATKA2.W3X" />
+		<Include type="all" source="ART:GUBehemoth_ATKA3.W3X" />
+		<Include type="all" source="ART:GUBehemoth_ATKB1.W3X" />
+		<Include type="all" source="ART:GUBehemoth_ATKB2.W3X" />
+		<Include type="all" source="ART:GUBehemoth_BATA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_BATB.W3X" />
+		<Include type="all" source="ART:GUBehemoth_BIDA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_BIFA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_BIFB.W3X" />
+		<Include type="all" source="ART:GUBehemoth_BIFC.W3X" />
+		<Include type="all" source="ART:GUBehemoth_BIFD.W3X" />
+		<Include type="all" source="ART:GUBehemoth_DECL.W3X" />
+		<Include type="all" source="ART:GUBehemoth_DIEA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_DIEB.W3X" />
+		<Include type="all" source="ART:GUBehemoth_DIEC.W3X" />
+		<Include type="all" source="ART:GUBehemoth_DIED.W3X" />
+		<Include type="all" source="ART:GUBehemoth_GTPA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_WLKA.W3X" />
+		<Include type="all" source="ART:GUBehemoth_WLKB.W3X" />
+		<Include type="all" source="ART:GUBehemoth_TRNL.W3X" />
+		<Include type="all" source="ART:GUBehemoth_TRNR.W3X" />
+		<Include type="all" source="ART:GUBehemoth_BLDA.W3X" />
 	</Includes>
 	<GameObject
 		id="SteelTalonsBehemoth"

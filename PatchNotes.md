@@ -310,6 +310,8 @@
 	* Changed model so only one is used for build and default state
 2. Left leg pistons were bugged
 	* The Above fix has removed this issue
+3. Husk model uses standard mesh instead of the rubble mesh like the Juggernaught and Avatar.
+	* Husk model now appears more destroyed. The generated Debris actually make sense now.
 #### MARV
 1. Only required Tier 2 structure (Command Post) compared to other factions which required their respective Tier 3 structure (After Reclamation Hub is deployed)
 	* Changed RequiredObject to Tech Center
