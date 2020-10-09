@@ -11,7 +11,18 @@
 		inheritFrom="BaseCivilianStructure"
 		EditorName="Brazilian_Futuristic_Office_Building_03"
     EditorSorting="STRUCTURE"
-		Browser="REGION Brazil_BR STRUCTURE">
+		Browser="REGION Brazil_BR STRUCTURE"
+		SelectPortrait="Portrait_NeutralGarrisonableStructure"
+		ButtonImage="Portrait_NeutralGarrisonableStructure"
+		CommandSet="GarrisonableNeutralBuildingCommandSet"
+		Side="Civilian"
+		KindOf="SELECTABLE STRUCTURE PRELOAD IMMOBILE CAN_CAST_REFLECTIONS GARRISON COVER KEEP_CLASSIFIED_WHEN_DEAD IGNORE_FOR_VICTORY CIVILIAN_BUILDING NOT_SELLABLE"
+		RadarPriority="STRUCTURE">
+		<DisplayName>Name:CivilianBuildingGarrisonable</DisplayName>
+		<ArmorSet
+			id="DefaultArmor"
+			Armor="StructureArmor"
+			DamageFX="GenericStructureDamageFX" />
 		<Draws>
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
