@@ -20,12 +20,20 @@
 -->
 	</Includes>
 	
+<!--
+ <GameObject
+  id="Traveler59EradicatorHexapod"
+  inheritFrom="Traveler59EradicatorHexapod" 
+  KindOf=" TRANSPORT SALVAGER METAUNIT GARRISONABLE_UNTIL_DESTROYED PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE CAN_SHOOT_OVER_WALLS CAN_BE_FAVORITE_UNIT" >
+ </GameObject >
+-->
+	
 	<GameObject
-		id="AlienEradicatorHexapod"
-		inheritFrom="AlienEradicatorHexapod"
+		id="Traveler59EradicatorHexapod"
+		inheritFrom="Traveler59EradicatorHexapod"
 		SelectPortrait="Portrait_Eradicator"
 		ButtonImage="Portrait_Eradicator"
-		Side="ALIEN"
+		Side="Traveler59"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="5000"
@@ -38,16 +46,16 @@
 		UnitCategory="VEHICLE"
 		WeaponCategory="CANNON"
 		VoicePriority="230"
-		EditorName="AlienEradicatorHexapod"
-		Description="Desc:AlienEradicatorHexapod"
-		TypeDescription="Type:AlienEradicatorHexapod"
+		EditorName="Traveler59EradicatorHexapod"
+		Description="Desc:Traveler59EradicatorHexapod"
+		TypeDescription="Type:Traveler59EradicatorHexapod"
 		ShockwaveResistance="100"
 		ReinvisibilityDelay="7s"
 		MaxSimultaneousOfType="1" >
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:AlienEradicatorHexapod</DisplayName>
 		<GameDependency>
-			<RequiredObject>AlienReactor</RequiredObject>
+			<RequiredObject>Traveler59Reactor</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="AlienEradicatorHexapodArmor"
@@ -69,7 +77,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="AUEradHex_SKN" />
+						Name="W3DContainer:AUEradHex_SKN" />
 					<WeaponFireFXBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
@@ -256,7 +264,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="AUEradHex_FP" />
+						Name="W3DContainer:AUEradHex_FP" />
 					<ParticleSysBone
 						BoneName="NONE"
 						FXParticleSystemTemplate="ABWarpChasmBuildDist"
@@ -270,7 +278,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="AUEradHex_D1" />
+						Name="W3DContainer:AUEradHex_D1" />
 					<Texture
 						Original="AUEradHex"
 						New="AUEradHex_D" />							
@@ -336,7 +344,7 @@
 					ConditionsYes="DAMAGED">
 					<!-- DO NOT PUT THE AUEradHexR_SKN HERE !!!!  -->
 					<Model
-						Name="AUEradHex_SKN" />
+						Name="W3DContainer:AUEradHex_SKN" />
 					<Texture
 						Original="AUEradHex"
 						New="AUEradHex_D" />
@@ -358,7 +366,7 @@
 					ConditionsYes="REALLYDAMAGED">
 					<!-- DO NOT PUT THE AUEradHexR_SKN HERE !!!!  -->
 					<Model
-						Name="AUEradHex_SKN" />
+						Name="W3DContainer:AUEradHex_SKN" />
 					<Texture
 						Original="AUEradHex"
 						New="AUEradHex_D" />				
@@ -1418,7 +1426,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="SELECTED">
-					<Model Name="FXInvisBone" />
+					<Model Name="W3DContainer:FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL"
 						SizeX="900"

@@ -106,19 +106,19 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBPower" />
+						Name="W3DContainer:NBPower" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="STRUCTURE_UNPACKING">
 					<Model
-						Name="NBPower_ASN" />
+						Name="W3DContainer:NBPower_ASN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED">
 					<Model
-						Name="NBPowerD2_SN" />
+						Name="W3DContainer:NBPowerD2_SN" />
 					<ParticleSysBone
 						BoneName="FXBone01"
 						FXParticleSystemTemplate="NodPPSparks"
@@ -132,7 +132,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="NBPowerD2_SN" />
+						Name="W3DContainer:NBPowerD2_SN" />
 					<ParticleSysBone
 						BoneName="FXBone01"
 						FXParticleSystemTemplate="NodPPSparks"
@@ -158,7 +158,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="NBPowerD3_SN" />
+						Name="W3DContainer:NBPowerD3_SN" />
 				</ModelConditionState>
 				<!-- BUILDUP ANIMATION -->
 				<AnimationState
@@ -240,25 +240,25 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1 DAMAGED">
 					<Model
-						Name="NBTibCore_D1" />
+						Name="W3DContainer:NBTibCore_D1" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1 REALLYDAMAGED">
 					<Model
-						Name="NBTibCore_D1" />
+						Name="W3DContainer:NBTibCore_D1" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1 DYING">
 					<Model
-						Name="NBTibCore_D1" />
+						Name="W3DContainer:NBTibCore_D1" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1">
 					<Model
-						Name="NBTibCore" />
+						Name="W3DContainer:NBTibCore" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"

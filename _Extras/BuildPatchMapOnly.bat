@@ -71,6 +71,8 @@ endlocal EnableDelayedExpansion
 
 if exist "%mydocs%\%userdataleaf%\Mods\%modname%\*.skudef" del "%mydocs%\%userdataleaf%\Mods\%modname%\*.skudef" /F /Q
 
+if exist "%cd%\Compilation\Mods\%modname%" "%cd%\Tools\MakeBig.exe" -f "%cd%\Compilation\Mods\%modname%" -o:"%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big"
+
 setlocal EnableDelayedExpansion
 
 if exist "%cd%\Mods\%modname%\LanguagePacks" (

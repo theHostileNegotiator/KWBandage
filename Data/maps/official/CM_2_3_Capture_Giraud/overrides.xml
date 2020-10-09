@@ -91,7 +91,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="STRUCTURE_UNPACKING">
 					<Model
-						Name="GBPwrPlnt_ASN" />
+						Name="W3DContainer:GBPwrPlnt_ASN" />
 				</ModelConditionState>
 				<!-- DAMAGED -->
 				<ModelConditionState

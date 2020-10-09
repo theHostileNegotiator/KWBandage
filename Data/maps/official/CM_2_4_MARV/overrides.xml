@@ -1981,7 +1981,31 @@
 			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
 	</GameObject>
 
-
+<!--
+	<GameObject
+		id="NODMetaUnit"
+		inheritFrom="NODMetaUnit"
+		BuildCost="5000"
+		BuildTime="60">
+		<Behaviors>
+      <AttributeModifierAuraUpdate
+				id="ModuleTag_AttributeModifierAuraUpdate"
+		    xai:joinAction="Append"
+				AttributeModifierName="Mammoth_AmmoPacks"
+				RefreshDelay="0.4s"
+				Range="10"
+				InitiallyActive="true"
+        AllowSelf="true">
+					<ObjectFilter
+						Rule="ALL"
+						Relationship="SAME_PLAYER"
+						Include="METAUNIT">
+					</ObjectFilter>
+      </AttributeModifierAuraUpdate>
+		</Behaviors>
+	</GameObject>
+-->
+	
 <!-- Changed Mission Specific AttributeModifier as it Nerfed ROF rather than buff -->
 	<GameObject
 		id="NODMetaUnit"
