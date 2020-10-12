@@ -407,7 +407,7 @@
 			<ObjectSpecificEntry
 				Sound="AudioEvent:GDI_Rig_VoiceCreate"
 				AudioType="voiceCreatedFrom"
-				TargetObject="GDIWarFactory" />
+				TargetObject="ZOCOMWarFactory" />
 			<!-- Safety in case we do this in some campaign mission -->
 			<ObjectSpecificEntry
 				Sound="AudioEvent:GDI_Rig_VoiceCreate"
