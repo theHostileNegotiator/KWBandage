@@ -279,8 +279,8 @@
 	* Increased Battle Base cannons ROF and decreased damage to better represent current Guardian Cannon
 5. Railgun Rate of Fire
 	* Rate of Fire reduced and damage increased due to Guardian Cannon changes
-6. Subfaction Rigs when trained from their respective Warfactory would have the Created voice line delayed.
-	* Unit Voice Array had ObjectSpecificEntry for when unit is created from Warfactory. All referenced GDI Warfactory. Changed to reference their own Warfactory.
+6. Subfaction Rigs when trained from their respective Warfactory would have the Created voice line delayed. Additionally, all built from the Reclamation Hub suffer the same problem
+	* Unit Voice Array had ObjectSpecificEntry for when unit is created from Warfactory. All referenced GDI Warfactory. Changed to reference their own Warfactory and added the Reclamation Hub SpecificEntry for each faction.
 #### Slingshot
 1. There are no unique tracers for Heroic level when using Tungsten Shells
 	* Created and added tracers for Heroic Tungsten

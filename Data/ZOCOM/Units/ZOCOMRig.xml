@@ -408,6 +408,11 @@
 				Sound="AudioEvent:GDI_Rig_VoiceCreate"
 				AudioType="voiceCreatedFrom"
 				TargetObject="ZOCOMWarFactory" />
+			<!-- Triggered when built from Reclamation Hub -->
+			<ObjectSpecificEntry
+				Sound="AudioEvent:GDI_Rig_VoiceCreate"
+				AudioType="voiceCreatedFrom"
+				TargetObject="MG_ZOCOM_ReclamatorHub" />
 			<!-- Safety in case we do this in some campaign mission -->
 			<ObjectSpecificEntry
 				Sound="AudioEvent:GDI_Rig_VoiceCreate"
