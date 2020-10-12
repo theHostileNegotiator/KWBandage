@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed RailGun Upgrade Sounds-->
-<!--Added Heroic Tungsten Tracers-->
-<!--Added EMP Animation-->
+<!-- Removed RailGun Upgrade Sounds -->
+<!-- Added Heroic Tungsten Tracers -->
+<!-- Added EMP Animation -->
+<!-- Removed Particle System Hover Dust Effect when Destroyed -->
 	<Includes>
 		<Include type="all" source="ART:GUAATank_LOWA.w3x" />
 		<Include type="all" source="ART:FXTracerTungstenHeroic.xml" />
@@ -58,26 +59,26 @@
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
 						Name="GUAAtank_SKN" />
-						<WeaponFireFXBone
-							WeaponSlotID="1"
-							WeaponSlotType="PRIMARY_WEAPON"
-							BoneName="BONE_WEAPON" />
-						<WeaponRecoilBone
-							WeaponSlotID="1"
-							WeaponSlotType="PRIMARY_WEAPON"
-							BoneName="BONE_BARREL" />
-						<WeaponMuzzleFlash
-							WeaponSlotID="1"
-							WeaponSlotType="PRIMARY_WEAPON"
-							BoneName="FXMUZZLEFLASH" />
-						<WeaponLaunchBone
-							WeaponSlotID="1"
-							WeaponSlotType="PRIMARY_WEAPON"
-							BoneName="BONE_WEAPON" />
-						<Turret
-							TurretNameKey="BONE_TURRET"
-							TurretPitch="BONE_PITCH"
-							TurretID="1" />
+					<WeaponFireFXBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="BONE_WEAPON" />
+					<WeaponRecoilBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="BONE_BARREL" />
+					<WeaponMuzzleFlash
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXMUZZLEFLASH" />
+					<WeaponLaunchBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="BONE_WEAPON" />
+					<Turret
+						TurretNameKey="BONE_TURRET"
+						TurretPitch="BONE_PITCH"
+						TurretID="1" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -157,6 +158,12 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT"
 					Skeleton="">
+					<Model
+						Name="" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
 					<Model
 						Name="" />
 				</ModelConditionState>

@@ -291,6 +291,8 @@
 4. SkirmishAIInformation ConquerMetricsOverrideAntiMask
 	* Changed ConquerMetricsOverrideAntiMask from ANTI_GROUND to ANTI_AIRBORNE_VEHICLE and ANTI_AIRBORNE_INFANTRY
 		* Changed WeaponCategory to MISSILE to lessen priority against Infantry and increase priority against Air units.
+5. When destroyed, unit still had Hover Dust Effect.
+	* Added DYING Model Condition State to have no Particle Systems.
 #### Shatterer
 1. AI will not use the Unit
 	* Added ConquerMetricsOverride for DPS and Damage Type to 300 and CANNON
