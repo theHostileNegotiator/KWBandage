@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed RailGun Upgrade Sounds-->
-<!--Added AI Override for DPS like with Sonic Emitter (1000/(0.1+2+1.2))-->
+<!-- Removed RailGun Upgrade Sounds -->
+<!-- Added AI Override for DPS like with Sonic Emitter (1000/(0.1+2+1.2)) -->
+<!-- Normalised Sink Delay when destroyed -->
+<!-- Fixed Destroyed Animation not playing -->
+<!-- Removed now redundant bones due to Zone Shatterer having it's own Skeleton. Also removed unnecessary animation channels -->
+	<Includes>
+		<Include type="all" source="ART:GUShatterer_ACCA.w3x" />
+		<Include type="all" source="ART:GUShatterer_ATKA.w3x" />
+		<Include type="all" source="ART:GUShatterer_DECA.w3x" />
+		<Include type="all" source="ART:GUShatterer_DIEA.w3x" />
+		<Include type="all" source="ART:GUShatterer_IDLA.w3x" />
+		<Include type="all" source="ART:GUShatterer_LOWA.w3x" />
+		<Include type="all" source="ART:GUShatterer_MOVA.w3x" />
+		<Include type="all" source="ART:GUShatterer_TRLA.w3x" />
+		<Include type="all" source="ART:GUShatterer_TRRA.w3x" />
+	</Includes>
 	<GameObject
 		id="GDISonicTank"
 		SelectPortrait="Portrait_SonicTank"
@@ -91,7 +105,19 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="" />
+						Name="GUShatterer_R" />
+					<ParticleSysBone
+						BoneName="FX_Fire02"
+						FXParticleSystemTemplate="GDIDebrisSmallFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_Fire02"
+						FXParticleSystemTemplate="GDIDebrisSmallFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_Fire02"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="true" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -185,25 +211,14 @@
 					<Model
 						Name="" />
 				</ModelConditionState>
+				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="GUShatterer_R" />
-					<ParticleSysBone
-						BoneName="FX_Fire02"
-						FXParticleSystemTemplate="GDIDebrisSmallFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_Fire02"
-						FXParticleSystemTemplate="GDIDebrisSmallFireDistortion"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_Fire02"
-						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
-						FollowBone="true" />
+						Name="" />
 				</ModelConditionState>
-
+				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="PASSENGER">
@@ -359,9 +374,9 @@
 				id="ModuleTag_Physics" />
 			<SlowDeath
 				id="ModuleTag_Death"
-				SinkDelay="0.5s"
-				SinkRate="2.5"
-				DestructionDelay="5s">
+				SinkDelay="3s"
+				SinkRate="2.0"
+				DestructionDelay="7s">
 				<OCL
 					Type="INITIAL">
 					<OCL>OCL_GDIShattererDebris</OCL>

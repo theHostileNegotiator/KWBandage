@@ -12,6 +12,7 @@
 		<Include type="all" source="GlobalData/ExperienceLevels.xml" />
 		<Include type="all" source="GlobalData/FXParticleSystem.xml" />
 		<Include type="all" source="GlobalData/FXList.xml" />
+		<Include type="all" source="GlobalData/Locomotor.xml" />
 		<Include type="all" source="GlobalData/LogicCommand.xml" />
 		<Include type="all" source="GlobalData/LogicCommandSet.xml" />
 		<Include type="all" source="GlobalData/ObjectCreationLists.xml" />

@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed RailGun Upgrade Sounds-->
-<!--Added AI Override for DPS like with Sonic Emitter (1000/(0.1+2+1.2))-->
-<!--Normalised Weapon Slot with standard Shatterer-->
+<!-- Removed RailGun Upgrade Sounds -->
+<!-- Added AI Override for DPS like with Sonic Emitter (1000/(0.1+2+1.2)) -->
+<!-- Normalised Sink Delay when destroyed -->
+<!-- Fixed Destroyed Animation not playing -->
+<!-- Normalised Weapon Slot with standard Shatterer -->
+<!-- Adjusted Locomotor so the top does not clip through the War Factory -->
+<!-- Improved model to use it's own Skeleton so the bones were aligned as the FX showed misalignment -->
+<!-- Removed now redundant bones due to Zone Shatterer having it's own Skeleton. Also removed unnecessary animation channels -->
+	<Includes>
+		<Include type="all" source="ART:GUStlShat_ACCA.w3x" />
+		<Include type="all" source="ART:GUStlShat_ATKA.w3x" />
+		<Include type="all" source="ART:GUStlShat_DECA.w3x" />
+		<Include type="all" source="ART:GUStlShat_DIEA.w3x" />
+		<Include type="all" source="ART:GUStlShat_IDLA.w3x" />
+		<Include type="all" source="ART:GUStlShat_LOWA.w3x" />
+		<Include type="all" source="ART:GUStlShat_MOVA.w3x" />
+		<Include type="all" source="ART:GUStlShat_SKN.w3x" />
+		<Include type="all" source="ART:GUStlShat_R.w3x" />
+		<Include type="all" source="ART:GUStlShat_TRLA.w3x" />
+		<Include type="all" source="ART:GUStlShat_TRRA.w3x" />
+	</Includes>
 	<GameObject
 		id="ZOCOMImprovedSonicTank"
 		inheritFrom="BaseVehicle"
@@ -35,7 +53,7 @@
 			Armor="GDISonicTankArmor"
 			DamageFX="VehicleDamageFX" />
 		<LocomotorSet
-			Locomotor="GDISonicTankLocomotor"
+			Locomotor="GDIImprovedSonicTankLocomotor"
 			Condition="NORMAL"
 			Speed="60.0" />
 		<SkirmishAIInformation
@@ -51,8 +69,12 @@
 					<Model
 						Name="GUStlShat_SKN" />
 					<WeaponFireFXBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="muzzlefxSteel01" />
 					<WeaponLaunchBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="muzzlefxSteel01" />
 					<Turret
 						TurretNameKey="Shatterer_cannon"
@@ -99,7 +121,19 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="" />
+						Name="GUStlShat_R" />
+					<ParticleSysBone
+						BoneName="FX_Fire02"
+						FXParticleSystemTemplate="GDIDebrisSmallFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_Fire02"
+						FXParticleSystemTemplate="GDIDebrisSmallFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_Fire02"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="true" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -114,7 +148,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="AFFECTED_BY_EMP">
 					<Animation
-						AnimationName="GUSHATTERER_LOWA"
+						AnimationName="GUStlShat_LOWA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="15" />
 					<FXEvent
@@ -138,7 +172,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="PASSENGER">
 					<Animation
-						AnimationName="GUSHATTERER_LOWA"
+						AnimationName="GUStlShat_LOWA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>
@@ -146,7 +180,7 @@
 					ParseCondStateType="PARSE_DEFAULT">
 					<Animation
 						AnimNickName="IDLA"
-						AnimationName="GUSHATTERER_IDLA"
+						AnimationName="GUStlShat_IDLA"
 						AnimationMode="LOOP"
 						AnimationSpeedFactorMin="0.9"
 						AnimationSpeedFactorMax="1.1" />
@@ -155,7 +189,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="TURN_LEFT">
 					<Animation
-						AnimationName="GUSHATTERER_TRLA"
+						AnimationName="GUStlShat_TRLA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="15" />
 				</AnimationState>
@@ -163,7 +197,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="TURN_RIGHT">
 					<Animation
-						AnimationName="GUSHATTERER_TRRA"
+						AnimationName="GUStlShat_TRRA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="15" />
 				</AnimationState>
@@ -171,7 +205,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="ACCELERATE">
 					<Animation
-						AnimationName="GUSHATTERER_ACCA"
+						AnimationName="GUStlShat_ACCA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="15" />
 				</AnimationState>
@@ -179,7 +213,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DECELERATE">
 					<Animation
-						AnimationName="GUSHATTERER_DECA"
+						AnimationName="GUStlShat_DECA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="15" />
 				</AnimationState>
@@ -187,7 +221,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING">
 					<Animation
-						AnimationName="GUSHATTERER_MOVA"
+						AnimationName="GUStlShat_MOVA"
 						AnimationMode="LOOP"
 						AnimationBlendTime="15" />
 				</AnimationState>
@@ -195,7 +229,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_A">
 					<Animation
-						AnimationName="GUSHATTERER_ATKA"
+						AnimationName="GUStlShat_ATKA"
 						AnimationMode="LOOP"
 						AnimationBlendTime="5" />
 				</AnimationState>
@@ -204,7 +238,7 @@
 					ConditionsYes="SPECIAL_WEAPON_ONE"
 					Flags="START_FRAME_FIRST">
 					<Animation
-						AnimationName="GUSHATTERER_ATKA"
+						AnimationName="GUStlShat_ATKA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="15" />
 					<FXEvent
@@ -224,25 +258,14 @@
 					<Model
 						Name="" />
 				</ModelConditionState>
+				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="GUStlShat_R" />
-					<ParticleSysBone
-						BoneName="FX_Fire02"
-						FXParticleSystemTemplate="GDIDebrisSmallFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_Fire02"
-						FXParticleSystemTemplate="GDIDebrisSmallFireDistortion"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_Fire02"
-						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
-						FollowBone="true" />
+						Name="" />
 				</ModelConditionState>
-
+				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="PASSENGER">
@@ -352,9 +375,9 @@
 				id="ModuleTag_Physics" />
 			<SlowDeath
 				id="ModuleTag_Death"
-				SinkDelay="0.5s"
-				SinkRate="2.5"
-				DestructionDelay="5s">
+				SinkDelay="3s"
+				SinkRate="2.0"
+				DestructionDelay="8s">
 				<OCL
 					Type="INITIAL">
 					<OCL>OCL_SteelTalonsSteelShattererDebris</OCL>

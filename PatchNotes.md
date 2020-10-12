@@ -297,12 +297,30 @@
 1. AI will not use the Unit
 	* Added ConquerMetricsOverride for DPS and Damage Type to 300 and CANNON
 		* This may be due to the AI not recognising the damage from LinearDamageUpdate Sweep weapon as this was done with the Sonic Emitter.
+2. Unit does not play Death animation when destroyed
+	* Swapped the DYING Model Condition State between TankDraw and ScriptedModelDraw. Will now play animation.
+		* The DYING Model Condition State with the Rubble model was used in the Particle Effects ScriptedModelDraw instead of the TankDraw. The Model Condition States in the TankDraw defined no model.
+		* Normalised SlowDeath Parameters with a 3 second delay.
+3. Animations
+	* All animations adjusted the location and orientation of damage fire FX bones insignificantly. Removed unecessary Channels relating to such bones in all animations
 #### Zone Shatterer
 1. AI will not use the Unit
 	* Added ConquerMetricsOverride for DPS and Damage Type to 300 and CANNON
 		* This may be due to the AI not recognising the damage from LinearDamageUpdate Sweep weapon as this was done with the Sonic Emitter.
-2. Weapon Slots had different parameters and behaviours to GDI Shatterer
+2. Unit does not play Death animation when destroyed
+	* Swapped the DYING Model Condition State between TankDraw and ScriptedModelDraw. Will now play animation.
+		* The DYING Model Condition State with the Rubble model was used in the Particle Effects ScriptedModelDraw instead of the TankDraw. The Model Condition States in the TankDraw defined no model.
+		* Normalised SlowDeath Parameters with a 3 second delay.
+3. Animations
+	* All animations adjusted the location and orientation of damage fire FX bones insignificantly. Removed unecessary Channels relating to such bones in all animations
+4. Weapon Slots had different parameters and behaviours to GDI Shatterer
 	* Normalised weapon slot parameters and behaviours
+5. Many FX attached to the unit appear higher than they should.
+	* Created new skeleton that aligned the bones with the mesh.
+		* The Zone Shatterer mesh was lowered as it was too tall for the Warfactory but still shared the standard Shatterer skeleton which meant every bone was higher than it was supposed to be (even the bones made specifically for the Zone Shatterer)
+		* Removed Shatterer bones from Zone Shatterer skeleton and vice versa
+6. Unit clips through the Warfactory as it accelerates and leans forward (despite already being lowered for this reason).
+	* Created new Locomotor specific for the Zone Shatterer reducing the ForwardAccelerationPitchFactor and increasing PitchDamping.
 #### Mammoth Tank
 1. If playing with Low model LOD setting, uses Low LOD model. Adaptive armor uses High LOD model
 	* Added Low LOD model for Adaptive Armor
