@@ -192,7 +192,7 @@
 5. Pulse Scanner idle animation is unused
 	* Added Idle Animation to GameObject, the antennae will spin around
 		* Exist in Worldbuilder stream, has to be recompiled in map
-		* May try to find a way to have it target nearby units as the model Hierarchy hints at this
+		* May try to find a way to have it target nearby units as the model Skeleton hints at this
 #### A Grand Gesture...
 1. Nod Soldier Dialog commenting on GDI Tiberium Lab was not triggered due to object the sound would come from does not exist
 	* Reassigned object Nod Soldier Dialog would speak out of (MCV)
@@ -324,8 +324,8 @@
 5. Railgun distortion effect override each other. Therefore if more than one railgun module is firing, only the latest shot will have a distortion effect.
 	* Added new Weapons, Laser Draws and Laser States.
 #### Orca
-1. When playing with Low LOD settings, Wings and Sensor Pod subobject is missing
-	* Fixed subobject bone reference for Sonic Cannon. In the Hierarchy system, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden
+1. When playing with Low LOD settings, Wings and Sensor Pod subobjects are missing
+	* Fixed subobject bone reference for Sonic Cannon. In the Skeleton, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden
 #### Hammerhead
 1. Will not prioritise infantry over other units
 	* Changed Weapon Category from NONE to GUN
@@ -411,7 +411,6 @@
 #### Railgun Accelerator
 1. Railgun Accelerator effect on the railgun is bugged with all units either not displaying properly or at all
 	* Instead of using Animations, Scripts are used
-		* Guardian Cannon Railgun meshs were renamed to match other units
 
 ### Nod:
 
@@ -550,7 +549,7 @@
 4. Tiberium Trooper module cannot attack while unit is moving
 	* Allowed weapon to attack while unit is moving
 #### Vertigo Bomber
-1. Stealth Model uses it's own Hierarchy instead of the standard version, despite sharing animations
+1. Stealth Model uses it's own Skeleton instead of the standard version, despite sharing animations
 	* Changed Container and Mesh to refer to the standard version like the Stealth Tank
 2. Stealth Model does not include the Disruption Pod attachment, making the effect seem incomplete
 	* Added Disruption Pod Mesh to Stealth Model
@@ -569,7 +568,7 @@
 1. Models are bugged, mainly in regards to the turret sections
 	* Fixed models vertices and bone influences (Thanks OpenSAGE Blender Plugin)
 2. Bones between Standard Hub and Quad Turret Hubs have discrepancy, missing important bones such as StealthDetector
-	* Fixed Bones, Unupgraded Hub and Quad Turret Hub uses the same Hierarchy per turret type.
+	* Fixed Bones, Unupgraded Hub and Quad Turret Hub uses the same Skeleton per turret type.
 #### Shredder Turret
 1. If using Nod Shredder Turret and Black Hand Tech Center, upgrade Charged Particle Beams, the Nod Shredder Turret will be upgraged
 	* Removed Upgrade for Nod Shredder Turret
@@ -716,16 +715,16 @@
 4. Traveler Engine will flash unit starts moving
 	* Traveler Engines will show when Accelerating.
 		* The FX are not supposed to show until it reaches top speed but unfortunately this is the best workaround at the moment
-5. Ion Model Hierarchy
-	* Ion model will now refer to the base Hierarchy (AUDevWar_SKL) rather than it's own (AUDevWarIon)
+5. Ion Model Skeleton
+	* Ion model will now refer to the base Skeleton (AUDevWar_SKL) rather than it's own (AUDevWarIon)
 #### Planetary Assault Carrier
 1. Unit when under Ion Storm does not show Traveler Engines
 	* Added Traveler Engine to the model
 2. Traveler Engine will flash when unit starts moving
 	* Traveler Engines will show when Accelerating.
 		* The FX are not supposed to show until it reaches top speed but unfortunately this is the best workaround at the moment
-3. Ion Model Hierarchy
-	* Ion model will now refer to the base Hierarchy (AUPACarrier_SKL) rather than it's own (AUPACarrierIon)
+3. Ion Model Skeleton
+	* Ion model will now refer to the base Skeleton (AUPACarrier_SKL) rather than it's own (AUPACarrierIon)
 4. Fighters use different textures when under Ion Storm
 	* Changed textures to match default
 #### Attenuated Forcefield

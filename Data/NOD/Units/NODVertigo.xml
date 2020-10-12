@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- Changed so it uses only one model between no upgrades and upgrade -->
-<!-- Adjusted Stealth Model so it includes the Disruption Pod upgrade attachment and so it shares Hierarchy with the base model -->
+<!-- Adjusted Stealth Model so it includes the Disruption Pod upgrade attachment and so it shares Skeleton with the base model -->
 	<Tags></Tags>
 	<Includes>
 		<Include
