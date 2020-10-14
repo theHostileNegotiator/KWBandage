@@ -171,6 +171,34 @@
 	* Redesign Campaign AI
 2. Multiplayer AI was not adjusted for KW 1.01 and 1.02 new economy
 	* Redesign Multiplayer AI
+#### Multiplayer Maps
+1. Some Maps do not spawn Crates when Multiplayer game has Add Random Crates enabled
+	* Added GenericCrateSpawner object to each map that is missing said object
+		* Maps Affected
+			* Tiber River Valley (MAP_MP_2_BLACK8)
+			* Top Gun (MAP_MP_2_BLACK11)
+			* Tournament Coastline (MAP_MP_2_CHUCK1)
+			* Tournament Decision(BAMAP_DC05_2)
+			* Tournament Rift (MAP_MP_2_WILL1)
+			* Split Decision (BAMAP_DC05_3)
+			* Suburban Slaughterhouse (BAMAP_EW09_03)
+			* Tundra Triangle (BAMAP_KK03_3)
+			* Arid Remains (BAMAP_DC06_4)
+			* Coastline Chaos (MAP_MP_4_CHUCK1)
+			* Eastern Promises (BAMAP_EW08_04)
+			* Empire City (BAMAP_DC11_4)
+			* Heaven and Hell (BAMAP_RH01_4)
+			* Missed Opportunity (BAMAP_SB01_4)
+			* Mountains of Madness (BAMAP_DC07_4)
+			* Murderers Row (BAMAP_DC10_4)
+			* Oasis Onslaught (BAMAP_EW03_04)
+			* Safety Nest (BAMAP_EW05_04)
+			* Shell Shocked (BAMAP_EW06_04)
+			* Unsound Investment (BAMAP_EW01_4)
+			* Urban Blight (BAMAP_EW07_04)
+			* Isthmus of Insanity (BAMAP_EW11_05)
+			* Dark Waters (BAMAP_JF03_6)
+			* Tiberium Wasteland (BAMAP_EW10_06)
 	
 ### Campaign
 
