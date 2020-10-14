@@ -175,6 +175,8 @@
 1. Some Maps do not spawn Crates when Multiplayer game has Add Random Crates enabled
 	* Added GenericCrateSpawner object to each map that is missing said object
 		* Maps Affected
+			* Decrepit Arena (MAP_MP_2_BLACK2_redzoned)
+			* Gunship Gauntlet (MAP_MP_2_BLACK11_redzoned)
 			* Tiber River Valley (MAP_MP_2_BLACK8)
 			* Top Gun (MAP_MP_2_BLACK11)
 			* Tournament Coastline (MAP_MP_2_CHUCK1)
