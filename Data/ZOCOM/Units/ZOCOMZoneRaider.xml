@@ -91,6 +91,11 @@
 					<Model
 						Name="FXInfantry_FP" />
 				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<!-- no anim -->
+				</AnimationState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="INSIDE_GARRISON">
@@ -106,11 +111,6 @@
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="INSIDE_GARRISON">
-					<!-- no anim -->
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FORMATION_PREVIEW">
 					<!-- no anim -->
 				</AnimationState>
 				<!-- IDLE STATES -->

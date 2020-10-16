@@ -6,6 +6,7 @@
 		<Include type="all" source="Units/Reaper17Assimilator.xml" />
 		<Include type="all" source="Units/Reaper17Buzzers.xml" />
 		<Include type="all" source="Units/Reaper17CustomizableVehicle.xml" />	
+		<Include type="all" source="Units/Reaper17Corrupter.xml" />	
 		<Include type="all" source="Units/Reaper17EradicatorHexapod.xml" />	
 		<Include type="all" source="Units/Reaper17Harvester.xml" />	
 		<Include type="all" source="Units/Reaper17MillipedeBody.xml" />	
@@ -24,6 +25,7 @@
 		<Include type="all" source="structures/Reaper17DronePlatform.xml" />
 		<Include type="all" source="structures/Reaper17Foundry.xml" />
 		<Include type="all" source="structures/Reaper17Gateway.xml" /> <!-- Assembler -->
+		<Include type="all" source="structures/Reaper17GrowthStimulator.xml" />
 		<Include type="all" source="structures/Reaper17PlasmaMissileBattery.xml" />
 		<Include type="all" source="structures/Reaper17Portal.xml" />
 		<Include type="all" source="structures/Reaper17PowerProjector.xml" /> <!-- Power Plant -->

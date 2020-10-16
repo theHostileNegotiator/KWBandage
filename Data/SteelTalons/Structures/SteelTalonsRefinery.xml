@@ -530,6 +530,36 @@
 				AddConditionFlags="USER_1">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
 			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_NODFaction"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_BlackHandFaction"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_MarkedOfKaneFaction"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_AlienFaction"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_Reaper17Faction"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_Traveler59Faction"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</ModelConditionUpgrade>
 			<QueueProductionExitUpdate
 				id="ModuleTag_Exit">
 				<UnitCreatePoint

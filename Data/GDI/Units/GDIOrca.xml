@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--Added sounds for Hardpoints upgrade-->
-<!--Low LOD will now show wings and sensor pod subobjects when upgraded-->
+<!-- Added sounds for Hardpoints upgrade -->
+<!-- Low LOD will now show wings and sensor pod subobjects when upgraded -->
+<!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:GUOrca_SKN.w3x" />
@@ -253,7 +254,7 @@
 			</ScriptedModelDraw>
 			<ScriptedModelDraw
 				id="ModuleTag_FX_Rfan"
-				AttachToBoneInAnotherModule="FX_Lfan">
+				AttachToBoneInAnotherModule="FX_Rfan">
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="NONE">
@@ -358,6 +359,7 @@
 						ObjectStatus="WEAPON_UPGRADED_01" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
+			
 			<ModelConditionUpgrade
 				id="ModuleTag_ShowThePlating"
 				Permanent="true"
@@ -376,6 +378,43 @@
 				AddConditionFlags="USER_1">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
 			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingNOD"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingBlackHand"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingMarkedOfKane"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingAlien"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingReaper17"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingTraveler59"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			
       <!-- gravity mult of 30 is temporary -->
 			<Physics
 				id="ModuleTag_07"

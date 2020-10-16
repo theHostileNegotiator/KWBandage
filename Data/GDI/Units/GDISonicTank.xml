@@ -4,6 +4,7 @@
 <!-- Added AI Override for DPS like with Sonic Emitter (1000/(0.1+2+1.2)) -->
 <!-- Normalised Sink Delay when destroyed -->
 <!-- Fixed Destroyed Animation not playing -->
+<!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
 <!-- Removed now redundant bones due to Zone Shatterer having it's own Skeleton. Also removed unnecessary animation channels -->
 	<Includes>
 		<Include type="all" source="ART:GUShatterer_ACCA.w3x" />
@@ -416,6 +417,7 @@
 				AddConditionFlags="USER_5">
 				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
 			</ModelConditionUpgrade>
+			
 			<ModelConditionUpgrade
 				id="ModuleTag_ShowThePlating"
 				Permanent="true"
@@ -433,7 +435,44 @@
 				Permanent="true"
 				AddConditionFlags="USER_1">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
-			</ModelConditionUpgrade>      
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingNOD"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingBlackHand"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingMarkedOfKane"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingAlien"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingReaper17"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingTraveler59"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			
 		</Behaviors>
 		<AI>
 			<AIUpdate

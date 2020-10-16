@@ -63,6 +63,7 @@
 			* GDI Shatterer (- Railgun)
 			* GDI/ST Orca (+ Hardpoints)
 			* GDI/ST Firehawk (+ Hardpoints)
+			* ST Rifleman (- Composite Armor)
 			* ST Grenadier (- Composite Armor, - EMP Grenades)
 			* ZOCOM Shatterer (- Railgun)
 			* ZOCOM Rifleman (+ Tiberium Field Suits)
@@ -113,6 +114,34 @@
 			* BH Black Disciple (150 to 10)
 			* Scrin/R17/T59 Ravager (333 to 400)
 			* Scrin/R17/T59 Mechapede Body (1400 to 100)
+#### Captured Technology
+1. Tiberium Based objects could not be targeted by the Ravagers Agitation ability if technology was captured and built by a different faction
+	* Units are given a StatusBitUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
+		* Objects Affected
+			* Tiberium Trooper
+			* Tiberium Chemical Plant
+			* Corrupter
+			* Growth Accelerator
+			* Growth Stimulator
+2. Some units do not show Dust Hover effect if technology was captured and built by a different faction
+	* Units are given a ModelConditionUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
+		* Objects Affected
+			* Slingshot
+			* Shatterer
+			* Zone Shatterer
+			* Orca
+			* ZOCOM Orca
+			* Hammerhead
+3. GDI, Steel Talons and ZOCOM units when upgraded with AP Ammo or Tungsten Shell and is not Heroic, weapon will shoot both AP Ammo and Heroic AP Ammo tracers if technology was captured and built by a different faction.
+	* Units are given a StatusBitUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
+4. GDI, Steel Talons and ZOCOM Refinery and Reclamation Hub will not generate Tiberium Smoke if technology was captured and built by a different faction.
+	* Units are given a ModelConditionUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
+5. Black Hand Units will not get the bonus veterancy if technology was captured and built by a different faction
+	* Units are given a LevelUpUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
+6. Zone Trooper cannot be targeted by Railgun Accelerator if technology was captured and built by a different faction
+	* Unit is given a StatisBitUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
+7. Black Hand Flame Tanks will not display the flames when firing if technology was captured and built by a different faction.
+	* Unit is given a ModelConditionUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
 #### Sonic Repulsion Field and Laser Fencing
 1. Structures when entering DAMAGED state (66%) removes the Support Power which would suggest that the upgrade cannot be applied. However the upgrade can be applied at state, but will not display.
 	* Removed ability to be able to apply to damaged structures
@@ -378,6 +407,8 @@
 #### Orca
 1. When playing with Low LOD settings, Wings and Sensor Pod subobjects are missing
 	* Fixed subobject bone reference for Sonic Cannon. In the Skeleton, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden
+2. Jetwash effect only appears from the left thrusters
+	* Reassigned the right jetwash to the correct bone instead of the left thrusters.
 #### Hammerhead
 1. Will not prioritise infantry over other units
 	* Changed Weapon Category from NONE to GUN
@@ -779,6 +810,9 @@
 	* Ion model will now refer to the base Skeleton (AUPACarrier_SKL) rather than it's own (AUPACarrierIon)
 4. Fighters use different textures when under Ion Storm
 	* Changed textures to match default
+#### Growth Stimulator
+1. When selecting structure, it will sometimes play the Growth Accelerator select sound instead of the Stimulator select sound.
+	* Removed Growth Accelerator sound effects which was due to the Stimulator inheriting the Accelerator and not removing sounds.
 #### Attenuated Forcefield
 1. Scrin and Reaper 17 do not share upgrade, despite cost and time is identical
 	* Reaper 17 units and upgrade refer to Scrin shields

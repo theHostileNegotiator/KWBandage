@@ -4,6 +4,8 @@
 <!-- Added Heroic Tungsten Tracers -->
 <!-- Added EMP Animation -->
 <!-- Removed Particle System Hover Dust Effect when Destroyed -->
+<!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
+<!-- Added Status Upgrade WEAPON_UPGRADED_02 for missing factions for Non Veterancy -->
 	<Includes>
 		<Include type="all" source="ART:GUAATank_LOWA.w3x" />
 		<Include type="all" source="ART:FXTracerTungstenHeroic.xml" />
@@ -487,6 +489,37 @@
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
 			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_NODNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_BlackHandNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_MarkedOfKaneNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_AlienNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_Reaper17NoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_Traveler59NoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</StatusBitsUpgrade>
+			
 			<ModelConditionUpgrade
 				id="ModuleTag_ShowThePlating"
 				Permanent="true"
@@ -504,6 +537,42 @@
 				Permanent="true"
 				AddConditionFlags="USER_1">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingNOD"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingBlackHand"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingMarkedOfKane"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingAlien"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingReaper17"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingTraveler59"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
 			</ModelConditionUpgrade>
 			
 			<StatusBitsUpgrade

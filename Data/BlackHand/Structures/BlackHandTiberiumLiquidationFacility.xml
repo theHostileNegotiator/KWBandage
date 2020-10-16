@@ -297,7 +297,52 @@
 				id="ModuleTag_UpgradeLaserFencing"
 				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
-			</ModelConditionUpgrade>		
+			</ModelConditionUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_BlackHandStatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_GDIStatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_NODStatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_AlienStatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_SteelTalonsStatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_Reaper17StatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ZOCOMStatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_MarkedOfKaneStatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_Traveler59StatusForTibAgitation"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</StatusBitsUpgrade>
 			
 			<ArmorUpgrade
 				id="ModuleTag_NodLaserFencingArmorUpgrade"
@@ -350,11 +395,6 @@
 				CreationList="OCL_AdvancedBlackHandBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
-			<StatusBitsUpgrade
-				id="ModuleTag_ObjectStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
-			</StatusBitsUpgrade>	
 		</Behaviors>
 		<AI>
 			<AIUpdate

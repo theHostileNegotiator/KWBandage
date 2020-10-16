@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Scanner Packs now affects Weapon Range-->
-<!--Changed Build Cost-->
+<!-- Scanner Packs now affects Weapon Range -->
+<!-- Changed Build Cost -->
+<!-- Added Status Upgrade RIDER2 for missing factions for Railgun Accelerator -->
 	<GameObject
 		id="GDIZoneTrooper"
 		SelectPortrait="Portrait_GDIZoneTrooper"
@@ -69,6 +70,11 @@
 					<Model
 						Name="FXInfantry_FP" />
 				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<!-- no anim -->
+				</AnimationState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="INSIDE_GARRISON">
@@ -84,11 +90,6 @@
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="INSIDE_GARRISON">
-					<!-- no anim -->
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FORMATION_PREVIEW">
 					<!-- no anim -->
 				</AnimationState>
 				<!-- IDLE STATES -->
@@ -680,7 +681,48 @@
 				id="ModuleTag_ObjectStatusForRGA"
 				StatusToSet="RIDER2">
 				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
-			</StatusBitsUpgrade>			
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ObjectStatusForRGASteelTalons"
+				StatusToSet="RIDER2">
+				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ObjectStatusForRGAZOCOM"
+				StatusToSet="RIDER2">
+				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ObjectStatusForRGANOD"
+				StatusToSet="RIDER2">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ObjectStatusForRGABlackHand"
+				StatusToSet="RIDER2">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ObjectStatusForRGAMarkedOfKane"
+				StatusToSet="RIDER2">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ObjectStatusForRGAAlien"
+				StatusToSet="RIDER2">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ObjectStatusForRGAReaper17"
+				StatusToSet="RIDER2">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ObjectStatusForRGATraveler59"
+				StatusToSet="RIDER2">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</StatusBitsUpgrade>
+			
 			<AttributeModifierUpgrade
 				id="Upgrade_ScannerPack_02"
 				AttributeModifier="ZoneTrooper_ScannerPack">

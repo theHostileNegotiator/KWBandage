@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Added EMP Animation-->
+<!-- Added EMP Animation -->
+<!-- Added Status Upgrade WEAPON_UPGRADED_02 for missing factions for Non Veterancy -->
   <Tags></Tags>
 	<Includes>
 	</Includes>
@@ -694,9 +695,49 @@
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
 			</StatusBitsUpgrade>
 			<StatusBitsUpgrade
+				id="ModuleTag_GDINoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
 				id="ModuleTag_SteelTalonsNoVeterancyUpgrade"
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_ZOCOMNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_NODNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_BlackHandNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_MarkedOfKaneNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_AlienNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_Reaper17NoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_Traveler59NoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
 			</StatusBitsUpgrade>
 			<StatusBitsUpgrade
 				id="ModuleTag_VeterancyUpgrade"

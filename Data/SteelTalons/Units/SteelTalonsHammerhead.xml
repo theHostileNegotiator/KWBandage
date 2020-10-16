@@ -769,6 +769,7 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>	
+			
 			<ModelConditionUpgrade
 				id="ModuleTag_ShowThePlating"
 				Permanent="true"
@@ -787,6 +788,43 @@
 				AddConditionFlags="USER_1">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
 			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingNOD"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingBlackHand"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingMarkedOfKane"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingAlien"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingReaper17"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingTraveler59"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			
 			<HordeTransportContain
 				id="ModuleTag_Contain"
 				ObjectStatusOfContained="UNSELECTABLE ENCLOSED CAN_ATTACK"
@@ -872,23 +910,50 @@
 				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
 			</ModelConditionUpgrade>
 			
-			
 			<StatusBitsUpgrade
 				id="ModuleTag_GDINoVeterancyUpgrade"
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
 			</StatusBitsUpgrade>
-			
 			<StatusBitsUpgrade
 				id="ModuleTag_SteelTalonsNoVeterancyUpgrade"
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
 			</StatusBitsUpgrade>
-			
 			<StatusBitsUpgrade
 				id="ModuleTag_ZOCOMNoVeterancyUpgrade"
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_NODNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_BlackHandNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_MarkedOfKaneNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_AlienNoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_Reaper17NoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_Traveler59NoVeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
 			</StatusBitsUpgrade>
 			
 			<StatusBitsUpgrade
