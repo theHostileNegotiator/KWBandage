@@ -407,7 +407,7 @@
 #### Orca
 1. When playing with Low LOD settings, Wings and Sensor Pod subobjects are missing
 	* Fixed subobject bone reference for Sonic Cannon. In the Skeleton, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden
-2. Jetwash effect only appears from the left thrusters
+2. Exhaust effect only appears from the left thrusters
 	* Reassigned the right jetwash to the correct bone instead of the left thrusters.
 #### Hammerhead
 1. Will not prioritise infantry over other units

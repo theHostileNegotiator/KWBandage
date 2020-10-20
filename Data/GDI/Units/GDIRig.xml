@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Now displays Railgun gun after upgrade-->
-<!--Added upgrade sound for Railguns-->
+<!-- Now displays Railgun gun after upgrade -->
+<!-- Added upgrade sound for Railguns -->
+<!-- "Created" voice line won't be delayed when trained from the Reclamation Hub -->
 	<Tags></Tags>
 	<Includes>
 		<Include

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Marked Of Kane Tib Core Upgrade will now remove USER_16 Model Condition for Tib Agitation -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>

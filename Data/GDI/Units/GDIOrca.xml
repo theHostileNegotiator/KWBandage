@@ -3,6 +3,7 @@
 <!-- Added sounds for Hardpoints upgrade -->
 <!-- Low LOD will now show wings and sensor pod subobjects when upgraded -->
 <!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
+<!-- Exhaust effect now appears from both thrusters -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:GUOrca_SKN.w3x" />
