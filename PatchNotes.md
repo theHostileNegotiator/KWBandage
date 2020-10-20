@@ -324,6 +324,9 @@
 	* Normalised values with GDI Harvester
 3. ZOCOM Harvester had no unique Rubble Model, Debris and Damaged Textures, using GDI textures.
 	* Created new models for Rubble, Debris and created new textures.
+#### MCV
+1. Subfaction MCVs when trained from their respective Warfactory would have the Created voice line delayed. Additionally, all built from the Reclamation Hub suffer the same problem
+	* Unit Voice Array had ObjectSpecificEntry for when unit is created from Warfactory. All referenced GDI Warfactory. Changed to reference their own Warfactory and added the Reclamation Hub SpecificEntry for each faction.
 #### Wolverine
 1. Did not play a seperate animation when EMPed. Instead it continued to loop the animation it was in before EMP strike
 	* Other Mech units used the Bored animation. This technique was applied
@@ -585,6 +588,8 @@
 #### MCV
 1. MCV when unpacking does not have REALLYDAMAGED state
 	* Fixed typo "REALLY4D" therefore MCV will visually appear damaged when unpacking
+2. Subfaction MCVs when trained from their respective Warfactory would have the Created voice line delayed. Additionally, all built from the Redeemer Engineering Facility suffer the same problem
+	* Unit Voice Array had ObjectSpecificEntry for when unit is created from Warfactory. All referenced Nod Warfactory. Changed to reference their own Warfactory and added the Redeemer Engineering Facility SpecificEntry for each faction.
 #### Reckoner
 1. Destroyed Model is broken due to incorrect bone references. Additionally destroyed model it too clean
 	* Fixed bone references in model container and added noise modifier to model (Thanks Stygs, in particular the noise modifier)
@@ -782,9 +787,11 @@
 1. Disintegrator visual lasers override each other. Therefore if more than one laser is firing, only the latest shot laser will show.
 	* Added new Weapons, Laser Draws and Laser States.
 		* Added Heroic Laser Effects
-#### Drone Platform
-1. Subfaction Drone Platforms when undeploying have the ability to teleport with Mastermind and Prodigy or Phased with Phasefield ability. This was not present with Base Faction, even in Tiberium Wars
-	* Removed ability to target undeploying Drone Platforms
+#### Drone Ship
+1. Subfaction Drone Ships when undeploying have the ability to teleport with Mastermind and Prodigy or Phased with Phasefield ability. This was not present with Base Faction, even in Tiberium Wars
+	* Removed ability to target undeploying Drone Ships
+2. Subfaction Drone Ships when trained from their respective Gravity Stabilizer would have the Created voice line delayed.
+	* Unit Voice Array had ObjectSpecificEntry for when unit is created from Gravity Stabilizer. All referenced Scrin Gravity Stabilizer. Changed to reference their own Gravity Stabilizer.
 #### Stormrider
 1. Weapon has reduced damage applied to 'light' units, but not to sub faction units
 	* Added appropriate units to damage scalar

@@ -11,6 +11,7 @@
 		<Include type="all" source="Units/Reaper17Harvester.xml" />	
 		<Include type="all" source="Units/Reaper17MillipedeBody.xml" />	
 		<Include type="all" source="Units/Reaper17MillipedeHead.xml" />	
+		<Include type="all" source="Units/Reaper17MCV.xml" />
 		<Include type="all" source="Units/Reaper17RazorDrones.xml" />
 		<Include type="all" source="Units/Reaper17RazorDroneSquad.xml" />
 		<Include type="all" source="Units/Reaper17SeekerTank.xml" />

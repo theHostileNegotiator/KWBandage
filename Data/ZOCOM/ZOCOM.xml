@@ -13,6 +13,7 @@
 		<Include type="all" source="Units/ZOCOMHammerhead.xml" />
 		<Include type="all" source="Units/ZOCOMHarvester.xml" />
 		<Include type="all" source="Units/ZOCOMMARV.xml" />
+		<Include type="all" source="Units/ZOCOMMCV.xml" />
 		<Include type="all" source="Units/ZOCOMMissileSoldier.xml" />
 		<Include type="all" source="Units/ZOCOMOrca.xml" />
 		<Include type="all" source="Units/ZOCOMRifleSoldier.xml" />

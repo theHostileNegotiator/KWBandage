@@ -15,6 +15,7 @@
 		<Include type="all" source="Units/Traveler59Harvester.xml" />	
 		<Include type="all" source="Units/Traveler59MillipedeBody.xml" />	
 		<Include type="all" source="Units/Traveler59MillipedeHead.xml" />	
+		<Include type="all" source="Units/Traveler59MCV.xml" />	
 		<Include type="all" source="Units/Traveler59PlanetaryAssaultCarrier.xml" />	
 		<Include type="all" source="Units/Traveler59RazorDroneSquad.xml" />
 		<Include type="all" source="Units/Traveler59SeekerTank.xml" />

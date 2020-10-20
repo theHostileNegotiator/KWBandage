@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xai="uri:ea.com:eala:asset:instance">
 <!-- Fixed a typo for a ModelConditionState where a condition check was labeled as REALLY4D instead of REALLYDAMAGED -->
+<!-- "Created" voice line won't be delayed when trained from the Redeemer Engineering Facility -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -627,6 +628,11 @@
 				Sound="AudioEvent:NOD_MCV_VoiceCreate"
 				AudioType="voiceCreatedFrom"
 				TargetObject="NODDropZone" />
+			<!-- Triggered when built from Redeemer Engineering Facility -->
+			<ObjectSpecificEntry
+				Sound="AudioEvent:NOD_MCV_VoiceCreate"
+				AudioType="voiceCreatedFrom"
+				TargetObject="MG_NOD_WarmechFacility" />
 			<!-- Safety in case we do this in some campaign mission -->
 			<ObjectSpecificEntry
 				Sound="AudioEvent:NOD_MCV_VoiceCreate"

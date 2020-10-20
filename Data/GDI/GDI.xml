@@ -14,6 +14,7 @@
 		<Include type="all" source="Units/GDIJuggernaughtHusk.xml" />
 		<Include type="all" source="Units/GDIMammoth.xml" />
 		<Include type="all" source="Units/GDIMARV.xml" />
+		<Include type="all" source="Units/GDIMCV.xml" />
 		<Include type="all" source="Units/GDIOrca.xml" />
 		<Include type="all" source="Units/GDIPredator.xml" />
 		<Include type="all" source="Units/GDIRifleSoldier.xml" />
