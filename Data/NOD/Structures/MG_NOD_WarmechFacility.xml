@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Added LocalPlayerOnly to the Repair Decal Shadow so it can no longer be seen by other players -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -666,6 +667,7 @@
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"
+						LocalPlayerOnly="true"
 						Texture="Decal_Rig_CO" 
 					/>
 				</ModelConditionState>

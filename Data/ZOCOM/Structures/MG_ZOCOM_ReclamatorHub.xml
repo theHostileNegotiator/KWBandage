@@ -361,6 +361,7 @@
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"
+						LocalPlayerOnly="true"
 						Texture="Decal_Rig_CO"
 					/>
 				</ModelConditionState>
