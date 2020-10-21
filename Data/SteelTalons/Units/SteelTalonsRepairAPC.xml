@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--ZOCOM and Veteran Snipers can now spot for bombard when Garrisoned-->
-<!--Repair Decal Size Changed-->
-<!--Removed Move to Evacuate Ability in favour of evacuate infantry-->
-<!--Increased speed to match APC (TW1.05)-->
-<!--Removed Turret Bone reference-->
+<!-- ZOCOM and Veteran Snipers can now spot for bombard when Garrisoned -->
+<!-- Repair Decal Size Changed -->
+<!-- Added LocalPlayerOnly to the Repair Decal Shadow so it can no longer be seen by other players -->
+<!-- Removed Move to Evacuate Ability in favour of evacuate infantry -->
+<!-- Increased speed to match APC (TW1.05) -->
+<!-- Removed Turret Bone reference -->
 	<GameObject
 		id="SteelTalonsRepairAPC"
 		SelectPortrait="Portrait_RepairAPC"
@@ -149,6 +150,7 @@
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"
+						LocalPlayerOnly="true"
 						Texture="Decal_Rig_CO" 
 					/>
 				</ModelConditionState>
@@ -195,8 +197,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic"
-				/>
+				StanceTemplate="Generic" />
 			<LevelUpUpgrade
 				id="ModuleTag_LevelUpUpgrade_Veteran"
 				LevelCap="4"

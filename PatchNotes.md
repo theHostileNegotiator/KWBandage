@@ -312,6 +312,8 @@
 8. Unit cannot be ordered to target an object, even when units are garrisoned
 	* Added a weapon template, unit can be ordered to target and enter into range
 		* Removed Turret Bone references in GameObject
+9. Players that do not own the unit can see the repair decal when selected by the owner
+	* Set the decal to only be seen by the Local Player
 #### Titan
 1. Units limping animation is used in the DAMAGED state (Below 66% health)
 	* Decided to remove it so it would only be used in the REALLYDAMAGED state (Below 33% health)
@@ -669,6 +671,8 @@
 	* Removed flag
 2. Structure when sold or destroyed are not supposed to create an Infantry squad. However subfaction structures generates units.
 	* Removed OCL from subfaction structures
+3. Players that do not own the structure can see the propaganda decal when selected by the owner
+	* Set the decal to only be seen by the Local Player
 #### Air Support Tower
 1. Online Games causes desyncs when Structure is created
 	* Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs
