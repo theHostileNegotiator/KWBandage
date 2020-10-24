@@ -16,6 +16,8 @@
 		<Include type="all" source="Units/SteelTalonsOrca.xml" />
 		<Include type="all" source="Units/SteelTalonsRepairAPC.xml" />
 		<Include type="all" source="Units/SteelTalonsRifleSoldier.xml" />
+		<Include type="all" source="Units/SteelTalonsRifleSoldierSquad.xml" />
+		<Include type="all" source="Units/SteelTalonsRifleSoldierSquad_Veteran.xml" />
 		<Include type="all" source="Units/SteelTalonsRig.xml" />
 		<Include type="all" source="Units/SteelTalonsTitan.xml" />
 		<Include type="all" source="Units/SteelTalonsV350x_Summoned.xml" />

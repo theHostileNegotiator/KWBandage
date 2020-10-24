@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Refer to GDI Rifleman -->
 <!-- Removed Composite Armor Upgrade Sounds -->
+<!-- Removed Composite Armor Upgrade in Global Conquest -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
