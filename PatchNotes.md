@@ -769,6 +769,10 @@
 	* Removed ability to teleport Drone Ships
 3. AI does not use Area Mind Control
 	* AI will now use Area Mind Control on ground units
+#### Shard Walker
+1. Cannot fire while moving unlike the Gun Walker
+	* Added CanFireWhileMoving parameter and an Acceptable Aim Delta of 10 degrees and updated Turret Data
+		* This was an undocumented change for TW 1.05
 #### Seeker
 1. Will prioritise infantry over aircraft or vehicles
 	* Changed Weapon Category from GUN to MISSILE

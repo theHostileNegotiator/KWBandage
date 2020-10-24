@@ -787,6 +787,66 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- Weapon can now fire while moving and be able to shoot at a slight angle from forward like the Gun Walker (TW 1.05) -->	
+	<WeaponTemplate
+		id="AlienShardWalkerWeapon"
+		Name="AlienShardWalkerWeapon"
+		AttackRange="300.0"
+		WeaponSpeed="500.0"
+		FireSound="Multisound:ALI_GunWalker_ShardWeaponFireMS"
+		FireFX="FX_AlienTibShardFire"
+		FireVeteranFX="FX_AlienTibShardFireHeroic"
+		ClipSize="5"
+		CanFireWhileMoving="true"
+		AcceptableAimDelta="10d"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
+		<FiringDuration
+			MinSeconds="0.4s"
+			MaxSeconds="0.4s" />
+		<ClipReloadTime
+			MinSeconds="0.5s"
+			MaxSeconds="0.6s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibShardProjectile"
+				WarheadTemplate="AlienShardWalkerWeaponWarhead">
+				<VeterancyProjectiles
+					VeterancyLevel="HEROIC"
+					ProjectileTemplate="AlienTibShardProjectile_Veteran"/>
+			</ProjectileNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="AlienShardWalkerBlueShardWeapon"
+		Name="AlienShardWalkerBlueShardWeapon"
+		AttackRange="300.0"
+		WeaponSpeed="500.0"
+		FireSound="Multisound:ALI_GunWalker_BlueShardWeaponFireMS"
+		FireFX="FX_AlienTibShardFireBlue"
+		FireVeteranFX="FX_AlienTibShardFireHeroic"
+		ClipSize="5"
+		CanFireWhileMoving="true"
+		AcceptableAimDelta="10d"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
+		<FiringDuration
+			MinSeconds="0.4s"
+			MaxSeconds="0.4s" />
+		<ClipReloadTime
+			MinSeconds="0.5s"
+			MaxSeconds="0.6s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="AlienBlueShardProjectile"
+				WarheadTemplate="AlienShardWalkerBlueShardWeaponWarhead">
+				<VeterancyProjectiles
+					VeterancyLevel="HEROIC"
+					ProjectileTemplate="AlienBlueShardProjectile_Veteran"/>
+			</ProjectileNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
 <!-- Actual range is controlled by WeaponFireSpecialAbilityUpdate -->
 	<WeaponTemplate
 		id="AlienStalkerTiberiumAgitation"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--For Reaper17 forcefield changes-->
+<!-- For Reaper17 forcefield changes -->
+<!-- Updated Turret Settings to match the Gun Walker (TW 1.05) -->
 	<GameObject
 		id="Reaper17ShardWalker"
 		inheritFrom="BaseVehicle"
@@ -458,14 +459,17 @@
 						Template="AlienShardWalkerBlueShardWeapon"
 						ObjectStatus="WEAPON_UPGRADED_01" />
 					<TurretSettings
-						TurretTurnRate="200"
+						TurretTurnRate="720"
 						TurretPitchRate="200"
 						AllowsPitch="true"
+						MaxDeflectionClockwise="10d"
+						MaxDeflectionAntiClockwise="10d"
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="5.0s"
 						MinIdleScanAngle="0.0"
-						MaxIdleScanAngle="90.0">
-						<TurretAITargetChooserData />
+						MaxIdleScanAngle="0.0">
+						<TurretAITargetChooserData
+							CanPickTargetsOutOfTurretAngle="true" />
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
