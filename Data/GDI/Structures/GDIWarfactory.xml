@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Door will no longer default to open state when repaired to 100% -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -263,9 +264,9 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
-					Flags="START_FRAME_FIRST">
+					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="GBWarDoor_OPN"
+						AnimationName="GBWarDoor_CLS"
 						AnimationMode="MANUAL" />
 				</AnimationState>
 				<AnimationState

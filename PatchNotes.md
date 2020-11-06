@@ -294,6 +294,9 @@
 
 ### GDI:
 
+#### Doors
+1. Barracks and Warfactory doors default to the open position when healed to 100%
+	* Adjusted PARSE_DEFAULT animation state calling for the last frame of the closing animation instead of the first frame  of the opening animation
 #### Grenadier Squad
 1. AI will not use EMP Grenades ability
 	* Added modules that will allow them to use it
