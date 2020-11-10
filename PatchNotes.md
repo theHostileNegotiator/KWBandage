@@ -663,6 +663,13 @@
 	* Changed Includes to Infantry
 2. When Black Hand Tech Lab is selected to be deployed, some of the upgrade subobjects will appear when replacing cursor.
 	* Hide the existing subobjects in animation state
+#### Redeemer Engimeering Facility
+1. Structure can be seen through due DXT compression creating Alpha pixels
+	* Removed alpha support
+2. Top of the gantries turn red from gray when in the DAMAGED state
+	* Fixed texture inconsistency
+3. Models and Draws
+	* Models, Animations and Draws were redone to reduce redundency and fix certain bugs, such as resetting the Opening animation when entering the REALLYDAMAGED state.
 #### Turret Hub
 1. Models are bugged, mainly in regards to the turret sections
 	* Fixed models vertices and bone influences (Thanks OpenSAGE Blender Plugin)

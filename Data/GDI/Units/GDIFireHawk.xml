@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--Added sounds for Hardpoints upgrade-->
-<!--Changed model to not support Alpha (No longer see through unit)-->
+<!-- Added sounds for Hardpoints upgrade -->
+<!-- Changed some meshes to not support Alpha (No longer see through unit) -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:GUFireHwk_SKN.w3x" />

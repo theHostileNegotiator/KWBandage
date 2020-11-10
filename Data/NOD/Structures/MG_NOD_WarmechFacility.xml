@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Changed some meshes to not support Alpha (No longer see through structure) -->
+<!-- Fixed build animation reset when entering REALLYDAMAGED state -->
+<!-- Re Done Models and Draws -->
 <!-- Added LocalPlayerOnly to the Repair Decal Shadow so it can no longer be seen by other players -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:NBEngFa.w3x" />
+		<Include type="all" source="ART:NBEngFaD2Base_SKN.w3x" />
+		<Include type="all" source="ART:NBEngFaDoor_SKN.w3x" />
+		<Include type="all" source="ART:NBEngFaDoor01_CLS.w3x" />
+		<Include type="all" source="ART:NBEngFaDoor01_OPN.w3x" />
+		<Include type="all" source="ART:NBEngFaDoor03_CLS.w3x" />
+		<Include type="all" source="ART:NBEngFaDoor03_OPN.w3x" />
+		<Include type="all" source="ART:NBEngFaDoorD2_SKN.w3x" />
+		<Include type="all" source="ART:NBEngFaDoorsD2_AAN.w3x" />
+		<Include type="all" source="ART:NBEngFaDoorsD2_SKN.w3x" />
+		<Include type="all" source="ART:NBEngFaDoorsD2OPEN.w3x" />
+		<Include type="all" source="ART:NURedmrBLDA_SKN.w3x" />
+		<Include type="all" source="ART:NURedeemer_BLDA.w3x" />
 	</Includes>
 	<GameObject
 		id="MG_NOD_WarmechFacility"
@@ -147,43 +163,30 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED DOOR_1_OPENING BUILDING_A_METAUNIT">
-					<Model
-						Name="NURedmrBLDA_D2SKN" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED DOOR_1_WAITING_OPEN BUILDING_A_METAUNIT">
-					<Model
-						Name="NBEngFaDoorD2_SKN" />
-				</ModelConditionState>	
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED DOOR_1_CLOSING BUILDING_A_METAUNIT">
-					<Model
-						Name="NBEngFaDoorD2_SKN" />
-				</ModelConditionState>				
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="NBEngFaDoorsD2_SKN" />
+						Name="NBEngFaDoorD2_SKN" />
+					<ParticleSysBone
+						BoneName="FXFireBone01"
+						FXParticleSystemTemplate="RedeemerDamageBlueFlashes"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FXFireBone01"
+						FXParticleSystemTemplate="RedeemerDamageBlueSpark"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FXFireBone03"
+						FXParticleSystemTemplate="RedeemerDamageBlueFlashes"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FXFireBone03"
+						FXParticleSystemTemplate="RedeemerDamageBlueSpark"
+						FollowBone="true" />							
+					<ParticleSysBone
+						BoneName="FXFireBone05"
+						FXParticleSystemTemplate="RedeemerDamagedSmoke"
+						FollowBone="true" />
 				</ModelConditionState>	
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED DOOR_1_OPENING BUILDING_A_METAUNIT">
-					<Model
-						Name="NURedmrBLDA_SKN" />
-					<Texture
-						Original="NBWEFacility"
-						New="NBEngFaD" />						
-				</ModelConditionState>					
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DOOR_1_OPENING BUILDING_A_METAUNIT">
-					<Model
-						Name="NURedmrBLDA_SKN" />
-				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED">
@@ -211,14 +214,13 @@
 					<ParticleSysBone
 						BoneName="FXFireBone05"
 						FXParticleSystemTemplate="RedeemerDamagedSmoke"
-						FollowBone="true" />						
+						FollowBone="true" />
 				</ModelConditionState>
-
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="" />
+						Name="NBEmpty_ABLD" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
@@ -237,6 +239,7 @@
 				</AnimationState>
 
 				<!-- D2 ANIMATION FOR METAUNIT BUILD -->
+				<!--
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED DOOR_1_WAITING_OPEN BUILDING_A_METAUNIT"
@@ -360,9 +363,10 @@
 						BoneName="FXFloorSteamBone03"
 						FXParticleSystemTemplate="NODEngFaGroundSteam01"
 						FollowBone="true" />						
-				</AnimationState>								
+				</AnimationState>								-->
 				
 				<!-- D2 ANIMATIONS FOR DOORS -->
+				<!--
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED DOOR_1_WAITING_OPEN"
@@ -422,7 +426,8 @@
 					<Animation
 						AnimationName="NBEngFaDoor01D2_CLS"
 						AnimationMode="ONCE" />
-				</AnimationState>				
+				</AnimationState>				-->
+				<!--
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED"
@@ -438,7 +443,7 @@
 						CurDrawableSetTransitionAnimState("TRANS_DamagedToReallyDamaged")
 					end
 				</Script> 
-				</AnimationState>				
+				</AnimationState>				-->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DOOR_1_WAITING_OPEN BUILDING_A_METAUNIT"
@@ -452,7 +457,7 @@
 					ConditionsYes="DOOR_1_OPENING BUILDING_A_METAUNIT"
 					StateName="STATE_Open">
 					<Animation
-						AnimationName="NURedeemer_BLDA"
+						AnimationName="NBENGFADOOR03_OPN"
 						AnimationMode="ONCE" />
 					<ParticleSysBone
 						BoneName="FXSteamBone01"
@@ -637,7 +642,8 @@
 					<Animation
 						AnimationName="NBEngFaDoor01D2_OPN"
 						AnimationMode="ONCE" />
-				</AnimationState>	-->			
+				</AnimationState>	-->		
+				<!--				
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_DamagedToReallyDamaged">
@@ -645,6 +651,171 @@
 						AnimationName="NBEngFaDoorsD2_AAN"
 						AnimationMode="ONCE" /> 
 				</AnimationState>	
+				-->
+			</ScriptedModelDraw>
+			
+			<!-- DRAW REDEEMER -->
+			<ScriptedModelDraw
+				id="ModuleTag_Draw_Redeemer"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_OPENING BUILDING_A_METAUNIT">
+					<Model
+						Name="NURedmrBLDA_SKN" />
+				</ModelConditionState>
+				<!-- BUILDUP ANIMATION -->
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="NBEmpty_ABLD"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Animation
+						AnimationName="NBEmpty_ABLD"/>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_OPENING BUILDING_A_METAUNIT"
+					StateName="STATE_Open">
+					<Animation
+						AnimationName="NURedeemer_BLDA"
+						AnimationMode="ONCE" />
+				</AnimationState>
+			</ScriptedModelDraw>
+			
+			<!-- DRAW DEBRIS -->
+			<ScriptedModelDraw
+				id="ModuleTag_Draw_Debris"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED DOOR_1_OPENING BUILDING_A_METAUNIT">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NBEngFaDoorsD2_SKN" />
+				</ModelConditionState>
+				<!-- BUILDUP ANIMATION -->
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="NBEmpty_ABLD"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Animation
+						AnimationName="NBEmpty_ABLD"/>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED DOOR_1_OPENING"
+					StateName="STATE_ReallyDamaged"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="NBEngFaDoorsD2OPEN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" and Prev ~= "TRANS_IntoReallyDamagedOpened" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamagedOpened")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED DOOR_1_WAITING_TO_CLOSE"
+					StateName="STATE_ReallyDamaged"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="NBEngFaDoorsD2OPEN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" and Prev ~= "TRANS_IntoReallyDamagedOpened" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamagedOpened")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED DOOR_1_CLOSING"
+					StateName="STATE_ReallyDamaged"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="NBEngFaDoorsD2OPEN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" and Prev ~= "TRANS_IntoReallyDamagedOpened" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamagedOpened")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED"
+					StateName="STATE_ReallyDamaged"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="NBEngFaDoorsD2_AAN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" and Prev ~= "TRANS_IntoReallyDamagedOpened" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamaged")
+						end
+					</Script>
+				</AnimationState>
+				
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoReallyDamagedOpened">
+					<Animation
+						AnimationName="NBEngFaDoorsD2OPEN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoReallyDamaged">
+					<Animation
+						AnimationName="NBEngFaDoorsD2_AAN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+
 			</ScriptedModelDraw>
 
 			<!-- draw a decal when this thing is selected -->
