@@ -1536,6 +1536,15 @@
 					<Model
 						Name="W3DContainer:GBRecDoor_D2SN" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="W3DContainer:GBRecDoor1_SKN" />
+					<Texture
+						Original="GBRecHub"
+						New="GBRecHubD" />
+				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="STRUCTURE_UNPACKING">

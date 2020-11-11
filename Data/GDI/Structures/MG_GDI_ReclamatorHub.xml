@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Added Model Condition Upgrade USER_1 for missing factions to show Tiberium Smoke -->
+<!-- Fixed bone references for Low LOD and REALLYDAMAGED model -->
+<!-- Damaged texture is applied to the DAMAGED state -->
+<!-- Arrows will now appear on the ramp -->
+<!-- Ramp tilts earlier in METAUNIT animation -->
 <!-- Added LocalPlayerOnly to the Repair Decal Shadow so it can no longer be seen by other players -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:GBRecDoor_D2SN.w3x" />
+		<Include type="all" source="ART:GBRecDoor1_SKN.w3x" />
+		<Include type="all" source="ART:GBRecDoor2_OPN.w3x" />
 	</Includes>
 	<GameObject
 		id="MG_GDI_ReclamatorHub"
@@ -233,6 +240,15 @@
 					ConditionsYes="REALLYDAMAGED">
 					<Model
 						Name="GBRecDoor_D2SN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="GBRecDoor1_SKN" />
+					<Texture
+						Original="GBRecHub"
+						New="GBRecHubD" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"

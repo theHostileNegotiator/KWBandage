@@ -464,6 +464,13 @@
 #### Space Command Uplink
 1. Smoke Effects do not appear. It is possible an attempt was made to add distortion affect but removed the smoke
 	* Fixed Particle Effects to match TW (Will need to find a way to add distortion effect)
+#### Reclamation Hub
+1. The ramp in Low LOD in the REALLYDAMAGED state appears in the incorrect position
+	* Fixed bone references for the REALLYDAMAGED model
+2. The ramp does not show arrows pointing to the exit
+	* Give FX_GUIDEARROWS mesh SortLevel 1
+3. Ramp animation when the MARV exits the structure is conflicting
+	* Fixed animation so the ramp tilts earlier
 #### Dig In Structure
 1. Advanced units from the Base Factions can not garrison in structure whereas Sub Factions can
 	* Exclude Sub Faction advanced units from garrison Dig In Structure
