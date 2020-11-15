@@ -226,7 +226,7 @@
 			<CreateAndEnterObjectSpecialPower
 				id="ModuleTag_CallForTransport"
 				SpecialPowerTemplate="SpecialPowerCallForTransportSteelTalons"
-				OCL="OCL_GDICallForTransport"
+				OCL="OCL_SteelTalonsCallForTransport"
 				CreateLocation="CREATE_ABOVE_LOCATION"
 				TriggerFX="FX_GDICallForTransportFlare"
 				ChildModuleHandlesFX="true"

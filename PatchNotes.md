@@ -64,6 +64,7 @@
 			* GDI/ST Orca (+ Hardpoints)
 			* GDI/ST Firehawk (+ Hardpoints)
 			* ST Rifleman (- Composite Armor)
+			* ST Missile Squad (- Composite Armor)
 			* ST Grenadier (- Composite Armor, - EMP Grenades)
 			* ZOCOM Shatterer (- Railgun)
 			* ZOCOM Rifleman (+ Tiberium Field Suits)

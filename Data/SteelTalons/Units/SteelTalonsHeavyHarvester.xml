@@ -523,6 +523,15 @@
 				<MemberTemplateStatusInfo
 					ThingTemplate="GDISniperSquad"
 					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />
+				<MemberTemplateStatusInfo
+					ThingTemplate="GDISniperSquad_Veteran"
+					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />
+				<MemberTemplateStatusInfo
+					ThingTemplate="ZOCOMSniperSquad"
+					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />
+				<MemberTemplateStatusInfo
+					ThingTemplate="ZOCOMSniperSquad_Veteran"
+					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />
 			</HordeTransportContain>
 			<MoveToPositionAndEvacuateSpecialPower
 				id="ModuleTag_MoveToPositionAndEvacuate"

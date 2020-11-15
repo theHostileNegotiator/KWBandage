@@ -5,16 +5,16 @@
 	<Includes>
 	</Includes>
 	<GameObject
-		id="SteelTalonsRifleSoldierSquad_Veteran"
-		inheritFrom="SteelTalonsRifleSoldierSquad"
-		SelectPortrait="Portrait_GDIRiflemanSquad"
-		ButtonImage="Portrait_GDIRiflemanSquad"
+		id="SteelTalonsMissileSoldierSquad_Veteran"
+		inheritFrom="SteelTalonsMissileSoldierSquad"
+		SelectPortrait="Portrait_GDIMissileSquad"
+		ButtonImage="Portrait_GDIMissileSquad"
 		Side="SteelTalons"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
-		BuildCost="300"
-		BuildTime="3"
-		CommandSet="SteelTalonsRifleSoldierSquadCommandSet"
+		BuildCost="400"
+		BuildTime="4"
+		CommandSet="SteelTalonsMissileSoldierSquadCommandSet"
 		CommandPoints="100" 
 		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY CAN_CAPTURE CAN_BE_FAVORITE_UNIT SCORE"
 		IsTrainable="true"
@@ -23,23 +23,22 @@
 		ThreatLevel="0"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
-		WeaponCategory="GUN"
-		EditorName="SteelTalonsRifleSoldierSquad_Veteran"
-		Description="Desc:SteelTalonsRiflemanSquad"
-		TypeDescription="Type:GDIRiflemanSquad"
-		UnitTypeIcon="RiflemenIcon"
-		WorldMapArmoryUpgradesAllowed="Upgrade_GDIAPAmmo"
+		WeaponCategory="MISSILE"
+		EditorName="SteelTalonsMissileSoldierSquad_Veteran"
+		Description="Desc:SteelTalonsMissileSquad"
+		TypeDescription="Type:GDIMissileSquad"
+		WorldMapArmoryUpgradesAllowed=""
+		UnitTypeIcon="MissilemenIcon"
 		RadarPriority="NOT_ON_RADAR">
-		<EquivalentTo>SteelTalonsRifleSoldierSquad</EquivalentTo>
+		<EquivalentTo>SteelTalonsMissileSoldierSquad</EquivalentTo>
 		<DisplayName
-			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIRiflemanSquad</DisplayName>
-		<DisplayUpgrade>Upgrade_GDIAPAmmo</DisplayUpgrade>
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIMissileSquad</DisplayName>
 		<ArmorSet
 			Armor="NoArmor" />
 		<LocomotorSet
 			Locomotor="NormalRangedSquadLocomotor"
 			Condition="NORMAL"
-			Speed="57" />
+			Speed="55" />
 		<SkirmishAIInformation
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>
@@ -56,13 +55,13 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="FXRifle_FP" />
+						Name="FXRocket_FP" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="WORLD_BUILDER">
 					<Model
-						Name="SquadMarkGURif" />
+						Name="SquadMarkGUMis" />
 				</ModelConditionState>
 			</ScriptedModelDraw>
 		</Draws>
@@ -86,7 +85,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic" />
+				StanceTemplate="Generic"/>
 			<EmotionTrackerUpdate
 				id="Module_ETU">
 				<TauntAndPointExcluded
@@ -124,7 +123,7 @@
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="GDIRifleSquadGunRangefinder" />
+						Template="SquadMissileRangefinder" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<StealthDetectorUpdate
@@ -132,35 +131,27 @@
 				DetectionRange="100" />
 			<Physics
 				id="ModuleTag_Physics"></Physics>
-			<!-- This starts the build and makes an object to prevent other digins at this location -->
-			<OCLSpecialPower
-				id="SpecialPower_DigInTrigger"
-				SpecialPowerTemplate="SpecialPowerInfantryDigInTrigger"				
-				UpdateModuleStartsAttack="true" 
-				OCL="OCL_GDIInfantryDigInTrigger"
-				CreateLocation="CREATE_AT_LOCATION" 
-				RegisterObjectsWithSpecialAbilityUpdate="true"/>
-			<SpecialAbilityUpdate
-				id="SpecialPower_DigInTriggerUpdate"
-				SpecialPowerTemplate="SpecialPowerInfantryDigInTrigger"
-				PreparationTime="5s"
-				Options="CHECK_CHAINED_COMMAND SHOW_PREPARATION_PROGRESS DESTROY_OCL_REGISTERED_OBJECTS_ON_EXIT"
-				StartAbilityRange="15"
-				UnpackingVariation="1"				
-				ChainedButton="Command_GDIDigIn" />
-			<!-- This actually enters the building -->
-			<CreateAndEnterObjectSpecialPower
-				id="ModuleTag_InfantryDigIn"
-				SpecialPowerTemplate="SpecialPowerInfantryDigIn"
-				OCL="OCL_GDIInfantryDigIn"
-				CreateLocation="CREATE_AT_LOCATION" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_InfantryDigInAI"
-				CommandButtonName="Command_GDIDigInTrigger"
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
 				GiveNoXP="true" />
+			<ModelConditionUpgrade
+				id="ModuleTag_MissileSoldierArmorComposite"
+				Permanent="true">
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
+			</ModelConditionUpgrade>
+			<AimWeapon
+				id="ModuleTag_AimWeapon"
+				AimHighThreshold="0.5"/>
+			<CreateAndEnterObjectSpecialPower
+				id="ModuleTag_CallForTransport"
+				SpecialPowerTemplate="SpecialPowerCallForTransportSteelTalons"
+				OCL="OCL_SteelTalonsCallForTransport"
+				CreateLocation="CREATE_ABOVE_LOCATION"
+				TriggerFX="FX_GDICallForTransportFlare"
+				ChildModuleHandlesFX="true"
+				IdleWhenStartingPower="true">
+				<FXOffset x="25" y="0" z="0"></FXOffset>
+			</CreateAndEnterObjectSpecialPower>
 			<SpecialPower
 				id="ModuleTag_CaptureSpecialPower"
 				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
@@ -180,7 +171,7 @@
 				ShowPips="false"
 				Formation="MAIN"
 				MeleeAttackLeashDistance="1"
-				Slots="6"
+				Slots="2"
 				ObjectStatusOfContained=""
 				ConditionForEntry="INVALID">
 				<PassengerFilter
@@ -188,52 +179,22 @@
 					Include="INFANTRY" />
 				<DieMuxData />
 				<InitialPayload
-					Name="SteelTalonsRifleSoldier"
-					Count="6" />
+					Name="SteelTalonsMissileSoldier"
+					Count="2" />
 				<MeleeBehavior
 					Type="AMOEBA" />
-				<RandomOffset
-					x="0"
-					y="0" />
 				<RankInfo
 					RankID="1"
-					UnitType="SteelTalonsRifleSoldier">
+					UnitType="SteelTalonsMissileSoldier">
+					<Position
+						X="0"
+						Y="-10" />
 					<Position
 						X="0"
 						Y="10" />
-					<Position
-						X="10"
-						Y="0" />
-					<Position
-						X="10"
-						Y="-10" />
-				</RankInfo>
-				<RankInfo
-					RankID="2"
-					UnitType="SteelTalonsRifleSoldier">
-					<Position
-						X="-10"
-						Y="-10" />
-					<Position
-						X="-10"
-						Y="0" />
-					<Position
-						X="0"
-						Y="-20" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
-				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
 			</HordeContain>
-			<CreateAndEnterObjectSpecialPower
-				id="ModuleTag_CallForTransport"
-				SpecialPowerTemplate="SpecialPowerCallForTransportSteelTalons"
-				OCL="OCL_SteelTalonsCallForTransport"
-				CreateLocation="CREATE_ABOVE_LOCATION"
-				TriggerFX="FX_GDICallForTransportFlare"
-				ChildModuleHandlesFX="true"
-				IdleWhenStartingPower="true">
-				<FXOffset x="25" y="0" z="0"></FXOffset>
-			</CreateAndEnterObjectSpecialPower>
 			<LevelUpUpgrade xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_LevelUpUpgrade"
 				LevelCap="4"
@@ -265,14 +226,14 @@
 			IsSmall="false">
 			<Shape
 				Type="BOX"
-				MajorRadius="20.0"
-				MinorRadius="25.0"
+				MajorRadius="10.0"
+				MinorRadius="20.0"
 				Height="13.0"></Shape>
 		</Geometry>
 		<!--
 		<AudioArraySound>
 			<AudioEntry
-				Sound="AudioEvent:GDI_RifleSoldier_GroupSmall_MoveLoop"
+				Sound="AudioEvent:GDI_MissileSoldier_GroupSmall_MoveLoop"
 				AudioType="soundMoveLoop" />
 		</AudioArraySound>
 -->
@@ -297,3 +258,21 @@
 			CrusherLevel="0" />
 	</GameObject>
 </AssetDeclaration>
+<!--
+
+Object GDIMissileSoldierSquad
+
+	ThreatBreakdown GDIMissileSoldierHorde_DetailedThreat
+		AIKindOf = ARCHER
+	End
+	
+	Behavior = AISpecialPowerUpdate GDIMissileSoldierHordeCaptureBuildingAI
+		CommandButtonName = Command_CaptureBuilding
+		SpecialPowerAIType = AI_SPECIAL_POWER_CAPTURE_BUILDING
+	End
+	
+End
+
+
+
+-->

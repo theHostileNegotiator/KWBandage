@@ -23,7 +23,8 @@
 		VoicePriority="88"
 		EditorName="SteelTalonsGrenadeSoldier"
 		Description="Desc:SteelTalonsGrenadierSquad"
-		TypeDescription="Type:GDIGrenadierSquad">
+		TypeDescription="Type:GDIGrenadierSquad"
+		WorldMapArmoryUpgradesAllowed="">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:GDIGrenadierSquad</DisplayName>
 		<ArmorSet
