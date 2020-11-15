@@ -87,7 +87,7 @@
 			* Scrin/R17/T59 Mechapede (- Forcefield Generator)
 #### Upgraded Textures
 1. Units when upgraded would not use the corresponding Specular, NormalMap or House Color Texture
-	* Added texture change for Specular and NormalMap Textures
+	* Added texture change for Specular, NormalMap or House Color Textures
 		* Created New Specular Maps for Ceramic Armor Orca and Firehawk
 		* Objects Affected
 			* ST Titan (Adaptive Armor)
@@ -95,8 +95,9 @@
 			* ZOCOM Orca (Ceramic Armor)
 			* ZOCOM Firehawk (Ceramic Armor)
 			* ZOCOM Hammerhead (Ceramic Armor)
+			* BH BlackHand (Purifying Flame)
 			* MOK Engineer (Cybernetic Legs)
-			* Tiberium Trooper (Cybernetic Legs)
+			* MOK Tiberium Trooper (Cybernetic Legs)
 			* MOK Enlightened (Cybernetic Legs)
 2. Units may not use Tiberium Core Missile Upgrade DAMAGED texture
 	* Added texture change for Damaged State

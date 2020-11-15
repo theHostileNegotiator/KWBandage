@@ -4,6 +4,7 @@
 	
 		<Include type="all" source="Units/BlackHandAttackBike.xml" />
 		<Include type="all" source="Units/BlackHandBlackDisciple.xml" />
+		<Include type="all" source="Units/BlackHandBlackHand.xml" />
 		<Include type="all" source="Units/BlackHandBlackHandSquad.xml" />
 		<Include type="all" source="Units/BlackHandBunkerTruck.xml" />
 		<Include type="all" source="Units/BlackHandCommando.xml" />
