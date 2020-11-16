@@ -848,6 +848,13 @@
 	* Ion model will now refer to the base Skeleton (AUPACarrier_SKL) rather than it's own (AUPACarrierIon)
 4. Fighters use different textures when under Ion Storm
 	* Changed textures to match default
+#### Warp Chasm
+1. Models and Draws
+	* Models, Animations and Draws were redone to reduce redundency and fix certain bugs, such as resetting the Opening animation when entering the REALLYDAMAGED state.
+2. Damaged and Rubble Models appear to have lighting issues and do not have House Colors
+	* Swapped Specular and Normal Textures to existing textures
+3. Rubble model uses multiple Normal Meshes for the debris instead of a single Skin Mesh like the other structures
+	* Merged all meshes together to make a single Skin Mesh
 #### Growth Stimulator
 1. When selecting structure, it will sometimes play the Growth Accelerator select sound instead of the Stimulator select sound.
 	* Removed Growth Accelerator sound effects which was due to the Stimulator inheriting the Accelerator and not removing sounds.

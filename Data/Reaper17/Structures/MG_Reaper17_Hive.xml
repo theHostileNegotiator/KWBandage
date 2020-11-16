@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Refer to Scrin Warp Chasm -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -123,14 +124,6 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED DOOR_1_OPENING BUILDING_A_METAUNIT"
-					StateName="STATE_Open">
-					<Animation
-						AnimationName="ABHiveD2_CLS"
-						AnimationMode="ONCE" />
-				</AnimationState>				
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DOOR_1_OPENING BUILDING_A_METAUNIT"
 					StateName="STATE_Open">
 					<Animation
@@ -146,23 +139,7 @@
 						AnimationMode="ONCE" />
 				</AnimationState>
 		-->
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED DOOR_1_WAITING_OPEN BUILDING_A_METAUNIT"
-					Flags="START_FRAME_FIRST">
-					<Animation
-						AnimationName="ABHiveD2_CLSS"
-						AnimationMode="MANUAL" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED ACTIVELY_CONSTRUCTING CONSTRUCTING_A_METAUNIT"
-					Flags="START_FRAME_FIRST">
-					<Animation
-						AnimationName="ABHiveD2_OPN"
-						AnimationMode="ONCE" />
-				</AnimationState>
-				
+
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DOOR_1_WAITING_OPEN BUILDING_A_METAUNIT"
@@ -194,6 +171,7 @@
 						end
 					</Script>
 				</AnimationState>
+				<!--
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED"
@@ -216,7 +194,7 @@
 						AnimationName="ABHiveD2_AAN"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
-				</AnimationState>
+				</AnimationState>-->
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_IntoRubble">
@@ -405,6 +383,66 @@
 						Texture="Decal_Rig_CO" 
 					/>
 				</ModelConditionState>
+			</ScriptedModelDraw>
+
+			<!-- DRAW DEBRIS -->
+			<ScriptedModelDraw
+				id="ModuleTag_Draw_Debris"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="ABHive02_SKN" />
+				</ModelConditionState>
+				<!-- BUILDUP ANIMATION -->
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="NBEmpty_ABLD"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Animation
+						AnimationName="NBEmpty_ABLD"/>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED"
+					StateName="STATE_ReallyDamaged"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="ABHiveD2_AAN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" and Prev ~= "TRANS_IntoReallyDamagedOpened" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamaged")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoReallyDamaged">
+					<Animation
+						AnimationName="ABHiveD2_AAN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
