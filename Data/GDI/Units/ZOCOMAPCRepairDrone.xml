@@ -19,7 +19,7 @@
 		<LocomotorSet
 			Locomotor="GDIRepairDroneLocomotor"
 			Condition="NORMAL"
-			Speed="75.0" />
+			Speed="175.0" />
 		<Draws>
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
