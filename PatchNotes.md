@@ -296,6 +296,9 @@
 
 ### GDI:
 
+#### Railgun
+1. Railgun Core particle effect uses FXRailgunThread texture instead of FXRailgunCore
+	* Particle effect now references the correct texture
 #### Doors
 1. Barracks and Warfactory doors default to the open position when healed to 100%
 	* Adjusted PARSE_DEFAULT animation state calling for the last frame of the closing animation instead of the first frame  of the opening animation
