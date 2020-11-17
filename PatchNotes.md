@@ -173,6 +173,9 @@
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
+#### Refineries
+1. Refund value was not increased in KW 1.02 after Harvesters were made cheaper
+	* Increased Refund Value to 700 based on; (RefineryCost - HarvesterCost) -:- 2
 #### Support Powers
 1. Some new Support Powers do not use unique icons or radius cursors, despite being available and compiled
 	* Swap the icons and radius cursors to the appropriate textures

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Refer to Scrin Refinery -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -14,7 +15,7 @@
 		TransportSlotCount="1"
 		BuildCost="3000"
 		BuildTime="30"
-		RefundValue="500" 
+		RefundValue="700" 
 		PlacementViewAngle="225d"
 		CommandSet="AlienTiberiumTowerCommandSet"
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS SUPPLY_GATHERING_CENTER FS_MONEY_STORAGE TIBERIUM_BASED AUTO_ACQUIRABLE_BY_AI NOT_AUTOACQUIRABLE COVER"
