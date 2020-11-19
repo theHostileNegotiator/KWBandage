@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Added Upgrade Sounds-->
-<!--Fixed Railguns Accelerator Animation Bug-->
-<!--Fixed AdaptiveArmor Specular and NormalMap Texture-->
-<!--Added EMP Animation-->
-<!--Changed AdaptiveArmor and Railgun Accelerator Shaders-->
-<!--Removed Limping animation from DAMAGED state, will only be used in REALLYDAMAGED state-->
+<!-- Added Upgrade Sounds -->
+<!-- Fixed Railguns Accelerator Animation Bug -->
+<!-- Fixed AdaptiveArmor Specular and NormalMap Texture -->
+<!-- Added EMP Animation -->
+<!-- Changed AdaptiveArmor and Railgun Accelerator Shaders -->
+<!-- Removed Limping animation from DAMAGED state, will only be used in REALLYDAMAGED state -->
+<!-- Added new Damaged Textures for Adaptive Armor -->
+<!-- Fixed DYING state to use appropriate model and texture when having Adaptive Armor -->
 	<Includes>
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
@@ -102,6 +104,27 @@
 						FXParticleSystemTemplate="GDIPredDamagedSmoke"
 						FollowBone="true" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING USER_8">
+					<Model
+						Name="GUVehicleF_SKNR" />
+					<Texture
+						Original="GUVehicleF_D"
+						New="GUVehicleF_AAUG_D" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIDebrisSmallFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIDebrisSmallFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="USER_8">
@@ -133,6 +156,27 @@
 					<ParticleSysBone
 						BoneName="VF_LLeg03"
 						FXParticleSystemTemplate="GDIPredDamagedSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING USER_7">
+					<Model
+						Name="GUVehicleF_SKNR" />
+					<Texture
+						Original="GUVehicleF_D"
+						New="GUVehicleF_AAUG_D" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIDebrisSmallFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIDebrisSmallFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="VF_LLeg03"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
 						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState 

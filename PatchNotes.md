@@ -336,6 +336,8 @@
 	* Decided to remove it so it would only be used in the REALLYDAMAGED state (Below 33% health)
 2. Did not play a seperate animation when EMPed. Instead it continued to loop the animation it was in before EMP strike
 	* Other Mech units used the Bored animation. This technique was applied
+3. With Adaptive Armor upgraded or used, when destroyed it will use the standard model, with the special ability activated it will still show the Armor effect.
+	* Added new Model Conditions that reference the Rubble Model when DYING with the upgrade or using ability
 #### Harvester
 1. The Tiberium meter on the rear of the Harvesters shows when destroyed, conflicting with the destruction model
 	* Tiberium meter is hidden when destroyed
@@ -408,6 +410,8 @@
 		* Also fixed shaders for Low LOD Railguns
 2. Missile Pods do not use Shaders for Adaptive Armor
 	* Changed shaders of ROCKETPODS subobject
+3. With Adaptive Armor upgraded or used, when destroyed it will use the standard model, with the special ability activated it will still show the Armor effect.
+	* Added new Model Conditions that reference the Rubble Model when DYING with the upgrade or using ability
 #### Behemoth
 1. When recovered by engineer, it plays the animation used to leave Warfactory after the getting up animation
 	* Changed model so only one is used for build and default state
@@ -519,7 +523,7 @@
 1. When Adaptive Armor was used, it gave the unit a weird appearance with the House Color Glowing too much
 	* Created New Shaders
 2. There are no damaged textures for for upgraded units
-	* Created damaged textures (Titan Only)
+	* Created damaged textures
 #### Railgun Accelerator
 1. Railgun Accelerator effect on the railgun is bugged with all units either not displaying properly or at all
 	* Instead of using Animations, Scripts are used

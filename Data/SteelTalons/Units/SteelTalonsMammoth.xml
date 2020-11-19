@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Fixed Railgun Accelerators Animations-->
-<!--Fixed Tread Animations in regards to Adaptive Armor-->
-<!--Fixed AdaptiveArmor Faction Texture and NormalMap Texture-->
-<!--Changed AdaptiveArmor and Railgun Accelerator Shaders-->
+<!-- Fixed Railgun Accelerators Animations -->
+<!-- Fixed Tread Animations in regards to Adaptive Armor -->
+<!-- Fixed AdaptiveArmor Faction Texture and NormalMap Texture -->
+<!-- Changed AdaptiveArmor and Railgun Accelerator Shaders -->
+<!-- Added new Damaged Textures for Adaptive Armor -->
+<!-- Fixed DYING state to use appropriate model and texture when having Adaptive Armor -->
 	<Includes>
 		<Include type="all" source="ART:GUMamm.w3x" />
 		<Include type="all" source="ART:GUMammAdAr.w3x" />
+		<Include type="all" source="ART:GUMamm_AAUG_D.xml" />
 	</Includes>
 	<GameObject
 		id="SteelTalonsMammoth"
@@ -121,8 +124,8 @@
 					<Model
 						Name="GUMammAdAr" />
 					<Texture
-						Original="GUMamm"
-						New="GUMamm_AAUG" />
+						Original="GUMamm_AAUG"
+						New="GUMamm_AAUG_D" />
 					<ParticleSysBone
 						BoneName="FXTracksRF"
 						FXParticleSystemTemplate="GDIPPDamagedSmoke"
@@ -142,6 +145,21 @@
 				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING USER_8">
+					<Model
+						Name="GUMamm_R" />
+					<Texture
+						Original="GUMammD"
+						New="GUMamm_AAUG_D" />
+					<Texture
+						Original="GUMamm_NRM"
+						New="GUMamm_AAUG_NRM" />
+					<Texture
+						Original="GUMamm_SPM"
+						New="GUMamm_AAUG_SPM" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_8">
 					<Model
 						Name="GUMammAdAr" />
@@ -154,7 +172,7 @@
 						Name="GUMamm_SKN" />
 					<Texture
 						Original="GUMamm"
-						New="GUMamm_AAUG" />
+						New="GUMamm_AAUG_D" />
 					<Texture
 						Original="GUMamm_NRM"
 						New="GUMamm_AAUG_NRM" />
@@ -177,7 +195,22 @@
 						BoneName="FXTracksLR"
 						FXParticleSystemTemplate="GDIMammothDamagedSmoke"
 						FollowBone="true" />
-				</ModelConditionState>				
+				</ModelConditionState>			
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING USER_6">
+					<Model
+						Name="GUMamm_R" />
+					<Texture
+						Original="GUMammD"
+						New="GUMamm_AAUG_D" />
+					<Texture
+						Original="GUMamm_NRM"
+						New="GUMamm_AAUG_NRM" />
+					<Texture
+						Original="GUMamm_SPM"
+						New="GUMamm_AAUG_SPM" />
+				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_6">
@@ -269,9 +302,6 @@
 					ConditionsYes="DYING">
 					<Model
 						Name="GUMamm_R" />
-					<Texture
-						Original="GUMamm"
-						New="GUMammD" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
