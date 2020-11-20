@@ -666,6 +666,8 @@
 		* Also reduced turret idle angles to significantly reduce chance of turrets clipping through each other.
 4. Tiberium Trooper module cannot attack while unit is moving
 	* Allowed weapon to attack while unit is moving
+5. Attacking animation play for any weapon firing instead of only the main weapon
+	* Changed Animation Condition to WEAPONSLOTID_01
 #### Vertigo Bomber
 1. Stealth Model uses it's own Skeleton instead of the standard version, despite sharing animations
 	* Changed Container and Mesh to refer to the standard version like the Stealth Tank
@@ -828,6 +830,12 @@
 1. Disintegrator visual lasers override each other. Therefore if more than one laser is firing, only the latest shot laser will show.
 	* Added new Weapons, Laser Draws and Laser States.
 		* Added Heroic Laser Effects
+2. Parts of the unit does not use Damaged textures when Really Damaged as second main texture (AUEradHex2) was not swapped to the Damaged texture.
+	* Second texture was changed to the damaged version when Really Damaged
+3. Attacking animation play for any weapon firing instead of only the main weapon
+	* Changed Animation Condition to WEAPONSLOTID_01 and AllowInterleavedFiring="true"
+4. Attacking animation would be prioritised, playing while attacking and moving, causing the legs to 'spaz' and slide across the ground. And there are no unique attack while moving animations
+	* Reordered animation conditions and priorities, attacking animations will not play while moving.
 #### Drone Ship
 1. Subfaction Drone Ships when undeploying have the ability to teleport with Mastermind and Prodigy or Phased with Phasefield ability. This was not present with Base Faction, even in Tiberium Wars
 	* Removed ability to target undeploying Drone Ships

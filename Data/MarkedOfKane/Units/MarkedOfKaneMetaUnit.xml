@@ -455,73 +455,6 @@
 						AnimationMode="MANUAL"
 						AnimationBlendTime="15" />
 				</AnimationState>
-
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_5"
-					StateName="STATE_Getup">
-					<Animation
-						AnimationName="NUMegaUnit_GTPA"
-						AnimationBlendTime="15"
-						AnimationMode="ONCE" />
-				</AnimationState>
-
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_1"
-					StateName="STATE_UpgradeAnimation">
-					<Animation
-						AnimationName="NUMegaUnit_GRBD"
-						AnimationMode="ONCE" />
-					<Script>
-						Prev = CurDrawablePrevAnimationState()
-						if Prev == "STATE_Getup" then
-						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
-						end
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_2"
-					StateName="STATE_UpgradeAnimation">
-					<Animation
-						AnimationName="NUMegaUnit_GRBA"
-						AnimationMode="ONCE" />
-					<Script>
-						Prev = CurDrawablePrevAnimationState()
-						if Prev == "STATE_Getup" then
-						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
-						end
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_3"
-					StateName="STATE_UpgradeAnimation">
-					<Animation
-						AnimationName="NUMegaUnit_GRBB"
-						AnimationMode="ONCE" />
-					<Script>
-						Prev = CurDrawablePrevAnimationState()
-						if Prev == "STATE_Getup" then
-						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
-						end
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_4"
-					StateName="STATE_UpgradeAnimation">
-					<Animation
-						AnimationName="NUMegaUnit_GRBC"
-						AnimationMode="ONCE" />
-					<Script>
-						Prev = CurDrawablePrevAnimationState()
-						if Prev == "STATE_Getup" then
-						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
-						end
-					</Script>
-				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="TURN_LEFT_HIGH_SPEED"
@@ -794,7 +727,7 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_PREATTACK_A">
+					ConditionsYes="WEAPONSLOTID_01">
 					<Animation
 						AnimationName="NURedeemer_ATKA"
 						AnimationMode="ONCE"
@@ -1937,11 +1870,6 @@
 					DeathTypes="ALL" />
 				<Sound Type="INITIAL" List="NOD_Generic_VoiceDieMS" />
 			</SlowDeath>			
-			<AISpecialPowerUpdate
-				id="ModuleTag_NODAvatarCommandeer"
-				CommandButtonName="Command_AvatarCommandeerGetInRange"
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
-			
 			<SpecialPower
 				id="ModuleTag_NodRageGenerator"
 				SpecialPowerTemplate="NodRageGenerator"
@@ -2045,27 +1973,11 @@
 				<Sound Sound="AudioEvent:NOD_Redeemer_Bodyfall" Animation="NURedeemer_DIEC" Frame="118" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_DieCreak" Animation="NURedeemer_DIEA" Frame="73" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NUMegaUnit_AIDA" Frame="139 168" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NUMegaUnit_GRBA" Frame="18 59" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NUMegaUnit_GRBB" Frame="17 60" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NUMegaUnit_GRBC" Frame="17 60" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NUMegaUnit_GRBD" Frame="18 59" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_TRNL" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_TRNR" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_WLKA" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_WLKB" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_WLKC" Frame="25 50 75 100" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Commandeer" Animation="NUMegaUnit_GRBA" Frame="50" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Commandeer" Animation="NUMegaUnit_GRBB" Frame="53" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Commandeer" Animation="NUMegaUnit_GRBC" Frame="48" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Commandeer" Animation="NUMegaUnit_GRBD" Frame="54" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Short" Animation="NUMegaUnit_GRBA" Frame="7 51" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Long" Animation="NUMegaUnit_GRBA" Frame="14 34 66" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Short" Animation="NUMegaUnit_GRBB" Frame="10 51" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Long" Animation="NUMegaUnit_GRBB" Frame="11 37" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Short" Animation="NUMegaUnit_GRBC" Frame="10 53" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Long" Animation="NUMegaUnit_GRBC" Frame="12 35" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Short" Animation="NUMegaUnit_GRBD" Frame="10 54" />
-				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Long" Animation="NUMegaUnit_GRBD" Frame="24 42" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Short" Animation="NURedeemer_AIDA" Frame="47 76 88" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Long" Animation="NURedeemer_AIDA" Frame="47 103" />
 			</AnimationSoundClientBehavior>
