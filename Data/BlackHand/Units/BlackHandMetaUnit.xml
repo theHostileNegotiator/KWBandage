@@ -463,14 +463,6 @@
 						AnimationName="NURedeemer_WLKA"
 						AnimationMode="LOOP"
 						Distance="80" />
-					<Animation
-						AnimationName="NURedeemer_WLKB"
-						AnimationMode="LOOP"
-						Distance="80" />
-					<Animation
-						AnimationName="NURedeemer_WLKC"
-						AnimationMode="LOOP"
-						Distance="80" />
 					<FXEvent
 						Frame="33"
 						FireWhenSkipped="true"
@@ -1976,8 +1968,6 @@
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_TRNL" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_TRNR" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_WLKA" Frame="25 50 75 100" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_WLKB" Frame="25 50 75 100" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_WLKC" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Short" Animation="NURedeemer_AIDA" Frame="47 76 88" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Long" Animation="NURedeemer_AIDA" Frame="47 103" />
 			</AnimationSoundClientBehavior>
