@@ -7089,7 +7089,7 @@
 	</ExperienceLevelTemplate>
 	<ExperienceLevelTemplate
 		id="ZOCOMHarvesterExperienceLevel_2"
-		Prerequisite="GDIHarvesterExperienceLevel_1"
+		Prerequisite="ZOCOMHarvesterExperienceLevel_1"
 		RequiredExperience="4800"
 		ExperienceAward="2080"
 		ModelConditionState="SPECIAL_CHEERING"
@@ -7115,7 +7115,7 @@
 	</ExperienceLevelTemplate>
 	<ExperienceLevelTemplate
 		id="ZOCOMHarvesterExperienceLevel_3"
-		Prerequisite="GDIHarvesterExperienceLevel_2"
+		Prerequisite="ZOCOMHarvesterExperienceLevel_2"
 		RequiredExperience="9600"
 		ExperienceAward="2560"
 		ModelConditionState="SPECIAL_CHEERING"
@@ -7141,7 +7141,7 @@
 	</ExperienceLevelTemplate>
 	<ExperienceLevelTemplate
 		id="ZOCOMHarvesterExperienceLevel_4"
-		Prerequisite="GDIHarvesterExperienceLevel_3"
+		Prerequisite="ZOCOMHarvesterExperienceLevel_3"
 		RequiredExperience="14400"
 		ExperienceAward="3200"
 		ModelConditionState="SPECIAL_CHEERING"

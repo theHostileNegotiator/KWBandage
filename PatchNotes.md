@@ -51,6 +51,8 @@
 			* R17 Shard Walker
 			* T59 Prodigy
 			* T59 Cultist
+2. ZOCOM Harvester has incorrect prerequisite, referencing the GDI Harvester, preventing any potential level ups
+	* Fixed prerequisite to refence ZOCOM Harvester.
 #### Snipers Spotting for bombardment
 1. Veteran and Subfaction Snipers cannot spot for bombardment when garrisoned
 	* Include Veteran and Subfaction Snipers in MemberTemplateStatusInfo in garrison HordeContain Modules
