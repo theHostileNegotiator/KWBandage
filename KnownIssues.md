@@ -32,9 +32,6 @@
 #### MARV
 * Unit will not move into range of Main Cannon if there is a sniper module. This is because it will only move into range of the sniper weapon as it has more range. Unfortunately, the best workaround at the moment is to reduce the sniper range.
 
-#### Redeemer and Hexapod attacking animations
-* Units will play their main attacking animation when the garrison modules are firing.
- 
 #### Sonic Repulsion Field and Laser Fencing
 * If structure was already targeted by a commando or engineer when the special power was added, commandos will still destroy the structure and engineers will still capture
 * Your own engineer cannot enter your own structure to repair when Field or Fence is in effect.
