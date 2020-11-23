@@ -7,6 +7,10 @@
 <!-- Increased speed to match APC (TW1.05) -->
 <!-- Removed Turret Bone reference -->
 <!-- Adjusted repair decal size -->
+	<Tags></Tags>
+	<Includes>
+		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
+	</Includes>
 	<GameObject
 		id="SteelTalonsRepairAPC"
 		SelectPortrait="Portrait_RepairAPC"

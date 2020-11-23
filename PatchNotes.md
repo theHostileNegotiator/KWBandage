@@ -221,6 +221,7 @@
 			* Confessor Cabal
 			* Purifier
 			* Voice of Kane
+			* Disruption Pod
 			* Eradicator Hexapod
 #### AI
 1. Campaign AI design was not designed properly, structure based on Multiplayer AI. In TW, there are clear differences between Campaign and Multiplayer Skirmish AI in terms of structure and design.

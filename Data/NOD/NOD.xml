@@ -47,6 +47,7 @@
 		<!-- Props -->
 		<Include type="all" source="Props/NODBlackHandFlamerProjectile.xml" />	
 		<Include type="all" source="Props/NODVeinDetonation.xml" />	
+		<Include type="all" source="Props/NODVertigoDisruptionPod.xml" />	
 		
 		<!--	MetaGame Strategic Buildings	-->
 		<Include type="all" source="structures/MG_NOD_DisruptionGenerator.xml" />
