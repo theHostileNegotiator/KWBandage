@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Now displays Railgun gun after upgrade-->
-<!--Added upgrade sound for Railguns-->
+<!-- Now displays Railgun gun after upgrade -->
+<!-- Added upgrade sound for Railguns -->
+<!-- Adjusted repair decal size -->
 	<Tags></Tags>
 	<Includes>
 		<Include
@@ -16,6 +17,7 @@
 		<Include
 			type="all"
 			source="ART:GBBtleBase_D3SN.w3x" />
+		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<!-- note: BuildTime is needed for the repair time. -->
 	<GameObject
@@ -253,8 +255,8 @@
 					<Model Name="FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL"
-						SizeX="465"
-						SizeY="465"
+						SizeX="455"
+						SizeY="455"
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"

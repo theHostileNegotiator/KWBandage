@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed Avatar Voice-->
-<!--Removed Avatar Special Abilities (For Convenience to the Coder)-->
-<!--Flame Tank will now display upgrade-->
-<!--'Morale Boosting' Aura no longer affects Squad Objects-->
+<!-- Removed Avatar Voice -->
+<!-- Removed Avatar Special Abilities (For Convenience to the Coder) -->
+<!-- Flame Tank will now display upgrade -->
+<!-- 'Morale Boosting' Aura no longer affects Squad Objects -->
+<!-- Adjusted propaganda decal size -->
 	<GameObject
 		id="BlackHandCustomWarmech"
 		SelectPortrait="Portrait_CustomWarmech"
@@ -986,8 +987,8 @@
 					<Model Name="FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL"
-						SizeX="300"
-						SizeY="300"
+						SizeX="340"
+						SizeY="340"
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"

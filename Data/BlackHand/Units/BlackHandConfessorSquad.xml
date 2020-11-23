@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Can now detect Stealth like all other infantry-->
-<!--Changed Weapon Category from BLAST to GUN-->
-<!--Removed Tiberium Infusion-->
-<!--Can now be upgraded with Black Disciples in Global Conquest-->
-<!--Tweeked Grenade Special Power Range-->
-<!--AI will now use Hallucinogenic Grenades-->
-<!--Changed KindOf to that of most basic Infantry Squad. AI will garrison and removed clear garrison cursor-->
-<!--Confessor Aura no longer affects Squad Objects-->
-<!--Once Squad is in range of ability, unit will be locked in place until grenade is airborne (1 sec)-->
+<!-- Can now detect Stealth like all other infantry -->
+<!-- Changed Weapon Category from BLAST to GUN -->
+<!-- Removed Tiberium Infusion -->
+<!-- Can now be upgraded with Black Disciples in Global Conquest -->
+<!-- Tweeked Grenade Special Power Range -->
+<!-- AI will now use Hallucinogenic Grenades -->
+<!-- Changed KindOf to that of most basic Infantry Squad. AI will garrison and removed clear garrison cursor -->
+<!-- Confessor Aura no longer affects Squad Objects -->
+<!-- Once Squad is in range of ability, unit will be locked in place until grenade is airborne (1 sec) -->
+<!-- Adjusted propaganda decal size -->
 	<GameObject
 		id="BlackHandConfessorSquad"
 		SelectPortrait="Portrait_NODConfessor"
@@ -79,8 +80,8 @@
 					<Model Name="FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL"
-						SizeX="300"
-						SizeY="300"
+						SizeX="340"
+						SizeY="340"
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"

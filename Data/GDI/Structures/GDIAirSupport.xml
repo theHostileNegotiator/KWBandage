@@ -9,6 +9,7 @@
 		<Include type="all" source="ART:GBAirSupprt.w3x" />
 		<Include type="all" source="ART:GBAirSupprt_ABLD.w3x" />		
 		<Include type="all" source="ART:GBAirSupprtD2_SKN.w3x" />
+		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<GameObject
 		id="GDIAirSupport"

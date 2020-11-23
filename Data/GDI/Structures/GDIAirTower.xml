@@ -5,6 +5,7 @@
 		<Include type="all" source="ART:GBAirField.w3x" />
 		<Include type="all" source="ART:GBAirField_D2SN.w3x" />
 		<Include type="all" source="ART:GBAirField_D3SN.w3x" />
+		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<GameObject
 		id="GDIAirTower"

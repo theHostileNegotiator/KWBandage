@@ -202,7 +202,7 @@
 	* Shorten length of image and geometry
 7. Mission Debrief, the Objective headers were still blue instead of yellow. Additionally two bars that briefly appear before the Medal is revealed is also blue.
 	* Changed header colors to yellow and bars to red.
-#### Repair Decal
+#### Radius Decals
 1. Some objects repair and propaganda decal radius can be seen by other players when selected by the owner
 	* Set the decal to only be seen by the Local Player (Undocumented fix for other structures in TW 1.05)
 		* Objects Affected
@@ -210,6 +210,18 @@
 			* Reclamation Hub
 			* Voice of Kane
 			* Redeemer Engineering Facility
+2. Repair and Sensor pod textures are offset and have misaligned elements
+	* Remade textures
+3. Decal Size
+	* Adjusted size to be more accurate to the radius, scaling the margins
+		* Objects Affected
+			* Battlebase
+			* MRT
+			* Sensor Pod
+			* Confessor Cabal
+			* Purifier
+			* Voice of Kane
+			* Eradicator Hexapod
 #### AI
 1. Campaign AI design was not designed properly, structure based on Multiplayer AI. In TW, there are clear differences between Campaign and Multiplayer Skirmish AI in terms of structure and design.
 	* Redesign Campaign AI

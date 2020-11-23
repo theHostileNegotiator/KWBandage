@@ -10,6 +10,7 @@
 		<Include type="all" source="ART:ABHiveD2_AAN.w3x" />
 		<Include type="all" source="ART:ABHiveD2_SKN.w3x" />
 		<Include type="all" source="ART:ABHiveD3_SKN.w3x" />
+		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<!-- Assembler -->
 	<GameObject

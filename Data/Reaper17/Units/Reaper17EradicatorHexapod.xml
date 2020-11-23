@@ -1097,8 +1097,8 @@
 					<Model Name="FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL"
-						SizeX="900"
-						SizeY="900"
+						SizeX="1020"
+						SizeY="1020"
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"

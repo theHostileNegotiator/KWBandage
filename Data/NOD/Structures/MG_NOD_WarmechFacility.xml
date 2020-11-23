@@ -19,6 +19,7 @@
 		<Include type="all" source="ART:NBEngFaDoorsD2OPEN.w3x" />
 		<Include type="all" source="ART:NURedmrBLDA_SKN.w3x" />
 		<Include type="all" source="ART:NURedeemer_BLDA.w3x" />
+		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<GameObject
 		id="MG_NOD_WarmechFacility"

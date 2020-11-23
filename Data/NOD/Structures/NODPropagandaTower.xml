@@ -3,6 +3,7 @@
 <!-- Removed BROADCASTS_INVISIBILITY flags -->
 <!-- 'Morale Boosting' Aura no longer affects Squad Objects -->
 <!-- Added LocalPlayerOnly to the Propaganda Decal Shadow so it can no longer be seen by other players -->
+<!-- Adjusted propaganda decal size -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -166,8 +167,8 @@
 					<Model Name="FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL"
-						SizeX="825"
-						SizeY="825"
+						SizeX="905"
+						SizeY="905"
 						OverrideLODVisibility="true"
 						MaxHeight="350"
 						UseHouseColor="true"

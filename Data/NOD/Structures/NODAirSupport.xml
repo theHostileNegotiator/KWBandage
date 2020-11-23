@@ -9,6 +9,7 @@
 		<Include type="all" source="ART:NBAirSpprt.w3x" />
 		<Include type="all" source="ART:NBAirSpprt_ASN.w3x" />		
 		<Include type="all" source="ART:NBAirSpprt_D2SKN.w3x" />
+		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<GameObject
 		id="NODAirSupport"

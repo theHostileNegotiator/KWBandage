@@ -6,6 +6,7 @@
 <!-- Removed Move to Evacuate Ability in favour of evacuate infantry -->
 <!-- Increased speed to match APC (TW1.05) -->
 <!-- Removed Turret Bone reference -->
+<!-- Adjusted repair decal size -->
 	<GameObject
 		id="SteelTalonsRepairAPC"
 		SelectPortrait="Portrait_RepairAPC"
@@ -145,8 +146,8 @@
 					<Model Name="FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL_DYNAMIC"
-						SizeX="215"
-						SizeY="215"
+						SizeX="225"
+						SizeY="225"
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"
