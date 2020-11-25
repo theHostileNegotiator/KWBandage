@@ -104,7 +104,7 @@
 		<Body>
 			<ActiveBody
 				id="ModuleTag_Body"
-				MaxHealth="=$NOD_VERTIGO_DISRUPTION_POD_HEALTH" />
+				MaxHealth="20" />
 		</Body>
 		<Geometry
 			IsSmall="true">

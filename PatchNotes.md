@@ -331,19 +331,17 @@
 #### MRT
 1. Leash range of Repair Drone was not changed from KW 1.01 to 1.02, despite specified in change log
 	* Fixed leash range to 100
-2. Repair Decal radius was not representative of repair radius
-	* Fixed Repair size to 215
-3. Repair Drone would not keep up with the MRT when moving
+2. Repair Drone would not keep up with the MRT when moving
 	* Increased speed of repair drone so that it can keep up with the MRT, including when transported with OX Transport
-4. Repair Drone would repair Structures, Air units and funnily enough Infantry
+3. Repair Drone would repair Structures, Air units and funnily enough Infantry
 	* Removed ability to repair Structures, Air units and Infantry
-5. Not necessarily a bug but there was no way to instantly evacuate infantry due to too many abilities
+4. Not necessarily a bug but there was no way to instantly evacuate infantry due to too many abilities
 	* Remove "Move to Evacuate Ability" in favour of evacuate infantry
-6. Speed of the MRT was based of the APC before TW 1.05
+5. Speed of the MRT was based of the APC before TW 1.05
 	* Increased speed to match APC
-7. There are no sounds for units entering and exiting garrison
+6. There are no sounds for units entering and exiting garrison
 	* Added sound effects
-8. Unit cannot be ordered to target an object, even when units are garrisoned
+7. Unit cannot be ordered to target an object, even when units are garrisoned
 	* Added a weapon template, unit can be ordered to target and enter into range
 		* Removed Turret Bone references in GameObject
 #### Titan
