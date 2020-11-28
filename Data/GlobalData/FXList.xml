@@ -3,9 +3,8 @@
 	<Includes>
 		<Include type="all"
 						 source="FXListGDI.xml" />
-		<!--Include type="all"
+		<Include type="all"
 						 source="FXListNOD.xml" />
-						 -->
 		<Include type="all"
 						 source="FXListAlien.xml" />
 	<!--

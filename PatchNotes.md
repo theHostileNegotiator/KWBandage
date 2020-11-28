@@ -681,6 +681,10 @@
 	* Allowed weapon to attack while unit is moving
 5. Attacking animation play for any weapon firing instead of only the main weapon
 	* Changed Animation Condition to WEAPONSLOTID_01
+6. Unit would play Avatar death voice instead of it's own
+	* Swapped VoiceDie Audio Event in FX, removed Generic Voice Die as it was redundant
+7. Voice Move Attack
+	* Unit will now use Voice Move Attack Audio Event when targetting a unit outside of it's range, requiring it to move.
 #### Vertigo Bomber
 1. Stealth Model uses it's own Skeleton instead of the standard version, despite sharing animations
 	* Changed Container and Mesh to refer to the standard version like the Stealth Tank
