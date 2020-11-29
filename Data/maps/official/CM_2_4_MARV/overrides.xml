@@ -3902,7 +3902,6 @@
 				DestructionDelay="12.0s">
 				<DieMuxData
 					DeathTypes="ALL" />
-				<Sound Type="INITIAL" List="NOD_Generic_VoiceDieMS" />
 			</SlowDeath>			
 			<AISpecialPowerUpdate
 				id="ModuleTag_NODAvatarCommandeer"
@@ -4188,6 +4187,7 @@
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry Sound="AudioEvent:NOD_Redeemer_VoiceAttack" AudioType="voiceAttack" />
+			<AudioEntry Sound="AudioEvent:NOD_Redeemer_VoiceMoveAttack" AudioType="voiceAttackAfterMoving" />
 			<AudioEntry Sound="Multisound:NOD_Redeemer_VoiceCreateMS" AudioType="voiceCreated" />
 			<AudioEntry Sound="AudioEvent:NOD_Redeemer_VoiceMove" AudioType="voiceMove" />
 			<AudioEntry Sound="AudioEvent:NOD_Redeemer_VoiceMove" AudioType="voiceGuard" />
