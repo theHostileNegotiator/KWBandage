@@ -3138,8 +3138,9 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
-<!--Weapon will no longer De garrison at the same instant as it starts firing-->
-<!--Increased Damage to Match Black Hand (TW1.05)-->
+<!-- Weapon will no longer De garrison at the same instant as it starts firing -->
+<!-- Increased Damage to Match Black Hand (TW1.05) -->
+<!-- Duplicated weapon to add preventative for Cloned units to slow vehicles -->
 	<WeaponTemplate 
 		id="TibTrooperBlastCannon"
 		Name="TibTrooperBlastCannon"
@@ -3153,7 +3154,8 @@
 		RadiusDamageAffects="ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		ClipSize="20"
-		ReAcquireDetailType="PER_CLIP">
+		ReAcquireDetailType="PER_CLIP"
+		ForbiddenFiringObjectStatus="CLONED">
 		<PreAttackDelay
 			MinSeconds="0s"
 			MaxSeconds="1s" />
@@ -3215,6 +3217,71 @@
 					<ExcludeThing>BlackHandCustomWarmech</ExcludeThing>
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate 
+		id="TibTrooperBlastCannonClonned"
+		Name="TibTrooperBlastCannonClonned"
+		AttackRange="300.0"
+		WeaponSpeed="150.0"
+		FiringAndAimingLoopSound="Multisound:NOD_TiberiumTrooper_GoopWeaponMS"
+		FiringLoopSound="Multisound:NOD_TiberiumTrooper_GoopWeaponMS"
+		FiringLoopSoundContinuesDuringReload="true"
+		FiringLoopSoundPlaysOnlyForAttackPosition="true"
+		AcceptableAimDelta="10d"
+		RadiusDamageAffects="ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
+		ClipSize="20"
+		ReAcquireDetailType="PER_CLIP"
+		RequiredFiringObjectStatus="CLONED">
+		<PreAttackDelay
+			MinSeconds="0s"
+			MaxSeconds="1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<Nuggets>
+			<ActivateStreamNugget
+				Lifetime="0.75s"
+				StreamId="0"/>
+			<!-- Damage to all infantry, with spawning if dead 40 default-->
+			<DamageNugget
+				Damage="50.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="INFANTRY" >
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- regular damage to corrupted infantry -->
+			<DamageNugget
+				Damage="50.0"
+				Radius="25.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter Rule="NONE">
+					<IncludeThing>CorruptedInfantry</IncludeThing>
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- Damage to all non-infantry -->
+			<DamageNugget
+				Damage="50.0"
+				Radius="25.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="INFANTRY HORDE"/>
+			</DamageNugget>
+			<!-- Garrison clear -->
+			<ProjectileNugget
+				WarheadTemplate="TibTrooperBlastCannonWarhead"
+				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 		</Nuggets>
 	</WeaponTemplate>
 <!--New Warhead for Tib Trooper Degarison Effect-->

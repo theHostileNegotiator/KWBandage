@@ -584,6 +584,10 @@
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="TibTrooperBlastCannon" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="TibTrooperBlastCannonClonned"
+						ObjectStatus="CLONED" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<StreamState
