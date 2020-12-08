@@ -617,6 +617,7 @@
 		* Reduced resolution as texture compile is 256^2, the ArtPack came with 128^2
 3. Cloned units can still slow down vehicles
 	* Created a second weapon with the AttributeModifierNugget removed to be used by the clonned versions
+		* Affects Redeemer
 #### Shadow Team
 1. Members can be left behind when squad is moving
 	* Increased Shadows speed so it is faster than the squad speed

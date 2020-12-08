@@ -179,6 +179,31 @@
 						TurretNameKey="B_FTturretL"
 						TurretPitch="B_FTpitchL"
 						TurretID="9" />						
+			<!-- TIBERIUM CLONED -->						
+					<WeaponFireFXBone
+						WeaponSlotID="14"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FX_FTFireR" />
+					<WeaponLaunchBone
+						WeaponSlotID="14"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FX_FTFireR" />
+					<Turret
+						TurretNameKey="B_FTturretR"
+						TurretPitch="B_FTpitchR"
+						TurretID="14" />	
+					<WeaponFireFXBone
+						WeaponSlotID="15"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FX_FTFireL" />
+					<WeaponLaunchBone
+						WeaponSlotID="15"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FX_FTFireL" />
+					<Turret
+						TurretNameKey="B_FTturretL"
+						TurretPitch="B_FTpitchL"
+						TurretID="15" />						
 			<!-- RAGE -->
 					<WeaponFireFXBone
 						WeaponSlotID="10"
@@ -1269,7 +1294,6 @@
 				UVWorldSize="100.0"
 				NumTubeSides="8"
 				TubeRadius="1.5"
-				HitFx="FX_BulletHitGDI"
 				WeaponSlotID="8"
 				StreamStateID="0">
 				<FXShader
@@ -1302,9 +1326,73 @@
 				UVWorldSize="100.0"
 				NumTubeSides="8"
 				TubeRadius="1.5"
-				HitFx="FX_BulletHitGDI"
 				WeaponSlotID="9"
 				StreamStateID="1">
+				<FXShader
+					ShaderName="Stream.fx"
+					TechniqueIndex="1">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXTiberiumStream</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXTiberiumStream</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ParticleSystems>
+					<ParticleSys>TiberiumLiquidStreamDrip</ParticleSys>
+					<ParticleSys>TiberiumLiquidStreamDistort</ParticleSys>
+					<ParticleSys>TiberiumLiquidStreamGas</ParticleSys>
+					<ParticleSys>TiberiumLiquidStreamGas1</ParticleSys>
+					<!--ParticleSys>TiberiumLiquidStreamGas2</ParticleSys--><!-- Dark Green Gas -->
+				</ParticleSystems>
+			</StreamDraw>
+<!-- DRAW TIB WEAPON CLONED -->	
+			<StreamDraw
+				id="ModuleTag_StreamDrawRight_Cloned"
+				UseDistortionShader="false"
+				Velocity="200.0"
+				ArcHeightFactor="0.0625"
+				UVWorldSize="100.0"
+				NumTubeSides="8"
+				TubeRadius="1.5"
+				WeaponSlotID="14"
+				StreamStateID="2">
+				<FXShader
+					ShaderName="Stream.fx"
+					TechniqueIndex="1">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXTiberiumStream</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXTiberiumStream</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ParticleSystems>
+					<ParticleSys>TiberiumLiquidStreamDrip</ParticleSys>
+					<ParticleSys>TiberiumLiquidStreamDistort</ParticleSys>
+					<ParticleSys>TiberiumLiquidStreamGas</ParticleSys>
+					<ParticleSys>TiberiumLiquidStreamGas1</ParticleSys>
+					<!--ParticleSys>TiberiumLiquidStreamGas2</ParticleSys--><!-- Dark Green Gas -->
+				</ParticleSystems>
+			</StreamDraw>
+			<StreamDraw
+				id="ModuleTag_StreamDrawLeft_Cloned"
+				UseDistortionShader="false"
+				Velocity="200.0"
+				ArcHeightFactor="0.0625"
+				UVWorldSize="100.0"
+				NumTubeSides="8"
+				TubeRadius="1.5"
+				WeaponSlotID="15"
+				StreamStateID="3">
 				<FXShader
 					ShaderName="Stream.fx"
 					TechniqueIndex="1">
@@ -1593,7 +1681,47 @@
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
 				</WeaponSlotTurret>
-				
+<!-- TIB TROOPER WEAPON CLONNED -->				
+				<WeaponSlotTurret
+					ID="14">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="NODWarmechTibWeaponRightCloned"
+						Upgrade="Upgrade_RedeemerTibTrooperRight" />
+					<TurretSettings
+						TurretTurnRate="200"
+						TurretPitchRate="200"
+						AllowsPitch="true"
+						MinimumPitch="-90d"
+						PitchHeight="90%"
+						MinIdleScanTime="1.0s"
+						MaxIdleScanTime="3.0s"
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
+						<TurretAITargetChooserData
+							CanAcquireDynamicIfAssignedOutOfRange="true" />
+					</TurretSettings>
+				</WeaponSlotTurret>
+				<WeaponSlotTurret
+					ID="15">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="NODWarmechTibWeaponLeftCloned"
+						Upgrade="Upgrade_RedeemerTibTrooperLeft" />
+					<TurretSettings
+						TurretTurnRate="200"
+						TurretPitchRate="200"
+						AllowsPitch="true"
+						MinimumPitch="-90d"
+						PitchHeight="90%"
+						MinIdleScanTime="1.0s"
+						MaxIdleScanTime="3.0s"
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="25.0">
+						<TurretAITargetChooserData
+							CanAcquireDynamicIfAssignedOutOfRange="true" />
+					</TurretSettings>
+				</WeaponSlotTurret>
 			</WeaponSetUpdate>			
 
       <!-- 
@@ -1805,6 +1933,12 @@
 			<StreamState
 				id="ModuleTag_StreamState_1"
 				StreamId="1"></StreamState>			
+			<StreamState
+				id="ModuleTag_StreamState_2"
+				StreamId="2"></StreamState>			
+			<StreamState
+				id="ModuleTag_StreamState_3"
+				StreamId="3"></StreamState>			
 			
 	<!--		<LaserState
 				id="ModuleTag_LaserState1"

@@ -3,6 +3,7 @@
 <!-- Increased Speed and Health to Match Black Hand (Stats originally matched Black Hand pre TW1.05) -->
 <!-- Added HouseColor Texture for Cybernetic Legs Upgrade -->
 <!-- Added Status Upgrade DOES_CONTAIN_TIBERIUM for missing factions -->
+<!-- Added new Weapon Template for cloned units -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NUTibTroop_UGCL.xml" />
@@ -586,7 +587,7 @@
 						Template="TibTrooperBlastCannon" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="TibTrooperBlastCannonClonned"
+						Template="TibTrooperBlastCannonCloned"
 						ObjectStatus="CLONED" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>

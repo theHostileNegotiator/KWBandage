@@ -48,6 +48,9 @@
 #### Force Fire
 * Some units cannot Forcefire onto friendly or own objects and more importantly; own husks
 
+#### Shatterer Shockwave Heroic Effects
+* Only one LinearDamageUpdate Module will be used and cannot swapped by any status change.
+
 #### LOW LOD Mammoth Tank
 * Right railguns are offset
 
