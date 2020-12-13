@@ -459,6 +459,8 @@
 	* Renamed weapon bones in GUHamhead_SKN.w3x and adapted the changes in the "gameobject"
 4. Unit can be used to deflect Beamcannon beams
 	* Removed Flag
+5. Weapon is set up to have unlimited clip size but uses different method compared to other weapons that also have unlimited clip size
+	* While inconsequential, will now have a ClipSize of "0" and given a tiny firing duration.
 #### FireHawk
 1. ZOCOM Firehawks would not display Stratofigher thrusters properly, especially when upgraded with Ceramic Armor
 	* Fixed Animations

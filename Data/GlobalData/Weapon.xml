@@ -1489,6 +1489,73 @@
 			</ProjectileNugget>
 		</Nuggets>
 	</WeaponTemplate>
+	
+	<WeaponTemplate
+		id="GDIHammerheadChaingun"
+		Name="GDIHammerheadChaingun"
+		AttackRange="300.0"
+		WeaponSpeed="999999.0"
+		FireFX="FX_GDIHammerheadChaingunAP"
+		FireVeteranFX="FX_GDIHammerheadChaingunAPHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		WeaponRecoil="20d"
+		ReAcquireDetailType="PER_SHOT"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true"
+		ClipSize="0">
+		<FiringDuration
+			MinSeconds="0.01s"
+			MaxSeconds="0.01s" />
+		<!--
+		<ClipReloadTime
+			MinSeconds="0s"
+			MaxSeconds="0s"/>	-->
+		<Nuggets>
+			<DamageNugget
+				Damage="15.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.0s"
+				DamageType="GUN"
+				DamageFXType="NOD_MACHINEGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="1.0"
+				Suppression="25"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="GDIHammerheadUpgradedChaingun"
+		Name="GDIHammerheadUpgradedChaingun"
+		AttackRange="300.0"
+		WeaponSpeed="999999.0"
+		FireFX="FX_GDIHammerheadChaingunAP"
+		FireVeteranFX="FX_GDIHammerheadChaingunAPHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true"
+		ClipSize="0">
+		<FiringDuration
+			MinSeconds="0.01s"
+			MaxSeconds="0.01s" />
+		<!--
+		<ClipReloadTime
+			MinSeconds="0s"
+			MaxSeconds="0s"/>	-->
+		<Nuggets>
+			<DamageNugget
+				Damage="25.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.0s"
+				DamageType="GUN"
+				DamageFXType="NOD_MACHINEGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="1.0"
+				Suppression="25"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
 
 <!--Increase Range (Ommited), ROF and Decrease Damage of MARV Sniper Weapon to reflect Sniper Team weapon changes (TW1.09 to KW 1.00)-->
 	<WeaponTemplate
