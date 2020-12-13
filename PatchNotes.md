@@ -364,6 +364,8 @@
 #### Wolverine
 1. Did not play a seperate animation when EMPed. Instead it continued to loop the animation it was in before EMP strike
 	* Other Mech units used the Bored animation. This technique was applied
+2. Destroyed State uses the incorrect texture
+	* Destroyed unit will use the damaged texture
 #### Rig/Battlebase
 1. Subfaction Rigs when unpacking would create GDI Battlebase instead of their own. The same happens with Subfaction Battlebase packing GDI Rigs
 	* Packing and unpacking will now create the corresponding faction version

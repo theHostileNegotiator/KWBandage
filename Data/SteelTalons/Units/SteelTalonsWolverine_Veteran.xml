@@ -112,6 +112,9 @@
 					ConditionsYes="DYING">
 					<Model
 						Name="GUInfantryB_SKN" />
+					<Texture
+						Original="GUInfantryB"
+						New="GUInfantryB_D" />
 					<ParticleSysBone
 						BoneName="GW_Hips"
 						FXParticleSystemTemplate="GDIDebrisSmallFire"

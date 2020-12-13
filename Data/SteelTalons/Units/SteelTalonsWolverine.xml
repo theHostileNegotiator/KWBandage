@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Added EMP Animation -->
 <!-- Added Status Upgrade WEAPON_UPGRADED_02 for missing factions for Non Veterancy -->
+<!-- Destroyed unit will use damaged texture -->
   <Tags></Tags>
 	<Includes>
 	</Includes>
@@ -115,6 +116,9 @@
 					ConditionsYes="DYING">
 					<Model
 						Name="GUInfantryB_SKN" />
+					<Texture
+						Original="GUInfantryB"
+						New="GUInfantryB_D" />
 					<ParticleSysBone
 						BoneName="GW_Hips"
 						FXParticleSystemTemplate="GDIDebrisSmallFire"
