@@ -627,6 +627,9 @@
 	* Increased Shadows speed so it is faster than the squad speed
 2. Most members of the squad will attempt to fire their weapon outside of the max range after KW 1.02
 	* Reduced range of 'range finder' from 225-175 so squad will fully enter into range of their weapons (1.02 Patch refers to weapon range, not squad range)
+#### Commando
+1. Has directional armor allowing it to take extra damage from the side and back. Typically infantry do not have directional armor penalties
+	* Remove Directional Armor Penalty
 #### Attack Bike
 1. The rockets fired would only come out of one rocket pod
 	* Changed bone names so burst would alternate between pods

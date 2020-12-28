@@ -109,6 +109,27 @@
 			Damage="SNIPER"
 			Percent="100"/>	
 	</ArmorTemplate>
+	<!--Removed Directional Armor-->
+	<ArmorTemplate
+		id="NODCommandoArmor"
+		SideDamageScalar="100"
+		RearDamageScalar="100">
+		<Armor
+			Damage="CANNON"
+			Percent="5" />
+		<Armor
+			Damage="ROCKET"
+			Percent="12" />
+		<Armor
+			Damage="GRENADE"
+			Percent="40" />
+		<Armor
+			Damage="GUN"
+			Percent="50" />
+		<Armor
+			Damage="SNIPER"
+			Percent="100"/>
+	</ArmorTemplate>
 	<!--New Shield Armor for Harvester-->
 	<ArmorTemplate
 		id="AlienHarvesterArmorShieldBodyEnabled"
