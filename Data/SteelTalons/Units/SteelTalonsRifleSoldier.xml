@@ -1020,5 +1020,7 @@ GDI_RifleSoldier_VoiceSuppressedMS
 			MaxVisionBonusPercent="300"
 			VisionBonusTestRadius="200"
 			VisionBonusPercentPerFoot="1" />
+		<CrusherInfo
+			CrushableLevel="0" />
 	</GameObject>
 </AssetDeclaration>
