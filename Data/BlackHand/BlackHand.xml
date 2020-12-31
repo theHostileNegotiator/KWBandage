@@ -21,6 +21,8 @@
 		<Include type="all" source="Units/BlackHandMetaUnit.xml" />	
 		<Include type="all" source="Units/BlackHandMilitantRocket.xml" />
 		<Include type="all" source="Units/BlackHandMilitantRocketSquad.xml" />
+		<Include type="all" source="Units/BlackHandRaiderTank.xml" />
+		<Include type="all" source="Units/BlackHandScorpionBuggy.xml" />	
 		<Include type="all" source="Units/BlackHandStealthTank.xml" />	
 		<Include type="all" source="Units/BlackHandVenom.xml" />	
 		

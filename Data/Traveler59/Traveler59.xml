@@ -3,6 +3,7 @@
 	<Includes>
 	
 		<!--Units-->
+		<Include type="all" source="units/Traveler59AnnihilatorTripod.xml" />
 		<Include type="all" source="units/Traveler59AnnihilatorTripodHusk.xml" />
 		<Include type="all" source="Units/Traveler59BlinkMastermind.xml" />
 		<Include type="all" source="Units/Traveler59Buzzers.xml" />
@@ -12,6 +13,7 @@
 		<Include type="all" source="Units/Traveler59CustomizableVehicle.xml" />	
 		<Include type="all" source="Units/Traveler59DevastatorWarship.xml" />
 		<Include type="all" source="Units/Traveler59EradicatorHexapod.xml" />	
+		<Include type="all" source="Units/Traveler59GunWalker.xml" />	
 		<Include type="all" source="Units/Traveler59Harvester.xml" />	
 		<Include type="all" source="Units/Traveler59MillipedeBody.xml" />	
 		<Include type="all" source="Units/Traveler59MillipedeHead.xml" />	

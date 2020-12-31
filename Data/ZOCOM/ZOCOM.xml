@@ -12,10 +12,12 @@
 		<Include type="all" source="Units/ZOCOMJuggernaughtHusk.xml" />
 		<Include type="all" source="Units/ZOCOMHammerhead.xml" />
 		<Include type="all" source="Units/ZOCOMHarvester.xml" />
+		<Include type="all" source="Units/ZOCOMMammoth.xml" />
 		<Include type="all" source="Units/ZOCOMMARV.xml" />
 		<Include type="all" source="Units/ZOCOMMCV.xml" />
 		<Include type="all" source="Units/ZOCOMMissileSoldier.xml" />
 		<Include type="all" source="Units/ZOCOMOrca.xml" />
+		<Include type="all" source="Units/ZOCOMPredator.xml" />
 		<Include type="all" source="Units/ZOCOMRifleSoldier.xml" />
 		<Include type="all" source="Units/ZOCOMRig.xml" />
 		<Include type="all" source="Units/ZOCOMSniper.xml" />	

@@ -81,12 +81,15 @@
 			* NOD Black Hand (- Purifying Flame)
 			* NOD Flame Tank (- Purifying Flame)
 			* NOD/MOK Militant Rocket Squad (- Black Disciple)
+			* BH/MOK Raider Buggy (- Laser Capacitor)
+			* BH/MOK Scorpion Tank (- Laser Capacitor)
 			* BH/MOK Laser Cannon (- Laser Capacitor)
 			* BH Shredder Turret (+ Charged Particle Beams)
 			* MOK Shredder Turret (+ Super Charged Particle Beams)
 			* MOK Enlightened (- Railgun, + Super Charged Particle Beams)
 			* MOK Militant Rocket Squad (- Confessor, - Black Disciple)
 			* Scrin/R17/T59 Mechapede (- Forcefield Generator)
+			* T59 Annihilator Tripod (- Forcefield Generator)
 #### Upgraded Textures
 1. Units when upgraded would not use the corresponding Specular, NormalMap or House Color Texture
 	* Added texture change for Specular, NormalMap or House Color Textures
@@ -258,6 +261,17 @@
 			* Isthmus of Insanity (BAMAP_EW11_05)
 			* Dark Waters (BAMAP_JF03_6)
 			* Tiberium Wasteland (BAMAP_EW10_06)
+#### Global Conquest
+1. Units contained in Upgraded Strike Forces can be given upgrades that can not and should not benefited from
+	* Removed upgrade in WorldMapArmoryUpgradesAllowed
+		* ZOCOM Predator Tank (Railgun)
+		* ZOCOM Mammoth Tank (Railgun)
+		* BH Fanatics (Tiberium Infusion)
+		* BH/MOK Raider Buggy (Laser Capacitor)
+		* BH/MOK Scorpion Tank (Laser Capacitor)
+		* T59 Seeker (Attenuated Forcefields)
+		* T59 Gun Walker (Attenuated Forcefields)
+		* T59 Annihilator Tripod (Forcefield Generator)
 	
 ### Campaign
 
@@ -611,8 +625,6 @@
 	* Added Subfaction Fanatics to Damage Scalar.
 2. Black Hand Fanatic Squads can be upgraded with Tiberium Infusion with NOD or MOK Secret Shrine.
 	* Removed upgrade
-3. Fanatics contained in Black Hand Upgraded Strike teams in Global Conquest will be upgraded with Tiberium Infusion, despite not being available to the Subfaction
-	* Removed upgrade in WorldMapArmoryUpgradesAllowed
 #### Tiberium Trooper
 1. Health, speed and weapon damage values were inherited from Black Hand pre TW 1.05
 	* Changed values to match Black Hand
@@ -635,6 +647,12 @@
 	* Changed bone names so burst would alternate between pods
 2. Low LOD model turrets do not rotate
 	* While this isn't necessarily a bug, the problem is the Tib Core subobjects would rotate independently on it's own, therefore the bike mesh was changed from normal to skin and now the turrets will move
+#### Raider Buggy
+1. Black Hand unit can be upgraded with Laser Capacitors from captured Nod Tech Center
+	* Removed references to Laser Capacitor
+#### Scorpion Tank
+1. Black Hand unit can be upgraded with Laser Capacitors from captured Nod Tech Center
+	* Removed references to Laser Capacitor
 #### Harvester
 1. Black Hand variant could not be cloaked with NOD Cloaking Field Support Power
 	* Restored ability for it to be cloaked and defaulted parameters
@@ -755,6 +773,10 @@
 	* Weapon Range is nerfed due to changes to Confessor Cabal
 3. The animation to throw grenades is not synced with the grenade throw
 	* Changed NODConfessorGrenade weapon timing, fire duration is shorter but clip reload time is longer so ROF is the same
+4. Unit would benefit from Charged Particle Beams from a Black Hand Technology Assembler
+	* Removed Upgrade
+5. Unit would not be upgraded with Tiberium Infusion in an Upgraded Strike Force in Global Conquest
+	* Added Upgrade_TiberiumInfusion in WorldMapArmoryUpgradesAllowed
 #### Black Disciple
 1. Black Disciple can be upgraded with Purifying Flame. This is an issue as it would mean that Confessor Cabals have access to 3 Tech Upgrades (Charged Particle Beams + Black Disciples) where the max is 2
 	* Remove Purifying Flame upgrade to Black Disciples to ensure max tech upgrade of 2
@@ -814,7 +836,7 @@
 1. When firing or using Tiberium Agitation, projectiles or laser exits the wrong area, above it's head
 	* Animations moved weapon firing bones above it's head for some reason. Removed ChannelScalars ChannelQuaternions specific for Weapon FX Bones in all animations.
 2. Tiberium Agitation target requirements are inconsistent, it does not target Scrin Devourer Tank and BH and Mok Power Plant with Tiberium Core upgrade.
-	* Fixed targeting parameters of Tiberium Agitation. Will now target Scrin Devourer Tank, BH and Mok Power Plant with Tiberium Core upgrade. Additionally will not target units that is empty of Tiberium
+	* Fixed targeting parameters of Tiberium Agitation. Will now target Scrin Devourer Tank, BH and Mok Power Plant with Tiberium Core upgrade. Additionally will not target units that are empty of Tiberium
 #### Mastermind
 1. Can control subfaction base defense
 	* Removed ability to target base defense structures
@@ -834,8 +856,6 @@
 #### Seeker
 1. Will prioritise infantry over aircraft or vehicles
 	* Changed Weapon Category from GUN to MISSILE
-2. Seekers contained in Traveler59 Upgraded Strike teams in Global Conquest will be upgraded with Attenuated Forcefields, despite not being available to the Subfaction
-	* Removed upgrade in WorldMapArmoryUpgradesAllowed
 #### Harvester
 1. Will play generic EVA event when attacked instead of a unique Harvester EVA event
 	* Changed EVA event for Harvester Under Attack
@@ -850,6 +870,8 @@
 	* Increased Damage to match unupgraded counterpart
 2. Husk would use Annihilator Tripod Husk Model with the Reaper Tripod Texture
 	* Created a new Reaper Tripod Husk model to be used instead
+3. Unit would not benefit from Forcefield Generator upgrade in Global Conquest
+	* Swapped Upgrade_AlienReactorForcefieldGenerator for Upgrade_Reaper17ReactorForcefieldGenerator in WorldMapArmoryUpgradesAllowed
 #### Mechapede
 1. Subfactions use Scrin Mechapede Members instead of their own
 	* Create new members for each faction

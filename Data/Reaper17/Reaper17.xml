@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>		
 		<!--Units-->
+		<Include type="all" source="Units/Reaper17AnnihilatorTripod.xml" />
 		<Include type="all" source="Units/Reaper17AnnihilatorTripodHusk.xml" />
 		<Include type="all" source="Units/Reaper17Assimilator.xml" />
 		<Include type="all" source="Units/Reaper17Buzzers.xml" />

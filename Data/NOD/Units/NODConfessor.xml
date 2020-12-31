@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Changed KindOf to that of most if not all infantry units (NOT Squads)-->
-<!--Removed Charged Particle Beams Upgrade-->
-<!--Changed Weapon Category from NONE to GUN-->
-<!--Given Infantry Status-->
+<!-- Changed KindOf to that of most if not all infantry units (NOT Squads) -->
+<!-- Removed Charged Particle Beams Upgrade -->
+<!-- Changed Weapon Category from NONE to GUN -->
+<!-- Given Infantry Status -->
+<!-- Now benefit from Tiberium Infusion when contained in an Upgraded Strike Force in Global Conquest -->
   <GameObject
 		id="NODConfessor"
 		SelectPortrait="Portrait_NODConfessor"
@@ -24,7 +25,8 @@
 		VoicePriority="80"
 		EditorName="NODConfessor"
 		Description="Desc:NODConfessor"
-		TypeDescription="Type:NODConfessor">
+		TypeDescription="Type:NODConfessor"
+		WorldMapArmoryUpgradesAllowed="Upgrade_TiberiumInfusion">
 		<DisplayName>Name:NODConfessor</DisplayName>
 		<ArmorSet
 			Conditions="PLAYER_UPGRADE"
