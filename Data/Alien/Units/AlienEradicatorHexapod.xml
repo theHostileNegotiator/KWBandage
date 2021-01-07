@@ -8,8 +8,10 @@
 <!-- Reorder of animation priorities -->
 <!-- Attack Animation will now only play when the main weapon fires -->
 <!-- Adjusted recycle decal size -->
+<!-- Created Rubble Model (Using damaged model name for memory) -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all"	source="ART:AUEradHex_D1.w3x" />
 		<Include type="all"	source="ART:Decal_Sensor_CO.xml" />
 	</Includes>
 	<GameObject

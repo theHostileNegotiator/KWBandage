@@ -9,7 +9,7 @@
 	<GameObject
 		id="GDIZOCOMHarvesterDebris_01"
 		inheritFrom="BaseDebris" 		
-		EditorName="GDIHarvesterDebris_01"
+		EditorName="GDIZOCOMHarvesterDebris_01"
 		Side="Neutral"
 		EditorSorting="MISC_MAN_MADE"
 		TransportSlotCount="0"

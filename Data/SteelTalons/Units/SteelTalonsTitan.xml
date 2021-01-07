@@ -8,6 +8,7 @@
 <!-- Removed Limping animation from DAMAGED state, will only be used in REALLYDAMAGED state -->
 <!-- Added new Damaged Textures for Adaptive Armor -->
 <!-- Fixed DYING state to use appropriate model and texture when having Adaptive Armor -->
+<!-- New Rubble Model (Stygs) -->
 	<Includes>
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
@@ -1234,6 +1235,10 @@
 				SinkDelay="3s"
 				SinkRate="1.5"
 				DestructionDelay="7.5s"> 
+				<OCL
+					Type="INITIAL">
+					<OCL>OCL_SteelTalonsTitanDebris</OCL>
+				</OCL>
 				<DieMuxData
 					DeathTypes="ALL"
 					DeathTypesForbidden="TOPPLED" /> 

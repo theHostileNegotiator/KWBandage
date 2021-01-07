@@ -365,6 +365,8 @@
 	* Other Mech units used the Bored animation. This technique was applied
 3. With Adaptive Armor upgraded or used, when destroyed it will use the standard model, with the special ability activated it will still show the Armor effect.
 	* Added new Model Conditions that reference the Rubble Model when DYING with the upgrade or using ability
+4. Rubble model is the same as the base model
+	* Created new Rubble model with debris and have a noise modifier applied (Stygs)
 #### Harvester
 1. The Tiberium meter on the rear of the Harvesters shows when destroyed, conflicting with the destruction model
 	* Tiberium meter is hidden when destroyed
@@ -662,7 +664,7 @@
 2. Subfaction MCVs when trained from their respective Warfactory would have the Created voice line delayed. Additionally, all built from the Redeemer Engineering Facility suffer the same problem
 	* Unit Voice Array had ObjectSpecificEntry for when unit is created from Warfactory. All referenced Nod Warfactory. Changed to reference their own Warfactory and added the Redeemer Engineering Facility SpecificEntry for each faction.
 #### Reckoner
-1. Destroyed Model is broken due to incorrect bone references. Additionally destroyed model it too clean
+1. Destroyed Model is broken due to incorrect bone references. Additionally destroyed model is too clean
 	* Fixed bone references in model container and added noise modifier to model (Thanks Stygs, in particular the noise modifier)
 #### Mantis
 1. Turret is not effective at tracking Air Units, often misfiring
@@ -885,6 +887,8 @@
 	* Changed Animation Condition to WEAPONSLOTID_01 and AllowInterleavedFiring="true"
 4. Attacking animation would be prioritised, playing while attacking and moving, causing the legs to 'spaz' and slide across the ground. And there are no unique attack while moving animations
 	* Reordered animation conditions and priorities, attacking animations will not play while moving.
+5. Rubble Model appears to be the same as the base model with incorrect bone references
+	* Created new Rubble Model having parts missing representative of the debris models that already exists
 #### Drone Ship
 1. Subfaction Drone Ships when undeploying have the ability to teleport with Mastermind and Prodigy or Phased with Phasefield ability. This was not present with Base Faction, even in Tiberium Wars
 	* Removed ability to target undeploying Drone Ships

@@ -320,5 +320,90 @@
 			<CreateObject>GDIZOCOMHarvesterDebris_05</CreateObject>
 		</CreateObject>
 	</ObjectCreationList>
+	
+	<!-- New Titan Debris -->
+	<ObjectCreationList
+		id="OCL_SteelTalonsTitanDebris">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="5.0"
+			DispositionIntensity="3.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.0s"
+			MinForcePitch="15d"
+			MaxForcePitch="45d">
+			<Offset
+				x="-4.04"
+				y="-14.99"
+				z="22.89" />
+			<CreateObject>SteelTalonsTitanDebris_01</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="5.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="-18.44"
+				y="-6.32"
+				z="31.46" />
+			<CreateObject>SteelTalonsTitanDebris_02</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="3.0"
+			MaxForceMagnitude="5.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="15d"
+			MaxForcePitch="45d">
+			<Offset
+				x="6.82"
+				y="8.1"
+				z="25.92" />
+			<CreateObject>SteelTalonsTitanDebris_03</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="3.0"
+			MaxForceMagnitude="5.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="15d"
+			MaxForcePitch="45d">
+			<Offset
+				x="5.6"
+				y="-8.88"
+				z="1.45" />
+			<CreateObject>SteelTalonsTitanDebris_04</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="5.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="45d"
+			MaxForcePitch="75d">
+			<Offset
+				x="-3.8"
+				y="13.77"
+				z="29.03" />
+			<CreateObject>SteelTalonsTitanDebris_05</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
 
 </AssetDeclaration>
