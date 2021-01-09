@@ -22984,7 +22984,7 @@
 					<Value>AUEradHex_D</Value>
 				</Texture>
 				<Texture Name="NormalMap">
-					<Value>AUEradHex_NRM.003</Value>
+					<Value>AUEradHex_NRM</Value>
 				</Texture>
 				<Texture Name="SpecMap">
 					<Value>AUEradHex_SPM</Value>
