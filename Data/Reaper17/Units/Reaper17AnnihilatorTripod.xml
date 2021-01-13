@@ -35,6 +35,7 @@
 		</GameDependency>
 		<DisplayUpgrade
 			id="Tag_DisplayUpgrade1">Upgrade_Reaper17ReactorForcefieldGenerator</DisplayUpgrade>
+		<DisplayUpgrade id="Tag_DisplayUpgrade2">Upgrade_Reaper17ConversionReserves</DisplayUpgrade>
 		<ArmorSet
 			Armor="AlienAnnihilatorTripodArmor"
 			DamageFX="VehicleDamageFX" />
