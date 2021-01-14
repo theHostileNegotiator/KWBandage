@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed Rate of Fire bonus due to removal in TW Patch 1.09-->
+<!-- Removed Rate of Fire bonus due to removal in TW Patch 1.09 -->
 	<AttributeModifier
 		id="AttributeModifier_BlackHandLeadership"
 		Category="NONE"
@@ -10,7 +10,7 @@
 		<Modifier Type="ARMOR" Value="75%"/>
 		<Modifier Type="SUPPRESSABILITY" Value="150"/>
 	</AttributeModifier>
-<!--Fixed Radio Tower Armor Bug in First Mission, Now increases armor rather than reduce-->
+<!-- Fixed Radio Tower Armor Bug in First Mission, Now increases armor rather than reduce -->
 	<AttributeModifier
 		id="AttributeModifier_CM11RadioTowerBuff"
 		Category="BUFF"
@@ -35,7 +35,7 @@
 		<Modifier Type="ARMOR" Value="75%" />
 	</AttributeModifier>
 	
-<!--Hide Confessor or Black Disciple when upgrades are triggered while garrisoned-->
+<!-- Hide Confessor or Black Disciple when upgrades are triggered while garrisoned -->
 	<AttributeModifier
 		id="AttributeModifier_Garrisoned"
 		Category="NONE"
@@ -44,6 +44,14 @@
 		<Modifier Type="DAMAGE_MULT" Value="100%"/>
 		<Modifier Type="RANGE" Value="100%"/>
 		<Modifier Type="VISION" Value="200"/>
+	</AttributeModifier>
+	
+<!-- Increased Duration for consistency with Recycling -->
+	<AttributeModifier
+		id="AttributeModifier_Recyclotron"
+		Category="NONE"
+		Duration="1.55s"
+		ObjectStatusToSet="SUICIDE_BOMBER_HAS_TARGET">
 	</AttributeModifier>
 	
 <!-- New Mission Specific AttributeModifier to Buff ROF rather than nerf -->

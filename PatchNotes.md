@@ -889,6 +889,8 @@
 	* Reordered animation conditions and priorities, attacking animations will not play while moving.
 5. Rubble Model appears to be the same as the base model with incorrect bone references
 	* Created new Rubble Model having parts missing representative of the debris models that already exists
+6. Recycling tends to be inconsistent, destroyed units may not give resources when in range of the Hexapod
+	* Increased Duration of AttributeModifier_Recyclotron to 1.55 seconds
 #### Drone Ship
 1. Subfaction Drone Ships when undeploying have the ability to teleport with Mastermind and Prodigy or Phased with Phasefield ability. This was not present with Base Faction, even in Tiberium Wars
 	* Removed ability to target undeploying Drone Ships
