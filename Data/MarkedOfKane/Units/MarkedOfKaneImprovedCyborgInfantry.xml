@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Changed Upgrade Sound from Railgun to SuperChargedParticleBeam-->
-<!--Added HouseColor Texture for Cybernetic Legs Upgrade-->
-<!--Fixed EMP Range-->
-<!--Added new EMP Attack animation due to instant activation-->
+<!-- Changed Upgrade Sound from Railgun to SuperChargedParticleBeam -->
+<!-- Added HouseColor Texture for Cybernetic Legs Upgrade -->
+<!-- Fixed EMP Range -->
+<!-- Added new EMP Attack animation due to instant activation -->
+<!-- Fixed Transition to Idle animation A from animating the EMP weapon -->
+<!-- Fixed Model, EMP weapon and Super Charged Particle Beam weapon assigned to incorrect bone -->
+<!-- Fixed Low LOD models having incorrect weapon and added new model for the Upgraded version -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:NUEnlightened_SKN.w3x"  />
+		<Include type="all" source="ART:NUEnlightenedU_SKN.w3x"  />
+		<Include type="all" source="ART:NUSilent_ABTA.w3x"  />
 		<Include type="all" source="ART:NUSilent_EMPB.w3x"  />
-		<Include
-			type="all"
-			source="ART:HC_NUEnlightened_UGCL.xml" />
+		<Include type="all" source="ART:HC_NUEnlightened_UGCL.xml" />
 	</Includes>
 	<GameObject
 		id="MarkedOfKaneImprovedCyborgInfantry"

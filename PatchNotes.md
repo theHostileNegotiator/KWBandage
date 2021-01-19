@@ -610,11 +610,13 @@
 9. Unit has range change when upgrading to Charged Particle Beam
 	* Reduced base weapon Range from 325 to 300 matching upgraded version
 #### Awakened
-1. If there is access to BH Tech Lab, unit can be upgraded with Charged Particle Beam
+1. One of the Transition to idle animation can cause the EMP weapon to detatch from the model
+	* Removed problematic and unnecessary animations channels relating to the EMP weapon bone
+2. If there is access to BH Tech Lab, unit can be upgraded with Charged Particle Beam
 	* Remove Upgrade
-2. Individual unit used Black Hand portrait instead of it's own (This is noticable in the mission Will Made Flesh)
+3. Individual unit used Black Hand portrait instead of it's own (This is noticable in the mission Will Made Flesh)
 	* Changed unit portrait to Awakened
-3. Unit in Formation Preview uses Black Hand Icon instead of it's own
+4. Unit in Formation Preview uses Black Hand Icon instead of it's own
 	* Added new Formation model for Awakened to have unique icon
 #### Militant Rocket Squad
 1. Black Hand Militant Rocket Squad can be upgraded with Tiberium Infusion with NOD or MOK Secret Shrine.
@@ -641,6 +643,13 @@
 	* Increased Shadows speed so it is faster than the squad speed
 2. Most members of the squad will attempt to fire their weapon outside of the max range after KW 1.02
 	* Reduced range of 'range finder' from 225-175 so squad will fully enter into range of their weapons (1.02 Patch refers to weapon range, not squad range)
+#### Enlightened
+1. One of the Transition to idle animation can cause the EMP weapon to detatch from the model
+	* Removed problematic and unnecessary animations channels relating to the EMP weapon bone
+2. EMP weapon would 'detach' itself with some animations
+	* Fixed bone reference of mesh
+3. Low LOD model has Super Charged Particle Beam weapon when upgrade has not been purchased
+	* Swapped weapon mesh for Charged Particle Beam, upgraded model now has Low LOD version
 #### Commando
 1. Has directional armor allowing it to take extra damage from the side and back. Typically infantry do not have directional armor penalties
 	* Remove Directional Armor Penalty

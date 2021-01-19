@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed Charged Particle Beams-->
-<!--Fixed EMP Range-->
-<!--Speed Normalised to Marked of Kane Awakened (KW1.01)-->
-<!--Changed Build Cost to match Marked of Kane Awakened-->
-<!--Added new EMP Attack animation due to instant activation-->
+<!-- Removed Charged Particle Beams -->
+<!-- Fixed EMP Range -->
+<!-- Speed Normalised to Marked of Kane Awakened (KW1.01) -->
+<!-- Added new EMP Attack animation due to instant activation -->
+<!-- Fixed Transition to Idle animation A from animating the EMP weapon -->
 	<Includes>
 		<Include type="all" source="ART:NUSilent_EMPB.w3x"  />
 	</Includes>
