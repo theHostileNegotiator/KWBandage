@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Added Traveler Engine Effects to Ion Storm Model-->
-<!--Traveler Engine Effects are added to Acceleration (This is to workaround the initial flash of the effects when starting to move)-->
+<!-- Traveler Engine Meshs have and use their own separate bone -->
+<!-- Added Traveler Engine Effects to Ion Storm Model -->
+<!-- Traveler Engine Effects are added to Acceleration (This is to workaround the initial flash of the effects when starting to move) -->
+<!-- Traveler Engine Particle Effects are attached to the rear instead of the center -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -598,7 +600,7 @@
 			</SpotlightDraw>
 			<ScriptedModelDraw		
 				id="ModuleTag_DrawTravelerEnginesFX"
-				AttachToBoneInAnotherModule="roottransform">
+				AttachToBoneInAnotherModule="traveng">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model

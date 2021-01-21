@@ -920,6 +920,9 @@
 		* The FX are not supposed to show until it reaches top speed but unfortunately this is the best workaround at the moment
 5. Ion Model Skeleton
 	* Ion model will now refer to the base Skeleton (AUDevWar_SKL) rather than it's own (AUDevWarIon)
+6. Traveler Engine Particle Effects source from the center instead of the rear
+	* Created a new bone that is positioned at the rear for the particle effects
+		* Traveler Engine Mesh now reference this bone
 #### Planetary Assault Carrier
 1. Unit when under Ion Storm does not show Traveler Engines
 	* Added Traveler Engine to the model
@@ -930,6 +933,9 @@
 	* Ion model will now refer to the base Skeleton (AUPACarrier_SKL) rather than it's own (AUPACarrierIon)
 4. Fighters use different textures when under Ion Storm
 	* Changed textures to match default
+5. Traveler Engine Particle Effects source from the center instead of the rear
+	* Created a new bone that is positioned at the rear for the particle effects
+		* Traveler Engine Mesh now reference this bone
 #### Warp Chasm
 1. Models and Draws
 	* Models, Animations and Draws were redone to reduce redundency and fix certain bugs, such as resetting the Opening animation when entering the REALLYDAMAGED state.

@@ -3,7 +3,7 @@
 	<Includes>
 		<Include type="all" source="ART:audevwar_skl.w3x"/>
 	</Includes>
-	<W3DMesh id="AUDEVWARION.DEVASTATOR" CastShadow="true" GeometryType="Skin">
+	<W3DMesh id="AUDEVWAR_SKN.NEWSKIN" CastShadow="true" GeometryType="Skin">
 		<BoundingBox>
 			<Min X="-36.928352" Y="-19.183418" Z="-3.507142"/>
 			<Max X="36.928352" Y="19.183420" Z="17.537582"/>
@@ -14981,7 +14981,7 @@
 				<Dist>5.960878</Dist>
 			</T>
 		</Triangles>
-		<FXShader ShaderName="ObjectsAlienIonHull.fx">
+		<FXShader ShaderName="ObjectsAlien.fx">
 			<Constants>
 				<Texture Name="EnvironmentTexture">
 					<Value>AURefmap</Value>
@@ -14998,28 +14998,16 @@
 				<Texture Name="RecolorTexture">
 					<Value>HCToBeRemovedNoAlpha</Value>
 				</Texture>
-				<Float Name="BumpScale">
-					<Value>3.000000</Value>
-				</Float>
-				<Float Name="SpecularColor">
-					<Value>0.788235</Value>
-					<Value>0.760784</Value>
-					<Value>1.000000</Value>
-					<Value>0.000000</Value>
-				</Float>
 				<Float Name="EnvMult">
 					<Value>1.000000</Value>
 				</Float>
 				<Bool Name="AlphaTestEnable">
 					<Value>false</Value>
 				</Bool>
-				<Texture Name="IonHullTexture">
-					<Value>FXIonHull</Value>
-				</Texture>
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DMesh id="AUDEVWARION.TRAVENG02" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="AUDEVWAR_SKN.TRAVENG02" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-68.266167" Y="-9.706084" Z="-3.057465" />
 			<Max X="10.335243" Y="10.043915" Z="5.086153" />
@@ -15458,7 +15446,7 @@
 			</Node>
 		</AABTree>
 	</W3DMesh>
-	<W3DMesh id="AUDEVWARION.TRAVENG01" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="AUDEVWAR_SKN.TRAVENG01" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-7.962681" Y="-34.819756" Z="-34.200500" />
 			<Max X="7.962753" Y="34.819759" Z="34.200508" />
@@ -15679,29 +15667,25 @@
 			</Node>
 		</AABTree>
 	</W3DMesh>
-	<W3DCollisionBox id="AUDEVWARION.OBBOX">
-		<Center X="0.000000" Y="0.000000" Z="7.500000"/>
-		<Extent X="35.000000" Y="12.500000" Z="7.500000"/>
-	</W3DCollisionBox>
-	<W3DContainer id="AUDEVWARION" Hierarchy="AUDEVWAR_SKL">
-		<SubObject SubObjectID="DEVASTATOR" BoneIndex="1">
+	<W3DContainer id="AUDEVWAR_SKN" Hierarchy="AUDEVWAR_SKL">
+		<SubObject SubObjectID="NEWSKIN" BoneIndex="1">
 			<RenderObject>
-				<Mesh>AUDEVWARION.DEVASTATOR</Mesh>
+				<Mesh>AUDEVWAR_SKN.NEWSKIN</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="TRAVENG02" BoneIndex="8">
 			<RenderObject>
-				<Mesh>AUDEVWARION.TRAVENG02</Mesh>
+				<Mesh>AUDEVWAR_SKN.TRAVENG02</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="TRAVENG01" BoneIndex="8">
 			<RenderObject>
-				<Mesh>AUDEVWARION.TRAVENG01</Mesh>
+				<Mesh>AUDEVWAR_SKN.TRAVENG01</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="OBBOX" BoneIndex="0">
 			<RenderObject>
-				<CollisionBox>AUDEVWARION.OBBOX</CollisionBox>
+				<CollisionBox>AUDEVWAR_SKN.OBBOX</CollisionBox>
 			</RenderObject>
 		</SubObject>
 	</W3DContainer>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--Refer to Scrin Devastator Warship-->
-<!--Added Traveler Engine Effects to Ion Storm Model-->
-<!--Traveler Engine Effects are added to Acceleration (This is to workaround the initial flash of the effects when starting to move)-->
+<!-- Refer to Scrin Devastator Warship -->
+<!-- Traveler Engine Effects are added to Acceleration (This is to workaround the initial flash of the effects when starting to move) -->
+<!-- Traveler Engine Particle Effects are attached to the rear instead of the center -->
 	<GameObject
 		id="Traveler59DevastatorWarship"
 		SelectPortrait="Portrait_AlienDevastatorWarship"
@@ -552,28 +552,28 @@
 						New="AUDevWar_K" />						
 				</ModelConditionState>
 
-        <AnimationState
-            ParseCondStateType="PARSE_DEFAULT"
-            Flags="RESTART_ANIM_WHEN_COMPLETE">
-          <Animation
-            AnimationName="AUDevWar_IDLA"
-            AnimationMode="ONCE"
-            AnimationPriority="50"
-            AnimationBlendTime="15"
-            AnimationSpeedFactorMin="0.9"
-            AnimationSpeedFactorMax="1.1" />
-          <Animation
-            AnimationName="AUDevWar_IDLB"
-            AnimationMode="ONCE"
-            AnimationPriority="50"
-            AnimationBlendTime="15"
-            AnimationSpeedFactorMin="0.9"
-            AnimationSpeedFactorMax="1.1" />
-        </AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT"
+					Flags="RESTART_ANIM_WHEN_COMPLETE">
+					<Animation
+						AnimationName="AUDevWar_IDLA"
+						AnimationMode="ONCE"
+						AnimationPriority="50"
+						AnimationBlendTime="15"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1" />
+					<Animation
+						AnimationName="AUDevWar_IDLB"
+						AnimationMode="ONCE"
+						AnimationPriority="50"
+						AnimationBlendTime="15"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1" />
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
-        </AnimationState>
+				</AnimationState>
 					<!-- no anim -->
 						
 			</ScriptedModelDraw>
@@ -600,7 +600,7 @@
 			</ScriptedModelDraw>
 			<ScriptedModelDraw		
 				id="ModuleTag_DrawTravelerEnginesFX"
-				AttachToBoneInAnotherModule="roottransform">
+				AttachToBoneInAnotherModule="traveng">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model

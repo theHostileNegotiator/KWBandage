@@ -3,7 +3,7 @@
 	<Includes>
 		<Include source="ART:audevwar_skl.w3x" type="all" />
 	</Includes>
-	<W3DMesh id="AUDEVWARION.TRAVENG02" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="AUDEVWAR_SKN.TRAVENG02" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-68.266167" Y="-9.706084" Z="-3.057465" />
 			<Max X="10.335243" Y="10.043915" Z="5.086153" />
@@ -377,7 +377,7 @@
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DMesh id="AUDEVWARION.TRAVENG01" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="AUDEVWAR_SKN.TRAVENG01" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-7.962681" Y="-34.819756" Z="-34.200500" />
 			<Max X="7.962753" Y="34.819759" Z="34.200508" />
@@ -571,7 +571,7 @@
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DMesh id="AUDEVWARION.DEVASTATOR" CastShadow="true" GeometryType="Skin" SortLevel="0">
+	<W3DMesh id="AUDEVWAR_SKN.DEVASTATOR" CastShadow="true" GeometryType="Skin" SortLevel="0">
 		<BoundingBox>
 			<Min X="-36.928352" Y="-18.583080" Z="-10.324467" />
 			<Max X="36.928352" Y="18.563078" Z="10.720257" />
@@ -10850,11 +10850,8 @@
 				<Dist>17.918211</Dist>
 			</T>
 		</Triangles>
-		<FXShader ShaderName="ObjectsAlienIonHull.fx">
+		<FXShader ShaderName="ObjectsAlien.fx" TechniqueIndex="0">
 			<Constants>
-				<Texture Name="EnvironmentTexture">
-					<Value>AURefmap</Value>
-				</Texture>
 				<Texture Name="DiffuseTexture">
 					<Value>AUDevWar</Value>
 				</Texture>
@@ -10864,49 +10861,40 @@
 				<Texture Name="SpecMap">
 					<Value>AUDevWar_SPM</Value>
 				</Texture>
-				<Texture Name="RecolorTexture">
-					<Value>HCToBeRemovedNoAlpha</Value>
-				</Texture>
-				<Float Name="BumpScale">
-					<Value>3.000000</Value>
-				</Float>
-				<Float Name="SpecularColor">
-					<Value>0.788235</Value>
-					<Value>0.760784</Value>
-					<Value>1.000000</Value>
-					<Value>0.000000</Value>
-				</Float>
-				<Float Name="EnvMult">
-					<Value>1.000000</Value>
-				</Float>
 				<Bool Name="AlphaTestEnable">
 					<Value>false</Value>
 				</Bool>
-				<Texture Name="IonHullTexture">
-					<Value>FXIonHull</Value>
+				<Texture Name="EnvironmentTexture">
+					<Value>AURefmap</Value>
+				</Texture>
+				<Float Name="EnvMult">
+					<Value>1.000000</Value>
+				</Float>
+				<Texture Name="RecolorTexture">
+					<Value>hc_audevwar</Value>
 				</Texture>
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DContainer id="AUDEVWARION" Hierarchy="AUDEVWAR_SKL">
+	<W3DContainer id="AUDEVWAR_SKN" Hierarchy="AUDEVWAR_SKL">
 		<SubObject SubObjectID="TRAVENG02" BoneIndex="8">
 			<RenderObject>
-				<Mesh>AUDEVWARION.TRAVENG02</Mesh>
+				<Mesh>AUDEVWAR_SKN.TRAVENG02</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="TRAVENG01" BoneIndex="8">
 			<RenderObject>
-				<Mesh>AUDEVWARION.TRAVENG01</Mesh>
+				<Mesh>AUDEVWAR_SKN.TRAVENG01</Mesh>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="OBBOX" BoneIndex="0">
 			<RenderObject>
-				<CollisionBox>AUDEVWARION.OBBOX</CollisionBox>
+				<CollisionBox>AUDEVWAR_SKN.OBBOX</CollisionBox>
 			</RenderObject>
 		</SubObject>
 		<SubObject SubObjectID="DEVASTATOR" BoneIndex="1">
 			<RenderObject>
-				<Mesh>AUDEVWARION.DEVASTATOR</Mesh>
+				<Mesh>AUDEVWAR_SKN.DEVASTATOR</Mesh>
 			</RenderObject>
 		</SubObject>
 	</W3DContainer>

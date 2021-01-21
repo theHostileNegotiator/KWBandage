@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--Changed Weapon Category from CANNON to BLAST-->
-<!--Devastator Turret will now rotate when under Ion Storm effects-->
-<!--Added Traveler Engine Effects to Ion Storm Model-->
+<!-- Changed Weapon Category from CANNON to BLAST -->
+<!-- Devastator Turret will now rotate when under Ion Storm effects -->
+<!-- Fixed Low LOD turret bone references -->
+<!-- Traveler Engine Meshs have and use their own separate bone -->
+<!-- Added Traveler Engine Effects to Ion Storm Model -->
 	<Tags></Tags>
 	<Includes>
+		<Include
+			type="all"
+			source="ART:AUDevWar_SKN.w3x" />
 		<Include
 			type="all"
 			source="ART:AUDevWarIon.w3x" />
