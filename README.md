@@ -28,3 +28,6 @@
  Attribute "ImmediatelyEnabled" was missing, added it in with default "false"
  * Modules\SpecialAbilityUpdate:  
  Attribute named "Face Target" has the wrong default value. It should be "true".
+ * W3DMesh.cs
+ Vertex Color mixes Red and Blue, quick fix done on Line 424 and 426
+ 
