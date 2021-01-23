@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Increased refund value to 700 -->
+<!-- Fixed Harvester Spawn Behavior, realign spawn points -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -358,12 +359,12 @@
 			<QueueProductionExitUpdate
 				id="ModuleTag_Exit">
 				<UnitCreatePoint
-					x="37.5"
-					y="-18.9"
+					x="56.8"
+					y="0.0"
 					z="0.0" />
 				<NaturalRallyPoint
-					x="104.0"
-					y="-18.9"
+					x="109.7"
+					y="0.0"
 					z="0.0" />
 			</QueueProductionExitUpdate>
 			<SpawnBehavior
@@ -371,6 +372,8 @@
 				SpawnNumberData="1"
 				SpawnReplaceDelayData="9999s"
 				IsOneShotData="true"
+				FadeInTime="1.0s"
+				InitialDelay="2.0s"
 				CanReclaimOrphans="false">
 				<SpawnTemplate>AlienHarvester</SpawnTemplate>
 			</SpawnBehavior>

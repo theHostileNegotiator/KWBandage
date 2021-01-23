@@ -938,6 +938,11 @@
 5. Traveler Engine Particle Effects source from the center instead of the rear
 	* Created a new bone that is positioned at the rear for the particle effects
 		* Traveler Engine Mesh now reference this bone
+#### Extractor
+1. Harvester spawn and rally point are based on the GDI Refinery which are not representative of the Extractor
+	* Changed spawn and rally point in QueueProductionExitUpdate based on the Bone Locations
+2. Harvester instantly spawns instead of fading in like GDI and NOD Harvesters
+	* Added Initial Delay and Fade in Time to SpawnBehavior
 #### Technology Assembler
 1. Missing FS_TECHNOLOGY KindOf Flag that other Tier 3 units have
 	* Added missing flag

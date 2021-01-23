@@ -358,12 +358,12 @@
 			<QueueProductionExitUpdate
 				id="ModuleTag_Exit">
 				<UnitCreatePoint
-					x="37.5"
-					y="-18.9"
+					x="56.8"
+					y="0.0"
 					z="0.0" />
 				<NaturalRallyPoint
-					x="104.0"
-					y="-18.9"
+					x="109.7"
+					y="0.0"
 					z="0.0" />
 			</QueueProductionExitUpdate>
 			<RepairUpdate 
@@ -460,6 +460,8 @@
 				SpawnNumberData="1"
 				SpawnReplaceDelayData="9999s"
 				IsOneShotData="true"
+				FadeInTime="1.0s"
+				InitialDelay="2.0s"
 				CanReclaimOrphans="false">
 				<SpawnTemplate>Traveler59Harvester</SpawnTemplate>
 			</SpawnBehavior>
