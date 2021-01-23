@@ -938,6 +938,9 @@
 5. Traveler Engine Particle Effects source from the center instead of the rear
 	* Created a new bone that is positioned at the rear for the particle effects
 		* Traveler Engine Mesh now reference this bone
+#### Technology Assembler
+1. Missing FS_TECHNOLOGY KindOf Flag that other Tier 3 units have
+	* Added missing flag
 #### Warp Chasm
 1. Models and Draws
 	* Models, Animations and Draws were redone to reduce redundency and fix certain bugs, such as resetting the Opening animation when entering the REALLYDAMAGED state.

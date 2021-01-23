@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- aka Technology Assembler -->
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Refer to Scrin Technology Assembler -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -17,7 +18,7 @@
 		BuildTime="40"
 		PlacementViewAngle="225d"
 		CommandSet="Reaper17ReactorCommandSet"
-		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS AUTO_ACQUIRABLE_BY_AI NOT_AUTOACQUIRABLE COVER POWERED FS_TECH_CENTER"
+		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS FS_TECHNOLOGY AUTO_ACQUIRABLE_BY_AI NOT_AUTOACQUIRABLE COVER POWERED FS_TECH_CENTER"
 		RadarPriority="STRUCTURE"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
