@@ -333,12 +333,14 @@
 	* Particle effect now references the correct texture
 #### Doors
 1. Barracks and Warfactory doors default to the open position when healed to 100%
-	* Adjusted PARSE_DEFAULT animation state calling for the last frame of the closing animation instead of the first frame  of the opening animation
+	* Adjusted PARSE_DEFAULT animation state calling for the last frame of the closing animation instead of the first frame of the opening animation
 #### Grenadier Squad
 1. AI will not use EMP Grenades ability
 	* Added modules that will allow them to use it
 2. When using Formation move, the formation texture uses Rocket Symbols
 	* Fixed Texture Coordinate in FXGrenade_FP.w3x
+3. Dead squads won't count towards Units Killed and Units Lost in score screen
+	* Added SCORE flag to the squad KindOf
 #### Sniper Team
 1. ZOCOM Teams would have GDI Sniper and Spotter instead of their own
 	* ZOCOM will now use ZOCOM Sniper and Spotter in their teams

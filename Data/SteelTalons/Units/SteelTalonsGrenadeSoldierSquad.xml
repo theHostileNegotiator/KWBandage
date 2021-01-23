@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Removed references to EMP Grenades and Composite Armor Upgrades-->
+<!-- Removed references to EMP Grenades and Composite Armor Upgrades -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -15,7 +15,7 @@
 		BuildTime="8"
 		CommandSet="SteelTalonsGrenadeSoldierSquadCommandSet"
 		CommandPoints="100"
-		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON ANTI_GARRISON CAN_SHOOT_OVER_WALLS CAN_CAPTURE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON ANTI_GARRISON CAN_SHOOT_OVER_WALLS CAN_CAPTURE CAN_BE_FAVORITE_UNIT SCORE"
 		IsTrainable="true"
 		FormationWidth="2"
 		FormationDepth="1"
