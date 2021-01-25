@@ -79,6 +79,7 @@
 	</ObjectCreationList>
 	
 	<!--Replace AlienBuzzer with Reaper17Buzzer-->
+	<!--Replace AlienAssimilator with Reaper17Assimilator-->
 	<ObjectCreationList
 		id="OCL_ConyardReaper17BuildingSuicide">
 		<CreateObject
@@ -89,7 +90,7 @@
 		<CreateObject
 			Options="IGNORE_ALL_OBJECTS"
 			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
-			<CreateObject>AlienAssimilator</CreateObject>
+			<CreateObject>Reaper17Assimilator</CreateObject>
 		</CreateObject>
 	</ObjectCreationList>		
 	
