@@ -3,6 +3,27 @@
 	<!--===================ALIEN====================-->
 	
 	<ExperienceLevelTemplate
+		id="AlienAssimilatorExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="500"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>AlienAssimilator</Target>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	
+	<ExperienceLevelTemplate
 		id="AlienBlinkMastermindExperienceLevel_1"
 		RequiredExperience="1"
 		ExperienceAward="2500"
@@ -4497,6 +4518,28 @@
 	</ExperienceLevelTemplate>
 	
 	<!--==================REAPER17==================-->	
+	
+	<ExperienceLevelTemplate
+		id="Reaper17AssimilatorExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="500"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>Reaper17Assimilator</Target>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	
 	<ExperienceLevelTemplate
 		id="Reaper17BuzzersExperienceLevel_1"
 		RequiredExperience="1"
@@ -6053,6 +6096,27 @@
 	</ExperienceLevelTemplate>
 	
 	<!--==================TRAVELER59==================-->
+	
+	<ExperienceLevelTemplate
+		id="Traveler59AssimilatorExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="500"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>Traveler59Assimilator</Target>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="50"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
 	
 	<ExperienceLevelTemplate
 		id="Traveler59BlinkMastermindExperienceLevel_1"
