@@ -24,8 +24,12 @@
  SkirmishAI\\, InGameUI\\, AssetTypeInGameUISettings.  
  * AssetTypeLogicCommand:  
  Element wrongly named "UpgradeTemplate" should be "Upgrade".  
+ * Modules\CreateObjectDie
+ "UpgradeRequired" and "UpgradeForbidden" should be elements not attributes, removed "IsAttribute="true"" making it by default "false"
  * Modules\EngineerContain
  Attribute "ImmediatelyEnabled" was missing, added it in with default "false"
+ * Modules\ScriptedModelDraw:  
+ Attributes "MaxRecoilDistance" and "RecoilDamping" have incorrect default values and should be swapped.
  * Modules\SpecialAbilityUpdate:  
  Attribute named "Face Target" has the wrong default value. It should be "true".
  * W3DMesh.cs
