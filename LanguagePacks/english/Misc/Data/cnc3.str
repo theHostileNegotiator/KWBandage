@@ -18046,7 +18046,7 @@ NAME:AbilityPackUpRig
 END
 
 DESC:AbilityPackUpRig
-"Pack up the Battle Base into a Rig\n\nPress A to pack up"
+"Pack up the Battle Base into a Rig \n \n Left-click to activate"
 END
 
 NAME:PlayerPowerEMP
@@ -18402,7 +18402,7 @@ NAME:AbilityNODCallForTransportInfantry
 END
 
 DESC:AbilityNodCallForTransportInfantry
-"Calls a Carryall to pick up the Infantry\nRequires Air Tower\n\nPress A to activate"
+"Calls a Carryall to immediately pick up the Infantry \n The Infantry can then be transported anywhere on the battlefield \n \n Requires Air Tower \n Left-click to activate"
 END
 
 NAME:UpgradeForcefieldGenerator
@@ -22916,7 +22916,7 @@ TYPE:PlayerPowerTibVeinDetonation
 END
 
 DESC:PlayerPowerTibVeinDetonation
-"Blows up a subterranean Tiberium deposit at a Tiberium Field\n\nPress A then Press A on target Tiberium Field"
+"Blows up a subterranean Tiberium deposit at a Tiberium Field \n \n Left-click icon then left-click on target Tiberium Field"
 END
 
 UpgradeName:NodChargedParticleBeam
@@ -27411,7 +27411,7 @@ DESC:AbilityRageGenerator
 End
 
 DESC:AbilityRageGeneratorAlt
-"Causes nearby enemies without a current target to attack their own allies\n\nPress A then press A on target area"
+"Causes enemies in the target area to attack their own allies \n \n Left-click icon then left-click on target area"
 End
 
 GUI:SelectFaction
@@ -28835,7 +28835,7 @@ NAME:AbilityMechapedeAddTioxinModule
 End
 
 DESC:AbilityMechapedeAddTioxinModule
-"Adds a Toxin Segment to the Mechapede\nStrong vs. Structures\nRepairs allied Scrin units\n\nPress A to purchase"
+"Adds a Toxin Segment to the Mechapede \n Strong vs. Structures \n Repairs allied Scrin units \n \n Left-click to purchase"
 End
 
 NAME:AbilityMechapedeAddDiskModule
