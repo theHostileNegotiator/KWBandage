@@ -16,6 +16,17 @@
  ### Required Files
  WrathEd
  
+ ### Extra Fixes
+ Mechapede Spawn: Mechapede spawn can be fixed by Hex editing cnc3ep1.dat, allowing it to spawn properly at the Gateway and follow rally points. 
+ This only works with the Steam and Origin versions excluding the Ultimate Collection, as the other versions are encrypted. 
+ It is not recommended to play online with people that do not have this fix. This fix not necessary to run this mod.  
+ * Recommended way to setup: In your install path, "RetailExe" folder copy folder "1.2" and name the copy "1.3". Enter into the folder. 
+ With a Hex editor open cnc3ep1.dat, search for Hex "FF 90 24 01 00 00 85 C0 75 16". Change 75 to 74. Return to the install path and copy "CNC3EP1_english_1.2.SkuDef" and name it "CNC3EP1_english_1.3.SkuDef". 
+ Open with a text editor and replace everything with;  
+ set-exe RetailExe\1.3\cnc3ep1.dat  
+ add-config CNC3EP1_english_1.2.SkuDef  
+ Now you can launch the game and any mod with this fix
+ 
  ### WrathEd Definition changes
  Some errors are present in the latest version of WrathEd definitions and therefore adjustments are made.  
  * Rename files  

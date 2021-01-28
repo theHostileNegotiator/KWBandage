@@ -888,6 +888,20 @@
 #### Mechapede
 1. Subfactions use Scrin Mechapede Members instead of their own
 	* Create new members for each faction
+2. Unit cannot be stealthed by cloaking field and has slow Heroic heal for a vehicle
+	* Members have base Infantry behaviors instead of Vehicle, swapped the behaviors and removed Stances from BaseVehicle
+3. Formation Preview shows Shock Trooper Icon
+	* Removed ModelCondition for Squad Unit
+4. Segments would turn individually to face target when stationary, appearing to separate itself
+	* Added RotateToTargetWhenAiming="false"
+5. Squad Unit has SoundEffects which should only be reserved for the Members
+	* Removed Sound Effects from the squad unit
+6. SoundEffect plays when using Formation Preview
+	* Removed AudioArraySound entry for soundAmbient which is was a workaround for spawning new segments. The Head doesn't need it. The segments will make the spawn sound from an AudioLoopUpgrade instead
+7. Members are supposed to make looping sound effect when moving
+	* AudioEntry "soundMoveLoop" does not work, probably due to being contained in squad and not moving in max speed. Instead used ModelConditionAudioLoopClientBehavior where the AudioEvent will be played for ModelCondition "MOVING"
+8. Unit won't play VoiceCreated AudioEvent
+	* Due to how the unit spawns, workaround is used in the squad unit. AudioEvent is contained in an FXList which is played by an AnimationState in the Condition "COMING_OUT_OF_FACTORY"
 #### Eradicator Hexapod
 1. Disintegrator visual lasers override each other. Therefore if more than one laser is firing, only the latest shot laser will show.
 	* Added new Weapons, Laser Draws and Laser States.

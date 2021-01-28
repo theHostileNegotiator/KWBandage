@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--Removed Forcefield Upgrade Sound-->
+<!-- Removed Forcefield Upgrade Sound -->
+<!-- Will no longer turn to target when firing -->
+<!-- Using BaseVehicle instead of BaseInfantry (removed Stances) -->
+<!-- Removed inappropriate KindOf Flags -->
+<!-- Fixed Moving Sound Effects -->
+<!-- Now uses ActiveBody instead of ShieldBody -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
 	<GameObject
 		id="AlienMillipedeHead"
-		inheritFrom="BaseInfantry"
+		inheritFrom="BaseVehicle"
 		SelectPortrait="Portrait_Millipede"
 		ButtonImage="Portrait_Millipede"
 		Side="ALIEN"
@@ -16,15 +21,17 @@
 		BuildTime="14"
 		CommandSet="AlienMechapedeMemberCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE ANTI_GARRISON CAN_REVERSE_MOVE TIBERIUM_BASED  CAN_BE_FAVORITE_UNIT CAN_HEAL_ALLIES AI_BUZZERS_CANT_ATTACH_TO_ME"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE TIBERIUM_BASED CAN_BE_FAVORITE_UNIT CAN_HEAL_ALLIES AI_BUZZERS_CANT_ATTACH_TO_ME"
 		RadarPriority="UNIT"
-		ProductionQueueType="INFANTRY"
-		UnitCategory="INFANTRY"
+		ProductionQueueType="VEHICLE"
+		UnitCategory="VEHICLE"
 		WeaponCategory="BLAST"
 		VoicePriority="215"
 		EditorName="AlienMillipedeHead"
 		Description="Desc:AlienMillipedeHead"
-		TypeDescription="Type:AlienMillipedeHead">
+		TypeDescription="Type:AlienMillipedeHead"
+		ShockwaveResistance="100"
+		ReinvisibilityDelay="7s">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:AlienMillipedeHead</DisplayName>
 		<ArmorSet
@@ -271,19 +278,6 @@
 				id="DefaultAttributeModifierPoolUpdate"/>
 			<SquishCollide
 				id ="DefaultSquishCollide"/>
-			<CrushDie
-				id="ModuleTAg_CrushDie">
-				<DieMuxData
-					DeathTypes="CRUSHED" />
-			</CrushDie>
-			<FXListBehavior
-				id="SquishedFXPlayer">
-				<DieMuxData
-					DeathTypes="CRUSHED" />
-				<Event
-					Index="onDeath"
-					FX="FX_InfantrySquished" />
-			</FXListBehavior>
 			<FireWeaponWhenDead
 				id="ModuleTag_CatalystDeathWeapon"
 				InitiallyActive="true"
@@ -291,13 +285,14 @@
 				ContinueToBezierDestination="false">
 				<DieMuxData DeathTypes="CATALYST" />
 			</FireWeaponWhenDead>
+			<!--Heroic level units auto healing-->
 			<AutoHealBehavior
 				id="Upgrade_HeroicHeal"
 				InitiallyActive="false"
 				HealOnlyIfNotInCombat="false"
 				HealOnlyIfNotUnderAttack="false"
 				StartHealingDelay="1s"
-				HealingAmount="10"
+				HealingAmount="100"
 				HealingDelay=".5s">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</AutoHealBehavior>
@@ -334,6 +329,17 @@
 				LevelsToGain="3">
 				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
 			</LevelUpUpgrade>
+			<!-- Nod Cloaking Field -->
+			<InvisibilityUpdate
+				id="ModuleTag_Invisibility"
+				UpdatePeriod="0.5s">
+				<InvisibilityNugget />
+				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
+			</InvisibilityUpdate>
+			<StealthUpgrade
+				id="ModuleTag_InvisibilityTrigger">
+				<TriggeredBy>Upgrade_CloakingFieldInvisibility</TriggeredBy>
+			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="ModuleTag_TemporarilyDefect"
 				DefectionFrameCount="300" />
@@ -402,17 +408,19 @@
 				>
 				<UnitAITargetChooserData
 					CanPickDynamicTargets="false"
+					RotateToTargetWhenAiming="false"
 					SympathyRange="25.0" />
 			</AIUpdate>
 		</AI>
 		<Body>
-			<ShieldBody
+			<ActiveBody
 				id="ModuleTag_Body"
-				MaxHealth="2400"
-				/>				
+				MaxHealth="2400" />
 		</Body>
 		<ClientBehaviors>
 			<ModelConditionAudioLoopClientBehavior id="ModuleTag_MoveSounds">
+				<!-- SoundMoveLoop doesn't work for some reason, use it here instead -->
+				<ModelConditionSound Sound="AudioEvent:ALI_Mechapede_MoveLoop" RequiredFlags="MOVING" />
 				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_LEFT" />
 				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_RIGHT" />
 				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_LEFT_HIGH_SPEED" />
@@ -431,15 +439,14 @@
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundAttack" AudioType="voiceAttack" />
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceCreated" /> <!-- no worky -->
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceFullyCreated" /> <!-- no worky -->
+			<!-- <AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceCreated" /> no worky -->
+			<!-- <AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceFullyCreated" /> no worky -->
 			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundMove" AudioType="voiceMove" />
 			<AudioEntry Sound="Multisound:ALI_Mechapede_SoundSelectMS" AudioType="voiceSelect" />
-			<NamedEntry Sound="AudioEvent:ALI_Buzzers_SoundSplit" Name="UncombineWithUnit" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry Sound="AudioEvent:ALI_Mechapede_MoveStart" AudioType="soundMoveStart" />
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_MoveLoop" AudioType="soundMoveLoop" />
+			<!-- <AudioEntry Sound="AudioEvent:ALI_Mechapede_MoveLoop" AudioType="soundMoveLoop" /> no worky -->
 			<!-- <AudioEntry Sound="ALI_Mechapede_AmbientLoop" AudioType="soundAmbient" /> doesn't work with Type = "PLAYER" -->
 			<!-- <AudioEntry Sound="ALI_Mechapede_SoundCreate" AudioType="soundCreated" /> no worky -->
 <!--

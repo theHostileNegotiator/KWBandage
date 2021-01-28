@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--Changed BuildCost from 1400 to 100. Now Hexapod will recycle segment proportionately to it's cost-->
-<!--Removed Forcefield Upgrade Sound-->
+<!-- Changed BuildCost from 1400 to 100. Now Hexapod will recycle segment proportionately to it's cost -->
+<!-- Removed Forcefield Upgrade Sound -->
+<!-- Will no longer turn to target when firing -->
+<!-- Using BaseVehicle instead of BaseInfantry (removed Stances) -->
+<!-- Removed inappropriate KindOf Flags -->
+<!-- Fixed Moving Sound Effects -->
+<!-- Spawn SoundEffects are done through AudioLoopUpgrade, the upgrade granted by the purchasing of Segments -->
+<!-- Now uses ActiveBody instead of ShieldBody -->
 	<GameObject
 		id="AlienMillipedeBody"
-		inheritFrom="BaseInfantry"
+		inheritFrom="BaseVehicle"
 		SelectPortrait="Portrait_Millipede"
 		ButtonImage="Portrait_Millipede"
 		Side="ALIEN"
@@ -14,7 +20,7 @@
 		BuildTime="1"
 		CommandSet="AlienMechapedeMemberCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE ANTI_GARRISON CAN_REVERSE_MOVE TIBERIUM_BASED CAN_BE_FAVORITE_UNIT CAN_HEAL_ALLIES AI_BUZZERS_CANT_ATTACH_TO_ME"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE TIBERIUM_BASED CAN_BE_FAVORITE_UNIT CAN_HEAL_ALLIES AI_BUZZERS_CANT_ATTACH_TO_ME"
 		RadarPriority="UNIT"
 		ProductionQueueType="VEHICLE"
 		UnitCategory="VEHICLE"
@@ -312,10 +318,6 @@
 				AttributeModifier="Modifier_MultifunctionUpgradeCenterArmor">
 				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterArmor</TriggeredBy>
 			</AttributeModifierUpgrade>
-			<StancesBehavior
-				id="ModuleTag_Stance"
-				StanceTemplate="Generic"
-				/>
 			<LevelUpUpgrade
 				id="ModuleTag_LevelUpUpgrade_Veteran"
 				LevelCap="4"
@@ -456,7 +458,16 @@
 				id="ModuleTag_ShowLaserWeapon" 
 				ShowSubObjects="DISINTEGRATOR_MODULE">
 				<TriggeredBy>Upgrade_MechapedeRazorWeapon</TriggeredBy>
-			</SubObjectsUpgrade>				
+			</SubObjectsUpgrade>			
+			
+			<AudioLoopUpgrade 
+				id="ModuleTag_SpawnSound" 
+				SoundToPlay="Multisound:ALI_Mechapede_BodySpawnedMS">
+				<TriggeredBy>Upgrade_MechapedeTioxinWeapon</TriggeredBy>
+				<TriggeredBy>Upgrade_MechapedeShardWeapon</TriggeredBy>
+				<TriggeredBy>Upgrade_MechapedeDiskWeapon</TriggeredBy>
+				<TriggeredBy>Upgrade_MechapedeRazorWeapon</TriggeredBy>
+			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -465,17 +476,19 @@
 				AILuaEventsList="AlienMechapedeFunctions" >
 				<UnitAITargetChooserData
 					CanPickDynamicTargets="false"
+					RotateToTargetWhenAiming="false"
 					SympathyRange="25.0" />
 			</AIUpdate>
 		</AI>
 		<Body>
-			<ShieldBody
+			<ActiveBody
 				id="ModuleTag_Body"
-				MaxHealth="1000"
-				/>				
+				MaxHealth="1000" />
 		</Body>
 		<ClientBehaviors>
 			<ModelConditionAudioLoopClientBehavior id="ModuleTag_MoveSounds">
+				<!-- SoundMoveLoop doesn't work for some reason, use it here instead -->
+				<ModelConditionSound Sound="AudioEvent:ALI_Mechapede_MoveLoop" RequiredFlags="MOVING" />
 				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_LEFT" />
 				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_RIGHT" />
 				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_LEFT_HIGH_SPEED" />
@@ -494,16 +507,15 @@
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundAttack" AudioType="voiceAttack" />
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceCreated" /> <!-- no worky -->
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceFullyCreated" /> <!-- no worky -->
+			<!-- <AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceCreated" /> no worky -->
+			<!-- <AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceFullyCreated" /> no worky -->
 			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundMove" AudioType="voiceMove" />
 			<AudioEntry Sound="Multisound:ALI_Mechapede_SoundSelectMS" AudioType="voiceSelect" />
-			<NamedEntry Sound="AudioEvent:ALI_Buzzers_SoundSplit" Name="UncombineWithUnit" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry Sound="Multisound:ALI_Mechapede_BodySpawnedMS" AudioType="soundAmbient" /> 
+			<!-- <AudioEntry Sound="Multisound:ALI_Mechapede_BodySpawnedMS" AudioType="soundAmbient" /> -->
 			<AudioEntry Sound="AudioEvent:ALI_Mechapede_MoveStart" AudioType="soundMoveStart" />
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_MoveLoop" AudioType="soundMoveLoop" />
+			<!-- <AudioEntry Sound="AudioEvent:ALI_Mechapede_MoveLoop" AudioType="soundMoveLoop" /> no worky -->
 			<!-- <AudioEntry Sound="ALI_Mechapede_SoundCreate" AudioType="soundCreated" /> no worky -->
 <!--
 			<AudioEntry Sound="ALI_Mechapede_IdleLoop" AudioType="soundAmbient" />

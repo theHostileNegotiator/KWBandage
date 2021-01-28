@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!-- Refer to Scrin Mechapede Squad -->
+<!-- Removed Sound Effects -->
+<!-- Removed Shock Trooper Icon from Formation Preview -->
+<!-- Added workaround for VoiceCreated in the Draws -->
+<!-- Added SpawnBannerCarrierImmediately="true" for in map placed units -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
 	<GameObject
-		id="Traveler59CustomizableVehicle"
-		inheritFrom="AlienCustomizableVehicle"
+		id="AlienCustomizableVehicle"
+		inheritFrom="BaseSquad"
 		SelectPortrait="Portrait_Millipede"
 		ButtonImage="Portrait_Millipede"
-		Side="Traveler59"
+		Side="Alien"
 		EditorSorting="UNIT"
 		VoicePriority="215"
 		TransportSlotCount="1"
@@ -25,7 +28,7 @@
 		ProductionQueueType="VEHICLE"
 		UnitCategory="VEHICLE"
 		WeaponCategory="GUN"
-		EditorName="Traveler59CustomizableVehicle"
+		EditorName="AlienCustomizableVehicle"
 		Description="Desc:AlienCustomizableVehicle"
 		TypeDescription="Type:AlienCustomizableVehicle"
 		RadarPriority="NOT_ON_RADAR"
@@ -33,7 +36,7 @@
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:AlienCustomizableVehicle</DisplayName>
 		<GameDependency>
-			<RequiredObject>Traveler59Reactor</RequiredObject>
+			<RequiredObject>AlienReactor</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="NoArmor" />
@@ -162,62 +165,62 @@
 					Include="VEHICLE" />
 				<DieMuxData />
 				<InitialPayload
-					Name="Traveler59MillipedeBody"
+					Name="AlienMillipedeBody"
 					Count="0" />
 				<MeleeBehavior
 					Type="AMOEBA" />
 				<RankInfo
 					RankID="1"
-					UnitType="Traveler59MillipedeBody">
+					UnitType="AlienMillipedeBody">
 					<Position
 						X="-18"
 						Y="0" />
 				</RankInfo>
 				<RankInfo
 					RankID="2"
-					UnitType="Traveler59MillipedeBody">
+					UnitType="AlienMillipedeBody">
 					<Position
 						X="-36"
 						Y="0" />
 				</RankInfo>
 				<RankInfo
 					RankID="3"
-					UnitType="Traveler59MillipedeBody">
+					UnitType="AlienMillipedeBody">
 					<Position
 						X="-54"
 						Y="0" />
 				</RankInfo>
 				<RankInfo
 					RankID="4"
-					UnitType="Traveler59MillipedeBody">
+					UnitType="AlienMillipedeBody">
 					<Position
 						X="-72"
 						Y="0" />
 				</RankInfo>
 				<RankInfo
 					RankID="5"
-					UnitType="Traveler59MillipedeBody">
+					UnitType="AlienMillipedeBody">
 					<Position
 						X="-90"
 						Y="0" />
 				</RankInfo>
 				<RankInfo
 					RankID="6"
-					UnitType="Traveler59MillipedeBody">
+					UnitType="AlienMillipedeBody">
 					<Position
 						X="-108"
 						Y="0" />
 				</RankInfo>
 				<RankInfo
 					RankID="7"
-					UnitType="Traveler59MillipedeBody">
+					UnitType="AlienMillipedeBody">
 					<Position
 						X="-126"
 						Y="0" />
 				</RankInfo>
 				<RankInfo
 					RankID="8"
-					UnitType="Traveler59MillipedeBody">
+					UnitType="AlienMillipedeBody">
 					<Position
 						X="-144"
 						Y="0" />
@@ -232,12 +235,12 @@
 				<RankToReleaseWhenAttacking>8</RankToReleaseWhenAttacking>-->
 <!--<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>-->
 				<BannerCarrierPosition>
-					<UnitType>Traveler59MillipedeHead</UnitType>
+					<UnitType>AlienMillipedeHead</UnitType>
 					<Pos
 						x="0"
 						y="0" />
 				</BannerCarrierPosition>
-				<BannerCarriersAllowed>Traveler59MillipedeHead</BannerCarriersAllowed>
+				<BannerCarriersAllowed>AlienMillipedeHead</BannerCarriersAllowed>
 				<WiggleBehavior
 						WiggleAmplitude="0.30"
 						WiggleFrequency="0.3"
@@ -249,7 +252,7 @@
 				SpecialPowerTemplate="SpecialPower_MechapedeAddShardModule"
 				AllowBackwardsReformMovement="true" >
 				<SpawnMemberEntry
-					Object="Traveler59MillipedeBody"
+					Object="AlienMillipedeBody"
 					Count="1"
 					SpawnFX="FX_AlienMechapedeSpawnLink"
 					GrantUpgradeOnSpawn="Upgrade_MechapedeShardWeapon"
@@ -260,7 +263,7 @@
 				SpecialPowerTemplate="SpecialPower_MechapedeAddTioxinModule"
 				AllowBackwardsReformMovement="true" >
 				<SpawnMemberEntry
-					Object="Traveler59MillipedeBody"
+					Object="AlienMillipedeBody"
 					Count="1"
 					SpawnFX="FX_AlienMechapedeSpawnLink"
 					GrantUpgradeOnSpawn="Upgrade_MechapedeTioxinWeapon"
@@ -271,7 +274,7 @@
 				SpecialPowerTemplate="SpecialPower_MechapedeAddDiskModule"
 				AllowBackwardsReformMovement="true" >
 				<SpawnMemberEntry
-					Object="Traveler59MillipedeBody"
+					Object="AlienMillipedeBody"
 					Count="1"
 					SpawnFX="FX_AlienMechapedeSpawnLink" 
 					GrantUpgradeOnSpawn="Upgrade_MechapedeDiskWeapon"
@@ -282,7 +285,7 @@
 				SpecialPowerTemplate="SpecialPower_MechapedeAddRazorModule"
 				AllowBackwardsReformMovement="true">
 				<SpawnMemberEntry
-					Object="Traveler59MillipedeBody"
+					Object="AlienMillipedeBody"
 					Count="1"
 					SpawnFX="FX_AlienMechapedeSpawnLink" 
 					GrantUpgradeOnSpawn="Upgrade_MechapedeRazorWeapon"

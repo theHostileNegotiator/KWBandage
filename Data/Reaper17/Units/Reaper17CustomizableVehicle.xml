@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Refer to Scrin Mechapede Squad -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -56,7 +57,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="FXShockTrpr_FP" />
+						Name="" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -64,6 +65,14 @@
 					<Model
 						Name="SquadMarkGUMis" />
 				</ModelConditionState>
+				<!-- Only way to get Voice Create to Work. Have to do it to the Horde as it doesn't work with the Head -->
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="COMING_OUT_OF_FACTORY"
+					EnteringStateFX="FX_ALI_Mechapede_SoundCreate">
+					<Animation
+						AnimationName="" />
+				</AnimationState>
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
@@ -144,6 +153,7 @@
 				Slots="8"
 				ObjectStatusOfContained=""
 				ConditionForEntry="INVALID"
+				SpawnBannerCarrierImmediately="true"
 				DestroyHordeOnBannerDeath="true"
 				ExitBannerCarrierWithHorde="true"
 				FollowTheLeader="true">
@@ -327,15 +337,6 @@
 				id="ModuleTag_ImmortalBody"
 				MaxHealth="1.0" />
 		</Body>
-		<ClientBehaviors>
-			<ModelConditionAudioLoopClientBehavior id="ModuleTag_MoveSounds">
-				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_LEFT" />
-				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_RIGHT" />
-				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_LEFT_HIGH_SPEED" />
-				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="TURN_RIGHT_HIGH_SPEED" />
-				<ModelConditionSound Sound="Multisound:ALI_Mechapede_MoveSweetenerMS" RequiredFlags="ACCELERATE" />
-			</ModelConditionAudioLoopClientBehavior>
-		</ClientBehaviors>
 		<Geometry
 			IsSmall="false">
 			<Shape
@@ -344,23 +345,6 @@
 				MinorRadius="20.0"
 				Height="10.0" />
 		</Geometry>
-		<AudioArrayVoice>
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundAttack" AudioType="voiceAttack" />
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceCreated" /> <!-- no worky -->
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundCreate" AudioType="voiceFullyCreated" /> <!-- no worky -->
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_SoundMove" AudioType="voiceMove" />
-			<AudioEntry Sound="Multisound:ALI_Mechapede_SoundSelectMS" AudioType="voiceSelect" />
-			<NamedEntry Sound="AudioEvent:ALI_Buzzers_SoundSplit" Name="UncombineWithUnit" />
-		</AudioArrayVoice>
-		<AudioArraySound>
-			<AudioEntry Sound="Multisound:ALI_Mechapede_BodySpawnedMS" AudioType="soundAmbient" /> 
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_MoveStart" AudioType="soundMoveStart" />
-			<AudioEntry Sound="AudioEvent:ALI_Mechapede_MoveLoop" AudioType="soundMoveLoop" />
-			<!-- <AudioEntry Sound="ALI_Mechapede_SoundCreate" AudioType="soundCreated" /> no worky -->
-<!--
-			<AudioEntry Sound="ALI_Mechapede_IdleLoop" AudioType="soundAmbient" />
--->
-		</AudioArraySound>
 		<!-- Yes, we need these. Catapults & such actually do damage to the horde brain not the units
 		     And the build queue builds horde brains not units for squads -->
 		<EvaEvents
