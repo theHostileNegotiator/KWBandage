@@ -18,4 +18,11 @@
 		</NuggetList>
 	</FXList>
 	
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+	<FXList id="FX_ALI_Mechapede_SoundCreate">
+		<NuggetList>
+			<Sound Value="AudioEvent:ALI_Mechapede_SoundCreate" />
+		</NuggetList>
+	</FXList>
+	
 </AssetDeclaration>
