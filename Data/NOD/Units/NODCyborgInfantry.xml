@@ -6,6 +6,7 @@
 <!-- Added new EMP Attack animation due to instant activation -->
 <!-- Fixed Transition to Idle animation A from animating the EMP weapon -->
 	<Includes>
+		<Include type="all" source="ART:NUSilent_ABTA.w3x"  />
 		<Include type="all" source="ART:NUSilent_EMPB.w3x"  />
 	</Includes>
 	<GameObject
