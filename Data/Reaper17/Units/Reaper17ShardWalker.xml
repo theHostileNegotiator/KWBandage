@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- For Reaper17 forcefield changes -->
 <!-- Updated Turret Settings to match the Gun Walker (TW 1.05) -->
+<!-- Added DYING model condition to Shields to guarantee it won't show when dead -->
 	<GameObject
 		id="Reaper17ShardWalker"
 		inheritFrom="BaseVehicle"
@@ -363,6 +364,12 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Model
+						Name="" />
+				</ModelConditionState>					
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1">

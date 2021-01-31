@@ -866,15 +866,19 @@
 1. Cannot fire while moving unlike the Gun Walker
 	* Added CanFireWhileMoving parameter and an Acceptable Aim Delta of 10 degrees and updated Turret Data
 		* This was an undocumented change for TW 1.05
+2. Unit shields can show when dead
+	* Added DYING Model Condition that has no model to guarantee shields will not show when dead
 #### Seeker
 1. Will prioritise infantry over aircraft or vehicles
 	* Changed Weapon Category from GUN to MISSILE
 #### Harvester
 1. Will play generic EVA event when attacked instead of a unique Harvester EVA event
 	* Changed EVA event for Harvester Under Attack
-2. Reaper 17 has higher health value under the shields
+2. Shielded Harvester has higher health value under the shields
 	* Normalised health from 6000 to 5000
 		* Reduced shield cooldown from 120 to 100 seconds to further match behaviour with Attenuated Forcefield
+3. Shielded Harvester shields can show when dead
+	* Added DYING Model Condition that has no model to guarantee shields will not show when dead
 #### Corrupter
 1. Healing ability may not work on certain sub faction units (such as the Explorer)
 	* Added missing units into the ability

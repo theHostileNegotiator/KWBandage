@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance">
-<!--Will now play Harvester specific EVA event when attacked-->
-<!--Standardised Health to match other Harvesters-->
-<!--Reduced shield recharge delay by 20s to further mimic Attenuated Forcefield stats-->
+<!-- Will now play Harvester specific EVA event when attacked -->
+<!-- Standardised Health to match other Harvesters -->
+<!-- Reduced shield recharge delay by 20s to further mimic Attenuated Forcefield stats -->
+<!-- Added DYING model condition to Shields to guarantee it won't show when dead -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -280,6 +281,12 @@
 				OkToChangeModelColor="true">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT"></ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Model
+						Name="" />
+				</ModelConditionState>					
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1">
