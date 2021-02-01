@@ -18,7 +18,8 @@
 		RadarPriority="STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="AlienExplorerOutpost"
-		Description="DESC:ALIENOutpost"
+		Description="Desc:ALIENOutpost"
+		TypeDescription="Type:ALIENOutpost"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">

@@ -18,7 +18,8 @@
 		RadarPriority="STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="NODEmissaryOutpost"
-		Description="DESC:ALIENOutpost"
+		Description="Desc:NODOutpost"
+		TypeDescription="Type:NODOutpost"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">

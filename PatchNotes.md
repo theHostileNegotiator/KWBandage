@@ -181,6 +181,11 @@
 #### Refineries
 1. Refund value was not increased in KW 1.02 after Harvesters were made cheaper
 	* Increased Refund Value to 700 based on; (RefineryCost - HarvesterCost) -:- 2
+#### Outposts
+1. Do not have Type Description
+	* Added Type Description as "Expansion Strucure"
+		* Each Main Faction haver their own string set instead of Scrins
+		* String File originally had as "Production Structure"
 #### Support Powers
 1. Some new Support Powers do not use unique icons or radius cursors, despite being available and compiled
 	* Swap the icons and radius cursors to the appropriate textures

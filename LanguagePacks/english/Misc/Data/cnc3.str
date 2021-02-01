@@ -15643,6 +15643,20 @@ END
 //-----------------------------------------------
 //-----------------------------------------------
 
+//-----------------------------------------------
+//GDI Outpost
+//-----------------------------------------------
+NAME:GDIOutpost
+"Outpost"
+END
+TYPE:GDIOutpost
+"Expansion Structure."
+END
+DESC:GDIOutpost
+"Provides additional Ground Control"
+END
+//-----------------------------------------------
+//-----------------------------------------------
 
 //-----------------------------------------------
 //GDI Wall Segment
@@ -16298,6 +16312,20 @@ END
 //-----------------------------------------------
 //-----------------------------------------------
 
+//-----------------------------------------------
+//NOD Outpost
+//-----------------------------------------------
+NAME:NODOutpost
+"Outpost"
+END
+TYPE:NODOutpost
+"Expansion Structure."
+END
+DESC:NODOutpost
+"Provides additional Ground Control"
+END
+//-----------------------------------------------
+//-----------------------------------------------
 
 //-----------------------------------------------
 //NOD Wall Hub
@@ -16322,6 +16350,7 @@ NAME:NODWallSegment
 END
 //-----------------------------------------------
 //-----------------------------------------------
+
 
 //////////////////////////////
 // Alien Units & Structures //
@@ -16657,7 +16686,7 @@ NAME:ALIENOutpost
 "Outpost"
 END
 TYPE:ALIENOutpost
-"Production Structure."
+"Expansion Structure."
 END
 DESC:ALIENOutpost
 "Provides additional Ground Control"
@@ -18563,14 +18592,6 @@ END
 
 Desc:PlayerStatus
 "Check the status of other players and manage their voice settings"
-END
-
-Name:GDIOutpost
-"Outpost"
-END
-
-Name:NODOutpost
-"Outpost"
 END
 
 Name:NeutralBunker

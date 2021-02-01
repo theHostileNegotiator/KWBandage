@@ -18,7 +18,8 @@
 		RadarPriority="STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="GDISurveyorOutpost"
-		Description="DESC:ALIENOutpost"
+		Description="Desc:GDIOutpost"
+		TypeDescription="Type:GDIOutpost"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">
