@@ -468,6 +468,8 @@
 	* Reduced Clip Reload Time to 1.7 and Reduced damage to 400
 5. Railgun distortion effect override each other. Therefore if more than one railgun module is firing, only the latest shot will have a distortion effect.
 	* Added new Weapons, Laser Draws and Laser States.
+6. Turrets can have weird behaviors, rotation is based on eachother
+	* Removed Turret Hierarchy Setup so there are no dependencies on rotation and weird behaviors.
 #### Orca
 1. When playing with Low LOD settings, Wings and Sensor Pod subobjects are missing
 	* Fixed subobject bone reference for Sonic Cannon. In the Skeleton, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden
