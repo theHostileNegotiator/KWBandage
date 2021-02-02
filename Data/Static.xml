@@ -26,6 +26,8 @@
 		<Include type="all" source="UI/PlayerPowerButtonTemplates.xml" />
 		<Include type="all" source="UI/UnitAbilityButtonTemplates.xml" />
 		
+		<Include type="all" source="ART:Images/PackedLocalisedImages.xml" />
+		
 		<!--Include type="all" source="Misc.xml" /-->
 	</Includes>
 </AssetDeclaration>

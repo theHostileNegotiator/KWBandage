@@ -636,6 +636,8 @@
 	* Added Subfaction Fanatics to Damage Scalar.
 2. Black Hand Fanatic Squads can be upgraded with Tiberium Infusion with NOD or MOK Secret Shrine.
 	* Removed upgrade
+3. Portrait was zoomed in from TW, hiding the bomb strap
+	* Reused Tiberium Wars Portrait
 #### Tiberium Trooper
 1. Health, speed and weapon damage values were inherited from Black Hand pre TW 1.05
 	* Changed values to match Black Hand
