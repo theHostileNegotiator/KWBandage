@@ -44,6 +44,15 @@
 			source="DATA:civilian/north_carolina_badlands_nc/buildings/ncbwse02.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbbun02.xml"
 			type="all"/>
 		<Include

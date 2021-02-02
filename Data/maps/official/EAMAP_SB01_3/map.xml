@@ -74,6 +74,15 @@
 			source="DATA:civilian/germany_gr/buildings/grbruin04.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:neutral/crates/salvagecrate.xml"
 			type="all"/>
 		<Include

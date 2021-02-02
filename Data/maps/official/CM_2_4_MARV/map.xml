@@ -77,6 +77,15 @@
 			source="DATA:civilian/italy_it/buildings/itbshk02.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbburn01.xml"
 			type="all"/>
 		<Include

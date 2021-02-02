@@ -11,6 +11,15 @@
 			source="DATA:global.xml"
 			type="reference"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:neutral/structures/captureflag.xml"
 			type="all"/>
 		<Include

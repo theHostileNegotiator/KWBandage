@@ -47,6 +47,15 @@
 			source="DATA:civilian/italy_it/buildings/itbshk03.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:neutral/structures/captureflag.xml"
 			type="all"/>
 		<Include

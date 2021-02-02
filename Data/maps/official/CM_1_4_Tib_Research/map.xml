@@ -38,6 +38,9 @@
 			source="DATA:civilian/eeurope_ee/buildings/eebhse02.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbbarri01.xml"
 			type="all"/>
 		<Include

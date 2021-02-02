@@ -12,8 +12,8 @@
 	<Include type="all" source="Reaper17/Reaper17.xml" />
 	<Include type="all" source="Traveler59/Traveler59.xml" />
 	<Include type="all" source="DATA:Neutral/NeutralStatic.xml" />
-	<!--Include type="all" source="DATA:Tiberium/Tiberium.xml" />
-	<Include type="all" source="DATA:System/RallyPointMarker.xml" /-->
+	<Include type="all" source="DATA:Tiberium/Tiberium.xml" />
+	<!--Include type="all" source="DATA:System/RallyPointMarker.xml" /-->
 	<Include type="all" source="System/PlayerSpellBook.xml" />
 	<!--Include type="all" source="DATA:Misc.xml" /-->
   </Includes>

@@ -86,6 +86,9 @@
 			source="DATA:civilian/north_carolina_badlands_nc/props/ncpdebris01.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbburn02.xml"
 			type="all"/>
 		<Include

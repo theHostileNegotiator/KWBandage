@@ -44,6 +44,9 @@
 			source="DATA:civilian/eeurope_ee/buildings/eebhse02.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
 			source="overrides.xml"
 			type="all"/>
 	</Includes>

@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
 		<Include type="all" source="Neutral/Neutral.xml" />
+		<Include type="all" source="DATA:Zones/RedZone.xml" />
 		<Include type="all" source="Civilian/CivilianBuildings.xml" />
 		<Include type="all" source="Alien/AlienMapSpecific.xml" />
 		<Include type="all" source="GDI/GDIMapSpecific.xml" />

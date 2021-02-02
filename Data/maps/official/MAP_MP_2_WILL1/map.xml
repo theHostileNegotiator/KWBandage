@@ -17,6 +17,12 @@
 			source="DATA:civilian/brazil_br/buildings/brbshk01.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbbun02.xml"
 			type="all"/>
 		<Include

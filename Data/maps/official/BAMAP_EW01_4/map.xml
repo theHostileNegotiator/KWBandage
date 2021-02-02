@@ -101,6 +101,15 @@
 			source="DATA:civilian/italy_it/buildings/itbrui29.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:neutral/structures/civbunker.xml"
 			type="all"/>
 		<Include

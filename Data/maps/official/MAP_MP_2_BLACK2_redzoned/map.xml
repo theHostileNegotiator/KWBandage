@@ -11,6 +11,9 @@
 			source="DATA:global.xml"
 			type="reference"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbterr_rz01.xml"
 			type="all"/>
 		<Include

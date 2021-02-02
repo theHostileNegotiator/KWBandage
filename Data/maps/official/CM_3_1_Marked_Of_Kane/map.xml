@@ -72,7 +72,7 @@
 			type="all"/>
 		<Include
 			source="DATA:nod/structures_singleplayercampaign/nodcontrolnode.xml"
-			type="instance"/>
+			type="all"/>
 		<Include
 			source="overrides.xml"
 			type="all"/>

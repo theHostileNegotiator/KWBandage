@@ -156,6 +156,9 @@
 	* Changed commands to be referenced by the appropriate structures
 3. Powerstores has the ability to deal Cloaking Field damage with the ability and also listed the wrong upgrade.
 	* Fixed upgrade reference and removed weapon associations
+#### Tiberium
+1. Tiberium looks dull with some GPUs and Drivers
+	* Swapped "EnvMap" texture from FXAbaloneEnv to ChromicReflectionCube as the shader expects a cube map, not 2D textures. For all intents and purposes ChromicReflectionCube is the cube version of FXAbalone
 #### Tiberium Based Units
 1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
 	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based

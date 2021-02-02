@@ -17,6 +17,12 @@
 			source="DATA:civilian/italy_it/buildings/itbrui25.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/tiberiumshaft02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/props/tiberiumshaft03.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbburn03.xml"
 			type="all"/>
 		<Include
