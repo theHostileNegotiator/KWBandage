@@ -83,6 +83,9 @@
 			source="DATA:civilian/italy_it/buildings/itbshk03.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/props/redzoneoverpass01.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/props/tiberiumshaft01.xml"
 			type="all"/>
 		<Include

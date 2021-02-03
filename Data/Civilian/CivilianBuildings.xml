@@ -179,6 +179,8 @@
 		<Include type="all" source="Goddard_Space_Center_GO/Buildings/GOBldg01.xml" />
 
 		<!-- Italy_IT -->
+		
+		<Include type="all" source="Italy_IT/Buildings/ITBRui26.xml" />
 
 		<!-- North_Carolina_Badlands_NC -->
 				
