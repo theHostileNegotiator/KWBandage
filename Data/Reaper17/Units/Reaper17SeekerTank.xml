@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<!--Changed Weapon Catergory from GUN to MISSILE-->
-	<!--For Reaper17 forcefield changes-->
+<!-- Refer to Scrin Seeker -->
+<!-- Reaper17 forcefield changes -->
 	<GameObject
 		id="Reaper17SeekerTank"
 		SelectPortrait="Portrait_ALIENSeeker"

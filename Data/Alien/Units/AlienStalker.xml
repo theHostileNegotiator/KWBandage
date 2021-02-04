@@ -5,6 +5,7 @@
 <!--Fixed Animations needlessly moving Weapon Bones-->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:AUStalker_SKN.w3x" />
 		<Include type="all" source="ART:AUStalker_ABTA.w3x" />
 		<Include type="all" source="ART:AUStalker_AIDA.w3x" />
 		<Include type="all" source="ART:AUStalker_ATKA.w3x" />

@@ -6400,7 +6400,7 @@
 					<Value>2.000000</Value>
 				</Float>
 				<Texture Name="EnvMap">
-					<Value>FXAbaloneEnv</Value>
+					<Value>ChromicReflectionCube</Value>
 				</Texture>
 				<Float Name="BumpScale">
 					<Value>1.000000</Value>
@@ -14895,7 +14895,7 @@
 					<Value>2.000000</Value>
 				</Float>
 				<Texture Name="EnvMap">
-					<Value>FXAbaloneEnv</Value>
+					<Value>ChromicReflectionCube</Value>
 				</Texture>
 				<Float Name="BumpScale">
 					<Value>1.000000</Value>

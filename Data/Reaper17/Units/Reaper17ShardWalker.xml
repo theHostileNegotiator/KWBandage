@@ -4,6 +4,7 @@
 <!-- Updated Turret Settings to match the Gun Walker (TW 1.05) -->
 <!-- Added DYING model condition to Shields to guarantee it won't show when dead -->
 <!-- Changed Model so it uses only one between no upgrades and upgrade -->
+<!-- Fixed Tiberium Reflection -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:AUShardWlkr_SKN.w3x" />
