@@ -435,4 +435,8 @@
 		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODVertigoCreated" DebugSingleStep="false"/>
 	</EventList>
 	
+    <EventList Name="Reaper17ShardWalkerFunctions" Inherit="BaseScriptFunctions">
+        <EventHandler EventName="OnCreated"	ScriptFunctionName="OnReaper17ShardWalkerCreated" DebugSingleStep="false"/>
+    </EventList>
+	
 </SageLuaScriptSection>

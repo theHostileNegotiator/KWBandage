@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes>
+		<Include type="all" source="ART:AUGWalker_ABTA.w3x" />
+		<Include type="all" source="ART:AUGWalker_ABTB.w3x" />
+		<Include type="all" source="ART:AUGWalker_AIDA.w3x" />
+		<Include type="all" source="ART:AUGWalker_AIFA.w3x" />
+		<Include type="all" source="ART:AUGWalker_ATKA.w3x" />
+		<Include type="all" source="ART:AUGWalker_ATKB.w3x" />
+		<Include type="all" source="ART:AUGWalker_BATA.w3x" />
+		<Include type="all" source="ART:AUGWalker_BATB.w3x" />
+		<Include type="all" source="ART:AUGWalker_BIDA.w3x" />
+		<Include type="all" source="ART:AUGWalker_BIFA.w3x" />
+		<Include type="all" source="ART:AUGWalker_BIFB.w3x" />
+		<Include type="all" source="ART:AUGWalker_DIEA.w3x" />
+		<Include type="all" source="ART:AUGWalker_DIEB.w3x" />
+		<Include type="all" source="ART:AUGWalker_DIEC.w3x" />
+		<Include type="all" source="ART:AUGWalker_TRNL.w3x" />
+		<Include type="all" source="ART:AUGWalker_TRNR.w3x" />
+		<Include type="all" source="ART:AUGWalker_WLKA.w3x" />
+	</Includes>
+</AssetDeclaration>

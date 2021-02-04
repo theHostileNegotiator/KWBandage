@@ -769,3 +769,7 @@ end
 function OnNODVertigoCreated(self)
 	ObjectHideSubObjectPermanently( self, "UG_RD", true )
 end
+
+function OnReaper17ShardWalkerCreated(self)
+	ObjectHideSubObjectPermanently( self, "UG_SHARD_BLUE", true )
+end

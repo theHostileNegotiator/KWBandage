@@ -880,6 +880,8 @@
 		* This was an undocumented change for TW 1.05
 2. Unit shields can show when dead
 	* Added DYING Model Condition that has no model to guarantee shields will not show when dead
+3. Unit would use two models for 'Base' and 'Upgrade' when it could of just hide and show subobjects for Blue Shards
+	* Changed SKN files so it would only require to change texture and to hide and show objects
 #### Seeker
 1. Will prioritise infantry over aircraft or vehicles
 	* Changed Weapon Category from GUN to MISSILE

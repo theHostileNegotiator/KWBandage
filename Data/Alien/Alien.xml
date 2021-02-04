@@ -8,6 +8,7 @@
 		<Include type="all" source="Units/AlienCustomizableVehicle.xml" />
 		<Include type="all" source="Units/AlienDevastatorWarship.xml" />
 		<Include type="all" source="Units/AlienEradicatorHexapod.xml" />	
+		<Include type="all" source="Units/AlienGunWalker.xml" />	
 		<Include type="all" source="Units/AlienHarvester.xml" />	
 		<Include type="all" source="Units/AlienInvaderFighter.xml" />	
 		<Include type="all" source="Units/AlienMillipedeBody.xml" />	

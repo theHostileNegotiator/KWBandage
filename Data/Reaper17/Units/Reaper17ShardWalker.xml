@@ -3,6 +3,28 @@
 <!-- For Reaper17 forcefield changes -->
 <!-- Updated Turret Settings to match the Gun Walker (TW 1.05) -->
 <!-- Added DYING model condition to Shields to guarantee it won't show when dead -->
+<!-- Changed Model so it uses only one between no upgrades and upgrade -->
+	<Tags></Tags>
+	<Includes>
+		<Include type="all" source="ART:AUShardWlkr_SKN.w3x" />
+		<Include type="all" source="ART:AUGWalker_ABTA.w3x" />
+		<Include type="all" source="ART:AUGWalker_ABTB.w3x" />
+		<Include type="all" source="ART:AUGWalker_AIDA.w3x" />
+		<Include type="all" source="ART:AUGWalker_AIFA.w3x" />
+		<Include type="all" source="ART:AUGWalker_ATKA.w3x" />
+		<Include type="all" source="ART:AUGWalker_ATKB.w3x" />
+		<Include type="all" source="ART:AUGWalker_BATA.w3x" />
+		<Include type="all" source="ART:AUGWalker_BATB.w3x" />
+		<Include type="all" source="ART:AUGWalker_BIDA.w3x" />
+		<Include type="all" source="ART:AUGWalker_BIFA.w3x" />
+		<Include type="all" source="ART:AUGWalker_BIFB.w3x" />
+		<Include type="all" source="ART:AUGWalker_DIEA.w3x" />
+		<Include type="all" source="ART:AUGWalker_DIEB.w3x" />
+		<Include type="all" source="ART:AUGWalker_DIEC.w3x" />
+		<Include type="all" source="ART:AUGWalker_TRNL.w3x" />
+		<Include type="all" source="ART:AUGWalker_TRNR.w3x" />
+		<Include type="all" source="ART:AUGWalker_WLKA.w3x" />
+	</Includes>
 	<GameObject
 		id="Reaper17ShardWalker"
 		inheritFrom="BaseVehicle"
@@ -69,7 +91,10 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED USER_2">
 					<Model
-						Name="AUShardWlkr_UGBT_SKN" />
+						Name="AUShardWlkr_SKN" />
+					<Texture
+						Original="AUShardWlkr"
+						New="AUShardWlkr_UGBT" />		
 					<ParticleSysBone
 						BoneName="B_BODY"
 						FXParticleSystemTemplate="AlienDamageFire01"
@@ -79,7 +104,10 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED USER_2">
 					<Model
-						Name="AUShardWlkr_UGBT_SKN" />
+						Name="AUShardWlkr_SKN" />
+					<Texture
+						Original="AUShardWlkr"
+						New="AUShardWlkr_UGBT" />		
 					<ParticleSysBone
 						BoneName="B_BODY"
 						FXParticleSystemTemplate="AlienDamageFire01"
@@ -97,7 +125,10 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_2">
 					<Model
-						Name="AUShardWlkr_UGBT_SKN" />
+						Name="AUShardWlkr_SKN" />
+					<Texture
+						Original="AUShardWlkr"
+						New="AUShardWlkr_UGBT" />		
 				</ModelConditionState>					
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -490,6 +521,12 @@
 				AddConditionFlags="USER_2">
 				<TriggeredBy>Upgrade_AlienBlueShardWeapon</TriggeredBy>
 			</ModelConditionUpgrade>
+			<SubObjectsUpgrade
+				id="ModuleTag_ShowShardGun"
+				ShowSubObjects="UG_Shard_Blue"
+				HideSubObjects="UG_Shard">
+				<TriggeredBy>Upgrade_AlienBlueShardWeapon</TriggeredBy>
+			</SubObjectsUpgrade>
 			<Physics
 				id="ModuleTag_Physics" />
 			<SlowDeath
@@ -528,12 +565,6 @@
 				StatusToSet="SHIELDBODY_ENABLED">
 				<TriggeredBy>Upgrade_AlienMinorForcefieldGenerator</TriggeredBy>
 			</StatusBitsUpgrade>
-			<!-- For SinglePlayer -->
-			<StatusBitsUpgrade
-				id="ModuleTag_StatusBitUpgradeSP"
-				StatusToSet="SHIELDBODY_ENABLED">
-				<TriggeredBy>Upgrade_Reaper17MinorForcefieldGenerator</TriggeredBy>
-			</StatusBitsUpgrade>
 			<ShieldBodyUpdate
 				id="ModuleTag_ShieldBodyUpdate" />
       		<AudioLoopUpgrade 
@@ -551,7 +582,8 @@
 		<AI>
 			<AIUpdate
 				id="ModuleTag_AI"
-				AutoAcquireEnemiesWhenIdle="YES">
+				AutoAcquireEnemiesWhenIdle="YES"
+				AILuaEventsList="Reaper17ShardWalkerFunctions">
 				<UnitAITargetChooserData
 					CanPickDynamicTargets="false"
 					SympathyRange="25.0" />
