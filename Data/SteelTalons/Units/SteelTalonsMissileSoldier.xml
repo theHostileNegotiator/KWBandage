@@ -61,9 +61,12 @@
 						BoneName="B_WEAPONA_FX" />
 				</ModelConditionState>
 
-				<xi:include
-					href="DATA:Includes/GDIUnitFormationPreviewStates.xml"
-					xpointer="xmlns(n=uri:ea.com:eala:asset) xpointer(/n:FormationPreviewStates/child::*)" />
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<Model
+						Name="FXInfantry_FP" />
+				</ModelConditionState>
 				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -86,6 +89,11 @@
 						Original="cumisslemana"
 						New="cumisslemanb" />
 				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<!-- no anim -->
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="INSIDE_GARRISON">
