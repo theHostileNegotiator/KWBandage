@@ -525,7 +525,8 @@
 			<SubObjectsUpgrade
 				id="ModuleTag_ShowShardGun"
 				ShowSubObjects="UG_Shard_Blue"
-				HideSubObjects="UG_Shard">
+				HideSubObjects="UG_Shard"
+				FadeTimeInSeconds="0.0">
 				<TriggeredBy>Upgrade_AlienBlueShardWeapon</TriggeredBy>
 			</SubObjectsUpgrade>
 			<Physics

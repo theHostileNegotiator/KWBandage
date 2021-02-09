@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Refer to Scrin Ravager-->
+<!-- Refer to Scrin Ravager -->
+<!-- Removed upgrade Fade In for Blue Shards -->
 	<Tags></Tags>
 	<Includes></Includes>
 	<GameObject
@@ -418,8 +419,14 @@
 			</StatusBitsUpgrade>
 			<SubObjectsUpgrade
 				id="ModuleTag_ShowShardGun"
-				ShowSubObjects="AUStalker_C_B AUStalker_Gun"
-				HideSubObjects="AUStalker_C_G" >
+				ShowSubObjects="AUStalker_C_B"
+				HideSubObjects="AUStalker_C_G"
+				FadeTimeInSeconds="0.0">
+				<TriggeredBy>Upgrade_AlienBlueShardWeapon</TriggeredBy>
+			</SubObjectsUpgrade>
+			<SubObjectsUpgrade
+				id="ModuleTag_ShowShardGunFade"
+				ShowSubObjects="AUStalker_Gun">
 				<TriggeredBy>Upgrade_AlienBlueShardWeapon</TriggeredBy>
 			</SubObjectsUpgrade>
     		<!--AISpecialPowerUpdate

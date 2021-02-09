@@ -862,6 +862,8 @@
 	* Animations moved weapon firing bones above it's head for some reason. Removed ChannelScalars ChannelQuaternions specific for Weapon FX Bones in all animations.
 2. Tiberium Agitation target requirements are inconsistent, it does not target Scrin Devourer Tank and BH and Mok Power Plant with Tiberium Core upgrade.
 	* Fixed targeting parameters of Tiberium Agitation. Will now target Scrin Devourer Tank, BH and Mok Power Plant with Tiberium Core upgrade. Additionally will not target units that are empty of Tiberium
+3. Blue Shards upgrade would cause the Tiberium part to disappear momentarily
+	* Set upgrade FadeTimeInSeconds 0s
 #### Mastermind
 1. Can control subfaction base defense
 	* Removed ability to target base defense structures
@@ -882,6 +884,7 @@
 	* Added DYING Model Condition that has no model to guarantee shields will not show when dead
 3. Unit would use two models for 'Base' and 'Upgrade' when it could of just hide and show subobjects for Blue Shards
 	* Changed SKN files so it would only require to change texture and to hide and show objects
+		* Upgrade does not fade in
 #### Seeker
 1. Will prioritise infantry over aircraft or vehicles
 	* Changed Weapon Category from GUN to MISSILE
