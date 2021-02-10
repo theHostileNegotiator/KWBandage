@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
+		
+		<!--Props-->
+		<Include type="all" source="Props/AlienTibShardProjectile.xml" />
+		<Include type="all" source="Props/AlienBlueShardProjectile.xml" />
 	
 		<!--Units-->
 		<Include type="all" source="Units/AlienAnnihilatorTripodHusk.xml" />

@@ -15,7 +15,7 @@
 	<Include type="all" source="DATA:Tiberium/Tiberium.xml" />
 	<!--Include type="all" source="DATA:System/RallyPointMarker.xml" /-->
 	<Include type="all" source="System/PlayerSpellBook.xml" />
-	<!--Include type="all" source="DATA:Misc.xml" /-->
+	<Include type="all" source="DATA:Misc.xml" />
   </Includes>
 
 </AssetDeclaration>
