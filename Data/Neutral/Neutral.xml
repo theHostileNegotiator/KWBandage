@@ -210,11 +210,11 @@
 		<Include type="all" source="DATA:Neutral/Debris/ALIENMotherShipDebris_26.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/ALIENMotherShipDebris_27.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/ALIENMotherShipDebris_28.xml" />
-
+-->
 		<Include type="all" source="DATA:Neutral/Debris/ALIENOutSideRock1.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/ALIENOutSideRock6.xml" />	
 		<Include type="all" source="DATA:Neutral/Debris/ALIENOutSideRock8.xml" />		
-		
+		<!--
 		
 		<Include type="all" source="DATA:Neutral/Debris/NeutralTransportDebris_01.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/NeutralTransportDebris_02.xml" />
