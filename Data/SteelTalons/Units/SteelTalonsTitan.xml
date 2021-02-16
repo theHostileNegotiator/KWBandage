@@ -9,6 +9,7 @@
 <!-- Added new Damaged Textures for Adaptive Armor -->
 <!-- Fixed DYING state to use appropriate model and texture when having Adaptive Armor -->
 <!-- New Rubble Model (Stygs) -->
+<!-- Adjusted Geometry -->
 	<Includes>
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
@@ -1336,9 +1337,8 @@
 		<Geometry
 			IsSmall="true">
 			<Shape 
-				Type= "BOX"
-				MajorRadius = "26.0"
-				MinorRadius = "21.0"
+				Type="CYLINDER"
+				MajorRadius="20.0"
 				Height = "40.0" 
 				ContactPointGeneration="INFANTRY">
 				<Offset

@@ -377,6 +377,8 @@
 	* Added new Model Conditions that reference the Rubble Model when DYING with the upgrade or using ability
 4. Rubble model is the same as the base model
 	* Created new Rubble model with debris and have a noise modifier applied (Stygs)
+5. Geometry is a box unlike other walkers which use cylinder
+	* Changed geometry shape to cylinder
 #### Harvester
 1. The Tiberium meter on the rear of the Harvesters shows when destroyed, conflicting with the destruction model
 	* Tiberium meter is hidden when destroyed
@@ -550,6 +552,8 @@
 	* Changed the order to represent the Airfield
 4. Radar Dish is not present as shown in unit portrait unless under construction or destroyed.
 	* Added Radar Dish to Base and Damaged model and adjusted animations to have it function.
+5. Geometry is inaccurate, based of GDI Airfield
+	* Adjusted geometry to be more representative of the model
 #### Scanner Pack
 1. After the scanner packs upgrade, Unit will not aproach the range to fire their weapon. In fact they will continue their running animation but will not move.
 	* Allowed scanner pack to upgrade weapon range
@@ -788,6 +792,8 @@
 4. All air units faced the same direction when docked
 	* Reoriented direction of landing pads, based on the Air Tower (AKA, facing away from the center)
 		* Changed order to represent Air Tower
+5. Geometry is inaccurate being to large
+	* Adjusted geometry to be more representative of the model
 #### Tiberium Infusion
 1. Upgrade removes Militant Rockets and Fanatics extra GUN penalty damage
 	* Added the penalty damage to Tiberium Infusion Armor (Created new armor for Militant Rocket)

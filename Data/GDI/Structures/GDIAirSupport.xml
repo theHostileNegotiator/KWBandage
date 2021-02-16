@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Removed Damage Particle Effects (For Now)-->
-<!--Removed Damage Effects-->
-<!--Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs-->
-<!--Re-arranged order and orientation of Landing Pads-->
+<!-- Removed Damage Particle Effects (For Now) -->
+<!-- Removed Damage Effects -->
+<!-- Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs -->
+<!-- Re-arranged order and orientation of Landing Pads -->
+<!-- Fixed Geometry -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:GBAirSupprt.w3x" />
@@ -288,25 +289,23 @@
 			IsSmall="false">
 			<Shape
 				Type="BOX"
-				Name="Geom_Orig"
-				MajorRadius="50.0"
-				MinorRadius="75.0"
-				Height="30.0"></Shape>
+				MajorRadius="65.0"
+				MinorRadius="65.0"
+				Height="15.0"></Shape>
 			<Shape
-				Type="CYLINDER"
-				Name="Geom_Tower"
-				MajorRadius="12.0"
-				MinorRadius="12.0"
-				Height="75.0">
+				Type="BOX"
+				MajorRadius="35.0"
+				MinorRadius="15.0"
+				Height="20.0">
 				<Offset
-					x="30.0"
-					y="-54.0"
+					x="-15.0"
+					y="-70.0"
 					z="0.0" />
 			</Shape>
 			<Shape 
 				Type= "BOX"
-				MajorRadius = "60.0"
-				MinorRadius = "80.0"
+				MajorRadius = "75.0"
+				MinorRadius = "75.0"
 				Height = "3.0" >
 				<Offset
 					x = "0.0"
@@ -315,50 +314,50 @@
 			</Shape>			
 			<ContactPoint>
 				<Pos
-					x="-55.0"
-					y="78.0"
-					z="30" />
+					x="-68.0"
+					y="68.0"
+					z="15" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="55.0"
-					y="78.0"
+					x="68.0"
+					y="68.0"
 					z="0" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="55.0"
-					y="-78.0"
-					z="30" />
+					x="68.0"
+					y="-68.0"
+					z="15" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="55.0"
-					y="78.0"
+					x="68.0"
+					y="68.0"
 					z="0" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="-55.0"
-					y="-78.0"
-					z="30" />
+					x="-68.0"
+					y="-68.0"
+					z="15" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="55.0"
-					y="78.0"
+					x="68.0"
+					y="68.0"
 					z="0" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="-55.0"
-					y="-78.0"
-					z="30" />
+					x="-68.0"
+					y="-68.0"
+					z="15" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="-55.0"
-					y="78.0"
+					x="-68.0"
+					y="68.0"
 					z="0" />
 			</ContactPoint>
 		</Geometry>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Removed Damage Particle Effects-->
-<!--Fixed Shaders in Building and ReallyDamaged State-->
-<!--Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs-->
-<!--Re-arranged order of Landing Pads-->
+<!-- Removed Damage Particle Effects -->
+<!-- Fixed Shaders in Building and ReallyDamaged State -->
+<!-- Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs -->
+<!-- Re-arranged order of Landing Pads -->
+<!-- Fixed Geometry -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NBAirSpprt.w3x" />
@@ -279,16 +280,79 @@
 		<Geometry
 			IsSmall="false">
 			<Shape
-				Type="CYLINDER"
-				MajorRadius="80.0"
-				Height="65.0"
-				ContactPointGeneration="INFANTRY" />
+				Type="BOX"
+				MajorRadius="25.0"
+				MinorRadius="25.0"
+				Height="50.0">
+				<Offset
+					x="0.0"
+					y="0.0"
+					z="0" />
+			</Shape>
+			<Shape 
+				Type= "BOX"
+				MajorRadius = "50.0"
+				MinorRadius = "50.0"
+				Height = "5.0" >
+				<Offset
+					x = "0.0"
+					y = "0.0"
+					z = "0.0" />
+			</Shape>
+			<ContactPoint>
+				<Pos
+					x="28.0"
+					y="-28.0"
+					z="0" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="28.0"
+					y="28.0"
+					z="50" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="-28.0"
+					y="28.0"
+					z="0" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="-28.0"
+					y="-28.0"
+					z="50" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="28.0"
+					y="-28.0"
+					z="50" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="28.0"
+					y="28.0"
+					z="0" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="-28.0"
+					y="28.0"
+					z="50" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="-28.0"
+					y="-28.0"
+					z="0" />
+			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
 			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="NOD_AirSupportTower_Select"
+				Sound="AudioEvent:NOD_AirSupportTower_Select"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
