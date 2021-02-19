@@ -4,10 +4,12 @@
 <!-- Updated Turret Settings to match the Gun Walker (TW 1.05) -->
 <!-- Added DYING model condition to Shields to guarantee it won't show when dead -->
 <!-- Changed Model so it uses only one between no upgrades and upgrade -->
+<!-- Added unique Formation Preview (Stygs) -->
 <!-- Fixed Tiberium Reflection -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:AUShardWlkr_SKN.w3x" />
+		<Include type="all" source="ART:AUShardWlkr_FP.w3x" />
 		<Include type="all" source="ART:AUGWalker_ABTA.w3x" />
 		<Include type="all" source="ART:AUGWalker_ABTB.w3x" />
 		<Include type="all" source="ART:AUGWalker_AIDA.w3x" />
@@ -86,7 +88,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="AUGWalker_FP" />
+						Name="AUShardWlkr_FP" />
 				</ModelConditionState>	
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"

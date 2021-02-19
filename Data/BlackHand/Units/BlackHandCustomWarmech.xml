@@ -5,6 +5,10 @@
 <!-- Flame Tank will now display upgrade -->
 <!-- 'Morale Boosting' Aura no longer affects Squad Objects -->
 <!-- Adjusted propaganda decal size -->
+<!-- Fixed FP model -->
+	<Includes>
+		<Include type="all" source="ART:NUPurifier_FP.w3x" />
+	</Includes>
 	<GameObject
 		id="BlackHandCustomWarmech"
 		SelectPortrait="Portrait_CustomWarmech"
@@ -351,6 +355,11 @@
 						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
 						end
 					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<!-- no anim -->
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"

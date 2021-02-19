@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- WorldMapArmoryUpgradesAllowed references Reaper 17 Forcefield Upgrade instead of Scrin -->
+<!-- Added unique Formation Preview (Stygs) -->
 	<Tags></Tags>
 	<Includes>
+		<Include
+			type="all"
+			source="ART:AURprTripod_FP.w3x" />
 	</Includes>
 	<GameObject
 		id="Reaper17AnnihilatorTripod"
@@ -106,7 +110,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="AUAnlTrpd_FP" />
+						Name="AURprTripod_FP" />
 				</ModelConditionState>		
 						
 				<ModelConditionState

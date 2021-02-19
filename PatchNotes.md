@@ -176,8 +176,15 @@
 			* SAM Turret
 #### Squad Special Ability Weapons
 1. Once ability is activated, 'interrupting' by issuing other commands can lead to unit still move while firing, leading to lead to jank animations, firing weapon backwards, etc. Playing attacking animations but not shooting if ordered to attack.
-	* Adjusted how special powers are activated. Squad will now be considered to be 'busy' until weapon has been released, therefore new commands will have to wait until unit is no longer busy before executing. Improving presentation significantly
+	* Adjusted how special powers are activated. Squad will now be considered to be 'busy' until weapon has been released, therefore new commands will have to queue until unit is no longer busy before executing. Improving presentation significantly
 		* In most cases, special powers have been sped up, to match base weapons speed and to counter fix.
+#### Formation Preview
+1. Some units do not have their own Formation Preview Models, instead borrowing from other units
+	* Created New Models for the units (Stygs)
+		* Objects Affected
+			* Rocket Harvester
+			* Shard Walker
+			* Reaper Tripod
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
@@ -563,8 +570,8 @@
 1. When aircraft with Harpoints would dock to reload, sound would not play
 	* Added sound effects to reload
 #### Composite Armor and Tiberium Field Suits
-1. When Missile Squad is upgraded, the extra 50% damage against GUN is removed
-	* Increased GUN damage by 50% for upgrades
+1. When Missile Squad is upgraded, the extra 50% vulnerability from GUN damage is removed
+	* Increased GUN damage vulnerability by 50% for upgrades
 #### Power Pack
 1. GDI and ZOCOM upgrades are not shared, despite same cost and upgrade time
 	* Removed ZOCOM variant and will use GDI instead so upgrade is shared between factions.
@@ -726,6 +733,9 @@
 	* Added Upgraded Flame Tank texture
 3. Flame weapon particle effects would still be used when EMPed
 	* Added new state to disable particle effects when EMPed
+4. Formation Preview shows all upgrade objects instead of only the Flame object
+	* Adjusted Formation Preview Model.
+		* Changed model stance to be more like the Avatar
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze
 	* Added NOD Confessor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
@@ -795,8 +805,8 @@
 5. Geometry is inaccurate being to large
 	* Adjusted geometry to be more representative of the model
 #### Tiberium Infusion
-1. Upgrade removes Militant Rockets and Fanatics extra GUN penalty damage
-	* Added the penalty damage to Tiberium Infusion Armor (Created new armor for Militant Rocket)
+1. Upgrade removes Militant Rockets and Fanatics extra GUN damage type vulnerability
+	* Added the extra damage from GUN to Tiberium Infusion Armor (Created new armor for Militant Rocket)
 #### Confessor
 1. Unit in squads does not properly path through infantry
 	* Added "PATH_THROUGH_INFANTRY" Kindof flag

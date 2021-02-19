@@ -3,8 +3,10 @@
 <!-- Refer to Steel Talons Heavy Harvester -->
 <!-- Added new unique Rubble Model instead of Recycling GDI Harvester Model -->
 <!-- Tiberium meter on the rear no longer shows when destroyed -->
+<!-- Added unique Formation Preview (Stygs) -->
 	<Includes>
 		<Include type="all" source="ART:GUZocomHarvR_SKN.w3x" />
+		<Include type="all" source="ART:GUZocomHarv_FP.w3x" />
 	</Includes>
 	<GameObject
 		id="ZOCOMHarvester"
@@ -135,7 +137,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="GUHrvstr_FP" />
+						Name="GUZocomHarv_FP" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT">
