@@ -7,8 +7,10 @@
 <!-- Increased speed to match APC (TW1.05) -->
 <!-- Removed Turret Bone reference -->
 <!-- Adjusted repair decal size -->
+<!-- Fixed FP Mesh Sorting -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all"	source="ART:GUMRT_FP.w3x" />
 		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<GameObject

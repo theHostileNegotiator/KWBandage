@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Fixed Getting up Animation-->
-<!--Allow veteran and ZOCOM snipers to spot for bombard-->
+<!-- Redone models -->
+<!-- Fixed Getting up Animation -->
+<!-- Allow veteran and ZOCOM snipers to spot for bombard -->
+<!-- Fixed FP Mesh Sorting -->
+<!-- Fixed FP being animated -->
 	<Includes>
 		<Include type="all" source="ART:GUBehemoth_SKN.W3X" />
 		<Include type="all" source="ART:GUBehemoth_SKND.W3X" />
 		<Include type="all" source="ART:GUBehemoth_SKNR.W3X" />			
-		<Include type="all" source="ART:GUBehmBlda_BLDA.W3X" />
-		<Include type="all" source="ART:GUBehmBlda_SKN.W3X" />
+		<Include type="all" source="ART:GUBehemoth_FP.W3X" />			
 		<Include type="all" source="ART:GUBehemoth_ABTA.W3X" />
 		<Include type="all" source="ART:GUBehemoth_ACCL.W3X" />
 		<Include type="all" source="ART:GUBehemoth_AIDA.W3X" />
@@ -212,6 +214,11 @@
 						end
 					</Script>	
 				</AnimationState>		
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<!-- no anim -->
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="COMING_OUT_OF_FACTORY"

@@ -6,8 +6,10 @@
 <!-- Removed inappropriate KindOf Flags -->
 <!-- Fixed Moving Sound Effects -->
 <!-- Now uses ActiveBody instead of ShieldBody -->
+<!-- Fixed FP Mesh Sorting and Simplified Model -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all"	source="ART:AUMillipedeHead_FP.w3x" />
 	</Includes>
 	<GameObject
 		id="AlienMillipedeHead"

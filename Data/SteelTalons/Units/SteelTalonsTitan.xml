@@ -10,10 +10,12 @@
 <!-- Fixed DYING state to use appropriate model and texture when having Adaptive Armor -->
 <!-- New Rubble Model (Stygs) -->
 <!-- Adjusted Geometry -->
+<!-- Fixed FP Mesh Sorting -->
 	<Includes>
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
 		<Include type="all" source="ART:GUVehicleFAdAr.w3x" />
+		<Include type="all" source="ART:GUVehicleF_FP.w3x" />
 		<Include type="all" source="ART:GUVehicleF_AAUG_D.xml" />
 	</Includes>
 	<GameObject

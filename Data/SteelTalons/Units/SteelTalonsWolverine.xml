@@ -3,8 +3,11 @@
 <!-- Added EMP Animation -->
 <!-- Added Status Upgrade WEAPON_UPGRADED_02 for missing factions for Non Veterancy -->
 <!-- Destroyed unit will use damaged texture -->
-  <Tags></Tags>
+<!-- Fixed FP Mesh Sorting -->
+<!-- Fixed FP scanline effect (Stygs) -->
+	<Tags></Tags>
 	<Includes>
+		<Include type="all"	source="ART:GUInfantryB_FP.w3x" />
 	</Includes>
 	<GameObject
 		id="SteelTalonsWolverine"

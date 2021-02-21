@@ -9,9 +9,11 @@
 <!-- Attack Animation will now only play when the main weapon fires -->
 <!-- Adjusted recycle decal size -->
 <!-- Created Rubble Model (Using damaged model name for memory) -->
+<!-- Fixed FP Mesh Sorting and Simplified Model -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all"	source="ART:AUEradHex_D1.w3x" />
+		<Include type="all"	source="ART:AUEradHex_FP.w3x" />
 		<Include type="all"	source="ART:Decal_Sensor_CO.xml" />
 	</Includes>
 	<GameObject

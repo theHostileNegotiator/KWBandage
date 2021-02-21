@@ -2,9 +2,11 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- ZOCOM and Veteran Snipers can now spot for bombard when Garrisoned -->
 <!-- Fixed Rubble Model -->
+<!-- Fixed FP Mesh Sorting and Simplified Model -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NUReckoner_R.w3x" />
+		<Include type="all" source="ART:NUReckoner_FP.w3x" />
 	</Includes>
 	<GameObject
 		id="NODBunkerTruck"

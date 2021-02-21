@@ -133,7 +133,6 @@
 2. Some units do not show Dust Hover effect if technology was captured and built by a different faction
 	* Units are given a ModelConditionUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
 		* Objects Affected
-			* Slingshot
 			* Shatterer
 			* Zone Shatterer
 			* Orca
@@ -185,6 +184,25 @@
 			* Rocket Harvester
 			* Shard Walker
 			* Reaper Tripod
+2. Some units Formation Preview models do not render properly when in front of other GameObjects
+	* Increased SortLevel of the Formation Preview Mesh to 1
+		* Objects Affected
+			* Titan
+			* MRT
+			* Heavy Harvester
+			* Wolverine
+			* Slingshot
+			* Shatterer
+			* Zone Shatterer
+			* Behemoth
+			* MARV
+			* Hammerhead
+			* Reckoner
+			* Mantis
+			* Specter
+			* Redeemer
+			* Mechapede
+			* Eradicator Hexapod
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
@@ -401,6 +419,8 @@
 	* Other Mech units used the Bored animation. This technique was applied
 2. Destroyed State uses the incorrect texture
 	* Destroyed unit will use the damaged texture
+3. Formation Preview model flashes instead of having a scanline effect like the other units
+	* Fixed Mesh, giving second set of Texture Coordinates (Stygs)
 #### Rig/Battlebase
 1. Subfaction Rigs when unpacking would create GDI Battlebase instead of their own. The same happens with Subfaction Battlebase packing GDI Rigs
 	* Packing and unpacking will now create the corresponding faction version
@@ -426,6 +446,8 @@
 		* Changed WeaponCategory to MISSILE to lessen priority against Infantry and increase priority against Air units.
 5. When destroyed, unit still had Hover Dust Effect.
 	* Added DYING Model Condition State to have no Particle Systems.
+6. Particle Effects appear in Formation Preview
+	* Adjusted Draw to prevent FX in appearing in Formation Preview
 #### Shatterer
 1. AI will not use the Unit
 	* Added ConquerMetricsOverride for DPS and Damage Type to 300 and CANNON
@@ -469,6 +491,8 @@
 	* The Above fix has removed this issue
 3. Husk model uses standard mesh instead of the rubble mesh like the Juggernaught and Avatar.
 	* Husk model now appears more destroyed. The generated Debris actually make sense now.
+4. Formation Preview may move around according to the animation it is currently in
+	* Forced no animation to be played at ModelState
 #### MARV
 1. Only required Tier 2 structure (Command Post) compared to other factions which required their respective Tier 3 structure (After Reclamation Hub is deployed)
 	* Changed RequiredObject to Tech Center

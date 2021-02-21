@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<W3DMesh id="GUZOCOMHARV_FP" CastShadow="true" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="GUZOCOMHARV_FP" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-20.755205" Y="-17.036001" Z="-0.065279"/>
 			<Max X="31.204124" Y="16.898478" Z="23.320995"/>

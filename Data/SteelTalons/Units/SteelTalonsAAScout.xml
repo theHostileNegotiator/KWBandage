@@ -189,6 +189,9 @@
 						FollowBone="true" />
 				</ModelConditionState>
 				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+				</AnimationState>
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING">
 					<ParticleSysBone

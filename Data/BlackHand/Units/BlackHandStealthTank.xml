@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xai="uri:ea.com:eala:asset:instance">
-<!--Improved Turret Settings to match Slingshot. Now more effective against air, reducing missfires when aircraft flies overhead-->
-<!--Restored ability to be cloaked from cloaking field, defaulted certain parameters-->
-<!--Changed so it uses only one model between no upgrades and upgrade-->
-<!--Added Damaged TibCore Texture-->
+<!-- Improved Turret Settings to match Slingshot. Now more effective against air, reducing missfires when aircraft flies overhead -->
+<!-- Restored ability to be cloaked from cloaking field, defaulted certain parameters -->
+<!-- Changed so it uses only one model between no upgrades and upgrade -->
+<!-- Added Damaged TibCore Texture -->
+<!-- Fixed FP Mesh Sorting -->
 	<Includes>
 		<Include type="all" source="ART:NUWodTnk_SKN.w3x" />
+		<Include type="all" source="ART:NUWodTnk_FP.w3x" />
 	</Includes>
 	<GameObject
 		id="BlackHandStealthTank"

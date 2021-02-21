@@ -3,10 +3,12 @@
 <!-- Removed RailGun Upgrade Sounds -->
 <!-- Added Heroic Tungsten Tracers -->
 <!-- Added EMP Animation -->
-<!-- Removed Particle System Hover Dust Effect when Destroyed -->
-<!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
+<!-- Removed Particle System Hover Dust Effect when Destroyed and in Formation Preview -->
 <!-- Added Status Upgrade WEAPON_UPGRADED_02 for missing factions for Non Veterancy -->
+<!-- Now has Default Animation State -->
+<!-- Fixed FP Mesh Sorting and Simplified Model -->
 	<Includes>
+		<Include type="all" source="ART:GUAATank_FP.w3x" />
 		<Include type="all" source="ART:GUAATank_LOWA.w3x" />
 		<Include type="all" source="ART:FXTracerTungstenHeroic.xml" />
 	</Includes>
@@ -197,6 +199,9 @@
 						FXParticleSystemTemplate="GDIShattererDustRocksDesert"
 						FollowBone="true" />
 				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING">

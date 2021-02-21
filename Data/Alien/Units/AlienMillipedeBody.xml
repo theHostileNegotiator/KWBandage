@@ -8,6 +8,11 @@
 <!-- Fixed Moving Sound Effects -->
 <!-- Spawn SoundEffects are done through AudioLoopUpgrade, the upgrade granted by the purchasing of Segments -->
 <!-- Now uses ActiveBody instead of ShieldBody -->
+<!-- Fixed FP Mesh Sorting and Simplified Model -->
+	<Tags></Tags>
+	<Includes>
+		<Include type="all"	source="ART:AUMillipedeBody_FP.w3x" />
+	</Includes>
 	<GameObject
 		id="AlienMillipedeBody"
 		inheritFrom="BaseVehicle"

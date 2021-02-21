@@ -7,8 +7,10 @@
 <!-- Removed Beam Deflector KindOf Flag and repeated Flag -->
 <!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
 <!-- Added Status Upgrade WEAPON_UPGRADED_02 for missing factions for Non Veterancy -->
+<!-- Fixed FP Mesh Sorting -->
 	<Includes>
 		<Include type="all" source="ART:GUHamhead_SKN.w3x" />
+		<Include type="all" source="ART:GUHamhead_FP.w3x" />
 	</Includes>
 	<GameObject
 		id="GDIHammerhead"

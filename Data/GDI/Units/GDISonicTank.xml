@@ -6,7 +6,9 @@
 <!-- Fixed Destroyed Animation not playing -->
 <!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
 <!-- Removed now redundant bones due to Zone Shatterer having it's own Skeleton. Also removed unnecessary animation channels -->
+<!-- Fixed FP Mesh Sorting and Simplified Model -->
 	<Includes>
+		<Include type="all" source="ART:GUShatterer_FP.w3x" />
 		<Include type="all" source="ART:GUShatterer_ACCA.w3x" />
 		<Include type="all" source="ART:GUShatterer_ATKA.w3x" />
 		<Include type="all" source="ART:GUShatterer_DECA.w3x" />
@@ -153,6 +155,11 @@
 						AnimationMode="LOOP"
 						AnimationSpeedFactorMin="0.9"
 						AnimationSpeedFactorMax="1.1" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<!-- no anim -->
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"

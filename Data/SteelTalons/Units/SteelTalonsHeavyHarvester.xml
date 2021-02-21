@@ -2,6 +2,11 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!-- Harvesting Rate Normalised to GDI Harvesters -->
 <!-- Tiberium meter on the rear no longer shows when destroyed -->
+<!-- Fixed FP Mesh Sorting -->
+	<Tags></Tags>
+	<Includes>
+		<Include type="all"	source="ART:GUHvyHarv_FP.w3x" />
+	</Includes>
 	<GameObject
 		id="SteelTalonsHeavyHarvester"
 		inheritFrom="BaseVehicle"

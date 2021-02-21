@@ -9,11 +9,15 @@
 <!-- Removed references to non existent walk animations -->
 <!-- Added new Tib Trooper Weapon Template for cloned units -->
 <!-- Removed HitFX for Tib Trooper Weapon -->
+<!-- Fixed FP Mesh Sorting and Simplified Model -->
 	<Tags></Tags>
 	<Includes>
 		<Include
 			type="all"
 			source="ART:NURedeemer_SKN.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_FP.W3X" />
 	</Includes>
 	<GameObject
 		id="NODMetaUnit"

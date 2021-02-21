@@ -4,6 +4,10 @@
 <!-- Adjusted Weapon ID slots so targetting is based of main turret (range preference for example) -->
 <!-- Removed Turret Hierarchy setup as it was unnecessary -->
 <!-- Created new LaserIDs so Railgun Distortion effect do not Override each other -->
+<!-- Fixed FP Mesh Sorting and Simplified Model -->
+	<Includes>
+		<Include type="all" source="ART:GUMARV_FP.w3x" />
+	</Includes>
 	<GameObject
 		id="GDIMARV"
 		SelectPortrait="Portrait_MARV"

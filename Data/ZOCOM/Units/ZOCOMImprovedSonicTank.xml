@@ -9,7 +9,11 @@
 <!-- Adjusted Locomotor so the top does not clip through the War Factory -->
 <!-- Improved model to use it's own Skeleton so the bones were aligned as the FX showed misalignment -->
 <!-- Removed now redundant bones due to Zone Shatterer having it's own Skeleton. Also removed unnecessary animation channels -->
+<!-- Fixed FP Mesh Sorting -->
 	<Includes>
+		<Include type="all" source="ART:GUStlShat_SKN.w3x" />
+		<Include type="all" source="ART:GUStlShat_R.w3x" />
+		<Include type="all" source="ART:GUStlShat_FP.w3x" />
 		<Include type="all" source="ART:GUStlShat_ACCA.w3x" />
 		<Include type="all" source="ART:GUStlShat_ATKA.w3x" />
 		<Include type="all" source="ART:GUStlShat_DECA.w3x" />
@@ -17,8 +21,6 @@
 		<Include type="all" source="ART:GUStlShat_IDLA.w3x" />
 		<Include type="all" source="ART:GUStlShat_LOWA.w3x" />
 		<Include type="all" source="ART:GUStlShat_MOVA.w3x" />
-		<Include type="all" source="ART:GUStlShat_SKN.w3x" />
-		<Include type="all" source="ART:GUStlShat_R.w3x" />
 		<Include type="all" source="ART:GUStlShat_TRLA.w3x" />
 		<Include type="all" source="ART:GUStlShat_TRRA.w3x" />
 	</Includes>
