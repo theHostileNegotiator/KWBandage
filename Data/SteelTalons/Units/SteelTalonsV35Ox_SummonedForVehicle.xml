@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Normalised Heath to GDI Ox Transports-->
+<!-- Refer to GDI V35Ox -->
+<!-- Normalised Health to GDI Ox Transports -->
 	<GameObject
-		id="ZOCOMV35Ox_Summoned"
+		id="SteelTalonsV35Ox_SummonedForVehicle"
+		inheritFrom="GDIV35Ox"
 		SelectPortrait="Portrait_GDIOx"
 		ButtonImage="Portrait_GDIOx"
-		Side="ZOCOM"
+		Side="SteelTalons"
 		EditorSorting="UNIT"
 		TransportSlotCount="0"
 		BuildCost="10"
 		BuildTime="1.0"
 		CommandSet="GDIV35OxCommandSet"
-		KindOf="CAN_CAST_REFLECTIONS SELECTABLE AIRCRAFT VEHICLE TRANSPORT SUMMONED NO_COLLIDE IGNORES_SELECT_ALL"
+		KindOf="PRELOAD CAN_CAST_REFLECTIONS CAN_ATTACK SELECTABLE AIRCRAFT VEHICLE TRANSPORT SUMMONED NO_COLLIDE"
 		RadarPriority="UNIT"
 		ProductionQueueType="AIRCRAFT"
 		VoicePriority="52"
-		EditorName="ZOCOMV35Ox_Summoned"
+		EditorName="SteelTalonsV35Ox_SummonedForVehicle"
 		Description="Desc:GDIOx"
 		TypeDescription="Type:GDIOx"
 		ShockwaveResistance="100"
@@ -44,14 +46,6 @@
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
 						Name="GUDropShip_SKN" />
-					<ParticleSysBone
-						BoneName="FX_Lfan"
-						FXParticleSystemTemplate="orcaexhaust"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_Rfan"
-						FXParticleSystemTemplate="orcaexhaust"
-						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -101,6 +95,20 @@
 					ConditionsYes="DYING">
 					<Model
 						Name="GUDropShipR_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_1">
+					<Model
+						Name="GUDropShip_SKN" />
+					<ParticleSysBone
+						BoneName="FX_Lfan"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_Rfan"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -305,6 +313,42 @@
 				AddConditionFlags="USER_1">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
 			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingNOD"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingBlackHand"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingMarkedOfKane"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingAlien"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingReaper17"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingTraveler59"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</ModelConditionUpgrade>
 			<Physics
 				id="ModuleTag_07" />
 			<ProductionUpdate
@@ -315,36 +359,6 @@
 				AflameDuration="5s"
 				AflameDamageAmount="3"
 				AflameDamageDelay=".5s" />
-			<HordeTransportContain
-				id="ModuleTag_Contain"
-				ObjectStatusOfContained="UNSELECTABLE ENCLOSED"
-				ContainMax="1"
-				Slots="1"
-				AllowEnemiesInside="false"
-				AllowAlliesInside="false"
-				AllowNeutralInside="false"
-				AllowOwnPlayerInsideOverride="true"
-				ShowPips="true"
-				EnterSound="VehicleEnter"
-				ExitSound="VehicleExit"
-				KillPassengersOnDeath="true"
-				FlyOffMapOnEmpty="true"
-				ExtendedExitContainerChecks="true">
-				<PassengerFilter
-					Rule="ANY"
-					Include="INFANTRY" />
-				<DieMuxData
-					DeathTypes="ALL" />
-				<PassengerData
-					BonePrefix="BONEGARRISON">
-					<Filter
-						Rule="NONE"
-						Include="INFANTRY" />
-				</PassengerData>
-				<MemberTemplateStatusInfo
-					ThingTemplate="ZOCOMSniperSquad"
-					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />
-			</HordeTransportContain>
 			<MoveToPositionAndEvacuateSpecialPower
 				id="ModuleTag_MoveToPositionAndEvacuate"
 				SpecialPowerTemplate="SpecialPowerMoveToPositionAndEvacuate" />
@@ -372,12 +386,47 @@
 					Index="onDeath"
 					FX="FX_GDIAirVehicleExplode" />
 			</FXListBehavior>
+			<HordeTransportContain
+				id="ModuleTag_Contain"
+				ObjectStatusOfContained="UNSELECTABLE"
+				ContainMax="1"
+				Slots="1"
+				AllowEnemiesInside="false"
+				AllowAlliesInside="false"
+				AllowNeutralInside="false"
+				AllowOwnPlayerInsideOverride="true"
+				ShowPips="true"
+				EnterSound="AudioEvent:VehicleEnter"
+				ExitSound="AudioEvent:VehicleExit"
+				KillPassengersOnDeath="true"
+				FlyOffMapOnEmpty="true"
+				ExtendedExitContainerChecks="true">
+				<PassengerFilter
+					Rule="NONE">
+					<IncludeThing>SteelTalonsRepairAPC</IncludeThing>
+					<IncludeThing>SteelTalonsPitbull</IncludeThing>
+					<IncludeThing>SteelTalonsSurveyor</IncludeThing>
+					<IncludeThing>SteelTalonsWolverine</IncludeThing>					
+					<IncludeThing>SteelTalonsAAScout</IncludeThing>
+				</PassengerFilter>
+				<DieMuxData
+					DeathTypes="ALL" />
+				<PassengerData
+					BonePrefix="BONEGARRISON">
+					<Filter
+						Rule="NONE"
+						Include="VEHICLE" />
+				</PassengerData>
+			</HordeTransportContain>
 		</Behaviors>
 		<AI>
 			<TransportHelicopterAIUpdate
 				id="ModuleTag_06"				
-				FlyOffMapOnUnload="true"
-				DelayAFterLoadingOrUnloading="2s">
+				AILuaEventsList="GDIV35Ox_SummonedForVehicleFunctions"
+				FlyOffMapOnUnload="true">
+				<UnitAITargetChooserData					
+					SympathyRange="100.0" 
+				/>
 			</TransportHelicopterAIUpdate>
 		</AI>
 		<Body>

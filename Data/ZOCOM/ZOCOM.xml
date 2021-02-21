@@ -24,13 +24,13 @@
 		<Include type="all" source="Units/ZOCOMSniperSquad.xml" />	
 		<Include type="all" source="Units/ZOCOMSniperSquad_Veteran.xml" />	
 		<Include type="all" source="Units/ZOCOMSpotter.xml" />	
-		<Include type="all" source="Units/ZOCOMV350x_CallSupportHunterKillerTeam.xml" />
-		<Include type="all" source="Units/ZOCOMV350x_CallSupportZOCOMAirport.xml" />
-		<Include type="all" source="Units/ZOCOMV350x_CallSupportZOCOMAirportRockets.xml" />
-		<Include type="all" source="Units/ZOCOMV350x_CallSupportZOCOMBloodhound.xml" />
-		<Include type="all" source="Units/ZOCOMV350x_CallSupportZOCOMBloodhound_APC.xml" />
-		<Include type="all" source="Units/ZOCOMV350x_Summoned.xml" />
-		<Include type="all" source="Units/ZOCOMV350x_SummonedForVehicle.xml" />
+		<Include type="all" source="Units/ZOCOMV35Ox_CallSupportHunterKillerTeam.xml" />
+		<Include type="all" source="Units/ZOCOMV35Ox_CallSupportZOCOMAirborne.xml" />
+		<Include type="all" source="Units/ZOCOMV35Ox_CallSupportZOCOMAirborneRockets.xml" />
+		<Include type="all" source="Units/ZOCOMV35Ox_CallSupportZOCOMBloodhound.xml" />
+		<Include type="all" source="Units/ZOCOMV35Ox_CallSupportZOCOMBloodhound_APC.xml" />
+		<Include type="all" source="Units/ZOCOMV35Ox_Summoned.xml" />
+		<Include type="all" source="Units/ZOCOMV35Ox_SummonedForVehicle.xml" />
 		<Include type="all" source="Units/ZOCOMZoneRaider.xml" />
 		<Include type="all" source="Units/ZOCOMZoneRaiderSquad.xml" />
 		<Include type="all" source="Units/ZOCOMZoneRaiderSquad_Veteran.xml" />

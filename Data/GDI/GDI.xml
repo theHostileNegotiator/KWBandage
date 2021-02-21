@@ -23,6 +23,14 @@
 		<Include type="all" source="Units/GDISonicTank.xml" />	
 		<Include type="all" source="Units/GDISpotter.xml" />	
 		<Include type="all" source="Units/GDISuperSonicAirAttack.xml" />	
+		<Include type="all" source="Units/GDIV35Ox.xml" />
+		<Include type="all" source="Units/GDIV35Ox_CallSupportHunterKillerTeam.xml" />
+		<Include type="all" source="Units/GDIV35Ox_CallSupportAirborne.xml" />
+		<Include type="all" source="Units/GDIV35Ox_CallSupportAirborneRockets.xml" />
+		<Include type="all" source="Units/GDIV35Ox_CallSupportBloodhound.xml" />
+		<Include type="all" source="Units/GDIV35Ox_CallSupportBloodhound_APC.xml" />
+		<Include type="all" source="Units/GDIV35Ox_Summoned.xml" />
+		<Include type="all" source="Units/GDIV35Ox_SummonedForVehicle.xml" />
 		<Include type="all" source="Units/GDIZoneTrooper.xml" />
 		<Include type="all" source="Units/ZOCOMAPCRepairDrone.xml" />
 		

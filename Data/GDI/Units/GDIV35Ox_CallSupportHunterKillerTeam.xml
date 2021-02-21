@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
+<!-- Refer to GDI V35Ox -->
 	<GameObject
-		id="GDIV35Ox"
+		id="GDIV35Ox_CallSupportHunterKillerTeam"
+		inheritFrom="GDIV35Ox_Summoned"	
 		SelectPortrait="Portrait_GDIOx"
 		ButtonImage="Portrait_GDIOx"
 		Side="GDI"
@@ -10,11 +12,11 @@
 		BuildCost="10"
 		BuildTime="1.0"
 		CommandSet="GDIV35OxCommandSet"
-		KindOf="PRELOAD CAN_CAST_REFLECTIONS CAN_ATTACK SELECTABLE AIRCRAFT VEHICLE TRANSPORT SUMMONED NO_COLLIDE"
+		KindOf="CAN_CAST_REFLECTIONS AIRCRAFT TRANSPORT SUMMONED NO_COLLIDE IGNORES_SELECT_ALL"
 		RadarPriority="UNIT"
 		ProductionQueueType="AIRCRAFT"
 		VoicePriority="52"
-		EditorName="GDIV35Ox"
+		EditorName="GDIV35Ox_CallSupportHunterKillerTeam"
 		Description="Desc:GDIOx"
 		TypeDescription="Type:GDIOx"
 		ShockwaveResistance="100"
@@ -43,14 +45,6 @@
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
 						Name="GUDropShip_SKN" />
-					<ParticleSysBone
-						BoneName="FX_Lfan"
-						FXParticleSystemTemplate="orcaexhaust"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_Rfan"
-						FXParticleSystemTemplate="orcaexhaust"
-						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -100,6 +94,20 @@
 					ConditionsYes="DYING">
 					<Model
 						Name="GUDropShipR_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_1">
+					<Model
+						Name="GUDropShip_SKN" />
+					<ParticleSysBone
+						BoneName="FX_Lfan"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_Rfan"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -304,6 +312,42 @@
 				AddConditionFlags="USER_1">
 				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
 			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingNOD"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingBlackHand"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingMarkedOfKane"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingAlien"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingReaper17"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowThePlatingTraveler59"
+				Permanent="true"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</ModelConditionUpgrade>
 			<Physics
 				id="ModuleTag_07" />
 			<ProductionUpdate
@@ -314,32 +358,6 @@
 				AflameDuration="5s"
 				AflameDamageAmount="3"
 				AflameDamageDelay=".5s" />
-			<HordeTransportContain
-				id="ModuleTag_Contain"
-				ObjectStatusOfContained="UNSELECTABLE ENCLOSED"
-				ContainMax="6"
-				Slots="6"
-				AllowEnemiesInside="false"
-				AllowAlliesInside="false"
-				AllowNeutralInside="false"
-				AllowOwnPlayerInsideOverride="true"
-				ShowPips="true"
-				EnterSound="VehicleEnter"
-				ExitSound="VehicleExit"
-				KillPassengersOnDeath="true"
-				ExtendedExitContainerChecks="true">
-				<PassengerFilter
-					Rule="ANY"
-					Include="INFANTRY" />
-				<DieMuxData
-					DeathTypes="ALL" />
-				<PassengerData
-					BonePrefix="BONEGARRISON">
-					<Filter
-						Rule="NONE"
-						Include="INFANTRY" />
-				</PassengerData>
-			</HordeTransportContain>
 			<MoveToPositionAndEvacuateSpecialPower
 				id="ModuleTag_MoveToPositionAndEvacuate"
 				SpecialPowerTemplate="SpecialPowerMoveToPositionAndEvacuate" />
@@ -367,6 +385,34 @@
 					Index="onDeath"
 					FX="FX_GDIAirVehicleExplode" />
 			</FXListBehavior>
+			<HordeTransportContain
+				id="ModuleTag_Contain"
+				ObjectStatusOfContained="UNSELECTABLE ENCLOSED"
+				ContainMax="1"
+				Slots="1"
+				AllowEnemiesInside="false"
+				AllowAlliesInside="false"
+				AllowNeutralInside="false"
+				AllowOwnPlayerInsideOverride="true"
+				ShowPips="true"
+				EnterSound="AudioEvent:VehicleEnter"
+				ExitSound="AudioEvent:VehicleExit"
+				KillPassengersOnDeath="true"
+				FlyOffMapOnEmpty="true">
+				<PassengerFilter
+					Rule="ANY"
+					Include="INFANTRY" />
+				<DieMuxData
+					DeathTypes="ALL" />
+				<PassengerData
+					BonePrefix="BONEGARRISON">
+					<Filter
+						Rule="NONE" />
+				</PassengerData>
+				<InitialPayload
+					Name="GDISniperSquad_Veteran"
+					Count="1" />
+			</HordeTransportContain>
 		</Behaviors>
 		<AI>
 			<TransportHelicopterAIUpdate

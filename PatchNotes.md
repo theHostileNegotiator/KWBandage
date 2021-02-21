@@ -504,7 +504,9 @@
 2. Unit can be seen through, mainly with Ceramic Armor textures due DXT compression creating Alpha pixels
 	* Removed alpha support
 #### Ox Transports
-1. Steel Talons and ZOCOM Ox transports health use values before TW 1.05
+1. Particle Effects appear in Formation Preview
+	* Adjusted Draw to prevent FX in appearing in Formation Preview
+2. Steel Talons and ZOCOM Ox transports health use values before TW 1.05
 	* Increased Health to 2500 to match GDI's version
 #### Construction Yard
 1. Selling ZOCOM Con Yard would give you GDI Rifle Squad and GDI Engineer

@@ -23,12 +23,12 @@
 		<Include type="all" source="Units/SteelTalonsRifleSoldierSquad_Veteran.xml" />
 		<Include type="all" source="Units/SteelTalonsRig.xml" />
 		<Include type="all" source="Units/SteelTalonsTitan.xml" />
-		<Include type="all" source="Units/SteelTalonsV350x_Summoned.xml" />
-		<Include type="all" source="Units/SteelTalonsV350x_SummonedForVehicle.xml" />
+		<Include type="all" source="Units/SteelTalonsV35Ox_Summoned.xml" />
+		<Include type="all" source="Units/SteelTalonsV35Ox_SummonedForVehicle.xml" />
 		<Include type="all" source="Units/SteelTalonsWolverine.xml" />
 		<Include type="all" source="Units/SteelTalonsWolverine_Veteran.xml" />
-		<Include type="all" source="Units/STV350x_CallSupportBloodhound.xml" />
-		<Include type="all" source="Units/STV350x_CallSupportBloodhound_WOL.xml" />
+		<Include type="all" source="Units/STV35Ox_CallSupportBloodhound.xml" />
+		<Include type="all" source="Units/STV35Ox_CallSupportBloodhound_WOL.xml" />
 		
 		<!--Structures-->
 		<Include type="all" source="structures/SteelTalonsAABattery.xml" />
