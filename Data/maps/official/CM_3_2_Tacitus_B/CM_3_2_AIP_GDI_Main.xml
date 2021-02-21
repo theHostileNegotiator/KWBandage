@@ -67,21 +67,21 @@
     <BudgetStates State="CM_3_2_FullProductionBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
     <!-- Vehicle Overrides -->
-	<UnitOverride UnitName="GDIPitbull" Percentage="10%"/>
+	<UnitOverride UnitName="GDIPitbull" Percentage="0%"/>
 	<UnitOverride UnitName="GDIAPC" Percentage="0%"/>
-	<UnitOverride UnitName="GDIPredator" Percentage="10%"/>
+	<UnitOverride UnitName="GDIPredator" Percentage="0%"/>
 	<UnitOverride UnitName="GDIAAScout" Percentage="0%"/>
-	<UnitOverride UnitName="GDISonicTank" Percentage="10%"/>
-	<UnitOverride UnitName="GDIMammoth" Percentage="15%"/>
-	<UnitOverride UnitName="GDIJuggernaught" Percentage="15%"/>
-	<UnitOverride UnitName="GDIMARV" Percentage="15%"/>
+	<UnitOverride UnitName="GDISonicTank" Percentage="0%"/>
+	<UnitOverride UnitName="GDIMammoth" Percentage="0%"/>
+	<UnitOverride UnitName="GDIJuggernaught" Percentage="0%"/>
+	<UnitOverride UnitName="GDIMARV" Percentage="0%"/>
 
     <!-- Infantry Overrides -->  
 	<UnitOverride UnitName="GDIRifleSoldierSquad" Percentage="0%"/>
 	<UnitOverride UnitName="GDIMissileSoldierSquad" Percentage="0%"/>
 	<UnitOverride UnitName="GDIGrenadeSoldierSquad" Percentage="0%"/>
 	<UnitOverride UnitName="GDISniperSquad" Percentage="0%"/>
-	<UnitOverride UnitName="GDIZoneTrooperSquad" Percentage="15%"/>
+	<UnitOverride UnitName="GDIZoneTrooperSquad" Percentage="0%"/>
 	
     <!-- Aircraft Overrides -->
 	<UnitOverride UnitName="GDIOrca" Percentage="0%"/>
