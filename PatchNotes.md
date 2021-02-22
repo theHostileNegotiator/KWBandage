@@ -733,6 +733,8 @@
 	* Restored ability for it to be cloaked and defaulted parameters
 3. Damage values were inherited from Stealth Tank TW 1.09. Stealth Tank damage was reduced in KW 1.00.
 	* Reduced Damage of Rockets to match the current Stealth Tank values
+4. Formation Preview model textures appear off.
+	* Fixed UV Texture Coordinates
 #### Stealth Tank
 1. Stealth Model does not include the Tib Core Missile attachment, making the effect seem incomplete
 	* Added Tib Core Missile Mesh to Stealth Model
