@@ -563,6 +563,12 @@
 	* Give FX_GUIDEARROWS mesh SortLevel 1
 3. Ramp animation when the MARV exits the structure is conflicting
 	* Fixed animation so the ramp tilts earlier
+#### Crane
+1. Damaged model had an extra clean mesh on top of the damaged mesh which nullifies missing segments
+	* Removed extra mesh
+2. Has no Faction Colors due to new HC map for Guardian Cannon. Even with the old HC map, there are no Faction Colors with Low LOD model
+	* Created alternate Guardian Cannon SPM texture with old HC map and added HC section to the Crane claw part in Conyard SPM
+		* HC on claw affects MCV
 #### Dig In Structure
 1. Advanced units from the Base Factions can not garrison in structure whereas Sub Factions can
 	* Exclude Sub Faction advanced units from garrison Dig In Structure

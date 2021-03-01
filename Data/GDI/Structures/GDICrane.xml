@@ -2,6 +2,10 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:GBCrane_SKN.w3x" />
+		<Include type="all" source="ART:GBCrane_ASN.w3x" />
+		<Include type="all" source="ART:GBCrane_D2_SN.w3x" />
+		<Include type="all" source="ART:GBCrane_D3_SN.w3x" />
 	</Includes>
 	<GameObject
 		id="GDICrane"
