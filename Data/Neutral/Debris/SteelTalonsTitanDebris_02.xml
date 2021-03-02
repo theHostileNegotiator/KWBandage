@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<Tags></Tags>
 	<Includes>
-		<Include type="all" source="GUVehicleF_R02.w3x" />
+		<Include type="all" source="ART:GUVehicleF_R02.w3x" />
 	</Includes>
 	<GameObject
 		id="SteelTalonsTitanDebris_02"
