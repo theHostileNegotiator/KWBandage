@@ -5,36 +5,37 @@
   </Includes>
 
   <SkirmishOpeningMove
-    id="BlackHandVenomRush"
+    id="BlackHandFlameTankRush"
     Side="BlackHand"> <!--Power: +10-->
-    <Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
+
+	<Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
     <Order Build="BlackHandRefinery" /> <!--Time: 30 Power: -15-->
     <Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
     <Order Build="BlackHandRefinery" /> <!--Time: 30 Power: -15-->
-    <Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
+	<Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
     <Order Build="BlackHandRefinery" /> <!--Time: 30 Power: -15-->
     <Order Build="BlackHandOperationsCenter" /> <!--Time: 15 Power: -10-->
-    <Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="BlackHandHangar" /> <!--Time: 10 Power: -5-->
-    <Order Build="BlackHandHangar" /> <!--Time: 10 Power: -5-->
+	<Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
+    <Order Build="BlackHandDropZone" /> <!--Time: 20 Power: -5-->
+    <Order Build="BlackHandDropZone" /> <!--Time: 20 Power: -5-->
 
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Build="BlackHandVenom" />
-    <Order Time="210s" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Build="BlackHandFlameTank" />
+    <Order Time="261s" />
   </SkirmishOpeningMove>
 
   <!--SkirmishOpeningMove
