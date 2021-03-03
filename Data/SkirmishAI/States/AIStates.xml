@@ -310,7 +310,7 @@
     <UnitModifierByName UnitName="MarkedOfKaneVertigo" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
     <UnitModifierByName UnitName="MarkedOfKaneShadowSquad" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
     <UnitModifierByName UnitName="MOKCyborgInfantrySquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-    <UnitModifierByName UnitName="MarkedOfKaneTiberiumTrooperSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneTibTrooperSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
     <UnitModifierByName UnitName="MarkedOfKaneImprovedCyborgInfantrySquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
     <UnitModifierByName UnitName="MarkedOfKaneRaiderTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
     <UnitModifierByName UnitName="MarkedOfKaneScorpionBuggy" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
@@ -695,6 +695,33 @@
     <UnitModifierByName UnitName="BlackHandLaserCannon" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
     <UnitModifierByName UnitName="BlackHandRocketBunker" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
     <UnitModifierByName UnitName="BlackHandObelisk" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
+  </AIStrategicStateDefinition>
+  
+  <AIStrategicStateDefinition
+  id="MarkedOfKaneUnitPreferences"
+  UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <ConstantHeuristic Weight="999.0"/>
+    </Heuristic>
+    <UnitModifierByName UnitName="MarkedOfKaneTibTrooperSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+    <UnitModifierByName UnitName="MOKCyborgInfantrySquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="150%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneImprovedCyborgInfantrySquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="150%"/>
+    
+    <UnitModifierByName UnitName="MarkedOfKaneVenom" UnitPreferenceOffensiveModifier="10%" UnitPreferenceDefensiveModifier="10%"/>
+    
+    <UnitModifierByName UnitName="MarkedOfKaneScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneAttackBike" UnitPreferenceOffensiveModifier="175%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneRaiderTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="500%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneBeamCannon" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneMobileArtillery" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneAvatar" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="100%"/>
+
+    <UnitModifierByName UnitName="MarkedOfKaneShredderTurretHub" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneLaserCannon" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneRocketBunker" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+    <UnitModifierByName UnitName="MarkedOfKaneObelisk" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
   </AIStrategicStateDefinition>
   
   <AIStrategicStateDefinition

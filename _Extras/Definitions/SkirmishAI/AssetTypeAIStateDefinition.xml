@@ -107,9 +107,9 @@
 	<Asset id="AIStateEnemyNearbyHeuristic">
 		<EntryInheritance id="base" AssetType="AIStateHeuristic" />
 		<Entry id="Distance" AssetType="SageReal" Default="1000.0" IsAttribute="true"/>
-		<Entry id="EnemyNearby" AssetType="SageBool" Default="true" IsAttribute="true"/>
 		<Entry id="AttackerKindOf" AssetType="KindOfBitFlags" IsAttribute="true" />
 		<Entry id="DefenderKindOf" AssetType="KindOfBitFlags" IsAttribute="true" />
+		<Entry id="EnemyNearby" AssetType="SageBool" Default="true" IsAttribute="true"/>
 		<Entry id="fill" AssetType="Byte" IsVoid="true" />
 	</Asset>
 
@@ -202,10 +202,10 @@
 
 	<Asset id="AIStateResourceSqueezeHeuristic">
 		<EntryInheritance id="base" AssetType="AIStateHeuristic" />
+		<Entry id="PenetrabilityWeight" AssetType="SageReal" IsAttribute="true" />
+		<Entry id="OpponentFundsWeight" AssetType="SageReal" IsAttribute="true" />
 			<Entry id="PenetrabilityHeuristic" AssetType="AIStatePenetrabilityHeuristic" />
 			<Entry id="OpponentFundsHeuristic" AssetType="AIStateOpponentFundsHeuristic" />
-		<Entry id="OpponentFundsWeight" AssetType="SageReal" IsAttribute="true" />
-		<Entry id="PenetrabilityWeight" AssetType="SageReal" IsAttribute="true" />
 	</Asset>
 
 	<Asset id="AIStateProductionHaltHeuristic">
