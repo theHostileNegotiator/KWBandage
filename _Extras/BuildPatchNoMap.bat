@@ -63,6 +63,8 @@ if exist "%cd%\Mods\%modname%\Data\MapMetaData.xml" "%cd%\Tools\WrathEd.exe" -ga
 
 if exist "%cd%\Mods\%modname%\Data\MetaGame.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\MetaGame.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"%streamversion%" -bps:"metagame.manifest,%cd%\Game Files\Manifest\metagame.manifest"
 
+if exist "%cd%\Mods\%modname%\Data\StringHashes.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\StringHashes.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data"
+
 if exist "%cd%\Mods\%modname%\Data\AptUI\_Compiled" (
 	echo Copying AptUI...
 	if not exist "%cd%\Compilation\Mods\%modname%\Data\AptUI" md "%cd%\Compilation\Mods\%modname%\Data\AptUI"
