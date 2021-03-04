@@ -6,8 +6,11 @@
 <!-- 'Morale Boosting' Aura no longer affects Squad Objects -->
 <!-- Adjusted propaganda decal size -->
 <!-- Fixed FP model -->
+<!-- Adjusted House Color and Normal Map -->
 	<Includes>
 		<Include type="all" source="ART:NUPurifier_FP.w3x" />
+		<Include type="all" source="ART:NUPurifier_SPM.xml" />
+		<Include type="all" source="ART:NUPurifier_NRM.xml" />
 	</Includes>
 	<GameObject
 		id="BlackHandCustomWarmech"
@@ -96,6 +99,12 @@
 						Original="NUMech"
 						New="NUPurifier" />
 					<Texture
+						Original="NUMech_SPM"
+						New="NUPurifier_SPM" />
+					<Texture
+						Original="NUMech_NRM"
+						New="NUPurifier_NRM" />
+					<Texture
 						Original="NUFlameTank"
 						New="NUFlameTank_UG" />	
 					<ParticleSysBone
@@ -119,6 +128,12 @@
 					<Texture
 						Original="NUMech"
 						New="NUPurifier_D" />
+					<Texture
+						Original="NUMech_SPM"
+						New="NUPurifier_SPM" />
+					<Texture
+						Original="NUMech_NRM"
+						New="NUPurifier_NRM" />
 					<Texture
 						Original="NUFlameTank"
 						New="NUFlameTank_UGD" />	
@@ -168,6 +183,12 @@
 						Original="NUMechD"
 						New="NUPurifier_D" />
 					<Texture
+						Original="NUMech_SPM"
+						New="NUPurifier_SPM" />
+					<Texture
+						Original="NUMech_NRM"
+						New="NUPurifier_NRM" />
+					<Texture
 						Original="NUFlameTank"
 						New="NUFlameTank_UGD" />	
 					<ParticleSysBone
@@ -216,6 +237,12 @@
 						Original="NUMech"
 						New="NUPurifier" />	
 					<Texture
+						Original="NUMech_SPM"
+						New="NUPurifier_SPM" />
+					<Texture
+						Original="NUMech_NRM"
+						New="NUPurifier_NRM" />
+					<Texture
 						Original="NUFlameTank"
 						New="NUFlameTank_UG" />							
 				</ModelConditionState>
@@ -228,6 +255,12 @@
 					<Texture
 						Original="NUMech"
 						New="NUPurifier" />
+					<Texture
+						Original="NUMech_SPM"
+						New="NUPurifier_SPM" />
+					<Texture
+						Original="NUMech_NRM"
+						New="NUPurifier_NRM" />
 					<ParticleSysBone
 						BoneName="B_ThighR"
 						FXParticleSystemTemplate="RedeemerDamagedElectric"
@@ -249,6 +282,12 @@
 					<Texture
 						Original="NUMech"
 						New="NUPurifier_D" />
+					<Texture
+						Original="NUMech_SPM"
+						New="NUPurifier_SPM" />
+					<Texture
+						Original="NUMech_NRM"
+						New="NUPurifier_NRM" />
 					<ParticleSysBone
 						BoneName="B_ThighR"
 						FXParticleSystemTemplate="RedeemerDamagedElectric"
@@ -293,7 +332,13 @@
 						Name="NUMechR_SKN" />
 					<Texture
 						Original="NUMechD"
-						New="NUPurifier_D" />						
+						New="NUPurifier_D" />
+					<Texture
+						Original="NUMech_SPM"
+						New="NUPurifier_SPM" />
+					<Texture
+						Original="NUMech_NRM"
+						New="NUPurifier_NRM" />
 					<ParticleSysBone
 						BoneName="B_UArmL"
 						FXParticleSystemTemplate="GDIDebrisSmallFire"
@@ -338,7 +383,13 @@
 						Name="NUMech_SKN" />
 					<Texture
 						Original="NUMech"
-						New="NUPurifier" />							
+						New="NUPurifier" />
+					<Texture
+						Original="NUMech_SPM"
+						New="NUPurifier_SPM" />
+					<Texture
+						Original="NUMech_NRM"
+						New="NUPurifier_NRM" />
 				</ModelConditionState>
 				
 				<AnimationState

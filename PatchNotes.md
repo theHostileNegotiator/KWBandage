@@ -770,6 +770,8 @@
 4. Formation Preview shows all upgrade objects instead of only the Flame object
 	* Adjusted Formation Preview Model.
 		* Changed model stance to be more like the Avatar
+5. Faction Colors, Specular Map and and Normal Map do not match the Purifier Diffuse Texture
+	* Adjusted Specular Texture and Normal Texture to better match the Diffuse
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze
 	* Added NOD Confessor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
