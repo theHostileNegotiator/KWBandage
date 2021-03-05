@@ -614,5 +614,8 @@
 			MaxVisionBonusPercent="300"
 			VisionBonusTestRadius="200"
 			VisionBonusPercentPerFoot="1" />
+		<CrusherInfo
+			CrusherLevel="1" 
+			CrushableLevel="2" />
 	</GameObject>
 </AssetDeclaration>
