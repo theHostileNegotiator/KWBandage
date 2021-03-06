@@ -209,6 +209,8 @@
 #### Refineries
 1. Refund value was not increased in KW 1.02 after Harvesters were made cheaper
 	* Increased Refund Value to 700 based on; (RefineryCost - HarvesterCost) -:- 2
+2. Harvesters Docking at Nod or Scrin Refineries while the structure is being built can cause the Harvesters to queue at the wrong place and caused an exploit of immediate deposit of Tiberium
+	* Added Docking Bones to the Build Skeletons
 #### Outposts
 1. Do not have Type Description
 	* Added Type Description as "Expansion Strucure"

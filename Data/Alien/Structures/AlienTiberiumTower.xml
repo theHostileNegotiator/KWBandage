@@ -2,8 +2,10 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Increased refund value to 700 -->
 <!-- Fixed Harvester Spawn Behavior, realign spawn points -->
+<!-- Fixed Docking Bones for Build Model -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:ABTiberTowBld_SKN.w3x"/>
 	</Includes>
 	<!-- Extractor (Refinery) -->
 	<GameObject
