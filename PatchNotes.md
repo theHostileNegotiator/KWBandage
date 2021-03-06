@@ -1043,6 +1043,9 @@
 #### Growth Stimulator
 1. When selecting structure, it will sometimes play the Growth Accelerator select sound instead of the Stimulator select sound.
 	* Removed Growth Accelerator sound effects which was due to the Stimulator inheriting the Accelerator and not removing sounds.
+#### Explorer
+1. Reaper 17 unit is slower than the other factions
+	* Normalized speed to match the other factions
 #### Attenuated Forcefield
 1. Scrin and Reaper 17 do not share upgrade, despite cost and time is identical
 	* Reaper 17 units and upgrade refer to Scrin shields
