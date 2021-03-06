@@ -609,12 +609,12 @@
 			</StatusBitsUpgrade>
 			<AudioLoopUpgrade
 				id="TiberiumInfusionUpgradeSound"
-				SoundToPlay="NOD_TiberiumUpgrade">
+				SoundToPlay="AudioEvent:NOD_TiberiumUpgrade">
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
 			</AudioLoopUpgrade>
 			<AudioLoopUpgrade
 				id="NODConfessorUpgradeSound"
-				SoundToPlay="NOD_Confessor_Upgrade">
+				SoundToPlay="AudioEvent:NOD_Confessor_Upgrade">
 				<TriggeredBy>Upgrade_NODConfessorUpgrade</TriggeredBy>
 			</AudioLoopUpgrade>
 		</Behaviors>

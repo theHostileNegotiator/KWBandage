@@ -539,9 +539,9 @@
 				LevelsToGain="3">
 				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
 			</LevelUpUpgrade>
-      <TemporarilyDefectUpdate
-        id="ModuleTag_TemporarilyDefect"
-        DefectionFrameCount="300" />
+			<TemporarilyDefectUpdate
+				id="ModuleTag_TemporarilyDefect"
+				DefectionFrameCount="300" />
 			<WeaponSetUpdate>
 				<WeaponSlotHardpoint
 					ID="1"
@@ -608,7 +608,7 @@
 			</StatusBitsUpgrade>
 			<AudioLoopUpgrade
 				id="TiberiumInfusionUpgradeSound"
-				SoundToPlay="NOD_TiberiumUpgrade">
+				SoundToPlay="AudioEvent:NOD_TiberiumUpgrade">
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
 			</AudioLoopUpgrade>
 		</Behaviors>

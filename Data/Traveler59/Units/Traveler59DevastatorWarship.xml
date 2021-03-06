@@ -842,7 +842,7 @@
 				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
 			</SubObjectsUpgrade>			
 		-->
-			<AudioLoopUpgrade id="ALI_TravelerEngines_Upgrade" SoundToPlay="ALI_TravelerEngines_Upgrade"> 
+			<AudioLoopUpgrade id="ALI_TravelerEngines_Upgrade" SoundToPlay="AudioEvent:ALI_TravelerEngines_Upgrade"> 
 				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy> 
 			</AudioLoopUpgrade> 
 		</Behaviors>
