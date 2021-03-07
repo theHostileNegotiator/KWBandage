@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Removed Black Disciples Upgrade Audio -->
-<!-- Change Tiberium Infusion Armor Template -->
 <!-- Moved Confessor Upgrade sound effect to squad -->
+	<Tags></Tags>
+	<Includes>
+	</Includes>
 	<GameObject
-		id="NODMilitantRocket"
-		SelectPortrait="Portrait_NODMilitantMissile"
-		ButtonImage="Portrait_NODMilitantMissile"
+		id="NODMilitant"
+		inheritFrom="BaseInfantry"
+		SelectPortrait="Portrait_NODMilitantRifle"
+		ButtonImage="Portrait_NODMilitantRifle"
 		Side="NOD"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
-		BuildCost="200"
-		BuildTime="2"
-		CommandSet="NODMilitantRocketCommandSet"
+		BuildCost="22"
+		BuildTime="0.2"
+		CommandSet="NODMilitantCommandSet"
 		IsTrainable="true"
 		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS INFANTRY PATH_THROUGH_INFANTRY"
 		RadarPriority="UNIT"
 		BuildCompletion="APPEARS_AT_RALLY_POINT"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
-		WeaponCategory="MISSILE"
-		VoicePriority="92"
+		WeaponCategory="GUN"
+		VoicePriority="96"
 		CrowdResponse="NOD_Infantry"
-		EditorName="NODMilitantRocket"
-		Description="Desc:NODMilitantRocket"
-		TypeDescription="Type:NODMilitantRocket"
+		EditorName="NODMilitant"
+		Description="Desc:NODMilitantRifle"
+		TypeDescription="Type:NODMilitantRifle"
 		WorldMapArmoryUpgradesAllowed="Upgrade_TiberiumInfusion Upgrade_NODConfessorUpgrade">
-		<DisplayName>Name:NODMilitantRocket</DisplayName>
-		<DisplayUpgrade>Upgrade_TiberiumInfusion</DisplayUpgrade>
-		<DisplayUpgrade>Upgrade_NODConfessorUpgrade</DisplayUpgrade>
-		<ArmorSet
-			Armor="NODRocketMilitantArmor"
-			DamageFX="InfantryDamageFX" />
+		<DisplayName
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODMilitantRifle</DisplayName>
+		<DisplayUpgrade
+			id="Tag_DisplayUpgrade1">Upgrade_TiberiumInfusion</DisplayUpgrade>
+		<DisplayUpgrade
+			id="Tag_DisplayUpgrade2">Upgrade_NODConfessorUpgrade</DisplayUpgrade>
 		<ArmorSet
 			Conditions="PLAYER_UPGRADE"
-			Armor="NODRocketMilitantArmor_TiberiumInfused"
+			Armor="NODMilitantArmor_TiberiumInfused"
+			DamageFX="InfantryDamageFX" />
+		<ArmorSet
+			Armor="NODMilitantArmor"
 			DamageFX="InfantryDamageFX" />
 		<LocomotorSet
 			Locomotor="HumanLocomotor"
@@ -45,12 +51,23 @@
 		<Draws>
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
-				OkToChangeModelColor="true">
+				OkToChangeModelColor="true"
+				InitialRecoilSpeed="0.1"
+				MaxRecoilDistance="0.1"
+				RecoilDamping="2.0"
+				RecoilSettleSpeed="3.0"
+				ExtraPublicBone="B_WEAPONA_FX">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NU_RktTem_SKN" />
+						Name="NUMiltnB_SKN" />
 					<WeaponFireFXBone
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="B_WEAPONA_FX" />
+					<WeaponRecoilBone
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="B_WEAPONA_FX" />
+					<WeaponMuzzleFlash
 						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="B_WEAPONA_FX" />
 					<WeaponLaunchBone
@@ -67,13 +84,13 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="INSIDE_GARRISON">
 					<Model
-						Name="NUGar_Rock" />
+						Name="GUGarGun" />
 					<WeaponFireFXBone
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="B_WEAPONA_FX" />
+						BoneName="BONE01" />
 					<WeaponLaunchBone
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="B_WEAPONA_FX" />
+						BoneName="BONE01" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -90,46 +107,60 @@
 					StateName="STATE_bored"
 					Flags="RESTART_ANIM_WHEN_COMPLETE">
 					<Animation
-						AnimationName="NU_RktTem_BIDA"
+						AnimationName="NUMiltn_BIDA"
 						AnimationMode="ONCE"
-						AnimationPriority="10"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1"
+						AnimationPriority="15"
 						AnimationBlendTime="15" />
 					<Animation
-						AnimationName="NU_RktTem_BIDB"
+						AnimationName="NUMiltn_BIDB"
 						AnimationMode="ONCE"
-						AnimationPriority="10"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1"
+						AnimationPriority="15"
 						AnimationBlendTime="15" />
 					<Animation
-						AnimationName="NU_RktTem_BIDC"
+						AnimationName="NUMiltn_BIDC"
 						AnimationMode="ONCE"
-						AnimationPriority="10"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1"
+						AnimationPriority="15"
 						AnimationBlendTime="15" />
 					<Animation
-						AnimationName="NU_RktTem_BIFA"
+						AnimationName="NUMiltn_BIFA"
 						AnimationMode="ONCE"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1"
 						AnimationPriority="5"
 						AnimationBlendTime="15" />
 					<Animation
-						AnimationName="NU_RktTem_BIFB"
+						AnimationName="NUMiltn_BIFB"
 						AnimationMode="ONCE"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1"
 						AnimationPriority="5"
 						AnimationBlendTime="15" />
 					<Animation
-						AnimationName="NU_RktTem_BIFC"
+						AnimationName="NUMiltn_BIFC"
 						AnimationMode="ONCE"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1"
 						AnimationPriority="1"
 						AnimationBlendTime="15" />
 					<Animation
-						AnimationName="NU_RktTem_BIFD"
+						AnimationName="NUMiltn_BIFD"
 						AnimationMode="ONCE"
-						AnimationPriority="5"
+						AnimationSpeedFactorMin="0.9"
+						AnimationSpeedFactorMax="1.1"
+						AnimationPriority="1"
 						AnimationBlendTime="15" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_Suppressed" then
-						CurDrawableSetTransitionAnimState("TRANS_fromSuppressed")
+						CurDrawableSetTransitionAnimState("TRANS_SuppressedToIdle")
 						end
-						if Prev == "STATE_SelectedPose" then
+						if Prev == "STATE_Selected" then
 						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
 						end
 						if Prev == "STATE_stunned_flailing" then
@@ -142,42 +173,54 @@
 					ConditionsYes="STUNNED_FLAILING"
 					StateName="STATE_stunned_flailing">
 					<Animation
-						AnimationName="NU_RktTem_FLYA"
+						AnimationName="NUMiltn_FLYA"
 						AnimationMode="LOOP" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					StateName="STATE_stunned_landing">
 					<Animation
-						AnimationName="NU_RktTem_LNDA"
+						AnimationName="NUMiltn_LNDA"
 						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FRONTCRUSHED">
 					<Animation
-						AnimationName="NU_RktTem_CDTA"
+						AnimationName="NUMiltn_CDTA"
 						AnimationMode="ONCE" />
 				</AnimationState>
+				<!--
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BACKCRUSHED">
 					<Animation
-						AnimationName="NU_RktTem_CDTB"
+						AnimationName="NUMiltn_CDTB"
 						AnimationMode="ONCE" />
 				</AnimationState>
+-->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="COVER DYING"
 					StateName="STATE_Cover">
 					<Animation
-						AnimationName="NU_RktTem_KDIA"
+						AnimationName="NUMiltn_KDIA"
 						AnimationMode="ONCE" />
 					<Animation
-						AnimationName="NU_RktTem_KDIB"
+						AnimationName="NUMiltn_KDIB"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Animation
+						AnimationName="NUMiltn_DIEA"
 						AnimationMode="ONCE" />
 					<Animation
-						AnimationName="NU_RktTem_KDIC"
+						AnimationName="NUMiltn_DIEB"
+						AnimationMode="ONCE" />
+					<Animation
+						AnimationName="NUMiltn_DIEC"
 						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
@@ -185,20 +228,7 @@
 					ConditionsYes="SUPPRESSED DYING"
 					StateName="STATE_Suppressed">
 					<Animation
-						AnimationName="NU_RktTem_SDIA"
-						AnimationMode="ONCE" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING">
-					<Animation
-						AnimationName="NU_RktTem_DIEA"
-						AnimationMode="ONCE" />
-					<Animation
-						AnimationName="NU_RktTem_DIEB"
-						AnimationMode="ONCE" />
-					<Animation
-						AnimationName="NU_RktTem_DIEC"
+						AnimationName="NUMiltn_SDIA"
 						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
@@ -207,16 +237,24 @@
 					StateName="STATE_Suppressed"
 					Flags="RANDOMSTART">
 					<Animation
-						AnimationName="NU_RktTem_SMVA"
+						AnimationName="NUMiltn_SMVA"
 						AnimationMode="LOOP" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="SUPPRESSED USING_WEAPON_A"
+					ConditionsYes="SUPPRESSED FIRING_OR_PREATTACK_A"
 					StateName="STATE_Suppressed">
 					<Animation
-						AnimationName="NU_RktTem_SATA"
-						AnimationMode="LOOP" />
+						AnimationName="NUMiltn_SATA"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="SUPPRESSED ATTACKING"
+					StateName="STATE_SelectedPose">
+					<Animation
+						AnimationName="NUMiltn_SATA"
+						AnimationMode="MANUAL" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -224,17 +262,17 @@
 					Flags="RESTART_ANIM_WHEN_COMPLETE"
 					StateName="STATE_Suppressed">
 					<Animation
-						AnimationName="NU_RktTem_SIDA"
-						AnimationMode="ONCE"
-						AnimationPriority="20" />
-					<Animation
-						AnimationName="NU_RktTem_SIFA"
+						AnimationName="NUMiltn_SIDA"
 						AnimationMode="ONCE"
 						AnimationPriority="5" />
 					<Animation
-						AnimationName="NU_RktTem_SIFB"
+						AnimationName="NUMiltn_SIFA"
 						AnimationMode="ONCE"
-						AnimationPriority="5" />
+						AnimationPriority="1" />
+					<Animation
+						AnimationName="NUMiltn_SIFB"
+						AnimationMode="ONCE"
+						AnimationPriority="1" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev ~= "STATE_Suppressed" and Prev ~= "TRANS_toSuppressed" then
@@ -246,22 +284,21 @@
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_toSuppressed">
 					<Animation
-						AnimationName="NU_RktTem_SDVA"
+						AnimationName="NUMiltn_SDVA"
 						AnimationMode="ONCE"
 						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
 					<Animation
-						AnimationName="NU_RktTem_SDVB"
+						AnimationName="NUMiltn_SDVB"
 						AnimationMode="ONCE"
 						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_fromSuppressed"
-					Flags="START_FRAME_LAST">
+					StateName="TRANS_SuppressedToIdle">
 					<Animation
-						AnimationName="NU_RktTem_SGTA"
+						AnimationName="NUMiltn_SGTA"
 						AnimationMode="ONCE"
 						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
@@ -272,65 +309,48 @@
 					StateName="STATE_Cover"
 					FrameForPristineBonePositions="4">
 					<Animation
-						AnimationName="NU_RktTem_KAKA"
+						AnimationName="NUMiltn_KAKA"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="COVER ATTACKING"
+					StateName="STATE_CoverAttacking">
+					<Animation
+						AnimationName="NUMiltn_KAKA"
+						AnimationMode="MANUAL" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="MOVING USING_WEAPON_A"
+					Flags="RANDOMSTART">
+					<Animation
+						AnimationName="NUMiltn_ATRA"
+						AnimationMode="LOOP"
+						AnimationPriority="25"
+						Distance="75" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FIRING_OR_PREATTACK_A"
+					FrameForPristineBonePositions="4">
+					<Animation
+						AnimationName="NUMiltn_ATKA"
 						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="COVER MOVING"
-					Flags="RANDOMSTART"
-					StateName="STATE_Cover">
-					<Animation
-						AnimationName="NU_RktTem_CRNA"
-						AnimationMode="LOOP"
-						Distance="75" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="COVER ATTACKING"
-					StateName="STATE_Cover">
-					<Animation
-						AnimationName="NU_RktTem_KAIA"
-						AnimationMode="LOOP" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="COVER"
-					Flags="RESTART_ANIM_WHEN_COMPLETE"
-					StateName="STATE_Cover">
-					<Animation
-						AnimationName="NU_RktTem_KBIA"
-						AnimationMode="ONCE"
-						AnimationBlendTime="10"
-						AnimationPriority="15" />
-					<Animation
-						AnimationName="NU_RktTem_KBIB"
-						AnimationMode="ONCE"
-						AnimationBlendTime="10"
-						AnimationPriority="15" />
-					<Animation
-						AnimationName="NU_RktTem_KBFA"
-						AnimationMode="ONCE"
-						AnimationBlendTime="10"
-						AnimationPriority="5" />
-					<Animation
-						AnimationName="NU_RktTem_KBFB"
-						AnimationMode="ONCE"
-						AnimationBlendTime="10"
-						AnimationPriority="5" />
-					<Animation
-						AnimationName="NU_RktTem_KBFC"
-						AnimationMode="ONCE"
-						AnimationBlendTime="10"
-						AnimationPriority="5" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="MOVING FIRING_OR_PREATTACK_A"
 					Flags="RANDOMSTART">
 					<Animation
-						AnimationName="NU_RktTem_ATRA"
+						AnimationName="NUMiltn_RUNA"
 						AnimationMode="LOOP"
+						AnimationPriority="25"
+						Distance="75" />
+					<Animation
+						AnimationName="NUMiltn_CRNA"
+						AnimationMode="LOOP"
+						AnimationPriority="5"
 						Distance="75" />
 				</AnimationState>
 				<AnimationState
@@ -338,140 +358,201 @@
 					ConditionsYes="MOVING"
 					Flags="RANDOMSTART">
 					<Animation
-						AnimationName="NU_RktTem_RUNA"
+						AnimationName="NUMiltn_RUNA"
 						AnimationMode="LOOP"
+						AnimationPriority="25"
 						Distance="75" />
 					<Animation
-						AnimationName="NU_RktTem_RUNB"
+						AnimationName="NUMiltn_RUNB"
 						AnimationMode="LOOP"
-						Distance="30" />
+						AnimationPriority="25"
+						Distance="75" />
 					<Animation
-						AnimationName="NU_RktTem_RUNC"
+						AnimationName="NUMiltn_RUNC"
 						AnimationMode="LOOP"
-						Distance="60" />
+						AnimationPriority="25"
+						Distance="75" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USING_WEAPON_A AIM_HIGH FIRING_OR_PREATTACK_A"
-					FrameForPristineBonePositions="8">
+					ConditionsYes="COVER"
+					Flags="RESTART_ANIM_WHEN_COMPLETE"
+					StateName="STATE_Cover">
 					<Animation
-						AnimationName="NU_RktTem_ATKB"
+						AnimationName="NUMiltn_KAIA"
 						AnimationMode="ONCE"
-						AnimationBlendTime="10" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="AIM_HIGH ATTACKING">
+						AnimationPriority="25" />
 					<Animation
-						AnimationName="NU_RktTem_ATKB"
-						AnimationMode="MANUAL"
-						AnimationBlendTime="10" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_PREATTACK_A"
-					FrameForPristineBonePositions="4">
+						AnimationName="NUMiltn_KAIB"
+						AnimationMode="ONCE"
+						AnimationPriority="25" />
 					<Animation
-						AnimationName="NU_RktTem_ATKA"
-						AnimationMode="ONCE" />
+						AnimationName="NUMiltn_KAFA"
+						AnimationMode="ONCE"
+						AnimationPriority="5" />
+					<Animation
+						AnimationName="NUMiltn_KAFB"
+						AnimationMode="ONCE"
+						AnimationPriority="5" />
+					<Animation
+						AnimationName="NUMiltn_KAFC"
+						AnimationMode="ONCE"
+						AnimationPriority="5" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="ATTACKING"
 					StateName="STATE_SelectedPose">
 					<Animation
-						AnimationName="NU_RktTem_AIDA"
+						AnimationName="NUMiltn_ATKA"
+						AnimationMode="MANUAL" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="ENGAGED">
+					<Animation
+						AnimationName="NUMiltn_AIDA"
+						AnimationMode="LOOP" />
+					<Animation
+						AnimationName="NUMiltn_AIDB"
 						AnimationMode="LOOP" />
 				</AnimationState>
 				<!-- SELECTED -->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="SELECTED"
-					StateName="STATE_SelectedPose"
+					StateName="STATE_Selected"
 					Flags="RESTART_ANIM_WHEN_COMPLETE">
 					<Animation
-						AnimationName="NU_RktTem_AIDA"
+						AnimationName="NUMiltn_AIDA"
 						AnimationMode="ONCE"
-						AnimationBlendTime="15"
-						AnimationPriority="15" />
+						AnimationPriority="15"
+						AnimationBlendTime="10" />
 					<Animation
-						AnimationName="NU_RktTem_AIDB"
+						AnimationName="NUMiltn_AIDB"
 						AnimationMode="ONCE"
-						AnimationBlendTime="15"
-						AnimationPriority="15" />
+						AnimationPriority="15"
+						AnimationBlendTime="10" />
 					<Animation
-						AnimationName="NU_RktTem_AIFA"
+						AnimationName="NUMiltn_AIFA"
 						AnimationMode="ONCE"
-						AnimationBlendTime="15"
-						AnimationPriority="3" />
+						AnimationPriority="5"
+						AnimationBlendTime="10" />
 					<Animation
-						AnimationName="NU_RktTem_AIFB"
+						AnimationName="NUMiltn_AIFB"
 						AnimationMode="ONCE"
-						AnimationBlendTime="15"
-						AnimationPriority="3" />
+						AnimationPriority="5"
+						AnimationBlendTime="10" />
 					<Animation
-						AnimationName="NU_RktTem_AIFC"
+						AnimationName="NUMiltn_AIFC"
 						AnimationMode="ONCE"
-						AnimationBlendTime="10"
-						AnimationPriority="3" />
+						AnimationPriority="5"
+						AnimationBlendTime="10" />
 					<Script>
-						Prev = CurDrawablePrevAnimationState()
-						if Prev == "STATE_bored" then
-						CurDrawableSetTransitionAnimState("TRANS_boredToAttention")
-						end
-					</Script>
+            Prev = CurDrawablePrevAnimationState()
+            if Prev == "STATE_bored" then
+            CurDrawableSetTransitionAnimState("TRANS_BoredToAttention")
+            end
+          </Script>
 				</AnimationState>
 				<!-- EMOTIONS -->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="EMOTION_CELEBRATING"
-					Flags="RESTART_ANIM_WHEN_COMPLETE">
+					ConditionsYes="EMOTION_CELEBRATING">
 					<Animation
-						AnimationName="NU_RktTem_CHRA"
-						AnimationMode="ONCE"
+						AnimationName="NUMiltn_CHRA"
+						AnimationMode="LOOP"
 						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
 					<Animation
-						AnimationName="NU_RktTem_CHRB"
-						AnimationMode="ONCE"
-						AnimationSpeedFactorMin="0.8"
-						AnimationSpeedFactorMax="1.2" />
-					<Animation
-						AnimationName="NU_RktTem_CHRC"
-						AnimationMode="ONCE"
+						AnimationName="NUMiltn_CHRB"
+						AnimationMode="LOOP"
 						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
 				</AnimationState>
 				<!-- TRANSITIONS -->
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_boredToAttention">
+					StateName="TRANS_BoredToAttention">
 					<Animation
-						AnimationName="NU_RktTem_BATA"
+						AnimationName="NUMiltn_BATB"
 						AnimationMode="ONCE"
 						AnimationSpeedFactorMin="0.9"
-						AnimationSpeedFactorMax="1.1" />
-					<Animation
-						AnimationName="NU_RktTem_BATB"
-						AnimationMode="ONCE"
-						AnimationSpeedFactorMin="0.9"
-						AnimationSpeedFactorMax="1.1" />
+						AnimationSpeedFactorMax="1.3" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_SelectedToIdle">
 					<Animation
-						AnimationName="NU_RktTem_ABTA"
+						AnimationName="NUMiltn_ABTA"
 						AnimationMode="ONCE"
-						AnimationSpeedFactorMin="0.9"
-						AnimationSpeedFactorMax="1.1" />
+						AnimationSpeedFactorMin="0.8"
+						AnimationSpeedFactorMax="1.2" />
 					<Animation
-						AnimationName="NU_RktTem_ABTB"
+						AnimationName="NUMiltn_ABTB"
 						AnimationMode="ONCE"
-						AnimationSpeedFactorMin="0.9"
-						AnimationSpeedFactorMax="1.1" />
+						AnimationSpeedFactorMin="0.8"
+						AnimationSpeedFactorMax="1.2" />
 				</AnimationState>
 			</ScriptedModelDraw>
+			<TracerModelDraw
+				id="ModuleTag_TracerModelDraw"
+				MinLength="50.0"
+				MaxLength="50.0"
+				Width="3.0"
+				MinSpeed="30"
+				MaxSpeed="30"
+				SweepSpeed="1.0"
+				SpreadAngle="2.0"
+				MinTracersPerFrame=".08"
+				MaxTracersPerFrame=".12"
+				FrameLifeTime="35"
+				WeaponSlotType="PRIMARY_WEAPON"
+				Texture="FXTracerNOD"
+				UseAdditiveBlending="true"
+				TracerHitFx="FX_BulletHitNOD">
+				<HeadColor
+					r="1.0"
+					g="1.0"
+					b="1.0"
+					a="1.0" />
+				<TailColor
+					r="0.0"
+					g="0.0"
+					b="0.0"
+					a="0.0" />
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01" />
+			</TracerModelDraw>
+			<TracerModelDraw
+				id="ModuleTag_TracerModelDrawVeterancy"
+				MinLength="50.0"
+				MaxLength="50.0"
+				Width="3.0"
+				MinSpeed="30"
+				MaxSpeed="30"
+				SweepSpeed="1.0"
+				SpreadAngle="2.0"
+				MinTracersPerFrame=".08"
+				MaxTracersPerFrame=".12"
+				FrameLifeTime="35"
+				WeaponSlotType="PRIMARY_WEAPON"
+				Texture="FXTracerHeroic"
+				UseAdditiveBlending="true"
+				TracerHitFx="FX_BulletHitNODHeroic">
+				<HeadColor
+					r="1.0"
+					g="1.0"
+					b="1.0"
+					a="1.0" />
+				<TailColor
+					r="0.0"
+					g="0.0"
+					b="0.0"
+					a="0.0" />
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_01" />
+			</TracerModelDraw>
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
@@ -552,7 +633,7 @@
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="NODMilitantRocketWeapon" />
+						Template="NODMilitantMinigun" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<Physics
@@ -570,38 +651,42 @@
 					Type="INITIAL"
 					List="NOD_Generic_VoiceDieMS" />
 			</SlowDeath>
+			<!-- Somebody was careless -->
+			<!--
 			<SuppressionUpdate
 				id="ModuleTag_SuppressionUpdate"
 				UpdateDelay="1s"
 				Suppressability="100"
 				SuppressionDuration="5s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
-				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove" />
+				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove"
+			/>
+			-->
 			<AttributeModifierUpgrade
 				id="Upgrade_TiberiumInfusion"
 				AttributeModifier="AttributeModifier_TiberiumInfusion">
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
 			</AttributeModifierUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_TiberiumInfusion2"
-				StatusToSet="HAS_TIBERIUM_UPGRADE">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-			</StatusBitsUpgrade>
+			<SuppressionUpdate
+				id="ModuleTag_SuppressionUpdate"
+				UpdateDelay="1s"
+				Suppressability="500"
+				SuppressionDuration="5s"
+				AttributeModifierSuppressed="Modifier_Test_Suppression"
+				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove" />
 			<FindCoverBehavior
 				id="ModuleTag_FCB"
 				CoverScanRange="10.0"
 				AttributeModifierInCover="Modifier_Cover" />
 			<!--Tiberium Infusion Armor Upgrade-->
-			<ArmorUpgrade 
-				id="Upgrade_TiberiumInfusionArmor"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE"
-				>
+			<AttributeModifierUpgrade
+				id="Upgrade_TiberiumInfusion"
+				AttributeModifier="AttributeModifier_TiberiumInfusion">
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-			</ArmorUpgrade>
+			</AttributeModifierUpgrade>
 			<LargeGroupAudioUpdate
 				id="LGAU">
-				<Key>GDI_MissileSoldier</Key>
+				<Key>GDI_RifleSoldier</Key>
 			</LargeGroupAudioUpdate>
 			<StatusBitsUpgrade
 				id="ModuleTag_VeterancyUpgrade"
@@ -625,11 +710,11 @@
 		<Body>
 			<ActiveBody
 				id="ModuleTag_03"
-				MaxHealth="300" />
+				MaxHealth="40" />
 		</Body>
 		<ClientBehaviors>
 			<AnimationSoundClientBehavior id="ModuleTag_ASCB">
-				<Sound Sound="AudioEvent:Bodyfall" Animation="NU_RktTem_LNDA" Frame="5" />
+				<Sound Sound="AudioEvent:Bodyfall" Animation="NUMiltn_LNDA" Frame="5" />
 			</AnimationSoundClientBehavior>
 			<ModelConditionAudioLoopClientBehavior
 				id="ModuleTag_NOD_Infantry_VoiceEffortDelayedLoop">
@@ -648,34 +733,25 @@
 				ContactPointGeneration="SQUAD_MEMBER" />
 		</Geometry>
 		<AudioArrayVoice>
-			<AudioEntry
-				Sound="AudioEvent:NOD_RocketMilitant_VoiceAttack"
-				AudioType="voiceAttack" />
-			<AudioEntry
-				Sound="AudioEvent:NOD_RocketMilitant_VoiceCreate"
-				AudioType="voiceFullyCreated" />
-			<AudioEntry
-				Sound="AudioEvent:NOD_RocketMilitant_VoiceGarrison"
-				AudioType="voiceGarrison" />
-			<AudioEntry
-				Sound="AudioEvent:NOD_RocketMilitant_VoiceMove"
-				AudioType="voiceGuard" />
-			<AudioEntry
-				Sound="AudioEvent:NOD_RocketMilitant_VoiceMove"
-				AudioType="voiceMove" />
-			<AudioEntry
-				Sound="AudioEvent:NOD_RocketMilitant_VoiceMoveAttack"
-				AudioType="voiceAttackAfterMoving" />
-			<AudioEntry
-				Sound="AudioEvent:NOD_RocketMilitant_VoiceRetreat"
-				AudioType="voiceRetreatToCastle" />
-			<AudioEntry
-				Sound="Multisound:NOD_RocketMilitant_VoiceSelectMS"
-				AudioType="voiceSelect" />
-			<AudioEntry
-				Sound="Multisound:NOD_RocketMilitant_VoiceSelectBattleMS"
-				AudioType="voiceSelectBattle" />
+			<AudioEntry Sound="AudioEvent:NOD_RifleMilitant_VoiceAttack" AudioType="voiceAttack" />
+			<AudioEntry Sound="AudioEvent:NOD_RifleMilitant_VoiceMoveAttack" AudioType="voiceAttackAfterMoving" />
+			<AudioEntry Sound="AudioEvent:NOD_RifleMilitant_VoiceCreate" AudioType="voiceFullyCreated" />
+			<AudioEntry Sound="AudioEvent:NOD_RifleMilitant_VoiceGarrison" AudioType="voiceGarrison" />
+			<AudioEntry Sound="AudioEvent:NOD_RifleMilitant_VoiceMove" AudioType="voiceGuard" />
+			<AudioEntry Sound="AudioEvent:NOD_RifleMilitant_VoiceMove" AudioType="voiceMove" />
+			<AudioEntry Sound="AudioEvent:NOD_RifleMilitant_VoiceRetreat" AudioType="voiceRetreatToCastle" />
+			<AudioEntry Sound="Multisound:NOD_RifleMilitant_VoiceSelectMS" AudioType="voiceSelect" />
+			<AudioEntry Sound="Multisound:NOD_RifleMilitant_VoiceSelectBattleMS" AudioType="voiceSelectBattle" />
 		</AudioArrayVoice>
+		<!--
+	NOD_RifleMilitant_VoiceSuppressMS
+-->
+		<!--
+		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:TEMP_PredatorMoveStart" AudioType="soundMoveStart" />
+			<AudioEntry Sound="AudioEvent:PredatorAmbientLoop" AudioType="soundAmbient" />
+		</AudioArraySound>
+-->
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
 			EvaEventProductionStarted="UnitConstructionStarted" 

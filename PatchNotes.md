@@ -80,6 +80,7 @@
 			* NOD/MOK Avatar (- Purifying Flame)
 			* NOD Black Hand (- Purifying Flame)
 			* NOD Flame Tank (- Purifying Flame)
+			* NOD Militant Squad (- Black Disciple)
 			* NOD/MOK Militant Rocket Squad (- Black Disciple)
 			* BH/MOK Raider Buggy (- Laser Capacitor)
 			* BH/MOK Scorpion Tank (- Laser Capacitor)
@@ -861,6 +862,8 @@
 	* Removed Upgrade
 5. Unit would not be upgraded with Tiberium Infusion in an Upgraded Strike Force in Global Conquest
 	* Added Upgrade_TiberiumInfusion in WorldMapArmoryUpgradesAllowed
+6. Upgrade sound effect is applied to infantry members instead of the squad
+	* Removed upgrade sound effect from members to the squad units
 #### Black Disciple
 1. Black Disciple can be upgraded with Purifying Flame. This is an issue as it would mean that Confessor Cabals have access to 3 Tech Upgrades (Charged Particle Beams + Black Disciples) where the max is 2
 	* Remove Purifying Flame upgrade to Black Disciples to ensure max tech upgrade of 2

@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed Tiberium Infusion-->
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Moved Confessor Upgrade sound effect to squad -->
+	<Tags></Tags>
+	<Includes>
+	</Includes>
 	<GameObject
-		id="BlackHandMilitantRocketSquad"
+		id="NODMilitantRocketSquad"
+		inheritFrom="BaseSquad"
 		SelectPortrait="Portrait_NODMilitantMissile"
 		ButtonImage="Portrait_NODMilitantMissile"
-		Side="BlackHand"
+		Side="NOD"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="400"
 		BuildTime="4"
-		CommandSet="BlackHandMilitantRocketSquadCommandSet"
+		CommandSet="NODMilitantRocketSquadCommandSet"
 		CommandPoints="100"
 		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY CAN_CAPTURE SCORE"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
 		WeaponCategory="MISSILE"
-		RadarPriority="NOT_ON_RADAR"
-		EditorName="BlackHandMilitantRocketSquad"
-		Description="Desc:BlackHandMilitantRocket"
-		TypeDescription="Type:BlackHandMilitantRocket"
+		EditorName="NODMilitantRocketSquad"
+		Description="Desc:NODMilitantRocket"
+		TypeDescription="Type:NODMilitantRocket"
 		UnitTypeIcon="MissilemenIcon"
-		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandBlackDisciplesUpgrade">
-		<DisplayName>Name:NODMilitantRocket</DisplayName>
+		WorldMapArmoryUpgradesAllowed="Upgrade_TiberiumInfusion Upgrade_NODConfessorUpgrade"
+		RadarPriority="NOT_ON_RADAR">
+		<DisplayName
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODMilitantRocket</DisplayName>
 		<DisplayUpgrade
-			id="Tag_DisplayUpgrade2">Upgrade_BlackHandBlackDisciplesUpgrade</DisplayUpgrade>
+			id="Tag_DisplayUpgrade1">Upgrade_TiberiumInfusion</DisplayUpgrade>
+		<DisplayUpgrade
+			id="Tag_DisplayUpgrade2">Upgrade_NODConfessorUpgrade</DisplayUpgrade>
 		<ArmorSet
 			Armor="NoArmor" />
 		<LocomotorSet
@@ -69,7 +76,6 @@
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
 				id="DefaultAttributeModifierPoolUpdate"/>
-
 			<AttributeModifierUpgrade
 				id="ModuleTag_AttributeModifierUpgradeMUCSpeed"
 				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
@@ -87,8 +93,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic"
-				/>
+				StanceTemplate="Generic" />
 			<EmotionTrackerUpdate
 				id="Module_ETU">
 				<TauntAndPointExcluded
@@ -136,25 +141,10 @@
 			<ProductionUpdate
 				id="ProductionUpdateModuleTag"
 				GiveNoXP="true" />
-			<AimWeapon
-				id="ModuleTag_AimWeapon"
-				AimHighThreshold="0.5" />
-			<SpecialPower
-				id="ModuleTag_CaptureSpecialPower"
-				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
-				UpdateModuleStartsAttack="true" />
-			<CaptureSpecialAbilityUpdate
-				id="ModuleTag_CaptureSpecialPowerUpdate"
-				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
-				UnpackTime="2s"
-				PreparationTime="10s"
-				PackTime="1s"
-				StartAbilityRange="30.0"
-				Options="DO_CAPTURE_FX"/>
 			<BannerCarrierUpgrade
-				id="ModuleTag_BlackHandBannerCarrierUpgrade"
+				id="ModuleTag_ConfessorBannerCarrierUpgrade"
 				Permanent="true">
-				<TriggeredBy>Upgrade_BlackHandBlackDisciplesUpgrade</TriggeredBy>
+				<TriggeredBy>Upgrade_NODConfessorUpgrade</TriggeredBy>
 			</BannerCarrierUpgrade>
 			<HordeContain
 				id="ModuleTag_HordeContain"
@@ -172,7 +162,7 @@
 					Include="INFANTRY" />
 				<DieMuxData />
 				<InitialPayload
-					Name="BlackHandMilitantRocket"
+					Name="NODMilitantRocket"
 					Count="2" />
 				<MeleeBehavior
 					Type="AMOEBA" />
@@ -181,7 +171,7 @@
 					y="4" />
 				<RankInfo
 					RankID="1"
-					UnitType="BlackHandMilitantRocket">
+					UnitType="NODMilitantRocket">
 					<Position
 						X="0"
 						Y="-10" />
@@ -191,20 +181,54 @@
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 				<BannerCarrierPosition>
-					<UnitType>BlackHandBlackDisciple</UnitType>
+					<UnitType>NODConfessor</UnitType>
 					<Pos
-						x="20"
+						x="10"
 						y="0" />
 				</BannerCarrierPosition>
-				<BannerCarriersAllowed>BlackHandBlackDisciple</BannerCarriersAllowed>
+				<BannerCarriersAllowed>NODConfessor</BannerCarriersAllowed>
 				
 				<OnDeathBehavior
 					RequiredStatus="PARACHUTING">
 					<OCL>OCL_RedemptionSpawn</OCL>
 				</OnDeathBehavior>
 			</HordeContain>
-			<AudioLoopUpgrade id="NOD_BlackDisciples_Upgrade" SoundToPlay="AudioEvent:NOD_BlackDisciples_Upgrade">
-				<TriggeredBy>Upgrade_BlackHandBlackDisciplesUpgrade</TriggeredBy>
+			<AttributeModifierUpgrade
+				id="Upgrade_TiberiumInfusion"
+				AttributeModifier="AttributeModifier_TiberiumInfusion">
+				<CustomAnimAndDuration
+					AnimState="USER_1" />
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AimWeapon
+				id="ModuleTag_AimWeapon"
+				AimHighThreshold="0.5" />
+			<CreateAndEnterObjectSpecialPower 
+				id="ModuleTag_CallForTransport"
+				SpecialPowerTemplate="SpecialPowerCallForTransportNOD"
+				OCL="OCL_NodCallForTransportInfantry"
+				CreateLocation="CREATE_ABOVE_LOCATION"
+				TriggerFX="FX_NodCallForTransportFlare"
+				ChildModuleHandlesFX="true"
+				IdleWhenStartingPower="true">
+				<FXOffset x="25" y="0" z="0"></FXOffset>
+			</CreateAndEnterObjectSpecialPower>
+			<SpecialPower
+				id="ModuleTag_CaptureSpecialPower"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UpdateModuleStartsAttack="true" />
+			<CaptureSpecialAbilityUpdate
+				id="ModuleTag_CaptureSpecialPowerUpdate"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UnpackTime="2s"
+				PreparationTime="10s"
+				PackTime="1s"
+				StartAbilityRange="30.0"
+				Options="DO_CAPTURE_FX"/>
+			<AudioLoopUpgrade
+				id="NODConfessorUpgradeSound"
+				SoundToPlay="AudioEvent:NOD_Confessor_Upgrade">
+				<TriggeredBy>Upgrade_NODConfessorUpgrade</TriggeredBy>
 			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
