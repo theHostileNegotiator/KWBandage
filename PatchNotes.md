@@ -267,6 +267,17 @@
 	* Redesign Campaign AI
 2. Multiplayer AI was not adjusted for KW 1.01 and 1.02 new economy
 	* Redesign Multiplayer AI
+#### Scoring
+1. Some units are not valid to appear in the Favourite Units section
+	* Added KindOf Flag CAN_BE_FAVORITE_UNIT
+		* Objects Affected
+			* Militant Rocket Squad
+			* Gun Walker
+			* Devourer Tank
+			* Drone Ship
+			* Explorer
+			* Mothership
+		* Removed flag from Mechapede Segments
 #### Multiplayer Maps
 1. Some Maps do not spawn Crates when Multiplayer game has Add Random Crates enabled
 	* Added GenericCrateSpawner object to each map that is missing said object

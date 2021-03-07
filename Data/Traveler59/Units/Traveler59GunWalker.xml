@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Refer to Scrin Gun Walker -->
 <!-- Removed Attenuated Forcefied upgrade for Global Conquest -->
 	<Tags></Tags>
 	<Includes>
@@ -16,7 +17,7 @@
 		BuildTime="7"
 		CommandSet="Traveler59GunWalkerCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE CAN_REVERSE_MOVE"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE CAN_REVERSE_MOVE CAN_BE_FAVORITE_UNIT"
 		RadarPriority="UNIT"
 		ProductionQueueType="VEHICLE"
 		UnitCategory="VEHICLE"

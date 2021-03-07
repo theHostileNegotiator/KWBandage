@@ -7,6 +7,7 @@
 <!-- Fixed Moving Sound Effects -->
 <!-- Now uses ActiveBody instead of ShieldBody -->
 <!-- Fixed FP Mesh Sorting and Simplified Model -->
+<!-- Removed CAN_BE_FAVORITE_UNIT KindOf Flag -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all"	source="ART:AUMillipedeHead_FP.w3x" />
@@ -23,7 +24,7 @@
 		BuildTime="14"
 		CommandSet="AlienMechapedeMemberCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE TIBERIUM_BASED CAN_BE_FAVORITE_UNIT CAN_HEAL_ALLIES AI_BUZZERS_CANT_ATTACH_TO_ME"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE TIBERIUM_BASED CAN_HEAL_ALLIES AI_BUZZERS_CANT_ATTACH_TO_ME"
 		RadarPriority="UNIT"
 		ProductionQueueType="VEHICLE"
 		UnitCategory="VEHICLE"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Moved Confessor Upgrade sound effect to squad -->
+<!-- Added CAN_BE_FAVORITE_UNIT KindOf Flag -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -16,7 +17,7 @@
 		BuildTime="4"
 		CommandSet="NODMilitantRocketSquadCommandSet"
 		CommandPoints="100"
-		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY CAN_CAPTURE SCORE"
+		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY CAN_CAPTURE SCORE CAN_BE_FAVORITE_UNIT"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
 		WeaponCategory="MISSILE"

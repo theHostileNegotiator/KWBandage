@@ -7,10 +7,13 @@
 		<Include type="all" source="Units/AlienCorrupter.xml" />
 		<Include type="all" source="Units/AlienCustomizableVehicle.xml" />
 		<Include type="all" source="Units/AlienDevastatorWarship.xml" />
+		<Include type="all" source="Units/AlienDevourerTank.xml" />
 		<Include type="all" source="Units/AlienEradicatorHexapod.xml" />	
+		<Include type="all" source="Units/AlienExplorer.xml" />	
 		<Include type="all" source="Units/AlienGunWalker.xml" />	
 		<Include type="all" source="Units/AlienHarvester.xml" />	
 		<Include type="all" source="Units/AlienInvaderFighter.xml" />	
+		<Include type="all" source="Units/AlienMCV.xml" />	
 		<Include type="all" source="Units/AlienMillipedeBody.xml" />	
 		<Include type="all" source="Units/AlienMillipedeHead.xml" />	
 		<Include type="all" source="Units/AlienMothership.xml" />	

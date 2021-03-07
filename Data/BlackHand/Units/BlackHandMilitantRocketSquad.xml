@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Removed Tiberium Infusion-->
+<!-- Refer to NOD Militant Rocket Squad -->
+<!-- Removed Tiberium Infusion -->
 	<GameObject
 		id="BlackHandMilitantRocketSquad"
 		SelectPortrait="Portrait_NODMilitantMissile"
@@ -12,7 +13,7 @@
 		BuildTime="4"
 		CommandSet="BlackHandMilitantRocketSquadCommandSet"
 		CommandPoints="100"
-		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY CAN_CAPTURE SCORE"
+		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY CAN_CAPTURE SCORE CAN_BE_FAVORITE_UNIT"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
 		WeaponCategory="MISSILE"

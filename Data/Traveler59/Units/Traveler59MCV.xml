@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Refer to Scrin Drone Ship -->
 <!-- "Created" voice line won't be delayed when trained from their Gravity Stabilizer -->
 	<Tags></Tags>
 	<Includes>
@@ -16,7 +17,7 @@
 		BuildTime="35"
 		CommandSet="Traveler59MCVCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_CAST_REFLECTIONS SCORE VEHICLE PRODUCED_AT_HELIPAD EXPANSION_UNIT MCV IGNORES_SELECT_ALL"
+		KindOf="PRELOAD SELECTABLE CAN_CAST_REFLECTIONS SCORE VEHICLE PRODUCED_AT_HELIPAD EXPANSION_UNIT MCV IGNORES_SELECT_ALL CAN_BE_FAVORITE_UNIT"
 		ProductionQueueType="AIRCRAFT"
 		RadarPriority="UNIT"
 		UnitCategory="VEHICLE"

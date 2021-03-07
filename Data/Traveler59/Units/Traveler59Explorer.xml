@@ -1,35 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Refer to Scrin Explorer -->
-<!-- Normalised Movement Speed -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
 	<GameObject
-		id="Reaper17Explorer"
+		id="Traveler59Explorer"
 		inheritFrom="AlienExplorer"
 		SelectPortrait="Portrait_ALIENExplorer"
 		ButtonImage="Portrait_ALIENExplorer"
-		Side="Reaper17"
+		Side="Traveler59"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="1500"
 		BuildTime="15"
-		CommandSet="AlienExplorerCommandSet"
+		CommandSet="Traveler59ExplorerCommandSet"
 		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE EXPANSION_UNIT IGNORES_SELECT_ALL CAN_BE_FAVORITE_UNIT"
 		ProductionQueueType="OTHER_STRUCTURE"
 		UnitCategory="VEHICLE"
 		RadarPriority="UNIT"
 		VoicePriority="40"
-		EditorName="Reaper17Explorer"
-		Description="Desc:Reaper17Explorer"
-		TypeDescription="Type:Reaper17Explorer"
+		EditorName="Traveler59Explorer"
+		Description="Desc:Traveler59Explorer"
+		TypeDescription="Type:Traveler59Explorer"
 		ShockwaveResistance="100"
 		ReinvisibilityDelay="7s">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:ALIENEXPLORER</DisplayName>
 		<GameDependency>
-			<RequiredObject>Reaper17DronePlatform</RequiredObject>
+			<RequiredObject>Traveler59DronePlatform</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="AlienExplorerArmor"
@@ -226,17 +225,17 @@
 				id="ModuleTag_GiveUnpackUpgradeSpecialPowerUpdate"
 				SpecialPowerTemplate="SpecialPower_GrantUnpackUpgrade"
 				UpgradeToGive="Upgrade_UnPack"/>
-			<AISpecialPowerUpdate
-				id="ModuleTag_MCVBuildConyardAI"
-				CommandButtonName="Command_UnpackExplorer"
-				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
 			<ReplaceSelfUpgrade
 				id="ModuleTag_ReplaceSelf"
 				NewObjectUnpackTime="30.0s"
 				CheckBuildAssistant="true">
 				<TriggeredBy>Upgrade_UnPack</TriggeredBy>
-				<ReplacementTemplate>Reaper17MiniMCVOutpost</ReplacementTemplate>
+				<ReplacementTemplate>Traveler59MiniMCVOutpost</ReplacementTemplate>
 			</ReplaceSelfUpgrade>
+			<AISpecialPowerUpdate
+				id="ModuleTag_MCVBuildConyardAI"
+				CommandButtonName="Command_UnpackExplorer"
+				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
 		</Behaviors>
 		<AI>
 			<AIUpdate

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!-- Refer to Scrin Drone Ship -->
-<!-- "Created" voice line won't be delayed when trained from their Gravity Stabilizer -->
+<!-- Added CAN_BE_FAVORITE_UNIT KindOf Flag -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
 	<GameObject
-		id="Reaper17MCV"
-		inheritFrom="AlienMCV"
+		id="AlienMCV"
+		inheritFrom="BaseVehicle"
 		SelectPortrait="Portrait_ALIENMCV"
 		ButtonImage="Portrait_ALIENMCV"
-		Side="Reaper17"
+		Side="ALIEN"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="3500"
@@ -22,9 +21,9 @@
 		RadarPriority="UNIT"
 		UnitCategory="VEHICLE"
 		VoicePriority="30"
-		EditorName="Reaper17MCV"
-		Description="Desc:Reaper17MCV"
-		TypeDescription="Type:Reaper17MCV"
+		EditorName="AlienMCV"
+		Description="Desc:AlienMCV"
+		TypeDescription="Type:AlienMCV"
 		ShockwaveResistance="100"
 		ReinvisibilityDelay="7s">
 		<DisplayName
@@ -294,20 +293,19 @@
 				id="ModuleTag_GiveUnpackUpgradeSpecialPowerUpdate"
 				SpecialPowerTemplate="SpecialPower_GrantUnpackUpgrade"
 				UpgradeToGive="Upgrade_UnPack" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_MCVBuildConyardAI"
-				CommandButtonName="Command_UnPackALIENMCV"
-				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
-			<!-- No stances because there's no weapon -->
-			
 			<ReplaceSelfUpgrade
 				id="ModuleTag_ReplaceSelf"
 				DisabledDuringUnpack="false"
 				NewObjectUnpackTime="3.5s"
 				CheckBuildAssistant="true">
 				<TriggeredBy>Upgrade_UnPack</TriggeredBy>
-				<ReplacementTemplate>Reaper17MCVUnpacking</ReplacementTemplate>
+				<ReplacementTemplate>AlienMCVUnpacking</ReplacementTemplate>
 			</ReplaceSelfUpgrade>
+			<AISpecialPowerUpdate
+				id="ModuleTag_MCVBuildConyardAI"
+				CommandButtonName="Command_UnPackALIENMCV"
+				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
+			<!-- No stances because there's no weapon -->
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -353,7 +351,7 @@
 			<ObjectSpecificEntry
 				Sound="AudioEvent:ALI_DroneShip_SoundCreate"
 				AudioType="voiceCreatedFrom"
-				TargetObject="Reaper17WarpBeacon" />
+				TargetObject="AlienWarpBeacon" />
 			<!-- Safety in case we do this in some campaign mission -->
 			<ObjectSpecificEntry
 				Sound="AudioEvent:ALI_DroneShip_SoundCreate"
