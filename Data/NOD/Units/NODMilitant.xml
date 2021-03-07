@@ -679,11 +679,12 @@
 				CoverScanRange="10.0"
 				AttributeModifierInCover="Modifier_Cover" />
 			<!--Tiberium Infusion Armor Upgrade-->
-			<AttributeModifierUpgrade
-				id="Upgrade_TiberiumInfusion"
-				AttributeModifier="AttributeModifier_TiberiumInfusion">
+			<ArmorUpgrade
+				id="Upgrade_TiberiumInfusionArmor"
+				Permanent="true"
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-			</AttributeModifierUpgrade>
+			</ArmorUpgrade>
 			<LargeGroupAudioUpdate
 				id="LGAU">
 				<Key>GDI_RifleSoldier</Key>
