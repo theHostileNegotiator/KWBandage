@@ -681,6 +681,8 @@
 #### Militant Rocket Squad
 1. Black Hand Militant Rocket Squad can be upgraded with Tiberium Infusion with NOD or MOK Secret Shrine.
 	* Removed upgrade
+2. Marked Of Kane Militant Rocket Squad can be upgraded with Confessor with NOD Secret Shrine.
+	* Removed upgrade
 #### Saboteur
 1. Has directional armor allowing it to take extra damage from the side and back. Typically infantry do not have directional armor penalties
 	* Remove Directional Armor Penalty
