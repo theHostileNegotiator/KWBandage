@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Fixed Satellite Animation -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -172,15 +173,23 @@
 						Name="GBIonCanXD_SKN" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT">
+					ParseCondStateType="PARSE_DEFAULT"
+					StateName="STATE_Idle">
 					<Animation
 						AnimationName="GBIonCanX_IDL"
 						AnimationMode="LOOP" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev == "STATE_Packing" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoIdle")
+						end
+					</Script>
 				</AnimationState>
 				<!-- BUILDUP ANIMATION -->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
+					ConditionsYes="STRUCTURE_UNPACKING"
+					StateName="STATE_Structure_Unpacking">
 					<Animation
 						AnimationName="GBIonCanX_A"
 						AnimationMode="ONCE" />
@@ -189,17 +198,19 @@
 						FXParticleSystemTemplate="Con_Medium"
 						FollowBone="true" />
 				</AnimationState>
-				<AnimationState
+				<!--<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="UNPACKING">
+					ConditionsYes="UNPACKING"
+					StateName="STATE_Unpacking">
 					<Animation
 						AnimationName="GBIonCanX_ATKA"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
-				</AnimationState>
+				</AnimationState>-->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="SPECIALPOWER1_READY">
+					ConditionsYes="SPECIALPOWER1_READY"
+					StateName="STATE_Ready">
 					<Animation
 						AnimationName="GBIonCanX_RDY"
 						AnimationMode="ONCE"	
@@ -207,7 +218,16 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="PACKING">
+					ConditionsYes="PACKING"
+					StateName="STATE_Packing">
+					<Animation
+						AnimationName="GBIonCanX_ATKA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoIdle">
 					<Animation
 						AnimationName="GBIonCanX_CLS"
 						AnimationMode="ONCE"
@@ -314,7 +334,7 @@
 				SpecialPowerTemplate="SpecialPowerIonCannonControlIonCannon"
 				SpecialWeapon="IonCannonWeapon"
 				UnpackTime="0s"				
-				PackTime="3s"
+				PackTime="8s"
 				WhichSpecialWeapon="1" 
 			/>
 			<AISpecialPowerUpdate
