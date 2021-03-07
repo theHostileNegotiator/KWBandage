@@ -1067,6 +1067,8 @@
 #### Mothership
 1. Weapon would affect Subfaction Motherships but not Scrin
 	* Weapon will no longer affect Subfaction Motherships
+2. Mothership can be crushed by Drone Ships
+	* Increased Crushable Level to 2
 
 
 ### Behind the Scenes

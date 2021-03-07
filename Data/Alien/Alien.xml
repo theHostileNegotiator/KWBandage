@@ -13,6 +13,7 @@
 		<Include type="all" source="Units/AlienInvaderFighter.xml" />	
 		<Include type="all" source="Units/AlienMillipedeBody.xml" />	
 		<Include type="all" source="Units/AlienMillipedeHead.xml" />	
+		<Include type="all" source="Units/AlienMothership.xml" />	
 		<Include type="all" source="Units/AlienPlanetaryAssaultCarrier.xml" />	
 		<Include type="all" source="Units/AlienSeekerTank.xml" />
 		<Include type="all" source="Units/AlienStalker.xml" />	
