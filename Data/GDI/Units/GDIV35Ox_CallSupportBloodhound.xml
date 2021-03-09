@@ -417,11 +417,10 @@
 		</Behaviors>
 		<AI>
 			<TransportHelicopterAIUpdate
-				id="ModuleTag_06"
-				AutoAcquireEnemiesWhenIdle="NO"
-				FlyOffMapOnUnload="false"
-				DelayAFterLoadingOrUnloading="2s">
-				<UnitAITargetChooserData
+				id="ModuleTag_06"				
+				AILuaEventsList="GDIV35Ox_SummonedForVehicleFunctions"
+				FlyOffMapOnUnload="true">
+				<UnitAITargetChooserData					
 					SympathyRange="100.0" />
 			</TransportHelicopterAIUpdate>
 		</AI>

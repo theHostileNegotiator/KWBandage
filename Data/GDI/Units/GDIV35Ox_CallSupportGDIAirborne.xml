@@ -417,12 +417,9 @@
 		</Behaviors>
 		<AI>
 			<TransportHelicopterAIUpdate
-				id="ModuleTag_06"
-				AutoAcquireEnemiesWhenIdle="NO"
-				FlyOffMapOnUnload="false"
+				id="ModuleTag_06"				
+				FlyOffMapOnUnload="true"
 				DelayAFterLoadingOrUnloading="2s">
-				<UnitAITargetChooserData
-					SympathyRange="100.0" />
 			</TransportHelicopterAIUpdate>
 		</AI>
 		<Body>
