@@ -2,6 +2,11 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!--Removed Upgrade Sound for Purifying Flame-->
 <!--Fixed Particle System for Kane's Edition Skins-->
+	<Includes>
+		<Include type="all" source="ART:NUMechD.xml" />
+		<Include type="all" source="ART:NUMech_K.xml" />
+		<Include type="all" source="ART:NUMechD_K.xml" />
+	</Includes>
 	<GameObject
 		id="NODAvatar"
 		SelectPortrait="Portrait_NODAvatarWarmech"

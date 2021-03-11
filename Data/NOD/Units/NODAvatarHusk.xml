@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Includes>
+		<Include type="all" source="ART:NUMechD_K.xml" />
+	</Includes>
 	<GameObject
 		id="NODAvatarHusk"
 		SelectPortrait="Portrait_NodAvatarHusk"

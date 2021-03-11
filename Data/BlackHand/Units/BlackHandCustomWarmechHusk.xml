@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!-- Flame Tank will now display upgrade -->
-<!-- Adjusted House Color and Normal Map -->
+<!-- Adjusted Texture to match more with the Avatar -->
 	<Includes>
-		<Include type="all" source="ART:NUPurifier_SPM.xml" />
-		<Include type="all" source="ART:NUPurifier_NRM.xml" />
+		<Include type="all" source="ART:NUPurifier.xml" />
+		<Include type="all" source="ART:NUPurifier_D.xml" />
 	</Includes>
 	<GameObject
 		id="BlackHandCustomWarmechHusk"
@@ -33,12 +33,6 @@
 					<Texture
 						Original="NUMechD"
 						New="NUPurifier_D" />
-					<Texture
-						Original="NUMech_SPM"
-						New="NUPurifier_SPM" />
-					<Texture
-						Original="NUMech_NRM"
-						New="NUPurifier_NRM" />
 					<ParticleSysBone
 						BoneName="B_UArmL"
 						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
@@ -52,12 +46,6 @@
 					<Texture
 						Original="NUMechD"
 						New="NUPurifier_D" />
-					<Texture
-						Original="NUMech_SPM"
-						New="NUPurifier_SPM" />
-					<Texture
-						Original="NUMech_NRM"
-						New="NUPurifier_NRM" />
 					<Texture
 						Original="NUFlameTank"
 						New="NUFlameTank_UGD" />						

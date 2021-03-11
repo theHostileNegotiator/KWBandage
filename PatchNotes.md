@@ -779,6 +779,8 @@
 	* Changed OCL to spawn MOK Avatar
 4. Flame weapon particle effects would still be used when EMPed
 	* Added new state to disable particle effects when EMPed
+5. Damaged Textures are inconsistent with the base texture with some elements being outdated
+	* Adjusted Damaged Textures to better match the base texture
 #### Purifier
 1. Will randomly play Avatar voice sounds. (This is due to inheriting NOD Avatar and not removing sounds)
 	* Removed Avatar sound
@@ -789,8 +791,8 @@
 4. Formation Preview shows all upgrade objects instead of only the Flame object
 	* Adjusted Formation Preview Model.
 		* Changed model stance to be more like the Avatar
-5. Faction Colors, Specular Map and and Normal Map do not match the Purifier Diffuse Texture
-	* Adjusted Specular Texture and Normal Texture to better match the Diffuse
+5. Textures used is based of outdated Avatar texture
+	* Updated textures to better match the Avatar
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze
 	* Added NOD Confessor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
