@@ -1081,7 +1081,9 @@
 #### Mothership
 1. Weapon would affect Subfaction Motherships but not Scrin
 	* Weapon will no longer affect Subfaction Motherships
-2. Mothership can be crushed by Drone Ships
+2. Light Mesh rendering sorts incorrectly
+	* Added SortLevel 1 to the affect mesh
+3. Mothership can be crushed by Drone Ships
 	* Increased Crushable Level to 2
 
 

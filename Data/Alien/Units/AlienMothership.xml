@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- Increased Crushable Level -->
+<!-- Fixed Sort Level of some mesh -->
 <!-- Added CAN_BE_FAVORITE_UNIT KindOf Flag -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all"	source="ART:AUMother_SKN.w3x" />
+		<Include type="all"	source="ART:AUMotherR1_SKN.w3x" />
+		<Include type="all"	source="ART:AUMotherR2_SKN.w3x" />
+		<Include type="all"	source="ART:AUMotherR3_SKN.w3x" />
+		<Include type="all"	source="ART:AUMotherR4_SKN.w3x" />
 	</Includes>
 	<GameObject
 		id="AlienMothership"
