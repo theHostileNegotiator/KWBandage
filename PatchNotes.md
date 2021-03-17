@@ -786,12 +786,14 @@
 	* Removed Avatar sound
 2. Flame weapon would not display Purifying Flame upgrade
 	* Added Upgraded Flame Tank texture
-3. Flame weapon particle effects would still be used when EMPed
+3. Flame Weapon does not do extra damage to structures compared to the Avatar
+	* Added Damage Scalar to weapons
+4. Flame weapon particle effects would still be used when EMPed
 	* Added new state to disable particle effects when EMPed
-4. Formation Preview shows all upgrade objects instead of only the Flame object
+5. Formation Preview shows all upgrade objects instead of only the Flame object
 	* Adjusted Formation Preview Model.
 		* Changed model stance to be more like the Avatar
-5. Textures used is based of outdated Avatar texture
+6. Textures used is based of outdated Avatar texture
 	* Updated textures to better match the Avatar
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze

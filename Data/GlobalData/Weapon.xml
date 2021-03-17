@@ -946,7 +946,8 @@
 		</ScatterRadiusVsType>
 	</WeaponTemplate>
 
-<!--Added projectile nugget so Garrisoned Infantry die when flame reaches them-->	
+<!-- Added projectile nugget so Garrisoned Infantry die when flame reaches them -->	
+<!-- Added damage scalar against structures like the Avatar -->
 	<WeaponTemplate
 		id="BlackHandCustomWarmechFlamer"
 		Name="BlackHandCustomWarmechFlamer"
@@ -973,6 +974,12 @@
 				DamageType="GRENADE"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" />
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
@@ -982,7 +989,8 @@
 				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
-<!--Changed ReAcquireDetailType to PER_CLIP-->
+<!-- Changed ReAcquireDetailType to PER_CLIP -->
+<!-- Added damage scalar against structures like the Avatar -->
 	<WeaponTemplate
 		id="BlackHandCustomWarmechUpgradedFlamer"
 		Name="BlackHandCustomWarmechUpgradedFlamer"
@@ -1009,6 +1017,12 @@
 				DamageType="GRENADE"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" />
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerUpgradedWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
