@@ -877,6 +877,44 @@
 				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon"/>
 		</Nuggets>
 	</WeaponTemplate>
+	
+<!-- Replaced Fire Effects of Jammer for lightning effect -->
+	<WeaponTemplate
+		id="StormColumnMissileJammerWeapon"
+		Name="StormColumnMissileJammerWeapon"
+		ProjectileCollidesWith="ENEMIES NEUTRAL STRUCTURES WALLS"
+		RadiusDamageAffects="ENEMIES NEUTRALS PROJECTILES"
+		AttackRange="300.0"
+		WeaponSpeed="9999"
+		AcceptableAimDelta="180d"
+		FireSound="AudioEvent:ALI_StormColumn_BigWeaponFire"
+		FireFX="FX_LightningSpikeFire"
+		ClipSize="0"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_SMALL_MISSILE">
+		<FiringDuration
+			MinSeconds=".01s"
+			MaxSeconds=".01s" />
+		<Nuggets>
+			<!--Using this nugget to get the damage fx(for lightning effect)-->
+			<DamageNugget
+				Damage="1.0"
+				Radius="1.0"
+				DamageType="GUN"
+				DeathType="BURNED"
+				DamageFXType="ALIEN_ION">
+			</DamageNugget>
+			<!--Nugget that will scatter Missiles when hit by the lightning bolt-->
+			<ScatterProjectileNugget
+				ScatterMin="60.0"
+				ScatterMax="100.0">
+				<SpecialObjectFilter
+						Rule="NONE"
+						Include="SMALL_MISSILE" />
+			</ScatterProjectileNugget>
+		</Nuggets>
+	</WeaponTemplate>
 
 <!--Damage Scalar Now affects Sub Faction units-->
 	<WeaponTemplate
