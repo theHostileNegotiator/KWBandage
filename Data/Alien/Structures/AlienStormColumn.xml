@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Added Weapon Bone reference for Missile Jamming Weapon -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -44,6 +45,14 @@
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
 						Name="ABStorm_SKN" />
+					<WeaponFireFXBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="dummy09" />
+					<WeaponLaunchBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="dummy09" />
 					<WeaponFireFXBone
 						WeaponSlotID="2"
 						WeaponSlotType="PRIMARY_WEAPON"

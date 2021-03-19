@@ -2,6 +2,12 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Tags></Tags>
 	<Includes>
+	
+	<!-- Neutral Units -->
+	
+		<Include type="all" source="DATA:Neutral/Units/IonStorm.xml" />
+		<Include type="all" source="DATA:Neutral/Units/IonStormTemporary.xml" />
+		<Include type="all" source="DATA:Neutral/Units/PlanetaryAssaultCarrierIonStorm.xml" />
 
     <!-- Debris -->
 

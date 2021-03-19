@@ -215,8 +215,13 @@
 #### Outposts
 1. Do not have Type Description
 	* Added Type Description as "Expansion Strucure"
-		* Each Main Faction haver their own string set instead of Scrins
+		* Each Main Faction now have their own string set instead of Scrins
 		* String File originally had as "Production Structure"
+#### Ion Storm
+1. Structures can not be built under Ion Storms
+	* Removed geometry data
+2. Units teleported with Mastermind or Prodigy under Ion Storms can instantly die
+	* Removed Crusher Data
 #### Support Powers
 1. Some new Support Powers do not use unique icons or radius cursors, despite being available and compiled
 	* Swap the icons and radius cursors to the appropriate textures
@@ -1068,6 +1073,9 @@
 #### Growth Stimulator
 1. When selecting structure, it will sometimes play the Growth Accelerator select sound instead of the Stimulator select sound.
 	* Removed Growth Accelerator sound effects which was due to the Stimulator inheriting the Accelerator and not removing sounds.
+#### Storm Column
+1. Missile Jammer has incorrect firing effects, using the Mammoth fire FX
+	* Changed Fire FX of weapon and added Weapon Bone references in the GameObject
 #### Explorer
 1. Reaper 17 unit is slower than the other factions
 	* Normalized speed to match the other factions
