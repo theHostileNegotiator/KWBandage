@@ -77,19 +77,57 @@
 					<Model
 						Name="NUReckoner_SKN" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<Model
+						Name="NUReckoner_FP" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Model
+						Name="NUReckoner_R" />					
+					<ParticleSysBone
+						BoneName="BoneGarrison04"
+						FXParticleSystemTemplate="NODDamagedFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_SteamJet_Front"
+						FXParticleSystemTemplate="NODDamagedFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="bone_RightTread"
+						FXParticleSystemTemplate="NODDamagedSmoke"
+						FollowBone="true" />
+				</ModelConditionState>				
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NUReckoner_SKN" />
+					<Texture
+						Original="NUReckoner"
+						New="NUReckoner_D" />	
+					<ParticleSysBone
+						BoneName="BoneGarrison04"
+						FXParticleSystemTemplate="NODDamagedFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FX_SteamJet_Front"
+						FXParticleSystemTemplate="NODDamagedFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="bone_RightTread"
+						FXParticleSystemTemplate="NODDamagedSmoke"
+						FollowBone="true" />						
+				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="UNPACKING">
 					<Animation
 						AnimationName="NUReckoner_UPAK" 
 						AnimationMode="ONCE" />
-					<Script>
-						CurDrawableHideSubObject("TreadsStop")
-						CurDrawableHideSubObject("TreadsMove")
-						CurDrawableHideSubObject("TreadsTurnLeft")
-						CurDrawableHideSubObject("TreadsTurnRight")						
-					</Script>						
-				
 					<ParticleSysBone
 						BoneName="Bone_LeftTread"
 						FXParticleSystemTemplate="NODReckonerDust"
@@ -114,7 +152,6 @@
 						BoneName="Bone_TireRR"
 						FXParticleSystemTemplate="NODReckonerDust_half"
 						FollowBone="true" />						
-						
 					<FXEvent
 						Frame="76"
 						Effect="FX_NODReckonerUnpackingSteam"
@@ -140,60 +177,8 @@
 					<FXEvent
 						Frame="62"
 						Effect="FX_NODReckonerUnpackingExplosion"
-						Bone="BoneGarrison01" />						
-						
-						
+						Bone="BoneGarrison01" />
 				</AnimationState>				
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6">
-					<Script>
-						CurDrawableHideSubObject("TreadsStop")
-						CurDrawableHideSubObject("TreadsMove")
-						CurDrawableHideSubObject("TreadsTurnLeft")
-						CurDrawableHideSubObject("TreadsTurnRight")						
-					</Script>
-				</AnimationState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING">
-					<Model
-						Name="NUReckoner_R" />					
-					<ParticleSysBone
-						BoneName="BoneGarrison04"
-						FXParticleSystemTemplate="NODDamagedFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_SteamJet_Front"
-						FXParticleSystemTemplate="NODDamagedFireDistortion"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="bone_RightTread"
-						FXParticleSystemTemplate="NODDamagedSmoke"
-						FollowBone="true" />
-						
-				</ModelConditionState>				
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
-					<Model
-						Name="NUReckoner_SKN" />
-					<Texture
-						Original="NUReckoner"
-						New="NUReckoner_D" />	
-					<ParticleSysBone
-						BoneName="BoneGarrison04"
-						FXParticleSystemTemplate="NODDamagedFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="FX_SteamJet_Front"
-						FXParticleSystemTemplate="NODDamagedFireDistortion"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="bone_RightTread"
-						FXParticleSystemTemplate="NODDamagedSmoke"
-						FollowBone="true" />						
-				</ModelConditionState>
 				<!-- <AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_6">
@@ -201,13 +186,6 @@
 						AnimationName="NUReckoner_DEPL" 
 						AnimationMode="LOOP" /> 
 				</AnimationState> -->
-				
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FORMATION_PREVIEW">
-					<Model
-						Name="NUReckoner_FP" />
-				</ModelConditionState>
 			</TruckDraw>
 				
 <!-- ///////////////// -->
@@ -235,7 +213,27 @@
 						CurDrawableHideSubObject("TreadsTurnLeft")
 						CurDrawableHideSubObject("TreadsTurnRight")						
 					</Script>
-				</AnimationState>				
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED UNPACKING">
+					<Script>
+						CurDrawableHideSubObject("TreadsStop")
+						CurDrawableHideSubObject("TreadsMove")
+						CurDrawableHideSubObject("TreadsTurnLeft")
+						CurDrawableHideSubObject("TreadsTurnRight")						
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="UNPACKING">
+					<Script>
+						CurDrawableHideSubObject("TreadsStop")
+						CurDrawableHideSubObject("TreadsMove")
+						CurDrawableHideSubObject("TreadsTurnLeft")
+						CurDrawableHideSubObject("TreadsTurnRight")						
+					</Script>
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED USER_6">
@@ -245,7 +243,17 @@
 						CurDrawableHideSubObject("TreadsTurnLeft")
 						CurDrawableHideSubObject("TreadsTurnRight")						
 					</Script>
-				</AnimationState>				
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6">
+					<Script>
+						CurDrawableHideSubObject("TreadsStop")
+						CurDrawableHideSubObject("TreadsMove")
+						CurDrawableHideSubObject("TreadsTurnLeft")
+						CurDrawableHideSubObject("TreadsTurnRight")						
+					</Script>
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING TURN_LEFT REALLYDAMAGED">
@@ -318,9 +326,7 @@
 				</AnimationState>				
 				<LeftTread>"TreadsL"</LeftTread>
 				<RightTread>"TreadsR"</RightTread>
-	
 			</TankDraw>
-			
 			<ScriptedModelDraw
 				id="ModuleTag_FX">
 				<ModelConditionState
@@ -341,8 +347,7 @@
 						FollowBone="true" />
 				</AnimationState>
 			</ScriptedModelDraw>			
-			</Draws>
-			
+		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
 				id="DefaultAttributeModifierPoolUpdate"/>
@@ -621,6 +626,16 @@
 				AddConditionFlags="USER_5">
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
 			</ModelConditionUpgrade> -->
+			
+			<!-- creates immobile object to prevent structures to build on -->
+			<SpawnBehavior
+				id="ModuleTag_SpawnStructurePrevention"
+				SpawnNumberData="1"
+				SpawnedRequireSpawner="true"
+				SpawnInsideBuilding="true">
+				<SpawnTemplate>NODBunkerTruckStructurePrevention</SpawnTemplate>
+				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
+			</SpawnBehavior>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -671,6 +686,8 @@
 				</Override>
 			</UpgradeSoundSelectorClientBehavior>
 			<ModelConditionAudioLoopClientBehavior id="ModuleTag_NOD_Reckoner_deploy">
+				<!-- SoundAmbient doesn't seem to work in UpgradeSoundSelectorClientBehavior, put here instead -->
+				<ModelConditionSound Sound="AudioEvent:NOD_Reckoner_IdleLoop" RequiredFlags="" ExcludedFlags="USER_6 DYING" />
 				<ModelConditionSound Sound="AudioEvent:NOD_Reckoner_deploy" RequiredFlags="UNPACKING" ExcludedFlags="DYING" />
 			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>
@@ -689,7 +706,6 @@
 			</Shape>
 		</Geometry>
 		<AudioArraySound>
-			<AudioEntry Sound="AudioEvent:NOD_Reckoner_IdleLoop" AudioType="soundAmbient" />
 			<AudioEntry Sound="AudioEvent:NOD_Reckoner_MoveByLoop" AudioType="soundMoveLoop" />
 			<AudioEntry Sound="AudioEvent:NOD_Reckoner_MoveStart" AudioType="soundMoveStart" />
 		</AudioArraySound>

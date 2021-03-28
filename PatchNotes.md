@@ -756,6 +756,12 @@
 #### Reckoner
 1. Destroyed Model is broken due to incorrect bone references. Additionally destroyed model is too clean
 	* Fixed bone references in model container and added noise modifier to model (Thanks Stygs, in particular the noise modifier)
+2. When deployed while moving, extra treads appearg
+	* Fixed tread draws
+3. Structures can be place on deployed Reckoners
+	* Added dummy object that spawns when deployed which will prevent structures from building on
+4. Engine sounds will still play when deployed despite it being unecessary considering that it permanently cannot move (unless they need it for air conditioning).
+	* Removed idle sound from being played when in deployed state
 #### Mantis
 1. Turret is not effective at tracking Air Units, often misfiring
 	* Improved Turret Settings to match Slingshot
