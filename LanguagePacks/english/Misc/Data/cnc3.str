@@ -23708,7 +23708,7 @@ END
 //-----------------------------------------------
 
 DESC:MarkedOfKaneRaiderBuggy
-"Abilities: \n       » Detects Stealth \n  Upgrades: \n      » EMP Coils (Tech Lab)"
+"Detects Stealth \n Abilities: \n      » Call for Transport (Air Tower) \n  Upgrades: \n      » EMP Coils (Tech Lab)"
 END
 
 DESC:MarkedOfKaneScorpionTank
@@ -26488,7 +26488,7 @@ TYPE:BlackHandRaiderBuggy
 "Light Vehicle. Strong vs. Infantry, Aircraft."
 END
 DESC:BlackHandRaiderBuggy
-"Abilities: \n       » Detects Stealth \n  Upgrades: \n      » EMP Coils (Tech Lab)"
+"Detects Stealth \n Upgrades: \n      » EMP Coils (Tech Lab)"
 END
 //-----------------------------------------------
 //-----------------------------------------------
