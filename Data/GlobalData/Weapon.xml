@@ -3640,4 +3640,27 @@
 			MaxSeconds="0.1s" />
 	</WeaponTemplate>
 	
+	<WeaponTemplate
+		id="SteelTalonsOverloadBeamWarhead"
+		Name="SteelTalonsOverloadBeamWarhead"
+		ProjectileCollidesWith=""
+		RadiusDamageAffects=""
+		WeaponSpeed="125"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="false"
+		AntiMask="" >
+		<PreAttackDelay
+			MinSeconds="0.0s"
+			MaxSeconds="0.0s" />
+		<Nuggets>
+			<DamageNugget
+				Damage="0.0"
+				Radius="10"
+				DelayTimeSeconds="0.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RIFLE"
+				DeathType="NORMAL" />
+		</Nuggets>
+	</WeaponTemplate>
 </AssetDeclaration>

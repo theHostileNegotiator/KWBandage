@@ -419,7 +419,10 @@
 			<SpecialPower
 				id="ModuleTag_OverloadBeam"
 				SpecialPowerTemplate="SpecialPower_ImprovedSonicTankOverloadBeam"
-				UpdateModuleStartsAttack="true"/>
+				UpdateModuleStartsAttack="true"
+				AttributeModifier="AttributeModifier_OverloadBeam" 
+				AttributeModifierAffectsSelf="true"
+				AttributeModifierRange="1" />
 			<WeaponFireSpecialAbilityUpdate
 				id="ModuleTag_OverloadBeamUpdate"
 				SpecialPowerTemplate="SpecialPower_ImprovedSonicTankOverloadBeam"

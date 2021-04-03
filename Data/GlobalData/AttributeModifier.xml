@@ -54,6 +54,14 @@
 		ObjectStatusToSet="SUICIDE_BOMBER_HAS_TARGET">
 	</AttributeModifier>
 	
+<!-- This will give the Overload Beam the extra damage instead of a projectile -->
+	<AttributeModifier
+		id="AttributeModifier_OverloadBeam"
+		Category="BUFF"
+		Duration="2.0s">
+		<Modifier Type="DAMAGE_MULT" Value="250"/>
+	</AttributeModifier>
+	
 <!-- New Mission Specific AttributeModifier to Buff ROF rather than nerf -->
 	<AttributeModifier
 		id="AttributeModifier_CM24MetaUnitBuff"

@@ -174,6 +174,7 @@
 			* Vertigo
 			* SAM Turret Hub (Only Tiberium Core Missiles)
 			* SAM Turret
+			* Shard Walker
 #### Squad Special Ability Weapons
 1. Once ability is activated, 'interrupting' by issuing other commands can lead to unit still move while firing, leading to lead to jank animations, firing weapon backwards, etc. Playing attacking animations but not shooting if ordered to attack.
 	* Adjusted how special powers are activated. Squad will now be considered to be 'busy' until weapon has been released, therefore new commands will have to queue until unit is no longer busy before executing. Improving presentation significantly
@@ -495,6 +496,8 @@
 		* Removed Shatterer bones from Zone Shatterer skeleton and vice versa
 6. Unit clips through the Warfactory as it accelerates and leans forward (despite already being lowered for this reason).
 	* Created new Locomotor specific for the Zone Shatterer reducing the ForwardAccelerationPitchFactor and increasing PitchDamping.
+7. Overload ability would only affect the unit targeted instead of all objects in sweep weapon's path. The functionality is unusual, sweep weapon will be fired normally, along with a projectile which will deal the extra damage.
+	* Changed weapon behavior, special ability will now force the unit to have an attribute modifier increasing damage of sweep weapon. Special ability weapon no longer does damage
 #### Mammoth Tank
 1. If playing with Low model LOD setting, uses Low LOD model. Adaptive armor uses High LOD model
 	* Added Low LOD model for Adaptive Armor
@@ -972,9 +975,6 @@
 		* This was an undocumented change for TW 1.05
 2. Unit shields can show when dead
 	* Added DYING Model Condition that has no model to guarantee shields will not show when dead
-3. Unit would use two models for 'Base' and 'Upgrade' when it could of just hide and show subobjects for Blue Shards
-	* Changed SKN files so it would only require to change texture and to hide and show objects
-		* Upgrade does not fade in
 #### Seeker
 1. Will prioritise infantry over aircraft or vehicles
 	* Changed Weapon Category from GUN to MISSILE
