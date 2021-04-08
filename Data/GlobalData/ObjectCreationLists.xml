@@ -218,6 +218,23 @@
 	</ObjectCreationList>
 	
 	<ObjectCreationList
+		id="OCL_SummonMothership">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER IGNORE_COMMANDPOINT_LIMIT"
+			StartingBusyTime="8s"
+			DisabledWhileBusy="true"
+			TempModelCondition="USER_5"
+			TempModelConditionTime="8s"
+			Disposition="LIKE_EXISTING">
+			<Offset
+				x="0"
+				y="0"
+				z="130"></Offset>
+			<CreateObject>AlienMothership</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	
+	<ObjectCreationList
 		id="OCL_NODVeinDetonationTrigger">
 		<CreateObject
 			Disposition="ON_GROUND_ALIGNED"
