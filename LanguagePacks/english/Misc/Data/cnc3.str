@@ -3619,11 +3619,11 @@ HOTKEY:UnassignedKey
 END
 
 APT:CustomHotkeysClearAllWarning
-	"This will clear the current settings for all hotkeys. Are you sure?"
+"This will clear the current settings for all hotkeys. Are you sure?"
 End
 
 APT:CustomHotkeysDefaultsWarning
-	"This will reset all hotkeys to their default values. Are you sure?"
+"This will reset all hotkeys to their default values. Are you sure?"
 End
 
 HOTKEY:KEY_XBUTTON1
@@ -12704,27 +12704,27 @@ APT:ApplyLODWait
 END
 
 APT:NodCampaignWarning
-	"If you're new to Command & Conquer or RTS games, we recommend\nstarting with the GDI Campaign which includes some tutorial elements.\n\nContinue with the Nod Campaign anyway?"
+"If you're new to Command & Conquer or RTS games, we recommend\nstarting with the GDI Campaign which includes some tutorial elements.\n\nContinue with the Nod Campaign anyway?"
 End
 
 APT:NodCampaignWarningTitle
-	"New to C&C?"
+"New to C&C?"
 End
 
 APT:StatsUpdateWarning
-	"All multiplayer statistics are estimates until confirmed by the EA server. Your stats will be updated with authenticated values the next time you log in."
+"All multiplayer statistics are estimates until confirmed by the EA server. Your stats will be updated with authenticated values the next time you log in."
 End
 
 APT:NewReplay
-	"REPLAY"
+"REPLAY"
 End
 
 APT:AutoSaveOverwriteWarningTitle
-	"WARNING"
+"WARNING"
 End
 
 APT:AutoSaveOverwriteWarning
-	"Starting a new campaign will delete your previous campaign progress.\nAre you sure you want to proceed?"
+"Starting a new campaign will delete your previous campaign progress.\nAre you sure you want to proceed?"
 End
 
 
@@ -14832,11 +14832,11 @@ CREDITS:CustomerQualityControl
 END
 
 CREDITS:MPEG
-	"MPEG Layer-3 audio coding technology licensed\nfrom Fraunhofer IIS and THOMSON multimedia."
+"MPEG Layer-3 audio coding technology licensed\nfrom Fraunhofer IIS and THOMSON multimedia."
 End
 
 CREDITS:GamespyTM
-	"This product contains software technology licensed\nfrom GameSpy Industries, Inc. © 1999-2007\nGameSpy Industries, Inc. All rights reserved.\nGameSpy and the \"Powered by GameSpy\" design are\ntrademarks of GameSpy Industries, Inc.  All rights reserved."
+"This product contains software technology licensed\nfrom GameSpy Industries, Inc. © 1999-2007\nGameSpy Industries, Inc. All rights reserved.\nGameSpy and the "Powered by GameSpy" design are\ntrademarks of GameSpy Industries, Inc.  All rights reserved."
 End
 
 CREDITS:Renderware
@@ -14844,7 +14844,7 @@ CREDITS:Renderware
 END
 
 CREDITS:Speex
-	"Speex codec: © 2002-2003, Jean-Marc Valin/Xiph.Org Foundation"
+"Speex codec: © 2002-2003, Jean-Marc Valin/Xiph.Org Foundation"
 End
 
 CREDITS:SpecialThanks
@@ -21789,51 +21789,51 @@ GUI:Metagame_DifficultyB
 END
 
 MGOBJECTIVE:GDI1
-	"Eliminate all Nod and Scrin Bases"
+"Eliminate all Nod and Scrin Bases"
 End
 
 MGOBJECTIVE:GDI2
-	"     OR"
+"     OR"
 End
 
 MGOBJECTIVE:GDI3
-	"Acquire 33% of the land area under your Area of Influence"
+"Acquire 33% of the land area under your Area of Influence"
 End
 
 MGOBJECTIVE:GDI4
-	"  "
+"  "
 End
 
 MGOBJECTIVE:NOD1
-	"Eliminate all GDI and Scrin Bases"
+"Eliminate all GDI and Scrin Bases"
 End
 
 MGOBJECTIVE:NOD2
-	"     OR"
+"     OR"
 End
 
 MGOBJECTIVE:NOD3
-	"Raise 24 cities to the full (Red) Unrest level"
+"Raise 24 cities to the full (Red) Unrest level"
 End
 
 MGOBJECTIVE:NOD4
-	"  "
+"  "
 End
 
 MGOBJECTIVE:Alien1
-	"Eliminate all GDI and Nod Bases"
+"Eliminate all GDI and Nod Bases"
 End
 
 MGOBJECTIVE:Alien2
-	"     OR"
+"     OR"
 End
 
 MGOBJECTIVE:Alien3
-	"Construct 9 Threshold Towers"
+"Construct 9 Threshold Towers"
 End
 
 MGOBJECTIVE:Alien4
-	" "
+" "
 End
 
 
