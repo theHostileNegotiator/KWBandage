@@ -35,6 +35,17 @@
 		<Modifier Type="ARMOR" Value="75%" />
 	</AttributeModifier>
 	
+	<AttributeModifier
+		id="AttributeModifier_BunkerTruckDeployed"
+		Category="NONE"
+		ObjectStatusToSet="CAN_ATTACK IMMOBILE"
+		ModelConditionsSet="UNPACKING">
+		<Modifier Type="SPEED" Value="0%"/>
+		<Modifier Type="ARMOR" Value="25%" />
+		<Modifier Type="RESIST_EMP" Value="100%"/>
+		<Modifier Type="CRUSHER_LEVEL" Value="-100%"/>
+	</AttributeModifier>	
+	
 <!-- Hide Confessor or Black Disciple when upgrades are triggered while garrisoned -->
 	<AttributeModifier
 		id="AttributeModifier_Garrisoned"

@@ -775,6 +775,9 @@
 	* Added dummy object that spawns when deployed which will prevent structures from building on
 4. Engine sounds will still play when deployed despite it being unecessary considering that it permanently cannot move (unless they need it for air conditioning).
 	* Removed idle sound from being played when in deployed state
+5. Unit can still crush units when deployed
+	* Changed the Attribute Modifier CRUSHER_LEVEL to be -100%
+		* For some reason this was sufficient with Dozer Blades upgrade. It is possible that the modifier further at the bottom of Behaviors overrides the CRUSHER_LEVEL, even when no CRUSHER_LEVEL is applied as it would not crush Zone Troopers or Shock Troopers but would crush other infantry when deployed.
 #### Mantis
 1. Turret is not effective at tracking Air Units, often misfiring
 	* Improved Turret Settings to match Slingshot
