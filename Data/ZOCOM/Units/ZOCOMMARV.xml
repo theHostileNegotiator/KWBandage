@@ -248,6 +248,10 @@
 			 
 				<AnimationState 
 					ParseCondStateType="PARSE_DEFAULT">
+					<Animation 
+						AnimationName="GUMARV_MOV" 
+						AnimationMode="LOOP" 
+						AnimationBlendTime="15" />
 					<Script> 
 						CurDrawableShowSubObject("MARV_TREADSSTOP") 
 						CurDrawableHideSubObject("MARV_TREADSBACK") 
@@ -290,6 +294,86 @@
 					</Script>
 				</AnimationState>
 
+								<!-- REVERSE -->
+				<AnimationState 
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="MOVING TURN_LEFT_HIGH_SPEED BACKING_UP">
+					<Animation 
+						AnimationName="GUMARV_TRNR" 
+						AnimationMode="LOOP" 
+						AnimationBlendTime="15" />
+					<Script>	
+						CurDrawableHideSubObject("MARV_TREADSSTOP")	
+						CurDrawableHideSubObject("MARV_TREADSBACK")	
+						CurDrawableHideSubObject("MARV_TREADSLEFT")	
+						CurDrawableShowSubObject("MARV_TREADSRIGHT")	
+						CurDrawableHideSubObject("MARV_TREADSMOVE") 
+					</Script>
+				</AnimationState>
+				<AnimationState 
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="MOVING TURN_RIGHT_HIGH_SPEED BACKING_UP">
+					<Animation 
+						AnimationName="GUMARV_TRNL" 
+						AnimationMode="LOOP" 
+						AnimationBlendTime="15" />
+					<Script>		
+						CurDrawableHideSubObject("MARV_TREADSSTOP") 
+						CurDrawableHideSubObject("MARV_TREADSBACK")	
+						CurDrawableShowSubObject("MARV_TREADSLEFT")	
+						CurDrawableHideSubObject("MARV_TREADSRIGHT")	
+						CurDrawableHideSubObject("MARV_TREADSMOVE")	
+					</Script>
+				</AnimationState> 
+
+				<AnimationState 
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="MOVING TURN_LEFT BACKING_UP">
+					<Animation 
+						AnimationName="GUMARV_MOV" 
+						AnimationMode="LOOP" 
+						AnimationBlendTime="15" />
+					<Script>	
+						CurDrawableHideSubObject("MARV_TREADSSTOP")	
+						CurDrawableHideSubObject("MARV_TREADSBACK")	
+						CurDrawableHideSubObject("MARV_TREADSLEFT")	
+						CurDrawableShowSubObject("MARV_TREADSRIGHT")	
+						CurDrawableHideSubObject("MARV_TREADSMOVE") 
+					</Script>
+				</AnimationState>
+				<AnimationState 
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="MOVING TURN_RIGHT BACKING_UP">
+					<Animation 
+						AnimationName="GUMARV_MOV" 
+						AnimationMode="LOOP" 
+						AnimationBlendTime="15" />
+					<Script>		
+						CurDrawableHideSubObject("MARV_TREADSSTOP") 
+						CurDrawableHideSubObject("MARV_TREADSBACK")	
+						CurDrawableShowSubObject("MARV_TREADSLEFT")	
+						CurDrawableHideSubObject("MARV_TREADSRIGHT")	
+						CurDrawableHideSubObject("MARV_TREADSMOVE")	
+					</Script>
+				</AnimationState> 				
+
+					<!--	Flags="MAINTAIN_FRAME_ACROSS_STATES" -->
+				<AnimationState 
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="MOVING BACKING_UP">
+					<Animation 
+						AnimationName="GUMARV_MOV" 
+						AnimationMode="LOOP" 
+						AnimationBlendTime="15" />
+					<Script>
+						CurDrawableHideSubObject("MARV_TREADSSTOP")	
+						CurDrawableShowSubObject("MARV_TREADSBACK")	
+						CurDrawableHideSubObject("MARV_TREADSLEFT")	
+						CurDrawableHideSubObject("MARV_TREADSRIGHT")	
+						CurDrawableHideSubObject("MARV_TREADSMOVE") 
+					</Script>
+				</AnimationState> 
+				<!-- FORWARD -->
 				<AnimationState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="MOVING TURN_LEFT_HIGH_SPEED">
@@ -384,13 +468,23 @@
 						AnimationMode="ONCE"></Animation>
 				</AnimationState>	
 			
-			<LeftTread>TreadsL1</LeftTread>
-			<LeftTread>TreadsL2</LeftTread> 
-			<RightTread>TreadsR1</RightTread> 
-			<RightTread>TreadsR2</RightTread>
+			<LeftTread>TreadsLF</LeftTread>
+			<LeftTread>TreadsLR</LeftTread> 
+			<RightTread>TreadsRF</RightTread> 
+			<RightTread>TreadsRR</RightTread>
 	
-	<!-- MARV doesnt have these	bones, commenting out			 <ArticulationBone	ArticulationBoneName="Bone_TreadRF"		ArticulationHelperBoneName="FXTracksRF"	/> <ArticulationBone	ArticulationBoneName="Bone_TreadRR"		ArticulationHelperBoneName="FXTracksRR"	/> <ArticulationBone	ArticulationBoneName="Bone_TreadLF"		ArticulationHelperBoneName="FXTracksLF"	/> <ArticulationBone	ArticulationBoneName="Bone_TreadLR"		ArticulationHelperBoneName="FXTracksLR"	/>
-	-->
+				<ArticulationBone
+					ArticulationBoneName="B_TreadRF"
+					ArticulationHelperBoneName="FXTracksRF"	/> 
+				<ArticulationBone
+					ArticulationBoneName="B_TreadRR"	
+					ArticulationHelperBoneName="FXTracksRR"	/>
+				<ArticulationBone
+					ArticulationBoneName="B_TreadLF"
+					ArticulationHelperBoneName="FXTracksLF"	/>
+				<ArticulationBone
+					ArticulationBoneName="B_TreadLR"
+					ArticulationHelperBoneName="FXTracksLR"	/>
 			</TankDraw>
 			<ScriptedModelDraw id="ModuleTag_FX" ExtraPublicBone="FXTracksLR FXTracksRR	FXTracksLF FXTracksRF MUZZLEFX01">
 				<ModelConditionState ParseCondStateType="PARSE_DEFAULT">

@@ -528,6 +528,14 @@
 	* Added new Weapons, Laser Draws and Laser States.
 6. Turrets can have weird behaviors, rotation is based on eachother
 	* Removed Turret Hierarchy Setup so there are no dependencies on rotation and weird behaviors.
+7. Model was not dynamic based on design
+	Added Articulations to the treads
+8. Model, Skeleton and Animations needs refinement
+	* Fixed Model, Skeleton and Animations
+9. If unit was Forced Stopped while moving and turning, animation snaps
+	* Added animation to default state with blend time
+10. Turning animation is backwards when Reverse Moving, while this happens on most units it is most noticeable for the MARV
+	* Added new animation states for Reverse moving.
 #### Orca
 1. When playing with Low LOD settings, Wings and Sensor Pod subobjects are missing
 	* Fixed subobject bone reference for Sonic Cannon. In the Skeleton, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden
