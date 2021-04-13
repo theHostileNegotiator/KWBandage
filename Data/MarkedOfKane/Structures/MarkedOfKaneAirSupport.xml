@@ -220,13 +220,13 @@
 					DeathTypes="ALL" />
 				<Event
 					Index="onTransitionToDamaged"
-					FX="FX_BuildDamaged_Small" />
+					FX="FX_BuildDamaged_Large" />
 				<Event
 					Index="onTransitionToReallyDamaged"
-					FX="FX_BuildDamaged_Small" />
+					FX="FX_BuildDamaged_Large" />
 				<Event
 					Index="onTransitionToRubble"
-					FX="FX_BuildRubble_Small" />
+					FX="FX_BuildRubble_Large" />
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="3s" />

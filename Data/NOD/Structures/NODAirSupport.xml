@@ -2,14 +2,19 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Removed Damage Particle Effects -->
 <!-- Fixed Shaders in Building and ReallyDamaged State -->
+<!-- Model will be will use Skin instead of Normals for Debris -->
+<!-- Fixed model -->
 <!-- Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs -->
 <!-- Re-arranged order of Landing Pads -->
 <!-- Fixed Geometry -->
+<!-- Increased Damage FX Size -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NBAirSpprt.w3x" />
 		<Include type="all" source="ART:NBAirSpprt_ASN.w3x" />		
+		<Include type="all" source="ART:NBAirSpprt_D2ANM.w3x" />
 		<Include type="all" source="ART:NBAirSpprt_D2SKN.w3x" />
+		<Include type="all" source="ART:NBAirSpprt_D3SKN.w3x" />
 		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<GameObject
@@ -228,13 +233,13 @@
 					DeathTypes="ALL" />
 				<Event
 					Index="onTransitionToDamaged"
-					FX="FX_BuildDamaged_Small" />
+					FX="FX_BuildDamaged_Large" />
 				<Event
 					Index="onTransitionToReallyDamaged"
-					FX="FX_BuildDamaged_Small" />
+					FX="FX_BuildDamaged_Large" />
 				<Event
 					Index="onTransitionToRubble"
-					FX="FX_BuildRubble_Small" />
+					FX="FX_BuildRubble_Large" />
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="3s" />

@@ -892,6 +892,12 @@
 		* Changed order to represent Air Tower
 5. Geometry is inaccurate being to large
 	* Adjusted geometry to be more representative of the model
+6. Build, ReallyDamaged and Rubble Model uses multiple Normal mesh instead of singular Skin mesh
+	* Changed model
+7. There is a slight model geometry error with one of the Barrels in the model, the Normals are inverted
+	* Fixed the problematic normals
+8. Damaged FX is too small
+	* Changed list to use larger FX
 #### Tiberium Infusion
 1. Upgrade removes Militant Rockets and Fanatics extra GUN damage type vulnerability
 	* Added the extra damage from GUN to Tiberium Infusion Armor (Created new armor for Militant Rocket)
