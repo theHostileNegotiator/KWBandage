@@ -61,6 +61,8 @@ for /D %%A in ("*") do (
 		)
 	)
 	if exist "!sdk!\Mods\%modname%\Data\maps\official\%%A\%%A.map" copy "!sdk!\Mods\%modname%\Data\maps\official\%%A\%%A.map" "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A"	
+	
+	if exist "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A\stringhashes.manifest" del "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A\stringhashes.*"
 
 )
 

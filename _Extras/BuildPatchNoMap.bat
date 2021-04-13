@@ -61,7 +61,12 @@ if exist "%cd%\Mods\%modname%\Data\Worldbuilder.xml" "%cd%\Tools\WrathEd.exe" -g
 
 if exist "%cd%\Mods\%modname%\Data\MetaGame.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\MetaGame.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"%streamversion%" -bps:"metagame.manifest,%cd%\Game Files\Manifest\metagame.manifest"
 
-if exist "%cd%\Mods\%modname%\Data\StringHashes.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\StringHashes.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data"
+if exist "%cd%\Mods\%modname%\Data\StringHashes1.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\StringHashes1.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data"
+if exist "%cd%\Compilation\Mods\%modname%\Data\stringhashes.manifest" del "%cd%\Compilation\Mods\%modname%\Data\stringhashes.*"
+if exist "%cd%\Compilation\Mods\%modname%\Data\stringhashes1.manifest" (
+	copy "%cd%\Compilation\Mods\%modname%\Data\stringhashes1.*" "%cd%\Compilation\Mods\%modname%\Data\stringhashes.*"
+	del "%cd%\Compilation\Mods\%modname%\Data\stringhashes1.*"
+)
 
 if exist "%cd%\Mods\%modname%\Data\AptUI\_Compiled" (
 	echo Copying AptUI...

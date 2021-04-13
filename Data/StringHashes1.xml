@@ -49724,6 +49724,115 @@
     <StringAndHash Hash="2109423330" Text="NUVERT_SKN.UG_RD" />
     <StringAndHash Hash="195896" Text="NUVERTSTLTH.UG_RD" />
     <StringAndHash Hash="1957224588" Text="NUWODTNK_SKN.TIBCOREMISSILE" />
+    <StringAndHash Hash="1543386127" Text="BlackHandOptimalArtillery" />
+    <StringAndHash Hash="3024069357" Text="BlackHandOffensiveArtillery" />
+    <StringAndHash Hash="109599311" Text="BlackHandDefensiveArtillery" />
+    <StringAndHash Hash="293035559" Text="BlackHandGuerillaArtillery" />
+    <StringAndHash Hash="1714072555" Text="CM_1_3_BlackHandStructureKill_Easy" />
+    <StringAndHash Hash="2389224320" Text="CM_1_3_BlackHandStructureKill_Medium" />
+    <StringAndHash Hash="2146049418" Text="CM_1_3_BlackHandStructureKill_Hard" />
+    <StringAndHash Hash="1190064485" Text="CM_1_3_FullProductionBudget" />
+    <StringAndHash Hash="238004058" Text="CM_1_4_SteelTalonsAirAttack" />
+    <StringAndHash Hash="826511292" Text="CM_1_4_SteelTalonsBombingRuns" />
+    <StringAndHash Hash="4012325822" Text="CM_1_4_SteelTalonsAirUnitCap" />
+    <StringAndHash Hash="2373976923" Text="CM_1_4_FullProductionBudget" />
+    <StringAndHash Hash="2826883322" Text="CM_1_4_SteelTalonsInfUnitCap_Easy" />
+    <StringAndHash Hash="3480125099" Text="CM_1_4_SteelTalonsInfUnitCap" />
+    <StringAndHash Hash="4286429989" Text="CM_1_4_SteelTalonsInfantryStructureKill_Easy" />
+    <StringAndHash Hash="3082953798" Text="CM_1_4_SteelTalonsInfantryStructureKill_Medium" />
+    <StringAndHash Hash="30733592" Text="CM_1_4_SteelTalonsUnitCap_Easy" />
+    <StringAndHash Hash="720530524" Text="CM_1_4_SteelTalonsUnitCap_Medium" />
+    <StringAndHash Hash="103068701" Text="CM_1_4_SteelTalonsUnitCap_Hard" />
+    <StringAndHash Hash="170118835" Text="CM_1_4_SteelTalonsVehicleStructureKill_Easy" />
+    <StringAndHash Hash="2501837041" Text="CM_1_4_SteelTalonsVehicleStructureKill_Medium" />
+    <StringAndHash Hash="2914049632" Text="CM_1_4_SteelTalonsVehicleStructureKill_Hard" />
+    <StringAndHash Hash="2138586054" Text="CM_1_1_NODSplinterNod_Attack_1" />
+    <StringAndHash Hash="1551929276" Text="CM_1_1_NODSplinterNod_Attack_2" />
+    <StringAndHash Hash="3667886323" Text="CM_1_1_NODReactiveDefense" />
+    <StringAndHash Hash="2986041284" Text="CM_1_1_NODUnitCap_Easy" />
+    <StringAndHash Hash="2665522099" Text="CM_1_1_NODUnitCap_Medium" />
+    <StringAndHash Hash="2517874240" Text="CM_1_1_NODUnitCap_Hard" />
+    <StringAndHash Hash="2139853443" Text="CM_1_1_FullProductionBudget" />
+    <StringAndHash Hash="2050088411" Text="CM_1_2_SteelTalonsUnitCap_Easy" />
+    <StringAndHash Hash="1404289158" Text="CM_1_2_SteelTalonsUnitCap_Medium" />
+    <StringAndHash Hash="2366702000" Text="CM_1_2_SteelTalonsUnitCap_Hard" />
+    <StringAndHash Hash="2548058041" Text="CM_1_2_SteelTalonsUnitKill_Easy" />
+    <StringAndHash Hash="2944806097" Text="CM_1_2_SteelTalonsStructureKill_Easy" />
+    <StringAndHash Hash="126057863" Text="CM_1_2_SteelTalonsUnitKill_Medium" />
+    <StringAndHash Hash="3836337564" Text="CM_1_2_SteelTalonsStructureKill_Medium" />
+    <StringAndHash Hash="1665598514" Text="CM_1_2_SteelTalonsOptimalAirHarassment" />
+    <StringAndHash Hash="1782699946" Text="CM_1_2_SteelTalonsCaptureTech" />
+    <StringAndHash Hash="3779007447" Text="CM_1_2_SteelTalons_Special_Lab_Attack" />
+    <StringAndHash Hash="1223170664" Text="CM_1_2_SteelTalonsReactiveDefense" />
+    <StringAndHash Hash="3756366605" Text="CM_1_2_FullProductionBudget" />
+    <StringAndHash Hash="4082498410" Text="CM_2_1_GDIUnitKill_Medium" />
+    <StringAndHash Hash="3182979088" Text="CM_2_1_GDIAirHarassment" />
+    <StringAndHash Hash="4284644789" Text="CM_2_1_GDIEngineer" />
+    <StringAndHash Hash="4127721446" Text="CM_2_1_FullProductionBudget" />
+    <StringAndHash Hash="797040451" Text="CM_2_3_GDIStructureKill_Easy" />
+    <StringAndHash Hash="3241835565" Text="CM_2_3_GDIStructureKill_Medium" />
+    <StringAndHash Hash="130446036" Text="CM_2_3_GDIStructureKill_Hard" />
+    <StringAndHash Hash="3716927702" Text="CM_2_3_GDIAirHarassment" />
+    <StringAndHash Hash="3754606175" Text="CM_2_3_GDIEngineer" />
+    <StringAndHash Hash="1120822941" Text="CM_2_3_GDIReactiveDefense" />
+    <StringAndHash Hash="1775627972" Text="CM_2_3_FullProductionBudget" />
+    <StringAndHash Hash="1017790769" Text="CM_2_3_GDIDefensiveUnitCap_Easy" />
+    <StringAndHash Hash="2115211215" Text="CM_2_3_GDIDefensiveUnitCap_Medium" />
+    <StringAndHash Hash="2915832612" Text="CM_2_3_GDIDefensiveUnitCap_Hard" />
+    <StringAndHash Hash="1090750463" Text="CM_2_3_GDIUnitKill_Easy" />
+    <StringAndHash Hash="3189679671" Text="CM_2_3_GDIUnitKill_Medium" />
+    <StringAndHash Hash="75544646" Text="CM_2_3_GDIUnitKill_Hard" />
+    <StringAndHash Hash="4088205807" Text="CM_2_4_ZOCOMOptimal_EASY" />
+    <StringAndHash Hash="1494388717" Text="CM_2_4_ZOCOMDirectAttack" />
+    <StringAndHash Hash="1842908007" Text="CM_2_4_ZOCOMDirectAttack_Focused" />
+    <StringAndHash Hash="3766459270" Text="CM_2_4_ZOCOMAirHarassment" />
+    <StringAndHash Hash="1601297010" Text="CM_2_4_ZOCOMUnitCap_Easy" />
+    <StringAndHash Hash="2585369141" Text="CM_2_4_ZOCOMUnitCap_Medium" />
+    <StringAndHash Hash="3282763132" Text="CM_2_4_ZOCOMUnitCap_Hard" />
+    <StringAndHash Hash="1782849297" Text="CM_2_4_FullProductionBudget" />
+    <StringAndHash Hash="1631582878" Text="CM_2_4_ZOCOMAUnitCap_Easy" />
+    <StringAndHash Hash="648478470" Text="CM_2_4_ZOCOMAUnitCap_Medium" />
+    <StringAndHash Hash="422486400" Text="CM_2_4_ZOCOMAUnitCap_Hard" />
+    <StringAndHash Hash="1010777427" Text="CM_2_4_ZOCOMBUnitCap_Easy" />
+    <StringAndHash Hash="1511455910" Text="CM_2_4_ZOCOMBUnitCap_Medium" />
+    <StringAndHash Hash="2665423090" Text="CM_2_4_ZOCOMBUnitCap_Hard" />
+    <StringAndHash Hash="53841290" Text="CM_2_6_Traveler59StructureKill_Easy" />
+    <StringAndHash Hash="3374583711" Text="CM_2_6_Traveler59StructureKill_Medium" />
+    <StringAndHash Hash="3388294177" Text="CM_2_6_Traveler59StructureKill_Hard" />
+    <StringAndHash Hash="2781517047" Text="CM_2_6_Traveler59DirectAttack_Medium" />
+    <StringAndHash Hash="1311752712" Text="CM_2_6_Traveler59DirectAttack_Hard" />
+    <StringAndHash Hash="3559809816" Text="CM_2_6_Traveler59StormriderHarassment" />
+    <StringAndHash Hash="2232301460" Text="CM_2_6_Traveler59AirArmada" />
+    <StringAndHash Hash="422712764" Text="CM_2_6_Traveler59ReactiveDefense" />
+    <StringAndHash Hash="3124236928" Text="CM_2_6_UnitCap_Easy" />
+    <StringAndHash Hash="3054379131" Text="CM_2_6_UnitCap_Medium" />
+    <StringAndHash Hash="2121897921" Text="CM_2_6_UnitCap_Hard" />
+    <StringAndHash Hash="3510298510" Text="CM_2_6_FullProductionBudget" />
+    <StringAndHash Hash="1203715661" Text="CM_2_7_ZOCOMUnitKill_Easy" />
+    <StringAndHash Hash="1504605516" Text="CM_2_7_ZOCOMUnitKill_Medium" />
+    <StringAndHash Hash="220121499" Text="CM_2_7_ZOCOMReactiveDefend" />
+    <StringAndHash Hash="1078586403" Text="CM_2_7_FullProductionBudget" />
+    <StringAndHash Hash="221085617" Text="CM_2_7_ZOCOMAirStrike" />
+    <StringAndHash Hash="1392982623" Text="CM_3_1_GDICounterattack" />
+    <StringAndHash Hash="1934809000" Text="CM_3_1_GDIDefensiveBombingRuns" />
+    <StringAndHash Hash="3495261069" Text="CM_3_1_GDIDefensiveSpotters" />
+    <StringAndHash Hash="3949853778" Text="CM_3_1_GDIEngineerDefense" />
+    <StringAndHash Hash="3170235656" Text="CM_3_1_GDICaptureTech" />
+    <StringAndHash Hash="448666782" Text="CM_3_1_Go_After_Node_Attack_1" />
+    <StringAndHash Hash="143522116" Text="CM_3_1_Go_After_Node_Attack_2" />
+    <StringAndHash Hash="3898798911" Text="CM_3_1_GDIReactiveDefense" />
+    <StringAndHash Hash="3494396395" Text="CM_3_1_GDIUnitCap_Easy" />
+    <StringAndHash Hash="2762471625" Text="CM_3_1_GDIUnitCap_Medium" />
+    <StringAndHash Hash="2061835233" Text="CM_3_1_GDIUnitCap_Hard" />
+    <StringAndHash Hash="3143955865" Text="CM_3_1_FullProductionBudget" />
+    <StringAndHash Hash="2888435440" Text="CM_3_1_NodeAssault_BudgetState" />
+    <StringAndHash Hash="2852705719" Text="CM_3_2_GDIUnitKill_Medium" />
+    <StringAndHash Hash="3478337029" Text="CM_3_2_GDIStructureKill_Medium" />
+    <StringAndHash Hash="1179626834" Text="CM_3_2_GDIEconomyAttack" />
+    <StringAndHash Hash="3754464874" Text="CM_3_2_GDISpotters" />
+    <StringAndHash Hash="1996177595" Text="CM_3_2_GDIAirHarassment" />
+    <StringAndHash Hash="3231779084" Text="CM_3_2_GDIEngineer" />
+    <StringAndHash Hash="780244032" Text="CM_3_2_FullProductionBudget" />
     <StringAndHash Hash="3013298872" Text="FX_ALI_Mechapede_SoundCreate" />
     <StringAndHash Hash="1262456338" Text="AlienEradicatorLaserWeaponA" />
     <StringAndHash Hash="4289208462" Text="AlienEradicatorLaserWeaponC" />
@@ -49952,6 +50061,7 @@
     <StringAndHash Hash="3587742064" Text="AURPRTRIPODH_SKN.REAPER" />
     <StringAndHash Hash="984620579" Text="AURPRTRIPODH_SKN" />
     <StringAndHash Hash="601912106" Text="GUHAMHEAD_SKN.FXWEAPONL_02" />
+    <StringAndHash Hash="2050031954" Text="NODBunkerTruckStructurePrevention" />
     <StringAndHash Hash="3531412847" Text="VeinDetonationCreationWeapon" />
     <StringAndHash Hash="722064373" Text="NODVeinDetonationTrigger" />
     <StringAndHash Hash="3394374564" Text="EBENGFADOORSD2_SKN" />
@@ -49978,8 +50088,8 @@
     <StringAndHash Hash="17997531" Text="GUVEHICLEF_R01" />
     <StringAndHash Hash="604328155" Text="GUVEHICLEF_R01.R01" />
     <StringAndHash Hash="2648049059" Text="SteelTalonsTitanDebris_01" />
-	<StringAndHash Hash="17997531" Text="GUVEHICLEF_R02" />
-    <StringAndHash Hash="604328155" Text="GUVEHICLEF_R02.R02" />
+    <StringAndHash Hash="3128796829" Text="GUVEHICLEF_R02" />
+    <StringAndHash Hash="1058248931" Text="GUVEHICLEF_R02.R02" />
     <StringAndHash Hash="3680114382" Text="SteelTalonsTitanDebris_02" />
     <StringAndHash Hash="4054634083" Text="GUVEHICLEF_R03" />
     <StringAndHash Hash="260661090" Text="GUVEHICLEF_R03.R03" />
@@ -50021,6 +50131,16 @@
     <StringAndHash Hash="1005311058" Text="Traveler59MechapedeBodySegmentsExperienceLevel_2" />
     <StringAndHash Hash="3197274732" Text="Traveler59MechapedeBodySegmentsExperienceLevel_3" />
     <StringAndHash Hash="2212872776" Text="Traveler59MechapedeBodySegmentsExperienceLevel_4" />
+    <StringAndHash Hash="2088216678" Text="CM_2_1_GDIBombingRuns" />
+    <StringAndHash Hash="3065281956" Text="CM_2_1_GDIReactiveDefense" />
+    <StringAndHash Hash="3914079796" Text="CM_2_3_GDIOptimal_EASY" />
+    <StringAndHash Hash="3468852521" Text="CM_2_3_GDIBombingRuns" />
+    <StringAndHash Hash="929724252" Text="CM_2_4_ReactiveDefense" />
+    <StringAndHash Hash="2545745040" Text="CM_2_4_DefensiveExpansion" />
+    <StringAndHash Hash="3536525581" Text="2_7_ZOCOMUnitCap_Easy" />
+    <StringAndHash Hash="539949904" Text="2_7_ZOCOMUnitCap_Medium" />
+    <StringAndHash Hash="628092227" Text="2_7_ZOCOMUnitCap_Hard" />
+    <StringAndHash Hash="4033114201" Text="CM_3_2_GDIBombingRuns" />
     <StringAndHash Hash="921831291" Text="ButtonStatePlayerPowerZOCOMHunterKillerTeam" />
     <StringAndHash Hash="4051267039" Text="ButtonStatePlayerPowerMarkedOfKaneShadowStrikeTeam" />
     <StringAndHash Hash="929391539" Text="ButtonStatePlayerPowerReaper17Swarm" />
