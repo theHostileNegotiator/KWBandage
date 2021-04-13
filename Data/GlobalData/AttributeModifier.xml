@@ -35,6 +35,7 @@
 		<Modifier Type="ARMOR" Value="75%" />
 	</AttributeModifier>
 	
+<!-- CRUSHER_LEVEL=-100% will reduce CrusherLevel instead of 0% -->
 	<AttributeModifier
 		id="AttributeModifier_BunkerTruckDeployed"
 		Category="NONE"

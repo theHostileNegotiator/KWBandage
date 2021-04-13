@@ -777,7 +777,7 @@
 	* Removed idle sound from being played when in deployed state
 5. Unit can still crush units when deployed
 	* Changed the Attribute Modifier CRUSHER_LEVEL to be -100%
-		* For some reason this was sufficient with Dozer Blades upgrade. It is possible that the modifier further at the bottom of Behaviors overrides the CRUSHER_LEVEL, even when no CRUSHER_LEVEL is applied as it would not crush Zone Troopers or Shock Troopers but would crush other infantry when deployed.
+		* For some reason this was sufficient with Dozer Blades upgrade. It is possible that the modifier further at the bottom of Behaviors overrides the CRUSHER_LEVEL, as it would not crush Zone Troopers or Shock Troopers but would crush other infantry when deployed.
 #### Mantis
 1. Turret is not effective at tracking Air Units, often misfiring
 	* Improved Turret Settings to match Slingshot
