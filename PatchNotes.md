@@ -247,6 +247,8 @@
 	* Shorten length of image and geometry
 7. Mission Debrief, the Objective headers were still blue instead of yellow. Additionally two bars that briefly appear before the Medal is revealed is also blue.
 	* Changed header colors to yellow and bars to red.
+8. Credits text are blue
+	* Changed Credits text to Red to match the Kane's Wrath Aesthetics
 #### Radius Decals
 1. Some objects repair and propaganda decal radius can be seen by other players when selected by the owner
 	* Set the decal to only be seen by the Local Player (Undocumented fix for other structures in TW 1.05)

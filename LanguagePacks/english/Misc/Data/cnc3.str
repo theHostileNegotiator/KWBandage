@@ -2811,12 +2811,12 @@ END
 
 GUI:Command&ConquerGenerals
 // context: simple ... the name of the our Game
-"Command & Conquer(tm) 3: Kane's Wrath"
+"Command & Conquer 3 Kane's Wrath(tm)"
 END
 
 GUI:FullGameName
 // context: simple ... the name of the our Game
-"Command & Conquer(tm) 3: Kane's Wrath"
+"Command & Conquer 3 Kane's Wrath(tm)"
 END
 
 GUI:VistaFirewallRuleDescription
@@ -14284,7 +14284,7 @@ END
 ///////////////////////////////////////////////////////////////
 
 CREDITS:DevelopmentTitle1
-"COMMAND & CONQUER(tm) 3: KANE'S WRATH"
+"COMMAND & CONQUER 3 KANE'S WRATH(tm)"
 END
 
 CREDITS:DevelopmentTitle2
@@ -14632,11 +14632,11 @@ CREDITS:CommandConquerMusic
 END
 
 CREDITS:AdditionalMusic
-"Additional Music for COMMAND & CONQUER(tm) 3: KANE'S WRATH:"
+"Additional Music for COMMAND & CONQUER 3 KANE'S WRATH(tm)"
 END
 
 CREDITS:ActonInstinctOriginal
-"Original track by:"
+"Original track by"
 END
 
 CREDITS:Gamespy
@@ -20682,7 +20682,7 @@ END
 
 SAVELOAD:AutosaveFeatureWarning
 // context: TCR, Warn player that our game uses an autosave feature which will overwrite data
-"Command & Conquer(tm) 3: Kane's Wrath uses an autosave feature to automatically save game progress & settings and will overwrite saved games without confirmation."
+"Command & Conquer 3 Kane's Wrath(tm) uses an autosave feature to automatically save game progress & settings and will overwrite saved games without confirmation."
 END
 
 SAVELOAD:NoDeviceSelectedListFiles
