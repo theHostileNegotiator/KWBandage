@@ -22,9 +22,6 @@
 #### Ravager
 * AI are not able to use Tiberium Agitation properly
 * Head bones have issues
- 
-#### Railgun Accelerator Heal
-* Objects affected by Railgun Accelerator when healed by repair drone or structure repair will no longer take penalty damage when still under the effect
 
 #### Redeemer
 * Rage Generator effect begins as soon as the ability is activated instead of when the visual effect takes place. Whether or not this was intentional

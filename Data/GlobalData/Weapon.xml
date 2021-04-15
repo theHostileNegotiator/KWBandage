@@ -1859,6 +1859,453 @@
 				Include="INFANTRY" />
 		</ScatterRadiusVsType>
 	</WeaponTemplate>
+	
+<!-- Changed Weapon Nuggets to prevent it from being removed when repaired -->
+	<WeaponTemplate
+		id="RailgunAcceleratorDamage"
+		Name="RailgunAcceleratorDamage"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AttackRange="50000.0"
+		ClipSize="1"
+		>
+		<FiringDuration
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<Nuggets>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="0.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="1.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="2.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="3.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="4.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="5.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="6.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="7.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="8.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="9.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="10.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="11.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="12.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="13.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="14.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+			<DamageNugget
+				Damage="75"
+				Radius="200.0"
+				DelayTimeSeconds="15.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="RIDER2" >
+				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails
+					Scalar= "250%">
+					<Filter
+						Relationship="ALLIES ENEMIES NEUTRAL">
+						<IncludeThing>GDIZoneTrooper</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
 
 <!--Filter Now affects Sub Faction units (And new units)-->		
 	<WeaponTemplate

@@ -650,6 +650,8 @@
 #### Railgun Accelerator
 1. Railgun Accelerator effect on the railgun is bugged with all units either not displaying properly or at all
 	* Instead of using Animations, Scripts are used
+2. Damage penalty can be removed as soon as object is healed either from Repair Drone or Repair Tool
+	* Changed weapon nuggets from DOTNugget to Multiple DamageNugget with delays to when damage is applied
 
 ### Nod:
 
