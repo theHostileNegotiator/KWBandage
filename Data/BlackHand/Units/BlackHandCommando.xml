@@ -929,7 +929,7 @@
 			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
 			EvaEventAmbushed="UnitAmbushed" 
 			EvaEventSecondDamageFarFromFirstScanRange="600"    
-			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEventSecondDamageFarFromFirstTimeoutMS="155" 
 			EvaEnemyObjectSightedEvent="EnemyCommandoDetected" 
 			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
 			EvaEventAvailableForProduction="NewConstructionOptions"

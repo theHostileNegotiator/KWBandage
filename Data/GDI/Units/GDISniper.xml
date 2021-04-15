@@ -606,7 +606,7 @@ GDI_Sniper_VoiceSuppressMS
 			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
 			EvaEventAmbushed="UnitAmbushed" 
 			EvaEventSecondDamageFarFromFirstScanRange="600"    
-			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEventSecondDamageFarFromFirstTimeoutMS="155" 
 			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted" 
 			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
 			EvaEventAvailableForProduction="NewConstructionOptions"
