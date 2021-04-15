@@ -22923,7 +22923,7 @@ TYPE:NODPropagandaTower
 "Support Structure."
 END
 DESC:NODPropagandaTower
-"Abilities: \n      » Affects all infantry units within its Area of Influence \n      » Increases unit's combat effectiveness \n      » Suppresses enemy infantry \n \n Only one Voice of Kane may be built at a time"
+"Abilities: \n      » Affects all infantry units within its Area of Influence \n      » Increases unit's combat effectiveness \n \n Only one Voice of Kane may be built at a time"
 END
 //-----------------------------------------------
 //-----------------------------------------------
