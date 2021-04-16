@@ -39,6 +39,8 @@
  "UpgradeRequired" and "UpgradeForbidden" should be elements not attributes, removed "IsAttribute="true"" making it by default "false"
  * Modules\EngineerContain
  Attribute "ImmediatelyEnabled" was missing, added it in with default "false"
+ * Modules\EvaEvents
+ Due to different Asset Type, default value for attribute EvaEventSecondDamageFarFromFirstTimeoutMS changed from 31000 to 155
  * Modules\ScriptedModelDraw:  
  Attributes "MaxRecoilDistance" and "RecoilDamping" have incorrect default values and should be swapped.
  * Modules\SpecialAbilityUpdate:  
