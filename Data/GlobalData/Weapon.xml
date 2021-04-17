@@ -2968,6 +2968,51 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- Buff Damage against Infantry as it had lower DPS compared to no upgrade -->
+	<WeaponTemplate
+		id="NODScorpionBuggyGatlingLaser"
+		Name="NODScorpionBuggyGatlingLaser"
+		AttackRange="250.0"
+		WeaponSpeed="999999.0"
+		ClipSize="1"
+		FireSound="NOD_RaiderBuggy_CapacitorFire"
+		FireFX="FX_NODSpitfireFire"
+		FireVeteranFX="FX_NODSpitfireFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		CanFireWhileMoving="true"
+		ReAcquireDetailType="POST_FIRE"
+		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
+		<FiringDuration
+			MinSeconds="0.6s"
+			MaxSeconds="0.6s" />
+		<ClipReloadTime
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="1"
+				HitGroundFX="FX_NODSpitfireHit"/>
+			<DamageNugget
+				Damage="100.0"
+				Radius="0.0"
+				DamageType="GUN"
+				DamageFXType="NOD_LASER"
+				DeathType="LASERED">
+				<DamageScalarDetails Scalar= "200%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "75%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
 <!--Normalised Damage Scalar towards aircraft to unupgraded counterpart (Unupgraded counterpart damage scalar nerfed in TW 1.05)-->
 	<WeaponTemplate
 		id="NODStealthTankRocketTibCoreWarhead"

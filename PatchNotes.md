@@ -755,9 +755,11 @@
 2. Low LOD model turrets do not rotate
 	* While this isn't necessarily a bug, the problem is the Tib Core subobjects would rotate independently on it's own, therefore the bike mesh was changed from normal to skin and now the turrets will move
 #### Raider Buggy
-1. Black Hand unit can be upgraded with Laser Capacitors from captured Nod Tech Center
+1. Laser Capacitor lowers DPS against Infantry
+	* Increased Damage Scalar of Laser weapon against infantry from 50% to 75%, matching the base weapon
+2. Black Hand unit can be upgraded with Laser Capacitors from captured Nod Tech Center
 	* Removed references to Laser Capacitor
-2. Marked of Kane missing Call For Transport ability in description. Format for Stealth Detection in description is also incorrect
+3. Marked of Kane missing Call For Transport ability in description. Format for Stealth Detection in description is also incorrect
 	* Added Call For Transport ability in string file and fixed formatting
 #### Scorpion Tank
 1. Black Hand unit can be upgraded with Laser Capacitors from captured Nod Tech Center
