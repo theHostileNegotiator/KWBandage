@@ -49979,11 +49979,18 @@
     <StringAndHash Hash="812420205" Text="SpecialPowerMarkedOfKaneRedShadowStrikeTeam" />
     <StringAndHash Hash="3198956302" Text="OCL_SpecialPowerMarkedOfKaneRedShadowStrikeTeam" />
     <StringAndHash Hash="803641470" Text="SpecialPower_TiberiumAgitationDispatch" />
+    <StringAndHash Hash="1977307933" Text="DamageAlliesDummyProjectile" />
     <StringAndHash Hash="2049432719" Text="NODFlameTankFlamerUpgradedWarhead" />
+    <StringAndHash Hash="1010204927" Text="BlackHandCustomWarmechUpgradedFlamerWarheadForAllies" />
+    <StringAndHash Hash="1119794415" Text="StormColumnLightningWeaponWarheadForAllies" />
     <StringAndHash Hash="171106205" Text="SpecialPower_TiberiumAgitationTrigger" />
     <StringAndHash Hash="2008021067" Text="HordeSpecialRangeAttack" />
+    <StringAndHash Hash="3096329578" Text="NODFlameTankFlamerUpgradedWarheadForAllies" />
     <StringAndHash Hash="1230486265" Text="SpecialPower_BlackHandConfessorCabalGrenadeTrigger" />
+    <StringAndHash Hash="509713241" Text="NODFlameTankFlamerWarheadForAllies" />
+    <StringAndHash Hash="2642305535" Text="NODWarmechFlamerWarheadForAllies" />
     <StringAndHash Hash="3787687168" Text="NODMetaTiberiumGooWarhead" />
+    <StringAndHash Hash="789249531" Text="NODWarmechTibWeaponWarheadForAllies" />
     <StringAndHash Hash="3602406648" Text="NODWarmechTibWeaponRightCloned" />
     <StringAndHash Hash="3294922664" Text="NODWarmechTibWeaponLeftCloned" />
     <StringAndHash Hash="965738110" Text="GDIBatteryMuzzleGlowTungstenHeroic" />
@@ -49999,6 +50006,9 @@
     <StringAndHash Hash="1106190119" Text="MARVZoneTrooperWeapon02" />
     <StringAndHash Hash="485648822" Text="MARVZoneTrooperWeapon03" />
     <StringAndHash Hash="3244149267" Text="MARVZoneTrooperWeapon04" />
+    <StringAndHash Hash="264651259" Text="GDIShattererShockWaveCannonWarheadForAllies" />
+    <StringAndHash Hash="350248784" Text="GDISonicShockWaveCannonWarheadForAllies" />
+    <StringAndHash Hash="1687113240" Text="NODAvatarFlamerWarheadForAllies" />
     <StringAndHash Hash="32608719" Text="MarkedOfKaneAvatarDieOCL" />
     <StringAndHash Hash="3848282125" Text="EMPBlastDispatch" />
     <StringAndHash Hash="4253634795" Text="EMPBlastTrigger" />
@@ -50045,11 +50055,16 @@
     <StringAndHash Hash="2119056955" Text="Command_Traveler59SpecialPowerSwarm" />
     <StringAndHash Hash="4209219196" Text="Traveler59Buzzers" />
     <StringAndHash Hash="42169287" Text="Command_ConstructTraveler59Buzzers" />
+    <StringAndHash Hash="2535335004" Text="AlienMechapedeTioxinBlastCannonWarheadForAllies" />
+    <StringAndHash Hash="336511325" Text="NODBlackHandFlamethrowerWarheadForAllies" />
     <StringAndHash Hash="3230170649" Text="NODBlackHandUpgradedFlamethrowerWarhead" />
+    <StringAndHash Hash="3233998803" Text="NODBlackHandUpgradedFlamethrowerWarheadForAllies" />
+    <StringAndHash Hash="3754685046" Text="IonStormWeaponWarheadForAllies" />
     <StringAndHash Hash="928123680" Text="HC_NUEnlightened_UGCL" />
     <StringAndHash Hash="472442113" Text="NUSILENT_EMPB" />
     <StringAndHash Hash="3161780485" Text="NODRocketMilitantArmor_TiberiumInfused" />
     <StringAndHash Hash="2877090101" Text="TibTrooperBlastCannonWarhead" />
+    <StringAndHash Hash="1036322433" Text="TibTrooperBlastCannonWarheadForAllies" />
     <StringAndHash Hash="70270251" Text="HC_NUTibTroop_UGCL" />
     <StringAndHash Hash="2481471446" Text="TibTrooperBlastCannonCloned" />
     <StringAndHash Hash="247798254" Text="AURPRTRIPODH_SKN.OBBOX04" />
@@ -50131,6 +50146,7 @@
     <StringAndHash Hash="1005311058" Text="Traveler59MechapedeBodySegmentsExperienceLevel_2" />
     <StringAndHash Hash="3197274732" Text="Traveler59MechapedeBodySegmentsExperienceLevel_3" />
     <StringAndHash Hash="2212872776" Text="Traveler59MechapedeBodySegmentsExperienceLevel_4" />
+    <StringAndHash Hash="2814765271" Text="BlackHandCustomWarmechFlameWarheadrForAllies" />
     <StringAndHash Hash="2088216678" Text="CM_2_1_GDIBombingRuns" />
     <StringAndHash Hash="3065281956" Text="CM_2_1_GDIReactiveDefense" />
     <StringAndHash Hash="3914079796" Text="CM_2_3_GDIOptimal_EASY" />

@@ -8,7 +8,10 @@
 		<Include type="all" source="DATA:Neutral/Units/IonStorm.xml" />
 		<Include type="all" source="DATA:Neutral/Units/IonStormTemporary.xml" />
 		<Include type="all" source="DATA:Neutral/Units/PlanetaryAssaultCarrierIonStorm.xml" />
-
+		
+	<!-- Props Units -->
+		<Include type="all" source="Props/DamageAlliesDummyProjectile.xml"/>
+	
     <!-- Debris -->
 
 		<Include type="all" source="DATA:Neutral/Debris/ALIENEradicatorDebris_01.xml" />

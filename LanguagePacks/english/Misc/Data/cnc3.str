@@ -28856,7 +28856,7 @@ NAME:AbilityMechapedeAddTioxinModule
 End
 
 DESC:AbilityMechapedeAddTioxinModule
-"Adds a Toxin Segment to the Mechapede \n Strong vs. Structures \n Repairs allied Scrin units \n \n Left-click to purchase"
+"Adds a Toxin Segment to the Mechapede \n Strong vs. Structures \n \n Left-click to purchase"
 End
 
 NAME:AbilityMechapedeAddDiskModule

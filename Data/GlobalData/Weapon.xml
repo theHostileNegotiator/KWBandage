@@ -36,7 +36,8 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
-<!--Added missing and new subfaction units to Healing Abililty-->
+<!-- Added missing and new subfaction units to Healing Abililty -->
+<!-- Allow attacks to Allied Husks -->
 	<WeaponTemplate 
 		id="AlienCorrupterTioxinBlastCannon"
 		Name="AlienCorrupterTioxinBlastCannon"
@@ -200,6 +201,18 @@
 					<IncludeThing>Traveler59MillipedeHead</IncludeThing>
 					<IncludeThing>Traveler59MillipedeBody</IncludeThing>
 					<IncludeThing>Traveler59EradicatorHexapod</IncludeThing>
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- Damage to all friendly Husks -->
+			<DamageNugget
+				Damage="40.0"
+				Radius="40.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE" >
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="HUSK"
+					Relationship="ALLIES">
 				</SpecialObjectFilter>
 			</DamageNugget>
 			<!-- Garrison clear -->
@@ -568,7 +581,41 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
-<!--Added missing and new subfaction units to Healing Abililty-->
+<!-- Allow unit to Force Fire Allies -->
+	<WeaponTemplate
+		  id="AlienMechapedeProtonCannon"
+		  Name="AlienMechapedeProtonCannon"
+		  AttackRange="325.0"
+		  WeaponSpeed="400.0"
+		  FireSound="AudioEvent:ALI_SeekerTank_DiskWeaponFire"
+		  FireFX="FX_AlienMechapedePlasmaDiskFire"
+		  FireVeteranFX="FX_AlienMechapedePlasmaDiskFireHeroic"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		  AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
+		  ClipSize="5"
+		  CanFireWhileMoving="true"
+		  ReAcquireDetailType="PER_SHOT">
+		<FiringDuration
+				MinSeconds="0.1s"
+				MaxSeconds="0.1s"
+		/>
+		<ClipReloadTime
+			MinSeconds="1.7s"
+			MaxSeconds="1.7s"
+		/>
+		<Nuggets>
+			<ProjectileNugget
+				WarheadTemplate="AlienMechapedeProtonCannonWarhead"
+				ProjectileTemplate="AlienPlasmaDisk">
+				<VeterancyProjectiles
+					VeterancyLevel="HEROIC"
+					ProjectileTemplate="AlienPlasmaDisk_Veteran"/>
+			</ProjectileNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
+<!-- Removed ability to heal as it conflicts with the properties of the Mechapede -->
+<!-- Workaround to allow force firing on allied units -->
 	<WeaponTemplate 
 		id="AlienMechapedeTioxinBlastCannon"
 		Name="AlienMechapedeTioxinBlastCannon"
@@ -615,7 +662,8 @@
 				Radius="25.0"
 				DamageFXType="ALIEN_TIOXIN"
 				DamageType="GRENADE">
-				<SpecialObjectFilter Rule="NONE">
+				<SpecialObjectFilter Rule="NONE"
+					Relationship="NEUTRAL ENEMIES">
 					<IncludeThing>CorruptedInfantry</IncludeThing>
 				</SpecialObjectFilter>
 			</DamageNugget>
@@ -632,6 +680,7 @@
 			</DamageNugget>
 			<!-- Heal to all allies -->
 			<!-- IF YOU ADD A UNIT HERE, ADD IT TO THE CORRUPTER WEAPON AS WELL -->
+			<!-- REMOVING AS IT CANNOT WORK WITH THE BEHAVIOR OF MECHAPEDE
 			<DamageNugget
 				Damage="5.0"
 				Radius="30.0"
@@ -714,6 +763,7 @@
 					<IncludeThing>Traveler59EradicatorHexapod</IncludeThing>
 				</SpecialObjectFilter>
 			</DamageNugget>
+			-->
 			<!-- Garrison clear -->
 			<!--
 			<DamageContainedNugget 
@@ -727,6 +777,91 @@
 					Include="INFANTRY" />
 			</DamageContainedNugget>
 			-->
+			<ProjectileNugget
+				WarheadTemplate="AlienMechapedeTioxinBlastCannonWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="AlienMechapedeTioxinBlastCannonWarheadForAllies"
+		Name="AlienMechapedeTioxinBlastCannonWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="3.0"
+				Radius="5.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="INFANTRY"
+					Relationship="ALLIES">
+					<ExcludeThing>Viceroid</ExcludeThing>
+				</SpecialObjectFilter>
+				<!-- Removing this for now, it spawns them too fast.-->
+				<!-- Remember to change to DamageAndSpawnNugget if you put it back in
+				<SpawnTemplate>Viceroid</SpawnTemplate>
+				-->
+			</DamageNugget>
+			<!-- regular damage to corrupted infantry -->
+			<DamageNugget
+				Damage="3.0"
+				Radius="25.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter 
+					Rule="NONE"
+					Relationship="ALLIES">
+					<IncludeThing>CorruptedInfantry</IncludeThing>
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- Damage to all enemy non-infantry -->
+			<DamageNugget
+				Damage="15.0"
+				Radius="25.0"
+				DamageFXType="ALIEN_TIOXIN"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="INFANTRY HORDE"
+					Relationship="ALLIES"/>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
+<!-- Allow unit to Force Fire Allies -->
+	<WeaponTemplate
+		id="AlienMechapedeShardWeapon"
+		Name="AlienMechapedeShardWeapon"
+		AttackRange="325.0"
+		WeaponSpeed="500.0"
+		FireSound="AudioEvent:ALI_Stalker_ShardWeaponFire"
+		FireFX="FX_AlienTibShardFire"
+		FireVeteranFX="FX_AlienTibShardFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
+		CanFireWhileMoving="true"
+		AcceptableAimDelta="10d"
+		PreAttackType="PER_CLIP"
+		ReAcquireDetailType="PER_CLIP"
+		ClipSize="3">
+		<PreAttackDelay
+			MinSeconds="0.7s"
+			MaxSeconds="0.7s" />
+		<FiringDuration
+			MinSeconds="0.2s"
+			MaxSeconds="0.2s" />
+		<ClipReloadTime
+			MinSeconds="0.2s"
+			MaxSeconds="0.5s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibShardProjectile"
+				WarheadTemplate="AlienMechapedeTiberiumShardWarhead">
+				<VeterancyProjectiles
+					VeterancyLevel="HEROIC"
+					ProjectileTemplate="AlienTibShardProjectile_Veteran"/>
+			</ProjectileNugget>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -878,6 +1013,183 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- Workaround to allow force firing on allied units -->
+	<!-- the short range bolts that emit from the cloud -->
+	<WeaponTemplate
+		id="IonStormWeapon"
+		Name="IonStormWeapon"
+		ProjectileCollidesWith="ENEMIES NEUTRAL STRUCTURES WALLS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AttackRange="125.0"
+		WeaponSpeed="9999"
+		AcceptableAimDelta="180d"
+		FireSound="AudioEvent:ALI_StormColumn_SmallWeaponFire"
+		FireFX="FX_LightningSpikeFire"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_INFANTRY ANTI_AIRBORNE_VEHICLE ANTI_PROJECTILE ANTI_MINE">
+		<FiringDuration
+			MinSeconds="0.5s"
+			MaxSeconds="1.2s"
+		/>
+		<Nuggets>
+			<DamageNugget
+				Damage="200.0"
+				Radius="5.0"
+				DamageType="CANNON"
+				DeathType="BURNED"
+				DamageFXType="ALIEN_ION">
+				<DamageScalarDetails Scalar= "20%">
+					<Filter Rule="NONE">
+						<IncludeThing>AlienStormrider</IncludeThing>
+						<IncludeThing>AlienDevastatorWarship</IncludeThing>
+						<IncludeThing>AlienMothership</IncludeThing>
+						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>AlienMCV</IncludeThing>
+						<IncludeThing>Traveler59Stormrider</IncludeThing>
+						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
+						<IncludeThing>Traveler59Mothership</IncludeThing>
+						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>Traveler59MCV</IncludeThing>
+						<IncludeThing>Reaper17Stormrider</IncludeThing>
+						<IncludeThing>Reaper17Mothership</IncludeThing>
+						<IncludeThing>Reaper17MCV</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<ProjectileNugget
+				WarheadTemplate="IonStormWeaponWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="IonStormWeaponWarheadForAllies"
+		Name="IonStormWeaponWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="200.0"
+				Radius="5.0"
+				DamageType="CANNON"
+				DeathType="BURNED"
+				DamageFXType="ALIEN_ION">
+				<DamageScalarDetails Scalar= "20%">
+					<Filter Rule="NONE">
+						<IncludeThing>AlienStormrider</IncludeThing>
+						<IncludeThing>AlienDevastatorWarship</IncludeThing>
+						<IncludeThing>AlienMothership</IncludeThing>
+						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>AlienMCV</IncludeThing>
+						<IncludeThing>Traveler59Stormrider</IncludeThing>
+						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
+						<IncludeThing>Traveler59Mothership</IncludeThing>
+						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>Traveler59MCV</IncludeThing>
+						<IncludeThing>Reaper17Stormrider</IncludeThing>
+						<IncludeThing>Reaper17Mothership</IncludeThing>
+						<IncludeThing>Reaper17MCV</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<!-- the long range bolt that emits from the top of the tower -->
+	<WeaponTemplate
+		id="StormColumnLightningWeapon"
+		Name="StormColumnLightningWeapon"
+		ProjectileCollidesWith="ENEMIES NEUTRAL STRUCTURES WALLS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AttackRange="375.0"
+		WeaponSpeed="9999"
+		AcceptableAimDelta="180d"
+		FireSound="AudioEvent:ALI_StormColumn_BigWeaponFire"
+		FireFX="FX_LightningSpikeFire"
+		AutoReloadsClip="AUTO"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_INFANTRY ANTI_AIRBORNE_VEHICLE ANTI_PROJECTILE ANTI_MINE">
+		<FiringDuration
+			MinSeconds="4s"
+			MaxSeconds="4s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				HitGroundFX="FX_AlienTibLaserGroundHit"/>
+			<DamageNugget
+				Damage="2500.0"
+				Radius="5.0"
+				DamageType="ROCKET"
+				DeathType="BURNED"
+				DamageFXType="ALIEN_ION">
+				<DamageScalarDetails Scalar= "20%">
+					<Filter
+						Rule="NONE">
+						<IncludeThing>AlienStormrider</IncludeThing>
+						<IncludeThing>AlienDevastatorWarship</IncludeThing>
+						<IncludeThing>AlienMothership</IncludeThing>
+						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>AlienMCV</IncludeThing>
+						<IncludeThing>Traveler59Stormrider</IncludeThing>
+						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
+						<IncludeThing>Traveler59Mothership</IncludeThing>
+						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>Traveler59MCV</IncludeThing>
+						<IncludeThing>Reaper17Stormrider</IncludeThing>
+						<IncludeThing>Reaper17Mothership</IncludeThing>
+						<IncludeThing>Reaper17MCV</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<ProjectileNugget
+				WarheadTemplate="StormColumnLightningWeaponWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="StormColumnLightningWeaponWarheadForAllies"
+		Name="StormColumnLightningWeaponWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="2500.0"
+				Radius="5.0"
+				DamageType="ROCKET"
+				DeathType="BURNED"
+				DamageFXType="ALIEN_ION">
+				<DamageScalarDetails Scalar= "20%">
+					<Filter
+						Rule="NONE">
+						<IncludeThing>AlienStormrider</IncludeThing>
+						<IncludeThing>AlienDevastatorWarship</IncludeThing>
+						<IncludeThing>AlienMothership</IncludeThing>
+						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>AlienMCV</IncludeThing>
+						<IncludeThing>Traveler59Stormrider</IncludeThing>
+						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
+						<IncludeThing>Traveler59Mothership</IncludeThing>
+						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>Traveler59MCV</IncludeThing>
+						<IncludeThing>Reaper17Stormrider</IncludeThing>
+						<IncludeThing>Reaper17Mothership</IncludeThing>
+						<IncludeThing>Reaper17MCV</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
 <!-- Replaced Fire Effects of Jammer for lightning effect -->
 	<WeaponTemplate
 		id="StormColumnMissileJammerWeapon"
@@ -986,6 +1298,7 @@
 
 <!-- Added projectile nugget so Garrisoned Infantry die when flame reaches them -->	
 <!-- Added damage scalar against structures like the Avatar -->
+<!-- Workaround to allow force firing on allied units -->
 	<WeaponTemplate
 		id="BlackHandCustomWarmechFlamer"
 		Name="BlackHandCustomWarmechFlamer"
@@ -1011,24 +1324,56 @@
 				DelayTimeSeconds="0.5s"
 				DamageType="GRENADE"
 				DamageFXType="NOD_FLAMETHROWER"
-				DeathType="BURNED" />
+				DeathType="BURNED">
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
 						Rule="NONE"
 						Include="STRUCTURE" />
 				</DamageScalarDetails>
-
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="BlackHandCustomWarmechFlamerWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
 			<SuppressionNugget
 				Radius="40.0"
 				Suppression="200"
 				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
+	<WeaponTemplate
+		id="BlackHandCustomWarmechFlameWarheadrForAllies"
+		Name="BlackHandCustomWarmechFlamerWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="144.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
 <!-- Changed ReAcquireDetailType to PER_CLIP -->
 <!-- Added damage scalar against structures like the Avatar -->
+<!-- Workaround to allow force firing on allied units -->
 	<WeaponTemplate
 		id="BlackHandCustomWarmechUpgradedFlamer"
 		Name="BlackHandCustomWarmechUpgradedFlamer"
@@ -1054,20 +1399,47 @@
 				DelayTimeSeconds="0.5s"
 				DamageType="GRENADE"
 				DamageFXType="NOD_FLAMETHROWER"
-				DeathType="BURNED" />
+				DeathType="BURNED">
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
 						Rule="NONE"
 						Include="STRUCTURE" />
 				</DamageScalarDetails>
-
+			</DamageNugget>
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerUpgradedWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="BlackHandCustomWarmechUpgradedFlamerWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
 			<SuppressionNugget
 				Radius="40.0"
 				Suppression="200"
 				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="BlackHandCustomWarmechUpgradedFlamerWarheadForAllies"
+		Name="BlackHandCustomWarmechUpgradedFlamerWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="300.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -1860,6 +2232,95 @@
 		</ScatterRadiusVsType>
 	</WeaponTemplate>
 	
+<!-- Workaround to allow attacks on Husks -->
+	<WeaponTemplate
+		id="GDIShattererShockWaveCannon"
+		Name="GDIShattererShockWaveCannon"
+		AttackRange="350.0"
+		MinimumAttackRange="0"
+		WeaponSpeed="325.0"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AcceptableAimDelta="0d"
+		FireSound="AudioEvent:GDI_Shatterer_WeaponFire"
+		FireFX="FX_ShattererSonicFire"
+		FireVeteranFX="FX_ShattererSonicFireHeroic"
+		ClipSize="1">
+		<PreAttackDelay
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<FiringDuration
+			MinSeconds="2.0s"
+			MaxSeconds="2.0s" />
+		<ClipReloadTime
+			MinSeconds="1.1s"
+			MaxSeconds="1.3s" />
+		<Nuggets>
+			<ActivateLinearDamageNugget Lifetime="2.0s" />
+			<ProjectileNugget
+				WarheadTemplate="GDIShattererShockWaveCannonWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="GDIShattererShockWaveCannonWarheadForAllies"
+		Name="GDIShattererShockWaveCannonWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="1000.0"
+				Radius="10"
+				DamageType="CANNON">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="HUSK"/>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
+<!-- Workaround to allow attacks on Husks -->
+	<WeaponTemplate
+		id="GDISonicShockWaveCannon"
+		Name="GDISonicShockWaveCannon"
+		AttackRange="375.0"
+		MinimumAttackRange="50"
+		WeaponSpeed="250.0"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AcceptableAimDelta="0d"
+		FireSound="AudioEvent:GDI_SonicEmitter_WeaponFire"
+		FireFX="FX_ShattererSonicFire"
+		ClipSize="1">
+		<PreAttackDelay
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<FiringDuration
+			MinSeconds="2.0s"
+			MaxSeconds="2.0s" />
+		<ClipReloadTime
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<Nuggets>
+			<ActivateLinearDamageNugget Lifetime="2.0s" />
+			<ProjectileNugget
+				WarheadTemplate="GDISonicShockWaveCannonWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="GDISonicShockWaveCannonWarheadForAllies"
+		Name="GDISonicShockWaveCannonWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="2000.0"
+				Radius="10"
+				DamageType="CANNON">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="HUSK"/>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
 <!-- Changed Weapon Nuggets to prevent it from being removed when repaired -->
 	<WeaponTemplate
 		id="RailgunAcceleratorDamage"
@@ -2531,7 +2992,159 @@
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
+	
+<!-- Workaround to allow force firing on allied units -->
+	<WeaponTemplate
+		id="NODAvatarFlamer"
+		Name="NODAvatarFlamer"
+		AttackRange="200.0"
+		WeaponSpeed="150.0"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="10"
+		FiringLoopSound="AudioEvent:NOD_FlameTank_FlameWeaponLoop"
+		FiringLoopSoundContinuesDuringReload="true"
+		AcceptableAimDelta="20d"
+		CanFireWhileMoving="true"
+		ReAcquireDetailType="PER_CLIP"
+		>
+		<!-- FireSound="NOD_BlackHand_FlameWeaponStart" -->
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
+		<Nuggets>
+			<DamageNugget
+				Damage="144.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<ProjectileNugget
+				WarheadTemplate="NODFlameTankFlamerWarhead"
+				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="NODAvatarFlamerWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+			<SuppressionNugget
+				Radius="40.0"
+				Suppression="200"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODAvatarFlamerWarheadForAllies"
+		Name="NODAvatarFlamerWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="144.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
+<!-- Workaround to allow force firing on allied units -->
+	<WeaponTemplate
+		  id="NODBlackHandFlamethrower"
+		  Name="NODBlackHandFlamethrower"
+		  AttackRange="180.0"
+		  WeaponSpeed="150.0"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		  ClipSize="20"
+		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
+		  AcceptableAimDelta="10d"
+		  ReAcquireDetailType="PER_CLIP"
+		  CanFireWhileMoving="true">
+		<!--
+		  FiringLoopSound="NOD_BlackHand_FlameWeaponLoopMS"
+		  FiringLoopSoundContinuesDuringReload="false"
+-->
+		<PreAttackDelay
+			MinSeconds="0s"
+			MaxSeconds="1s" />
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+		<Nuggets>
 
+			<ActivateStreamNugget
+				Lifetime="0.75s"
+				StreamId="0"/>
+
+			<DamageNugget
+				Damage="50"
+				Radius="15.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
+
+			<ProjectileNugget
+				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
+				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="NODBlackHandFlamethrowerWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+
+			<SuppressionNugget
+				Radius="25.0"
+				Suppression="200"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODBlackHandFlamethrowerWarheadForAllies"
+		Name="NODBlackHandFlamethrowerWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="50"
+				Radius="15.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
 <!--Changed ReAcquireDetailType to PER_CLIP and reduced weapon speed to that of Unupgraded counterpart-->	
 <!--Weapon will no longer De garrison at the same instant as it fires-->
 	<WeaponTemplate
@@ -2539,7 +3152,7 @@
 		Name="NODBlackHandUpgradedFlamethrower"
 		AttackRange="180.0"
 		WeaponSpeed="150.0"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		ClipSize="20"
 		FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		AcceptableAimDelta="10d"
@@ -2564,14 +3177,41 @@
 				DelayTimeSeconds="0.5s"
 				DamageType="GRENADE"
 				DamageFXType="NOD_FLAMETHROWER"
-				DeathType="BURNED" />
+				DeathType="BURNED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
 			<ProjectileNugget
 				WarheadTemplate="NODBlackHandUpgradedFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="NODBlackHandUpgradedFlamethrowerWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
 			<SuppressionNugget
 				Radius="25.0"
 				Suppression="300"
 				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODBlackHandUpgradedFlamethrowerWarheadForAllies"
+		Name="NODBlackHandUpgradedFlamethrowerWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="75"
+				Radius="15.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
 	<WeaponTemplate
@@ -2770,14 +3410,91 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
-<!--Changed ReAcquireDetailType to PER_CLIP and increased clip reload time to that of Unupgraded counterpart-->
-<!--Weapon will no longer De garrison at the same instant as it starts firing-->
+<!-- Workaround to allow force firing on allied units -->
+	<WeaponTemplate
+		id="NODFlameTankFlamer"
+		Name="NODFlameTankFlamer"
+		AttackRange="150.0"
+		WeaponSpeed="150.0"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="10"
+		FiringLoopSound="AudioEvent:NOD_FlameTank_FlameWeaponLoop"
+		FiringLoopSoundContinuesDuringReload="true"
+		AcceptableAimDelta="20d"
+		CanFireWhileMoving="true"
+		ReAcquireDetailType="PER_CLIP"
+    >
+		<!-- FireSound="NOD_BlackHand_FlameWeaponStart" -->
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<ClipReloadTime
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
+		<Nuggets>
+			<DamageNugget
+				Damage="144.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<ProjectileNugget
+				WarheadTemplate="NODFlameTankFlamerWarhead"
+				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="NODFlameTankFlamerWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+			<SuppressionNugget
+				Radius="40.0"
+				Suppression="200"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODFlameTankFlamerWarheadForAllies"
+		Name="NODFlameTankFlamerWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="144.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
+<!-- Changed ReAcquireDetailType to PER_CLIP and increased clip reload time to that of Unupgraded counterpart -->
+<!-- Weapon will no longer De garrison at the same instant as it starts firing -->
+<!-- Workaround to allow force firing on allied units -->
 	<WeaponTemplate
 		id="NODBlackHandFlameTankUpgradedFlamer"
 		Name="NODBlackHandFlameTankUpgradedFlamer"
 		AttackRange="150.0"
 		WeaponSpeed="150.0"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		ClipSize="10"
 		FiringLoopSound="AudioEvent:NOD_FlameTank_FlameWeaponLoop"
 		FiringLoopSoundContinuesDuringReload="true"
@@ -2803,14 +3520,45 @@
 						Rule="NONE"
 						Include="STRUCTURE" />
 				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
 			</DamageNugget>
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerUpgradedWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="NODFlameTankFlamerUpgradedWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
 			<SuppressionNugget
 				Radius="40.0"
 				Suppression="200"
 				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODFlameTankFlamerUpgradedWarheadForAllies"
+		Name="NODFlameTankFlamerUpgradedWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="300.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -3075,8 +3823,9 @@
 		</Nuggets>
 	</WeaponTemplate>
 
-<!--Weapon will no longer De garrison at the same instant as it starts firing-->		
-<!--Weapon will be able to fire while Redeemer is moving-->		
+<!-- Weapon will no longer De garrison at the same instant as it starts firing -->		
+<!-- Weapon will be able to fire while Redeemer is moving -->		
+<!-- Workaround to allow force firing on allied units -->
 	<WeaponTemplate 
 		id="NODWarmechTibWeaponRight"
 		Name="NODWarmechTibWeaponRight"
@@ -3086,7 +3835,7 @@
 		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
 		FiringLoopSoundContinuesDuringReload="false"
 		AcceptableAimDelta="10d"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		ClipSize="20"
 		ReAcquireDetailType="PER_CLIP"
@@ -3111,8 +3860,9 @@
 				DamageFXType="ALIEN_TIOXIN"
 				DamageType="GRENADE">
 				<SpecialObjectFilter
-					Rule="NONE"
-					Include="INFANTRY" >
+					Rule="ALL"
+					Include="INFANTRY"
+					Relationship="ENEMIES NEUTRAL">
 				</SpecialObjectFilter>
 			</DamageNugget>
 			<!-- regular damage to corrupted infantry -->
@@ -3133,7 +3883,8 @@
 				DamageType="GRENADE">
 				<SpecialObjectFilter
 					Rule="ALL"
-					Exclude="INFANTRY HORDE"/>
+					Exclude="INFANTRY HORDE"
+					Relationship="ENEMIES NEUTRAL"/>
 			</DamageNugget>
 			<!-- Garrison clear -->
 			<ProjectileNugget
@@ -3145,13 +3896,17 @@
 				PartitionFilterTestType="CIRCLE"
 				AttributeModifierName="AttributeModifier_TibGoo">
 				<SpecialObjectFilter
-					Rule="NONE"
-					Include="VEHICLE" >
+					Rule="ALL"
+					Include="VEHICLE"
+					Relationship="ENEMIES NEUTRAL">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>
 					<ExcludeThing>BlackHandCustomWarmech</ExcludeThing>
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>
+			<ProjectileNugget
+				WarheadTemplate="NODWarmechTibWeaponWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
 		</Nuggets>
 	</WeaponTemplate>
 	<WeaponTemplate 
@@ -3163,7 +3918,7 @@
 		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
 		FiringLoopSoundContinuesDuringReload="false"
 		AcceptableAimDelta="10d"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		ClipSize="20"
 		ReAcquireDetailType="PER_CLIP"
@@ -3188,8 +3943,9 @@
 				DamageFXType="ALIEN_TIOXIN"
 				DamageType="GRENADE">
 				<SpecialObjectFilter
-					Rule="NONE"
-					Include="INFANTRY" >
+					Rule="ALL"
+					Include="INFANTRY"
+					Relationship="ENEMIES NEUTRAL">
 				</SpecialObjectFilter>
 			</DamageNugget>
 			<!-- regular damage to corrupted infantry -->
@@ -3210,7 +3966,8 @@
 				DamageType="GRENADE">
 				<SpecialObjectFilter
 					Rule="ALL"
-					Exclude="INFANTRY HORDE"/>
+					Exclude="INFANTRY HORDE"
+					Relationship="ENEMIES NEUTRAL"/>
 			</DamageNugget>
 			<!-- Garrison clear -->
 			<ProjectileNugget
@@ -3222,13 +3979,17 @@
 				PartitionFilterTestType="CIRCLE"
 				AttributeModifierName="AttributeModifier_TibGoo">
 				<SpecialObjectFilter
-					Rule="NONE"
-					Include="VEHICLE" >
+					Rule="ALL"
+					Include="VEHICLE"
+					Relationship="ENEMIES NEUTRAL">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>
 					<ExcludeThing>BlackHandCustomWarmech</ExcludeThing>
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>
+			<ProjectileNugget
+				WarheadTemplate="NODWarmechTibWeaponWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
 		</Nuggets>
 	</WeaponTemplate>
 <!-- Duplicated weapon to add preventative for Cloned units to slow vehicles -->
@@ -3241,7 +4002,7 @@
 		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
 		FiringLoopSoundContinuesDuringReload="false"
 		AcceptableAimDelta="10d"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		ClipSize="20"
 		ReAcquireDetailType="PER_CLIP"
@@ -3305,7 +4066,7 @@
 		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
 		FiringLoopSoundContinuesDuringReload="false"
 		AcceptableAimDelta="10d"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		ClipSize="20"
 		ReAcquireDetailType="PER_CLIP"
@@ -3361,6 +4122,61 @@
 		</Nuggets>
 	</WeaponTemplate>
 	<WeaponTemplate
+		id="NODWarmechTibWeaponWarheadForAllies"
+		Name="NODWarmechTibWeaponWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<!-- Damage to all infantry, with spawning if dead 40 default-->
+			<DamageNugget
+				Damage="75.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="INFANTRY"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- regular damage to corrupted infantry -->
+			<DamageNugget
+				Damage="75.0"
+				Radius="25.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter Rule="NONE">
+					<IncludeThing>CorruptedInfantry</IncludeThing>
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- Damage to all non-infantry -->
+			<DamageNugget
+				Damage="75.0"
+				Radius="25.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="INFANTRY HORDE"
+					Relationship="ALLIES"/>
+			</DamageNugget>
+			<!-- Garrison clear -->
+			<!-- VEHICLE SLOW -->
+			<AttributeModifierNugget
+				Radius="25.0"
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="AttributeModifier_TibGoo">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="VEHICLE"
+					Relationship="ALLIES">
+					<ExcludeThing>NODAvatar</ExcludeThing>
+					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>
+					<ExcludeThing>BlackHandCustomWarmech</ExcludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
 		id="NODMetaTiberiumGooWarhead"
 		Name="NODMetaTiberiumGooWarhead"
 		HitStoredTarget="true"
@@ -3378,7 +4194,8 @@
 			</DamageContainedNugget>
 		</Nuggets>
 	</WeaponTemplate>
-<!--Weapon will no longer De garrison at the same instant as it starts firing-->	
+<!-- Weapon will no longer De garrison at the same instant as it starts firing -->	
+<!-- Workaround to allow force firing on allied units -->
 	<WeaponTemplate
 		id="NODWarmechFlamer"
 		Name="NODWarmechFlamer"
@@ -3387,7 +4204,7 @@
 		WeaponSpeed="150.0"
 		FiringLoopSound="AudioEvent:NOD_FlameTank_FlameWeaponLoop"
 		FiringLoopSoundContinuesDuringReload="true"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		ClipSize="10"
 		AcceptableAimDelta="20d"
 		ReAcquireDetailType="PER_CLIP">
@@ -3404,14 +4221,41 @@
 				DelayTimeSeconds="0.5s"
 				DamageType="GRENADE"
 				DamageFXType="NOD_FLAMETHROWER"
-				DeathType="BURNED" />
+				DeathType="BURNED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="NODWarmechFlamerWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
 			<SuppressionNugget
 				Radius="40.0"
 				Suppression="200"
 				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+		<WeaponTemplate
+		id="NODWarmechFlamerWarheadForAllies"
+		Name="NODWarmechFlamerWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="144.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -3892,7 +4736,7 @@
 		FiringLoopSoundContinuesDuringReload="true"
 		FiringLoopSoundPlaysOnlyForAttackPosition="true"
 		AcceptableAimDelta="10d"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		ClipSize="20"
 		ReAcquireDetailType="PER_CLIP"
@@ -3917,8 +4761,9 @@
 				DelayTimeSeconds="0.5s"
 				DamageType="GRENADE">
 				<SpecialObjectFilter
-					Rule="NONE"
-					Include="INFANTRY" >
+					Rule="ALL"
+					Include="INFANTRY"
+					Relationship="ENEMIES NEUTRAL">
 				</SpecialObjectFilter>
 			</DamageNugget>
 			<!-- regular damage to corrupted infantry -->
@@ -3939,7 +4784,8 @@
 				DamageType="GRENADE">
 				<SpecialObjectFilter
 					Rule="ALL"
-					Exclude="INFANTRY HORDE"/>
+					Exclude="INFANTRY HORDE"
+					Relationship="ENEMIES NEUTRAL"/>
 			</DamageNugget>
 			<!-- Garrison clear -->
 			<ProjectileNugget
@@ -3951,13 +4797,18 @@
 				PartitionFilterTestType="CIRCLE"
 				AttributeModifierName="AttributeModifier_TibGoo">
 				<SpecialObjectFilter
-					Rule="NONE"
-					Include="VEHICLE" >
+					Rule="ALL"
+					Include="VEHICLE"
+					Relationship="ENEMIES NEUTRAL">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>
 					<ExcludeThing>BlackHandCustomWarmech</ExcludeThing>
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>
+			
+			<ProjectileNugget
+				WarheadTemplate="TibTrooperBlastCannonWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
 		</Nuggets>
 	</WeaponTemplate>
 <!-- Duplicated weapon to add preventative for Cloned units to slow vehicles -->
@@ -3971,7 +4822,7 @@
 		FiringLoopSoundContinuesDuringReload="true"
 		FiringLoopSoundPlaysOnlyForAttackPosition="true"
 		AcceptableAimDelta="10d"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		ClipSize="20"
 		ReAcquireDetailType="PER_CLIP"
@@ -4024,6 +4875,61 @@
 			<ProjectileNugget
 				WarheadTemplate="TibTrooperBlastCannonWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="TibTrooperBlastCannonWarheadForAllies"
+		Name="TibTrooperBlastCannonWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<!-- Damage to all infantry, with spawning if dead 40 default-->
+			<DamageNugget
+				Damage="50.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="INFANTRY"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- regular damage to corrupted infantry -->
+			<DamageNugget
+				Damage="50.0"
+				Radius="25.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter Rule="NONE">
+					<IncludeThing>CorruptedInfantry</IncludeThing>
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<!-- Damage to all non-infantry -->
+			<DamageNugget
+				Damage="50.0"
+				Radius="25.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="INFANTRY HORDE"
+					Relationship="ALLIES"/>
+			</DamageNugget>
+			<!-- Garrison clear -->
+			<!-- VEHICLE SLOW -->
+			<AttributeModifierNugget
+				Radius="2.0"
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="AttributeModifier_TibGoo">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="VEHICLE"
+					Relationship="ALLIES">
+					<ExcludeThing>NODAvatar</ExcludeThing>
+					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>
+					<ExcludeThing>BlackHandCustomWarmech</ExcludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
 		</Nuggets>
 	</WeaponTemplate>
 <!--New Warhead for Tib Trooper Degarison Effect-->
@@ -4155,4 +5061,56 @@
 				DeathType="NORMAL" />
 		</Nuggets>
 	</WeaponTemplate>
+	
+<!-- Allow Zone Raiders to force fire allied objects -->
+	<WeaponTemplate
+		id="ZoneRaiderSonicRifle"
+		Name="ZoneRaiderSonicRifle"
+		AttackRange="310.0"
+		WeaponSpeed="600.0"
+		PreAttackType="PER_SHOT"
+		ClipSize="1"
+		ScatterRadius="30"
+		ScatterLength="30"
+		AutoReloadsClip="AUTO"
+		FireSound="AudioEvent:GDI_ZoneRaider_SonicRifleFire"
+		FireFX="FX_ShattererSonicFire_NoSound"
+		FireVeteranFX="FX_ShattererSonicFireHeroic_NoSound"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
+		CanFireWhileMoving="true"
+		AcceptableAimDelta="2d"
+		>
+
+		<PreAttackDelay
+		  MinSeconds="0.0s"
+		  MaxSeconds="0.1s" />
+		<FiringDuration
+				MinSeconds="0.9s"
+				MaxSeconds="1.1s" />
+		<ClipReloadTime
+				MinSeconds="1.0s"
+				MaxSeconds="1.4s" />
+
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="ZoneRaiderSonicRifleProjectile"
+				WarheadTemplate="ZoneRaiderSonicRifleWarhead">
+				<VeterancyProjectiles
+					VeterancyLevel="HEROIC"
+					ProjectileTemplate="ZoneRaiderSonicRifleProjectile_Veteran"/>
+			</ProjectileNugget>
+			<SuppressionNugget
+				Radius="80.0"
+				Suppression="20"
+				DurationSeconds="7.5s" />
+		</Nuggets>
+		<ScatterRadiusVsType
+		Radius="20.0">
+			<Filter
+				Rule="NONE"
+				Include="INFANTRY VEHICLE" />
+		</ScatterRadiusVsType>
+	</WeaponTemplate>
+	
 </AssetDeclaration>

@@ -163,6 +163,18 @@
 1. Units despite being Tiberium based or using Tiberium based weapons are not considered to be Tiberium Based units, therefore are not affect by Tiberium Vibration Scan or do not take extra damage from 'Anti Tiberium' weapons
 	* Ravagers, Shard Walkers and Tiberium Troopers are now considered Tiberium Based
 		* Unlike Nod Power Plants with Tiberium Core upgrade, units and structures with Tiberium Core Missiles upgrade will not have the "HAVE_TIBERIUM_UPGRADE" flag, making it 'immune' to Tiberium Vibration Scan as it would be able to counter Cloaking Field and Stealth Tanks with a simple click of a button, making the upgrade less desireable against Scrin factions.
+#### Force Firing
+1. Some units because they cannot damage Allies by default also cannot Force Fire against Allies
+	* Added workaround: Added ALLIES to RadiusDamageAffects however the Nuggets only affect Enemies and Neutral. Then gave the weapon a warhead with RadiusDamageAffects for ENEMIES AND NEUTRAL, this will only hurt allies when targeted with force firing. Warhead has replicated nuggets from the launcher that only affects Allies
+		* Objects Affected
+			* Black Hand
+			* Tiberium Trooper
+			* Flame Tank
+			* Avatar (Flame Weapon)
+			* Purifier (Flame Weapon)
+			* Redeemer (Flame and Tib Goo)
+			* Storm Column
+			* Ion Storm
 #### Upgrade Models
 1. Some unit or structure upgrades unnecessarily have game objects use different models instead of hiding and unhiding subobjects
 	* Modified models so subobjects are in the base model and are hidden by scripts
@@ -399,6 +411,9 @@
 #### Sniper Team
 1. ZOCOM Teams would have GDI Sniper and Spotter instead of their own
 	* ZOCOM will now use ZOCOM Sniper and Spotter in their teams
+#### Zone Raider
+1. Unit cannot Force Fire against allies
+	* Added ALLIES to "Radius Damage Affects" to the weapon launcher. Weapon will not damage allies unless targeted with Forced Fire
 #### MRT
 1. Leash range of Repair Drone was not changed from KW 1.01 to 1.02, despite specified in change log
 	* Fixed leash range to 100
@@ -480,6 +495,8 @@
 		* Normalised SlowDeath Parameters with a 3 second delay.
 3. Animations
 	* All animations adjusted the location and orientation of damage fire FX bones insignificantly. Removed unecessary Channels relating to such bones in all animations
+4. Unit cannot damage Husks
+	* Performed workaround to allow unit to damage husks by adding a projectile. This workaround means that the unit can only damage targeted Husks
 #### Zone Shatterer
 1. AI will not use the Unit
 	* Added ConquerMetricsOverride for DPS and Damage Type to 300 and CANNON
@@ -614,6 +631,8 @@
 #### Sonic Emitter
 1. AI underestimates the DPS output of defensive structure (Damage was buffed in TW 1.05 to counteract a bug fix but AI DPS was never updated in TW or KW)
 	* Increased ConquerMetricsOverrideDPS to 500
+2. Structure cannot damage Husks
+	* Performed workaround to allow unit to damage husks by adding a projectile. This workaround means that the unit can only damage targeted Husks
 #### Combat Support Airfield
 1. Online Games causes desyncs when Structure is created
 	* Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs
@@ -1040,6 +1059,10 @@
 	* AudioEntry "soundMoveLoop" does not work, probably due to being contained in squad and not moving in max speed. Instead used ModelConditionAudioLoopClientBehavior where the AudioEvent will be played for ModelCondition "MOVING"
 8. Unit won't play VoiceCreated AudioEvent
 	* Due to how the unit spawns, workaround is used in the squad unit. AudioEvent is contained in an FXList which is played by an AnimationState in the Condition "COMING_OUT_OF_FACTORY"
+9. Mechapede healing with toxic segment requires Force Firing. If mechapede has mixed segments, unit will both attack and heal frienly units when force firing
+	* Removed ability for Mechapede to heal with Toxic segment as it conflicts with the properties and functionality of the unit
+10. Unit cannot Force Fire against allies with Disc and Shard Segments
+	* Added ALLIES to "Radius Damage Affects" to the weapon launchers. Weapon will not damage allies unless targeted with Forced Fire
 #### Eradicator Hexapod
 1. Disintegrator visual lasers override each other. Therefore if more than one laser is firing, only the latest shot laser will show.
 	* Added new Weapons, Laser Draws and Laser States.
