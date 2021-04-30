@@ -986,6 +986,7 @@
 	<WeaponTemplate
 		id="AlienStalkerTiberiumAgitation"
 		Name="AlienStalkerTiberiumAgitation"
+		AttackRange="999999.0"
 		WeaponSpeed="400.0"
 		FireFX="FX_AlienTibAgitationFire"
 		MinWeaponSpeed="400.0"
@@ -1811,7 +1812,7 @@
 	<WeaponTemplate
 		id="GDIGrenadeSoldierEMPGrenade"
 		Name="GDIGrenadeSoldierEMPGrenade"
-		AttackRange="260.0"
+		AttackRange="999999.0"
 		WeaponSpeed="180"
 		MinWeaponSpeed="180"
 		MaxWeaponSpeed="200"
