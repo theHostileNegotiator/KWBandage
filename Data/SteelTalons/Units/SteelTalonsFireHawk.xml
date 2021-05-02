@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--Refer to GDI Firehawk-->
+<!-- Refer to GDI Firehawk -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -824,7 +824,8 @@
 				AttachToBoneInAnotherModule="contrail01"
 				ExtraPublicBone="contrail01">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT">
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="">
 					<Model
 						Name="FXInvisBone" />
 					<ParticleSysBone
@@ -832,13 +833,25 @@
 						FXParticleSystemTemplate="FireHawkConTrail"
 						FollowBone="true" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<Model
+						Name="" />
+				</ModelConditionState>
 				<!-- These blank states are here to prevent contrail drawing during Stratofighter -->
-				<AnimationState
+				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="PACKING_TYPE_1 UNPACKING USER_1"/>
-				<AnimationState
+					ConditionsYes="PACKING_TYPE_1 UNPACKING USER_1">
+					<Model
+						Name="FXInvisBone" />
+				</ModelConditionState>
+				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="PACKING_TYPE_1 PACKING USER_1"/>
+					ConditionsYes="PACKING_TYPE_1 PACKING USER_1">
+					<Model
+						Name="FXInvisBone" />
+				</ModelConditionState>
 			</ScriptedModelDraw>
 			
 			<ScriptedModelDraw
@@ -847,7 +860,8 @@
 				AttachToBoneInAnotherModule="contrail02"
 				ExtraPublicBone="contrail02">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT">
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="">
 					<Model
 						Name="FXInvisBone" />
 					<ParticleSysBone
@@ -855,13 +869,25 @@
 						FXParticleSystemTemplate="FireHawkConTrail"
 						FollowBone="true" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<Model
+						Name="" />
+				</ModelConditionState>
 				<!-- These blank states are here to prevent contrail drawing during Stratofighter -->
-				<AnimationState
+				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="PACKING_TYPE_1 UNPACKING USER_1"/>
-				<AnimationState
+					ConditionsYes="PACKING_TYPE_1 UNPACKING USER_1">
+					<Model
+						Name="FXInvisBone" />
+				</ModelConditionState>
+				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="PACKING_TYPE_1 PACKING USER_1"/>
+					ConditionsYes="PACKING_TYPE_1 PACKING USER_1">
+					<Model
+						Name="FXInvisBone" />
+				</ModelConditionState>
 			</ScriptedModelDraw>
 			
 		
@@ -1034,7 +1060,7 @@
 				MaxDistance="10000"
 				UnpackingVariation="1"
 				HeightToTeleportTo="300"
-				UnpackSound="GDI_FireHawk_StratoFighterMS"
+				UnpackSound="Multisound:GDI_FireHawk_StratoFighterMS"
 				Options="IGNORE_FACING_CHECK" />
 		
 		<!-- Standard load switch from base game -->

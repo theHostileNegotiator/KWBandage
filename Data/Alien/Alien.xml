@@ -21,6 +21,7 @@
 		<Include type="all" source="Units/AlienSeekerTank.xml" />
 		<Include type="all" source="Units/AlienStalker.xml" />	
 		<Include type="all" source="Units/AlienStalkerSquad.xml" />	
+		<Include type="all" source="Units/AlienStormrider.xml" />	
 		
 		<!--Structures-->
 		<Include type="all" source="structures/AlienBuzzerHive.xml" />

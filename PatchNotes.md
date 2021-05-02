@@ -572,9 +572,11 @@
 5. Weapon is set up to have unlimited clip size but uses different method compared to other weapons that also have unlimited clip size
 	* While inconsequential, will now have a ClipSize of "0" and given a tiny firing duration.
 #### FireHawk
-1. ZOCOM Firehawks would not display Stratofigher thrusters properly, especially when upgraded with Ceramic Armor
+1. Contrails show when in Formation Preview and when Stratofighing
+	* Changed how draws work. Particle Effects will not show under specific conditions, use PARSE_NORMAL Condition "NONE" instead of PARSE_DEFAULT
+2. ZOCOM Firehawks would not display Stratofigher thrusters properly, especially when upgraded with Ceramic Armor
 	* Fixed Animations
-2. Unit can be seen through, mainly with Ceramic Armor textures due DXT compression creating Alpha pixels
+3. Unit can be seen through, mainly with Ceramic Armor textures due DXT compression creating Alpha pixels
 	* Removed alpha support
 #### Ox Transports
 1. Particle Effects appear in Formation Preview
@@ -1085,6 +1087,8 @@
 #### Stormrider
 1. Weapon has reduced damage applied to 'light' units, but not to sub faction units
 	* Added appropriate units to damage scalar
+2. Contrails show when in Formation Preview
+	* Changed how draws work. Particle Effects will not show under specific conditions, use PARSE_NORMAL Condition "NONE" instead of PARSE_DEFAULT
 #### Devastator Warship
 1. Has target priority representative of Cannon based weapon despite GRENADE damage type
 	* Changed Weapon Category from CANNON to BLAST

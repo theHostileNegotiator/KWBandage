@@ -23,6 +23,7 @@
 		<Include type="all" source="Units/Reaper17ShockTrooperSquad_Veteran.xml" />
 		<Include type="all" source="Units/Reaper17Stalker.xml" />
 		<Include type="all" source="Units/Reaper17StalkerSquad.xml" />
+		<Include type="all" source="Units/Reaper17Stormrider.xml" />	
 		
 		<!--Structures-->
 		<Include type="all" source="structures/Reaper17BuzzerHive.xml" />

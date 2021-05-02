@@ -25,6 +25,7 @@
 		<Include type="all" source="Units/Traveler59SeekerTank.xml" />
 		<Include type="all" source="Units/Traveler59Stalker.xml" />
 		<Include type="all" source="Units/Traveler59StalkerSquad.xml" />
+		<Include type="all" source="Units/Traveler59Stormrider.xml" />	
 		
 		<!--Structures-->
 		<Include type="all" source="structures/Traveler59BuzzerHive.xml" />
