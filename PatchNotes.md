@@ -139,7 +139,7 @@
 			* Orca
 			* ZOCOM Orca
 			* Hammerhead
-3. GDI, Steel Talons and ZOCOM units when upgraded with AP Ammo or Tungsten Shell and is not Heroic, weapon will shoot both AP Ammo and Heroic AP Ammo tracers if technology was captured and built by a different faction.
+3. GDI, Steel Talons and ZOCOM units when upgraded with AP Ammo and is not Heroic, weapon will shoot both AP Ammo and Heroic AP Ammo tracers if technology was captured and built by a different faction.
 	* Units are given a StatusBitUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades
 4. GDI, Steel Talons and ZOCOM Refinery and Reclamation Hub will not generate Tiberium Smoke if technology was captured and built by a different faction.
 	* Units are given a ModelConditionUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades

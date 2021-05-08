@@ -149,8 +149,22 @@
 				id="ModuleTag_Particles"
 				OkToChangeModelColor="true">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"
-					Skeleton="">
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="">
+					<Model
+						Name="" />
+					<ParticleSysBone
+						BoneName="none"
+						FXParticleSystemTemplate="GDIShattererHoverDust"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="none"
+						FXParticleSystemTemplate="GDIShattererDustRocksDesert"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
 					<Model
 						Name="" />
 				</ModelConditionState>
@@ -162,31 +176,9 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_1 AFFECTED_BY_EMP">
+					ConditionsYes="AFFECTED_BY_EMP">
 					<Model
 						Name="" />
-					<ParticleSysBone
-						BoneName="ROOTTRANSFORM"
-						FXParticleSystemTemplate=""
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="ROOTTRANSFORM"
-						FXParticleSystemTemplate=""
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_1">
-					<Model
-						Name="" />
-					<ParticleSysBone
-						BoneName="none"
-						FXParticleSystemTemplate="GDIShattererHoverDust"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="none"
-						FXParticleSystemTemplate="GDIShattererDustRocksDesert"
-						FollowBone="true" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT">
@@ -513,61 +505,6 @@
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
 			</StatusBitsUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlating"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlatingSteelTalons"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlatingZOCOM"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlatingNOD"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlatingBlackHand"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlatingMarkedOfKane"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlatingAlien"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlatingReaper17"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ShowThePlatingTraveler59"
-				Permanent="true"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
-			</ModelConditionUpgrade>
-			
 			<StatusBitsUpgrade
 				id="ModuleTag_VeterancyUpgrade"
 				StatusToSet="WEAPON_UPGRADED_03"
