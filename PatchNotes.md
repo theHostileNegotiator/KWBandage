@@ -1005,6 +1005,10 @@
 	* Fixed targeting parameters of Tiberium Agitation. Will now target Scrin Devourer Tank, BH and Mok Power Plant with Tiberium Core upgrade. Additionally will not target units that are empty of Tiberium
 3. Blue Shards upgrade would cause the Tiberium part to disappear momentarily
 	* Set upgrade FadeTimeInSeconds 0s
+4. Tiberium Agitation effects are incomplete
+	* Added DetonateCallsKill="true" to trigger the OnDeath effects
+5. Tiberium Agitation does not do full damage to moving units
+	* Projectile would miss, added ability for projectile to 'track' targets.
 #### Mastermind
 1. Can control subfaction base defense
 	* Removed ability to target base defense structures
@@ -1144,6 +1148,9 @@
 #### Attenuated Forcefield
 1. Scrin and Reaper 17 do not share upgrade, despite cost and time is identical
 	* Reaper 17 units and upgrade refer to Scrin shields
+#### Blue Shards
+1. Heroic units with upgrade, projectile impacts are green instead of blue
+	* Fixed FXList FX_AlienTibShardHitBlueHeroic and FX_AlienTibShardHitBlueHeroicBuilding to reference Blue effects instead of Green.
 #### Infestation
 1. The Tiberium Hive when destroyed will spawn a Buzzer. This does not happen with the Lightning Spike
 	* For consistency, Buzzers will no longer spawn when Tiberium Hive is destroyed

@@ -52,6 +52,7 @@
 		<Include type="all" source="Props/NODBlackHandFlamerProjectile.xml" />	
 		<Include type="all" source="Props/NODBunkerTruckStructurePrevention.xml" />	
 		<Include type="all" source="Props/NODVeinDetonation.xml" />	
+		<Include type="all" source="Props/NODVertigoBombProjectile.xml" />	
 		<Include type="all" source="Props/NODVertigoDisruptionPod.xml" />	
 		
 		<!--	MetaGame Strategic Buildings	-->

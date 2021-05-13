@@ -64,6 +64,7 @@
 		<Include type="all" source="structures/MG_GDI_TiberiumProcessingPlant.xml" />
 		
 		<!-- Props -->
+		<Include type="all" source="Props/GDIMammothRocketPodMissileProjectile.xml" />
 		<Include type="all" source="Props/GDIOrcaSensorPod.xml" />
 		
 	</Includes>

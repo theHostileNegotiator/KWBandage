@@ -53,6 +53,7 @@
 		<Include type="all" source="props/AlienMiniTiberiumRock.xml"/>		
 		<Include type="all" source="props/AlienMiniTiberiumRock2.xml"/>		
 		<Include type="all" source="props/AlienInnerTiberiumRock.xml"/>		
+		<Include type="all" source="Props/AlienTibAgitationProjectile.xml" />
 		
 		<!--	MetaGame Strategic Buildings	-->
 		<Include type="all" source="structures/MG_Alien_Hive.xml" />
