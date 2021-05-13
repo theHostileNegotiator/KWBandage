@@ -195,6 +195,16 @@
 						New="GUMamm_K" />							
 				</ModelConditionState>
 				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Script>
+						CurDrawableShowSubObject("TREADSSTOP")
+						CurDrawableHideSubObject("TREADSBACK")
+						CurDrawableHideSubObject("TREADSLEFT")
+						CurDrawableHideSubObject("TREADSRIGHT")
+						CurDrawableHideSubObject("TREADSMOVE")					
+					</Script>
+				</AnimationState>
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="VEHICLE_CRUSH_CENTER">
 					<Animation
@@ -319,16 +329,6 @@
 						CurDrawableHideSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
 						CurDrawableShowSubObject("TREADSMOVE")	
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")					
 					</Script>
 				</AnimationState>
 				

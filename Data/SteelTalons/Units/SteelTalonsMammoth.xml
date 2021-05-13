@@ -309,20 +309,15 @@
 					<Model
 						Name="GUMamm_FP" />
 				</ModelConditionState>
-
 				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED VEHICLE_CRUSH_CENTER USER_8">
-					<Animation
-						AnimationName="GUMamm_CRSH1"
-						AnimationMode="ONCE" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED VEHICLE_CRUSH_CENTER USER_8">
-					<Animation
-						AnimationName="GUMamm_CRSH1"
-						AnimationMode="ONCE" />
+					ParseCondStateType="PARSE_DEFAULT">
+					<Script>
+						CurDrawableShowSubObject("TREADSSTOP")
+						CurDrawableHideSubObject("TREADSBACK")
+						CurDrawableHideSubObject("TREADSLEFT")
+						CurDrawableHideSubObject("TREADSRIGHT")
+						CurDrawableHideSubObject("TREADSMOVE")
+					</Script>
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -333,55 +328,11 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A MOVING BACKING_UP USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A MOVING BACKING_UP USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_OR_RELOADING_A MOVING BACKING_UP USER_8">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
 						CurDrawableShowSubObject("TREADSBACK")
 						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A TURN_LEFT USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A TURN_LEFT USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
 						CurDrawableHideSubObject("TREADSMOVE")
 					</Script>
@@ -399,28 +350,6 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A TURN_RIGHT USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A TURN_RIGHT USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_OR_RELOADING_A TURN_RIGHT USER_8">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
@@ -428,28 +357,6 @@
 						CurDrawableHideSubObject("TREADSLEFT")
 						CurDrawableShowSubObject("TREADSRIGHT")
 						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A MOVING USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A MOVING USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
 					</Script>
 				</AnimationState>
 				<AnimationState
@@ -465,54 +372,10 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A USER_8">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A USER_8">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_OR_RELOADING_A USER_8">
 					<Script>
 						CurDrawableShowSubObject("TREADSSTOP")
 						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED MOVING BACKING_UP USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED MOVING BACKING_UP USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
 						CurDrawableHideSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
 						CurDrawableHideSubObject("TREADSMOVE")
@@ -531,51 +394,7 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED ACCELERATE USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED ACCELERATE USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING ACCELERATE USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED DECELERATE USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED DECELERATE USER_8">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
 						CurDrawableHideSubObject("TREADSBACK")
@@ -597,56 +416,12 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED TURN_LEFT USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED TURN_LEFT USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING TURN_LEFT USER_8">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
 						CurDrawableHideSubObject("TREADSBACK")
 						CurDrawableShowSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED TURN_RIGHT USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED TURN_RIGHT USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
 						CurDrawableHideSubObject("TREADSMOVE")
 					</Script>
 				</AnimationState>
@@ -663,28 +438,6 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED MOVING USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED MOVING USER_8">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING USER_8">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
@@ -692,28 +445,6 @@
 						CurDrawableHideSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
 						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED USER_8">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED USER_8">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
 					</Script>
 				</AnimationState>
 				<AnimationState
@@ -727,439 +458,6 @@
 						CurDrawableHideSubObject("TREADSMOVE")
 					</Script>
 				</AnimationState>				
-
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED VEHICLE_CRUSH_CENTER USER_6">
-					<Animation
-						AnimationName="GUMamm_CRSH1"
-						AnimationMode="ONCE" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED VEHICLE_CRUSH_CENTER USER_6">
-					<Animation
-						AnimationName="GUMamm_CRSH1"
-						AnimationMode="ONCE" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="VEHICLE_CRUSH_CENTER USER_6">
-					<Animation
-						AnimationName="GUMamm_CRSH1"
-						AnimationMode="ONCE" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A MOVING BACKING_UP USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A MOVING BACKING_UP USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_RELOADING_A MOVING BACKING_UP USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A TURN_LEFT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A TURN_LEFT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_RELOADING_A TURN_LEFT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A TURN_RIGHT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A TURN_RIGHT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_RELOADING_A TURN_RIGHT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A MOVING USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A MOVING USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_RELOADING_A MOVING USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A USER_6">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A USER_6">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_RELOADING_A USER_6">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED MOVING BACKING_UP USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED MOVING BACKING_UP USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="MOVING BACKING_UP USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED ACCELERATE USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED ACCELERATE USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="MOVING ACCELERATE USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED DECELERATE USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED DECELERATE USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="MOVING DECELERATE USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED TURN_LEFT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED TURN_LEFT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="MOVING TURN_LEFT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED TURN_RIGHT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED TURN_RIGHT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="MOVING TURN_RIGHT USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED MOVING USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED MOVING USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="MOVING USER_6">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED USER_6">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED USER_6">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>				
-				
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED VEHICLE_CRUSH_CENTER">
-					<Animation
-						AnimationName="GUMamm_CRSH1"
-						AnimationMode="ONCE" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED VEHICLE_CRUSH_CENTER">
-					<Animation
-						AnimationName="GUMamm_CRSH1"
-						AnimationMode="ONCE" />
-				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="VEHICLE_CRUSH_CENTER">
@@ -1169,55 +467,11 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A MOVING BACKING_UP">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A MOVING BACKING_UP">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_OR_RELOADING_A MOVING BACKING_UP">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
 						CurDrawableShowSubObject("TREADSBACK")
 						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A TURN_LEFT">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A TURN_LEFT">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
 						CurDrawableHideSubObject("TREADSMOVE")
 					</Script>
@@ -1235,28 +489,6 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A TURN_RIGHT">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A TURN_RIGHT">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_OR_RELOADING_A TURN_RIGHT">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
@@ -1264,28 +496,6 @@
 						CurDrawableHideSubObject("TREADSLEFT")
 						CurDrawableShowSubObject("TREADSRIGHT")
 						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A MOVING">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A MOVING">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
 					</Script>
 				</AnimationState>
 				<AnimationState
@@ -1301,54 +511,10 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED FIRING_OR_RELOADING_A">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED FIRING_OR_RELOADING_A">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FIRING_OR_RELOADING_A">
 					<Script>
 						CurDrawableShowSubObject("TREADSSTOP")
 						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED MOVING BACKING_UP ">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED MOVING BACKING_UP">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableShowSubObject("TREADSBACK")
 						CurDrawableHideSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
 						CurDrawableHideSubObject("TREADSMOVE")
@@ -1367,51 +533,7 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED ACCELERATE">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED ACCELERATE">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING ACCELERATE">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED DECELERATE">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED DECELERATE">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
 						CurDrawableHideSubObject("TREADSBACK")
@@ -1433,56 +555,12 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED TURN_LEFT">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED TURN_LEFT">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableShowSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING TURN_LEFT">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
 						CurDrawableHideSubObject("TREADSBACK")
 						CurDrawableShowSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED TURN_RIGHT">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED TURN_RIGHT">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableShowSubObject("TREADSRIGHT")
 						CurDrawableHideSubObject("TREADSMOVE")
 					</Script>
 				</AnimationState>
@@ -1499,28 +577,6 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED MOVING">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED MOVING">
-					<Script>
-						CurDrawableHideSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING">
 					<Script>
 						CurDrawableHideSubObject("TREADSSTOP")
@@ -1528,38 +584,6 @@
 						CurDrawableHideSubObject("TREADSLEFT")
 						CurDrawableHideSubObject("TREADSRIGHT")
 						CurDrawableShowSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>	
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT">
-					<Script>
-						CurDrawableShowSubObject("TREADSSTOP")
-						CurDrawableHideSubObject("TREADSBACK")
-						CurDrawableHideSubObject("TREADSLEFT")
-						CurDrawableHideSubObject("TREADSRIGHT")
-						CurDrawableHideSubObject("TREADSMOVE")
 					</Script>
 				</AnimationState>
 				
