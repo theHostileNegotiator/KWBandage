@@ -525,6 +525,8 @@
 	* Changed shaders of ROCKETPODS subobject
 3. With Adaptive Armor upgraded or used, when destroyed it will use the standard model, with the special ability activated it will still show the Armor effect.
 	* Added new Model Conditions that reference the Rubble Model when DYING with the upgrade or using ability
+4. Heroic Missiles do not play sound effects when impacted
+	* Added DetonateCallsKill="true" to trigger the OnDeath effects
 #### Behemoth
 1. When recovered by engineer, it plays the animation used to leave Warfactory after the getting up animation
 	* Changed model so only one is used for build and default state
@@ -870,6 +872,8 @@
 	* Changed Container and Mesh to refer to the standard version like the Stealth Tank
 2. Stealth Model does not include the Disruption Pod attachment, making the effect seem incomplete
 	* Added Disruption Pod Mesh to Stealth Model
+3. Bombs are missing an extra sound effect when impacted
+	* Added DetonateCallsKill="true" to trigger the OnDeath effects
 #### Airtower
 1. When selected to be deployed, the upgrade subobjects will appear when replacing cursor. This does not happen with other structures
 	* Hide subobjects in animation state
