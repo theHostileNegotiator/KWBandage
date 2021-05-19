@@ -50,6 +50,7 @@
 		<Include type="all" source="Props/AlienTibShardProjectile.xml" />
 		<Include type="all" source="Props/AlienBlueShardProjectile.xml" />
 		<Include type="all" source="props/AlienGiantTiberiumRock.xml"/>
+		<Include type="all" source="props/AlienGiantTiberiumRockTiberiumField.xml"/>
 		<Include type="all" source="props/AlienMiniTiberiumRock.xml"/>		
 		<Include type="all" source="props/AlienMiniTiberiumRock2.xml"/>		
 		<Include type="all" source="props/AlienInnerTiberiumRock.xml"/>		

@@ -1163,6 +1163,9 @@
 #### Reaper 17 Shock Pods
 1. Uses Scrin Veteran Shock Troopers instead of it's own
 	* Created new Veteran Shock Trooper for Reaper 17
+#### Overlords Wrath
+1. The Tiberium Field it leaves behind persists for the entire game which has Tiberium continously growing at the impact, it's supposed to end after 5 minutes
+	* Added DestroyDie module to the Tiberium Field behaviors
 #### Mothership
 1. Weapon would affect Subfaction Motherships but not Scrin
 	* Weapon will no longer affect Subfaction Motherships
