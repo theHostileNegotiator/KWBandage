@@ -49,11 +49,11 @@
  Vertex Color mixes Red and Blue, quick fix done on Line 424 and 426
  
  ### Special Thanks
- SAGE Engine Modding Discord Server
- Megumi/Darth Jane, Golan, Shmafoozius: WrathEd
- Bibber: Asset extractor
- Lauren/Darth Jane: Assimilator Animation extractor
- Jonwil: APT2XML Tool
- OpenSAGE Team: OpenSAGE Blender Plugin
+ SAGE Engine Modding Discord Server  
+ Megumi/Darth Jane, Golan, Shmafoozius: WrathEd  
+ Bibber: Asset extractor  
+ Lauren/Darth Jane: Assimilator Animation extractor  
+ Jonwil: APT2XML Tool  
+ OpenSAGE Team: OpenSAGE Blender Plugin  
  Stygs: Providing Models
  
