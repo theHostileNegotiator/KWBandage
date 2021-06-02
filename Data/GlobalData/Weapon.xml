@@ -3724,7 +3724,7 @@
 		AttackRange="250.0"
 		WeaponSpeed="999999.0"
 		ClipSize="1"
-		FireSound="NOD_RaiderBuggy_CapacitorFire"
+		FireSound="AudioEvent:NOD_RaiderBuggy_CapacitorFire"
 		FireFX="FX_NODSpitfireFire"
 		FireVeteranFX="FX_NODSpitfireFireHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
