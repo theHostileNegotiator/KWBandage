@@ -4,6 +4,7 @@
 	<Includes>
 	
 	<!-- Neutral Units -->
+		<Include type="all" source="DATA:Neutral/Units/MutantMarauder.xml" />
 	
 		<Include type="all" source="DATA:Neutral/Units/IonStorm.xml" />
 		<Include type="all" source="DATA:Neutral/Units/IonStormTemporary.xml" />

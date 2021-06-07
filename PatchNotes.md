@@ -121,7 +121,9 @@
 			* BH Confessor (10 to 66)
 			* BH Black Disciple (150 to 10)
 			* Scrin/R17/T59 Ravager (333 to 400)
+			* Scrin/R17/T59 Shock Trooper (333 to 266)
 			* Scrin/R17/T59 Mechapede Body (1400 to 100)
+			* Mutant Marauder (0 to 100)
 #### Captured Technology
 1. Tiberium Based objects could not be targeted by the Ravagers Agitation ability if technology was captured and built by a different faction
 	* Units are given a StatusBitUpgrade which was triggered by the faction upgrades however it was only for certain factions. Added the remaining faction upgrades

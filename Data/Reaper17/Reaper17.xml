@@ -20,6 +20,7 @@
 		<Include type="all" source="Units/Reaper17RazorDroneSquad.xml" />
 		<Include type="all" source="Units/Reaper17SeekerTank.xml" />
 		<Include type="all" source="Units/Reaper17ShardWalker.xml" />
+		<Include type="all" source="Units/Reaper17ShockTrooper.xml" />
 		<Include type="all" source="Units/Reaper17ShockTrooperSquad_Veteran.xml" />
 		<Include type="all" source="Units/Reaper17Stalker.xml" />
 		<Include type="all" source="Units/Reaper17StalkerSquad.xml" />
