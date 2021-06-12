@@ -11,6 +11,9 @@
 			source="DATA:global.xml"
 			type="reference"/>
 		<Include
+			source="ART:CM_RedZoneA_cloud.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/brazil_br/buildings/brbrui04.xml"
 			type="all"/>
 		<Include
@@ -22258,7 +22261,7 @@
 		</MapMetaData>
 		-->
 		<EnvironmentData
-			Cloud="TSCloudMed"
+			Cloud="CM_RedZoneA_cloud"
 			Environment="EVDefault"
 			Macro="TSNoiseUrb"/>
 		<WorldDict>

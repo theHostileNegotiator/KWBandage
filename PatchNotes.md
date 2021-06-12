@@ -330,6 +330,17 @@
 			* Isthmus of Insanity (BAMAP_EW11_05)
 			* Dark Waters (BAMAP_JF03_6)
 			* Tiberium Wasteland (BAMAP_EW10_06)
+2. Some Red Zone Maps are missing weather overrides to make clouds larger, lower volume of light rays and move slower
+	* Added Weather overrides for the maps based of Tiberium Wars values
+		* Maps Affected
+			* Crater of Carnage (MAP_MP_4_BLACK1)
+			* Missed Opportunity (BAMAP_SB01_4)
+			* Red Zone Rampage (MAP_MP_4_RAO)
+			* Tiberium Gardens III (MAP_MP_5_BLACK1)
+			* Dead Six (MAP_MP_6_Hayes)
+			* The Rocktagon (MAP_MP_8_BASS)
+3. Missed Opportunity (BAMAP_SB01_4) light rays do not represent the cloud formation
+	* Changed cloud texure used for the map that matches the light rays
 #### Global Conquest
 1. Units contained in Upgraded Strike Forces can be given upgrades that can not and should not benefited from
 	* Removed upgrade in WorldMapArmoryUpgradesAllowed
