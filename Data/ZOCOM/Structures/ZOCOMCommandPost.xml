@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Refer to GDI Command Post -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -316,7 +317,7 @@
 			
 			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_SensorPods"
-				ShowSubObjects="UG_StealthDetector UG_StealthDetector01 UG_StealthDetector02 UG_StealthDetector03">
+				ShowSubObjects="UG_Scan UG_Scan01 UG_Scan02">
 				<CustomAnimAndDuration
 					AnimState="USER_1"></CustomAnimAndDuration>
 				<TriggeredBy>Upgrade_OrcaSensorPod</TriggeredBy>
@@ -324,7 +325,7 @@
 			
 			<SubObjectsUpgrade
 				id="ModuleTag_Upgrade_ScannerPacks"
-				ShowSubObjects="UG_Scan UG_Scan01 UG_Scan02">
+				ShowSubObjects="UG_StealthDetector UG_StealthDetector01 UG_StealthDetector02 UG_StealthDetector03">
 				<CustomAnimAndDuration
 					AnimState="USER_1"></CustomAnimAndDuration>
 				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>

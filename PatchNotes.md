@@ -601,6 +601,11 @@
 #### Construction Yard
 1. Selling ZOCOM Con Yard would give you GDI Rifle Squad and GDI Engineer
 	* Changed OCL to spawn ZOCOM Rifle Squad and ZOCOM Engineer instead
+#### Command Post
+1. Upgrading Sensor Pods and Scanner Packs show the incorrect Subobject
+	* Swapped the ShowSubObjects between Sensor Pods and Scanner Packs
+2. Scanner Packs sub object can be shown for Steel Talons if upgraded from a GDI or ZOCOM Command Post, even though they don't have the upgrade available
+	* Removed SubObjectsUpgrade for Scanner Packs for Steel Talons
 #### Airfield
 1. When selected to be deployed, the upgrade subobjects will appear when replacing cursor. This does not happen with other structures
 	* Hide subobjects in animation state
