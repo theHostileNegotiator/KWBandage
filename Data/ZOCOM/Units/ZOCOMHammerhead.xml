@@ -1083,7 +1083,7 @@
 			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
 			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"
 			EvaEventSecondDamageFarFromFirstScanRange="600"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
 			EvaEventAmbushed="UnitAmbushed"
 			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted"
 			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"

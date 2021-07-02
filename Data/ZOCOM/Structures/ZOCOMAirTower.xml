@@ -1051,7 +1051,7 @@
 			EvaEventSoldOwner="StructureSold"
 			EvaEventDamagedOwner="StructureUnderAttack"
 			EvaEventSecondDamageFarFromFirstScanRange="200"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
 			EvaEventRepairingOwner="StructureRepairing"
 			EvaEnemyObjectSightedEvent="EnemyCampSighted"
 			EvaEventAvailableForProduction="NewConstructionOptions"

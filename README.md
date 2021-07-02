@@ -14,7 +14,10 @@
  Bug fixes are detailed in the PatchNotes.txt and any known issues that have not been fixed in this package are detailed in KnownIssues.txt
  
  ### Required Files
- WrathEd
+ WrathEd 1.10_HN  
+ https://github.com/theHostileNegotiator/WrathEd2012/releases/tag/v0.1.10-HN  
+ Is not supported on Older Builds  
+ * Forked from https://github.com/Qibbi/WrathEd2012 by Lauren/Darth Jane.
  
  ### Extra Fixes
  Mechapede Spawn: Mechapede spawn can be fixed by Hex editing cnc3ep1.dat, allowing it to spawn properly at the Gateway and follow rally points. 
@@ -27,26 +30,9 @@
  add-config CNC3EP1_english_1.2.SkuDef  
  Now you can launch the game and any mod with this fix
  
- ### WrathEd Definition changes
- Some errors are present in the latest version of WrathEd definitions and therefore adjustments are made.  
- * Rename files  
- Files, mainly ones containing GameAssets were renamed to have "AssetType" in front.  
- * New Definitions  
- SkirmishAI\\, InGameUI\\, AssetTypeInGameUISettings.  
- * AssetTypeLogicCommand:  
- Element wrongly named "UpgradeTemplate" should be "Upgrade".  
- * Modules\CreateObjectDie
- "UpgradeRequired" and "UpgradeForbidden" should be elements not attributes, removed "IsAttribute="true"" making it by default "false"
- * Modules\EngineerContain
- Attribute "ImmediatelyEnabled" was missing, added it in with default "false"
- * Modules\EvaEvents
- Due to different Asset Type, default value for attribute EvaEventSecondDamageFarFromFirstTimeoutMS changed from 31000 to 155
- * Modules\ScriptedModelDraw:  
- Attributes "MaxRecoilDistance" and "RecoilDamping" have incorrect default values and should be swapped.
- * Modules\SpecialAbilityUpdate:  
- Attribute named "Face Target" has the wrong default value. It should be "true".
- * W3DMesh.cs
- Vertex Color mixes Red and Blue, quick fix done on Line 424 and 426
+ ### WrathEd W3D Definition Workaround
+ * W3DMesh.cs 
+ Vertex Color mixes Red and Blue, quick fix done on Line 1124 and 1126
  
  ### Special Thanks
  SAGE Engine Modding Discord Server  
