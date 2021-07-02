@@ -49,7 +49,7 @@ if exist "%cd%\Mods\%modname%\Data\Global.xml" "%cd%\Tools\WrathEd.exe" -gameDef
 if exist "%cd%\Mods\%modname%\Data\Static.xml" (
 	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_common%streamversion%" -bps:"static_common_2.manifest,%cd%\Game Files\Manifest\static_common_2.manifest"
 
-	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art_L" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_l_common%streamversion%" -bcn:LowLOD -bps:"static_l_common_2.manifest,%cd%\Game Files\Manifest\static_l_common_2.manifest"
+	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art_L" -audio:"..\Audio" -postfix:"L" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_l_common%streamversion%" -bcn:LowLOD -bps:"static_l_common_2.manifest,%cd%\Game Files\Manifest\static_l_common_2.manifest"
 
 	if exist "%cd%\Compilation\Mods\%modname%\Data\Static.version" del "%cd%\Compilation\Mods\%modname%\Data\Static.version"
 	if exist "%cd%\Compilation\Mods\%modname%\Data\Static_l.version" del "%cd%\Compilation\Mods\%modname%\Data\Static_l.version"
@@ -67,7 +67,6 @@ if exist "%cd%\Compilation\Mods\%modname%\Data\stringhashes1.manifest" (
 	copy "%cd%\Compilation\Mods\%modname%\Data\stringhashes1.*" "%cd%\Compilation\Mods\%modname%\Data\stringhashes.*"
 	del "%cd%\Compilation\Mods\%modname%\Data\stringhashes1.*"
 )
-
 if exist "%cd%\Mods\%modname%\Data\AptUI\_Compiled" (
 	echo Copying AptUI...
 	if not exist "%cd%\Compilation\Mods\%modname%\Data\AptUI" md "%cd%\Compilation\Mods\%modname%\Data\AptUI"

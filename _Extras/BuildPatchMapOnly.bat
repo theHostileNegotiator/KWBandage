@@ -44,6 +44,9 @@ if exist "%cd%\Mods\%modname%\Data\mapmetadata.xml" "%cd%\Tools\WrathEd.exe" -ga
 
 if exist "%cd%\Mods\%modname%\Data\AdditionalMaps\mapmetadata_SinglePlayer.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\AdditionalMaps\mapmetadata_SinglePlayer.xml" -out:"%cd%\Compilation\Mods\%modname%\Data\AdditionalMaps" -version:""
 
+if exist "%cd%\Compilation\Mods\%modname%\Data\stringhashes.manifest" del "%cd%\Compilation\Mods\%modname%\Data\stringhashes.*"
+if exist "%cd%\Compilation\Mods\%modname%\Data\AdditionalMaps\stringhashes.manifest" del "%cd%\Compilation\Mods\%modname%\Data\AdditionalMaps\stringhashes.*"
+
 setlocal EnableDelayedExpansion
 
 set sdk=!cd!
@@ -63,7 +66,6 @@ for /D %%A in ("*") do (
 	if exist "!sdk!\Mods\%modname%\Data\maps\official\%%A\%%A.map" copy "!sdk!\Mods\%modname%\Data\maps\official\%%A\%%A.map" "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A"	
 	
 	if exist "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A\stringhashes.manifest" del "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A\stringhashes.*"
-
 )
 
 cd /D "!sdk!"

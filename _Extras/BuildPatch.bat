@@ -49,7 +49,7 @@ if exist "%cd%\Mods\%modname%\Data\Global.xml" "%cd%\Tools\WrathEd.exe" -gameDef
 if exist "%cd%\Mods\%modname%\Data\Static.xml" (
 	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_common%streamversion%" -bps:"static_common_2.manifest,%cd%\Game Files\Manifest\static_common_2.manifest"
 
-	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art_L" -audio:"..\Audio" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_l_common%streamversion%" -bcn:LowLOD -bps:"static_l_common_2.manifest,%cd%\Game Files\Manifest\static_l_common_2.manifest"
+	"%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\Static.xml" -art:"..\Art_L" -audio:"..\Audio" -postfix:"L" -out:"%cd%\Compilation\Mods\%modname%\Data" -version:"_l_common%streamversion%" -bcn:LowLOD -bps:"static_l_common_2.manifest,%cd%\Game Files\Manifest\static_l_common_2.manifest"
 
 	if exist "%cd%\Compilation\Mods\%modname%\Data\Static.version" del "%cd%\Compilation\Mods\%modname%\Data\Static.version"
 	if exist "%cd%\Compilation\Mods\%modname%\Data\Static_l.version" del "%cd%\Compilation\Mods\%modname%\Data\Static_l.version"
@@ -100,6 +100,9 @@ if exist "%cd%\Mods\%modname%\Data\mapmetadata.xml" "%cd%\Tools\WrathEd.exe" -ga
 
 if exist "%cd%\Mods\%modname%\Data\AdditionalMaps\mapmetadata_SinglePlayer.xml" "%cd%\Tools\WrathEd.exe" -gameDefinition:"Kane's Wrath" -compile:"%cd%\Mods\%modname%\Data\AdditionalMaps\mapmetadata_SinglePlayer.xml" -out:"%cd%\Compilation\Mods\%modname%\Data\AdditionalMaps" -version:""
 
+if exist "%cd%\Compilation\Mods\%modname%\Data\stringhashes.manifest" del "%cd%\Compilation\Mods\%modname%\Data\stringhashes.*"
+if exist "%cd%\Compilation\Mods\%modname%\Data\AdditionalMaps\stringhashes.manifest" del "%cd%\Compilation\Mods\%modname%\Data\AdditionalMaps\stringhashes.*"
+
 setlocal EnableDelayedExpansion
 
 set sdk=!cd!
@@ -119,7 +122,6 @@ for /D %%A in ("*") do (
 	if exist "!sdk!\Mods\%modname%\Data\maps\official\%%A\%%A.map" copy "!sdk!\Mods\%modname%\Data\maps\official\%%A\%%A.map" "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A"	
 	
 	if exist "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A\stringhashes.manifest" del "!sdk!\Compilation\Mods\%modname%\Data\maps\official\%%A\stringhashes.*"
-
 )
 
 cd /D "!sdk!"
