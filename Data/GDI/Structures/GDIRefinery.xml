@@ -5,6 +5,7 @@
 <!-- Increased refund value to 700 -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:GBRefinery.w3x" />
 	</Includes>
 	<GameObject
 		id="GDIRefinery"

@@ -222,6 +222,13 @@
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
+#### Self Illumination Remapping
+1. Due to the changes with ObjectsGDI shader no longer supporting Self Illumination because the Blue Channel of the Spec Map changed functions, the mapping was converted to Reflection Channel instead by the devs. This was not applied to every object.
+	* Converted self illumination mapping in Tiberium Wars to reflection map in Kane's Wrath
+		* Objects Affected
+			* Refinery
+			* Barracks
+			* Armory
 #### Refineries
 1. Refund value was not increased in KW 1.02 after Harvesters were made cheaper
 	* Increased Refund Value to 700 based on; (RefineryCost - HarvesterCost) -:- 2
