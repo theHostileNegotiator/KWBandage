@@ -23,7 +23,7 @@
 		UnitCategory="VEHICLE"
 		VoicePriority="30"
 		EditorName="Traveler59MCV"
-		Description="Desc:Traveler59nMCV"
+		Description="Desc:Traveler59MCV"
 		TypeDescription="Type:Traveler59MCV"
 		ShockwaveResistance="100"
 		ReinvisibilityDelay="7s">
