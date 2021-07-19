@@ -3,6 +3,7 @@
 <!-- Added CAN_BE_FAVORITE_UNIT KindOf Flag -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:AUDronShipR_SKN.w3x" />
 	</Includes>
 	<GameObject
 		id="AlienMCV"

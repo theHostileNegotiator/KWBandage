@@ -3,6 +3,7 @@
 <!-- Door will no longer default to open state when repaired to 100% -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:GBWarFacD2_SN.w3x" />
 		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<GameObject

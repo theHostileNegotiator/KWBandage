@@ -1118,7 +1118,7 @@
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DContainer Hierarchy="NBENGFADOORSD2_SKL" id="EBENGFADOORSD2_SKN">
+	<W3DContainer Hierarchy="NBENGFADOORSD2_SKL" id="NBENGFADOORSD2_SKN">
 		<SubObject SubObjectID="NBENGFA_DOOR2" BoneIndex="0">
 			<RenderObject>
 				<Mesh>NBENGFADOORSD2_SKN.NBENGFA_DOOR2</Mesh>

@@ -3,6 +3,7 @@
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:GBLabRad.W3X" />
+		<Include type="all" source="ART:GBLabRad_D2.W3X" />
 	</Includes>
 	<GameObject
 		id="MG_GDI_IntelCenter"

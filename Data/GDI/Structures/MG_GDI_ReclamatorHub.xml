@@ -11,6 +11,7 @@
 		<Include type="all" source="ART:GBRecDoor_D2SN.w3x" />
 		<Include type="all" source="ART:GBRecDoor1_SKN.w3x" />
 		<Include type="all" source="ART:GBRecDoor2_OPN.w3x" />
+		<Include type="all" source="ART:GBRecHub_D2SN.w3x" />
 		<Include type="all"	source="ART:Decal_Rig_CO.xml" />
 	</Includes>
 	<GameObject

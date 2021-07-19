@@ -222,6 +222,25 @@
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
+#### Light Mesh Sorting
+1. Some mesh, mainly flashing lights do not sort properly when in front of other objects.
+	* Increased sort level of Mesh
+		* Objects Affected
+			* Warfactory
+			* Airfield
+			* Command Post
+			* Armory
+			* Tech Center
+			* Space Command Uplink
+			* Reclamation Hub
+			* Combat Support Airfield
+			* MARV
+			* Secret Shrine
+			* Redeemer Engineering Facility
+			* Air Support Tower
+			* Drone Platform
+			* Drone Ship
+			* Scrin Disk Projectiles
 #### Self Illumination Remapping
 1. Due to the changes with ObjectsGDI shader no longer supporting Self Illumination because the Blue Channel of the Spec Map changed functions, the mapping was converted to Reflection Channel instead by the devs. This was not applied to every object.
 	* Converted self illumination mapping in Tiberium Wars to reflection map in Kane's Wrath
@@ -910,7 +929,7 @@
 	* Changed Includes to Infantry
 2. When Black Hand Tech Lab is selected to be deployed, some of the upgrade subobjects will appear when replacing cursor.
 	* Hide the existing subobjects in animation state
-#### Redeemer Engimeering Facility
+#### Redeemer Engineering Facility
 1. Structure can be seen through due DXT compression creating Alpha pixels
 	* Removed alpha support
 2. Top of the gantries turn red from gray when in the DAMAGED state

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<Includes>
-		<Include type="all" source="ART:GBLabRad_SPM.xml" />
-	</Includes>
-	<W3DMesh id="GBLABRAD.LIGHTR03" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="GBLABRAD_D1.LIGHTR03" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-3.725039" Y="-3.725044" Z="-2.651088"/>
 			<Max X="3.725046" Y="3.725039" Z="2.651094"/>
@@ -329,7 +326,7 @@
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DMesh id="GBLABRAD.LIGHTR02" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="GBLABRAD_D1.LIGHTR02" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-3.725043" Y="-3.725047" Z="-2.651091"/>
 			<Max X="3.725042" Y="3.725035" Z="2.651090"/>
@@ -655,7 +652,7 @@
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DMesh id="GBLABRAD.LIGHTR01" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="GBLABRAD_D1.LIGHTR01" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-3.725043" Y="-3.725044" Z="-2.651091"/>
 			<Max X="3.725042" Y="3.725039" Z="2.651090"/>

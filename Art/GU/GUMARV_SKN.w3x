@@ -3,6 +3,336 @@
 	<Includes>
 		<Include source="ART:gumarv_skl.w3x" type="all"/>
 	</Includes>
+	<W3DMesh id="GUMARV_SKN.FXGLOW_BOTTOM02" GeometryType="Normal" SortLevel="1">
+		<BoundingBox>
+			<Min X="-24.480440" Y="-24.323246" Z="0.000000"/>
+			<Max X="23.993788" Y="59.211483" Z="5.272896"/>
+		</BoundingBox>
+		<BoundingSphere Radius="48.290272">
+			<Center X="-0.243326" Y="17.444118" Z="0.000000"/>
+		</BoundingSphere>
+		<Vertices>
+			<V X="23.251093" Y="13.394507" Z="5.272896"/>
+			<V X="-24.480440" Y="-24.323246" Z="0.000000"/>
+			<V X="-24.480440" Y="13.199912" Z="5.272896"/>
+			<V X="-23.737745" Y="59.211483" Z="0.000000"/>
+			<V X="-23.737745" Y="22.984207" Z="4.756848"/>
+			<V X="23.993788" Y="59.211483" Z="0.000000"/>
+			<V X="23.993788" Y="23.178802" Z="4.756848"/>
+			<V X="23.251093" Y="-24.323246" Z="0.000000"/>
+		</Vertices>
+		<Normals>
+			<N X="0.000284" Y="-0.138804" Z="0.990320"/>
+			<N X="0.000284" Y="-0.138804" Z="0.990320"/>
+			<N X="0.000567" Y="-0.139157" Z="0.990270"/>
+			<N X="0.000000" Y="0.130188" Z="0.991489"/>
+			<N X="-0.000267" Y="0.130534" Z="0.991444"/>
+			<N X="-0.000267" Y="0.130534" Z="0.991444"/>
+			<N X="-0.000534" Y="0.130879" Z="0.991398"/>
+			<N X="0.000000" Y="-0.138452" Z="0.990369"/>
+		</Normals>
+		<VertexColors>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+		</VertexColors>
+		<TexCoords>
+			<T X="0.494949" Y="0.238524"/>
+			<T X="0.000748" Y="0.000000"/>
+			<T X="0.000748" Y="0.235535"/>
+			<T X="0.000748" Y="0.469227"/>
+			<T X="0.000748" Y="0.235535"/>
+			<T X="0.494949" Y="0.469227"/>
+			<T X="0.494949" Y="0.238524"/>
+			<T X="0.494949" Y="0.000000"/>
+		</TexCoords>
+		<Triangles>
+			<T>
+				<V>2</V>
+				<V>1</V>
+				<V>0</V>
+				<Nrm X="0.000567" Y="-0.139157" Z="0.990270"/>
+				<Dist>3.370850</Dist>
+			</T>
+			<T>
+				<V>0</V>
+				<V>1</V>
+				<V>7</V>
+				<Nrm X="0.000000" Y="0.000000" Z="0.000000"/>
+				<Dist>3.367611</Dist>
+			</T>
+			<T>
+				<V>3</V>
+				<V>4</V>
+				<V>5</V>
+				<Nrm X="0.000000" Y="0.130188" Z="0.991489"/>
+				<Dist>7.708636</Dist>
+			</T>
+			<T>
+				<V>5</V>
+				<V>4</V>
+				<V>6</V>
+				<Nrm X="-0.000534" Y="0.000000" Z="0.000000"/>
+				<Dist>7.736753</Dist>
+			</T>
+		</Triangles>
+		<FXShader ShaderName="DefaultW3D.fx">
+			<Constants>
+				<Float Name="ColorAmbient">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="ColorDiffuse">
+					<Value>0.000000</Value>
+					<Value>0.984314</Value>
+					<Value>0.070588</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="ColorSpecular">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="Shininess">
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="ColorEmissive">
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="Opacity">
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="EdgeFadeOut">
+					<Value>0.000000</Value>
+				</Float>
+				<Int Name="NumTextures">
+					<Value>1</Value>
+				</Int>
+				<Texture Name="Texture_0">
+					<Value>FXMuzzle</Value>
+				</Texture>
+				<Texture Name="Texture_1">
+					<Value>FX2ndPassA</Value>
+				</Texture>
+				<Bool Name="UseRecolorColors">
+					<Value>false</Value>
+				</Bool>
+				<Bool Name="HouseColorPulse">
+					<Value>false</Value>
+				</Bool>
+				<Bool Name="DepthWriteEnable">
+					<Value>false</Value>
+				</Bool>
+				<Bool Name="AlphaTestEnable">
+					<Value>false</Value>
+				</Bool>
+				<Bool Name="CullingEnable">
+					<Value>false</Value>
+				</Bool>
+				<Int Name="BlendMode">
+					<Value>2</Value>
+				</Int>
+				<Int Name="SecondaryTextureBlendMode">
+					<Value>0</Value>
+				</Int>
+				<Int Name="TexCoordMapper_0">
+					<Value>0</Value>
+				</Int>
+				<Float Name="TexCoordTransform_0">
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="TextureAnimation_FPS_NumPerRow_LastFrame_FrameOffset_0">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Int Name="TexCoordMapper_1">
+					<Value>1</Value>
+				</Int>
+				<Float Name="TexCoordTransform_1">
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.150000</Value>
+				</Float>
+				<Float Name="Sampler_ClampU_ClampV_NoMip_0">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="Sampler_ClampU_ClampV_NoMip_1">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+			</Constants>
+		</FXShader>
+	</W3DMesh>
+	<W3DMesh id="GUMARV_SKN.FXGLOW_BOTTOM01" GeometryType="Normal" SortLevel="1">
+		<BoundingBox>
+			<Min X="-23.350071" Y="-7.707362" Z="-0.340009"/>
+			<Max X="23.350060" Y="14.333817" Z="2.636448"/>
+		</BoundingBox>
+		<BoundingSphere Radius="25.128923">
+			<Center X="0.565595" Y="-6.222616" Z="-0.139156"/>
+		</BoundingSphere>
+		<Vertices>
+			<V X="13.896561" Y="14.333817" Z="2.636448"/>
+			<V X="-23.350071" Y="-7.707362" Z="-0.340009"/>
+			<V X="-13.896576" Y="14.139222" Z="2.636448"/>
+			<V X="23.350060" Y="-7.707362" Z="-0.340009"/>
+		</Vertices>
+		<Normals>
+			<N X="0.000474" Y="-0.134613" Z="0.990898"/>
+			<N X="0.000474" Y="-0.134613" Z="0.990898"/>
+			<N X="0.000948" Y="-0.135399" Z="0.990791"/>
+			<N X="0.000000" Y="-0.133826" Z="0.991005"/>
+		</Normals>
+		<VertexColors>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+			<C R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+		</VertexColors>
+		<TexCoords>
+			<T X="0.386669" Y="0.237454"/>
+			<T X="0.000748" Y="0.000000"/>
+			<T X="0.109028" Y="0.236605"/>
+			<T X="0.494949" Y="0.000000"/>
+		</TexCoords>
+		<Triangles>
+			<T>
+				<V>2</V>
+				<V>1</V>
+				<V>0</V>
+				<Nrm X="0.000948" Y="-0.135399" Z="0.990791"/>
+				<Dist>0.684556</Dist>
+			</T>
+			<T>
+				<V>0</V>
+				<V>1</V>
+				<V>3</V>
+				<Nrm X="0.000000" Y="0.000000" Z="0.000000"/>
+				<Dist>0.694495</Dist>
+			</T>
+		</Triangles>
+		<FXShader ShaderName="DefaultW3D.fx">
+			<Constants>
+				<Float Name="ColorAmbient">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="ColorDiffuse">
+					<Value>0.000000</Value>
+					<Value>0.984314</Value>
+					<Value>0.070588</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="ColorSpecular">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="Shininess">
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="ColorEmissive">
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="Opacity">
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="EdgeFadeOut">
+					<Value>0.000000</Value>
+				</Float>
+				<Int Name="NumTextures">
+					<Value>1</Value>
+				</Int>
+				<Texture Name="Texture_0">
+					<Value>FXMuzzle</Value>
+				</Texture>
+				<Texture Name="Texture_1">
+					<Value>FX2ndPassA</Value>
+				</Texture>
+				<Bool Name="UseRecolorColors">
+					<Value>false</Value>
+				</Bool>
+				<Bool Name="HouseColorPulse">
+					<Value>false</Value>
+				</Bool>
+				<Bool Name="DepthWriteEnable">
+					<Value>false</Value>
+				</Bool>
+				<Bool Name="AlphaTestEnable">
+					<Value>false</Value>
+				</Bool>
+				<Bool Name="CullingEnable">
+					<Value>false</Value>
+				</Bool>
+				<Int Name="BlendMode">
+					<Value>2</Value>
+				</Int>
+				<Int Name="SecondaryTextureBlendMode">
+					<Value>0</Value>
+				</Int>
+				<Int Name="TexCoordMapper_0">
+					<Value>0</Value>
+				</Int>
+				<Float Name="TexCoordTransform_0">
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="TextureAnimation_FPS_NumPerRow_LastFrame_FrameOffset_0">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Int Name="TexCoordMapper_1">
+					<Value>1</Value>
+				</Int>
+				<Float Name="TexCoordTransform_1">
+					<Value>1.000000</Value>
+					<Value>1.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.150000</Value>
+				</Float>
+				<Float Name="Sampler_ClampU_ClampV_NoMip_0">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+				<Float Name="Sampler_ClampU_ClampV_NoMip_1">
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+					<Value>0.000000</Value>
+				</Float>
+			</Constants>
+		</FXShader>
+	</W3DMesh>
 	<W3DMesh id="GUMARV_SKN.MARV_TREADSMOVE" GeometryType="Skin" SortLevel="0">
 		<BoundingBox>
 			<Min X="-49.191040" Y="-42.590061" Z="0.004766"/>
