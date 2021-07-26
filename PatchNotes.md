@@ -566,6 +566,11 @@
 	* Added new Model Conditions that reference the Rubble Model when DYING with the upgrade or using ability
 4. Heroic Missiles do not play sound effects when impacted
 	* Added DetonateCallsKill="true" to trigger the OnDeath effects
+#### Juggernaught
+1. Decoy Sniper Teams can be used to spot for bombardment
+	* Added CLONED state to be disallowed in Special Power
+2. Nod Shadow Beacons can be used for Spot For Bombardment ability
+	* Filtered out Shadow Beacons for Bombardment Special Power
 #### Behemoth
 1. When recovered by engineer, it plays the animation used to leave Warfactory after the getting up animation
 	* Changed model so only one is used for build and default state
@@ -870,6 +875,8 @@
 	* Restored ability for it to be cloaked and defaulted parameters
 3. Black Hand will randomly play NOD voice sounds referencing stealth. (This is due to inheriting NOD Specter and not removing sounds)
 	* Removed NOD variant sound
+4. Sniper Teams can be used for Spot for Bombardment ability
+	* Filtered out Sniper Teams for Bombardment Special Power
 #### Avatar
 1. Particle System when in REALLYDAMAGED mode was not shown when using Kane's Edition Skin
 	* Fixed Model Condition States

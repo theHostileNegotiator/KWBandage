@@ -408,6 +408,63 @@
 		</ObjectFilter>
 	</SpecialPowerTemplate>
 
+<!-- Removed ability for Decoy Snipers to spot for bombard -->
+<!-- Can no longer use Shadow Beacons for Bombardment -->
+	<SpecialPowerTemplate
+		id="SpecialPower_SpotTargetBombard"
+		Flags="LIMIT_DISTANCE NEEDS_OBJECT_FILTER FIND_REACHABLE_TARGETS WATER_OK TARGET_NEEDS_OBJECT_STATUS NO_FORBIDDEN_MODEL_STATES"
+		RequiredTargetObjectStatus="CAN_SPOT_FOR_BOMBARD"
+		DisallowedTargetObjectStatus="IN_STASIS CLONED"
+		DisallowedTargetModelStates="TRANSPORT_MOVING MOVING"
+		ReloadTime="20s"
+		RadiusCursorRadius="50"
+		TargetType="LOCATION"
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateSpotTargetBombard"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		MinCastRange="300"
+		MaxCastRange="50000"
+		ReachableTargetsCircleDisplayRadius="500">
+		<ObjectFilter
+			Relationship="ALLIES"
+			Rule="ANY">
+			<IncludeThing>GDISniperSquad</IncludeThing>
+			<IncludeThing>ZOCOMSniperSquad</IncludeThing>
+		</ObjectFilter>
+		<GameDependency>
+			<ObjectFilter
+				Relationship="ALLIES">
+				<IncludeThing>GDISniperSquad</IncludeThing>
+				<IncludeThing>ZOCOMSniperSquad</IncludeThing>
+			</ObjectFilter>
+		</GameDependency>
+	</SpecialPowerTemplate>
+
+<!-- Can no longer use Sniper Teams for Bombardment -->
+	<SpecialPowerTemplate
+		id="SpecialPower_SpotBeaconBombard"
+		Flags="LIMIT_DISTANCE NEEDS_OBJECT_FILTER FIND_REACHABLE_TARGETS WATER_OK TARGET_NEEDS_OBJECT_STATUS"
+		RequiredTargetObjectStatus="CAN_SPOT_FOR_BOMBARD"
+		ReloadTime="20s"
+		RadiusCursorRadius="50"
+		TargetType="LOCATION"
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateSpotTargetBombard"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		MinCastRange="300"
+		MaxCastRange="50000"
+		ReachableTargetsCircleDisplayRadius="400">
+		<ObjectFilter
+			Relationship="ALLIES"
+			Rule="ANY">
+			<IncludeThing>NODShadowSquadBeacon</IncludeThing>
+		</ObjectFilter>
+		<GameDependency>
+			<ObjectFilter
+				Relationship="ALLIES">
+				<IncludeThing>NODShadowSquadBeacon</IncludeThing>
+			</ObjectFilter>
+		</GameDependency>
+	</SpecialPowerTemplate>
+
 <!--For New Reaper 17 and Traveller 59 Buzzer Swarm-->	
 	<SpecialPowerTemplate
 		id="SpecialPower_Reaper17Swarm"
