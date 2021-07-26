@@ -617,6 +617,8 @@
 	* Removed Flag
 5. Weapon is set up to have unlimited clip size but uses different method compared to other weapons that also have unlimited clip size
 	* While inconsequential, will now have a ClipSize of "0" and given a tiny firing duration.
+6. Unit only leaves behind small debris when destroyed, does not leave a husk to crash to the ground like other air units
+	* Added model from APOC's art pack, new debris object and added it to the "OCL_GDIHammerheadInitialDebris" OCL
 #### FireHawk
 1. Contrails show when in Formation Preview and when Stratofighing
 	* Changed how draws work. Particle Effects will not show under specific conditions, use PARSE_NORMAL Condition "NONE" instead of PARSE_DEFAULT

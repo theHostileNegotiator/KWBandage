@@ -50002,6 +50002,7 @@
     <StringAndHash Hash="876579517" Text="FX_MidAirFlakExplosionHeroic" />
     <StringAndHash Hash="3553297574" Text="SpecialPower_EMPGrenadesDispatch" />
     <StringAndHash Hash="2443863816" Text="SpecialPower_EMPGrenadesTrigger" />
+    <StringAndHash Hash="3889142473" Text="GUHAMHEADR.GUHELI" />
     <StringAndHash Hash="135456968" Text="MARVZoneTrooperWeapon01" />
     <StringAndHash Hash="1106190119" Text="MARVZoneTrooperWeapon02" />
     <StringAndHash Hash="485648822" Text="MARVZoneTrooperWeapon03" />
@@ -50079,12 +50080,12 @@
     <StringAndHash Hash="2050031954" Text="NODBunkerTruckStructurePrevention" />
     <StringAndHash Hash="3531412847" Text="VeinDetonationCreationWeapon" />
     <StringAndHash Hash="722064373" Text="NODVeinDetonationTrigger" />
-    <StringAndHash Hash="3394374564" Text="EBENGFADOORSD2_SKN" />
     <StringAndHash Hash="4086470192" Text="GUSTLSHAT_DIEA" />
     <StringAndHash Hash="2614304432" Text="Reaper17MillipedeBody" />
     <StringAndHash Hash="4259258633" Text="Reaper17MillipedeHead" />
     <StringAndHash Hash="1951523839" Text="Traveler59MillipedeBody" />
     <StringAndHash Hash="3076182105" Text="Traveler59MillipedeHead" />
+    <StringAndHash Hash="2317069999" Text="GDIHammerheadDebris_06" />
     <StringAndHash Hash="2875308478" Text="GUZocomHarvR01" />
     <StringAndHash Hash="2626959476" Text="GUZocomHarvR01.R01" />
     <StringAndHash Hash="752536975" Text="GDIZOCOMHarvesterDebris_01" />

@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+<!-- Added main Hammerhead Husk -->
+	<ObjectCreationList
+		id="OCL_GDIHammerheadInitialDebris">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="1.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="-75d"
+			MaxForcePitch="90d">
+			<Offset
+				x="-2.91"
+				y="-9.03"
+				z="9.83"></Offset>
+			<CreateObject>GDIHammerheadDebris_01</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="-75d">
+			<Offset
+				x="12.46"
+				y="0.0"
+				z="2.09"></Offset>
+			<CreateObject>GDIHammerheadDebris_02</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="-75d">
+			<Offset
+				x="-2.91"
+				y="9.04"
+				z="9.83"></Offset>
+			<CreateObject>GDIHammerheadDebris_03</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="-75d">
+			<Offset
+				x="-3.36"
+				y="-3.6"
+				z="9.4"></Offset>
+			<CreateObject>GDIHammerheadDebris_04</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="1.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="-75d"
+			MaxForcePitch="90d">
+			<Offset
+				x="-12.88"
+				y="0.0"
+				z="11.68"></Offset>
+			<CreateObject>GDIHammerheadDebris_05</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS ORIENT_IN_PRIMARY_DIRECTION"
+			Disposition="RELATIVE_ANGLE INHERIT_VELOCITY"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="1.0"
+			MinLifetime="3.0s"
+			MaxLifetime="3.0s"
+			MinForcePitch="270d"
+			MaxForcePitch="300d"
+			MinForceYaw="0d"
+			MaxForceYaw="0d"
+			VelocityScale="0.2">
+			<Offset
+				x="0.0"
+				y="0.0"
+				z="0.0"></Offset>
+			<CreateObject>GDIHammerheadDebris_06</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
 	<!--Spawns Marked Of Kane Husk instead Nod Husk-->
 	<ObjectCreationList
 		id="MarkedOfKaneAvatarDieOCL">

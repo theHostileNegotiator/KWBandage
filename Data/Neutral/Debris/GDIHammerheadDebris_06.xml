@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="all"
+			source="ART:GUHamheadR.w3x" />
+		<Include
+			type="instance"
+			source="DATA:BaseObjects/BaseDebris.xml" />
+	</Includes>
+	<GameObject
+		id="GDIHammerheadDebris_06"
+		inheritFrom="BaseDebris" 		
+		EditorName="GDIHammerheadDebris_06"
+		Side="Neutral"
+		EditorSorting="MISC_MAN_MADE"
+		TransportSlotCount="0"
+		CommandSet="EmptyCommandSet"
+		KindOf="NO_COLLIDE INERT_SHROUD_REVEALER UNATTACKABLE NOT_AUTOACQUIRABLE INERT"
+		RadarPriority="NOT_ON_RADAR">		
+		<DisplayName>Debris</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="GUHamheadR" />
+					<ParticleSysBone
+						BoneName="ROOTTRANSFORM"
+						FXParticleSystemTemplate="GDIDebrisSmallFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="ROOTTRANSFORM"
+						FXParticleSystemTemplate="GDIDebrisSmallFireDistortion"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="ROOTTRANSFORM"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="true" />														
+				</ModelConditionState>				
+			</ScriptedModelDraw>
+		</Draws>		
+		<Behaviors>
+			<Physics
+				id="ModuleTag_Physics"
+				TumbleRandomly="true"
+				MaxXRotationVelocity="15"
+				MaxYRotationVelocity="0"
+				MaxZRotationVelocity="180"
+				BounceCount="0" 
+				KillWhenRestingOnGround="true"
+				GroundHitFX="FX_GDIVehicleExplode" />			
+			<LifetimeUpdate
+				id="ModuleTag_LifeTime"
+				MinLifetime="1s"
+				MaxLifetime="1s" />
+			<SlowDeath
+				id="ModuleTag_Death"
+				SinkDelay="0.1s"
+				SinkRate="0.5"
+				DestructionDelay="0.3s">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</SlowDeath>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry IsSmall="true" >
+			<Shape Type="BOX" 
+				MajorRadius="10.0" 
+				MinorRadius="10.0" 
+				Height="10.0"/>
+		</Geometry>
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="1"
+			ShroudClearingRange="1" />
+	</GameObject>
+</AssetDeclaration>

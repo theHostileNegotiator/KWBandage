@@ -25,7 +25,9 @@
 		<Include type="all" source="DATA:Neutral/Debris/ALIENEradicatorDebris_08.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/ALIENEradicatorDebris_09.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/ALIENEradicatorDebris_10.xml" />
-		
+
+		<Include type="all" source="DATA:Neutral/Debris/GDIHammerheadDebris_06.xml" />
+
 		<Include type="all" source="DATA:Neutral/Debris/GDIZOCOMHarvesterDebris_01.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/GDIZOCOMHarvesterDebris_02.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/GDIZOCOMHarvesterDebris_03.xml" />
