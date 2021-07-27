@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Includes>
+		<Include type="all" source="ART:GUOrcaD_UGCA.xml" />
 		<Include type="all" source="ART:GUOrca_UGCA_SPM.xml" />
+		<Include type="all" source="ART:GU_FirehawkD_UGCA.xml" />
+		<Include type="all" source="ART:GU_Firehawk_UGCA_SPM.xml" />
 	</Includes>
 	<W3DMesh id="GBAIRFIELD_D2SN.UG_HARDPOINTS02" CastShadow="true" GeometryType="Normal">
 		<BoundingBox>
@@ -4492,7 +4495,7 @@
 		<FXShader ShaderName="ObjectsGDI.fx" TechniqueIndex="0">
 			<Constants>
 				<Texture Name="DiffuseTexture">
-					<Value>GUOrca_UGCA</Value>
+					<Value>GUOrcaD_UGCA</Value>
 				</Texture>
 				<Texture Name="NormalMap">
 					<Value>GUOrca_UGCA_NRM</Value>
@@ -7129,7 +7132,7 @@
 		<FXShader ShaderName="ObjectsGDI.fx" TechniqueIndex="0">
 			<Constants>
 				<Texture Name="DiffuseTexture">
-					<Value>GUOrca_UGCA</Value>
+					<Value>GUOrcaD_UGCA</Value>
 				</Texture>
 				<Texture Name="NormalMap">
 					<Value>GUOrca_UGCA_NRM</Value>
@@ -18002,7 +18005,7 @@
 		<FXShader ShaderName="ObjectsGDI.fx" TechniqueIndex="0">
 			<Constants>
 				<Texture Name="DiffuseTexture">
-					<Value>GU_Firehawk_UGCA</Value>
+					<Value>GU_FirehawkD_UGCA</Value>
 				</Texture>
 				<Texture Name="NormalMap">
 					<Value>GU_Firehawk_UGCA_NRM</Value>

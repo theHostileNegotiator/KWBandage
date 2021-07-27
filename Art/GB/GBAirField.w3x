@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Includes>
 		<Include type="all" source="ART:GUOrca_UGCA_SPM.xml" />
+		<Include type="all" source="ART:GU_Firehawk_UGCA_SPM.xml" />
 	</Includes>
 	<W3DMesh id="GBAIRFIELD.UG_HARDPOINTS02" CastShadow="true" GeometryType="Normal">
 		<BoundingBox>

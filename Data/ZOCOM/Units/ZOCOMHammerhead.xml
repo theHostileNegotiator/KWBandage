@@ -3,9 +3,11 @@
 <!--Refer to GDI Hammerhead-->
 <!--Added Specular and Normal map for Ceramic Armor-->
 <!--Added upgrade sound for Ceramic Armor-->
+<!-- Added Damaged Texture for Ceramic Armor -->
 	<Includes>
 		<Include type="all" source="ART:GUHamhead_UGCA_NRM.xml" />
 		<Include type="all" source="ART:GUHamhead_UGCA_SPM.xml" />
+		<Include type="all" source="ART:GUHamheadD_UGCA.xml" />
 	</Includes>
 	<GameObject
 		id="ZOCOMHammerhead"
@@ -137,7 +139,7 @@
 						Name="GUHamhead_SKN" />
 					<Texture
 						Original="GUHamhead"
-						New="GUHamhead_UGCA" />
+						New="GUHamheadD_UGCA" />
 					<Texture
 						Original="GUHamhead_NRM"
 						New="GUHamhead_UGCA_NRM" />
@@ -168,7 +170,7 @@
 						Name="GUHamheadR" />
 					<Texture
 						Original="GUHamheadD"
-						New="GUHamhead_UGCA" />
+						New="GUHamheadD_UGCA" />
 					<Texture
 						Original="GUHamhead_NRM"
 						New="GUHamhead_UGCA_NRM" />

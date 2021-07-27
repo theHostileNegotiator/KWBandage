@@ -710,6 +710,9 @@
 #### Hardpoints (And ZOCOM Orca Cannon)
 1. When aircraft with Harpoints would dock to reload, sound would not play
 	* Added sound effects to reload
+#### Ceramic Armor
+1. There are no damaged textures for for upgraded units
+	* Created damaged textures
 #### Composite Armor and Tiberium Field Suits
 1. When Missile Squad is upgraded, the extra 50% vulnerability from GUN damage is removed
 	* Increased GUN damage vulnerability by 50% for upgrades

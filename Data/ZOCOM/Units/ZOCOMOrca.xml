@@ -3,8 +3,10 @@
 <!-- Changed Normal Map Texture and Added Specular Texture for Ceramic Armor -->
 <!-- Added upgrade sound for Ceramic Armor -->
 <!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
+<!-- Added Damaged Texture for Ceramic Armor -->
 	<Includes>
 		<Include type="all" source="ART:GUOrca_UGCA_SPM.xml" />
+		<Include type="all" source="ART:GUOrcaD_UGCA.xml" />
 	</Includes>
 	<GameObject
 		id="ZOCOMOrca"
@@ -87,7 +89,7 @@
 						Name="GUOrca_SKN" />
 					<Texture
 						Original="GUOrca_07"
-						New="GUOrca_UGCA" />
+						New="GUOrcaD_UGCA" />
 					<Texture
 						Original="GUOrca_07_NRM"
 						New="GUOrca_UGCA_NRM" />
@@ -129,7 +131,7 @@
 						Name="GUOrcaR_SKN" />
 					<Texture
 						Original="GUOrca_07D"
-						New="GUOrca_UGCA" />
+						New="GUOrcaD_UGCA" />
 					<Texture
 						Original="GUOrca_07_NRM"
 						New="GUOrca_UGCA_NRM" />

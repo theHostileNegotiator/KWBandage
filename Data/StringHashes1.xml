@@ -49620,6 +49620,8 @@
     <StringAndHash Hash="2227377241" Text="FX_MGStrikeSummonLgCast" />
     <StringAndHash Hash="3386552966" Text="FXMGMove_Turn" />
 	<!-- -->
+    <StringAndHash Hash="681560317" Text="GUOrcaD_UGCA" />
+    <StringAndHash Hash="2836147640" Text="GU_FirehawkD_UGCA" />
     <StringAndHash Hash="257603478" Text="GBGolumCannonAlt_SPM" />
     <StringAndHash Hash="3307195776" Text="AUDEVWARION.TRAVENG02" />
     <StringAndHash Hash="2694621952" Text="AUDEVWARION.TRAVENG01" />
