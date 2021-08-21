@@ -18,7 +18,7 @@
 	<Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
     <Order Build="BlackHandTechAssemblyPlant" /> <!--Time: 40 Power: -15-->
 	<Order Build="BlackHandPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="BlackHandTempleOfBlackHand" /> <!--Time: 50 Power: -20-->
+    <Order Build="BlackHandTempleOfNOD" /> <!--Time: 50 Power: -20-->
     <Order Time="195s" />
   </SkirmishOpeningMove>
 

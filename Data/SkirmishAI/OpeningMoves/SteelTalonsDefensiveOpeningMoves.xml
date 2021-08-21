@@ -16,7 +16,7 @@
     <Order Time="79s" Account="PRODUCTION" Deposit="4000" />
     <Order Build="SteelTalonsCommandPost" />
     <Order Build="SteelTalonsPowerPlant" />
-    <Order Build="SteelTalonsArmory" />
+    <Order Build="SteelTalonsTechCenter" />
     <Order Build="SteelTalonsPowerPlant" />
     <Order Build="SteelTalonsIonCannonControl" />
     <Order Time="198s" />

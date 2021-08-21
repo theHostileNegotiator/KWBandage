@@ -56,7 +56,7 @@
     <Order Build="SteelTalonsRefinery" />
     <Order Build="SteelTalonsCommandPost" />
 	<Order Build="SteelTalonsPowerPlant" />
-    <Order Build="SteelTalonsArmory" />
+    <Order Build="SteelTalonsTechCenter" />
     <Order Build="SteelTalonsPowerPlant" />
     <Order Build="MG_SteelTalons_ReclamatorHub" />
     <Order Build="SteelTalonsMARV" />
