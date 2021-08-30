@@ -39,6 +39,179 @@
 		<Draws>
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">				
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="NBDHub" />
+				</ModelConditionState>	
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="BUILD_PLACEMENT_CURSOR">
+					<Model
+						Name="NBDHub" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="RUBBLE">
+					<Model
+						Name="NBDHub_D3SN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_5 STRUCTURE_UNPACKING">
+					<Model
+						Name="NBDHub_UG_ASN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED USER_5">
+					<Model
+						Name="NBDHub_UG_D2SN" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerDist"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED USER_5">
+					<Model
+						Name="NBDHub_UG" />
+					<Texture
+						Original="NBDHub"
+						New="NBDHub_D" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_5">
+					<Model
+						Name="NBDHub_UG" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBDHub_ASN" />
+				</ModelConditionState>	
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NBDHub_D2SN" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerDist"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerFire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="NBDHub" />
+					<Texture
+						Original="NBDHub"
+						New="NBDHub_D" />
+					<ParticleSysBone
+						BoneName="RootTransform"
+						FXParticleSystemTemplate="NODBunkerSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+					<!-- no anim -->
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="BUILD_PLACEMENT_CURSOR">
+					<Script>
+						CurDrawableHideSubObject("TCMHUB_UPGRADE")
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="NBDHub_AAN"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_5 REALLYDAMAGED">
+					<Animation
+						AnimationName="" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="RUBBLE"
+					StateName="STATE_Rubble"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="NBDHub_D3AN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_IntoRubble" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoRubble")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED"
+					StateName="STATE_ReallyDamaged"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="NBDHub_D2AN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamaged")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoReallyDamaged">
+					<Animation
+						AnimationName="NBDHub_D2AN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoRubble">
+					<Animation
+						AnimationName="NBDHub_D3AN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+			</ScriptedModelDraw>
+			<ScriptedModelDraw
+				id="ModuleTag_DrawWeapon"
+				AttachToBoneInAnotherModule="bone_nbdhub"
 				OkToChangeModelColor="true"
 				ExtraPublicBone="FX_Weapon01 FX_Weapon02">
 				<ModelConditionState
@@ -60,103 +233,42 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="BUILD_PLACEMENT_CURSOR">
 					<Model
-						Name="NBDHub_L_SKN" />
+						Name="" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE">
 					<Model
-						Name="NBDHub_D3SN" />
-				</ModelConditionState>
-				<!-- Quad Turret -->
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 STRUCTURE_UNPACKING">
-					<Model
-						Name="NBDHub_QLBld_SKN" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 REALLYDAMAGED">
-					<Model
-						Name="NBDHub_QL_D2_SKN" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerDist"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerSmoke"
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 DAMAGED">
-					<Model
-						Name="NBDHub_QL_SKN" />
-					<Texture
-						Original="NBDHub"
-						New="NBDHub_D" />
-					<Texture
-						Original="NBLsrCann"
-						New="NBLsrCannD" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerSmoke"
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6">
-					<Model
-						Name="NBDHub_QL_SKN" />
-				</ModelConditionState>
-				<!-- Default -->
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Model
-						Name="NBDHub_LBld_SKN" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
-					<Model
-						Name="NBDHub_L_D2_SKN" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerDist"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerFire"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerSmoke"
-						FollowBone="true" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
-					<Model
-						Name="NBDHub_L_SKN" />
-					<Texture
-						Original="NBDHub"
-						New="NBDHub_D" />
-					<Texture
-						Original="NBLsrCann"
-						New="NBLsrCannD" />
-					<ParticleSysBone
-						BoneName="RootTransform"
-						FXParticleSystemTemplate="NODBunkerSmoke"
-						FollowBone="true" />
+						Name="" />
 				</ModelConditionState>
 				
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING USER_5">
+					<Model
+						Name="NBDHub_QLBld_SKN" />
+				</ModelConditionState>	
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED USER_5">
+					<Model
+						Name="NBDHub_QL_D2_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED USER_5">
+					<Model
+						Name="NBDHub_QL_SKN" />
+					<Texture
+						Original="NBLsrCann"
+						New="NBLsrCannD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_5">
+					<Model
+						Name="NBDHub_QL_SKN" />
+				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT">
 					<!-- no anim -->
@@ -167,11 +279,18 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
+					ConditionsYes="STRUCTURE_UNPACKING USER_5">
 					<Animation
 						AnimationName="NBDHub_QLBld_AAN"
 						AnimationMode="ONCE" />
-				</AnimationState>				
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED USER_5">
+					<Animation
+						AnimationName="" />
+				</AnimationState>
+				<!--
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
@@ -218,6 +337,7 @@
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>
+				-->
 			</ScriptedModelDraw>
 			<SpotlightDraw
 				id="ModuleTag_Spotlight"
@@ -378,7 +498,7 @@
 			</StatusBitsUpgrade>
 			<ModelConditionUpgrade
 				id="ModuleTag_ShowQuadTurretLaserHub"
-				AddConditionFlags="USER_6">
+				AddConditionFlags="USER_5">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</ModelConditionUpgrade>
 			
