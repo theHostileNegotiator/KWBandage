@@ -193,6 +193,13 @@
 1. Once ability is activated, 'interrupting' by issuing other commands can lead to unit still move while firing, leading to lead to jank animations, firing weapon backwards, etc. Playing attacking animations but not shooting if ordered to attack.
 	* Adjusted how special powers are activated. Squad will now be considered to be 'busy' until weapon has been released, therefore new commands will have to queue until unit is no longer busy before executing. Improving presentation significantly
 		* In most cases, special powers have been sped up, to match base weapons speed and to counter fix.
+	* Objects Affected
+		* GDI/ZOCOM Grenadier Squad
+		* Shadow Team
+		* Confessor Cabal
+		* Awakened
+		* Enlightened
+		* Ravager
 #### Formation Preview
 1. Some units do not have their own Formation Preview Models, instead borrowing from other units
 	* Created New Models for the units (Stygs)

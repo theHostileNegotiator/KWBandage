@@ -18,6 +18,8 @@
 		<Include type="all" source="Units/NODMilitantRocketSquad.xml" />	
 		<Include type="all" source="Units/NODMobileArtillery.xml" />
 		<Include type="all" source="Units/NODShadow.xml" />	
+		<Include type="all" source="Units/NODShadowSquad.xml" />	
+		<Include type="all" source="Units/NODShadowSquad_Veteran.xml" />	
 		<Include type="all" source="Units/NODStealthTank.xml" />	
 		<Include type="all" source="Units/NODVenom.xml" />	
 		<Include type="all" source="Units/NODVertigo.xml" />	

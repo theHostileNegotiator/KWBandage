@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Improvements to Beacon Ability -->
 	<Tags></Tags>
 	<Includes>
-		<Include
-			type="all"
-			source="DATA:GlobalData/GlobalDefines.xml" />
-		<Include
-			type="all"
-			source="ART:SquadMarkNUSha.w3x" />
-		<Include
-			type="all"
-			source="ART:NUShdw_SKN.w3x" />
-		<Include
-			type="all"
-			source="ART:FXShadow_FP.w3x" />		
-		<!-- Base Object -->
-		<Include
-			type="instance"
-			source="DATA:BaseObjects/BaseSquad.xml" />
 	</Includes>
 	<GameObject
 		id="NODShadowSquad"
@@ -42,7 +27,8 @@
 		EditorName="NODShadowSquad"
 		Description="Desc:NODShadow"
 		TypeDescription="Type:NODShadow"
-		UnitTypeIcon="ShadowIcon">
+		UnitTypeIcon="ShadowIcon"
+		RadarPriority="NOT_ON_RADAR">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODShadow</DisplayName>
 		<GameDependency>
@@ -85,6 +71,54 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
+			<AttributeModifierPoolUpdate 
+				id="DefaultAttributeModifierPoolUpdate"/>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCSpeed"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterSpeed</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCDamage"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterDamage">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterDamage</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCArmor"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterArmor">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterArmor</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<StancesBehavior
+				id="ModuleTag_Stance"
+				StanceTemplate="Generic" />
+			<EmotionTrackerUpdate
+				id="Module_ETU">
+				<TauntAndPointExcluded
+					Rule="NONE" />
+				<AddEmotion>CheerIdle_Base</AddEmotion>
+				<AddEmotion>CheerBusy_Base</AddEmotion>
+			</EmotionTrackerUpdate>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Veteran"
+				LevelCap="4"
+				LevelsToGain="1">
+				<TriggeredBy>Upgrade_ProductionVeterancy_VETERAN</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Elite"
+				LevelCap="4"
+				LevelsToGain="2">
+				<TriggeredBy>Upgrade_ProductionVeterancy_ELITE</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Heroic"
+				LevelCap="4"
+				LevelsToGain="3">
+				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
+			</LevelUpUpgrade>
+			<TemporarilyDefectUpdate
+				id="ModuleTag_TemporarilyDefect"
+				DefectionFrameCount="100" />
 			<WeaponSetUpdate
 				id="ModuleTag_WeaponSetUpdate">
 				<WeaponSlotHardpoint
@@ -230,15 +264,22 @@
 				CommandButtonName="Command_NodShadow_GliderLand"
 				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT"
 				MinimumCutoff="0" />
-      <AISpecialPowerUpdate
+			<AISpecialPowerUpdate
 				id="ModuleTag_NODShadowExplosive"
 				CommandButtonName="Command_NodShadow_PlaceExplosiveCharges"
 				SpecialPowerAIType="SPECIAL_POWER_CAPTURE_BUILDING" />
-			<xi:include
-				href="DATA:Includes/CaptureBehavior.xml"
-				xpointer="xmlns(n=uri:ea.com:eala:asset) xpointer(/n:Behaviors/child::*)" />
-			
-			
+			<SpecialPower
+				id="ModuleTag_CaptureSpecialPower"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UpdateModuleStartsAttack="true" />
+			<CaptureSpecialAbilityUpdate
+				id="ModuleTag_CaptureSpecialPowerUpdate"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UnpackTime="2s"
+				PreparationTime="10s"
+				PackTime="1s"
+				StartAbilityRange="30.0"
+				Options="DO_CAPTURE_FX"/>
 			<SpecialPower
 				id="ModuleTag_ShadowSquadBeaconGetInRange"
 				SpecialPowerTemplate="ShadowSquadBeaconGetInRange"
@@ -250,12 +291,38 @@
 				PackTime="0s"
 				StartAbilityRange="0.1"
 				ChainedButton="Command_NODShadowSquadDeployBeacon" />
-				
-			
+			<SpecialPowerDispatchSpecialPower
+				id="ModuleTag_Dispatch"
+				SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconDispatch">
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPowerDeployBeacon" />
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconTrigger" />
+			</SpecialPowerDispatchSpecialPower>
 			<HordeDispatchSpecialPower
 				id="ModuleTag_DeployBeacon"
 				SpecialPowerTemplate="SpecialPowerDeployBeacon" 
 				MaxMembersToDispatchTo="1"/>
+			<SpecialPower
+				id="ModuleTag_ShadowSquadBeaconTrigger"
+				SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconTrigger"
+				UpdateModuleStartsAttack="true"/>
+			<WeaponFireSpecialAbilityUpdate
+				id="ModuleTag_ShadowSquadBeaconTriggerUpdate"
+				SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconTrigger"
+				SpecialWeapon="HordeSpecialRangeAttack"
+				UnpackTime="0.0s"
+				PackTime="0.0s" 
+				BusyForDuration="1.0s" />
+				<!--
+			<SpecialAbilityUpdate
+				id="ModuleTag_ShadowSquadBeaconTriggerUpdate"
+				SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconTrigger"
+				UnpackTime="0s"
+				PackTime="0s"
+				StartAbilityRange="0.1" />
+				-->
+			
 			
 			
 		<!--	<OCLSpecialPower
@@ -275,7 +342,7 @@
 				
 		-->
 
-    </Behaviors>
+		</Behaviors>
 		<AI>
 			<HordeAIUpdate
 				id="ModuleTag_HordeAIUpdate"
@@ -300,6 +367,13 @@
 				MinorRadius="20.0"
 				Height="13.0"></Shape>
 		</Geometry>
+		<EvaEvents
+			EvaEventProductionStarted="UnitConstructionStarted"
+			EvaEventDamagedOwner="UnitUnderAttack" 
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled" 
+			EvaEventPromotedOwner="UnitPromoted" />
 		<!--
 		<AudioArrayVoice>
 			<NamedEntry Sound="NOD_Shadow_VoiceMoveGliderMS" Name="InitiateGliderLiftOff" />

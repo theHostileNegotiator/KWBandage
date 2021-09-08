@@ -3762,6 +3762,29 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- Actual range is controlled by WeaponFireSpecialAbilityUpdate -->
+	<WeaponTemplate
+		id="NODShadowSquadBeaconWeapon"
+		Name="NODShadowSquadBeaconWeapon"
+		AttackRange="999999.0"
+		WeaponSpeed="200"
+		MinWeaponSpeed="200"
+		MaxWeaponSpeed="210"
+		ClipSize="0"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND"
+ 		>
+		<FiringDuration
+				MinSeconds="2.1s"
+				MaxSeconds="2.1s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="NODShadowSquadBeaconProjectile"
+				WarheadTemplate="NODShadowSquadBeaconWarhead" />
+		</Nuggets>
+	</WeaponTemplate>
+	
 <!--Normalised Damage Scalar towards aircraft to unupgraded counterpart (Unupgraded counterpart damage scalar nerfed in TW 1.05)-->
 	<WeaponTemplate
 		id="NODStealthTankRocketTibCoreWarhead"

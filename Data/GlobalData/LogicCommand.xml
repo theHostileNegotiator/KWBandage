@@ -84,6 +84,12 @@
 		<SpecialPower>SpecialPower_EMPGrenadesDispatch</SpecialPower>
 	</LogicCommand>
 	<LogicCommand
+		Options="NEED_TARGET_POS"
+		Type="SPECIAL_POWER"
+		id="Command_NODShadowSquadDeployBeacon">
+		<SpecialPower>SpecialPower_ShadowSquadBeaconDispatch</SpecialPower>
+	</LogicCommand>
+	<LogicCommand
 		Type="SPECIAL_POWER"
     	Options="NEED_TARGET_ENEMY_OBJECT"
 		id="Command_FireTiberiumAgitation">

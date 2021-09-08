@@ -697,6 +697,15 @@
 	</SpecialPowerTemplate>
 	
 	<SpecialPowerTemplate
+		id="SpecialPower_ShadowSquadBeaconDispatch"
+		ReloadTime="60s"
+		TargetType="LOCATION" />
+	<SpecialPowerTemplate
+		id="SpecialPower_ShadowSquadBeaconTrigger"
+		ReloadTime="60s"
+		TargetType="LOCATION" />
+	
+	<SpecialPowerTemplate
 		id="SpecialPower_TiberiumAgitationDispatch"
 		ReloadTime="45s"
 		TargetType="OBJECT" />

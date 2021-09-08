@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Fix Speed so it is faster than squad-->
+<!-- Refer to Nod Shadows -->
 	<GameObject
 		id="MarkedOfKaneShadow"
+		inheritFrom="NODShadow"
 		SelectPortrait="Portrait_NODShadow"
 		ButtonImage="Portrait_NODShadow"
 		Side="MarkedOfKane"
@@ -850,20 +851,23 @@
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>	
 			
+			<SpecialPower
+				id="ModuleTag_DeployBeacon"
+				SpecialPowerTemplate="SpecialPowerDeployBeacon"
+				UpdateModuleStartsAttack="true" />
+				<!--
 			<OCLSpecialPower
 				id="ModuleTag_OCL"
 				SpecialPowerTemplate="SpecialPowerDeployBeacon"
 				OCL="OCL_NODShadowSquadBeacon"
 				CreateLocation="CREATE_AT_LOCATION" />
-			<SpecialPower
-				id="ModuleTag_DeployBeacon"
-				SpecialPowerTemplate="SpecialPowerDeployBeacon"
-				UpdateModuleStartsAttack="true" />
+				-->
 			<WeaponFireSpecialAbilityUpdate
 				id="ModuleTag_DeployBeaconUpdate"
 				SpecialPowerTemplate="SpecialPowerDeployBeacon"
 				SpecialWeapon="NODShadowSquadBeaconWeapon"
-				StartAbilityRange="0.1" />		
+				UnpackTime="0.0s"
+				PackTime="1.0s" />		
 		</Behaviors>
 		<AI>
 			<AIUpdate

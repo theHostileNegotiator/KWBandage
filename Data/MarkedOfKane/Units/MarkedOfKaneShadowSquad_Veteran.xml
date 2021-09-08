@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" >
-<!--For New Marked Of Kane Shadow Strike Team-->
+<!-- For New Marked Of Kane Shadow Strike Team -->
 	<GameObject
 		id="MarkedOfKaneShadowSquad_Veteran"
+		inheritFrom="MarkedOfKaneShadowSquad"
 		SelectPortrait="Portrait_NODShadow"
 		ButtonImage="Portrait_NODShadow"
 		Side="MarkedOfKane"
@@ -293,10 +294,57 @@
 				PackTime="0s"
 				StartAbilityRange="0.1"
 				ChainedButton="Command_NODShadowSquadDeployBeacon" />
+			<SpecialPowerDispatchSpecialPower
+				id="ModuleTag_Dispatch"
+				SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconDispatch">
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPowerDeployBeacon" />
+				<SpecialPower
+					SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconTrigger" />
+			</SpecialPowerDispatchSpecialPower>
 			<HordeDispatchSpecialPower
 				id="ModuleTag_DeployBeacon"
 				SpecialPowerTemplate="SpecialPowerDeployBeacon" 
 				MaxMembersToDispatchTo="1"/>
+			<SpecialPower
+				id="ModuleTag_ShadowSquadBeaconTrigger"
+				SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconTrigger"
+				UpdateModuleStartsAttack="true"/>
+			<WeaponFireSpecialAbilityUpdate
+				id="ModuleTag_ShadowSquadBeaconTriggerUpdate"
+				SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconTrigger"
+				SpecialWeapon="HordeSpecialRangeAttack"
+				UnpackTime="0.0s"
+				PackTime="0.0s" 
+				BusyForDuration="1.0s" />
+				<!--
+			<SpecialAbilityUpdate
+				id="ModuleTag_ShadowSquadBeaconTriggerUpdate"
+				SpecialPowerTemplate="SpecialPower_ShadowSquadBeaconTrigger"
+				UnpackTime="0s"
+				PackTime="0s"
+				StartAbilityRange="0.1" />
+				-->
+			
+			
+			
+		<!--	<OCLSpecialPower
+				id="ModuleTag_OCL"
+				SpecialPowerTemplate="SpecialPowerDeployBeacon"
+				OCL="OCL_NODShadowSquadBeacon"
+				CreateLocation="CREATE_AT_LOCATION" />
+			<SpecialPower
+				id="ModuleTag_DeployBeacon"
+				SpecialPowerTemplate="SpecialPowerDeployBeacon"
+				UpdateModuleStartsAttack="true" />
+			<WeaponFireSpecialAbilityUpdate
+				id="ModuleTag_DeployBeaconUpdate"
+				SpecialPowerTemplate="SpecialPowerDeployBeacon"
+				SpecialWeapon="NODShadowSquadBeaconWeapon"
+				StartAbilityRange="0.1" />
+				
+		-->
+
 			<GrantUpgradeCreate
 				id="ModuleTag_GrantUpgradeCreate" 
 				UpgradeToGrant="Upgrade_NodRedShadowSquadVeterancy"/>

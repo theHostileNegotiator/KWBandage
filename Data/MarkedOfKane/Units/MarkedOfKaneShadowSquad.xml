@@ -1,14 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<Tags></Tags>
-	<Includes>
-	</Includes>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" >
+<!-- Refer to Nod Shadow Squad -->
 	<GameObject
-		id="NODShadowSquad_Veteran"
+		id="MarkedOfKaneShadowSquad"
 		inheritFrom="NODShadowSquad"
 		SelectPortrait="Portrait_NODShadow"
 		ButtonImage="Portrait_NODShadow"
-		Side="NOD"
+		Side="MarkedOfKane"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="800"
@@ -23,16 +21,14 @@
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
 		WeaponCategory="GUN"
-		EditorName="NODShadowSquad_Veteran"
-		Description="Desc:NODShadow"
-		TypeDescription="Type:NODShadow"
-		UnitTypeIcon="ShadowIcon"
-		RadarPriority="NOT_ON_RADAR">
-		<EquivalentTo>NODShadowSquad</EquivalentTo>
-		<DisplayName
-			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODShadow</DisplayName>
+		EditorName="MarkedOfKaneShadowSquad"
+		RadarPriority="NOT_ON_RADAR"
+		Description="Desc:MarkedOfKaneShadow"
+		TypeDescription="Type:MarkedOfKaneShadow"
+		UnitTypeIcon="ShadowIcon">
+		<DisplayName>Name:NODShadow</DisplayName>
 		<GameDependency>
-			<RequiredObject>NODSecretShrine</RequiredObject>
+			<RequiredObject>MarkedOfKaneSecretShrine</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="NoArmor" />
@@ -73,6 +69,7 @@
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
 				id="DefaultAttributeModifierPoolUpdate"/>
+
 			<AttributeModifierUpgrade
 				id="ModuleTag_AttributeModifierUpgradeMUCSpeed"
 				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
@@ -90,7 +87,8 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic" />
+				StanceTemplate="Generic"
+				/>
 			<EmotionTrackerUpdate
 				id="Module_ETU">
 				<TauntAndPointExcluded
@@ -153,13 +151,13 @@
 					Include="INFANTRY" />
 				<DieMuxData />
 				<InitialPayload
-					Name="NODShadow"
+					Name="MarkedOfKaneShadow"
 					Count="4" />
 				<MeleeBehavior
 					Type="AMOEBA" />
 				<RankInfo
 					RankID="1"
-					UnitType="NODShadow">
+					UnitType="MarkedOfKaneShadow">
 					<Position
 						X="10"
 						Y="-10" />
@@ -169,7 +167,7 @@
 				</RankInfo>
 				<RankInfo
 					RankID="2"
-					UnitType="NODShadow">
+					UnitType="MarkedOfKaneShadow">
 					<Position
 						X="-10"
 						Y="-10" />
@@ -179,6 +177,10 @@
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
+				<OnDeathBehavior
+					RequiredStatus="PARACHUTING">
+					<OCL>OCL_RedemptionSpawn</OCL>
+				</OnDeathBehavior>				
 			</HordeContain>
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
@@ -342,22 +344,6 @@
 				
 		-->
 
-			<GrantUpgradeCreate
-				id="ModuleTag_GrantUpgradeCreate" 
-				UpgradeToGrant="Upgrade_NodRedShadowSquadVeterancy" />
-			<LevelUpUpgrade
-				id="ModuleTag_LevelUpUpgrade"
-				LevelCap="4"
-				DoFlash="false"
-				LevelsToGain="1">
-				<TriggeredBy>Upgrade_NodRedShadowSquadVeterancy</TriggeredBy>
-			</LevelUpUpgrade>
-			<!-- These guys are created flying, so we give them the status that would otherwise
-				be given to them by the SwitchLocomotorSAU -->
-			<StatusBitsUpgrade
-				StatusToSet="NO_ATTACK">
-				<TriggeredBy>Upgrade_NodRedShadowSquadVeterancy</TriggeredBy>
-			</StatusBitsUpgrade>
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
@@ -390,14 +376,6 @@
 			EvaEventBuildOnHold="BuildOnHold"
 			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventPromotedOwner="UnitPromoted" />
-		<!--
-		<AudioArrayVoice>
-			<NamedEntry Sound="NOD_Shadow_VoiceMoveGliderMS" Name="InitiateGliderLiftOff" />
-			<NamedEntry Sound="NOD_Shadow_VoiceMoveGliderMS" Name="InitiateGliderLiftOffTrigger" />
-			<NamedEntry Sound="NOD_Shadow_VoiceMoveGliderMS" Name="InitiateGliderLiftOffDispatch" />
-		</AudioArrayVoice>
--->
-
 		<VisionInfo
 			VisionRange="350"
 			ShroudClearingRange="400"

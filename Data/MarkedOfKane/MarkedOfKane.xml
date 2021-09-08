@@ -17,6 +17,7 @@
 		<Include type="all" source="Units/MarkedOfKaneSaboteur.xml" />
 		<Include type="all" source="Units/MarkedOfKaneScorpionBuggy.xml" />
 		<Include type="all" source="Units/MarkedOfKaneShadow.xml" />
+		<Include type="all" source="Units/MarkedOfKaneShadowSquad.xml" />
 		<Include type="all" source="Units/MarkedOfKaneShadowSquad_Veteran.xml" />
 		<Include type="all" source="Units/MarkedOfKaneStealthTank.xml" />
 		<Include type="all" source="Units/MarkedOfKaneTiberiumTrooper.xml" />
