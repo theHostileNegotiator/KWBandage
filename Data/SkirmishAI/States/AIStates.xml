@@ -422,7 +422,37 @@
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
-  
+
+  <AIStrategicStateDefinition
+		id="MarkedOfKaneAntiGarrison"
+		UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <ConstantHeuristic Weight="1.0"/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+    <Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits UnitName="MarkedOfKaneTibTrooperSquad"/>
+        <CreateUnits UnitName="MarkedOfKaneTibTrooperSquad"/>
+      </TeamTemplate>
+    </Tactic>
+  </AIStrategicStateDefinition>
+
+  <AIStrategicStateDefinition
+  id="MarkedOfKaneAntiGarrison_EASY"
+  UnitUpgradeMultiplier="0.0">
+    <Heuristic>
+      <LateGameHeuristic/>
+    </Heuristic>
+    <TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+    <Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits UnitName="MarkedOfKaneTibTrooperSquad"/>
+        <CreateUnits UnitName="MarkedOfKaneTibTrooperSquad"/>
+      </TeamTemplate>
+    </Tactic>
+  </AIStrategicStateDefinition>
+
 <!--Start: AI changes TW(1.05)-->
   <AIStrategicStateDefinition
 		id="Reaper17AntiGarrison"
