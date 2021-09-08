@@ -49665,24 +49665,18 @@
     <StringAndHash Hash="273105336" Text="GUVEHICLEF_SKN.UGRAIL_BARREL01" />
     <StringAndHash Hash="3259015230" Text="GUVEHICLEFADAR.UGRAILACCELERATOR_BARREL01" />
     <StringAndHash Hash="2683293473" Text="GUVEHICLEFADAR.UGRAIL_BARREL01" />
+    <StringAndHash Hash="2471431370" Text="NBDHUB.TCMHUB_UPGRADE" />
+    <StringAndHash Hash="1901684327" Text="NBDHUB_ASN.TCMHUB_UPGRADE" />
+    <StringAndHash Hash="4196859052" Text="NBDHUB_D2SN.TCMHUB_UPGRADE" />
     <StringAndHash Hash="3973860925" Text="NBDHUB_QL_D2_SKN.NEWSKIN_LASERCANNON" />
     <StringAndHash Hash="832741755" Text="NBDHUB_QLBLD_SKN.NEWSKIN_LASERCANNON" />
-    <StringAndHash Hash="595504024" Text="NBDHUB_QLBLD_SKN.NEWSKIN_HUB" />
-    <StringAndHash Hash="2148736158" Text="NBDHUB_QM_D2_SKN.TCMHUB_UPGRADE" />
     <StringAndHash Hash="3997064728" Text="NBDHUB_QM_D2_SKN.HOSE" />
-    <StringAndHash Hash="586894088" Text="NBDHUB_QM_D2_SKN.OBBOX12" />
     <StringAndHash Hash="944168818" Text="NBDHUB_QM_D2_SKN.TIBCOREMISSILE" />
-    <StringAndHash Hash="1434882920" Text="NBDHUB_QM_D2_SKN.OBBOX11" />
     <StringAndHash Hash="3696037343" Text="NBDHUB_QM_D2_SKN.NEWSKIN_SAM" />
     <StringAndHash Hash="1310477157" Text="NBDHUB_QMBLD_SKN.TIBCOREMISSILE" />
     <StringAndHash Hash="2171627732" Text="NBDHUB_QMBLD_SKN.HOSE" />
-    <StringAndHash Hash="2505504665" Text="NBDHUB_QMBLD_SKN.OBBOX12" />
-    <StringAndHash Hash="769797578" Text="NBDHUB_QMBLD_SKN.OBBOX11" />
     <StringAndHash Hash="4172192105" Text="NBDHUB_QMBLD_SKN.NEWSKIN_SAM" />
-    <StringAndHash Hash="14873363" Text="NBDHUB_QMBLD_SKN.TCMHUB_UPGRADE" />
-    <StringAndHash Hash="1415627472" Text="NBDHUB_QMBLD_SKN.NEWSKIN_HUB" />
     <StringAndHash Hash="1752216250" Text="NBDHUB_QS_D2_SKN.NEWSKIN_SHREDDER" />
-    <StringAndHash Hash="2058574887" Text="NBDHUB_QSBLD_SKN.NEWSKIN_HUB" />
     <StringAndHash Hash="4075125353" Text="NBDHUB_QSBLD_SKN.NEWSKIN_SHREDDER" />
     <StringAndHash Hash="1683248834" Text="NBENGFADOORD2_SKN.OBBOX01" />
     <StringAndHash Hash="3379113793" Text="NBENGFADOORD2_SKN.OBBOX08" />
@@ -49842,117 +49836,58 @@
     <StringAndHash Hash="2564629388" Text="AlienEradicatorLaserWeaponB" />
     <StringAndHash Hash="3114152244" Text="AlienEradicatorLaserWeaponD" />
     <StringAndHash Hash="778932405" Text="AlienEradicatorLaserWeaponF" />
-    <StringAndHash Hash="3222161903" Text="NBDHUB_QL_SKL" />
-    <StringAndHash Hash="2817396139" Text="NBDHUB_L_SKN.OBBOX06" />
-    <StringAndHash Hash="4269903792" Text="NBDHUB_L_SKN.OBBOX05" />
-    <StringAndHash Hash="3080225027" Text="NBDHUB_L_SKN.OBBOX04" />
-    <StringAndHash Hash="4077761790" Text="NBDHUB_L_SKN.OBBOX03" />
-    <StringAndHash Hash="2008210296" Text="NBDHUB_L_SKN.OBBOX02" />
-    <StringAndHash Hash="3430916920" Text="NBDHUB_L_SKN.OBBOX01" />
-    <StringAndHash Hash="3670585009" Text="NBDHUB_L_SKN.FLASHINGLIGHTS" />
-    <StringAndHash Hash="2156365679" Text="NBDHUB_L_SKN.NBDHUB" />
+    <StringAndHash Hash="2342537911" Text="NBDHUB_UG_ASN.OBBOX06" />
+    <StringAndHash Hash="2375590126" Text="NBDHUB_UG_ASN.OBBOX05" />
+    <StringAndHash Hash="2556659576" Text="NBDHUB_UG_ASN.OBBOX04" />
+    <StringAndHash Hash="2772964942" Text="NBDHUB_UG_ASN.OBBOX03" />
+    <StringAndHash Hash="2759881802" Text="NBDHUB_UG_ASN.OBBOX02" />
+    <StringAndHash Hash="2974808821" Text="NBDHUB_UG_ASN.OBBOX01" />
+    <StringAndHash Hash="1879615329" Text="NBDHUB_UG_ASN.TCMHUB_UPGRADE" />
+    <StringAndHash Hash="249896619" Text="NBDHUB_UG_ASN.NEWSKIN" />
+    <StringAndHash Hash="3552108335" Text="NBDHUB_UG_ASN" />
+    <StringAndHash Hash="1872328898" Text="NBDHUB_UG_D2SN.OBBOX06" />
+    <StringAndHash Hash="3603084622" Text="NBDHUB_UG_D2SN.OBBOX05" />
+    <StringAndHash Hash="2606647961" Text="NBDHUB_UG_D2SN.OBBOX04" />
+    <StringAndHash Hash="1156510483" Text="NBDHUB_UG_D2SN.OBBOX03" />
+    <StringAndHash Hash="571499213" Text="NBDHUB_UG_D2SN.OBBOX02" />
+    <StringAndHash Hash="1480793486" Text="NBDHUB_UG_D2SN.OBBOX01" />
+    <StringAndHash Hash="1424069094" Text="NBDHUB_UG_D2SN.TCMHUB_UPGRADE" />
+    <StringAndHash Hash="1389650098" Text="NBDHUB_UG_D2SN.NEWSKIN" />
+    <StringAndHash Hash="29235672" Text="NBDHUB_UG_D2SN" />
+    <StringAndHash Hash="3868466263" Text="NBDHUB_UG" />
+    <StringAndHash Hash="503985386" Text="NBDHUB_UG.OBBOX06" />
+    <StringAndHash Hash="501086500" Text="NBDHUB_UG.OBBOX05" />
+    <StringAndHash Hash="752034178" Text="NBDHUB_UG.OBBOX04" />
+    <StringAndHash Hash="683707688" Text="NBDHUB_UG.OBBOX03" />
+    <StringAndHash Hash="928693853" Text="NBDHUB_UG.OBBOX02" />
+    <StringAndHash Hash="907221024" Text="NBDHUB_UG.OBBOX01" />
+    <StringAndHash Hash="3720124464" Text="NBDHUB_UG.FLASHINGLIGHTS" />
+    <StringAndHash Hash="1771212082" Text="NBDHUB_UG.TCMHUB_UPGRADE" />
+    <StringAndHash Hash="1826524907" Text="NBDHUB_UG.NBDHUB" />
     <StringAndHash Hash="3077789019" Text="NBDHUB_L_SKN" />
-    <StringAndHash Hash="901386417" Text="NBDHUB_QL_SKN.OBBOX09" />
-    <StringAndHash Hash="488234696" Text="NBDHUB_QL_SKN.OBBOX08" />
-    <StringAndHash Hash="942431739" Text="NBDHUB_QL_SKN.OBBOX07" />
-    <StringAndHash Hash="960245238" Text="NBDHUB_QL_SKN.OBBOX06" />
-    <StringAndHash Hash="745128408" Text="NBDHUB_QL_SKN.OBBOX05" />
+    <StringAndHash Hash="3222161903" Text="NBDHUB_QL_SKL" />
     <StringAndHash Hash="591081873" Text="NBDHUB_QL_SKN.OBBOX04" />
     <StringAndHash Hash="1022550553" Text="NBDHUB_QL_SKN.OBBOX03" />
     <StringAndHash Hash="823091622" Text="NBDHUB_QL_SKN.OBBOX02" />
     <StringAndHash Hash="617753513" Text="NBDHUB_QL_SKN.OBBOX01" />
     <StringAndHash Hash="3759905631" Text="NBDHUB_QL_SKN.NEWSKIN_LASERCANNON" />
-    <StringAndHash Hash="1369289144" Text="NBDHUB_QL_SKN.FLASHINGLIGHTS" />
-    <StringAndHash Hash="2764764559" Text="NBDHUB_QL_SKN.NEWSKIN_HUB" />
     <StringAndHash Hash="128642227" Text="NBDHUB_QL_SKN" />
-    <StringAndHash Hash="1824824939" Text="NBDHUB_LBLD_SKN.OBBOX05" />
-    <StringAndHash Hash="2402955239" Text="NBDHUB_LBLD_SKN.OBBOX06" />
-    <StringAndHash Hash="50126481" Text="NBDHUB_LBLD_SKN.OBBOX04" />
-    <StringAndHash Hash="2515378824" Text="NBDHUB_LBLD_SKN.OBBOX03" />
-    <StringAndHash Hash="1436239677" Text="NBDHUB_LBLD_SKN.OBBOX02" />
-    <StringAndHash Hash="3944195058" Text="NBDHUB_LBLD_SKN.OBBOX01" />
-    <StringAndHash Hash="1989740461" Text="NBDHUB_LBLD_SKN.NBDHUB" />
-    <StringAndHash Hash="42153964" Text="NBDHUB_LBLD_SKN" />
-    <StringAndHash Hash="2124036658" Text="NBDHUB_L_D2_SKN.OBBOX05" />
-    <StringAndHash Hash="4039529558" Text="NBDHUB_L_D2_SKN.OBBOX06" />
-    <StringAndHash Hash="2157883595" Text="NBDHUB_L_D2_SKN.OBBOX04" />
-    <StringAndHash Hash="593787965" Text="NBDHUB_L_D2_SKN.OBBOX03" />
-    <StringAndHash Hash="2533286281" Text="NBDHUB_L_D2_SKN.OBBOX02" />
-    <StringAndHash Hash="3860724324" Text="NBDHUB_L_D2_SKN.OBBOX01" />
-    <StringAndHash Hash="323220318" Text="NBDHUB_L_D2_SKN.NBDHUB" />
-    <StringAndHash Hash="688203337" Text="NBDHUB_L_D2_SKN" />
-    <StringAndHash Hash="2978020918" Text="NBDHUB_QL_D2_AAN" />
     <StringAndHash Hash="4193898829" Text="NBDHUB_QM_SKL" />
-    <StringAndHash Hash="285263133" Text="NBDHUB_M_SKN.FLASHINGLIGHTS" />
-    <StringAndHash Hash="1196399794" Text="NBDHUB_M_SKN.OBBOX06" />
-    <StringAndHash Hash="928873267" Text="NBDHUB_M_SKN.OBBOX05" />
-    <StringAndHash Hash="3957624981" Text="NBDHUB_M_SKN.OBBOX04" />
-    <StringAndHash Hash="3485832794" Text="NBDHUB_M_SKN.OBBOX03" />
-    <StringAndHash Hash="3136522395" Text="NBDHUB_M_SKN.OBBOX02" />
-    <StringAndHash Hash="1645931390" Text="NBDHUB_M_SKN.OBBOX01" />
-    <StringAndHash Hash="2777159641" Text="NBDHUB_M_SKN.TCMHUB_UPGRADE" />
-    <StringAndHash Hash="1534762176" Text="NBDHUB_M_SKN.NBDHUB" />
     <StringAndHash Hash="3453424391" Text="NBDHUB_M_SKN" />
-    <StringAndHash Hash="922664794" Text="NBDHUB_QM_SKN.TIBCOREMISSILE" />
     <StringAndHash Hash="1509445380" Text="NBDHUB_QM_SKN.HOSE" />
-    <StringAndHash Hash="3007576203" Text="NBDHUB_QM_SKN.OBBOX12" />
-    <StringAndHash Hash="3762278064" Text="NBDHUB_QM_SKN.OBBOX10" />
-    <StringAndHash Hash="1453145783" Text="NBDHUB_QM_SKN.FLASHINGLIGHTS" />
-    <StringAndHash Hash="4272777203" Text="NBDHUB_QM_SKN.OBBOX11" />
-    <StringAndHash Hash="2433578056" Text="NBDHUB_QM_SKN.OBBOX09" />
-    <StringAndHash Hash="2180328272" Text="NBDHUB_QM_SKN.OBBOX08" />
-    <StringAndHash Hash="2801809924" Text="NBDHUB_QM_SKN.NEWSKIN_SAM" />
-    <StringAndHash Hash="3312561720" Text="NBDHUB_QM_SKN.OBBOX07" />
-    <StringAndHash Hash="4289411888" Text="NBDHUB_QM_SKN.OBBOX06" />
     <StringAndHash Hash="2235825838" Text="NBDHUB_QM_SKN.OBBOX05" />
     <StringAndHash Hash="1617623742" Text="NBDHUB_QM_SKN.OBBOX04" />
+    <StringAndHash Hash="922664794" Text="NBDHUB_QM_SKN.TIBCOREMISSILE" />
     <StringAndHash Hash="2253566668" Text="NBDHUB_QM_SKN.OBBOX03" />
     <StringAndHash Hash="2205446958" Text="NBDHUB_QM_SKN.OBBOX02" />
+    <StringAndHash Hash="2801809924" Text="NBDHUB_QM_SKN.NEWSKIN_SAM" />
     <StringAndHash Hash="2277719734" Text="NBDHUB_QM_SKN.OBBOX01" />
-    <StringAndHash Hash="3154926209" Text="NBDHUB_QM_SKN.TCMHUB_UPGRADE" />
-    <StringAndHash Hash="2445886025" Text="NBDHUB_QM_SKN.NEWSKIN_HUB" />
     <StringAndHash Hash="3873613409" Text="NBDHUB_QM_SKN" />
-    <StringAndHash Hash="1233566477" Text="NBDHUB_MBLD_SKN.OBBOX06" />
-    <StringAndHash Hash="900827455" Text="NBDHUB_MBLD_SKN.OBBOX05" />
-    <StringAndHash Hash="3783942786" Text="NBDHUB_MBLD_SKN.OBBOX04" />
-    <StringAndHash Hash="2501927766" Text="NBDHUB_MBLD_SKN.OBBOX03" />
-    <StringAndHash Hash="2588497381" Text="NBDHUB_MBLD_SKN.OBBOX02" />
-    <StringAndHash Hash="1596679583" Text="NBDHUB_MBLD_SKN.OBBOX01" />
-    <StringAndHash Hash="2649849160" Text="NBDHUB_MBLD_SKN.TCMHUB_UPGRADE" />
-    <StringAndHash Hash="2609131878" Text="NBDHUB_MBLD_SKN.NBDHUB" />
-    <StringAndHash Hash="4080151374" Text="NBDHUB_MBLD_SKN" />
-    <StringAndHash Hash="2050181229" Text="NBDHUB_M_D2_SKN.TCMHUB_UPGRADE" />
-    <StringAndHash Hash="2236595872" Text="NBDHUB_M_D2_SKN.OBBOX06" />
-    <StringAndHash Hash="3446932704" Text="NBDHUB_M_D2_SKN.OBBOX05" />
-    <StringAndHash Hash="2646723732" Text="NBDHUB_M_D2_SKN.OBBOX04" />
-    <StringAndHash Hash="4294137344" Text="NBDHUB_M_D2_SKN.OBBOX03" />
-    <StringAndHash Hash="2892243685" Text="NBDHUB_M_D2_SKN.OBBOX02" />
-    <StringAndHash Hash="2067054452" Text="NBDHUB_M_D2_SKN.OBBOX01" />
-    <StringAndHash Hash="3689993239" Text="NBDHUB_M_D2_SKN.NBDHUB" />
-    <StringAndHash Hash="768078360" Text="NBDHUB_M_D2_SKN" />
     <StringAndHash Hash="1366744125" Text="SpecialPower_BlackHandConfessorCabalGrenadeDispatch" />
     <StringAndHash Hash="669361878" Text="NBDHUB_QS_SKL" />
-    <StringAndHash Hash="2895996296" Text="NBDHUB_S_SKN.FLASHINGLIGHTS" />
-    <StringAndHash Hash="779989269" Text="NBDHUB_S_SKN.OBBOX06" />
-    <StringAndHash Hash="4106141097" Text="NBDHUB_S_SKN.OBBOX05" />
-    <StringAndHash Hash="852031984" Text="NBDHUB_S_SKN.OBBOX04" />
-    <StringAndHash Hash="2527669144" Text="NBDHUB_S_SKN.OBBOX03" />
-    <StringAndHash Hash="2229582312" Text="NBDHUB_S_SKN.OBBOX02" />
-    <StringAndHash Hash="3911559949" Text="NBDHUB_S_SKN.OBBOX01" />
-    <StringAndHash Hash="2729807256" Text="NBDHUB_S_SKN.NBDHUB" />
     <StringAndHash Hash="750366105" Text="NBDHUB_S_SKN" />
-    <StringAndHash Hash="1438834343" Text="NBDHUB_QS_SKN.FLASHINGLIGHTS" />
     <StringAndHash Hash="1094449737" Text="NBDHUB_QS_SKN.MUZZLEFLASH01" />
     <StringAndHash Hash="2748462363" Text="NBDHUB_QS_SKN.MUZZLEFLASH02" />
-    <StringAndHash Hash="33517401" Text="NBDHUB_QS_SKN.OBBOX13" />
-    <StringAndHash Hash="220445856" Text="NBDHUB_QS_SKN.OBBOX12" />
-    <StringAndHash Hash="992512269" Text="NBDHUB_QS_SKN.OBBOX11" />
-    <StringAndHash Hash="871630499" Text="NBDHUB_QS_SKN.OBBOX10" />
-    <StringAndHash Hash="1665100852" Text="NBDHUB_QS_SKN.OBBOX09" />
-    <StringAndHash Hash="1745936234" Text="NBDHUB_QS_SKN.OBBOX08" />
-    <StringAndHash Hash="244686940" Text="NBDHUB_QS_SKN.OBBOX07" />
-    <StringAndHash Hash="189260944" Text="NBDHUB_QS_SKN.OBBOX06" />
-    <StringAndHash Hash="1508184139" Text="NBDHUB_QS_SKN.NEWSKIN_HUB" />
     <StringAndHash Hash="38085808" Text="NBDHUB_QS_SKN.OBBOX05" />
     <StringAndHash Hash="12440226" Text="NBDHUB_QS_SKN.OBBOX04" />
     <StringAndHash Hash="2133177154" Text="NBDHUB_QS_SKN.OBBOX03" />
@@ -49960,23 +49895,6 @@
     <StringAndHash Hash="1139922326" Text="NBDHUB_QS_SKN.OBBOX01" />
     <StringAndHash Hash="1225122827" Text="NBDHUB_QS_SKN.NEWSKIN_SHREDDER" />
     <StringAndHash Hash="801187700" Text="NBDHUB_QS_SKN" />
-    <StringAndHash Hash="3129864558" Text="NBDHUB_SBLD_SKN.OBBOX06" />
-    <StringAndHash Hash="541221844" Text="NBDHUB_SBLD_SKN.OBBOX05" />
-    <StringAndHash Hash="4015648241" Text="NBDHUB_SBLD_SKN.OBBOX04" />
-    <StringAndHash Hash="3071469019" Text="NBDHUB_SBLD_SKN.OBBOX03" />
-    <StringAndHash Hash="2568984680" Text="NBDHUB_SBLD_SKN.OBBOX02" />
-    <StringAndHash Hash="1406556430" Text="NBDHUB_SBLD_SKN.OBBOX01" />
-    <StringAndHash Hash="1993304276" Text="NBDHUB_SBLD_SKN.NBDHUB" />
-    <StringAndHash Hash="4664269" Text="NBDHUB_SBLD_SKN" />
-    <StringAndHash Hash="566739919" Text="NBDHUB_S_D2_SKN.OBBOX06" />
-    <StringAndHash Hash="4175585253" Text="NBDHUB_S_D2_SKN.OBBOX05" />
-    <StringAndHash Hash="4011457638" Text="NBDHUB_S_D2_SKN.OBBOX04" />
-    <StringAndHash Hash="263252995" Text="NBDHUB_S_D2_SKN.OBBOX03" />
-    <StringAndHash Hash="1338959759" Text="NBDHUB_S_D2_SKN.OBBOX02" />
-    <StringAndHash Hash="1782462858" Text="NBDHUB_S_D2_SKN.OBBOX01" />
-    <StringAndHash Hash="2986881454" Text="NBDHUB_S_D2_SKN.NBDHUB" />
-    <StringAndHash Hash="2439912475" Text="NBDHUB_S_D2_SKN" />
-    <StringAndHash Hash="2381963463" Text="NBDHUB_QS_D2_AAN" />
     <StringAndHash Hash="303853143" Text="OCL_NODVeinDetonationTrigger" />
     <StringAndHash Hash="812420205" Text="SpecialPowerMarkedOfKaneRedShadowStrikeTeam" />
     <StringAndHash Hash="3198956302" Text="OCL_SpecialPowerMarkedOfKaneRedShadowStrikeTeam" />
@@ -50016,6 +49934,8 @@
     <StringAndHash Hash="3848282125" Text="EMPBlastDispatch" />
     <StringAndHash Hash="4253634795" Text="EMPBlastTrigger" />
     <StringAndHash Hash="1093165578" Text="HC_NUSabtr_UGCL" />
+    <StringAndHash Hash="2816747417" Text="SpecialPower_ShadowSquadBeaconDispatch" />
+    <StringAndHash Hash="2104723923" Text="SpecialPower_ShadowSquadBeaconTrigger" />
     <StringAndHash Hash="3033980027" Text="UG_RD_D" />
     <StringAndHash Hash="2061500615" Text="FXSILENTONE_FP" />
     <StringAndHash Hash="2463368237" Text="AURPRTRIPOD_FP" />
@@ -50030,6 +49950,7 @@
     <StringAndHash Hash="406262572" Text="OCL_Traveler59Buzzers" />
     <StringAndHash Hash="3771760735" Text="GUHamHead_UGCA_NRM" />
     <StringAndHash Hash="986107844" Text="GUHamHead_UGCA_SPM" />
+    <StringAndHash Hash="1330968823" Text="GUHamHeadD_UGCA" />
     <StringAndHash Hash="2056603612" Text="GUZocomHarvD" />
     <StringAndHash Hash="1871984738" Text="GUZOCOMHARVR_SKN.NEWSKIN" />
     <StringAndHash Hash="3786204158" Text="GUZOCOMHARVR_SKN.TREADSSTOP" />
@@ -50079,6 +50000,7 @@
     <StringAndHash Hash="3587742064" Text="AURPRTRIPODH_SKN.REAPER" />
     <StringAndHash Hash="984620579" Text="AURPRTRIPODH_SKN" />
     <StringAndHash Hash="601912106" Text="GUHAMHEAD_SKN.FXWEAPONL_02" />
+    <StringAndHash Hash="2381963463" Text="NBDHUB_QS_D2_AAN" />
     <StringAndHash Hash="2050031954" Text="NODBunkerTruckStructurePrevention" />
     <StringAndHash Hash="3531412847" Text="VeinDetonationCreationWeapon" />
     <StringAndHash Hash="722064373" Text="NODVeinDetonationTrigger" />
