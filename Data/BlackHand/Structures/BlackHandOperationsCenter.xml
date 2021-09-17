@@ -184,6 +184,24 @@
 					<Model
 						Name="NBOpCenterX_SKN" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NBOpCenterX_SKN" />
+					<Texture
+						Original="NBOpCenter"
+						New="NBOpCenter_D" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="NBOpCenterX_SKN" />
+					<Texture
+						Original="NBOpCenter"
+						New="NBOpCenter_D" />
+				</ModelConditionState>
 				<!-- BUILDING -->
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -288,6 +306,62 @@
 						FollowBone="true" />
 				</AnimationState>
 			</ScriptedModelDraw>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw_Dish"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="NBOpCenter_Dish" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NBOpCenter_Dish" />
+					<Texture
+						Original="NBOpCenter"
+						New="NBOpCenter_D" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="NBOpCenter_Dish" />
+					<Texture
+						Original="NBOpCenter"
+						New="NBOpCenter_D" />
+				</ModelConditionState>
+				<!-- BUILDING -->
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Model
+						Name="NBEmpty_ABLD" />
+				</ModelConditionState>
+				<!-- ANIMATIONS -->
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT"
+					Flags="DO_NOT_PLAY_WHEN_UNPOWERED">
+					<Animation
+						AnimationName="NBOpCenter_Dish"
+						AnimationMode="LOOP"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="NBEmpty_ABLD"
+						AnimationMode="ONCE" />
+				</AnimationState>
+			</ScriptedModelDraw>		
 		</Draws>	
 		<Behaviors>
 			<AttributeModifierPoolUpdate id="DefaultAttributeModifierPoolUpdate"/>

@@ -937,6 +937,11 @@
 	* Added Disruption Pod Mesh to Stealth Model
 3. Bombs are missing an extra sound effect when impacted
 	* Added DetonateCallsKill="true" to trigger the OnDeath effects
+#### Operations Center
+1. Parts of the model is clean in Damaged States
+	* Added texture swaps for damaged states in ModuleTag_Draw_Missle
+2. Dish does not spin when Radar Jammer special power is ready
+	* Separated the Dish from the Missile Model and is used in a different draw with it's own animation
 #### Airtower
 1. When selected to be deployed, the upgrade subobjects will appear when replacing cursor. This does not happen with other structures
 	* Hide subobjects in animation state
