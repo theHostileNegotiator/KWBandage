@@ -340,7 +340,16 @@
 					AnimState="USER_4"></CustomAnimAndDuration>
 				<TriggeredBy>Upgrade_ZoneTrooperAutoInjectors</TriggeredBy>
 			</SubObjectsUpgrade>
-
+			<ArmorUpgrade
+				id="ModuleTag_SonicRepulsionFieldUpgrade"
+				ArmorSetFlag="PLAYER_UPGRADE">
+				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
+			</ArmorUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_GDISonicRepulsionFieldStatusUpgrade"
+				StatusToSet="RIDER1">
+				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
+			</StatusBitsUpgrade>  
 			<RepairUpdate
 				id="ModuleTag_RepairUpdate">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>

@@ -571,8 +571,7 @@
 			</ModelConditionUpgrade>
 			<ArmorUpgrade
 				id="ModuleTag_SonicRepulsionFieldUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE" >
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</ArmorUpgrade>
 			<StatusBitsUpgrade

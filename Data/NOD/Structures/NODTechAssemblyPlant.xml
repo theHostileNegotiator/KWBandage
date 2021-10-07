@@ -241,8 +241,7 @@
 			</ModelConditionUpgrade>
 			<ArmorUpgrade
 				id="ModuleTag_NodLaserFencingArmorUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE" >
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
 			</ArmorUpgrade>	
 			<StatusBitsUpgrade

@@ -273,8 +273,7 @@
 			</ModelConditionUpgrade>
 			<ArmorUpgrade
 				id="ModuleTag_NodLaserFencingArmorUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE" >
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
 			</ArmorUpgrade>	
 			<StatusBitsUpgrade
@@ -1017,8 +1016,7 @@
 				ReadyCondition="SPECIALPOWER1_READY" />		
 			<ArmorUpgrade
 				id="ModuleTag_NodLaserFencingArmorUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE" >
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
 			</ArmorUpgrade>	
 			<StatusBitsUpgrade
@@ -1572,9 +1570,7 @@
 			
 			<ArmorUpgrade
 				id="ModuleTag_NodLaserFencingArmorUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE"
-				>
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
 			</ArmorUpgrade>	
 			<StatusBitsUpgrade

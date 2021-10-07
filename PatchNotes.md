@@ -158,6 +158,8 @@
 	* Changed commands to be referenced by the appropriate structures
 3. Powerstores has the ability to deal Cloaking Field damage with the ability and also listed the wrong upgrade.
 	* Fixed upgrade reference and removed weapon associations
+4. Armor bonus is still applied after upgrade is removed.
+	* Changed ArmorUpgrade module attribute "Permanent" to false
 #### Tiberium
 1. Tiberium looks dull with some GPUs and Drivers
 	* Swapped "EnvMap" texture from FXAbaloneEnv to ChromicReflectionCube as the shader expects a cube map, not 2D textures. For all intents and purposes ChromicReflectionCube is the cube version of FXAbalone

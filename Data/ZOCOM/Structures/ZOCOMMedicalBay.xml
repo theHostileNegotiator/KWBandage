@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Composite Armor SubObject Removed-->
-<!--Changed upgrades to Zonetrooper instead of Zoneraider to share upgrade between factions-->
+<!-- Composite Armor SubObject Removed -->
+<!-- Changed upgrades to Zonetrooper instead of Zoneraider to share upgrade between factions -->
 	<GameObject
 		id="ZOCOMMedicalBay"
 		SelectPortrait="Portrait_GDIArmory"
@@ -309,9 +309,7 @@
 
 			<ArmorUpgrade
 				id="ModuleTag_SonicRepulsionFieldUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE"
-				>
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</ArmorUpgrade>
 			<StatusBitsUpgrade

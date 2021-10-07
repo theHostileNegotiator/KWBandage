@@ -1893,8 +1893,7 @@
 			</ModelConditionUpgrade>
 			<ArmorUpgrade
 				id="ModuleTag_SonicRepulsionFieldUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE" >
+				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</ArmorUpgrade>
 			<StatusBitsUpgrade
@@ -5385,13 +5384,12 @@
 				SpecialPowerTemplate="SpecialPower_TargetedRepairVehicle" />
 			<StructureUnpackUpdate
 				UnpackTime="5.0s" />
-			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
+			<ArmorUpgrade
 				id="ModuleTag_NodLaserFencingArmorUpgrade"
-				Permanent="true"
 				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
 			</ArmorUpgrade>
-			<StatusBitsUpgrade xmlns="uri:ea.com:eala:asset"
+			<StatusBitsUpgrade
 				id="ModuleTag_NodLaserFencingStatusUpgrade"
 				StatusToSet="RIDER1">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>

@@ -463,13 +463,12 @@
 				SpecialPowerTemplate="SpecialPower_TargetedRepairVehicle" />
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
+			<ArmorUpgrade
 				id="ModuleTag_NodLaserFencingArmorUpgrade"
-				Permanent="true"
 				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
 			</ArmorUpgrade>
-			<StatusBitsUpgrade xmlns="uri:ea.com:eala:asset"
+			<StatusBitsUpgrade
 				id="ModuleTag_NodLaserFencingStatusUpgrade"
 				StatusToSet="RIDER1">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
