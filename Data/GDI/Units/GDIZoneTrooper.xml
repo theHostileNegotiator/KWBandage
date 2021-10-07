@@ -3,6 +3,47 @@
 <!-- Scanner Packs now affects Weapon Range -->
 <!-- Changed Build Cost -->
 <!-- Added Status Upgrade RIDER2 for missing factions for Railgun Accelerator -->
+<!-- Fixed Skeleton Hierarchy, Scanner Packs will no longer be required to also show Power Pack subobject -->
+<!-- Utilised unused mesh for Jumpjet effect -->
+	<Includes>
+		<Include type="all" source="ART:GUZnTrpr_SKN.w3x" />
+		<Include type="all" source="ART:GUZNTRPR_2BRD.w3x" />
+		<Include type="all" source="ART:GUZNTRPR_2BRDB.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_ATNA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_ATNB.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_ATNC.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_CHRA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_CHRC.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_DIEA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_DIEB.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_DIEC.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_DIED.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_FIRC.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_IDLA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_IDLB.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_IDLC.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_IDLD.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_IDLE.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_BRDA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_BRDB.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_BRDC.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_BRDD.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_BRDE.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_BRDF.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_BRDG.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_JET1.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_JET2.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_JET3.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_JET4.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_JET5.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_GTPA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_LNDA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_FLYA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_RUNA.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_RUNB.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_RUNC.w3x" />
+		<Include type="all" source="ART:GUZnTrpr_RUNA.w3x" />
+	</Includes>
 	<GameObject
 		id="GDIZoneTrooper"
 		SelectPortrait="Portrait_GDIZoneTrooper"
@@ -470,6 +511,65 @@
 						Name="" />
 				</ModelConditionState>
 			</SpotlightDraw>
+			<ScriptedModelDraw		
+				id="ModuleTag_DrawJumpJetFX">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT"
+					StateName="STATE_Idle">
+					<Script>
+						CurDrawableHideSubObject("UGJump")
+						Prev = CurDrawablePrevAnimationState()
+						if Prev == "State_AboutToLand" then CurDrawableSetTransitionAnimState( "TRANS_AboutToHitGround_To_Idle" ) end						
+					</Script>
+				</AnimationState>
+				<!-- AIRBORNE - Jumpjet ability -->
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="SPECIAL_WEAPON_ONE UNPACKING"
+					StateName="State_JumpJetInitiate">
+					<Script>
+						CurDrawableHideSubObject("UGJump")				
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="ABOUT_TO_HIT"
+					StateName="State_AboutToLand">
+					<Script>
+						CurDrawableHideSubObject("UGJump")				
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="SPECIAL_WEAPON_ONE PACKING"
+					StateName="State_JumpJetJumping">
+					<Script>
+						CurDrawableShowSubObject("UGJump")
+						Prev = CurDrawablePrevAnimationState();
+						if Prev == "State_AboutToLand" then CurDrawableSetTransitionAnimState( "TRANS_AboutToHitGround_To_Idle" ) end;
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="THROWN_PROJECTILE">
+					<Script>
+						CurDrawableShowSubObject("UGJump")				
+					</Script>			
+				</AnimationState>
+				<!-- TRANSITIONS -->
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_AboutToHitGround_To_Idle">
+					<Script>
+						CurDrawableHideSubObject("UGJump")				
+					</Script>
+				</AnimationState>
+			</ScriptedModelDraw>	
 			<!--
 			<LaserDraw
 				id="ModuleTag_LaserDraw"

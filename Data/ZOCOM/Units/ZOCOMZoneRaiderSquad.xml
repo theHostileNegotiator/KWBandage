@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Changed upgrades to Zonetrooper instead of Zoneraider to share upgrade between factions-->
+<!-- Changed upgrades to Zonetrooper instead of Zoneraider to share upgrade between factions -->
+<!-- Reduced movement speed to match ZoneTrooper -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -42,7 +43,7 @@
 		<LocomotorSet
 			Locomotor="NormalRangedSquadLocomotor"
 			Condition="NORMAL"
-			Speed="60" />
+			Speed="55" />
 		<SkirmishAIInformation
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>

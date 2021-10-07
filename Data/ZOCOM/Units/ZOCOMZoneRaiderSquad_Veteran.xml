@@ -43,7 +43,7 @@
 		<LocomotorSet
 			Locomotor="NormalRangedSquadLocomotor"
 			Condition="NORMAL"
-			Speed="60" />
+			Speed="55" />
 		<SkirmishAIInformation
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>

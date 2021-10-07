@@ -73,7 +73,7 @@ end
 
 function OnGDIZoneTrooperCreated(self)
 	ObjectHideSubObjectPermanently( self, "UGSCANNER", true )
-	ObjectHideSubObjectPermanently( self, "UGJUMP", true )
+	-- ObjectHideSubObjectPermanently( self, "UGJUMP", true )
 	ObjectHideSubObjectPermanently( self, "UGINJECTOR", true )
 end
 

@@ -457,9 +457,20 @@
 #### Sniper Team
 1. ZOCOM Teams would have GDI Sniper and Spotter instead of their own
 	* ZOCOM will now use ZOCOM Sniper and Spotter in their teams
+#### Zone Trooper
+1. Scanner Packs upgrade is required to show Power Packs subobject
+	* The Hierarchy of the bones regarding Scanner Packs creates this error as it is attached to ZT_SPINE2. Separated Scanner Pack subobject into it's own bone
+2. UGJUMP subobject is unused for Jump Jet ability
+	* Created new draw that controls showing the UGJUMP subobject using animation scripts
 #### Zone Raider
-1. Unit cannot Force Fire against allies
+1. Scanner Packs upgrade is required to show Power Packs subobject
+	* The Hierarchy of the bones regarding Scanner Packs creates this error as it is attached to ZT_SPINE2. Separated Scanner Pack subobject into it's own bone
+2. UGJUMP subobject is unused for Jump Jet ability
+	* Created new draw that controls showing the UGJUMP subobject using animation scripts
+3. Unit cannot Force Fire against allies
 	* Added ALLIES to "Radius Damage Affects" to the weapon launcher. Weapon will not damage allies unless targeted with Forced Fire
+4. Infantry may not be able to catch up to the squad while moving
+	* Reduced squad speed to match the Zone Trooper squad speed
 #### MRT
 1. Leash range of Repair Drone was not changed from KW 1.01 to 1.02, despite specified in change log
 	* Fixed leash range to 100
