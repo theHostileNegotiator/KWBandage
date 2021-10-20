@@ -4,5 +4,8 @@
 		<Include source="art:EXTibCluster.W3X" type="all"/>
 		<Include source="art:EXTibBlueCluster.W3X" type="all"/>
 		<Include source="art:FXTibClusterBlue.W3X" type="all"/>
+		
+		<!-- Here because it's loaded in the static stream due to an error -->
+		<Include type="all" source="ART:NUGarFlag.w3x" />
 	</Includes>
 </AssetDeclaration>

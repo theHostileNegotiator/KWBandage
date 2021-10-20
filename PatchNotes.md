@@ -231,6 +231,9 @@
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
+#### Garrison Flags
+1. Nod Garrison Flags have a weird appearance, weak House Color and reflective
+	* Fixed Specular Map, removed Reflection Channel and fixed House Color Channel
 #### Light Mesh Sorting
 1. Some mesh, mainly flashing lights do not sort properly when in front of other objects.
 	* Increased sort level of Mesh
