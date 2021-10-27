@@ -527,6 +527,10 @@
 						if Prev == "State_AboutToLand" then CurDrawableSetTransitionAnimState( "TRANS_AboutToHitGround_To_Idle" ) end						
 					</Script>
 				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="INSIDE_GARRISON">
+				</AnimationState>
 				<!-- AIRBORNE - Jumpjet ability -->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
