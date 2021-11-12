@@ -5086,6 +5086,34 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- Normalised Zone Trooper range with TW version, use new weapon for Zone Raider due to increased range -->
+	<WeaponTemplate
+		id="ZoneTrooperSquadRangefinder"
+		Name="ZoneTrooperSquadRangefinder"
+		AttackRange="250" 		 
+		LeechRangeWeapon="true"
+		AcceptableAimDelta="45d"
+		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
+		CanFireWhileMoving="true"
+		FinishAttackOnceStarted="false">
+		<FiringDuration
+				MinSeconds="1.0s"
+				MaxSeconds="1.0s" />
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="ZoneRaiderSquadRangefinder"
+		Name="ZoneRaiderSquadRangefinder"
+		AttackRange="260" 		 
+		LeechRangeWeapon="true"
+		AcceptableAimDelta="45d"
+		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
+		CanFireWhileMoving="true"
+		FinishAttackOnceStarted="false">
+		<FiringDuration
+				MinSeconds="1.0s"
+				MaxSeconds="1.0s" />
+	</WeaponTemplate>
+
 <!-- Allow Zone Raiders to force fire allied objects -->
 	<WeaponTemplate
 		id="ZoneRaiderSonicRifle"

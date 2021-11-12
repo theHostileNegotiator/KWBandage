@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Changed upgrades to Zonetrooper instead of Zoneraider to share upgrade between factions -->
 <!-- Reduced movement speed to match ZoneTrooper -->
+<!-- Use new Range Finder -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -128,7 +129,7 @@
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="ZoneTrooperSquadRangefinder" />
+						Template="ZoneRaiderSquadRangefinder" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<StealthDetectorUpdate

@@ -467,6 +467,8 @@
 	* The Hierarchy of the bones regarding Scanner Packs creates this error as it is attached to ZT_SPINE2. Separated Scanner Pack subobject into it's own bone
 2. UGJUMP subobject is unused for Jump Jet ability
 	* Created new draw that controls showing the UGJUMP subobject using animation scripts
+3. Squad Range Finder was increased due to sharing with Zone Raider and that having slightly higher attack range rather than separating the Range Finder weapons
+	* Separate Zone Trooper and Zone Raider Range Finder weapon and reduced the range of the Zone Trooper version to match TW
 #### Zone Raider
 1. Scanner Packs upgrade is required to show Power Packs subobject
 	* The Hierarchy of the bones regarding Scanner Packs creates this error as it is attached to ZT_SPINE2. Separated Scanner Pack subobject into it's own bone

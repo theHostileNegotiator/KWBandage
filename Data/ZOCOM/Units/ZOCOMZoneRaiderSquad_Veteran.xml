@@ -128,7 +128,7 @@
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="ZoneTrooperSquadRangefinder" />
+						Template="ZoneRaiderSquadRangefinder" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<StealthDetectorUpdate
