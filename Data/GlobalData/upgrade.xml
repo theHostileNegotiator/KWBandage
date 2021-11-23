@@ -22,11 +22,11 @@
 	</UpgradeTemplate>
 <!-- Removed Dependency -->
 	<UpgradeTemplate id="Upgrade_ZoneTrooperAutoInjectors"
+		inheritFrom="BasePurchasableUpgrade" 
 		LocalPlayerProductionStartedEvaEvent="None"
 		ResearchCompleteEvaEvent ="UpgradeComplete"
 		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
 		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
-		inheritFrom="BasePurchasableUpgrade" 
 		DisplayName="UpgradeName:ZoneTrooperAutoInjectors"
 		AcquireHint="UpgradePrereq:ZoneTrooperAutoInjectors"
 		TypeDescription="UpgradeType:ZoneTrooperAutoInjectors"
@@ -37,5 +37,21 @@
 		ResearchSound="AudioEvent:GDI_PowerPacks_Upgrade"
 		IconImage="Button_UpgradeAutoInjectors">
 	</UpgradeTemplate>
+<!-- Normalised with Composite Armor -->
+	<UpgradeTemplate id="Upgrade_ZOCOMFieldSuits"
+		inheritFrom="BasePurchasableUpgrade"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		DisplayName="UpgradeName:ZOCOMFieldSuits"
+		AcquireHint="UpgradePrereq:ZOCOMFieldSuits"
+		TypeDescription="UpgradeType:ZOCOMFieldSuits"
+		Description="UpgradeDesc:ZOCOMFieldSuits"
+		Type="PLAYER"
+		BuildCost="1500"
+		BuildTime="45s"
+		ResearchSound="AudioEvent:GDI_Armory_TiberiumFieldSuitsUpgrade"
+		IconImage="Button_Upgrade_FieldSuits" />
 	
 </AssetDeclaration>

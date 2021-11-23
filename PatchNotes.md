@@ -619,7 +619,7 @@
 6. Turrets can have weird behaviors, rotation is based on eachother
 	* Removed Turret Hierarchy Setup so there are no dependencies on rotation and weird behaviors.
 7. Model was not dynamic based on design
-	Added Articulations to the treads
+	* Added Articulations to the treads
 8. Model, Skeleton and Animations needs refinement
 	* Fixed Model, Skeleton and Animations
 9. If unit was Forced Stopped while moving and turning, animation snaps
@@ -741,6 +741,8 @@
 #### Composite Armor and Tiberium Field Suits
 1. When Missile Squad is upgraded, the extra 50% vulnerability from GUN damage is removed
 	* Increased GUN damage vulnerability by 50% for upgrades
+2. Tiberium Field Suits upgrade cost and time were originally based of TW 1.00 Composite Armor stats. In KW 1.02, most upgrades were made cheaper but Composite Armor and Field Suits still don't match
+	* Increased cost and build time to match Composite Armor
 #### Power Pack
 1. GDI and ZOCOM upgrades are not shared, despite same cost and upgrade time
 	* Removed ZOCOM variant and will use GDI instead so upgrade is shared between factions.
