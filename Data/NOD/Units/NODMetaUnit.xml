@@ -17,6 +17,54 @@
 			source="ART:NURedeemer_SKN.W3X" />
 		<Include
 			type="all"
+			source="ART:NURedeemer_WLKA.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_ACCL.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_DIEA.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_AIDA.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_ATKA.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_ATKB.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_BATA.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_BIDZ.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_BIDB.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_BIDC.W3X" />			
+		<Include
+			type="all"
+			source="ART:NURedeemer_DECL.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_ABTA.W3X" />	
+		<Include
+			type="all"
+			source="ART:NURedeemer_TRNL.W3X" />	
+		<Include
+			type="all"
+			source="ART:NURedeemer_TRNR.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_SPCA.W3X" />
+		<Include
+			type="all"
+			source="ART:NURedeemer_R.W3X" />
+		<Include
+			type="all"
 			source="ART:NURedeemer_FP.W3X" />
 	</Includes>
 	<GameObject
