@@ -679,6 +679,7 @@
 				id="ModuleTag_Invisibility"
 				UpdatePeriod="0.5s" >
 				<InvisibilityNugget />
+			</InvisibilityUpdate>
 		</Behaviors>
 		<AI>
 			<AIUpdate

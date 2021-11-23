@@ -13,7 +13,6 @@
 		Browser="REGION NOD_Structures STRUCTURE"
 		Side="Civilian"
 		EditorSorting="STRUCTURE"
-		CommandSet="EmptyCommandSet"
 		CampnessValue="0"
 		RadarPriority="STRUCTURE" >
 		<Draws>

@@ -14,7 +14,6 @@
 		KindOf="SELECTABLE STRUCTURE PRELOAD IMMOBILE CAN_CAST_REFLECTIONS COVER KEEP_CLASSIFIED_WHEN_DEAD RESIST_EMP"
 		Side="Civilian"
 		EditorSorting="STRUCTURE"
-		CommandSet="EmptyCommandSet"
 		CampnessValue="0"
 		RadarPriority="STRUCTURE" >
 		<DisplayName

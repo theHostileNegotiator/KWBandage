@@ -15,7 +15,6 @@
 		Browser="REGION RUSSIA_RU STRUCTURE"
 		SelectPortrait="Portrait_NeutralGarrisonableStructure"
 		ButtonImage="Portrait_NeutralGarrisonableStructure"
-		CommandSet="GarrisonableNeutralBuildingCommandSet"
 		Side="Civilian"
 		KindOf="SELECTABLE STRUCTURE PRELOAD IMMOBILE CAN_CAST_REFLECTIONS GARRISON COVER KEEP_CLASSIFIED_WHEN_DEAD IGNORE_FOR_VICTORY CIVILIAN_BUILDING NOT_SELLABLE"
 		RadarPriority="STRUCTURE">
