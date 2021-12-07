@@ -463,14 +463,6 @@
 						AnimationName="NURedeemer_DIEA"
 						AnimationMode="ONCE" 
 						AnimationBlendTime="15"/>
-					<Animation
-						AnimationName="NURedeemer_DIEB"
-						AnimationMode="ONCE" 
-						AnimationBlendTime="15"/>
-					<Animation
-						AnimationName="NURedeemer_DIEC"
-						AnimationMode="ONCE" 
-						AnimationBlendTime="15"/>
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -784,18 +776,7 @@
 					<Animation
 						AnimationName="NURedeemer_AIDA"
 						AnimationMode="LOOP"
-						AnimationBlendTime="15"
-						AnimationPriority="40"/>
-					<Animation
-						AnimationName="NURedeemer_AIDB"
-						AnimationMode="LOOP"
-						AnimationBlendTime="15" 
-						AnimationPriority="40"/>
-					<Animation
-						AnimationName="NURedeemer_AIDC"
-						AnimationMode="LOOP"
-						AnimationBlendTime="15" 
-						AnimationPriority="20"/>						
+						AnimationBlendTime="15" />						
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_bored" then
@@ -2094,10 +2075,7 @@
 				<Sound Sound="AudioEvent:NOD_Redeemer_Spin" Animation="NURedeemer_BIDZ" Frame="92" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Bodyfall" Animation="NURedeemer_DIEA" Frame="125" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_DieCreak" Animation="NURedeemer_DIEA" Frame="95" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Bodyfall" Animation="NURedeemer_DIEB" Frame="60 105" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Bodyfall" Animation="NURedeemer_DIEC" Frame="118" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_DieCreak" Animation="NURedeemer_DIEA" Frame="73" />
-				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NUMegaUnit_AIDA" Frame="139 168" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_TRNL" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_TRNR" Frame="25 50 75 100" />
 				<Sound Sound="AudioEvent:NOD_Redeemer_Footstep" Animation="NURedeemer_WLKA" Frame="25 50 75 100" />
