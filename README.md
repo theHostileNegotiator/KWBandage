@@ -15,7 +15,7 @@
  
  ### Required Files
  WrathEd 1.10_HN  
- https://github.com/theHostileNegotiator/WrathEd2012/releases/tag/v0.1.10-HN  
+ https://github.com/theHostileNegotiator/WrathEd2012/releases/tag/v0.1.10-HN-1.1  
  Is not supported on Older Builds  
  * Forked from https://github.com/Qibbi/WrathEd2012 by Lauren/Darth Jane.
  
