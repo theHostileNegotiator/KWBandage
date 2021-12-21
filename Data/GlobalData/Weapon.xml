@@ -1349,7 +1349,7 @@
 		</Nuggets>
 	</WeaponTemplate>
 	<WeaponTemplate
-		id="BlackHandCustomWarmechFlameWarheadrForAllies"
+		id="BlackHandCustomWarmechFlamerWarheadForAllies"
 		Name="BlackHandCustomWarmechFlamerWarheadForAllies"
 		RadiusDamageAffects="ENEMIES NEUTRALS" >
 		<Nuggets>
@@ -1383,7 +1383,7 @@
 		WeaponSpeed="150.0"
 		FiringLoopSound="AudioEvent:NOD_FlameTank_FlameWeaponLoop"
 		FiringLoopSoundContinuesDuringReload="true"
-		RadiusDamageAffects="ENEMIES NEUTRALS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		ClipSize="10"
 		AcceptableAimDelta="20d"
 		ReAcquireDetailType="PER_CLIP">
@@ -1406,6 +1406,10 @@
 						Rule="NONE"
 						Include="STRUCTURE" />
 				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
 			</DamageNugget>
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerUpgradedWarhead"
