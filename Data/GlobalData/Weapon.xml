@@ -3717,6 +3717,46 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- New Fire FX to include sound -->
+	<WeaponTemplate
+		id="NODRocketBunkerSpawnTibCoreWeapon"
+		Name="NODRocketBunkerSpawnTibCoreWeapon"
+		AttackRange="450.0"
+		WeaponSpeed="250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AcceptableAimDelta="180d"
+		FireSound="AudioEvent:NOD_RocketBunkerHub_RocketLaunch"
+		FireFX="FX_NOD_RocketBunker_TibCoreMissileFire"
+		ClipSize="3"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		ReAcquireDetailType="PER_CLIP"
+		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
+		<FiringDuration
+			MinSeconds="0.2s"
+			MaxSeconds="0.2s" />
+		<ClipReloadTime
+			MinSeconds="2s"
+			MaxSeconds="2s" />
+		<Nuggets>
+			<ProjectileNugget
+				  WarheadTemplate="NODRocketBunkerSpawnTibCoreWeaponWarhead"
+				  ProjectileTemplate="NODRocketBunkerSpawnTibCoreProjectile" />
+			<SuppressionNugget
+				  Radius="50.0"
+				  Suppression="50"
+				  DurationSeconds="2s" />
+			<AttributeModifierNugget
+				  PartitionFilterTestType="SPHERE"
+				  AttributeModifierOwnerName="Modifier_RocketBunkerWeaponFiring" />
+		</Nuggets>
+		<ScatterRadiusVsType
+			Radius="30.0">
+			<Filter
+				Rule="NONE"
+				Include="INFANTRY" />
+		</ScatterRadiusVsType>
+	</WeaponTemplate>
+	
 <!-- Buff Damage against Infantry as it had lower DPS compared to no upgrade -->
 	<WeaponTemplate
 		id="NODScorpionBuggyGatlingLaser"

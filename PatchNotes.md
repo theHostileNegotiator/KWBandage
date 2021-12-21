@@ -992,6 +992,9 @@
 	* Added Quad Turrets to the display list
 3. When use as a cursor, the Muzzleflash fx is shown when no Shredders have been placed
 	* Added animation state to hide Subobjects when used as cursor
+#### SAM Turret
+1. Fire sounds are missing when upgraded with Tiberium Core Missiles
+	* Added fire sounds to the FireFX
 #### Voice of Kane
 1. Has Kindof Flag BROADCASTS_INVISIBILITY which may suggest (to the AI) that it has the functionallity of a Disruption Tower
 	* Removed flag

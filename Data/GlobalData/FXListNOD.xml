@@ -36,4 +36,20 @@
 		</NuggetList>
 	</FXList>
 	
+<!-- ++++ SAM Defense Upgraded Weapon +++++++++++++++++++++++++++++++++++++++ -->
+	<FXList id="FX_NOD_RocketBunker_TibCoreMissileFire">
+		<NuggetList>
+			<Sound Value="AudioEvent:NOD_RocketMilitant_RocketLaunch1" />
+			<ParticleSystem
+				Particle="TibCoreMissileFireFlash"
+				OrientToObject="true" />		
+			<ParticleSystem
+				Particle="TibCoreMissileFireGlow"
+				OrientToObject="true" />
+			<ParticleSystem
+				Particle="TibCoreMissileFireSmoke"
+				OrientToObject="true" />				
+		</NuggetList>
+	</FXList>
+	
 </AssetDeclaration>
