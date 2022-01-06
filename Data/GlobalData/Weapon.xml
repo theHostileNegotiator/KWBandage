@@ -1,5 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+<!-- Added Workaround to remove the ability for EMPed units to crush -->
+	<WeaponTemplate
+		id="AlienAnnihilatorEMPCannonWarhead"
+		Name="AlienAnnihilatorEMPCannonWarhead"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<Nuggets>
+			<ParalyzeNugget
+				Radius="10.0"
+				DurationSeconds="10s"
+				ParalyzeType="EMP"
+				ParalyzeFX="FX_AlienEMPHit">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY CIVILIAN_BUILDING TIBERIUM TIBERIUM_FIELD" />
+			</ParalyzeNugget>
+			<AttributeModifierNugget
+				Radius="10.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				AttributeModifierName="AttributeModifier_PreventCrush10">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY CIVILIAN_BUILDING TIBERIUM TIBERIUM_FIELD" />
+			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
 <!--Added new subfaction units to Damage Filter-->
 	<WeaponTemplate
 		id="AlienBuzzerWeapon"
@@ -1847,6 +1877,41 @@
 		</ScatterRadiusVsType>
 	</WeaponTemplate>
 
+<!-- Added Workaround to remove the ability for EMPed units to crush -->
+	<WeaponTemplate
+		id="GDIGrenadeSoldierEMPGrenadeWarhead"
+		Name="GDIGrenadeSoldierEMPGrenadeWarhead"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS SELF"
+		AttackRange="200.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="100"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true">
+		<Nuggets>
+			<ParalyzeNugget
+				Radius="60.0"
+				DurationSeconds="10s"
+				ParalyzeType="EMP"
+				ParalyzeFX="FX_NODBuggyEmpHit">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT" />
+			</ParalyzeNugget>
+			<AttributeModifierNugget
+				Radius="60.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				AttributeModifierName="AttributeModifier_PreventCrush10">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
 <!--Added reloading sound-->	
 	<WeaponTemplate
 		id="GDIFirehawkHardpointsUpgradeBombMainLoad"
@@ -2325,6 +2390,46 @@
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
+	
+<!-- Added Workaround to remove the ability for EMPed units to crush -->
+	<WeaponTemplate
+		id="GDISpaceCommandShockwaveWeapon"
+		Name="GDISpaceCommandShockwaveWeapon"
+		AttackRange="5000.0"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS">
+		<Nuggets>
+			<DamageNugget
+				Damage="400.0"
+				Radius="50.0"
+				DamageType="GRENADE"
+				DamageFXType="GDI_SHOCKWAVE"
+				DeathType="NORMAL" />
+			<ParalyzeNugget
+				Radius="50.0"
+				DurationSeconds="10s"
+				ParalyzeType="EMP"
+				ParalyzeFX="FX_EMPEE"
+				ForbiddenTargetModelCondition="LANDING TAKING_OFF">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING" />
+			</ParalyzeNugget>
+			<AttributeModifierNugget
+				Radius="50.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				AttributeModifierName="AttributeModifier_PreventCrush10"
+				ForbiddenTargetModelCondition="LANDING TAKING_OFF">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING" />
+			</AttributeModifierNugget>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_GDIShockwaveArtilleryFX" />
+		</Nuggets>
+	</WeaponTemplate>
+
 	
 <!-- Changed Weapon Nuggets to prevent it from being removed when repaired -->
 	<WeaponTemplate
@@ -3238,7 +3343,8 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
-<!--Filter exclusion applied to Sub Faction Drone Ships-->	
+<!-- Filter exclusion applied to Sub Faction Drone Ships -->	
+<!-- Added Workaround to remove the ability for EMPed units to crush -->
 	<WeaponTemplate
 		id="NODBuggyEmpBurst"
 		Name="NODBuggyEmpBurst"
@@ -3257,6 +3363,19 @@
 					<ExcludeThing>Traveler59MCV</ExcludeThing>
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
+			<AttributeModifierNugget
+				Radius="100.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				AttributeModifierName="AttributeModifier_PreventCrush10">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
+					<ExcludeThing>AlienMCV</ExcludeThing>
+					<ExcludeThing>Reaper17MCV</ExcludeThing>
+					<ExcludeThing>Traveler59MCV</ExcludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -3626,7 +3745,8 @@
 			</ProjectileNugget>
 		</Nuggets>
 	</WeaponTemplate>
-<!--Filter Now affects Sub Faction Drone Ships-->
+<!-- Filter Now affects Sub Faction Drone Ships -->
+<!-- Added Workaround to remove the ability for EMPed units to crush -->
 	<WeaponTemplate
 		id="NODEMPBlastWarhead"
 		Name="NODEMPBlastWarhead"
@@ -3652,6 +3772,19 @@
 					<ExcludeThing>Traveler59MCV</ExcludeThing>
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
+			<AttributeModifierNugget
+				Radius="50.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				AttributeModifierName="AttributeModifier_PreventCrush5">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
+					<ExcludeThing>AlienMCV</ExcludeThing>
+					<ExcludeThing>Reaper17MCV</ExcludeThing>
+					<ExcludeThing>Traveler59MCV</ExcludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
 		</Nuggets>
 	</WeaponTemplate>
 	<WeaponTemplate
@@ -3679,6 +3812,19 @@
 					<ExcludeThing>Traveler59MCV</ExcludeThing>
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
+			<AttributeModifierNugget
+				Radius="75.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				AttributeModifierName="AttributeModifier_PreventCrush7_5">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
+					<ExcludeThing>AlienMCV</ExcludeThing>
+					<ExcludeThing>Reaper17MCV</ExcludeThing>
+					<ExcludeThing>Traveler59MCV</ExcludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -5129,7 +5275,33 @@
 				DeathType="NORMAL" />
 		</Nuggets>
 	</WeaponTemplate>
-	
+
+<!-- Added Workaround to remove the ability for EMPed units to crush -->
+	<WeaponTemplate
+		id="OverloadBeamSelfStunWeapon"
+		Name="OverloadBeamSelfStunWeapon"
+		RadiusDamageAffects="ALLIES SELF">
+		<Nuggets>
+			<ParalyzeNugget
+				Radius="1.0"
+				DurationSeconds="6s"
+				ParalyzeType="EMP">
+				<SpecialObjectFilter>
+					<IncludeThing>ZOCOMImprovedSonicTank</IncludeThing>
+				</SpecialObjectFilter>
+			</ParalyzeNugget>
+			<AttributeModifierNugget
+				Radius="1.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				AttributeModifierName="AttributeModifier_PreventCrush6">
+				<SpecialObjectFilter>
+					<IncludeThing>ZOCOMImprovedSonicTank</IncludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
 <!-- Normalised Zone Trooper range with TW version, use new weapon for Zone Raider due to increased range -->
 	<WeaponTemplate
 		id="ZoneTrooperSquadRangefinder"

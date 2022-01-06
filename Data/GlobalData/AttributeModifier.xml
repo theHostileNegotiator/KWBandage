@@ -73,6 +73,32 @@
 		Duration="2.0s">
 		<Modifier Type="DAMAGE_MULT" Value="250"/>
 	</AttributeModifier>
+
+<!-- Prevent EMP unit from being able to crush -->
+	<AttributeModifier
+		id="AttributeModifier_PreventCrush10"
+		Category="NONE"
+		Duration="10s">
+		<Modifier Type="CRUSHER_LEVEL" Value="-500%"/>
+	</AttributeModifier>
+	<AttributeModifier
+		id="AttributeModifier_PreventCrush7_5"
+		Category="NONE"
+		Duration="7.5s">
+		<Modifier Type="CRUSHER_LEVEL" Value="-500%"/>
+	</AttributeModifier>
+	<AttributeModifier
+		id="AttributeModifier_PreventCrush6"
+		Category="NONE"
+		Duration="6s">
+		<Modifier Type="CRUSHER_LEVEL" Value="-500%"/>
+	</AttributeModifier>
+	<AttributeModifier
+		id="AttributeModifier_PreventCrush5"
+		Category="NONE"
+		Duration="5s">
+		<Modifier Type="CRUSHER_LEVEL" Value="-500%"/>
+	</AttributeModifier>
 	
 <!-- New Mission Specific AttributeModifier to Buff ROF rather than nerf -->
 	<AttributeModifier

@@ -56,6 +56,9 @@
 #### Snipers Spotting for bombardment
 1. Veteran and Subfaction Snipers cannot spot for bombardment when garrisoned
 	* Include Veteran and Subfaction Snipers in MemberTemplateStatusInfo in garrison HordeContain Modules
+#### EMP
+1. EMPed units have the ability to crush, despite being immobile
+	* Added an attribute modifier to the weapon that reduces the Crusher Level
 #### Upgrade Sounds
 1. Units will either play sounds when upgraded with something they can't use or will not play sounds when upgraded
 	* Add or remove "audioloopupgrade"
