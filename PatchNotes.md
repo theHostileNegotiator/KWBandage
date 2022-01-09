@@ -1246,6 +1246,9 @@
 #### Attenuated Forcefield
 1. Scrin and Reaper 17 do not share upgrade, despite cost and time is identical
 	* Reaper 17 units and upgrade refer to Scrin shields
+2. Shield mesh uses the incorrect texture for the Diffuse
+	* Replace FXIonHull with FXShieldDiffuse in the Diffuse Mesh
+		* Also removed the Seeker mesh in the shield model
 #### Blue Shards
 1. Heroic units with upgrade, projectile impacts are green instead of blue
 	* Fixed FXList FX_AlienTibShardHitBlueHeroic and FX_AlienTibShardHitBlueHeroicBuilding to reference Blue effects instead of Green.

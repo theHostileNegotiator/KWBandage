@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Fix Shield Model textures -->
 <!-- Adjusted Animations for Shard Walker Skeleton Changes -->
 <!-- Added CAN_BE_FAVORITE_UNIT KindOf Flag -->
 	<Tags></Tags>
@@ -21,6 +22,7 @@
 		<Include type="all" source="ART:AUGWalker_TRNL.w3x" />
 		<Include type="all" source="ART:AUGWalker_TRNR.w3x" />
 		<Include type="all" source="ART:AUGWalker_WLKA.w3x" />
+		<Include type="all" source="ART:FXShldGunWalker.w3x" />
 	</Includes>
 	<GameObject
 		id="AlienGunWalker"

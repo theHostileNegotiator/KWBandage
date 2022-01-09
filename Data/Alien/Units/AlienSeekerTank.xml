@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Fix Shield Model textures -->
 <!-- Changed Weapon Catergory from GUN to MISSILE -->
 <!-- Fixed Tiberium Reflection -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:AUSeeker_SKN.w3x" />
+		<Include type="all" source="ART:FXShldSeekerTank.w3x" />
 	</Includes>
 	<GameObject
 		id="AlienSeekerTank"
