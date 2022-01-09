@@ -59,6 +59,8 @@
 #### EMP
 1. EMPed units have the ability to crush, despite being immobile
 	* Added an attribute modifier to the weapon that reduces the Crusher Level
+2. EMP can disable shields of units inside Stasis fields
+	* Added ForbiddenTargetObjectStatus for IN_STASIS objects
 #### Upgrade Sounds
 1. Units will either play sounds when upgraded with something they can't use or will not play sounds when upgraded
 	* Add or remove "audioloopupgrade"
@@ -234,6 +236,11 @@
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
+### EMP Control Center
+1. Cannot destroy Devastator Warships and Planetary Assault Carrier when upgraded with Forcefields, when shields are disabled
+	* "SHIELDBODY_ENABLED" object status is applied permanently after purchasing Forcefield upgrade, it is still applied when they have been disabled. Instead will use the Weapon Nugget ForbiddenTargetModelCondition and use "USER_19" as the ModelCondition for Shields as it is unused as it will be added or removed depending on the state of the Forcefield
+2. Does not affect Devastator Warships and Planetary Assault Carrier with shields
+	* Added workaround for EMP effect as there is no CylinderAOE for Palalyze Nugget (AOE is a sphere by default). Weapon with Paralyze Nugget is fired from an object spawned from an OCL at a height of 140 which is the height of ships fly at.
 #### Garrison Flags
 1. Nod Garrison Flags have a weird appearance, weak House Color and reflective
 	* Fixed Specular Map, removed Reflection Channel and fixed House Color Channel

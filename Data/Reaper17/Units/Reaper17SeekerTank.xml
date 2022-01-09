@@ -171,7 +171,7 @@
 				</ModelConditionState>					
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_1">
+					ConditionsYes="USER_19">
 					<Model
 						Name="FXShldSeekerTank" />
 				</ModelConditionState>
@@ -366,7 +366,7 @@
 			ShieldEnabledFX="FX_AlienShieldEnabled" 
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 			ShieldDepleteFX="FX_AlienShieldDeplete"
-				ShieldActiveModelCondition="USER_1" />				
+				ShieldActiveModelCondition="USER_19" />				
 		</Body>
 		<Geometry
 			IsSmall="true">

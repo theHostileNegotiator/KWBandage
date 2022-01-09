@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Change Shield Model Condition for EMP -->
 <!-- For Reaper17 forcefield changes -->
 <!-- Updated Turret Settings to match the Gun Walker (TW 1.05) -->
 <!-- Added DYING model condition to Shields to guarantee it won't show when dead -->
@@ -406,7 +407,7 @@
 				</ModelConditionState>					
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_1">
+					ConditionsYes="USER_19">
 					<Model
 						Name="FXShldGunWalker" />
 				</ModelConditionState>
@@ -603,7 +604,7 @@
 				ShieldEnabledFX="FX_AlienShieldEnabled" 
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 				ShieldDepleteFX="FX_AlienShieldDeplete"
-				ShieldActiveModelCondition="USER_1" />	
+				ShieldActiveModelCondition="USER_19" />	
 		</Body>
 		<Geometry
 			IsSmall="true">

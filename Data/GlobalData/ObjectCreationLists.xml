@@ -529,4 +529,41 @@
 		</CreateObject>
 	</ObjectCreationList>
 
+<!-- Create object to fire weapon in range of Aircraft (3 objects to cover different heights) -->
+	<ObjectCreationList
+		id="OCLEMPControlCenter">
+		<CreateObject
+			Disposition="RELATIVE_ANGLE USE_WATER_SURFACE"
+			Options="IGNORE_ALL_OBJECTS">
+			<CreateObject>EMPField</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Disposition="RELATIVE_ANGLE USE_WATER_SURFACE"
+			Options="IGNORE_ALL_OBJECTS">
+			<Offset
+				x="0.0"
+				y="0.0"
+				z="70.0" />
+			<CreateObject>EMPField_Air</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Disposition="RELATIVE_ANGLE USE_WATER_SURFACE"
+			Options="IGNORE_ALL_OBJECTS">
+			<Offset
+				x="0.0"
+				y="0.0"
+				z="140.0" />
+			<CreateObject>EMPField_Air</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Disposition="RELATIVE_ANGLE USE_WATER_SURFACE"
+			Options="IGNORE_ALL_OBJECTS">
+			<Offset
+				x="0.0"
+				y="0.0"
+				z="210.0" />
+			<CreateObject>EMPField_Air</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
 </AssetDeclaration>

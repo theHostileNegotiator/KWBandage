@@ -13,7 +13,8 @@
 				Radius="10.0"
 				DurationSeconds="10s"
 				ParalyzeType="EMP"
-				ParalyzeFX="FX_AlienEMPHit">
+				ParalyzeFX="FX_AlienEMPHit"
+				ForbiddenTargetObjectStatus="IN_STASIS">
 				<SpecialObjectFilter
 					Rule="ALL"
 					Exclude="UNATTACKABLE INFANTRY CIVILIAN_BUILDING TIBERIUM TIBERIUM_FIELD" />
@@ -21,7 +22,8 @@
 			<AttributeModifierNugget
 				Radius="10.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="USER_19"
 				AttributeModifierName="AttributeModifier_PreventCrush10">
 				<SpecialObjectFilter
 					Rule="ALL"
@@ -1894,7 +1896,8 @@
 				Radius="60.0"
 				DurationSeconds="10s"
 				ParalyzeType="EMP"
-				ParalyzeFX="FX_NODBuggyEmpHit">
+				ParalyzeFX="FX_NODBuggyEmpHit"
+				ForbiddenTargetObjectStatus="IN_STASIS">
 				<SpecialObjectFilter
 					Rule="ALL"
 					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT" />
@@ -1902,7 +1905,8 @@
 			<AttributeModifierNugget
 				Radius="60.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="USER_19"
 				AttributeModifierName="AttributeModifier_PreventCrush10">
 				<SpecialObjectFilter
 					Rule="ALL"
@@ -2410,6 +2414,7 @@
 				DurationSeconds="10s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_EMPEE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
 				ForbiddenTargetModelCondition="LANDING TAKING_OFF">
 				<SpecialObjectFilter
 					Rule="ALL"
@@ -2418,9 +2423,9 @@
 			<AttributeModifierNugget
 				Radius="50.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
-				AttributeModifierName="AttributeModifier_PreventCrush10"
-				ForbiddenTargetModelCondition="LANDING TAKING_OFF">
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="LANDING TAKING_OFF USER_19"
+				AttributeModifierName="AttributeModifier_PreventCrush10">
 				<SpecialObjectFilter
 					Rule="ALL"
 					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING" />
@@ -2875,6 +2880,93 @@
 					</Filter>
 				</DamageScalarDetails>
 			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
+<!-- Added Workaround to remove the ability for EMPed units to crush -->
+<!-- Will now destroy Devastator Warships and Planetary Assault Carriers that have the Forcefield upgrade that have their shields disabled -->
+<!-- Will no longer disable units shields inside Stasis field -->
+	<WeaponTemplate
+		id="EMPControlCenterWeapon"
+		Name="EMPControlCenterWeapon"
+		AttackRange="99999.0"
+		WeaponSpeed="300"
+		RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		ClipSize="0"
+		PreAttackType="PER_SHOT"
+ 		>
+		<!-- FireSound="EMP_WeaponFire" this no worky -->
+		<FiringDuration
+				MinSeconds="3s"
+				MaxSeconds="3s" />
+		<Nuggets>
+			<!-- Special nugget for taking out aircraft -->
+			<!-- Added status check so we don't destroy landed aircraft, because that's dumb -->
+			<DamageNugget
+				Damage="1000000.0"
+				Radius="125.0"
+				CylinderAOE="true"
+				DamageType="GRENADE"
+				DamageFXType="NOD_CANNON"
+				DeathType="NORMAL"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="LOCOMOTOR_TAXIING USER_19">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="AIRCRAFT"/>
+			</DamageNugget>
+			<WeaponOCLNugget
+				WeaponOCL="OCLEMPControlCenter" />
+			<ParalyzeNugget
+				Radius="125.0"
+				DurationSeconds="10s"
+				ParalyzeType="EMP"
+				ParalyzeFX=""
+				ForbiddenTargetObjectStatus="IN_STASIS">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY CIVILIAN_BUILDING TIBERIUM TIBERIUM_FIELD" />
+			</ParalyzeNugget>
+			<AttributeModifierNugget
+				Radius="125.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="USER_19"
+				AttributeModifierName="AttributeModifier_PreventCrush10">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY CIVILIAN_BUILDING TIBERIUM TIBERIUM_FIELD" />
+			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>
+<!-- EMP for Shielded Aircraft -->
+	<WeaponTemplate
+		id="EMPControlCenterWeapon_Aircraft"
+		Name="EMPControlCenterWeapon_Aircraft"
+		AttackRange="99999.0"
+		WeaponSpeed="300"
+		RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		ClipSize="0"
+		PreAttackType="PER_SHOT"
+ 		>
+		<!-- FireSound="EMP_WeaponFire" this no worky -->
+		<FiringDuration
+				MinSeconds="3s"
+				MaxSeconds="3s" />
+		<Nuggets>
+			<ParalyzeNugget
+				Radius="125.0"
+				DurationSeconds="0s"
+				ParalyzeType="EMP"
+				ParalyzeFX=""
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="LOCOMOTOR_TAXIING">
+				<SpecialObjectFilter
+					Rule="ALL">
+					<IncludeThing>AlienDevastatorWarship</IncludeThing>
+					<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
+				</SpecialObjectFilter>
+			</ParalyzeNugget>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -3354,7 +3446,8 @@
 				Radius="100.0"
 				DurationSeconds="10s"
 				ParalyzeType="EMP"
-				ParalyzeFX="FX_NODBuggyEmpHit">
+				ParalyzeFX="FX_NODBuggyEmpHit"
+				ForbiddenTargetObjectStatus="IN_STASIS">
 				<SpecialObjectFilter
 					Rule="ALL"
 					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
@@ -3366,7 +3459,8 @@
 			<AttributeModifierNugget
 				Radius="100.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="USER_19"
 				AttributeModifierName="AttributeModifier_PreventCrush10">
 				<SpecialObjectFilter
 					Rule="ALL"
@@ -3763,7 +3857,8 @@
 				Radius="50.0"
 				DurationSeconds="5s"
 				ParalyzeType="EMP"
-				ParalyzeFX="FX_NODBuggyEmpHit">
+				ParalyzeFX="FX_NODBuggyEmpHit"
+				ForbiddenTargetObjectStatus="IN_STASIS">
 				<SpecialObjectFilter
 					Rule="ALL"
 					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
@@ -3775,7 +3870,8 @@
 			<AttributeModifierNugget
 				Radius="50.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="USER_19"
 				AttributeModifierName="AttributeModifier_PreventCrush5">
 				<SpecialObjectFilter
 					Rule="ALL"
@@ -3803,7 +3899,8 @@
 				Radius="75.0"
 				DurationSeconds="7.5s"
 				ParalyzeType="EMP"
-				ParalyzeFX="FX_NODBuggyEmpHit">
+				ParalyzeFX="FX_NODBuggyEmpHit"
+				ForbiddenTargetObjectStatus="IN_STASIS">
 				<SpecialObjectFilter
 					Rule="ALL"
 					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
@@ -3815,7 +3912,8 @@
 			<AttributeModifierNugget
 				Radius="75.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="USER_19"
 				AttributeModifierName="AttributeModifier_PreventCrush7_5">
 				<SpecialObjectFilter
 					Rule="ALL"
@@ -5285,7 +5383,8 @@
 			<ParalyzeNugget
 				Radius="1.0"
 				DurationSeconds="6s"
-				ParalyzeType="EMP">
+				ParalyzeType="EMP"
+				ForbiddenTargetObjectStatus="IN_STASIS">
 				<SpecialObjectFilter>
 					<IncludeThing>ZOCOMImprovedSonicTank</IncludeThing>
 				</SpecialObjectFilter>
@@ -5293,7 +5392,8 @@
 			<AttributeModifierNugget
 				Radius="1.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS SHIELDBODY_ENABLED"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetModelCondition="USER_19"
 				AttributeModifierName="AttributeModifier_PreventCrush6">
 				<SpecialObjectFilter>
 					<IncludeThing>ZOCOMImprovedSonicTank</IncludeThing>

@@ -3,6 +3,7 @@
 	<Includes>
 	
 		<!--Units-->
+		<Include type="all" source="Units/AlienAnnihilatorTripod.xml" />
 		<Include type="all" source="Units/AlienAnnihilatorTripodHusk.xml" />
 		<Include type="all" source="Units/AlienCorrupter.xml" />
 		<Include type="all" source="Units/AlienCustomizableVehicle.xml" />

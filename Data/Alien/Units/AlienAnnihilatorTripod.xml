@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- Change Shield Model Condition for EMP -->
-<!-- WorldMapArmoryUpgradesAllowed references Reaper 17 Forcefield Upgrade instead of Scrin -->
-<!-- Added unique Formation Preview (Stygs) -->
 	<Tags></Tags>
 	<Includes>
-		<Include
-			type="all"
-			source="ART:AURprTripod_FP.w3x" />
 	</Includes>
 	<GameObject
-		id="Reaper17AnnihilatorTripod"
-		inheritFrom="AlienAnnihilatorTripod"
-		SelectPortrait="Portrait_ReaperTripod"
-		ButtonImage="Portrait_ReaperTripod"
-		Side="Reaper17"
+		id="AlienAnnihilatorTripod"
+		inheritFrom="BaseVehicle"
+		SelectPortrait="Portrait_AlienAnnihilatorTripod"
+		ButtonImage="Portrait_AlienAnnihilatorTripod"
+		Side="ALIEN"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="3000"
 		BuildTime="30"
-		CommandSet="Reaper17AnnihilatorTripodCommandSet"
+		CommandSet="AlienAnnihilatorTripodCommandSet"
 		CommandPoints="100" 
 		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE VALID_TARGET_FOR_C4 CAN_SHOOT_OVER_WALLS  CAN_BE_FAVORITE_UNIT"
 		RadarPriority="UNIT"
@@ -27,20 +22,19 @@
 		UnitCategory="VEHICLE"
 		WeaponCategory="CANNON"
 		VoicePriority="216"
-		EditorName="Reaper17AnnihilatorTripod"
-		Description="Desc:Reaper17AnnihilatorTripod"
-		WorldMapArmoryUpgradesAllowed="Upgrade_Reaper17ConversionReserves Upgrade_Reaper17ReactorForcefieldGenerator"
-		TypeDescription="Type:Reaper17AnnihilatorTripod"
+		EditorName="AlienAnnihilatorTripod"
+		Description="Desc:AlienAnnihilatorTripod"
+		WorldMapArmoryUpgradesAllowed="Upgrade_AlienReactorForcefieldGenerator"
+		TypeDescription="Type:AlienAnnihilatorTripod"
 		ShockwaveResistance="100"
 		ReinvisibilityDelay="7s">
 		<DisplayName
-			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:Reaper17AnnihilatorTripod</DisplayName>
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:AlienAnnihilatorTripod</DisplayName>
 		<GameDependency>
-			<RequiredObject>Reaper17Reactor</RequiredObject>
+			<RequiredObject>AlienReactor</RequiredObject>
 		</GameDependency>
 		<DisplayUpgrade
-			id="Tag_DisplayUpgrade1">Upgrade_Reaper17ReactorForcefieldGenerator</DisplayUpgrade>
-		<DisplayUpgrade id="Tag_DisplayUpgrade2">Upgrade_Reaper17ConversionReserves</DisplayUpgrade>
+			id="Tag_DisplayUpgrade1">Upgrade_AlienReactorForcefieldGenerator</DisplayUpgrade>
 		<ArmorSet
 			Armor="AlienAnnihilatorTripodArmor"
 			DamageFX="VehicleDamageFX" />
@@ -61,7 +55,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="AURprTripod_SKN" />
+						Name="AUAnlTrpd_SKN" />
 					<WeaponFireFXBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
@@ -111,17 +105,103 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="AURprTripod_FP" />
+						Name="AUAnlTrpd_FP" />
 				</ModelConditionState>		
+
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING USER_6">
+					<Model
+						Name="AUAnlTrpdR_SKN" />
+					<Texture
+						Original="AUAnhlTrpd"
+						New="AUAnhlTrpdD_K" />						
+					<ParticleSysBone
+						BoneName="B_LEG03"
+						FXParticleSystemTemplate="AlienFire01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG03"
+						FXParticleSystemTemplate="AlienDamageFireGlow01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG03"
+						FXParticleSystemTemplate="AlienDamageFireGlow02"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG06"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG06"
+						FXParticleSystemTemplate="AlienDamageFireGlow01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG06"
+						FXParticleSystemTemplate="AlienDamageFireGlow02"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED USER_6">
+					<!-- DO NOT PUT THE AUAnlTrpdR_SKN HERE !!!!  -->
+					<Model
+						Name="AUAnlTrpd_SKN" />
+					<Texture
+						Original="AUAnhlTrpd"
+						New="AUAnhlTrpdD_K" />						
+					<ParticleSysBone
+						BoneName="B_LEG06"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG03"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED USER_6">
+					<!-- DO NOT PUT THE AUAnlTrpdR_SKN HERE !!!!  -->
+					<Model
+						Name="AUAnlTrpd_SKN" />
+					<Texture
+						Original="AUAnhlTrpd"
+						New="AUAnhlTrpdD_K" />						
+					<ParticleSysBone
+						BoneName="B_LEG03"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG03"
+						FXParticleSystemTemplate="AlienDamageFireGlow01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG03"
+						FXParticleSystemTemplate="AlienDamageFireGlow02"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG06"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG06"
+						FXParticleSystemTemplate="AlienDamageFireGlow01"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="B_LEG06"
+						FXParticleSystemTemplate="AlienDamageFireGlow02"
+						FollowBone="true" />
+				</ModelConditionState>				
 						
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING">
 					<Model
-						Name="AURprTripod_R" />
+						Name="AUAnlTrpdR_SKN" />
 					<Texture
-						Original="AURprTripod"
-						New="AURprTripod_D" />							
+						Original="AUAnhlTrpd"
+						New="AUAnhlTrpd_D" />							
 					<ParticleSysBone
 						BoneName="B_LEG03"
 						FXParticleSystemTemplate="AlienDamageFire01"
@@ -152,10 +232,10 @@
 					ConditionsYes="DAMAGED">
 					<!-- DO NOT PUT THE AUAnlTrpdR_SKN HERE !!!!  -->
 					<Model
-						Name="AURprTripod_SKN" />
+						Name="AUAnlTrpd_SKN" />
 					<Texture
-						Original="AURprTripod"
-						New="AURprTripod_D" />	
+						Original="AUAnhlTrpd"
+						New="AUAnhlTrpd_D" />
 					<ParticleSysBone
 						BoneName="B_LEG06"
 						FXParticleSystemTemplate="AlienDamageFire01"
@@ -170,10 +250,10 @@
 					ConditionsYes="REALLYDAMAGED">
 					<!-- DO NOT PUT THE AUAnlTrpdR_SKN HERE !!!!  -->
 					<Model
-						Name="AURprTripod_SKN" />
+						Name="AUAnlTrpd_SKN" />
 					<Texture
-						Original="AURprTripod"
-						New="AURprTripod_D" />						
+						Original="AUAnhlTrpd"
+						New="AUAnhlTrpd_D" />						
 					<ParticleSysBone
 						BoneName="B_LEG03"
 						FXParticleSystemTemplate="AlienDamageFire01"
@@ -199,7 +279,15 @@
 						FXParticleSystemTemplate="AlienDamageFireGlow02"
 						FollowBone="true" />
 				</ModelConditionState>
-			
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6">
+					<Model
+						Name="AUAnlTrpd_SKN" />
+					<Texture
+						Original="AUAnhlTrpd"
+						New="AUAnhlTrpd_K" />							
+				</ModelConditionState>				
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
@@ -216,25 +304,6 @@
 						if Prev == "STATE_Selected" or Prev == "ATNB" or Prev == "STATE_moving" then CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle") end;
 					</Script>
 				</AnimationState>
-      <!-- Tiberium Charging FX-->
-
-      <AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="UNPACKING"
-					StateName="STATE_Unpacking">
-        <Animation
-          AnimNickName="ATNB"
-          AnimationName="AUAnlTrpd_AIDA"
-          AnimationMode="Once" />
-        <ParticleSysBone
-          BoneName="NONE"
-          FXParticleSystemTemplate="CorrputerTibSuck"
-          FollowBone="true" />
-        <ParticleSysBone
-          BoneName="NONE"
-          FXParticleSystemTemplate="CorrupterTibSuck02"
-          FollowBone="true" />
-      </AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DYING"
@@ -449,27 +518,7 @@
 						Effect="FX_AlienTripodFP"
 						Bone="B_BACK" />
 				</AnimationState>
-      <!-- Tiberium Charging FX-->
-
-      <AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="UNPACKING ATTACKING"
-					StateName="STATE_Unpacking">
-        <Animation
-          AnimNickName="ATNB"
-          AnimationName="AUAnlTrpd_AIDA"
-          AnimationMode="Once" />
-        <ParticleSysBone
-          BoneName="NONE"
-          FXParticleSystemTemplate="CorrputerTibSuck"
-          FollowBone="true" />
-        <ParticleSysBone
-          BoneName="NONE"
-          FXParticleSystemTemplate="CorrupterTibSuck02"
-          FollowBone="true" />
-      </AnimationState>
-      
-      <!-- SELECTED -->
+				<!-- SELECTED -->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="SELECTED"
@@ -543,26 +592,6 @@
 						AnimationName="AUAnlTrpd_ABTA"
 						AnimationMode="ONCE" />
 				</AnimationState>
-			
-		<!-- Tiberium Charging FX-->
-		
-			<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="UNPACKING ATTACKING" 
-					StateName="STATE_Unpacking">
-					<Animation
-						AnimNickName="ATNB"
-						AnimationName="AUAnlTrpd_AIDA"
-						AnimationMode="Once" />				
-					<ParticleSysBone
-						BoneName="NONE"
-						FXParticleSystemTemplate="CorrputerTibSuck"
-						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="NONE"
-						FXParticleSystemTemplate="CorrupterTibSuck02"
-						FollowBone="true" />
-				</AnimationState>	
 			</ScriptedModelDraw>
 			<LaserDraw
 				id="ModuleTag_LaserDraw01"
@@ -596,7 +625,7 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus="WEAPON_UPGRADED_01 HAS_TIBERIUM_AMMO" />					
+					ForbiddenStatus="WEAPON_UPGRADED_01" />					
 			</LaserDraw>
 			<LaserDraw
 				id="ModuleTag_LaserDistort01"
@@ -630,8 +659,6 @@
 						</Texture>
 					</Constants>
 				</FXShader>
-				<ObjectStatusValidation
-					ForbiddenStatus="HAS_TIBERIUM_AMMO" />				
 			</LaserDraw>
 			<LaserDraw
 				id="ModuleTag_LaserDraw02"
@@ -665,7 +692,7 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus="WEAPON_UPGRADED_01 HAS_TIBERIUM_AMMO" />					
+					ForbiddenStatus="WEAPON_UPGRADED_01" />					
 			</LaserDraw>
 			<LaserDraw
 				id="ModuleTag_LaserDistort02"
@@ -699,8 +726,6 @@
 						</Texture>
 					</Constants>
 				</FXShader>
-				<ObjectStatusValidation
-					ForbiddenStatus="HAS_TIBERIUM_AMMO" />
 			</LaserDraw>
 			<LaserDraw
 				id="ModuleTag_LaserDraw03"
@@ -734,7 +759,7 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus="WEAPON_UPGRADED_01 HAS_TIBERIUM_AMMO" />					
+					ForbiddenStatus="WEAPON_UPGRADED_01" />					
 			</LaserDraw>
 			<LaserDraw
 				id="ModuleTag_LaserDistort03"
@@ -769,7 +794,7 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus="WEAPON_UPGRADED_01 HAS_TIBERIUM_AMMO" />					
+					ForbiddenStatus="WEAPON_UPGRADED_01" />					
 			</LaserDraw>
 			<LaserDraw
 				id="ModuleTag_LaserDraw01Veterancy"
@@ -803,7 +828,6 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus="HAS_TIBERIUM_AMMO" 
 					RequiredStatus="WEAPON_UPGRADED_01" />					
 			</LaserDraw>			
 			<LaserDraw
@@ -838,7 +862,6 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus="HAS_TIBERIUM_AMMO" 
 					RequiredStatus="WEAPON_UPGRADED_01" />					
 			</LaserDraw>			
 			<LaserDraw
@@ -873,218 +896,8 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus="HAS_TIBERIUM_AMMO" 
 					RequiredStatus="WEAPON_UPGRADED_01" />					
 			</LaserDraw>			
-<!-- Tiberium Charged Laser draws-->
-			<LaserDraw
-				id="ModuleTag_LaserDrawT1"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".3"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate=".7"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="50"
-				WeaponSlotID="1"
-				LaserStateID="4">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXTiberiumLaser</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXTiberiumLaser</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="HAS_TIBERIUM_AMMO" />
-			</LaserDraw>
-			<LaserDraw
-				id="ModuleTag_LaserDrawT2"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".3"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate=".7"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="50"
-				WeaponSlotID="2"
-				LaserStateID="5">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXTiberiumLaser</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXTiberiumLaser</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="HAS_TIBERIUM_AMMO" />
-			</LaserDraw>
-			<LaserDraw
-				id="ModuleTag_LaserDrawT3"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".3"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate=".7"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="50"
-				WeaponSlotID="3"
-				LaserStateID="6">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXTiberiumLaser</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXTiberiumLaser</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="HAS_TIBERIUM_AMMO" />
-			</LaserDraw>
-<!-- tiberium enriched laser distortion -->
-			<LaserDraw
-				id="ModuleTag_LaserDistortT1"
-				UseDistortionShader="true"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile="2"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate=".7"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="65"
-				WeaponSlotID="1"
-				LaserStateID="4">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXAlienOverlay</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXAlienOverlay</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="HAS_TIBERIUM_AMMO" />
-			</LaserDraw>	
-			<LaserDraw
-				id="ModuleTag_LaserDistortT2"
-				UseDistortionShader="true"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile="2"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate=".7"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="65"
-				WeaponSlotID="2"
-				LaserStateID="5">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXAlienOverlay</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXAlienOverlay</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="HAS_TIBERIUM_AMMO" />
-			</LaserDraw>	
-			<LaserDraw
-				id="ModuleTag_LaserDistortT3"
-				UseDistortionShader="true"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile="2"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate=".7"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="65"
-				WeaponSlotID="3"
-				LaserStateID="6">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXAlienOverlay</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXAlienOverlay</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="HAS_TIBERIUM_AMMO" />
-			</LaserDraw>				
 
 
 			<!-- draw a nice 'combined' effect, PLACEHOLDER -->
@@ -1092,30 +905,6 @@
 				id="ModuleTag_DrawCombined">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT" />
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="COMBINED_PARENT USER_2">
-					<ParticleSysBone
-						BoneName="NONE"
-						FollowBone="true"
-						FXParticleSystemTemplate="NODTibInfusion" />
-					<ParticleSysBone
-						BoneName="NONE"
-						FollowBone="true"
-						FXParticleSystemTemplate="AUBuzzerCombine" />
-					<ParticleSysBone
-						BoneName="NONE"
-						FollowBone="true"
-						FXParticleSystemTemplate="AUBuzzerCombineGlow" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_2">
-					<ParticleSysBone
-						BoneName="NONE"
-						FollowBone="true"
-						FXParticleSystemTemplate="NODTibInfusion" />
-				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="COMBINED_PARENT">
@@ -1216,6 +1005,78 @@
 			<TemporarilyDefectUpdate
 				id="ModuleTag_TemporarilyDefect"
 				DefectionFrameCount="300" />
+			<WeaponSetUpdate
+				id="ModuleTag_WeaponSetUpdate">
+				<WeaponSlotTurret
+					ID="1"
+					AllowInterleavedFiring="true"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
+					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="AlienAnnihilatorPulseCannonA" />
+					<TurretSettings
+						TurretTurnRate="200"
+						TurretPitchRate="40"
+						AllowsPitch="true"
+						MinimumPitch="-25d"
+						MaxDeflectionAntiClockwise="65d"
+						MaxDeflectionClockwise="65d"
+						NaturalTurretAngle="180d"
+						RecenterWhenOutOfTurnRange="false">
+						<TurretAITargetChooserData
+							CanAcquireDynamicIfAssignedOutOfRange="true" />
+					</TurretSettings>
+				</WeaponSlotTurret>
+				<WeaponSlotTurret
+					ID="2"
+					AllowInterleavedFiring="true"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
+					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="AlienAnnihilatorPulseCannonB" />
+					<TurretSettings
+						TurretTurnRate="200"
+						TurretPitchRate="40"
+						AllowsPitch="true"
+						MinimumPitch="-25d"
+						MaxDeflectionAntiClockwise="65d"
+						MaxDeflectionClockwise="65d"
+						NaturalTurretAngle="300d"
+						RecenterWhenOutOfTurnRange="false">
+						<TurretAITargetChooserData
+							CanAcquireDynamicIfAssignedOutOfRange="true" />
+					</TurretSettings>
+				</WeaponSlotTurret>
+				<WeaponSlotTurret
+					ID="3"
+					AllowInterleavedFiring="true"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
+					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="AlienAnnihilatorPulseCannonC" />
+					<TurretSettings
+						TurretTurnRate="200"
+						TurretPitchRate="40"
+						AllowsPitch="true"
+						MinimumPitch="-25d"
+						MaxDeflectionAntiClockwise="65d"
+						MaxDeflectionClockwise="65d"
+						NaturalTurretAngle="60d"
+						RecenterWhenOutOfTurnRange="false">
+						<TurretAITargetChooserData
+							CanAcquireDynamicIfAssignedOutOfRange="true" />
+					</TurretSettings>
+				</WeaponSlotTurret>
+				<WeaponSlotHardpoint
+					ID="4">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="AlienAnnihilatorEMPCannon" />
+				</WeaponSlotHardpoint>
+			</WeaponSetUpdate>
 			<Physics
 				id="ModuleTag_Physics" />
 			<FXListBehavior
@@ -1226,6 +1087,13 @@
 					Index="onDeath"
 					FX="FX_AlienAnnihilatorTripodExplode" />
 			</FXListBehavior>
+			<!-- dying, spawn a husk -->
+			<CreateObjectDie
+				id="ModuleTag_CreateObjectDie"
+				CreationList="AlienAnnihilatorTripodDieOCL">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</CreateObjectDie>
 			<DestroyDie
 				id="ModuleTag_DestroyDie">
 				<DieMuxData
@@ -1251,6 +1119,11 @@
 				SweepFXTimeout="0.25s" 
 				LaserId="3" />
 			<!-- Forcefield Generator -->
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitUpgrade"
+				StatusToSet="SHIELDBODY_ENABLED">
+				<TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
+			</StatusBitsUpgrade>
 			<ShieldBodyUpdate
 				id="ModuleTag_ShieldBodyUpdate" />
 			<UncombineSpecialPower
@@ -1266,181 +1139,16 @@
 				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
 			</ModelConditionUpgrade>
-			<WeaponSetUpdate
-				id="ModuleTag_WeaponSetUpdate">
-				<WeaponSlotTurret
-					ID="1"
-					AllowInterleavedFiring="true"
-					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
-					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="AlienAnnihilatorPulseCannonA" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="Reaper17TripodPulseCannonA_TiberiumEnhanced"
-						ObjectStatus="HAS_TIBERIUM_AMMO" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="Reaper17TripodPulseCannonA_SuperDuperTiberiumEnhanced"
-						ObjectStatus="HAS_TIBERIUM_AMMO WEAPON_UPGRADED_02" />			
-					<TurretSettings
-						TurretTurnRate="200"
-						TurretPitchRate="40"
-						AllowsPitch="true"
-						MinimumPitch="-25d"
-						MaxDeflectionAntiClockwise="65d"
-						MaxDeflectionClockwise="65d"
-						NaturalTurretAngle="180d"
-						RecenterWhenOutOfTurnRange="false">
-						<TurretAITargetChooserData
-							CanAcquireDynamicIfAssignedOutOfRange="true" />
-					</TurretSettings>
-				</WeaponSlotTurret>
-				<WeaponSlotTurret
-					ID="2"
-					AllowInterleavedFiring="true"
-					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
-					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="AlienAnnihilatorPulseCannonB" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="Reaper17TripodPulseCannonB_TiberiumEnhanced"
-						ObjectStatus="HAS_TIBERIUM_AMMO" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="Reaper17TripodPulseCannonB_SuperDuperTiberiumEnhanced"
-						ObjectStatus="HAS_TIBERIUM_AMMO WEAPON_UPGRADED_02" />			
-					<TurretSettings
-						TurretTurnRate="200"
-						TurretPitchRate="40"
-						AllowsPitch="true"
-						MinimumPitch="-25d"
-						MaxDeflectionAntiClockwise="65d"
-						MaxDeflectionClockwise="65d"
-						NaturalTurretAngle="300d"
-						RecenterWhenOutOfTurnRange="false">
-						<TurretAITargetChooserData
-							CanAcquireDynamicIfAssignedOutOfRange="true" />
-					</TurretSettings>
-				</WeaponSlotTurret>
-				<WeaponSlotTurret
-					ID="3"
-					AllowInterleavedFiring="true"
-					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
-					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="AlienAnnihilatorPulseCannonC" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="Reaper17TripodPulseCannonC_TiberiumEnhanced"
-						ObjectStatus="HAS_TIBERIUM_AMMO" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="Reaper17TripodPulseCannonC_SuperDuperTiberiumEnhanced"
-						ObjectStatus="HAS_TIBERIUM_AMMO WEAPON_UPGRADED_02" />			
-					<TurretSettings
-						TurretTurnRate="200"
-						TurretPitchRate="40"
-						AllowsPitch="true"
-						MinimumPitch="-25d"
-						MaxDeflectionAntiClockwise="65d"
-						MaxDeflectionClockwise="65d"
-						NaturalTurretAngle="60d"
-						RecenterWhenOutOfTurnRange="false">
-						<TurretAITargetChooserData
-							CanAcquireDynamicIfAssignedOutOfRange="true" />
-					</TurretSettings>
-				</WeaponSlotTurret>
-				<WeaponSlotHardpoint
-					ID="4">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="AlienAnnihilatorEMPCannon" />
-				</WeaponSlotHardpoint>
-			</WeaponSetUpdate>
-			<!-- dying, spawn a husk -->
-			<CreateObjectDie
-				id="ModuleTag_CreateObjectDie"
-				CreationList="Reaper17AnnihilatorTripodDieOCL">
-				<DieMuxData
-					DeathTypes="ALL" />
-			</CreateObjectDie>
-			<LaserState
-				id="ModuleTag_LaserState4"
-				LaserId="4" />	
-			<LaserState
-				id="ModuleTag_LaserState5"
-				LaserId="5" />				
-			<LaserState
-				id="ModuleTag_LaserState6"
-				LaserId="6" />
-      
-<!-- Reaper Tripod Conversion Beam-->
-
-			<SpecialPower
-				id="ModuleTag_TiberiumThiefSpecialPower"
-				SpecialPowerTemplate="SpecialPower_ConversionBeam"
-				UpdateModuleStartsAttack="true" />
-			
-			<TiberiumThiefSpecialAbilityUpdate
-				id="ModuleTag_TiberiumThiefSpecialAbilityUpdate"
-				SpecialPowerTemplate="SpecialPower_ConversionBeam"
-				UnpackTime="0.1s"
-				UnpackSound="AudioEvent:ALI_DevourerTank_ConversionBeamFire"
-				PersistentPrepTime="10000s"
-				StartAbilityRange="50"
-				TiberiumStolenPerUpdate="10"
-				DelayBetweenThefts="0.3s"
-				TiberiumCapacity="100"
-				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO DOES_CONTAIN_TIBERIUM"
-				ModelConditionWhenNotEmpty="USER_2"
-				StartRechargeOnExit="true" />
-			<StatusBitsUpgrade
-				id="ModuleTag_StatusBitUpgrade"
-				StatusToSet="SHIELDBODY_ENABLED">
-				<TriggeredBy>Upgrade_Reaper17ReactorForcefieldGenerator</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_UpgradeWeapon"
-				StatusToSet="WEAPON_UPGRADED_02">
-				<TriggeredBy>Upgrade_Reaper17ConversionReserves</TriggeredBy>
-			</StatusBitsUpgrade>
-			<SubObjectsUpgrade
-				id="ModuleTag_ShowConversionReserveTanks"
-				ShowSubObjects="AU_RPRTRIPOD_UPGR01">
-				<TriggeredBy>Upgrade_Reaper17ConversionReserves</TriggeredBy>
-			</SubObjectsUpgrade>
-								
-			<AISpecialPowerUpdate
-				id="ModuleTag_AlienDevourerConversionAI"
-				CommandButtonName="Command_DevourerTankConversionBeam"
-				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
-				SpecialPowerRadius="100" 
-				MinimumCutoff="5" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_AlienDevourerUpgradedConversionAI"
-				CommandButtonName="Command_UpgradedConversionBeam"
-				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
-				SpecialPowerRadius="100"
-				MinimumCutoff="5" />				
-			<AudioLoopUpgrade id="ALI_ConversionReserves_Upgrade" SoundToPlay="AudioEvent:ALI_ConversionReserves_Upgrade"> 
-				<TriggeredBy>Upgrade_Reaper17ConversionReserves</TriggeredBy> 
-			</AudioLoopUpgrade>
 			<AudioLoopUpgrade 
 				id="ForceFieldUpgradeSound" 
 				SoundToPlay="AudioEvent:ALI_ForceField_Begin">
-				<TriggeredBy>Upgrade_Reaper17ReactorForcefieldGenerator</TriggeredBy>
+				<TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
 			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate
 				id="ModuleTag_AI"
-				AutoAcquireEnemiesWhenIdle="YES"
-				AILuaEventsList="ReaperTripodFunctions">
+				AutoAcquireEnemiesWhenIdle="YES">
 				<UnitAITargetChooserData
 					CanPickDynamicTargets="false"
 					SympathyRange="25.0" />
