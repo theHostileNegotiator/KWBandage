@@ -694,25 +694,25 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBWeapLab" />
+						Name="W3DContainer:NBWeapLab" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE">
 					<Model
-						Name="NBWeapLab_D3" />
+						Name="W3DContainer:NBWeapLab_D3" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="NBWeapLab_D2" />
+						Name="W3DContainer:NBWeapLab_D2" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED">
 					<Model
-						Name="NBWeapLab" />
+						Name="W3DContainer:NBWeapLab" />
 					<Texture
 						Original="NBWeapLab"
 						New="NBWeapLab_D1" />
@@ -1191,6 +1191,28 @@
 					ForceUseDoFXObj="true"
 					FX="FX_ScorchLarge" />
 			</FXListBehavior>
+			<EngineerContain
+				id="ModuleTag_EngineerContain"
+				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
+				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
+				EvaEventForRepair="BuildingRepaired"
+				EvaEventForCapture="EnemyBuildingCaptured"
+				FXForRepair="FX_Building_Repaired" 
+				FXForCapture="FX_Building_Captured"
+				FXForCaptureAndReplace="FX_Building_Captured"
+				ImmediatelyEnabled="true">
+				<CanEnterFilter Rule="NONE">
+					<IncludeThing>GDIEngineer</IncludeThing>
+					<IncludeThing>NODSaboteur</IncludeThing>
+					<IncludeThing>AlienAssimilator</IncludeThing>
+					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
+					<IncludeThing>ZOCOMEngineer</IncludeThing>
+					<IncludeThing>BlackHandSaboteur</IncludeThing>
+					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
+					<IncludeThing>Traveler59Assimilator</IncludeThing>
+				</CanEnterFilter>
+			</EngineerContain>
 		</Behaviors>
 		<AI>
 			<AIUpdate

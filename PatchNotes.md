@@ -434,7 +434,7 @@
 	* Added team for Kanes Nod that is not enemies with LEGION and Alexa.
 #### Hearts and Minds
 1. Player can use Decoy Army and Radar Jamming Missile despite the two abilities never being available in ALL Campaign Missions.
-	* Hidden the Powers
+	* Library maps were not added to the mission map. Added the necessary Campaign Libraries
 #### Tacitus Interruptus
 1. According to the scripts, Reaper 17 was supposed to send constant waves of it's army, depending if all a specific unit is destroyed (If all Ravagers are killed, send in another wave of Ravagers)
 	* Reaper 17 will now spawn waves of units when army is destroyed
