@@ -978,6 +978,9 @@
 #### Secret Shrine
 1. Black Hand default side was set to BlackHandSecretShrine (Issues with Worldbuilder)
 	* Changed side to BlackHand
+2. Cybernetic legs subobject has unused idle animations associated with it which can actually be seen when transitioning betweed damage states
+	* Added idle animations to Cybernetic Legs
+		* Separated Cybernetic Legs into it's own draw so animation is more consistent
 #### Tech Lab
 1. AI would use the Redemption Power on friendly vehicles when it is only used on friendly infantry
 	* Changed Includes to Infantry

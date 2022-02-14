@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Includes>
-		<Include type="all" source="ART:nbshrine_d2sk.w3x"/>
+		<Include type="all" source="ART:nbshrine_d3sk.w3x"/>
 	</Includes>
-	<W3DMesh id="NBSHRINE_D2SN.BLACKDISCIPLES_GLOWS" GeometryType="Normal" SortLevel="2">
+	<W3DMesh id="NBSHRINE_D3SN.BLACKDISCIPLES_GLOWS" GeometryType="Normal" SortLevel="2">
 		<BoundingBox>
 			<Min X="-52.455341" Y="-22.107246" Z="10.500413"/>
 			<Max X="-45.018406" Y="21.351311" Z="17.294378"/>
@@ -329,101 +329,4 @@
 			</Constants>
 		</FXShader>
 	</W3DMesh>
-	<W3DContainer id="NBSHRINE_D2SN" Hierarchy="NBSHRINE_D2SK">
-		<SubObject SubObjectID="BLACKDISCIPLES_GLOWS" BoneIndex="13">
-			<RenderObject>
-				<Mesh>NBSHRINE_D2SN.BLACKDISCIPLES_GLOWS</Mesh>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="BLACKDISCIPLESUPGRD" BoneIndex="12">
-			<RenderObject>
-				<Mesh>NBSHRINE_D2SN.BLACKDISCIPLESUPGRD</Mesh>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="PURIFYINGFLAME01" BoneIndex="11">
-			<RenderObject>
-				<Mesh>NBSHRINE_D2SN.PURIFYINGFLAME01</Mesh>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="PURIFYINGFLAME02" BoneIndex="10">
-			<RenderObject>
-				<Mesh>NBSHRINE_D2SN.PURIFYINGFLAME02</Mesh>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="GLOWS" BoneIndex="9">
-			<RenderObject>
-				<Mesh>NBSHRINE_D2SN.GLOWS</Mesh>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="CONFUPGRD" BoneIndex="8">
-			<RenderObject>
-				<Mesh>NBSHRINE_D2SN.CONFUPGRD</Mesh>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="BIB" BoneIndex="7">
-			<RenderObject>
-				<Mesh>NBSHRINE_D2SN.BIB</Mesh>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="NEWSKIN" BoneIndex="0">
-			<RenderObject>
-				<Mesh>NBSHRINE_D2SN.NEWSKIN</Mesh>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX11" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX11</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX10" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX10</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX09" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX09</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX08" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX08</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX07" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX07</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX06" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX06</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX05" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX05</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX04" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX04</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX03" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX03</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX02" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX02</CollisionBox>
-			</RenderObject>
-		</SubObject>
-		<SubObject SubObjectID="OBBOX01" BoneIndex="0">
-			<RenderObject>
-				<CollisionBox>NBSHRINE_D2SN.OBBOX01</CollisionBox>
-			</RenderObject>
-		</SubObject>
-	</W3DContainer>
 </AssetDeclaration>
