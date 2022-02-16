@@ -49829,6 +49829,7 @@
     <StringAndHash Hash="1996177595" Text="CM_3_2_GDIAirHarassment" />
     <StringAndHash Hash="3231779084" Text="CM_3_2_GDIEngineer" />
     <StringAndHash Hash="780244032" Text="CM_3_2_FullProductionBudget" />
+    <StringAndHash Hash="2377536482" Text="AttributeModifier_PreventCrush10" />
     <StringAndHash Hash="3013298872" Text="FX_ALI_Mechapede_SoundCreate" />
     <StringAndHash Hash="1262456338" Text="AlienEradicatorLaserWeaponA" />
     <StringAndHash Hash="4289208462" Text="AlienEradicatorLaserWeaponC" />
@@ -49872,6 +49873,9 @@
     <StringAndHash Hash="617753513" Text="NBDHUB_QL_SKN.OBBOX01" />
     <StringAndHash Hash="3759905631" Text="NBDHUB_QL_SKN.NEWSKIN_LASERCANNON" />
     <StringAndHash Hash="128642227" Text="NBDHUB_QL_SKN" />
+    <StringAndHash Hash="3141677233" Text="NBOPCENTER_DISH" />
+    <StringAndHash Hash="1459737649" Text="NBOPCENTER_DISH.DISH" />
+    <StringAndHash Hash="4239845963" Text="FX_NOD_RocketBunker_TibCoreMissileFire" />
     <StringAndHash Hash="4193898829" Text="NBDHUB_QM_SKL" />
     <StringAndHash Hash="3453424391" Text="NBDHUB_M_SKN" />
     <StringAndHash Hash="1509445380" Text="NBDHUB_QM_SKN.HOSE" />
@@ -49896,9 +49900,19 @@
     <StringAndHash Hash="1225122827" Text="NBDHUB_QS_SKN.NEWSKIN_SHREDDER" />
     <StringAndHash Hash="801187700" Text="NBDHUB_QS_SKN" />
     <StringAndHash Hash="303853143" Text="OCL_NODVeinDetonationTrigger" />
+    <StringAndHash Hash="1867490636" Text="NBSHRINE_CYBERLEGS" />
+    <StringAndHash Hash="2763961772" Text="NBSHRINE_CYBERLEGS.CYBERNETICLEGS_08" />
+    <StringAndHash Hash="2305077328" Text="NBSHRINE_CYBERLEGS.CYBERNETICLEGS_07" />
+    <StringAndHash Hash="1188600730" Text="NBSHRINE_CYBERLEGS.CYBERNETICLEGS_06" />
+    <StringAndHash Hash="255877404" Text="NBSHRINE_CYBERLEGS.CYBERNETICLEGS_05" />
+    <StringAndHash Hash="1357208996" Text="NBSHRINE_CYBERLEGS.CYBERNETICLEGS_04" />
+    <StringAndHash Hash="1818904725" Text="NBSHRINE_CYBERLEGS.CYBERNETICLEGS_03" />
+    <StringAndHash Hash="3001740651" Text="NBSHRINE_CYBERLEGS.CYBERNETICLEGS_02" />
+    <StringAndHash Hash="1205347993" Text="NBSHRINE_CYBERLEGS.CYBERNETICLEGS_01" />
     <StringAndHash Hash="812420205" Text="SpecialPowerMarkedOfKaneRedShadowStrikeTeam" />
     <StringAndHash Hash="3198956302" Text="OCL_SpecialPowerMarkedOfKaneRedShadowStrikeTeam" />
     <StringAndHash Hash="803641470" Text="SpecialPower_TiberiumAgitationDispatch" />
+    <StringAndHash Hash="313313088" Text="BlackHandCustomWarmechFlamerWarheadForAllies" />
     <StringAndHash Hash="1977307933" Text="DamageAlliesDummyProjectile" />
     <StringAndHash Hash="2049432719" Text="NODFlameTankFlamerUpgradedWarhead" />
     <StringAndHash Hash="1010204927" Text="BlackHandCustomWarmechUpgradedFlamerWarheadForAllies" />
@@ -49943,6 +49957,7 @@
     <StringAndHash Hash="640023814" Text="OCL_Reaper17Buzzers" />
     <StringAndHash Hash="2625822154" Text="AlienHarvesterArmorShieldBodyEnabled" />
     <StringAndHash Hash="3762033947" Text="AUSHARDWLKR_FP" />
+    <StringAndHash Hash="116582856" Text="AttributeModifier_PreventCrush6" />
     <StringAndHash Hash="1200587428" Text="GUMamm_AAUG_D" />
     <StringAndHash Hash="2662196241" Text="GUVehicleF_AAUG_D" />
     <StringAndHash Hash="1768428231" Text="OCL_SteelTalonsTitanDebris" />
@@ -49969,6 +49984,7 @@
     <StringAndHash Hash="3522273033" Text="GUSTLSHAT_MOVA" />
     <StringAndHash Hash="1779085625" Text="GUSTLSHAT_ATKA" />
     <StringAndHash Hash="939352786" Text="AttributeModifier_OverloadBeam" />
+    <StringAndHash Hash="1773752712" Text="ZoneRaiderSquadRangefinder" />
     <StringAndHash Hash="1869245556" Text="Command_MarkedOfKaneRedShadowStrikeTeam" />
     <StringAndHash Hash="1733706721" Text="Command_Reaper17SpecialPowerSwarm" />
     <StringAndHash Hash="1473992269" Text="Reaper17Buzzers" />
@@ -49984,6 +50000,7 @@
     <StringAndHash Hash="3230170649" Text="NODBlackHandUpgradedFlamethrowerWarhead" />
     <StringAndHash Hash="3233998803" Text="NODBlackHandUpgradedFlamethrowerWarheadForAllies" />
     <StringAndHash Hash="3754685046" Text="IonStormWeaponWarheadForAllies" />
+    <StringAndHash Hash="966791776" Text="AttributeModifier_PreventCrush7_5" />
     <StringAndHash Hash="928123680" Text="HC_NUEnlightened_UGCL" />
     <StringAndHash Hash="472442113" Text="NUSILENT_EMPB" />
     <StringAndHash Hash="3161780485" Text="NODRocketMilitantArmor_TiberiumInfused" />
@@ -49991,6 +50008,8 @@
     <StringAndHash Hash="1036322433" Text="TibTrooperBlastCannonWarheadForAllies" />
     <StringAndHash Hash="70270251" Text="HC_NUTibTroop_UGCL" />
     <StringAndHash Hash="2481471446" Text="TibTrooperBlastCannonCloned" />
+    <StringAndHash Hash="301403593" Text="AttributeModifier_PreventCrush5" />
+    <StringAndHash Hash="1742164788" Text="NuclearMissileFinalWeapon" />
     <StringAndHash Hash="247798254" Text="AURPRTRIPODH_SKN.OBBOX04" />
     <StringAndHash Hash="3535130519" Text="AURPRTRIPODH_SKN.OBBOX03" />
     <StringAndHash Hash="1600755785" Text="AURPRTRIPODH_SKN.OBBOX02" />
@@ -50009,21 +50028,23 @@
     <StringAndHash Hash="4259258633" Text="Reaper17MillipedeHead" />
     <StringAndHash Hash="1951523839" Text="Traveler59MillipedeBody" />
     <StringAndHash Hash="3076182105" Text="Traveler59MillipedeHead" />
+    <StringAndHash Hash="3167306171" Text="EMPControlCenterWeapon_Aircraft" />
+    <StringAndHash Hash="2667032757" Text="EMPField_Air" />
     <StringAndHash Hash="2317069999" Text="GDIHammerheadDebris_06" />
-    <StringAndHash Hash="2875308478" Text="GUZocomHarvR01" />
-    <StringAndHash Hash="2626959476" Text="GUZocomHarvR01.R01" />
+    <StringAndHash Hash="2875308478" Text="GUZOCOMHARVR01" />
+    <StringAndHash Hash="2626959476" Text="GUZOCOMHARVR01.R01" />
     <StringAndHash Hash="752536975" Text="GDIZOCOMHarvesterDebris_01" />
-    <StringAndHash Hash="776127781" Text="GUZocomHarvR02" />
-    <StringAndHash Hash="359263157" Text="GUZocomHarvR02.R02" />
+    <StringAndHash Hash="776127781" Text="GUZOCOMHARVR02" />
+    <StringAndHash Hash="359263157" Text="GUZOCOMHARVR02.R02" />
     <StringAndHash Hash="1512397140" Text="GDIZOCOMHarvesterDebris_02" />
-    <StringAndHash Hash="3929406816" Text="GUZocomHarvR03" />
-    <StringAndHash Hash="3540871987" Text="GUZocomHarvR03.R03" />
+    <StringAndHash Hash="3929406816" Text="GUZOCOMHARVR03" />
+    <StringAndHash Hash="3540871987" Text="GUZOCOMHARVR03.R03" />
     <StringAndHash Hash="269454091" Text="GDIZOCOMHarvesterDebris_03" />
-    <StringAndHash Hash="2256542447" Text="GUZocomHarvR04" />
-    <StringAndHash Hash="843687807" Text="GUZocomHarvR04.R04" />
+    <StringAndHash Hash="2256542447" Text="GUZOCOMHARVR04" />
+    <StringAndHash Hash="843687807" Text="GUZOCOMHARVR04.R04" />
     <StringAndHash Hash="1462121755" Text="GDIZOCOMHarvesterDebris_04" />
-    <StringAndHash Hash="346142640" Text="GUZocomHarvR05" />
-    <StringAndHash Hash="1185795754" Text="GUZocomHarvR05.R05" />
+    <StringAndHash Hash="346142640" Text="GUZOCOMHARVR05" />
+    <StringAndHash Hash="1185795754" Text="GUZOCOMHARVR05.R05" />
     <StringAndHash Hash="559482727" Text="GDIZOCOMHarvesterDebris_05" />
     <StringAndHash Hash="17997531" Text="GUVEHICLEF_R01" />
     <StringAndHash Hash="604328155" Text="GUVEHICLEF_R01.R01" />
@@ -50071,7 +50092,6 @@
     <StringAndHash Hash="1005311058" Text="Traveler59MechapedeBodySegmentsExperienceLevel_2" />
     <StringAndHash Hash="3197274732" Text="Traveler59MechapedeBodySegmentsExperienceLevel_3" />
     <StringAndHash Hash="2212872776" Text="Traveler59MechapedeBodySegmentsExperienceLevel_4" />
-    <StringAndHash Hash="2814765271" Text="BlackHandCustomWarmechFlameWarheadrForAllies" />
     <StringAndHash Hash="2088216678" Text="CM_2_1_GDIBombingRuns" />
     <StringAndHash Hash="3065281956" Text="CM_2_1_GDIReactiveDefense" />
     <StringAndHash Hash="3914079796" Text="CM_2_3_GDIOptimal_EASY" />

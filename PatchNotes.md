@@ -1027,7 +1027,7 @@
 4. All air units faced the same direction when docked
 	* Reoriented direction of landing pads, based on the Air Tower (AKA, facing away from the center)
 		* Changed order to represent Air Tower
-5. Geometry is inaccurate being to large
+5. Geometry is inaccurate being too large
 	* Adjusted geometry to be more representative of the model
 6. Build, ReallyDamaged and Rubble Model uses multiple Normal mesh instead of singular Skin mesh
 	* Changed model
@@ -1035,6 +1035,11 @@
 	* Fixed the problematic normals
 8. Damaged FX is too small
 	* Changed list to use larger FX
+#### Temple Of NOD
+1. If units are in the potential blast radius of the Super Weapon when the Missile is landing, even if they move away, they will take the full damage. Concurrently, any units outside can enter the radius and not take any damage
+	* Damage is dealt from the death of Missile seed object instead of using a Delay in the weapon nugget of the launch weapon
+2. Nuke does no damage when fired and then Stasis
+	* Above fix solves this issue
 #### Tiberium Infusion
 1. Upgrade removes Militant Rockets and Fanatics extra GUN damage type vulnerability
 	* Added the extra damage from GUN to Tiberium Infusion Armor (Created new armor for Militant Rocket)

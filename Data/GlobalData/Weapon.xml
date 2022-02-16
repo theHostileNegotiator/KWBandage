@@ -3965,6 +3965,34 @@
 		</Nuggets>
 	</WeaponTemplate>
 	
+<!-- Nuclear Missile will no longer affect units that exits the blast radius -->
+<!-- Will deal damage even if structure is under stasis field -->
+	<WeaponTemplate
+		id="NuclearMissile"
+		Name="NuclearMissile"
+		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+		AttackRange="10000">
+		<Nuggets>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_NODNukeSeed" />
+			<ReportWeaponFiredStatNugget/>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NuclearMissileFinalWeapon"
+		Name="NuclearMissileFinalWeapon"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AttackRange="10000">
+		<Nuggets>
+			<DamageNugget
+				Damage="20000"
+				DamageTaperOff="5000"
+				Radius="300"
+				DamageType="CANNON"
+				DeathType="DETONATED" />
+		</Nuggets>
+	</WeaponTemplate>
+	
 <!-- New Fire FX to include sound -->
 	<WeaponTemplate
 		id="NODRocketBunkerSpawnTibCoreWeapon"
