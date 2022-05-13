@@ -6,8 +6,11 @@
 <!-- Arrows will now appear on the ramp -->
 <!-- Ramp tilts earlier in METAUNIT animation -->
 <!-- Added LocalPlayerOnly to the Repair Decal Shadow so it can no longer be seen by other players -->
+<!-- Fixed lights alignment -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all" source="ART:GBRecHub_SKN.w3x" />
+		<Include type="all" source="ART:GBRecHub_D2SN.w3x" />
 		<Include type="all" source="ART:GBRecDoor_D2SN.w3x" />
 		<Include type="all" source="ART:GBRecDoor1_SKN.w3x" />
 		<Include type="all" source="ART:GBRecDoor2_OPN.w3x" />

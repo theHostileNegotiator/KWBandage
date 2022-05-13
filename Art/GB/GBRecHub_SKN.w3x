@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<W3DMesh id="GBRECHUB_D2SN.FX_LIGHTS" GeometryType="Normal" SortLevel="1">
+	<W3DMesh id="GBRECHUB_SKN.FX_LIGHTS" GeometryType="Normal" SortLevel="1">
 		<BoundingBox>
 			<Min X="-6.126688" Y="-33.698235" Z="-68.598763" />
 			<Max X="127.356644" Y="77.621956" Z="6.126682" />

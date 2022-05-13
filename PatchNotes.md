@@ -702,6 +702,8 @@
 	* Give FX_GUIDEARROWS mesh SortLevel 1
 3. Ramp animation when the MARV exits the structure is conflicting
 	* Fixed animation so the ramp tilts earlier
+4. Lights are clipping with the mesh
+	* Adjustments made to the light mesh (Masterleaf)
 #### Crane
 1. Damaged model had an extra clean mesh on top of the damaged mesh which nullifies missing segments
 	* Removed extra mesh
