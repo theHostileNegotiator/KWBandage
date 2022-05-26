@@ -293,6 +293,8 @@
 			* Decoy Temple of Nod (Icon)
 			* Ichor Seed (Cursor)
 			* Shock Pods (Cursor)
+2. Superweapons and some destructive powers have an OCL to destroy trees and other props, however this also affects destroyed objects, which presents a problem to NOD turrets as they will be permanently destroyed.
+	* Delete CLEAR_REMOVABLES flag from the OCL due to the issues. Trees will still be crushed but many props will be preserved
 #### UI
 1. In TW, if a single Aircraft with Ammo was selected, ammo would be displayed in the unit portrait. This feature is not in KW
 	* Modified TacticalHUDSelectionDetails, now ammo will be displayed in the unit portrait

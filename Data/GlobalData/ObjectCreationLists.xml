@@ -1,6 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 
+<!-- Delete Clear Removables as it removes destroyed objects, including Nod Turrets -->
+	<ObjectCreationList
+		id="OCL_GenericTreeCrusher">
+		<CreateObject
+			Disposition="LIKE_EXISTING"
+			Options="IGNORE_ALL_OBJECTS">
+			<Offset z="-50"/>
+			<CreateObject>GenericTreeCrusher</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
 <!-- Added main Hammerhead Husk -->
 	<ObjectCreationList
 		id="OCL_GDIHammerheadInitialDebris">
