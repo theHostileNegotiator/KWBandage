@@ -2247,7 +2247,7 @@
 		id="GDISonicTankExperienceLevel_2"
 		Prerequisite="GDISonicTankExperienceLevel_1"
 		RequiredExperience="4500"
-		ExperienceAward="1650"
+		ExperienceAward="1950"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -2274,7 +2274,7 @@
 		id="GDISonicTankExperienceLevel_3"
 		Prerequisite="GDISonicTankExperienceLevel_2"
 		RequiredExperience="9000"
-		ExperienceAward="1800"
+		ExperienceAward="2400"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
