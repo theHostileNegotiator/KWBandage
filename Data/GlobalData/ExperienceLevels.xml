@@ -443,7 +443,34 @@
 			MaxRadius="200"
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
-	
+
+	<ExperienceLevelTemplate
+		id="AlienGunWalkerExperienceLevel_4"
+		Prerequisite="AlienGunWalkerExperienceLevel_3"
+		RequiredExperience="6300"
+		ExperienceAward="1400"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="4">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_AlienLevelUp_03" />
+		<Target>AlienGunWalker</Target>
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+
 	<ExperienceLevelTemplate
 		id="AlienMastermindExperienceLevel_1"
 		RequiredExperience="1"
@@ -6538,7 +6565,34 @@
 			MaxRadius="200"
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
-	
+
+	<ExperienceLevelTemplate
+		id="Traveler59GunWalkerExperienceLevel_4"
+		Prerequisite="Traveler59GunWalkerExperienceLevel_3"
+		RequiredExperience="6300"
+		ExperienceAward="1400"
+		ModelConditionState="SPECIAL_CHEERING"
+		Rank="4">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_AlienLevelUp_03" />
+		<Target>Traveler59GunWalker</Target>
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+
 	<ExperienceLevelTemplate
 		id="Traveler59EradicatorHexapodExperienceLevel_1"
 		RequiredExperience="1"

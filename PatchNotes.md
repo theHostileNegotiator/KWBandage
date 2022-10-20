@@ -41,6 +41,7 @@
 			* BH Mantis
 			* MOK Awakened
 			* MOK Enlightened
+			* Scrin/T59 Gun Walker
 			* Scrin Mechapede
 			* Scrin Mastermind
 			* Scrin/R17/T59 Mothership
