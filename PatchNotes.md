@@ -713,6 +713,9 @@
 2. Has no Faction Colors due to new HC map for Guardian Cannon. Even with the old HC map, there are no Faction Colors with Low LOD model
 	* Created alternate Guardian Cannon SPM texture with old HC map and added HC section to the Crane claw part in Conyard SPM
 		* HC on claw affects MCV
+3. Crates do not appear in the preview cursor. This is because the source texture has alpha which is what hides the crates in the preview
+	* Replaced texture to not have alpha
+	    * Use new texture that requires adjusting of UVs, added Specular and Normal mapping and uses ObjectsGDI shader
 #### Dig In Structure
 1. Advanced units from the Base Factions can not garrison in structure whereas Sub Factions can
 	* Exclude Sub Faction advanced units from garrison Dig In Structure
