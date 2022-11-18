@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Refer to Scrin Ravager Squad-->
-<!--Added Advanced Articulators upgrade reference to squad for Global Conquest-->
-<!--Changed CommandSet to Alien as T59 is missing certain commands-->
+<!-- Refer to Scrin Ravager Squad -->
+<!-- Added Advanced Articulators upgrade reference to squad for Global Conquest-->
+<!-- Changed CommandSet to Alien as T59 is missing certain commands -->
 	<Tags></Tags>
 	<Includes></Includes>
 	<GameObject
@@ -131,7 +131,9 @@
 						Template="StalkerRangefinder" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
-
+			<StealthDetectorUpdate
+				id="ModuleTag_StealthDetect"
+				DetectionRange="100" />
 			<Physics
 				id="ModuleTag_Physics"></Physics>
 			<HordeContain

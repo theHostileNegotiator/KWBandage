@@ -1130,6 +1130,8 @@
 	* Added DetonateCallsKill="true" to trigger the OnDeath effects
 5. Tiberium Agitation does not do full damage to moving units
 	* Projectile would miss, added ability for projectile to 'track' targets.
+6. Unit cannot detect stealth units at close range, something that all other infantry unit can do
+	* Added Stealth detection to squad
 #### Mastermind
 1. Can control subfaction base defense
 	* Removed ability to target base defense structures
