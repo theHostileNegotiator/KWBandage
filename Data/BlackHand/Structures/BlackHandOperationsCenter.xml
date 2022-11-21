@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Fixed AI Laser Fence Referencing -->
+<!-- Fixed Power Signature Scan deducting cost value twice -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -548,7 +549,8 @@
 			<!-- Power Signature Scan -->
 			<SpecialPower
 				id="ModuleTag_PowerSignatureScan"
-				SpecialPowerTemplate="SpecialPower_PowerSignatureScan" />
+				SpecialPowerTemplate="SpecialPower_PowerSignatureScan"
+				UpdateModuleStartsAttack="true" />
 			<RadarScanMapSpecialAbilityUpdate
 				id="ModuleTag_PowerSignatureScanUpdate"
 				SpecialPowerTemplate="SpecialPower_PowerSignatureScan"

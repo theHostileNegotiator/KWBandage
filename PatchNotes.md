@@ -715,7 +715,7 @@
 		* HC on claw affects MCV
 3. Crates do not appear in the preview cursor. This is because the source texture has alpha which is what hides the crates in the preview
 	* Replaced texture to not have alpha
-	    * Use new texture that requires adjusting of UVs, added Specular and Normal mapping and uses ObjectsGDI shader
+		* Use new texture that requires adjusting of UVs, added Specular and Normal mapping and uses ObjectsGDI shader
 #### Dig In Structure
 1. Advanced units from the Base Factions can not garrison in structure whereas Sub Factions can
 	* Exclude Sub Faction advanced units from garrison Dig In Structure
@@ -976,7 +976,7 @@
 3. Bombs are missing an extra sound effect when impacted
 	* Added DetonateCallsKill="true" to trigger the OnDeath effects
 #### Operations Center
-1. Parts of the model is clean in Damaged States
+1. Parts of the model are clean in Damaged States
 	* Added texture swaps for damaged states in ModuleTag_Draw_Missle
 2. Dish does not spin when Radar Jammer special power is ready
 	* Separated the Dish from the Missile Model and is used in a different draw with it's own animation
@@ -1078,6 +1078,10 @@
 #### Decoy Army
 1. Can select and clone Drone Ships
 	* Removed Drone ships from being cloned
+#### Power Signature Scan
+1. Support Power deducted resources twice, as the SpecialPower Update Module attribute UpdateModuleStartsAttack was not set to "true"
+	* Set attribute for SpecialPower Update Module "ModuleTag_PowerSignatureScan" UpdateModuleStartsAttack to "true"
+		* Fixes sound playing twice
 #### Cloaking Field
 1. Advanced Units have a damage reduction to ability except for Sub-factions
 	* Applied damage reduction to Sub-faction Advanced Units
