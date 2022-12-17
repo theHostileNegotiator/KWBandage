@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Fixed EMP Range-->
-<!--AI will now use EMP Blast-->
+<!-- Fixed EMP Range -->
+<!-- AI will now use EMP Blast -->
+<!-- Changed Weapon Category from GUN to CANNON -->
 	<GameObject
 		id="MarkedOfKaneImprovedCyborgInfantrySquad"
 		SelectPortrait="Portrait_ImprovedCyborgInfantry"
@@ -18,7 +19,7 @@
 		FormationDepth="1"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
-		WeaponCategory="GUN"
+		WeaponCategory="CANNON"
 		EditorName="MarkedOfKaneImprovedCyborgInfantrySquad"
 		Description="Desc:MarkedOfKaneImprovedCyborgInfantry"
 		WorldMapArmoryUpgradesAllowed="Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam Upgrade_MarkedOfKaneCyberneticLegs"

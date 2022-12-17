@@ -7,6 +7,7 @@
 <!-- Fixed Transition to Idle animation A from animating the EMP weapon -->
 <!-- Fixed Model, EMP weapon and Super Charged Particle Beam weapon assigned to incorrect bone -->
 <!-- Fixed Low LOD models having incorrect weapon and added new model for the Upgraded version -->
+<!-- Changed Weapon Category from GUN to CANNON -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NUEnlightened_SKN.w3x"  />
@@ -31,7 +32,7 @@
 		BuildCompletion="APPEARS_AT_RALLY_POINT"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
-		WeaponCategory="GUN"
+		WeaponCategory="CANNON"
 		VoicePriority="138"
 		EditorName="MarkedOfKaneImprovedCyborgInfantry"
 		WorldMapArmoryUpgradesAllowed="Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam"

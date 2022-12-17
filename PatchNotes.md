@@ -868,6 +868,8 @@
 	* Fixed bone reference of mesh
 3. Low LOD model has Super Charged Particle Beam weapon when upgrade has not been purchased
 	* Swapped weapon mesh for Charged Particle Beam, upgraded model now has Low LOD version
+4. Will prioritise infantry over vehicles
+	* Changed Weapon Category from GUN to CANNON
 #### Commando
 1. Has directional armor allowing it to take extra damage from the side and back. Typically infantry do not have directional armor penalties
 	* Remove Directional Armor Penalty
