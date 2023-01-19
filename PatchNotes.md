@@ -351,6 +351,28 @@
 			* Explorer
 			* Mothership
 		* Removed flag from Mechapede Segments
+#### Africa Civilian Props Missing Textures
+1. African Civilian props are missing Specular and Normal textures, causing them to glow
+	* Compiled new (but cheap) Specular and Normal maps
+#### Civilian Props Destruction
+1. Some props added to Kane's Wrath when destroyed transform into an Egyptian Market
+   * Adjusted draws to not use the Market model
+		* Objects Affected
+		   * Africa Prop 01 - 02
+		   * China Prop 01 - 02
+		   * Russia Prop 01 - 02
+#### Civilian Struture and Prop Geometry
+1. Structures added into Kane's Wrath have inconsistent geometry
+	* Adjust geometry to be accurate to the model
+		* Objects Affected
+		   * Africa Prop 01 - 02
+		   * Africa Wall 01 - 02
+		   * China Structure 01 - 06
+		   * China Prop 01 - 02
+		   * China Wall 01 - 03
+		   * Russia Structure 01 - 06
+		   * Russia Prop 01 - 02
+		   * Russia Wall 01 - 03
 #### Multiplayer Maps
 1. Some Maps do not spawn Crates when Multiplayer game has Add Random Crates enabled
 	* Added GenericCrateSpawner object to each map that is missing said object

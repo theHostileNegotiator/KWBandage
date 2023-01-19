@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tags></Tags>
+  <Includes>
+  
+    <Include type="all" source="DATA:civilian/Africa_AF/props/AFProp01.xml" />
+    <Include type="all" source="DATA:civilian/Africa_AF/props/AFProp02.xml" />
+    <Include type="all" source="DATA:civilian/Africa_AF/props/AFWall01.xml" />
+    <Include type="all" source="DATA:civilian/Africa_AF/props/AFWall02.xml" />
+    <Include type="all" source="DATA:civilian/China_CH/props/CHProp01.xml" />
+    <Include type="all" source="DATA:civilian/China_CH/props/CHProp02.xml" />
+    <Include type="all" source="DATA:civilian/China_CH/props/CHWall01.xml" />
+    <Include type="all" source="DATA:civilian/China_CH/props/CHWall02.xml" />
+    <Include type="all" source="DATA:civilian/China_CH/props/CHWall03.xml" />
+    <Include type="all" source="DATA:civilian/Russia_RU/props/RUProp01.xml" />
+    <Include type="all" source="DATA:civilian/Russia_RU/props/RUProp02.xml" />
+    <Include type="all" source="DATA:civilian/Russia_RU/props/RUWall01.xml" />
+    <Include type="all" source="DATA:civilian/Russia_RU/props/RUWall02.xml" />
+    <Include type="all" source="DATA:civilian/Russia_RU/props/RUWall03.xml" />
+  </Includes>
+
+</AssetDeclaration>

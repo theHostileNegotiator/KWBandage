@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Include Specular and Normal textures -->
+<!-- Fix Geometry -->
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="all"
+			source="ART:AF_Wall01.w3x" />
+	</Includes>
+	<GameObject
+		id="AF_Wall01"
+		KindOf="IMMOBILE NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE"
+		Side="Civilian"
+		EditorName="Africa Wall 01"
+		EditorSorting="MISC_MAN_MADE"
+		Browser="REGION AFRICA_AF MISC_MAN_MADE">
+		<DisplayName>Prop</DisplayName>
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="AF_Wall01" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="1.0" />
+		</Body>
+		<Geometry
+			IsSmall="false">
+			<Shape
+				Type="BOX"
+				MajorRadius="21.0"
+				MinorRadius="8.5"
+				Height="8.0"/>
+		</Geometry>
+	</GameObject>
+</AssetDeclaration>

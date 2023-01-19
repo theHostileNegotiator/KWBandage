@@ -14433,9 +14433,9 @@
 		<Structure
 			Angle="1.0472"
 			EventList=""
-			Faction="PlyrGDI_A/teamPlyrGDI_A"
+			Faction="PlyrGDI_Obj/teamPlyrGDI_Obj"
 			Health="100"
-			Team="PlyrGDI_A"
+			Team="PlyrGDI_Obj"
 			ThingTemplate="MG_GDI_ASATDefense"
 			id="MG_GDI_ASATDefense">
 			<Position
@@ -14459,9 +14459,9 @@
 		<Structure
 			Angle="-0.523599"
 			EventList=""
-			Faction="PlyrGDI_B/teamPlyrGDI_B"
+			Faction="PlyrGDI_Obj/teamPlyrGDI_Obj"
 			Health="100"
-			Team="PlyrGDI_B"
+			Team="PlyrGDI_Obj"
 			ThingTemplate="GDI_LabRadarBuilding"
 			id="GDI_LabRadarBuilding">
 			<Position

@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Fix Geometry -->
 	<Tags></Tags>
 	<Includes>
 		<Include
@@ -696,57 +697,37 @@
 			IsSmall="false">
 			<Shape
 				Type="BOX"
-				MajorRadius="156.0"
-				MinorRadius="56.5"
-				Height="62.0"></Shape>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="-24.89"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="-24.89"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="24.7911"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="24.7911"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="-24.89"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="-24.89"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="24.7911"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="24.7911"
-					z="0.0" />
-			</ContactPoint>
+				MajorRadius="39.8035"
+				MinorRadius="51.6389"
+				Height="72.2486"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "-12.1188"
+					y = "0.0"
+					z = "0.0" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="29.2917"
+				MinorRadius="79.6468"
+				Height="41.9270"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "-12.1064"
+					y = "0.0"
+					z = "0.0" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="11.6929"
+				MinorRadius="15.9748"
+				Height="64.4867"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "39.3776"
+					y = "0.0"
+					z = "0.0" />
+			</Shape>
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry Sound="AudioEvent:GenericBuilding_Select" AudioType="voiceSelect" />

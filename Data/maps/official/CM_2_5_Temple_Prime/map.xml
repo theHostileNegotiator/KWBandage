@@ -7225,9 +7225,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7238,9 +7238,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7251,9 +7251,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7264,9 +7264,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7277,9 +7277,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7290,9 +7290,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7303,9 +7303,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7316,9 +7316,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7329,9 +7329,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7342,9 +7342,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7355,9 +7355,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7368,9 +7368,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7381,9 +7381,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7394,9 +7394,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7407,9 +7407,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7420,9 +7420,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7433,9 +7433,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7446,9 +7446,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7459,9 +7459,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7472,9 +7472,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7485,9 +7485,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7498,9 +7498,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7511,9 +7511,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7524,9 +7524,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7537,9 +7537,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7550,9 +7550,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7563,9 +7563,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7576,9 +7576,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7589,9 +7589,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7602,9 +7602,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7615,9 +7615,9 @@
 		<Structure
 			Angle="2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7628,9 +7628,9 @@
 		<Structure
 			Angle="2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7641,9 +7641,9 @@
 		<Structure
 			Angle="2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7654,9 +7654,9 @@
 		<Structure
 			Angle="2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7667,9 +7667,9 @@
 		<Structure
 			Angle="2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7680,9 +7680,9 @@
 		<Structure
 			Angle="2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7693,9 +7693,9 @@
 		<Structure
 			Angle="2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7706,9 +7706,9 @@
 		<Structure
 			Angle="2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7719,9 +7719,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7732,9 +7732,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7745,9 +7745,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7758,9 +7758,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7771,9 +7771,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7784,9 +7784,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7797,9 +7797,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7810,9 +7810,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7823,9 +7823,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7836,9 +7836,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7849,9 +7849,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7862,9 +7862,9 @@
 		<Structure
 			Angle="-0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7875,9 +7875,9 @@
 		<Structure
 			Angle="-0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7888,9 +7888,9 @@
 		<Structure
 			Angle="-0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7901,9 +7901,9 @@
 		<Structure
 			Angle="-0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7914,9 +7914,9 @@
 		<Structure
 			Angle="-0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7927,9 +7927,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7940,9 +7940,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7953,9 +7953,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7966,9 +7966,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7979,9 +7979,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallSegment"
 			id="GDIWallSegment">
 			<Position
@@ -7992,9 +7992,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8005,9 +8005,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8018,9 +8018,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8057,9 +8057,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8070,9 +8070,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8083,9 +8083,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8096,9 +8096,9 @@
 		<Structure
 			Angle="0.785398"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8109,9 +8109,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8122,9 +8122,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8135,9 +8135,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -8148,9 +8148,9 @@
 		<Structure
 			Angle="-2.35619"
 			EventList=""
-			Faction="Plyrfactioncivilian/teamPlyrfactioncivilian"
+			Faction="PlyrGDI_C/teamPlyrGDI_C"
 			Health="100"
-			Team="Plyrfactioncivilian"
+			Team="PlyrGDI_C"
 			ThingTemplate="GDIWallHub"
 			id="GDIWallHub">
 			<Position
@@ -33807,6 +33807,10 @@
 	</GameMap>
 	<GameScriptList
 		id="PlyrNOD_H">
+		<ScriptSet/>
+	</GameScriptList>
+	<GameScriptList
+		id="PlyrGDI_C">
 		<ScriptSet/>
 	</GameScriptList>
 </AssetDeclaration>

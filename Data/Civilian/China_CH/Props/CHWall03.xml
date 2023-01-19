@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Fix Geometry -->
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="instance"
+			source="DATA:BaseObjects/BaseCrushableObstacle.xml" />
+		<Include
+			type="all"
+			source="ART:CHWall03.w3x" />
+	</Includes>
+	<GameObject
+		id="CHWall03"
+		inheritFrom="BaseCrushableObstacle"
+		KindOf="IMMOBILE NOT_AUTOACQUIRABLE STRUCTURE CRUSHABLE_OBSTACLE CAN_SEE_THROUGH_STRUCTURE COVER RESIST_EMP SIMPLE_OBJECT_PROP CAN_SKIP_SHADOW"
+		CommandSet="EmptyCommandSet"
+		Side="Civilian"
+		EditorName="China Wall 03"
+		EditorSorting="MISC_MAN_MADE"
+		Browser="REGION CHINA_CH MISC_MAN_MADE"
+		RadarPriority="NOT_ON_RADAR">
+		<DisplayName>Prop</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="CHWall03" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<ToppleUpdate
+				id="ModuleTag_Topple"
+				ToppleFX="FX_WoodCrush"
+				KillWhenToppled="true">
+			</ToppleUpdate>
+			<SlowDeath
+				id="ModuleTag_Death"
+				SinkDelay="2s"
+				SinkRate="3"
+				DestructionDelay="4s">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</SlowDeath>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="1.0" />
+		</Body>
+		<Geometry
+			IsSmall="false">
+			<Shape
+				Type="BOX"
+				MajorRadius="7.8"
+				MinorRadius="3.1"
+				Height="7.2"/>
+		</Geometry>
+		<CrusherInfo
+			CrusherLevel="0"
+			CrushableLevel="0" />
+	</GameObject>
+</AssetDeclaration>

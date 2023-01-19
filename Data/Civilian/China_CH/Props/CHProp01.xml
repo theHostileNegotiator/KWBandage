@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance">
+<!-- Fix Geometry -->
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="all"
+			source="ART:CHProp01.w3x" />
+	</Includes>
+	<GameObject
+		id="CHProp01"
+		Side="Civilian"
+		KindOf="IMMOBILE NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE"
+		EditorName="CHProp01"
+		EditorSorting="MISC_MAN_MADE"
+		Browser="REGION CHINA_CH STRUCTURE">
+		<DisplayName>Prop</DisplayName>
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="CHProp01" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="1.0" />
+		</Body>
+		<Geometry
+			IsSmall="false">
+			<Shape 
+				Type= "BOX"
+				MajorRadius = "5.5549"
+				MinorRadius = "25.2488"
+				Height = "38.1505" >
+				<Offset
+					x = "3.6430"
+					y = "0.0"
+					z = "0.0" />
+			</Shape>
+			<Shape 
+				Type= "BOX"
+				MajorRadius = "3.2434"
+				MinorRadius = "2.2475"
+				Height = "10.3403" >
+				<Offset
+					x = "-5.7630"
+					y = "30.1281"
+					z = "0.0" />
+			</Shape>
+			<Shape 
+				Type= "BOX"
+				MajorRadius = "3.2434"
+				MinorRadius = "2.2475"
+				Height = "10.3403" >
+				<Offset
+					x = "-5.7630"
+					y = "-30.1281"
+					z = "0.0" />
+			</Shape>
+		</Geometry>
+	</GameObject>
+</AssetDeclaration>

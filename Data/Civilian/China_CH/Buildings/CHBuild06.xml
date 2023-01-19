@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Fix Geometry -->
 	<Tags></Tags>
 	<Includes>
 		<Include
@@ -696,57 +697,58 @@
 			IsSmall="false">
 			<Shape
 				Type="BOX"
-				MajorRadius="67.0"
-				MinorRadius="60.5"
-				Height="24.0"></Shape>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="-24.89"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="-24.89"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="24.7911"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="24.7911"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="-24.89"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="-24.89"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="24.7911"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="24.7911"
-					z="0.0" />
-			</ContactPoint>
+				MajorRadius="30.5"
+				MinorRadius="34.0"
+				Height="5.0">
+				<Offset
+					x = "-3.9756"
+					y = "0.0"
+					z = "0.0" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="30.7666"
+				MinorRadius="11.4773"
+				Height="27.5"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "-3.9907"
+					y = "-23.2391"
+					z = "0.0" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="27.4369"
+				MinorRadius="8.5702"
+				Height="32.8176"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "-3.3296"
+					y = "26.1247"
+					z = "0.0" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="1.5795"
+				MinorRadius="23.2468"
+				Height="20.4344"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "25.1965"
+					y = "11.3986"
+					z = "0.0" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="2.2872"
+				MinorRadius="23.1090"
+				Height="22.8708"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "-32.4701"
+					y = "11.4492"
+					z = "0.0" />
+			</Shape>
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry Sound="AudioEvent:GenericBuilding_Select" AudioType="voiceSelect" />

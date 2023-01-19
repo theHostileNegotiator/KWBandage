@@ -38,6 +38,15 @@
 			source="DATA:civilian/china_ch/buildings/chbuild06.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/china_ch/props/chprop01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/china_ch/props/chprop02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/china_ch/props/chwall01.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/eeurope_ee/buildings/eebapt03.xml"
 			type="all"/>
 		<Include

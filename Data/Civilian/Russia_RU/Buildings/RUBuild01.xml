@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Fix Geometry -->
 	<Tags></Tags>
 	<Includes>
 		<Include
@@ -696,57 +697,26 @@
 			IsSmall="false">
 			<Shape
 				Type="BOX"
-				MajorRadius="115.0"
-				MinorRadius="55.5"
-				Height="65.0"></Shape>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="-24.89"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="-24.89"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="24.7911"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="24.7911"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="-24.89"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="-24.89"
-					z="0.0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="22.6426"
-					y="24.7911"
-					z="57.6919" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-22.2564"
-					y="24.7911"
-					z="0.0" />
-			</ContactPoint>
+				MajorRadius="27.7695"
+				MinorRadius="48.2141"
+				Height="68.1565"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "0.0"
+					y = "11.6178"
+					z = "0.0" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="27.7695"
+				MinorRadius="11.5244"
+				Height="27.7409"
+				ContactPointGeneration="STRUCTURE">
+				<Offset
+					x = "0.0"
+					y = "-48.1207"
+					z = "0.0" />
+			</Shape>
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry Sound="AudioEvent:GenericBuilding_Select" AudioType="voiceSelect" />

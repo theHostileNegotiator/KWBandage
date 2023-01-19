@@ -77,6 +77,12 @@
 			source="DATA:civilian/russia_ru/buildings/rubuild06.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/russia_ru/props/ruwall01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/russia_ru/props/ruwall03.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/washington_dc_dc/buildings/dcbburn01.xml"
 			type="all"/>
 		<Include

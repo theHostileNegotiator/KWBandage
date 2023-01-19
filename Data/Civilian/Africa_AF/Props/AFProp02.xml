@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance">
+<!-- Include Specular and Normal textures -->
+<!-- Fix Geometry -->
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="all"
+			source="ART:AF_Prop02.w3x" />
+	</Includes>
+	<GameObject
+		id="AF_Prop02"
+		Side="Civilian"
+		KindOf="IMMOBILE NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE"
+		EditorName="AF_Prop02"
+		EditorSorting="MISC_MAN_MADE"
+		Browser="REGION AFRICA_AF STRUCTURE">
+		<DisplayName>Prop</DisplayName>
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="AF_Prop02" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="1.0" />
+		</Body>
+		<Geometry
+			IsSmall="false">
+			<Shape 
+				Type= "BOX"
+				MajorRadius = "24.6"
+				MinorRadius = "24.6"
+				Height = "24.0" >
+			</Shape>
+		</Geometry>
+	</GameObject>
+</AssetDeclaration>

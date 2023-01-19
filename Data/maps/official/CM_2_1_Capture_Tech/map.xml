@@ -29,6 +29,18 @@
 			source="DATA:civilian/africa_af/buildings/afbuild06.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/africa_af/props/afprop01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/africa_af/props/afprop02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/africa_af/props/afwall01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/africa_af/props/afwall02.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/buildings/bridge2.xml"
 			type="all"/>
 		<Include

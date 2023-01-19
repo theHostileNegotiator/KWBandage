@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance">
+<!-- Fix Geometry -->
+<!-- Fix Prop, remove Egypt Market Square destruction model when destroyed -->
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="instance"
+			source="DATA:BaseObjects/BaseParkedCar.xml" />
+		<Include
+			type="all"
+			source="ART:RUProp02.w3x" />
+	</Includes>
+	<GameObject
+		id="RUProp02"
+		inheritFrom="BaseParkedCar"
+		KindOf="IMMOBILE NOT_AUTOACQUIRABLE STRUCTURE CRUSHABLE_OBSTACLE CAN_SEE_THROUGH_STRUCTURE COVER RESIST_EMP SIMPLE_OBJECT_PROP"
+		Side="Civilian"
+		CommandSet="EmptyCommandSet"
+		EditorName="RUProp02"
+		EditorSorting="MISC_MAN_MADE"
+		Browser="REGION RUSSIA_RU STRUCTURE"
+		RadarPriority="NOT_ON_RADAR">
+		<DisplayName>Prop</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="RUProp02" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<SquishCollide
+				id ="ModuleTag_SquishCollide"
+				UseDirectionCheck="false"/>
+			<Physics
+				id="ModuleTag_Physics"/>
+			<CrushDie
+				id="ModuleTag_CrushDie">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</CrushDie>
+			<SlowDeath
+				id="ModuleTag_Death"
+				SinkDelay="0s"
+				SinkRate="3"
+				DestructionDelay="4s">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</SlowDeath>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_CarsExplode" />
+			</FXListBehavior>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="1.0" />
+		</Body>
+		<Geometry
+			IsSmall="false">
+			<Shape 
+				Type= "BOX"
+				MajorRadius = "11.7210"
+				MinorRadius = "6.9331"
+				Height = "15.5283">
+			</Shape>
+		</Geometry>
+		<CrusherInfo
+			CrusherLevel="0"
+			CrushableLevel="0" />
+	</GameObject>
+</AssetDeclaration>

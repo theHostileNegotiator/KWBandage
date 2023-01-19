@@ -26,6 +26,9 @@
 			source="DATA:civilian/africa_af/buildings/afbuild06.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/africa_af/props/afprop01.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/brazil_br/buildings/brboff04.xml"
 			type="all"/>
 		<Include

@@ -32,6 +32,18 @@
 			source="DATA:civilian/china_ch/buildings/chbuild06.xml"
 			type="all"/>
 		<Include
+			source="DATA:civilian/china_ch/props/chprop01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/china_ch/props/chwall01.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/china_ch/props/chwall02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/china_ch/props/chwall03.xml"
+			type="all"/>
+		<Include
 			source="DATA:civilian/eeurope_ee/buildings/eebfrm02.xml"
 			type="all"/>
 		<Include
@@ -69,6 +81,12 @@
 			type="all"/>
 		<Include
 			source="DATA:civilian/north_carolina_badlands_nc/buildings/ncbhse02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/russia_ru/props/ruwall02.xml"
+			type="all"/>
+		<Include
+			source="DATA:civilian/russia_ru/props/ruwall03.xml"
 			type="all"/>
 		<Include
 			source="DATA:neutral/structures/controlpoint.xml"
