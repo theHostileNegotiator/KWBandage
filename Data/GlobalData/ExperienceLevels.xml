@@ -569,7 +569,29 @@
 			MaxRadius="200"
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
-	
+
+	<ExperienceLevelTemplate
+		id="AlienMCVExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="3500"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>AlienMCV</Target>
+		<Target>AlienMCVUnpacking</Target>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+
 	<ExperienceLevelTemplate
 		id="AlienMothershipExperienceLevel_1"
 		RequiredExperience="1"
@@ -5114,6 +5136,28 @@
 	</ExperienceLevelTemplate>
 	
 	<ExperienceLevelTemplate
+		id="Reaper17MCVExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="3500"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>Reaper17MCV</Target>
+		<Target>Reaper17MCVUnpacking</Target>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	
+	<ExperienceLevelTemplate
 		id="Reaper17MothershipExperienceLevel_1"
 		RequiredExperience="1"
 		ExperienceAward="5000"
@@ -6712,7 +6756,29 @@
 			MaxRadius="200"
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
-	
+
+	<ExperienceLevelTemplate
+		id="Traveler59MCVExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="3500"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>Traveler59MCV</Target>
+		<Target>Traveler59MCVUnpacking</Target>
+		<Decal
+			Texture="decal_A_level1"
+			Texture2="decal_Alien_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+
 	<ExperienceLevelTemplate
 		id="Traveler59MothershipExperienceLevel_1"
 		RequiredExperience="1"

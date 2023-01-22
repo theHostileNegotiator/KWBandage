@@ -13,6 +13,7 @@
 		<Include type="all" source="Units/Reaper17Explorer.xml" />	
 		<Include type="all" source="Units/Reaper17Harvester.xml" />	
 		<Include type="all" source="Units/Reaper17MCV.xml" />
+		<Include type="all" source="Units/Reaper17MCVUnpacking.xml" />
 		<Include type="all" source="Units/Reaper17MillipedeBody.xml" />	
 		<Include type="all" source="Units/Reaper17MillipedeHead.xml" />	
 		<Include type="all" source="Units/Reaper17Mothership.xml" />	

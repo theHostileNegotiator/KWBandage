@@ -41,6 +41,7 @@
 			* BH Mantis
 			* MOK Awakened
 			* MOK Enlightened
+			* Scrin/R17/T59 Drone Ship (Unpacking)
 			* Scrin/T59 Gun Walker
 			* Scrin Mechapede
 			* Scrin Mastermind
@@ -126,6 +127,7 @@
 			* MOK Awakened (400 to 166)
 			* BH Confessor (10 to 66)
 			* BH Black Disciple (150 to 10)
+			* Scrin/R17/T59 Drone Ship Unpacking (3000 to 3500)
 			* Scrin/R17/T59 Ravager (333 to 400)
 			* Scrin/R17/T59 Shock Trooper (333 to 266)
 			* Scrin/R17/T59 Mechapede Body (1400 to 100)
