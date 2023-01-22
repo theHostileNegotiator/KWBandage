@@ -1146,6 +1146,9 @@
 #### Assimilator
 1. Reaper 17 uses Scrin Assimilator instead of their own
 	* Created Reaper 17 assimilator units for Reaper 17, edited required structures and husks to support new engineer unit.
+#### Shock Trooper
+1. AI using lower Tier heavy units would attempt to crush unit as if were a basic infantry unit despite not being able to
+	* Increased the squad unit crushable level to match the infantry unit
 #### Cultist
 1. Armor, in particular CANNON vulnerability is representative of general Infantry Armor before TW 1.05
 	* Reduced CANNON vulnerability to 25%
@@ -1162,6 +1165,8 @@
 	* Projectile would miss, added ability for projectile to 'track' targets.
 6. Unit cannot detect stealth units at close range, something that all other infantry unit can do
 	* Added Stealth detection to squad
+7. AI using lower Tier heavy units would attempt to crush unit as if were a basic infantry unit despite not being able to
+	* Increased the squad unit crushable level to match the infantry unit
 #### Mastermind
 1. Can control subfaction base defense
 	* Removed ability to target base defense structures

@@ -277,7 +277,7 @@
 			VisionBonusPercentPerFoot="1" />
 		<CrusherInfo
 			UseCrushAttack="false"
-			CrushableLevel="0"
+			CrushableLevel="1"
 			CrusherLevel="0" />
 	</GameObject>
 </AssetDeclaration>

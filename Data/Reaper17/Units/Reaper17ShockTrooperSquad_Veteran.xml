@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--New Veteran Reaper17 ShockTrooper-->
+<!-- Increase Crushable Level to match Infantry unit (for AI) -->
+<!-- New Veteran Reaper17 ShockTrooper -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -37,7 +38,7 @@
 		<DisplayUpgrade
 			id="Tag_DisplayUpgrade2">Upgrade_AlienShockTrooperBlinkPack</DisplayUpgrade>
 		<GameDependency>
-			<RequiredObject>Reaper17StatisChamber</RequiredObject>
+			<RequiredObject>Reaper17StasisChamber</RequiredObject>
 			<RequiredObject>Reaper17ControlCenter</RequiredObject>
 		</GameDependency>
 		<ArmorSet
@@ -271,7 +272,7 @@
 			VisionBonusPercentPerFoot="1" />
 		<CrusherInfo
 			UseCrushAttack="false"
-			CrushableLevel="0"
+			CrushableLevel="1"
 			CrusherLevel="0" />
 	</GameObject>
 </AssetDeclaration>

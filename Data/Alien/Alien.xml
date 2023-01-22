@@ -22,6 +22,7 @@
 		<Include type="all" source="Units/AlienPlanetaryAssaultCarrier.xml" />	
 		<Include type="all" source="Units/AlienSeekerTank.xml" />
 		<Include type="all" source="Units/AlienShockTrooper.xml" />	
+		<Include type="all" source="Units/AlienShockTrooperSquad.xml" />	
 		<Include type="all" source="Units/AlienStalker.xml" />	
 		<Include type="all" source="Units/AlienStalkerSquad.xml" />	
 		<Include type="all" source="Units/AlienStormrider.xml" />	

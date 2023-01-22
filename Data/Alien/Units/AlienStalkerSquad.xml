@@ -3,6 +3,7 @@
 <!-- Fixing AI use of Tiberium Agitation -->
 <!-- Once Squad is in range of ability, unit will be locked in place until agitator has finnished firing (1.5 sec) -->
 <!-- Can now detect Stealth like all other infantry -->
+<!-- Increase Crushable Level to match Infantry unit (for AI) -->
 	<Tags></Tags>
 	<Includes></Includes>
 	<GameObject
@@ -270,7 +271,7 @@
 			VisionBonusPercentPerFoot="1" />
 		<CrusherInfo
 			UseCrushAttack="false"
-			CrushableLevel="0"
+			CrushableLevel="1"
 			CrusherLevel="0" />
 	</GameObject>
 </AssetDeclaration>

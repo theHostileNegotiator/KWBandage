@@ -1,47 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!-- Refer to Scrin Ravager Squad -->
-<!-- Added Blue Shards upgrade reference to squad for Global Conquest -->
+<!-- Refer to Scrin Shock Trooper Squad -->
 	<Tags></Tags>
-	<Includes></Includes>
+	<Includes>
+	</Includes>
 	<GameObject
-		id="Reaper17StalkerSquad"
-		SelectPortrait="Portrait_StalkerSquad"
-		ButtonImage="Portrait_StalkerSquad"
+		id="Reaper17ShockTrooperSquad"
+		SelectPortrait="Portrait_ALIENShockTrooper"
+		ButtonImage="Portrait_ALIENShockTrooper"
 		Side="Reaper17"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
-		BuildCost="1200"
-		BuildTime="12"
-		CommandSet="AlienStalkerSquadCommandSet"
+		BuildCost="800"
+		BuildTime="8"
+		CommandSet="AlienShockTrooperSquadCommandSet"
 		CommandPoints="100" 
-		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON CAN_CAPTURE CAN_BE_FAVORITE_UNIT SCORE TIBERIUM_BASED"
+		KindOf="SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON CAN_CAPTURE CAN_BE_FAVORITE_UNIT SCORE"
 		IsTrainable="true"
 		FormationWidth="2"
 		FormationDepth="1"
 		ThreatLevel="0"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
-		WeaponCategory="GUN"
-		EditorName="Reaper17StalkerSquad"
-		Description="Desc:Reaper17Stalker"
-		TypeDescription="Type:Reaper17Stalker"
-		WorldMapArmoryUpgradesAllowed="Upgrade_AlienBlueShardWeapon"
-		UnitTypeIcon="ScrinStalkerPip"
+		WeaponCategory="MISSILE"
+		EditorName="Reaper17ShockTrooperSquad"
+		Description="Desc:Reaper17ShockTrooper"
+		WorldMapArmoryUpgradesAllowed="Upgrade_AlienShockTrooperPlasmaDiskLauncher Upgrade_AlienShockTrooperBlinkPack"
+		TypeDescription="Type:Reaper17ShockTrooper"
+		UnitTypeIcon="ShockTrooperIcon"
 		RadarPriority="NOT_ON_RADAR">
 		<DisplayName
-			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:ALIENStalker</DisplayName>
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:ALIENShockTrooper</DisplayName>
+		<DisplayUpgrade
+			id="Tag_DisplayUpgrade1">Upgrade_AlienShockTrooperPlasmaDiskLauncher</DisplayUpgrade>
+		<DisplayUpgrade
+			id="Tag_DisplayUpgrade2">Upgrade_AlienShockTrooperBlinkPack</DisplayUpgrade>
 		<GameDependency>
 			<RequiredObject>Reaper17StasisChamber</RequiredObject>
 			<RequiredObject>Reaper17ControlCenter</RequiredObject>
 		</GameDependency>
-		<DisplayUpgrade>Upgrade_AlienBlueShardWeapon</DisplayUpgrade>
 		<ArmorSet
 			Armor="NoArmor" />
 		<LocomotorSet
 			Locomotor="NormalRangedSquadLocomotor"
 			Condition="NORMAL"
-			Speed="75.0" />
+			Speed="65.0" />
 		<SkirmishAIInformation
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>
@@ -58,7 +61,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
-						Name="AUStalker_FP" />
+						Name="FXShockTrpr_FP" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -71,7 +74,6 @@
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
 				id="DefaultAttributeModifierPoolUpdate"/>
-
 			<AttributeModifierUpgrade
 				id="ModuleTag_AttributeModifierUpgradeMUCSpeed"
 				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
@@ -89,8 +91,7 @@
 			</AttributeModifierUpgrade>
 			<StancesBehavior
 				id="ModuleTag_Stance"
-				StanceTemplate="Generic"
-				/>
+				StanceTemplate="Generic" />
 			<EmotionTrackerUpdate
 				id="Module_ETU">
 				<TauntAndPointExcluded
@@ -128,12 +129,41 @@
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="StalkerRangefinder" />
+						Template="ShockTrooperRangefinder" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"
 				DetectionRange="100" />
+			<UnpauseSpecialPowerUpgrade
+				id="ModuleTag_UnpauseSpecialPowerUpgrade"
+				SpecialPowerTemplate="SpecialPower_UseBlinkPack"
+				Permanent="true">
+				<TriggeredBy>Upgrade_AlienShockTrooperBlinkPack</TriggeredBy>
+			</UnpauseSpecialPowerUpgrade>
+			<SpecialPower
+				id="ModuleTag_TeleportSpecialPower"
+				SpecialPowerTemplate="SpecialPower_UseBlinkPack"
+				UpdateModuleStartsAttack="true"
+				StartsPaused="true"
+				AttributeModifierFX="FX_AlienInfantryHitFX" />
+			<TeleportSpecialAbilityUpdate
+				id="ModuleTag_TeleportSpecialAbility"
+				SpecialPowerTemplate="SpecialPower_UseBlinkPack"
+				DestinationWeapon="AlienShockTrooperBlinkWeapon2"
+				SourceWeapon="AlienShockTrooperBlinkWeapon"
+				FadeInTime="1s"
+				UnpackTime="0s"
+				PackTime="0s"
+				BusyDuration="1.5s"
+				MaxDistance="750"
+				StartAbilityRange="750"
+				UnpackingVariation="1" />
+			<!-- here so the UI button is active -->
+			<StatusBitsUpgrade
+				StatusToSet="WEAPON_UPGRADED_01">
+				<TriggeredBy>Upgrade_AlienShockTrooperPlasmaDiskLauncher</TriggeredBy>
+			</StatusBitsUpgrade>
 			<Physics
 				id="ModuleTag_Physics"></Physics>
 			<HordeContain
@@ -151,21 +181,21 @@
 					Include="INFANTRY" />
 				<DieMuxData />
 				<InitialPayload
-					Name="Reaper17Stalker"
+					Name="Reaper17ShockTrooper"
 					Count="3" />
 				<MeleeBehavior
 					Type="AMOEBA" />
 				<RankInfo
 					RankID="1"
-					UnitType="Reaper17Stalker">
+					UnitType="Reaper17ShockTrooper">
 					<Position
-						X="20"
+						X="-10"
 						Y="-20" />
 					<Position
-						X="0"
+						X="10"
 						Y="0" />
 					<Position
-						X="-20"
+						X="-10"
 						Y="20" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
@@ -173,6 +203,11 @@
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
 				GiveNoXP="true" />
+			<AISpecialPowerUpdate
+				id="ModuleTag_AlienShockTrooperBlinkAI"
+				CommandButtonName="Command_UseBlinkPack"
+				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT"
+				MinimumCutoff="100" />
 			<SpecialPower
 				id="ModuleTag_CaptureSpecialPower"
 				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
@@ -185,52 +220,6 @@
 				PackTime="1s"
 				StartAbilityRange="30.0"
 				Options="DO_CAPTURE_FX"/>
-			<!--Tiberium Agitation-->
-			<SpecialPower
-				id="ModuleTag_AgitationGetInRange"
-				SpecialPowerTemplate="TiberiumAgitationGetInRange"
-				UpdateModuleStartsAttack="true"/>
-			<SpecialAbilityUpdate
-				id="ModuleTag_AgitationGetInRangeUpdate"
-				SpecialPowerTemplate="TiberiumAgitationGetInRange"
-				UnpackTime="0s"
-				PackTime="0s"
-				StartAbilityRange="350.0"
-				ChainedButton="Command_FireTiberiumAgitation" />
-			<SpecialPowerDispatchSpecialPower
-				id="ModuleTag_Dispatch"
-				SpecialPowerTemplate="SpecialPower_TiberiumAgitationDispatch">
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation" />
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger" />
-			</SpecialPowerDispatchSpecialPower>
-			<HordeDispatchSpecialPower
-				id="ModuleTag_TibAgitation"
-				SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation" 
-				MaxMembersToDispatchTo="3"/>
-			<SpecialPower
-				id="ModuleTag_TibAgitationTrigger"
-				SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger"
-				UpdateModuleStartsAttack="true"></SpecialPower>
-			<WeaponFireSpecialAbilityUpdate
-				id="ModuleTag_TibAgitationTriggerUpdate"
-				SpecialPowerTemplate="SpecialPower_TiberiumAgitationTrigger"
-				SpecialWeapon="HordeSpecialRangeAttack"
-				UnpackTime="0s"
-				PackTime="0.0s"
-				BusyForDuration="1.5s" 
-				WhichSpecialWeapon="1" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_AlienTiberiumAgitationAI"
-				CommandButtonName="Command_UseTiberiumAgitation"
-				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK" 
-				SpecialPowerRadius="350" 
-				UnitKindOf="FS_MONEY_STORAGE TIBERIUM_BASED" />
-		<!--End Tiberium Agitation-->
-			<AimWeapon
-				id="ModuleTag_AimWeapon"
-				AimHighThreshold="0.5"/>
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
