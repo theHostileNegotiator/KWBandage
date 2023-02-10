@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+	<UpgradeTemplate id="Upgrade_AvatarFlamerUpgraded"
+		Type="OBJECT"
+		BuildCost="0"
+		BuildTime="2s"
+	/>
+
+
 	<!--*********************************************-->
 	<!--******************GDI Upgrades***************-->
 

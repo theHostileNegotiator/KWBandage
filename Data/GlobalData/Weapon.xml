@@ -3270,7 +3270,81 @@
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
-	
+
+	<WeaponTemplate
+		id="NODAvatarUpgradedFlamer"
+		Name="NODAvatarUpgradedFlamer"
+		AttackRange="200.0"
+		WeaponSpeed="150.0"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="10"
+		FiringLoopSoundContinuesDuringReload="true"
+		FiringLoopSound="AudioEvent:NOD_FlameTank_FlameWeaponLoop"
+		AcceptableAimDelta="20d"
+		CanFireWhileMoving="true"
+		ReAcquireDetailType="PER_CLIP"
+		>
+		<FiringDuration
+				MinSeconds="0.1s"
+				MaxSeconds="0.1s" />
+		<ClipReloadTime
+				MinSeconds="0.5s"
+				MaxSeconds="0.5s" />
+		<Nuggets>
+			<DamageNugget
+				Damage="300.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL">
+				</SpecialObjectFilter>
+			</DamageNugget>
+			<ProjectileNugget
+				WarheadTemplate="NODFlameTankFlamerUpgradedWarhead"
+				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
+			<ProjectileNugget
+				WarheadTemplate="NODAvatarUpgradedFlamerWarheadForAllies"
+				ProjectileTemplate="DamageAlliesDummyProjectile"/>
+			<SuppressionNugget
+				Radius="40.0"
+				Suppression="200"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODAvatarUpgradedFlamerWarheadForAllies"
+		Name="NODAvatarUpgradedFlamerWarheadForAllies"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageNugget
+				Damage="300.0"
+				Radius="40.0"
+				DelayTimeSeconds="0.5s"
+				DamageType="GRENADE"
+				DamageFXType="NOD_FLAMETHROWER"
+				DeathType="BURNED">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+				<SpecialObjectFilter
+					Rule="ALL"
+					Relationship="ALLIES">
+				</SpecialObjectFilter>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
 <!-- Workaround to allow force firing on allied units -->
 	<WeaponTemplate
 		  id="NODBlackHandFlamethrower"

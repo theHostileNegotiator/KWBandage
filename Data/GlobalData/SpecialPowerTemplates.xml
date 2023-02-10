@@ -1,6 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 
+<!-- Avatar commandeer distinquish between normal and upgraded version -->
+	<SpecialPowerTemplate
+		id="SpecialPower_AvatarFlamer"
+		Flags="NEEDS_OBJECT_FILTER"
+		TargetType="OBJECT">
+		<ObjectFilter
+			RejectStatusBitFlags="WEAPON_UPGRADED_01">
+			<IncludeThing>NODFlameTank</IncludeThing>
+			<IncludeThing>BlackHandFlameTank</IncludeThing>
+		</ObjectFilter>
+		<GameDependency>
+			<ForbiddenUpgrade>Upgrade_AvatarFlamer</ForbiddenUpgrade>
+			<ForbiddenUpgrade>Upgrade_AvatarFlamerUpgraded</ForbiddenUpgrade>
+		</GameDependency>
+	</SpecialPowerTemplate>
+	<SpecialPowerTemplate
+		id="SpecialPower_AvatarFlamerUpgraded"
+		Flags="NEEDS_OBJECT_FILTER"
+		TargetType="OBJECT">
+		<ObjectFilter
+			StatusBitFlags="WEAPON_UPGRADED_01">
+			<IncludeThing>NODFlameTank</IncludeThing>
+			<IncludeThing>BlackHandFlameTank</IncludeThing>
+		</ObjectFilter>
+		<GameDependency>
+			<ForbiddenUpgrade>Upgrade_AvatarFlamer</ForbiddenUpgrade>
+			<ForbiddenUpgrade>Upgrade_AvatarFlamerUpgraded</ForbiddenUpgrade>
+		</GameDependency>
+	</SpecialPowerTemplate>
+
 <!--No longer targets husk-->	
 	<SpecialPowerTemplate
 		id="SpecialPower_AOEMindControl"

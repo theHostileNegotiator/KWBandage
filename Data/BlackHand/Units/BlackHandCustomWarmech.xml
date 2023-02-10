@@ -170,9 +170,6 @@
 					<Texture
 						Original="NUMechD"
 						New="NUPurifier_D" />
-					<Texture
-						Original="NUFlameTank"
-						New="NUFlameTank_UGD" />	
 					<ParticleSysBone
 						BoneName="B_UArmL"
 						FXParticleSystemTemplate="GDIDebrisSmallFire"
@@ -252,6 +249,9 @@
 					<Texture
 						Original="NUMech"
 						New="NUPurifier_D" />
+					<Texture
+						Original="NUFlameTank"
+						New="NUFlameTankD" />
 					<ParticleSysBone
 						BoneName="B_ThighR"
 						FXParticleSystemTemplate="RedeemerDamagedElectric"

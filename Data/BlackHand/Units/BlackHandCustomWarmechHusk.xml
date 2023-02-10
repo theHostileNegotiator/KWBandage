@@ -3,6 +3,7 @@
 <!-- Flame Tank will now display upgrade -->
 <!-- Adjusted Texture to match more with the Avatar -->
 	<Includes>
+		<Include type="all" source="ART:NUMechH_SKN.w3x" />
 		<Include type="all" source="ART:NUPurifier.xml" />
 		<Include type="all" source="ART:NUPurifier_D.xml" />
 	</Includes>
@@ -30,9 +31,6 @@
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
 						Name="NUMechH_SKN" />
-					<Texture
-						Original="NUMechD"
-						New="NUPurifier_D" />
 					<ParticleSysBone
 						BoneName="B_UArmL"
 						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
@@ -47,8 +45,21 @@
 						Original="NUMechD"
 						New="NUPurifier_D" />
 					<Texture
-						Original="NUFlameTank"
+						Original="NUFlameTankD"
 						New="NUFlameTank_UGD" />						
+					<ParticleSysBone
+						BoneName="B_UArmL"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_8">
+					<Model
+						Name="NUMechH_SKN" />
+					<Texture
+						Original="NUMechD"
+						New="NUPurifier_D" />						
 					<ParticleSysBone
 						BoneName="B_UArmL"
 						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
@@ -196,6 +207,19 @@
 				MinLifetime="300s"
 				MaxLifetime="300s" />			
 <!-- somehow we need to display the upgrade the model had when it was dead -->
+			<ModelConditionUpgrade
+				id="ModuleTag_PurifierUpgrade"
+				AddConditionFlags="USER_8">
+				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
+				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
+				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
+				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
+				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
+				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
+				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
+				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</ModelConditionUpgrade>
 			<ModelConditionUpgrade
 				id="ModuleTag_PurifyingFlameUpgrade"
 				AddConditionFlags="USER_9">

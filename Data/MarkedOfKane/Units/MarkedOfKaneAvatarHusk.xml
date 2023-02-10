@@ -36,12 +36,41 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6 USER_7">
+					<Model
+						Name="NUMechH_SKN" />
+					<Texture
+						Original="NUMechD"
+						New="NUMechD_K" />
+					<Texture
+						Original="NUFlameTankD"
+						New="NUFlameTank_UGD" />
+					<ParticleSysBone
+						BoneName="B_UArmL"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_7">
+					<Model
+						Name="NUMechH_SKN" />
+					<Texture
+						Original="NUFlameTankD"
+						New="NUFlameTank_UGD" />
+					<ParticleSysBone
+						BoneName="B_UArmL"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_6">
 					<Model
 						Name="NUMechH_SKN" />
 					<Texture
 						Original="NUMechD"
-						New="NUMechD_K" />							
+						New="NUMechD_K" />
 					<ParticleSysBone
 						BoneName="B_UArmL"
 						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
@@ -201,7 +230,13 @@
 				id="ModuleTag_ShowFlamer"
 				ShowSubObjects="FLAMETANK">
 				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
+				<TriggeredBy>Upgrade_AvatarFlamerUpgraded</TriggeredBy>
 			</SubObjectsUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowFlamerUpgrade"
+				AddConditionFlags="USER_7">
+				<TriggeredBy>Upgrade_AvatarFlamerUpgraded</TriggeredBy>
+			</ModelConditionUpgrade>
 			<SubObjectsUpgrade
 				id="ModuleTag_ShowBeamCannon"
 				ShowSubObjects="NUBEAM">

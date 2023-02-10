@@ -964,6 +964,10 @@
 	* Added new state to disable particle effects when EMPed
 5. Damaged Textures are inconsistent with the base texture with some elements being outdated
 	* Adjusted Damaged Textures to better match the base texture
+6. Heavy Damaged and Husks would look damaged, but the Flame and Beam Cannon attachment would look pristine
+	* Applied texture swap to the Flame and Beam Cannon texture, for the Husk the textures replaced for damaged ones in the model
+7. Avatar comandeering Flame Tank upgraded with Purifying Flame will revert to normal flame weapon
+	* Added new feature where Avatar will distinguish between Normal and Upgraded Flame Tank and will use the upgraded weapon if comandeered
 #### Purifier
 1. Will randomly play Avatar voice sounds. (This is due to inheriting NOD Avatar and not removing sounds)
 	* Removed Avatar sound
@@ -978,6 +982,8 @@
 		* Changed model stance to be more like the Avatar
 6. Textures used is based of outdated Avatar texture
 	* Updated textures to better match the Avatar
+7. Heavy Damaged and Husks would look damaged, but the Flame attachment would look pristine
+	* Applied texture swap to the Flame texture, for the Husk the textures replaced for damaged ones in the model
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze
 	* Added NOD Confessor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
