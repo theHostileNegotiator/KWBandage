@@ -9,7 +9,7 @@
 		inheritFrom="AlienGateway"
 		SelectPortrait="Portrait_ALIENWarpSphere"
 		ButtonImage="Portrait_ALIENWarpSphere"
-		Side="ALIEN"
+		Side="Reaper17"
 		EditorSorting="STRUCTURE"
 		TransportSlotCount="1"
 		BuildCost="2000"

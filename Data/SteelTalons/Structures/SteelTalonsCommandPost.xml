@@ -10,7 +10,7 @@
 		inheritFrom="GDICommandPost"
 		SelectPortrait="Portrait_GDICommandPost"
 		ButtonImage="Portrait_GDICommandPost"
-		Side="GDI"
+		Side="SteelTalons"
 		EditorSorting="STRUCTURE"
 		TransportSlotCount="1"
 		BuildCost="1500"

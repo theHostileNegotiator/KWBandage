@@ -9,7 +9,7 @@
 		inheritFrom="AlienPhotonCannon"
 		SelectPortrait="Portrait_AlienPhotonCannon"
 		ButtonImage="Portrait_AlienPhotonCannon"
-		Side="Alien"
+		Side="Traveler59"
 		EditorSorting="STRUCTURE"
 		TransportSlotCount="1"
 		BuildCost="1200"

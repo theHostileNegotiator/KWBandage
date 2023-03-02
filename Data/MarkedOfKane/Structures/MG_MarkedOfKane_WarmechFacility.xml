@@ -9,7 +9,7 @@
 		inheritFrom="MG_NOD_WarmechFacility"
 		SelectPortrait="Portrait_WarmechFacility"
 		ButtonImage="Portrait_WarmechFacility"
-		Side="NOD"
+		Side="MarkedOfKane"
 		EditorSorting="STRUCTURE"
 		TransportSlotCount="1"
 		BuildCost="3000"

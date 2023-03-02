@@ -14,7 +14,7 @@
 		inheritFrom="GDIFireHawk"
 		SelectPortrait="Portrait_GDIFirehawk"
 		ButtonImage="Portrait_GDIFirehawk"
-		Side="GDI"
+		Side="ZOCOM"
 		EditorSorting="UNIT"
 		TransportSlotCount="0"
 		BuildCost="1500"

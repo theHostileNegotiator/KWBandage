@@ -1414,7 +1414,7 @@
 						ObjectStatus="WEAPON_UPGRADED_01" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="BlackHandCustomWarmechUpgradedFlamer"
+						Template="NODAvatarUpgradedFlamer"
 						ObjectStatus="RIDER2" />
 					<TurretSettings
 						TurretTurnRate="180"

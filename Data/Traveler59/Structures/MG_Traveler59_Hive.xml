@@ -10,7 +10,7 @@
 		inheritFrom="MG_Alien_Hive"
 		SelectPortrait="Portrait_Hive"
 		ButtonImage="Portrait_Hive"
-		Side="ALIEN"
+		Side="Traveler59"
 		EditorSorting="STRUCTURE"
 		TransportSlotCount="1"
 		BuildCost="3000"
