@@ -542,6 +542,8 @@
 	* Created new Rubble model with debris and have a noise modifier applied (Stygs)
 5. Geometry is a box unlike other walkers which use cylinder
 	* Changed geometry shape to cylinder
+6. Railgun missing Distortion Effect
+	* Added Laser Draw and State to the Game Object
 #### Harvester
 1. The Tiberium meter on the rear of the Harvesters shows when destroyed, conflicting with the destruction model
 	* Tiberium meter is hidden when destroyed
@@ -750,6 +752,8 @@
 	* Reduced Rate of Fire, increasing overall cooldown from 1.8s to 2.3s and increased damage proportionaly to from 525 to 670
 3. Low LOD Rubble Model uses standard textures instead of damaged
 	* Swapped textures to be the damaged version
+4. Railgun missing Distortion Effect
+	* Added Laser Draw and State to the Game Object
 #### Sonic Emitter
 1. AI underestimates the DPS output of defensive structure (Damage was buffed in TW 1.05 to counteract a bug fix but AI DPS was never updated in TW or KW)
 	* Increased ConquerMetricsOverrideDPS to 500
