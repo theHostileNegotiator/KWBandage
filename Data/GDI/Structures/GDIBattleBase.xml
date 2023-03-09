@@ -3,6 +3,7 @@
 <!-- Now displays Railgun gun after upgrade -->
 <!-- Added upgrade sound for Railguns -->
 <!-- Adjusted repair decal size -->
+<!-- Added Railgun Distortion Effect -->
 	<Tags></Tags>
 	<Includes>
 		<Include
@@ -265,6 +266,72 @@
 					/>
 				</ModelConditionState>
 			</ScriptedModelDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort01"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".01"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="1"
+				LaserWidth="50"
+				WeaponSlotID="1"
+				LaserStateID="1">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXRailGunCoreDistortion</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXRailGunCoreMask</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort02"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".01"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="1"
+				LaserWidth="50"
+				WeaponSlotID="2"
+				LaserStateID="2">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXRailGunCoreDistortion</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXRailGunCoreMask</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate id="DefaultAttributeModifierPoolUpdate"/>
@@ -287,7 +354,7 @@
 						Template="GDIBattleBaseCannon" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="GDIGolemCannonRailgun"
+						Template="GDIBattleBaseRailgun01"
 						ObjectStatus="WEAPON_UPGRADED_01" />						
 					<TurretSettings
 						NaturalTurretAngle="90d"
@@ -312,7 +379,7 @@
 						Template="GDIBattleBaseCannon" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="GDIGolemCannonRailgun"
+						Template="GDIBattleBaseRailgun02"
 						ObjectStatus="WEAPON_UPGRADED_01" />						
 					<TurretSettings
 						NaturalTurretAngle="270d"
@@ -347,6 +414,12 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
+			<LaserState
+				id="ModuleTag_LaserState1"
+				LaserId="1" />
+			<LaserState
+				id="ModuleTag_LaserState2"
+				LaserId="2" />
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="5.0s"
