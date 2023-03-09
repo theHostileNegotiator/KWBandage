@@ -551,6 +551,8 @@
 	* Normalised values with GDI Harvester
 3. ZOCOM Harvester had no unique Rubble Model, Debris and Damaged Textures, using GDI textures.
 	* Created new models for Rubble, Debris and created new textures.
+4. Steel Talons Heavy Harvester is missing TRANSPORT KindOf
+	* Added TRANSPORT KindOf flag
 #### MCV
 1. Subfaction MCVs when trained from their respective Warfactory would have the Created voice line delayed. Additionally, all built from the Reclamation Hub suffer the same problem
 	* Unit Voice Array had ObjectSpecificEntry for when unit is created from Warfactory. All referenced GDI Warfactory. Changed to reference their own Warfactory and added the Reclamation Hub SpecificEntry for each faction.

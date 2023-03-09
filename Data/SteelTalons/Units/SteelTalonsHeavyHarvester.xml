@@ -3,6 +3,7 @@
 <!-- Harvesting Rate Normalised to GDI Harvesters -->
 <!-- Tiberium meter on the rear no longer shows when destroyed -->
 <!-- Fixed FP Mesh Sorting -->
+<!-- Give TRANSPORT KindOf -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all"	source="ART:GUHvyHarv_FP.w3x" />
@@ -18,7 +19,7 @@
 		BuildCost="1600"
 		BuildTime="16"
 		CommandSet="SteelTalonsHarvesterCommandSet"
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE HARVESTER MOVE_FOR_NOONE IGNORES_SELECT_ALL CAN_REVERSE_MOVE CAN_BE_FAVORITE_UNIT"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE TRANSPORT VEHICLE HARVESTER MOVE_FOR_NOONE IGNORES_SELECT_ALL CAN_REVERSE_MOVE CAN_BE_FAVORITE_UNIT"
 		RadarPriority="UNIT"
 		ThreatLevel="10"
 		ProductionQueueType="VEHICLE"

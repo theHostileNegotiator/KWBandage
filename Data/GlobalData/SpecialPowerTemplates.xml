@@ -454,9 +454,11 @@
 		MinCastRange="300"
 		MaxCastRange="50000"
 		ReachableTargetsCircleDisplayRadius="500">
+		<!-- Need to Include Transports and Garrison Structures -->
 		<ObjectFilter
 			Relationship="ALLIES"
-			Rule="ANY">
+			Rule="ANY"
+			Include="GARRISON TRANSPORT">
 			<IncludeThing>GDISniperSquad</IncludeThing>
 			<IncludeThing>ZOCOMSniperSquad</IncludeThing>
 		</ObjectFilter>
@@ -484,7 +486,7 @@
 		ReachableTargetsCircleDisplayRadius="400">
 		<ObjectFilter
 			Relationship="ALLIES"
-			Rule="ANY">
+			Rule="NONE">
 			<IncludeThing>NODShadowSquadBeacon</IncludeThing>
 		</ObjectFilter>
 		<GameDependency>
