@@ -671,6 +671,9 @@
 	* Added animation to default state with blend time
 10. Turning animation is backwards when Reverse Moving, while this happens on most units it is most noticeable for the MARV
 	* Added new animation states for Reverse moving.
+11. Main Cannon has unused animations and concepts for a Revolving Barrel and the MARV Rising FMV Cutscene showcases the MARV having a revolving barrel
+	* Separate Barrel to another draw to be able to animate at the same time as the turning and crushing animations
+	* There were no appropriate Model Condition to use for the weapon, instead weapon has Attribute Modifier applied to 'owner' which forces a Model Condition. This model condition is what triggers the animation
 #### Orca
 1. When playing with Low LOD settings, Wings and Sensor Pod subobjects are missing
 	* Fixed subobject bone reference for Sonic Cannon. In the Skeleton, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden

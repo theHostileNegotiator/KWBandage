@@ -2148,6 +2148,50 @@
 		</Nuggets>
 	</WeaponTemplate>
 
+<!-- Add Condition State through Attribute Modifier after firing for MARV Animation -->
+	<WeaponTemplate
+		id="GDIMARVCannon"
+		Name="GDIMARVCannon"
+		AttackRange="350.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		FireSound="Multisound:GDI_Marv_CannonFireMS"
+		WeaponSpeed="1000"
+		WeaponRecoil="0d"
+		FireFX="FX_GDIMARVSonicCannonFire"
+		FireVeteranFX="FX_GDIMARVSonicCannonFire"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		CanFireWhileMoving="true"
+		RotatingTurret="true"
+		ClipSize="3"
+		ReAcquireDetailType="PER_CLIP"
+		ShotsPerBarrel="1"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND">
+		<FiringDuration
+			MinSeconds="1.75s"
+			MaxSeconds="1.75s" />
+		<ClipReloadTime
+			MinSeconds="2.2s"
+			MaxSeconds="2.5s" />
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="MARVSonicShell"
+				WarheadTemplate="MARVSonicShellWarhead">
+				<VeterancyProjectiles
+					VeterancyLevel="HEROIC"
+					ProjectileTemplate="MARVSonicShell_Veteran"/>
+			</ProjectileNugget>
+			<SuppressionNugget
+				  Radius="50.0"
+				  Suppression="75"
+				  DurationSeconds="5s" />
+			<AttributeModifierNugget
+				PartitionFilterTestType="SPHERE"
+				AttributeModifierOwnerName="Modifier_MARVWeaponFiring" />
+		</Nuggets>
+	</WeaponTemplate>
 <!--Increase Range (Ommited), ROF and Decrease Damage of MARV Sniper Weapon to reflect Sniper Team weapon changes (TW1.09 to KW 1.00)-->
 	<WeaponTemplate
 		id="MARVSniperWeapon"

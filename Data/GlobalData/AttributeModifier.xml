@@ -99,6 +99,14 @@
 		Duration="5s">
 		<Modifier Type="CRUSHER_LEVEL" Value="-500%"/>
 	</AttributeModifier>
+
+<!-- For MARV Main Cannon Animation -->
+	<AttributeModifier
+		id="Modifier_MARVWeaponFiring"
+		Category="NONE"
+		Duration="0.7s"
+		ModelConditionsSet="USER_1" >
+	</AttributeModifier>
 	
 <!-- New Mission Specific AttributeModifier to Buff ROF rather than nerf -->
 	<AttributeModifier

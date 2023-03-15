@@ -82,26 +82,22 @@
 		<SkirmishAIInformation
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>
-			
 			<TankDraw 
 				id="ModuleTag_Draw" 
 				OkToChangeModelColor="true" 
-				InitialRecoilSpeed="16.0" 
-				MaxRecoilDistance="10.0" 
-				RecoilDamping="2.0" 
-				RecoilSettleSpeed="3.0" 
 				TreadAnimationRate="2.0" 
 				TreadDriveSpeedFraction="0.25" 
 				TreadPivotSpeedFraction="0.9" 
 				TrackMarks="EXMARVTracks" 
 				TrackMarksLeftBone="FXTracksLR" 
 				TrackMarksRightBone="FXTracksRR" 
-				ExtraPublicBone="FXTracksLR FXTracksRR FXTracksLF FXTracksRF MuzzleFx01 MuzzleFx02 MuzzleFx03 MuzzleFlash_01 MuzzleFlash_02 MuzzleFlash_03"> 
+				ExtraPublicBone="FXTracksLR FXTracksRR FXTracksLF FXTracksRF MuzzleFx01"> 
 				<ModelConditionState 	
 					ParseCondStateType="PARSE_DEFAULT" 	
 					RetainSubObjects="true"> 	
 					<Model 		
 						Name="W3DContainer:GUMARV_SKN" /> 	
+					<!--
 					<WeaponFireFXBone 		
 						WeaponSlotID="1" 		
 						WeaponSlotType="PRIMARY_WEAPON" 		
@@ -114,6 +110,7 @@
 						WeaponSlotID="1" 		
 						WeaponSlotType="PRIMARY_WEAPON" 		
 						BoneName="MuzzleFlash_" /> 	
+					-->
 					<WeaponLaunchBone 		
 						WeaponSlotID="1" 		
 						WeaponSlotType="PRIMARY_WEAPON" 		
@@ -216,73 +213,42 @@
 					<WeaponFireFXBone 		WeaponSlotID="29" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponGN_RR_" /> 	
 					<WeaponLaunchBone 		WeaponSlotID="29" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponGN_RR_" /> 	
 					<Turret 		TurretNameKey="B_GN_Turret_TreadRR" 		TurretID="29" />
+				</ModelConditionState>	
 
-				</ModelConditionState>
-					<ModelConditionState 
-						ParseCondStateType="PARSE_NORMAL" 
-						RetainSubObjects="true" 
-						ConditionsYes="REALLYDAMAGED USER_5">
-						<Model 
-							Name="W3DContainer:GUMARV_SKND" />
-						<ParticleSysBone BoneName="FXTracksRF" FXParticleSystemTemplate="GDIMARVDamagedSmoke2" FollowBone="true" />
-						<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedFire" FollowBone="true" />
-						<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedFireDist" FollowBone="true" />
-						<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedSmoke" FollowBone="true" />
-						<ParticleSysBone BoneName="B_Spine02" FXParticleSystemTemplate="GDIMARVDamagedFlash" FollowBone="true" />
-						<ParticleSysBone BoneName="B_Spine02" FXParticleSystemTemplate="GDIMARVDamagedSparks" FollowBone="true" />
-				</ModelConditionState>	
-			 
-				<ModelConditionState 
-					ParseCondStateType="PARSE_NORMAL" 
-					ConditionsYes="DYING USER_5">
-					<Model 
-						Name="W3DContainer:GUMARV_R" />
-						<Texture 
-							Original="GUMARV" 
-							New="GUMARV2D" />
-				</ModelConditionState>	
-				
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					RetainSubObjects="true" 
 					ConditionsYes="REALLYDAMAGED">
 					<Model 
-						Name="W3DContainer:GUMARV_SKND" />
-						<ParticleSysBone BoneName="FXTracksRF" FXParticleSystemTemplate="GDIMARVDamagedSmoke2" FollowBone="true" />
-						<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedFire" FollowBone="true" />
-						<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedFireDist" FollowBone="true" />
-						<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedSmoke" FollowBone="true" />
-						<ParticleSysBone BoneName="B_Spine02" FXParticleSystemTemplate="GDIMARVDamagedFlash" FollowBone="true" />
-						<ParticleSysBone BoneName="B_Spine02" FXParticleSystemTemplate="GDIMARVDamagedSparks" FollowBone="true" />
+						Name="W3DContainer:GUMARV_SKN" />
+					<Texture 
+						Original="GUMARV1" 
+						New="GUMARV1D" />
+					<Texture 
+						Original="GUMARV2" 
+						New="GUMARV2D" />
+					<Texture 
+						Original="GUMarvUpg" 
+						New="GUMarvUpg_D" />
+					<ParticleSysBone BoneName="FXTracksRF" FXParticleSystemTemplate="GDIMARVDamagedSmoke2" FollowBone="true" />
+					<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedFire" FollowBone="true" />
+					<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedFireDist" FollowBone="true" />
+					<ParticleSysBone BoneName="FXTracksLR" FXParticleSystemTemplate="GDIMARVDamagedSmoke" FollowBone="true" />
+					<ParticleSysBone BoneName="B_Spine02" FXParticleSystemTemplate="GDIMARVDamagedFlash" FollowBone="true" />
+					<ParticleSysBone BoneName="B_Spine02" FXParticleSystemTemplate="GDIMARVDamagedSparks" FollowBone="true" />
 				</ModelConditionState>	
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="DYING">
 					<Model 
 						Name="W3DContainer:GUMARV_R" />
-					<Texture 
-						Original="GUMamm" 
-						New="GUMammD" />
 				</ModelConditionState>	
-							
 				<ModelConditionState 
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model 
 						Name="W3DContainer:GUMARV_FP" />
 				</ModelConditionState>	
-				<ModelConditionState 
-					ParseCondStateType="PARSE_NORMAL" 
-					ConditionsYes="USER_5" 
-					RetainSubObjects="true">
-					<Model 
-						Name="W3DContainer:GUMARV_SKN" />
-					<Texture 
-						Original="GUMamm" 
-						New="GUMamm_K" />
-				</ModelConditionState>
-			 
-			 
 				<AnimationState 
 					ParseCondStateType="PARSE_DEFAULT">
 					<Animation 
@@ -330,7 +296,6 @@
 						end
 					</Script>
 				</AnimationState>
-
 				<!-- REVERSE -->
 				<AnimationState 
 					ParseCondStateType="PARSE_NORMAL" 
@@ -523,6 +488,166 @@
 					ArticulationBoneName="B_TreadLR"
 					ArticulationHelperBoneName="FXTracksLR"	/>
 			</TankDraw>
+			<ScriptedModelDraw 
+				id="ModuleTag_Revolver" 
+				OkToChangeModelColor="true" 
+				InitialRecoilSpeed="14.0" 
+				MaxRecoilDistance="7.5" 
+				RecoilDamping="2.0" 
+				RecoilSettleSpeed="2.0" 
+				ExtraPublicBone="MuzzleFx01 MuzzleFlash_01"
+				AttachToBoneInAnotherModule="B_Barrel_Turn"> 
+				<ModelConditionState 	
+					ParseCondStateType="PARSE_DEFAULT"> 	
+					<Model 		
+						Name="W3DContainer:GUMARVCANNON_SKN" /> 	
+					<WeaponFireFXBone 		
+						WeaponSlotID="1" 		
+						WeaponSlotType="PRIMARY_WEAPON" 		
+						BoneName="MuzzleFx01" /> 	
+					<WeaponRecoilBone 		
+						WeaponSlotID="1" 		
+						WeaponSlotType="PRIMARY_WEAPON" 		
+						BoneName="B_Barrel01" /> 	
+					<WeaponMuzzleFlash 		
+						WeaponSlotID="1" 		
+						WeaponSlotType="PRIMARY_WEAPON" 		
+						BoneName="MuzzleFlash_01" /> 	
+					<!--
+					<WeaponLaunchBone 		
+						WeaponSlotID="1" 		
+						WeaponSlotType="PRIMARY_WEAPON" 		
+						BoneName="MuzzleFx01" /> 
+					-->
+				</ModelConditionState>	
+				<ModelConditionState 
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="REALLYDAMAGED">
+					<Model 
+						Name="W3DContainer:GUMARVCANNON_SKN" />
+					<Texture 
+						Original="GUMARV2" 
+						New="GUMARV2D" />
+				</ModelConditionState>	
+				<ModelConditionState 
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="DYING">
+				</ModelConditionState>
+                <ModelConditionState
+                    ParseCondStateType="PARSE_NORMAL"
+                    ConditionsYes="FORMATION_PREVIEW" />
+				<AnimationState 
+					ParseCondStateType="PARSE_DEFAULT"
+					StateName="STATE_Idle">
+					<Animation 
+						AnimationName="GUMARVCANNON_IDLE"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState()
+						if Prev == "STATE_built" then
+						CurDrawableSetTransitionAnimState("TRANS_built")
+						end
+					</Script>
+				</AnimationState> 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="USER_1 USER_2"
+					StateName="STATE_FiredHeroic">
+					<Animation 
+						AnimationName="GUMARVCANNON_ATKA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0"
+                        AnimationSpeedFactorMin="2.0"
+                        AnimationSpeedFactorMax="2.0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="USER_1"
+					StateName="STATE_Fired">
+					<Animation 
+						AnimationName="GUMARVCANNON_ATKA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="COMING_OUT_OF_FACTORY" 
+					StateName="STATE_built"
+					Flags="START_FRAME_FIRST">
+					<Animation 
+						AnimationName="GUMARVCANNON_BLDA" 
+						AnimationBlendTime="0" 
+						AnimationMode="ONCE_BACKWARDS" />
+				</AnimationState>
+
+					<!--
+				<AnimationState 
+					ParseCondStateType="PARSE_DEFAULT"
+					StateName="STATE_Idle">
+					<Animation 
+						AnimationName="GUMARVCANNON_ANM"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev == "STATE_Fired" then
+						CurDrawableSetTransitionAnimState("TRANS_RevolveBarrel")
+						end
+						if Prev == "STATE_FiredHeroic" then
+						CurDrawableSetTransitionAnimState("TRANS_RevolveBarrelHeroic")
+						end
+					</Script>
+				</AnimationState> 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="USER_1 USER_2"
+					StateName="STATE_FiredHeroic">
+					<Animation 
+						AnimationName="GUMARVCANNON_ANM"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="USER_1"
+					StateName="STATE_Fired">
+					<Animation 
+						AnimationName="GUMARVCANNON_ANM"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_RevolveBarrel">
+					<Animation
+						AnimationName="GUMARV_ATKA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_RevolveBarrelHeroic">
+					<Animation
+						AnimationName="GUMARV_ATKA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0"
+                        AnimationSpeedFactorMin="2.0"
+                        AnimationSpeedFactorMax="2.0" />
+				</AnimationState>
+				-->
+				<!-- TRANSITIONS -->
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_built">
+					<Animation
+						AnimationName="GUMARVCANNON_BLDA"
+						AnimationBlendTime="0"
+						AnimationMode="ONCE"></Animation>
+				</AnimationState>	
+			
+			</ScriptedModelDraw>
 			<ScriptedModelDraw id="ModuleTag_FX" ExtraPublicBone="FXTracksLR FXTracksRR	FXTracksLF FXTracksRF MUZZLEFX01">
 				<ModelConditionState ParseCondStateType="PARSE_DEFAULT">
 					<Model Name="W3DContainer:GUMARV_FX" />
@@ -711,7 +836,7 @@
 				TracerHitFx="FX_BulletHitGDI" TracerEmitFx="FX_GDI_MARV_GunTurretFire" WeaponSlotID="9">
 				<HeadColor r="1.0" g="1.0" b="1.0" a="1.0" />
 				<TailColor r="0.0" g="0.0" b="0.0" a="0.0" />
-			</TracerModelDraw>	
+			</TracerModelDraw>		
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate 
@@ -1189,14 +1314,16 @@
 			
 			<StatusBitsUpgrade id="ModuleTag_VeterancyUpgrade" StatusToSet="WEAPON_UPGRADED_02"> <TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
-			<ModelConditionUpgrade id="ModuleTag_AllFactionUpgrade" AddConditionFlags="USER_5"> <TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
-			</ModelConditionUpgrade>
-
     <FireWeaponUpdate
         id="ModuleTag_FireWeaponUpdate">
         <FireWeaponNugget 	WeaponName="MetaCrushTiberium" 	FireDelay="10s" 	FireInterval=".5s" />				
       </FireWeaponUpdate>	
-     
+
+			<ModelConditionUpgrade
+				id="ModuleTag_ForHeroicBarrel"
+				AddConditionFlags="USER_2">
+				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
+			</ModelConditionUpgrade>
     </Behaviors>
 		<AI>
 			<AIUpdate id="ModuleTag_AI" AutoAcquireEnemiesWhenIdle="YES" AILuaEventsList="GDIMARVFunctions"> <UnitAITargetChooserData 	CanPickDynamicTargets="false" 	SympathyRange="100.0"  	RotateToTargetWhenAiming="false" />
