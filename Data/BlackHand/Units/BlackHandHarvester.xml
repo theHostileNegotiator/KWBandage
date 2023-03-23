@@ -484,7 +484,7 @@
 				Sound="AudioEvent:NOD_Harvester_VoiceRetreat"
 				AudioType="voiceRetreatToCastle" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_Harvester_VoiceSelectMS"
+				Sound="Multisound:NOD_Harvester_VoiceSelectMS"
 				AudioType="voiceSelect" />
 			<AudioEntry
 				Sound="Multisound:NOD_Harvester_VoiceSelectBattleMS"
