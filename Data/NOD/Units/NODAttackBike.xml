@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Changed so it uses only one model between no upgrades and upgrade-->
-<!--Fixed weapon launch bones-->
-<!--Added Damaged TibCore Texture-->
+<!-- Changed so it uses only one model between no upgrades and upgrade -->
+<!-- Fixed weapon launch bones -->
+<!-- Added Damaged TibCore Texture -->
+<!-- Remove TRANSPORT KindOf -->
 	<Includes>
 		<Include type="all" source="ART:NUATKBIKE_SKN.w3x" />
 	</Includes>
@@ -17,7 +18,7 @@
 		BuildTime="6"
 		CommandSet="NODAttackBikeCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE TRANSPORT VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE CAN_BE_FAVORITE_UNIT"
 		RadarPriority="UNIT"
 		UnitCategory="VEHICLE"
 		ProductionQueueType="VEHICLE"

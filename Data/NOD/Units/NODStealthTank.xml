@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xai="uri:ea.com:eala:asset:instance">
-<!--Changed so it uses only one model between no upgrades and upgrade-->
-<!--Added Damaged TibCore Texture-->
+<!-- Changed so it uses only one model between no upgrades and upgrade -->
+<!-- Added Damaged TibCore Texture -->
+<!-- Remove TRANSPORT KindOf -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NUStlthTnk_SKN.w3x" />
@@ -18,7 +19,7 @@
 		BuildTime="18"
 		CommandSet="NODStealthTankCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE TRANSPORT VEHICLE CAN_REVERSE_MOVE CAN_BE_FAVORITE_UNIT"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE CAN_REVERSE_MOVE CAN_BE_FAVORITE_UNIT"
 		RadarPriority="UNIT"
 		ShockwaveResistance="90"
 		ProductionQueueType="VEHICLE"

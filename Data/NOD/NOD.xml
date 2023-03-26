@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Includes>
+		<Include type="all" source="Units/NODArmageddonBomber.xml" />		
 		<Include type="all" source="Units/NODAttackBike.xml" />		
 		<Include type="all" source="Units/NODAvatar.xml" />	
 		<Include type="all" source="Units/NODAvatarHusk.xml" />	
+		<Include type="all" source="Units/NODBeamCannon.xml" />	
 		<Include type="all" source="Units/NODBunkerTruck.xml" />	
 		<Include type="all" source="Units/NODConfessor.xml" />	
 		<Include type="all" source="Units/NODCyborgInfantry.xml" />	
@@ -23,6 +25,9 @@
 		<Include type="all" source="Units/NODStealthTank.xml" />	
 		<Include type="all" source="Units/NODVenom.xml" />	
 		<Include type="all" source="Units/NODVertigo.xml" />	
+		<Include type="all" source="Units/NODVertigo_AirDispersion.xml" />	
+		<Include type="all" source="Units/NODVertigo_DeployMines.xml" />	
+		<Include type="all" source="Units/NODVertigo_SeedTiberium.xml" />	
 
 		<Include type="all" source="structures/NODConstructionYard.xml" />
 		<Include type="all" source="structures/NODCrane.xml" />

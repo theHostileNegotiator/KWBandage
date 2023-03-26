@@ -298,6 +298,18 @@
 			* Shock Pods (Cursor)
 2. Superweapons and some destructive powers have an OCL to destroy trees and other props, however this also affects destroyed objects, which presents a problem to NOD turrets as they will be permanently destroyed.
 	* Delete CLEAR_REMOVABLES flag from the OCL due to the issues. Trees will still be crushed but many props will be preserved
+#### Not Transport
+1. Many objects have TRANSPORT KindOf flag, despite not being able to transport any units
+	* Remove TRANSPORT KindOf flag
+		* Objects Affected
+			* Titan
+			* Attack Bike
+			* Beam Cannon
+			* Flame Tank
+			* Mantis
+			* Stealth Tank
+			* Armageddon Bomber (Aircraft used for Nod Support Powers)
+			* Overlords Wrath Meteor Mechanism
 #### UI
 1. In TW, if a single Aircraft with Ammo was selected, ammo would be displayed in the unit portrait. This feature is not in KW
 	* Modified TacticalHUDSelectionDetails, now ammo will be displayed in the unit portrait
@@ -1342,6 +1354,8 @@
 #### Overlords Wrath
 1. The Tiberium Field it leaves behind persists for the entire game which has Tiberium continously growing at the impact, it's supposed to end after 5 minutes
 	* Added DestroyDie module to the Tiberium Field behaviors
+2. Stormriders can be seen on Radar and the shadow can sometimes be seen
+	* Set RadarPriority to NOT_ON_RADAR and removed Stormrider model
 #### Mothership
 1. Weapon would affect Subfaction Motherships but not Scrin
 	* Weapon will no longer affect Subfaction Motherships

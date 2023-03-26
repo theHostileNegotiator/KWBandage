@@ -5,6 +5,7 @@
 		<Include type="all" source="Props/BlackHandPowerStore.xml" />
 
 		<Include type="all" source="Units/BlackHandAttackBike.xml" />
+		<Include type="all" source="Units/BlackHandBeamCannon.xml" />	
 		<Include type="all" source="Units/BlackHandBlackDisciple.xml" />
 		<Include type="all" source="Units/BlackHandBlackHand.xml" />
 		<Include type="all" source="Units/BlackHandBlackHandSquad.xml" />

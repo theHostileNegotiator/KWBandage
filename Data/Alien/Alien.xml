@@ -11,6 +11,7 @@
 		<Include type="all" source="Units/AlienDevourerTank.xml" />
 		<Include type="all" source="Units/AlienEradicatorHexapod.xml" />	
 		<Include type="all" source="Units/AlienExplorer.xml" />	
+		<Include type="all" source="Units/AlienGiantTiberiumRockFiringMechanism.xml" />
 		<Include type="all" source="Units/AlienGunWalker.xml" />	
 		<Include type="all" source="Units/AlienHarvester.xml" />	
 		<Include type="all" source="Units/AlienInvaderFighter.xml" />	
@@ -18,6 +19,8 @@
 		<Include type="all" source="Units/AlienMCVUnpacking.xml" />	
 		<Include type="all" source="Units/AlienMillipedeBody.xml" />	
 		<Include type="all" source="Units/AlienMillipedeHead.xml" />	
+		<Include type="all" source="Units/AlienMiniTiberiumRockFiringMechanism_01.xml" />
+		<Include type="all" source="Units/AlienMiniTiberiumRockFiringMechanism_02.xml" />
 		<Include type="all" source="Units/AlienMothership.xml" />	
 		<Include type="all" source="Units/AlienPlanetaryAssaultCarrier.xml" />	
 		<Include type="all" source="Units/AlienSeekerTank.xml" />

@@ -12,6 +12,8 @@
 <!-- Adjusted Geometry -->
 <!-- Fixed FP Mesh Sorting -->
 <!-- Added Distortion Effects to Railgun -->
+<!-- Remove TRANSPORT KindOf -->
+<!-- Cleanup Draws -->
 	<Includes>
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
@@ -30,7 +32,7 @@
 		BuildTime="13"
 		CommandSet="SteelTalonsTitanCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK VALID_TARGET_FOR_C4 CAN_CAST_REFLECTIONS SCORE TRANSPORT VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK VALID_TARGET_FOR_C4 CAN_CAST_REFLECTIONS SCORE VEHICLE CAN_BE_FAVORITE_UNIT"
 		RadarPriority="UNIT"
 		UnitCategory="VEHICLE"
 		ProductionQueueType="VEHICLE"
@@ -57,7 +59,7 @@
 		<Draws>
 			<ScriptedModelDraw 
 				id="ModuleTag_Draw" 
-				ExtraPublicBone="B_SHELL01 B_PISTONLA B_FOOTL B_FOOTR FXMUZZLE01 FXMUZZLE02 FXMUZZLE03 MuzzleFlash_01 MuzzleFlash_02 MuzzleFlash_03 Turret B_Tilt"
+				ExtraPublicBone="B_Shell01 B_PistonLA B_FootL B_FootR FXMuzzle01 MuzzleFlash_01 Turret B_Tilt"
 				OkToChangeModelColor="true" 
 				InitialRecoilSpeed="16.0" 
 				MaxRecoilDistance="10.0" 
@@ -70,19 +72,19 @@
 					<WeaponFireFXBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FXMUZZLE" />
+						BoneName="FXMuzzle01" />
 					<WeaponRecoilBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FXMuzzle" />
+						BoneName="FXMuzzle01" />
 					<WeaponMuzzleFlash
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="MuzzleFlash_" />
+						BoneName="MuzzleFlash_01" />
 					<WeaponLaunchBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FXMUZZLE" />
+						BoneName="FXMuzzle01" />
 					<Turret
 						TurretNameKey="Turret"
 						TurretPitch="B_Tilt"

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance">
+<!-- Remove TRANSPORT KindOf -->
+	<Tags></Tags>
+	<Includes>
+		<!-- Base Object -->
+		<Include type="instance" source="NODArmageddonBomber.xml" />
+	</Includes>
+	<GameObject
+		id="NODVertigo_DeployMines"
+		inheritFrom="NODArmageddonBomber"
+		SelectPortrait="Portrait_NODArmageddonBomber"
+		ButtonImage="Portrait_NODArmageddonBomber"
+		Side="NOD"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		BuildCost="10"
+		BuildTime="1.0"
+		CommandSet="EmptyCommandSet"
+		IsTrainable="true"
+		KindOf="PRELOAD CAN_CAST_REFLECTIONS CAN_ATTACK SCORE AIRCRAFT VEHICLE SUMMONED"
+		RadarPriority="UNIT"
+		BuildCompletion="APPEARS_AT_RALLY_POINT"
+		ProductionQueueType="AIRCRAFT"
+		UnitCategory="AIRCRAFT"
+		VoicePriority="-4"
+		EditorName="NODVertigo_DeployMines"
+		Description="Desc:NODArmageddonBomber"
+		TypeDescription="Type:NODArmageddonBomber"
+		ShockwaveResistance="100"
+		ReinvisibilityDelay="7s">
+		<DisplayName
+			xai:joinAction="Replace">Name:NODCarryall</DisplayName>
+		<ArmorSet
+			Armor="NODCarryallArmor"
+			DamageFX="VehicleDamageFX" />
+		<LocomotorSet
+			Locomotor="NODArmageddonBomberLocomotor"
+			Condition="NORMAL"
+			Speed="300.0" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="NUArmag_SKN" />
+					<WeaponLaunchBone
+						WeaponSlotID="0"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FX_BOMB" />
+					<ParticleSysBone
+						BoneName="FX_BOMB"
+						FXParticleSystemTemplate="NODVertigoContrail"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="NUArmag_SKN" />
+					<Texture
+						Original="NUArmag"
+						New="NUArmagD" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_LF"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="NUArmag_SKN" />
+					<Texture
+						Original="NUArmag"
+						New="NUArmagD" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_LF"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_RF"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_RF"
+						FXParticleSystemTemplate="orcadamagefire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_RF"
+						FXParticleSystemTemplate="orcadamagesmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Model
+						Name="NUArmag_SKN" />
+					<Texture
+						Original="NUArmag"
+						New="NUArmagD" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_LF"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_RF"
+						FXParticleSystemTemplate="orcaexhaust"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_RF"
+						FXParticleSystemTemplate="orcadamagefire"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="Bone_Engine_RF"
+						FXParticleSystemTemplate="orcadamagesmoke"
+						FollowBone="true" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT"
+					Flags="MAINTAIN_FRAME_ACROSS_STATES">
+					<Animation
+						AnimNickName="HVRA"
+						AnimationName="NUArmag_IDLA"
+						AnimationMode="LOOP" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="MOVING TURN_LEFT"
+					Flags="MAINTAIN_FRAME_ACROSS_STATES">
+					<Animation
+						AnimNickName="HVRA"
+						AnimationName="NUArmag_TRNL"
+						AnimationMode="LOOP"
+						AnimationBlendTime="15" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="MOVING TURN_RIGHT"
+					Flags="MAINTAIN_FRAME_ACROSS_STATES">
+					<Animation
+						AnimNickName="HVRA"
+						AnimationName="NUArmag_TRNR"
+						AnimationMode="LOOP"
+						AnimationBlendTime="15" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="MOVING"
+					Flags="MAINTAIN_FRAME_ACROSS_STATES">
+					<Animation
+						AnimNickName="HVRA"
+						AnimationName="NUArmag_FLYA"
+						AnimationMode="LOOP"
+						AnimationBlendTime="15" />
+				</AnimationState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<AttributeModifierPoolUpdate 
+				id="DefaultAttributeModifierPoolUpdate"/>
+			<SquishCollide
+				id ="DefaultSquishCollide"/>
+			<FireWeaponWhenDead
+				id="ModuleTag_CatalystDeathWeapon"
+				InitiallyActive="true"
+				DeathWeapon="CatalystInfantryDeathWeapon"
+				ContinueToBezierDestination="false">
+				<DieMuxData DeathTypes="CATALYST" />
+			</FireWeaponWhenDead>
+			<!--Heroic level units auto healing-->
+			<AutoHealBehavior
+				id="Upgrade_HeroicHeal"
+				InitiallyActive="false"
+				HealOnlyIfNotInCombat="false"
+				HealOnlyIfNotUnderAttack="false"
+				StartHealingDelay="1s"
+				HealingAmount="100"
+				HealingDelay=".5s">
+				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
+			</AutoHealBehavior>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCSpeed"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterSpeed</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCDamage"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterDamage">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterDamage</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCArmor"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterArmor">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterArmor</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Veteran"
+				LevelCap="4"
+				LevelsToGain="1">
+				<TriggeredBy>Upgrade_ProductionVeterancy_VETERAN</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Elite"
+				LevelCap="4"
+				LevelsToGain="2">
+				<TriggeredBy>Upgrade_ProductionVeterancy_ELITE</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Heroic"
+				LevelCap="4"
+				LevelsToGain="3">
+				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
+			</LevelUpUpgrade>
+			<!-- Nod Cloaking Field -->
+			<InvisibilityUpdate
+				id="ModuleTag_Invisibility"
+				UpdatePeriod="0.5s">
+				<InvisibilityNugget />
+				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
+			</InvisibilityUpdate>
+			<StealthUpgrade
+				id="ModuleTag_InvisibilityTrigger">
+				<TriggeredBy>Upgrade_CloakingFieldInvisibility</TriggeredBy>
+			</StealthUpgrade>
+			<TemporarilyDefectUpdate
+				id="ModuleTag_TemporarilyDefect"
+				DefectionFrameCount="300" />
+			<Physics
+				id="ModuleTag_Physics" />
+			<ProductionUpdate
+				id="ModuleTag_ProductionUpdate"
+				MaxQueueEntries="1" />
+			<MoveToPositionAndEvacuateSpecialPower
+				id="ModuleTag_MoveToPositionAndEvacuate"
+				SpecialPowerTemplate="SpecialPowerMoveToPositionAndEvacuate" />
+			<RunOffMapBehavior
+				id="ModuleTag_RunOffMapBehavior"
+				FlyingOffMap="true"
+				RequiresSpecificTrigger="true"/>
+			<SlowDeath
+				id="ModuleTag_Death"
+				SinkDelay="0s"
+				SinkRate="0.5"
+				DestructionDelay="0.01s">
+				<OCL
+					Type="INITIAL">
+					<OCL>OCL_NODArmageddonBomberInitialDebris</OCL>
+				</OCL>
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="TOPPLED" />
+				<Sound Type="INITIAL" List="NOD_Generic_VoiceDieMS" />
+<!--
+				<Sound
+					Type="INITIAL"
+					List="NOD_Carryall_VoiceCrashMS" />
+-->
+			</SlowDeath>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_GDIAirVehicleExplode" />
+			</FXListBehavior>
+			<StrafeAreaUpdate
+				id="ModuleTag_StrafeAreaUpdate"
+				WeaponName="NODMineBomb"
+				PreattackDistance="40" 
+				Radius="20"
+				MinRadius="10"/>
+		</Behaviors>
+		<AI>
+			<TransportHelicopterAIUpdate
+				id="ModuleTag_AI"
+				AutoAcquireEnemiesWhenIdle="NO" />
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="4000" />
+		</Body>
+		<ClientBehaviors>
+			<ModelConditionAudioLoopClientBehavior
+				id="ModuleTag_TakeoffLanding">
+				<ModelConditionSound
+					Sound="AudioEvent:V35DropShipLand"
+					RequiredFlags="LANDING" />
+				<ModelConditionSound
+					Sound="AudioEvent:V35DropShipTakeOff"
+					RequiredFlags="TAKING_OFF" />
+			</ModelConditionAudioLoopClientBehavior>
+		</ClientBehaviors>
+		<Geometry
+			IsSmall="false">
+			<Shape
+				Type="BOX"
+				MajorRadius="20.0"
+				MinorRadius="3.0"
+				Height="25.0"></Shape>
+		</Geometry>
+		<AudioArrayVoice>
+			<AudioEntry Sound="AudioEvent:NOD_Carryall_VoiceCreate" AudioType="voiceCreated" />
+			<AudioEntry Sound="AudioEvent:NOD_Carryall_VoiceMove" AudioType="voiceMove" />
+			<AudioEntry Sound="AudioEvent:NOD_Carryall_VoiceRetreat" AudioType="voiceRetreatToCastle" />
+			<AudioEntry Sound="Multisound:NOD_Carryall_VoiceSelectMS" AudioType="voiceSelect" />
+			<NamedEntry Sound="AudioEvent:NOD_Carryall_VoiceMove" Name="InitiateMoveToPositionAndEvacuate" />
+		</AudioArrayVoice>
+<!--
+NOD_Carryall_VoiceInboundMS
+NOD_Carryall_VoiceInboundCancelledMS
+-->
+		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:NOD_CarryAll_MoveStart" AudioType="soundMoveStart" />
+			<AudioEntry Sound="AudioEvent:NOD_CarryAll_IdleLoop" AudioType="soundAmbient" />
+			<AudioEntry Sound="AudioEvent:NOD_CarryAll_MoveLoop" AudioType="soundMoveLoop" />
+		</AudioArraySound>
+		<EvaEvents
+			EvaEventDieOwner="UnitLost"
+			EvaEventProductionStarted="UnitConstructionStarted" 
+			EvaEventDamagedOwner="UnitUnderAttack" 	
+			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
+			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
+			EvaEventAmbushed="UnitAmbushed" 
+			EvaEventSecondDamageFarFromFirstScanRange="600"    
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted" 
+			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled" 
+			EvaEventPromotedOwner="UnitPromoted" />
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="180"
+			ShroudClearingRange="600" />
+		<CrusherInfo
+			CrusherLevel="1"
+			CrushableLevel="2" />
+	</GameObject>
+</AssetDeclaration>

@@ -5,6 +5,7 @@
 <!-- Changed so it uses only one model between no upgrades and upgrade -->
 <!-- Added Damaged TibCore Texture -->
 <!-- Fixed FP Mesh Sorting -->
+<!-- Remove TRANSPORT KindOf -->
 	<Includes>
 		<Include type="all" source="ART:NUWodTnk_SKN.w3x" />
 		<Include type="all" source="ART:NUWodTnk_FP.w3x" />
@@ -20,7 +21,7 @@
 		BuildTime="12"
 		CommandSet="NODStealthTankCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE TRANSPORT VEHICLE CAN_REVERSE_MOVE CAN_BE_FAVORITE_UNIT"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE CAN_REVERSE_MOVE CAN_BE_FAVORITE_UNIT"
 		RadarPriority="UNIT"
 		ProductionQueueType="VEHICLE"
 		UnitCategory="VEHICLE"
