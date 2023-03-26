@@ -49619,7 +49619,68 @@
     <StringAndHash Hash="3136352204" Text="FX_MGStrikeSummonMdCast" />
     <StringAndHash Hash="2227377241" Text="FX_MGStrikeSummonLgCast" />
     <StringAndHash Hash="3386552966" Text="FXMGMove_Turn" />
-	<!-- -->
+    <!-- -->
+    <StringAndHash Hash="3637259879" Text="DCPGrave01" />
+    <StringAndHash Hash="240965621" Text="Germany_Obelisk_01" />
+    <StringAndHash Hash="883256038" Text="CivilianWallSegment" />
+    <StringAndHash Hash="3533998321" Text="CivilianWallHub" />
+    <StringAndHash Hash="1706415731" Text="DCBMagLv06" />
+    <StringAndHash Hash="3516185078" Text="DCBMagLv_RZ06" />
+    <StringAndHash Hash="3671642712" Text="DCBMagLv_RZ05" />
+    <StringAndHash Hash="3878708919" Text="DCPIwoji01" />
+    <StringAndHash Hash="4043203440" Text="TiberiumCollapsableTower" />
+    <StringAndHash Hash="1339534331" Text="Goddard_Space_Center_Sign_01" />
+    <StringAndHash Hash="2211499644" Text="GDIAlarm" />
+    <StringAndHash Hash="2154157478" Text="NOD_Silo_OpenCapSmall" />
+    <StringAndHash Hash="3811380244" Text="NOD_Silo_OpenCapLarge" />
+    <StringAndHash Hash="2451294032" Text="NOD_Silo_Box" />
+    <StringAndHash Hash="2332212882" Text="NOD_Silo_Pipe" />
+    <StringAndHash Hash="833870936" Text="NOD_LaunchFacility" />
+    <StringAndHash Hash="525377244" Text="NOD_DockHQ" />
+    <StringAndHash Hash="153199299" Text="NOD_DockHQ3" />
+    <StringAndHash Hash="3685294591" Text="NOD_DockHQ4" />
+    <StringAndHash Hash="279866646" Text="NOD_IonDisruptionFieldGenerator" />
+    <StringAndHash Hash="588972539" Text="NOD_AirfieldControlTower" />
+    <StringAndHash Hash="984018715" Text="NOD_ControlCenter4" />
+    <StringAndHash Hash="1949604022" Text="NOD_StrongholdBuilding4" />
+    <StringAndHash Hash="2820238276" Text="Brazilian_Futuristic_Office_Building_01" />
+    <StringAndHash Hash="3499249328" Text="Brazilian_Futuristic_Office_Building_03" />
+    <StringAndHash Hash="830989335" Text="Brazilian_Hotel_01" />
+    <StringAndHash Hash="3468554656" Text="Brazilian_Docks_01" />
+    <StringAndHash Hash="3261927547" Text="Brazilian_Resort_01" />
+    <StringAndHash Hash="3732284780" Text="Australian_Government_Building_01" />
+    <StringAndHash Hash="1400191824" Text="Washington_DC_Encounters_Building_01" />
+    <StringAndHash Hash="4056806009" Text="DCBBuck01" />
+    <StringAndHash Hash="3831285514" Text="DCBRuin05" />
+    <StringAndHash Hash="1876697994" Text="Australian_Opera_01" />
+    <StringAndHash Hash="1264978314" Text="Egyptian_Mosque_02" />
+    <StringAndHash Hash="576138305" Text="Egyptian_Lighthouse_Radar_01" />
+    <StringAndHash Hash="3987966403" Text="Egyptian_Office_Building_02" />
+    <StringAndHash Hash="569414058" Text="Egyptian_Office_Building_03" />
+    <StringAndHash Hash="3042051127" Text="Egyptian_Office_Building_04" />
+    <StringAndHash Hash="4039264133" Text="Egyptian_Market_01" />
+    <StringAndHash Hash="2589655838" Text="EGRLarge01" />
+    <StringAndHash Hash="2859941495" Text="DCPRef01" />
+    <StringAndHash Hash="3645527591" Text="DCPRef02" />
+    <StringAndHash Hash="3161577089" Text="DCPRef03" />
+    <StringAndHash Hash="677411825" Text="DCPRef04" />
+    <StringAndHash Hash="2887581910" Text="DCPRef05" />
+    <StringAndHash Hash="687799361" Text="DCPRef06" />
+    <StringAndHash Hash="193246690" Text="DCBOvP01" />
+    <StringAndHash Hash="2509144673" Text="DCBOvP02" />
+    <StringAndHash Hash="3120640869" Text="DCBOvP03" />
+    <StringAndHash Hash="2040813117" Text="DCBOvP04" />
+    <StringAndHash Hash="3036136987" Text="DCBOvP05" />
+    <StringAndHash Hash="1642301994" Text="DCBOvP06" />
+    <StringAndHash Hash="1188548888" Text="Eastern_Europe_Church_01" />
+    <StringAndHash Hash="3798079863" Text="Eastern_Europe_Church_02" />
+    <StringAndHash Hash="2839866393" Text="Eastern_Europe_Church_05" />
+    <StringAndHash Hash="1728362040" Text="Eastern_Europe_Hotel_02" />
+    <StringAndHash Hash="1885375382" Text="EEBHan01" />
+    <StringAndHash Hash="3431446835" Text="Germany_Church_01" />
+    <StringAndHash Hash="23265596" Text="CBEgyClov01" />
+    <StringAndHash Hash="1770454688" Text="PMEgyDock04" />
+    <!-- -->
     <StringAndHash Hash="681560317" Text="GUOrcaD_UGCA" />
     <StringAndHash Hash="2836147640" Text="GU_FirehawkD_UGCA" />
     <StringAndHash Hash="257603478" Text="GBGolumCannonAlt_SPM" />
@@ -49940,6 +50001,14 @@
     <StringAndHash Hash="3553297574" Text="SpecialPower_EMPGrenadesDispatch" />
     <StringAndHash Hash="2443863816" Text="SpecialPower_EMPGrenadesTrigger" />
     <StringAndHash Hash="3889142473" Text="GUHAMHEADR.GUHELI" />
+    <StringAndHash Hash="1970935184" Text="Modifier_MARVWeaponFiring" />
+    <StringAndHash Hash="1748489398" Text="GUMARVCANNON_SKL" />
+    <StringAndHash Hash="2513164958" Text="GUMARVCANNON_SKN.MUZZLEFLASH_01" />
+    <StringAndHash Hash="671543705" Text="GUMARVCANNON_SKN.MARV_MAP2" />
+    <StringAndHash Hash="1418662072" Text="GUMARVCANNON_SKN" />
+    <StringAndHash Hash="3340498141" Text="GUMARVCANNON_IDLE" />
+    <StringAndHash Hash="3317553009" Text="GUMARVCANNON_ATKA" />
+    <StringAndHash Hash="1166108491" Text="GUMARVCANNON_BLDA" />
     <StringAndHash Hash="135456968" Text="MARVZoneTrooperWeapon01" />
     <StringAndHash Hash="1106190119" Text="MARVZoneTrooperWeapon02" />
     <StringAndHash Hash="485648822" Text="MARVZoneTrooperWeapon03" />
@@ -49947,6 +50016,9 @@
     <StringAndHash Hash="264651259" Text="GDIShattererShockWaveCannonWarheadForAllies" />
     <StringAndHash Hash="350248784" Text="GDISonicShockWaveCannonWarheadForAllies" />
     <StringAndHash Hash="1687113240" Text="NODAvatarFlamerWarheadForAllies" />
+    <StringAndHash Hash="2722511927" Text="NODAvatarUpgradedFlamerWarheadForAllies" />
+    <StringAndHash Hash="710598993" Text="SpecialPower_AvatarFlamerUpgraded" />
+    <StringAndHash Hash="1335683696" Text="Upgrade_AvatarFlamerUpgraded" />
     <StringAndHash Hash="32608719" Text="MarkedOfKaneAvatarDieOCL" />
     <StringAndHash Hash="3848282125" Text="EMPBlastDispatch" />
     <StringAndHash Hash="4253634795" Text="EMPBlastTrigger" />
@@ -50002,6 +50074,8 @@
     <StringAndHash Hash="336511325" Text="NODBlackHandFlamethrowerWarheadForAllies" />
     <StringAndHash Hash="3230170649" Text="NODBlackHandUpgradedFlamethrowerWarhead" />
     <StringAndHash Hash="3233998803" Text="NODBlackHandUpgradedFlamethrowerWarheadForAllies" />
+    <StringAndHash Hash="297018503" Text="GDIBattleBaseRailgun01" />
+    <StringAndHash Hash="1439894790" Text="GDIBattleBaseRailgun02" />
     <StringAndHash Hash="3754685046" Text="IonStormWeaponWarheadForAllies" />
     <StringAndHash Hash="966791776" Text="AttributeModifier_PreventCrush7_5" />
     <StringAndHash Hash="928123680" Text="HC_NUEnlightened_UGCL" />
