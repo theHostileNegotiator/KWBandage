@@ -617,8 +617,8 @@
 				AllowNeutralInside="false"
 				AllowOwnPlayerInsideOverride="true"
 				ShowPips="true"
-				EnterSound="VehicleEnter"
-				ExitSound="VehicleExit"
+				EnterSound="AudioEvent:VehicleEnter"
+				ExitSound="AudioEvent:VehicleExit"
 				KillPassengersOnDeath="true">
 				<PassengerFilter
 					Rule="ANY"
@@ -747,11 +747,11 @@
 					Frame="234" />
 				<Sound
 					Sound="AudioEvent:GDI_Juggernaught_Footstep"
-					Animation="GUBehmBlda_BLDA"
+					Animation="GUBehemoth_BLDA"
 					Frame="75 94 112" />
 				<Sound
 					Sound="AudioEvent:GDI_Juggernaught_Footstep"
-					Animation="GUBehmBlda_BLDA"
+					Animation="GUBehemoth_BLDA"
 					Frame="75 94 112" />
 				<Sound
 					Sound="AudioEvent:GDI_Juggernaught_Footstep"
