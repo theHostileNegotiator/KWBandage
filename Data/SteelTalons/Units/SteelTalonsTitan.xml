@@ -338,6 +338,31 @@
 				</AnimationState>
 				<AnimationState 
 					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="REALLYDAMAGED MOVING" 
+					Flags="MAINTAIN_FRAME_ACROSS_STATES">
+					<Animation
+						AnimationName="GUVehicleF_RUND"
+						AnimationMode="LOOP"
+						Distance="45" />
+					<FXEvent
+						Frame="22"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_rfoot2" />
+					<FXEvent
+						Frame="56"
+						FireWhenSkipped="true"
+						Effect="FX_GDITitFootprint"
+						Bone="vf_lfoot2" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState()
+						if Prev == "STATE_built" then
+						CurDrawableSetTransitionAnimState("TRANS_built")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState 
+					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="MOVING" 
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
 					<Animation
