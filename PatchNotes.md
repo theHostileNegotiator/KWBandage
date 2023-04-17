@@ -653,6 +653,8 @@
 	* Added CLONED state to be disallowed in Special Power
 2. Nod Shadow Beacons can be used for Spot For Bombardment ability
 	* Filtered out Shadow Beacons for Bombardment Special Power
+3. Unit is supposed to have sound effects for death animations as seen in the GameObject file
+	* Moved Animation sound effects to the Husk GameObject
 #### Behemoth
 1. When recovered by engineer, it plays the animation used to leave Warfactory after the getting up animation
 	* Changed model so only one is used for build and default state
@@ -662,6 +664,8 @@
 	* Husk model now appears more destroyed. The generated Debris actually make sense now.
 4. Formation Preview may move around according to the animation it is currently in
 	* Forced no animation to be played at ModelState
+5. Unit is supposed to have sound effects for death animations as seen in the GameObject file
+	* Moved Animation sound effects to the Husk GameObject
 #### MARV
 1. Only required Tier 2 structure (Command Post) compared to other factions which required their respective Tier 3 structure (After Reclamation Hub is deployed)
 	* Changed RequiredObject to Tech Center
@@ -991,7 +995,11 @@
 	* Adjusted Damaged Textures to better match the base texture
 6. Heavy Damaged and Husks would look damaged, but the Flame and Beam Cannon attachment would look pristine
 	* Applied texture swap to the Flame and Beam Cannon texture, for the Husk the textures replaced for damaged ones in the model
-7. Avatar comandeering Flame Tank upgraded with Purifying Flame will revert to normal flame weapon
+7. The 3rd (C) walk animation in missing sound effects for footsteps
+	* Added footstep sound effects for "NUMECH_WLKC" animation
+8. Unit is supposed to have sound effects for death animations as seen in the GameObject file
+	* Moved Animation sound effects to the Husk GameObject
+9. Avatar comandeering Flame Tank upgraded with Purifying Flame will revert to normal flame weapon
 	* Added new feature where Avatar will distinguish between Normal and Upgraded Flame Tank and will use the upgraded weapon if comandeered
 #### Purifier
 1. Will randomly play Avatar voice sounds. (This is due to inheriting NOD Avatar and not removing sounds)
@@ -1009,6 +1017,10 @@
 	* Updated textures to better match the Avatar
 7. Heavy Damaged and Husks would look damaged, but the Flame attachment would look pristine
 	* Applied texture swap to the Flame texture, for the Husk the textures replaced for damaged ones in the model
+8. The 3rd (C) walk animation in missing sound effects for footsteps
+	* Added footstep sound effects for "NUMECH_WLKC" animation
+9. Unit is supposed to have sound effects for death animations as seen in the GameObject file
+	* Moved Animation sound effects to the Husk GameObject
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze
 	* Added NOD Confessor and BH Black Disciple to the CanAlwaysEnter and PassengerFilter
@@ -1230,6 +1242,9 @@
 #### Corrupter
 1. Healing ability may not work on certain sub faction units (such as the Explorer)
 	* Added missing units into the ability
+#### Annihilator Tripod
+1. Unit is supposed to have sound effects for death animations as seen in the GameObject file
+	* Moved Animation sound effects to the Husk GameObject
 #### Reaper Tripod
 1. Conversion Reserves would significantly decrease the damage of the conversion beams
 	* Increased Damage to match unupgraded counterpart
@@ -1237,6 +1252,8 @@
 	* Created a new Reaper Tripod Husk model to be used instead
 3. Unit would not benefit from Forcefield Generator upgrade in Global Conquest
 	* Swapped Upgrade_AlienReactorForcefieldGenerator for Upgrade_Reaper17ReactorForcefieldGenerator in WorldMapArmoryUpgradesAllowed
+4. Unit is supposed to have sound effects for death animations as seen in the GameObject file
+	* Moved Animation sound effects to the Husk GameObject
 #### Mechapede
 1. Subfactions use Scrin Mechapede Members instead of their own
 	* Create new members for each faction

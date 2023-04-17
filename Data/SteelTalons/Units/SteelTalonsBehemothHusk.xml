@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Changed model to appear more damaged -->
+<!-- Added sound effects for falling -->
 	<Includes>
 		<Include type="all" source="ART:GUBehemoth_SKNH.W3X" />
 		<Include type="all" source="ART:GUBehemoth_DIEA.W3X" />
@@ -199,6 +200,12 @@
 				id="ModuleTag_03"
 				MaxHealth="2000" />
 		</Body>
+		<ClientBehaviors>
+			<AnimationSoundClientBehavior
+				id="ModuleTag_ASCB">
+				<Sound Sound="AudioEvent:GDI_Juggernaught_Footstep" Animation="GUBehemoth_DIEA" Frame="60 79" />
+			</AnimationSoundClientBehavior>
+		</ClientBehaviors>
 		<Geometry
 			IsSmall="true">
 			<Shape 

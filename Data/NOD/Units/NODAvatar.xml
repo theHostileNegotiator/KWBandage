@@ -3,6 +3,7 @@
 <!-- Removed Upgrade Sound for Purifying Flame -->
 <!-- Fixed Particle System for Kane's Edition Skins -->
 <!-- Support for comandeering Flame Tank upgraded with Purifying Flame -->
+<!-- Added footstep sound effects for Avatar 3rd Walk animation -->
 	<Includes>
 		<Include type="all" source="ART:NUMechD.xml" />
 		<Include type="all" source="ART:NUMech_K.xml" />
@@ -1865,7 +1866,6 @@
 		<ClientBehaviors>
 			<AnimationSoundClientBehavior
 				id="ModuleTag_ASCB">
-				<!-- <Sound Sound="NOD_Avatar_Bodyfall" Animation="NUMech_DIEB" Frame="79" /> why won't this work!!!? Dang it! -->
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Commandeer" Animation="NUMECH_GRBA" Frame="50" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Commandeer" Animation="NUMECH_GRBB" Frame="53" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Commandeer" Animation="NUMECH_GRBC" Frame="48" />
@@ -1884,6 +1884,7 @@
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Footstep" Animation="NUMECH_TRNR" Frame="22 45" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Footstep" Animation="NUMECH_WLKA" Frame="1 25" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Footstep" Animation="NUMECH_WLKB" Frame="23 46" />
+				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Footstep" Animation="NUMECH_WLKC" Frame="24 48" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Short" Animation="NUMECH_GRBA" Frame="7 51" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Long" Animation="NUMECH_GRBA" Frame="14 34 66" />
 				<Sound Sound="AudioEvent:NOD_AvatarWarMech_GearMovement_Short" Animation="NUMECH_GRBB" Frame="10 51" />

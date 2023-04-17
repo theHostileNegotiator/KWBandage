@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!-- Flame Tank will now display upgrade -->
 <!-- Adjusted Texture to match more with the Avatar -->
+<!-- Added sound effects for falling -->
 	<Includes>
 		<Include type="all" source="ART:NUMechH_SKN.w3x" />
 		<Include type="all" source="ART:NUPurifier.xml" />
@@ -239,6 +240,13 @@
 				id="ModuleTag_Body"
 				MaxHealth="2000" />
 		</Body>
+		<ClientBehaviors>
+			<AnimationSoundClientBehavior
+				id="ModuleTag_ASCB">
+				<Sound Sound="AudioEvent:NOD_Avatar_Bodyfall" Animation="NUMech_DIEB" Frame="79" />
+				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Footstep" Animation="NUMech_DIEB" Frame="6 44 63" />
+			</AnimationSoundClientBehavior>
+		</ClientBehaviors>
 		<Geometry
 			IsSmall="false">
 			<Shape

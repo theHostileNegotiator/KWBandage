@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Added new model for Reaper Tripod Husk to use instead of using the Annihilator Tripod husk model with a different texture-->
+<!-- Added new model for Reaper Tripod Husk to use instead of using the Annihilator Tripod husk model with a different texture -->
+<!-- Added sound effects for falling -->
 	<Tags></Tags>
 	<Includes>
 		<Include
@@ -257,6 +258,11 @@
 				id="ModuleTag_03"
 				MaxHealth="2000" />
 		</Body>
+		<ClientBehaviors>
+			<AnimationSoundClientBehavior id="ModuleTag_ASCB">
+				<Sound Sound="AudioEvent:ALI_AnnihilatorTripod_Foostep" Animation="AUAnlTrpd_DIEA" Frame="6 23 39 55 64 71" />
+			</AnimationSoundClientBehavior>
+		</ClientBehaviors>
 		<Geometry
 			IsSmall="false">
 			<Shape 

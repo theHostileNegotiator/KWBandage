@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Spawns Marked Of Kane Avatar instead of Nod Avatar-->
+<!-- Support for comandeering Flame Tank upgraded with Purifying Flame -->
+<!-- Spawns Marked Of Kane Avatar instead of Nod Avatar -->
+<!-- Added sound effects for falling -->
 	<GameObject
 		id="MarkedOfKaneAvatarHusk"
 		SelectPortrait="Portrait_NodAvatarHusk"
@@ -266,6 +268,13 @@
 				id="ModuleTag_Body"
 				MaxHealth="2000" />
 		</Body>
+		<ClientBehaviors>
+			<AnimationSoundClientBehavior
+				id="ModuleTag_ASCB">
+				<Sound Sound="AudioEvent:NOD_Avatar_Bodyfall" Animation="NUMech_DIEB" Frame="79" />
+				<Sound Sound="AudioEvent:NOD_AvatarWarMech_Footstep" Animation="NUMech_DIEB" Frame="6 44 63" />
+			</AnimationSoundClientBehavior>
+		</ClientBehaviors>
 		<Geometry
 			IsSmall="false">
 			<Shape
