@@ -8,8 +8,16 @@
 <!-- Added Model Condition Upgrade USER_1 for missing factions to show Dust Particle Effects -->
 <!-- Added Status Upgrade WEAPON_UPGRADED_02 for missing factions for Non Veterancy -->
 <!-- Fixed FP Mesh Sorting -->
+<!-- Fixed Turret Bones -->
 	<Includes>
+		<Include type="all" source="ART:GUHamhead_ACC.w3x" />
+		<Include type="all" source="ART:GUHamhead_ATKA.w3x" />
+		<Include type="all" source="ART:GUHamhead_DEC.w3x" />
+		<Include type="all" source="ART:GUHamhead_IDLA.w3x" />
+		<Include type="all" source="ART:GUHamhead_MOVA.w3x" />
 		<Include type="all" source="ART:GUHamhead_SKN.w3x" />
+		<Include type="all" source="ART:GUHamhead_TRL.w3x" />
+		<Include type="all" source="ART:GUHamhead_TRR.w3x" />
 		<Include type="all" source="ART:GUHamhead_FP.w3x" />
 	</Includes>
 	<GameObject
@@ -98,11 +106,11 @@
 						BoneName="FXWEAPONL_" />		
 					<Turret
 						TurretNameKey="BONE_GUNTURRET_R"
-						TurretPitch="BONE_GUNTURRET_R"
+						TurretPitch="BONE_GUNPITCH_R"
 						TurretID="1" />
 					<Turret
 						TurretNameKey="BONE_GUNTURRET_L"
-						TurretPitch="BONE_GUNTURRET_L"
+						TurretPitch="BONE_GUNPITCH_L"
 						TurretID="2" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -244,13 +252,6 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="ATTACKING">
-					<Animation
-						AnimationName="GUHamhead_ATKA"
-						AnimationMode="LOOP"/>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING TURN_LEFT_HIGH_SPEED">
 					<Animation
 						AnimationName="GUHamhead_TRL"
@@ -304,6 +305,20 @@
 						AnimationName="GUHamhead_MOVA"
 						AnimationMode="LOOP"
 						AnimationBlendTime="15" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="ATTACKING">
+					<Animation
+						AnimationName="GUHamhead_ATKA"
+						AnimationMode="LOOP"/>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USING_WEAPON_A">
+					<Animation
+						AnimationName="GUHamhead_ATKA"
+						AnimationMode="LOOP"/>
 				</AnimationState>
 			</ScriptedModelDraw>
 			<ScriptedModelDraw
@@ -751,7 +766,7 @@
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="5.0s"
 						MinIdleScanAngle="0.0"
-						MaxIdleScanAngle="90.0">
+						MaxIdleScanAngle="30.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
@@ -774,7 +789,7 @@
 						MinIdleScanTime="1.0s"
 						MaxIdleScanTime="5.0s"
 						MinIdleScanAngle="0.0"
-						MaxIdleScanAngle="90.0">
+						MaxIdleScanAngle="30.0">
 						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>

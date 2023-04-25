@@ -2080,7 +2080,9 @@
 			</ProjectileNugget>
 		</Nuggets>
 	</WeaponTemplate>
-	
+
+<!-- Use UNLIMITED_CLIP_SIZE instead -->
+<!-- Improve targeting behaviour, Reacquire per Clip instead of per Shot -->
 	<WeaponTemplate
 		id="GDIHammerheadChaingun"
 		Name="GDIHammerheadChaingun"
@@ -2090,7 +2092,7 @@
 		FireVeteranFX="FX_GDIHammerheadChaingunAPHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		WeaponRecoil="20d"
-		ReAcquireDetailType="PER_SHOT"
+		ReAcquireDetailType="PER_CLIP"
 		AntiMask="ANTI_GROUND"
 		CanFireWhileMoving="true"
 		ClipSize="0">
@@ -2115,6 +2117,7 @@
 				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
+<!-- Consistent to unupgraded version -->
 	<WeaponTemplate
 		id="GDIHammerheadUpgradedChaingun"
 		Name="GDIHammerheadUpgradedChaingun"
@@ -2123,6 +2126,8 @@
 		FireFX="FX_GDIHammerheadChaingunAP"
 		FireVeteranFX="FX_GDIHammerheadChaingunAPHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		WeaponRecoil="20d"
+		ReAcquireDetailType="PER_CLIP"
 		AntiMask="ANTI_GROUND"
 		CanFireWhileMoving="true"
 		ClipSize="0">
