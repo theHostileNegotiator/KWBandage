@@ -19,11 +19,11 @@
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="NODShredderTurret"
 		WeaponCategory="GUN"
+		Description="Desc:NODShredderTurret"
+		TypeDescription="Type:NODShredderTurret"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
-		Description="Desc:NODShredderTurret"
-		TypeDescription="Type:NODShredderTurret">
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:NODShredderTurret</DisplayName>
 		<DisplayUpgrade>Upgrade_NODQuadTurrets</DisplayUpgrade>
 		<ArmorSet
@@ -318,13 +318,14 @@
 			</Shape>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_ShredderTurretHubSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_GenericTurret_MoveStart"
 				AudioType="soundTurretMoveLoop" />
@@ -334,7 +335,6 @@
 			<AudioEntry Sound="AudioEvent:Nod_BuildingPlacedForTurrets" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

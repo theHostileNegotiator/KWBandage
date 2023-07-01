@@ -6,7 +6,7 @@
 	</Includes>
 	<GameObject
 		id="MarkedOfKaneLaserCannonSpawn"
-		inheritFrom="BaseStructure"
+		inheritFrom="NODLaserCannonSpawn"
 		SelectPortrait="Portrait_NODLaserTurret"
 		ButtonImage="Portrait_NODLaserTurret"
 		Side="MarkedOfKane"

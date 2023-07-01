@@ -6,7 +6,7 @@
 	</Includes>
 	<GameObject
 		id="Traveler59AnnihilatorTripodHusk"
-		inheritFrom="BaseVehicle"
+		inheritFrom="AlienAnnihilatorTripodHusk"
 		SelectPortrait="Portrait_AlienAnnihilatorHusk"
 		ButtonImage="Portrait_AlienAnnihilatorHusk"
 		Side="Traveler59"
@@ -201,7 +201,7 @@
 				<Event
 					Index="onDeath"
 					FX="FX_AVehicleExplodeScorch_AnnihilatorHusk" />
-			</FXListBehavior>				
+			</FXListBehavior>			
 			<EngineerContain
 				id="ModuleTag_EngineerContain"
 				NameOfVoiceToUseForFriendlyEnter="VoiceCaptureHusk"				
@@ -224,7 +224,7 @@
 					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 				</CanEnterFilter>
-			</EngineerContain>
+			</EngineerContain>	
 			<LifetimeUpdate xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_HuskLifetime"
 				MinLifetime="300s"

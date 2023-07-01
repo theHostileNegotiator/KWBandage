@@ -28,8 +28,8 @@
 		EditorName="Reaper17CustomizableVehicle"
 		Description="Desc:AlienCustomizableVehicle"
 		TypeDescription="Type:AlienCustomizableVehicle"
-		RadarPriority="NOT_ON_RADAR"
-		UnitTypeIcon="">
+		UnitTypeIcon=""
+		RadarPriority="NOT_ON_RADAR">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:AlienCustomizableVehicle</DisplayName>
 		<GameDependency>
@@ -143,6 +143,38 @@
 			<Physics
 				id="ModuleTag_Physics"></Physics>
 				
+			<AISpecialPowerUpdate
+				id="ModuleTag_PurchaseMechapedeAddRazorModule"
+				CommandButtonName="SpecialPower_MechapedeAddRazorModule"
+				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
+			<AISpecialPowerUpdate
+				id="ModuleTag_PurchaseMechapedeShardWeapon"
+				CommandButtonName="Command_AlienMechapedeAddShardModule"
+				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
+			<AISpecialPowerUpdate
+				id="ModuleTag_PurchaseMechapedeAddDiskModule"
+				CommandButtonName="Command_AlienMechapedeAddDiskModule"
+				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
+			<AISpecialPowerUpdate
+				id="ModuleTag_PurchaseMechapedeTioxinWeapon"
+				CommandButtonName="Command_AlienMechapedeAddTioxinModule"
+				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
+
+			<ProductionUpdate
+				id="ModuleTag_ProductionUpdate"
+				GiveNoXP="true" />
+			<SpecialPower
+				id="ModuleTag_CaptureSpecialPower"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UpdateModuleStartsAttack="true" />
+			<CaptureSpecialAbilityUpdate
+				id="ModuleTag_CaptureSpecialPowerUpdate"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UnpackTime="2s"
+				PreparationTime="10s"
+				PackTime="1s"
+				StartAbilityRange="30.0"
+				Options="DO_CAPTURE_FX"/>
 			<HordeContain
 				id="ModuleTag_HordeContain"
 				FrontAngle="4.7123"
@@ -288,38 +320,6 @@
 					GrantUpgradeOnSpawn="Upgrade_MechapedeRazorWeapon"
 					SpawnAtNextAvailableSpot="true"/>
 			</SpawnHordeMemberSpecialPower>
-			<AISpecialPowerUpdate
-				id="ModuleTag_PurchaseMechapedeAddRazorModule"
-				CommandButtonName="SpecialPower_MechapedeAddRazorModule"
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_PurchaseMechapedeShardWeapon"
-				CommandButtonName="Command_AlienMechapedeAddShardModule"
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_PurchaseMechapedeAddDiskModule"
-				CommandButtonName="Command_AlienMechapedeAddDiskModule"
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_PurchaseMechapedeTioxinWeapon"
-				CommandButtonName="Command_AlienMechapedeAddTioxinModule"
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF" />
-
-			<ProductionUpdate
-				id="ModuleTag_ProductionUpdate"
-				GiveNoXP="true" />
-			<SpecialPower
-				id="ModuleTag_CaptureSpecialPower"
-				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
-				UpdateModuleStartsAttack="true" />
-			<CaptureSpecialAbilityUpdate
-				id="ModuleTag_CaptureSpecialPowerUpdate"
-				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
-				UnpackTime="2s"
-				PreparationTime="10s"
-				PackTime="1s"
-				StartAbilityRange="30.0"
-				Options="DO_CAPTURE_FX"/>
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate

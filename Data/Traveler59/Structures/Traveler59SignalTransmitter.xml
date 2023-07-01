@@ -187,13 +187,6 @@
 			<StructureUnpackUpdate
 				UnpackTime="2.0s" />
 
-			<!-- wormhole -->
-			<OCLSpecialPower
-				id="ModuleTag_WormHolePower"
-				SpecialPowerTemplate="SpecialPower_WormHole"
-				OCL="OCL_AlienWormHole"
-				CreateLocation="CREATE_AT_LOCATION" />
-
 
 			<AISpecialPowerUpdate
 				id="ModuleTag_AlienSummonMothership"
@@ -282,6 +275,13 @@
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 			
+			<!-- wormhole -->
+			<OCLSpecialPower
+				id="ModuleTag_WormHolePower"
+				SpecialPowerTemplate="SpecialPower_Traveler59WormHole"
+				OCL="OCL_AlienWormHole"
+				CreateLocation="CREATE_AT_LOCATION" />
+
 			<!-- mothership -->
 			<OCLSpecialPower
 				id="ModuleTag_SummonMothership"

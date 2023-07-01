@@ -509,12 +509,13 @@
 				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
 				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
 				EvaEventForRepair="BuildingRepaired"
-				EvaEventForCapture="EnemyBuildingCaptured"
 				FXForRepair="FX_Building_Repaired" 
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
 				ImmediatelyEnabled="true">
-				<CanEnterFilter Rule="NONE">
+				<CanEnterFilter 
+					Rule="NONE"
+					Relationship="ALLIES">
 					<IncludeThing>GDIEngineer</IncludeThing>
 					<IncludeThing>NODSaboteur</IncludeThing>
 					<IncludeThing>AlienAssimilator</IncludeThing>

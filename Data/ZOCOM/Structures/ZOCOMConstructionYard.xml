@@ -16,13 +16,13 @@
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS CONSTRUCTION_YARD FS_FACTORY NOT_AUTOACQUIRABLE AUTO_ACQUIRABLE_BY_AI COVER AUTO_RALLYPOINT PROJECT_BUILDABILITY_FOR_ALLIES"
 		RadarPriority="STRUCTURE"
 		CampnessValue="5000"
-		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="ZOCOMConstructionYard"
 		Description="Desc:GDIConstructionYard"
-		TypeDescription="Type:GDIConstructionYard">
+		TypeDescription="Type:GDIConstructionYard"
+		CampnessValueRadius="300"
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:GDIConstructionYard</DisplayName>
 		<ArmorSet
 			Armor="GDIConstructionYardArmor"
@@ -553,16 +553,16 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:GDI_ConstructionYardSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

@@ -155,7 +155,7 @@
 			</RepairUpdate>
 			<CreateObjectDie xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_ArmoryGDIBuildingDestruction" >
+				CreationList="OCL_GenericGDIBuildingDestruction" >
 				<DieMuxData
 					DeathTypes="ALL"
 					DeathTypesForbidden="DETONATED SUICIDED" />
@@ -163,7 +163,7 @@
 			</CreateObjectDie>
 			<CreateObjectDie xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_ArmoryGDIBuildingSuicide" >
+				CreationList="OCL_GenericGDIBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 			<EngineerContain xmlns="uri:ea.com:eala:asset"

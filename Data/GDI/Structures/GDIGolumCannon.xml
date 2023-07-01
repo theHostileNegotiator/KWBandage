@@ -430,16 +430,16 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:GDI_GolumCannonSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

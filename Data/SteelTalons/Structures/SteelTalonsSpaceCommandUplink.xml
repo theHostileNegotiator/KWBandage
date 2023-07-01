@@ -22,7 +22,7 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="SteelTalonsSpaceCommandUplink"
-		Description="Desc:SteelTalonsSpaceCommandUplink"
+		Description="DESC:SteelTalonsSpaceCommandUplink"
 		TypeDescription="Type:GDISpaceCommandUplink"
 		CampnessValue="2000"
 		CampnessValueRadius="300"

@@ -21,8 +21,8 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="MarkedOfKaneHandOfNOD"
-		Description="Desc:MarkedOfKaneHandofNOD"
-		TypeDescription="Type:MarkedOfKaneHandofNod"
+		Description="Desc:MarkedOfKaneHandOfNOD"
+		TypeDescription="Type:MarkedOfKaneHandOfNOD"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">

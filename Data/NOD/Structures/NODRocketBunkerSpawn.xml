@@ -348,6 +348,7 @@
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_GenericTurret_MoveStart"
 				AudioType="soundTurretMoveLoop" />

@@ -447,7 +447,7 @@
 				SpecialPowerTemplate="EmpBurst"
 				SpecialWeapon="NODBuggyEmpBurst"
 				UnpackTime=".5s"
-				UnpackSound="NOD_RaiderBuggy_EMPblast"
+				UnpackSound="AudioEvent:NOD_RaiderBuggy_EMPblast"
 				PackTime=".5s"
 				StartAbilityRange="100.0"
 				BusyForDuration="1s"

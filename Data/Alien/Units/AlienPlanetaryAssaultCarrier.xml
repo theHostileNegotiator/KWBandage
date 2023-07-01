@@ -785,7 +785,7 @@
 			</ModelConditionUpgrade>
       <AudioLoopUpgrade 
 				id="ForceFieldUpgradeSound" 
-				SoundToPlay="ALI_ForceField_Begin">
+				SoundToPlay="AudioEvent:ALI_ForceField_Begin">
         <TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
       </AudioLoopUpgrade>
 		</Behaviors>

@@ -27,11 +27,11 @@
 		UnitCategory="VEHICLE"
 		WeaponCategory="CANNON"
 		VoicePriority="224"
-		ShockwaveResistance="100"
-		ReinvisibilityDelay="7s"
 		EditorName="NODAvatar"
 		Description="Desc:NODAvatarWarmech"
-		TypeDescription="Type:NODAvatarWarmech">
+		TypeDescription="Type:NODAvatarWarmech"
+		ShockwaveResistance="100"
+		ReinvisibilityDelay="7s">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODAvatarWarmech</DisplayName>
 		<GameDependency>

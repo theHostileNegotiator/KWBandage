@@ -13,7 +13,7 @@
 		BuildCost="600"
 		PlacementViewAngle="315d"
 		BuildTime="6"
-		CommandSet="Traveler59BuzzerHiveCommandSet"
+		CommandSet="AlienBuzzerHiveCommandSet"
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS AUTO_ACQUIRABLE_BY_AI COVER POWERED FS_BASE_DEFENSE CAN_SEE_THROUGH_STRUCTURE CAN_ATTACK"
 		RadarPriority="STRUCTURE"
 		ProductionQueueType="OTHER_STRUCTURE"

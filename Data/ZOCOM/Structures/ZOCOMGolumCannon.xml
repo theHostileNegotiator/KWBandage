@@ -17,14 +17,14 @@
 		RadarPriority="STRUCTURE"
 		PlacementViewAngle="225d"
 		CampnessValue="2000"
-		CampnessValueRadius="300"
 		ProductionQueueType="OTHER_STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
-		UnitCategory="STRUCTURE"
 		WeaponCategory="CANNON"
-		EditorName="ZOCOMGolumCannon"
+		EditorName="ZOCOMGolumnCannon"
 		TypeDescription="Type:GDIGolumCannon"
-		Description="DESC:ZOCOMGolumCannon">
+		Description="DESC:ZOCOMGolumCannon"
+		CampnessValueRadius="300"
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:GDIGolumCannon</DisplayName> 
 		<GameDependency>
 			<RequiredObject>ZOCOMBarracks</RequiredObject>
@@ -366,16 +366,16 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:GDI_GolumCannonSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

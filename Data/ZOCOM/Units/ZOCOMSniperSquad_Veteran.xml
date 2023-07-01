@@ -25,8 +25,8 @@
 		UnitCategory="INFANTRY"
 		WeaponCategory="GUN"
 		EditorName="ZOCOMSniperSquad_Veteran"
-		Description="Desc:ZOCOMSniperTeam"
-		TypeDescription="Type:ZOCOMSniperTeam"
+		Description="DESC:ZOCOMSniperTeam"
+		TypeDescription="TYPE:ZOCOMSniperTeam"
 		UnitTypeIcon="SniperIcon"
 		RadarPriority="NOT_ON_RADAR">
 		<EquivalentTo>ZOCOMSniperSquad</EquivalentTo>
@@ -167,7 +167,7 @@
 				Options="LOSE_STEALTH_ON_TRIGGER" />
 			<CreateAndEnterObjectSpecialPower xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_CallForTransport"
-				SpecialPowerTemplate="SpecialPowerCallForTransportGDI"
+				SpecialPowerTemplate="SpecialPowerCallForTransportZOCOM"
 				OCL="OCL_ZOCOMCallForTransport"
 				CreateLocation="CREATE_ABOVE_LOCATION"
 				TriggerFX="FX_GDICallForTransportFlare"

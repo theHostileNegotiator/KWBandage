@@ -18,12 +18,12 @@
 		PlacementViewAngle="225d"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
-		CampnessValue="2000"
-		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
 		EditorName="MarkedOfKaneHangar"
 		Description="Desc:MarkedOfKaneHangar"
-		TypeDescription="Type:MarkedOfKaneHangar">
+		TypeDescription="Type:MarkedOfKaneHangar"
+		CampnessValue="2000"
+		CampnessValueRadius="300"
+		UnitCategory="STRUCTURE">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODHangar</DisplayName>
 		<GameDependency>

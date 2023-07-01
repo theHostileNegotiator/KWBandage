@@ -721,7 +721,7 @@
 				PackTime=".4s"				
 				BusyForDuration="3s"
 				WhichSpecialWeapon="1"
-				TriggerSound="ZoneTrooperJumpJetFire" />
+				TriggerSound="AudioEvent:ZoneTrooperJumpJetFire" />
 			<BezierProjectile
 				id="ModuleTag_Projectile"
 				FirstHeightMin="50"
@@ -844,7 +844,7 @@
 			<AudioEntry Sound="AudioEvent:GDI_ZoneRaider_VoiceAttack" AudioType="voiceAttack" />
 			<AudioEntry Sound="AudioEvent:GDI_ZoneRaider_VoiceCreate" AudioType="voiceCreated" />
 			<AudioEntry Sound="AudioEvent:GDI_ZoneRaider_VoiceCreate" AudioType="voiceFullyCreated" />
-			<AudioEntry Sound="AudioEvent:AudioEvent:GDI_ZoneRaider_VoiceGarrison" AudioType="voiceGarrison" />
+			<AudioEntry Sound="AudioEvent:GDI_ZoneRaider_VoiceGarrison" AudioType="voiceGarrison" />
 			<AudioEntry Sound="AudioEvent:GDI_ZoneRaider_VoiceMoveAttack" AudioType="voiceAttackAfterMoving" />
 			<AudioEntry Sound="AudioEvent:GDI_ZoneRaider_VoiceMove" AudioType="voiceGuard" />
 			<AudioEntry Sound="AudioEvent:GDI_ZoneRaider_VoiceMove" AudioType="voiceMove" />

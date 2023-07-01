@@ -7,6 +7,7 @@
 <!-- Fixed FP Mesh Sorting and Simplified Model -->
 <!-- Add Revolving Barrel animation -->
 <!-- Cleanup Draws -->
+<!-- Use MARV CommandSet instead of the Mammoth -->
 	<Includes>
 		<Include type="all" source="ART:GUMARV_FP.w3x" />
 		<Include type="all" source="ART:GUMARV_BLDA.w3x" />

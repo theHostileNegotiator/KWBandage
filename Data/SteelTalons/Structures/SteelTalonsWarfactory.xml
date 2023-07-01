@@ -23,7 +23,7 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="SteelTalonsWarFactory"
-		Description="Desc:SteelTalonsWarFactory"
+		Description="DESC:SteelTalonsWarFactory"
 		TypeDescription="Type:GDIWarFactory"
 		CampnessValue="2000"
 		CampnessValueRadius="300"

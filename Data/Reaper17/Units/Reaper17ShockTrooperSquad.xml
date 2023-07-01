@@ -166,6 +166,26 @@
 			</StatusBitsUpgrade>
 			<Physics
 				id="ModuleTag_Physics"></Physics>
+			<ProductionUpdate
+				id="ModuleTag_ProductionUpdate"
+				GiveNoXP="true" />
+			<AISpecialPowerUpdate
+				id="ModuleTag_AlienShockTrooperBlinkAI"
+				CommandButtonName="Command_UseBlinkPack"
+				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT"
+				MinimumCutoff="100" />
+			<SpecialPower
+				id="ModuleTag_CaptureSpecialPower"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UpdateModuleStartsAttack="true" />
+			<CaptureSpecialAbilityUpdate
+				id="ModuleTag_CaptureSpecialPowerUpdate"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UnpackTime="2s"
+				PreparationTime="10s"
+				PackTime="1s"
+				StartAbilityRange="30.0"
+				Options="DO_CAPTURE_FX"/>
 			<HordeContain
 				id="ModuleTag_HordeContain"
 				FrontAngle="4.7123"
@@ -200,26 +220,6 @@
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 			</HordeContain>
-			<ProductionUpdate
-				id="ModuleTag_ProductionUpdate"
-				GiveNoXP="true" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_AlienShockTrooperBlinkAI"
-				CommandButtonName="Command_UseBlinkPack"
-				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT"
-				MinimumCutoff="100" />
-			<SpecialPower
-				id="ModuleTag_CaptureSpecialPower"
-				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
-				UpdateModuleStartsAttack="true" />
-			<CaptureSpecialAbilityUpdate
-				id="ModuleTag_CaptureSpecialPowerUpdate"
-				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
-				UnpackTime="2s"
-				PreparationTime="10s"
-				PackTime="1s"
-				StartAbilityRange="30.0"
-				Options="DO_CAPTURE_FX"/>
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate

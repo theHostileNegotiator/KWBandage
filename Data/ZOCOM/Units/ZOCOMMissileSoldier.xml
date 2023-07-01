@@ -22,9 +22,9 @@
 		WeaponCategory="MISSILE"
 		VoicePriority="100"
 		EditorName="ZOCOMMissileSoldier"
-		Description="Desc:GDIMissileSquad"
+		Description="DESC:GDIMissileSquad"
 		WorldMapArmoryUpgradesAllowed="Upgrade_ZOCOMFieldSuits"
-		TypeDescription="Type:ZOCOMMissileSquad">
+		TypeDescription="TYPE:ZOCOMMissileSquad">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIMissileSquad</DisplayName>
 		<DisplayUpgrade id="ModuleTag_DisplayCompositeArmorUpgrade">Upgrade_ZOCOMFieldSuits</DisplayUpgrade>
@@ -662,18 +662,6 @@
 				SuppressionDuration="5s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove" />
-			<ModelConditionUpgrade xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_FieldSuitsModelCondition"
-				Permanent="true"
-				AddConditionFlags="UPGRADED_ARMOR" >
-				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_FieldSuitsUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE">
-				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
-			</ArmorUpgrade>
 			<!--xi:include
 				href="../../Includes/GDICallForTransport.xml" /-->
 			<FindCoverBehavior
@@ -689,8 +677,20 @@
 				StatusToSet="WEAPON_UPGRADED_03">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
+			<ModelConditionUpgrade xmlns="uri:ea.com:eala:asset"
+				id="ModuleTag_FieldSuitsModelCondition"
+				Permanent="true"
+				AddConditionFlags="UPGRADED_ARMOR" >
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
+				id="ModuleTag_FieldSuitsUpgrade"
+				Permanent="true"
+				ArmorSetFlag="PLAYER_UPGRADE">
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</ArmorUpgrade>
 			<AudioLoopUpgrade id="GDI_Armory_TiberiumFieldSuitsUpgrade" SoundToPlay="AudioEvent:GDI_Armory_TiberiumFieldSuitsUpgrade"> 
-				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy> 
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy> 
 			</AudioLoopUpgrade> 
 		</Behaviors>
 		<AI>

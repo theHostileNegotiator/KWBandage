@@ -383,13 +383,6 @@
 				MinorRadius="20.0"
 				Height="13.0"></Shape>
 		</Geometry>
-		<EvaEvents
-			EvaEventProductionStarted="UnitConstructionStarted"
-			EvaEventDamagedOwner="UnitUnderAttack" 
-			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventBuildOnHold="BuildOnHold"
-			EvaEventBuildCancelled="BuildCancelled" 
-			EvaEventPromotedOwner="UnitPromoted" />
 		<!--
 		<AudioArrayVoice>
 			<NamedEntry Sound="NOD_Shadow_VoiceMoveGliderMS" Name="InitiateGliderLiftOff" />
@@ -397,7 +390,13 @@
 			<NamedEntry Sound="NOD_Shadow_VoiceMoveGliderMS" Name="InitiateGliderLiftOffDispatch" />
 		</AudioArrayVoice>
 -->
-
+		<EvaEvents
+			EvaEventProductionStarted="UnitConstructionStarted"
+			EvaEventDamagedOwner="UnitUnderAttack" 
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled" 
+			EvaEventPromotedOwner="UnitPromoted" />
 		<VisionInfo
 			VisionRange="350"
 			ShroudClearingRange="400"

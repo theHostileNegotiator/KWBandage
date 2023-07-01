@@ -22,10 +22,10 @@
 		UnitCategory="INFANTRY"
 		WeaponCategory="GUN"
 		EditorName="MarkedOfKaneShadowSquad"
-		RadarPriority="NOT_ON_RADAR"
 		Description="Desc:MarkedOfKaneShadow"
 		TypeDescription="Type:MarkedOfKaneShadow"
-		UnitTypeIcon="ShadowIcon">
+		UnitTypeIcon="ShadowIcon"
+		RadarPriority="NOT_ON_RADAR">
 		<DisplayName>Name:NODShadow</DisplayName>
 		<GameDependency>
 			<RequiredObject>MarkedOfKaneSecretShrine</RequiredObject>
@@ -134,54 +134,6 @@
 				DetectionRange="100" />
 			<Physics
 				id="ModuleTag_Physics"></Physics>
-			<HordeContain
-				id="ModuleTag_HordeContain"
-				FrontAngle="4.7123"
-				FlankedDelaySeconds="2.0"
-				ShowPips="false"
-				Formation="MAIN"
-				MeleeAttackLeashDistance="1"
-				Slots="4"
-				ObjectStatusOfContained=""
-				ForbiddenCoverStatus="AIRBORNE_TARGET"
-				ConditionForEntry="INVALID"
-				UseSlowHordeMovement="false">
-				<PassengerFilter
-					Rule="NONE"
-					Include="INFANTRY" />
-				<DieMuxData />
-				<InitialPayload
-					Name="MarkedOfKaneShadow"
-					Count="4" />
-				<MeleeBehavior
-					Type="AMOEBA" />
-				<RankInfo
-					RankID="1"
-					UnitType="MarkedOfKaneShadow">
-					<Position
-						X="10"
-						Y="-10" />
-					<Position
-						X="10"
-						Y="10" />
-				</RankInfo>
-				<RankInfo
-					RankID="2"
-					UnitType="MarkedOfKaneShadow">
-					<Position
-						X="-10"
-						Y="-10" />
-					<Position
-						X="-10"
-						Y="10" />
-				</RankInfo>
-				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
-				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
-				<OnDeathBehavior
-					RequiredStatus="PARACHUTING">
-					<OCL>OCL_RedemptionSpawn</OCL>
-				</OnDeathBehavior>				
-			</HordeContain>
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
 				GiveNoXP="true" />
@@ -344,6 +296,54 @@
 				
 		-->
 
+			<HordeContain
+				id="ModuleTag_HordeContain"
+				FrontAngle="4.7123"
+				FlankedDelaySeconds="2.0"
+				ShowPips="false"
+				Formation="MAIN"
+				MeleeAttackLeashDistance="1"
+				Slots="4"
+				ObjectStatusOfContained=""
+				ForbiddenCoverStatus="AIRBORNE_TARGET"
+				ConditionForEntry="INVALID"
+				UseSlowHordeMovement="false">
+				<PassengerFilter
+					Rule="NONE"
+					Include="INFANTRY" />
+				<DieMuxData />
+				<InitialPayload
+					Name="MarkedOfKaneShadow"
+					Count="4" />
+				<MeleeBehavior
+					Type="AMOEBA" />
+				<RankInfo
+					RankID="1"
+					UnitType="MarkedOfKaneShadow">
+					<Position
+						X="10"
+						Y="-10" />
+					<Position
+						X="10"
+						Y="10" />
+				</RankInfo>
+				<RankInfo
+					RankID="2"
+					UnitType="MarkedOfKaneShadow">
+					<Position
+						X="-10"
+						Y="-10" />
+					<Position
+						X="-10"
+						Y="10" />
+				</RankInfo>
+				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
+				<OnDeathBehavior
+					RequiredStatus="PARACHUTING">
+					<OCL>OCL_RedemptionSpawn</OCL>
+				</OnDeathBehavior>				
+			</HordeContain>
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate

@@ -607,21 +607,6 @@
 			<TemporarilyDefectUpdate
 				id="ModuleTag_TemporarilyDefect"
 				DefectionFrameCount="300" />
-			<WeaponSetUpdate>
-				<WeaponSlotHardpoint
-					ID="1"
-					AllowInterleavedFiring="false"
-					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
-					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODBlackHandFlamethrower" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODBlackHandUpgradedFlamethrower"
-						ObjectStatus="WEAPON_UPGRADED_01" />
-				</WeaponSlotHardpoint>
-			</WeaponSetUpdate>
 			<StreamState
 				id="ModuleTag_StreamState"
 				StreamId="0"></StreamState>
@@ -655,6 +640,21 @@
 				id="LGAU">
 				<Key>GDI_ZoneTrooper</Key>
 			</LargeGroupAudioUpdate>
+			<WeaponSetUpdate>
+				<WeaponSlotHardpoint
+					ID="1"
+					AllowInterleavedFiring="false"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
+					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="NODBlackHandFlamethrower" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="NODBlackHandUpgradedFlamethrower"
+						ObjectStatus="WEAPON_UPGRADED_01" />
+				</WeaponSlotHardpoint>
+			</WeaponSetUpdate>
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon"
 				StatusToSet="WEAPON_UPGRADED_01">

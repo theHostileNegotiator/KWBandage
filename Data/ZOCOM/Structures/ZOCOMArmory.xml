@@ -20,12 +20,12 @@
 		PlacementViewAngle="315d"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
+		EditorName="ZOCOMArmory"
+		Description="DESC:ZOCOMTechCenter"
+		TypeDescription="Type:GDIArmory"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
-		EditorName="ZOCOMTechCenter"
-		Description="Desc:ZOCOMTechCenter"
-		TypeDescription="Type:GDIArmory">
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:GDITechCenter</DisplayName>
 		<GameDependency>
 			<RequiredObject>ZOCOMCommandPost</RequiredObject>
@@ -333,18 +333,6 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
-			<OCLSpecialPower
-				id="ModuleTag_CallSupportZOCOMHunterKillerTeam"
-				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMHunterKillerTeam"
-				TriggerFX="FX_GDICallForTransportFlare"
-				OCL="OCL_CallSupportZOCOMHunterKillerTeam"
-				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"/>
-			<AISpecialPowerUpdate
-				id="ModuleTag_CommandPostCallZOCOMHunterKillerAI"
-				CommandButtonName="Command_CommandPostCallZOCOMHunterKiller"
-		        ReinforceDistance="400.0"
-				SpecialPowerRadius="300.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"/>
 			<CreateObjectDie 
 				id="ModuleTag_CreateOccupiedDie"
 				CreationList="OCL_ArmoryZOCOMBuildingDestruction">
@@ -358,6 +346,18 @@
 				CreationList="OCL_ArmoryZOCOMBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>	
+			<OCLSpecialPower
+				id="ModuleTag_CallSupportZOCOMHunterKillerTeam"
+				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMHunterKillerTeam"
+				TriggerFX="FX_GDICallForTransportFlare"
+				OCL="OCL_CallSupportZOCOMHunterKillerTeam"
+				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"/>
+			<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostCallZOCOMHunterKillerAI"
+				CommandButtonName="Command_CommandPostCallZOCOMHunterKiller"
+		        ReinforceDistance="400.0"
+				SpecialPowerRadius="300.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"/>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -455,16 +455,16 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:GDI_ArmorySelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

@@ -507,7 +507,7 @@
 		</Body>
 		<ClientBehaviors>
 			<ModelConditionAudioLoopClientBehavior id="ModuleTag_AttackLoop">
-				<ModelConditionSound Sound="ALI_MotherShip_WeaponPowerUp" RequiredFlags="PREATTACK_A" />
+				<ModelConditionSound Sound="AudioEvent:ALI_MotherShip_WeaponPowerUp" RequiredFlags="PREATTACK_A" />
 			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>
 		<ClientUpdates>

@@ -598,19 +598,6 @@
 			<TemporarilyDefectUpdate
 				id="ModuleTag_TemporarilyDefect"
 				DefectionFrameCount="300" />
-			<WeaponSetUpdate
-				id="ModuleTag_WeaponSetUpdate">
-				<WeaponSlotHardpoint
-					ID="1">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODConfessorMinigun" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODConfessorChargedParticleBeam"
-						ObjectStatus="WEAPON_UPGRADED_01" />
-					</WeaponSlotHardpoint>
-				</WeaponSetUpdate>
 			<Physics
 				id="ModuleTag_Physics" />
 			<ProductionUpdate
@@ -638,6 +625,19 @@
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
+			<WeaponSetUpdate
+				id="ModuleTag_WeaponSetUpdate">
+				<WeaponSlotHardpoint
+					ID="1">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="NODConfessorMinigun" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="NODConfessorChargedParticleBeam"
+						ObjectStatus="WEAPON_UPGRADED_01" />
+					</WeaponSlotHardpoint>
+				</WeaponSetUpdate>
 			<SpecialPower
 				id="ModuleTag_GrenadeWeapon"
 				SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalFireGrenade"

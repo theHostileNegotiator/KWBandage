@@ -33,6 +33,7 @@
 		WorldMapArmoryUpgradesAllowed="Upgrade_MarkedOfKaneCyberneticLegs">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODSaboteur</DisplayName>
+		<DisplayUpgrade>Upgrade_MarkedOfKaneCyberneticLegs</DisplayUpgrade>
 		<ArmorSet
 			Armor="NODSaboteurArmor"
 			DamageFX="InfantryDamageFX" />

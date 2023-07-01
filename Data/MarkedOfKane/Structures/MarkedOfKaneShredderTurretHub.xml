@@ -21,11 +21,11 @@
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="MarkedOfKaneShredderTurretHub"
 		WeaponCategory="GUN"
+		Description="Desc:MarkedOfKaneShredderTurret"
+		TypeDescription="Type:MarkedOfKaneShredderTurret"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
-		Description="Desc:MarkedOfKaneShredderTurret"
-		TypeDescription="Type:MarkedOfKaneShredderTurret">
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:NODShredderTurret</DisplayName>
 		<DisplayUpgrade>Upgrade_NODQuadTurrets</DisplayUpgrade>
 		<DisplayUpgrade>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</DisplayUpgrade>
@@ -383,35 +383,6 @@
 				DefectionFrameCount="100" />
 			<SquishCollide
 				id ="DefaultSquishCollide"/>
-			<WeaponSetUpdate
-				id="ModuleTag_WeaponSetUpdate">
-				<WeaponSlotTurret
-					ID="1"
-					AllowInterleavedFiring="false"
-					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
-					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODShredderTurretHubWeapon"
-						ObjectStatus="WEAPON_UPGRADED_01" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="MarkedOfKaneShredderTurretSpawnSuperChargedParticleBeamWeapon"
-						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
-					<TurretSettings
-						TurretTurnRate="200"
-						TurretPitchRate="100"
-						AllowsPitch="true"
-						MinimumPitch="-30d"
-						PitchHeight="90%"
-						MinIdleScanTime="1.0s"
-						MaxIdleScanTime="5.0s"
-						MinIdleScanAngle="0.0"
-						MaxIdleScanAngle="180.0">
-						<TurretAITargetChooserData />
-					</TurretSettings>
-				</WeaponSlotTurret>
-			</WeaponSetUpdate>
 			<SlowDeath
 				id="ModuleTag_Death"
 				SinkDelay="3.0s"
@@ -442,24 +413,7 @@
 				id="ModuleTag_StealthDetect"
 				DetectionRange="200" />
 			<StructureUnpackUpdate
-				UnpackTime="1.5s" />
-			<CompositeStructureInfoModule
-				id="ModuleTag_CompositeStructureInfoModule"
-				ThingTemplate="MarkedOfKaneShredderTurret"
-				Count="3"
-				BuildableDistance="150">
-				<ConnectionShadowInfo
-					Type="ALPHA_DECAL_DYNAMIC"
-					SizeX="256"
-					SizeY="32"
-					OpacityStart="0"
-					OpacityFadeInTime="3s"
-					OpacityPeak="1"
-					OpacityFadeOutTime="3s"
-					OpacityEnd="0"
-					OverrideLODVisibility="true"
-					Texture="wire" />
-			</CompositeStructureInfoModule>		
+				UnpackTime="1.5s" />	
 			
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon_01"
@@ -476,11 +430,6 @@
 				AddConditionFlags="USER_5">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</ModelConditionUpgrade>
-			<GatherSlavesUpdate
-				id="ModuleTag_GatherSlaves"
-				SlaveTemplate="MarkedOfKaneShredderTurret"
-				Radius="500.0"
-				Amount="3" />
 			<RepairUpdate
 				id="ModuleTag_RepairUpdate">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
@@ -496,12 +445,13 @@
 				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
 				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
 				EvaEventForRepair="BuildingRepaired"
-				EvaEventForCapture="EnemyBuildingCaptured"
 				FXForRepair="FX_Building_Repaired" 
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
 				ImmediatelyEnabled="true">
-				<CanEnterFilter Rule="NONE">
+				<CanEnterFilter 
+					Rule="NONE"
+					Relationship="ALLIES">
 					<IncludeThing>GDIEngineer</IncludeThing>
 					<IncludeThing>NODSaboteur</IncludeThing>
 					<IncludeThing>AlienAssimilator</IncludeThing>
@@ -516,6 +466,57 @@
 			<AudioLoopUpgrade id="NOD_QuadTurrets_ShredderHubUpgrade" SoundToPlay="AudioEvent:NOD_QuadTurrets_ShredderHubUpgrade">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</AudioLoopUpgrade> 
+			<WeaponSetUpdate
+				id="ModuleTag_WeaponSetUpdate">
+				<WeaponSlotTurret
+					ID="1"
+					AllowInterleavedFiring="false"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
+					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="NODShredderTurretHubWeapon"
+						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="MarkedOfKaneShredderTurretSpawnSuperChargedParticleBeamWeapon"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
+					<TurretSettings
+						TurretTurnRate="200"
+						TurretPitchRate="100"
+						AllowsPitch="true"
+						MinimumPitch="-30d"
+						PitchHeight="90%"
+						MinIdleScanTime="1.0s"
+						MaxIdleScanTime="5.0s"
+						MinIdleScanAngle="0.0"
+						MaxIdleScanAngle="180.0">
+						<TurretAITargetChooserData />
+					</TurretSettings>
+				</WeaponSlotTurret>
+			</WeaponSetUpdate>
+			<CompositeStructureInfoModule
+				id="ModuleTag_CompositeStructureInfoModule"
+				ThingTemplate="MarkedOfKaneShredderTurret"
+				Count="3"
+				BuildableDistance="150">
+				<ConnectionShadowInfo
+					Type="ALPHA_DECAL_DYNAMIC"
+					SizeX="256"
+					SizeY="32"
+					OpacityStart="0"
+					OpacityFadeInTime="3s"
+					OpacityPeak="1"
+					OpacityFadeOutTime="3s"
+					OpacityEnd="0"
+					OverrideLODVisibility="true"
+					Texture="wire" />
+			</CompositeStructureInfoModule>	
+			<GatherSlavesUpdate
+				id="ModuleTag_GatherSlaves"
+				SlaveTemplate="MarkedOfKaneShredderTurret"
+				Radius="500.0"
+				Amount="3" />
 			<AudioLoopUpgrade id="SuperChargedParticleBeamUpgrade" SoundToPlay="AudioEvent:NOD_Enlightened_SuperChargedParticleBeamUpgrade">
 				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
 			</AudioLoopUpgrade>
@@ -543,19 +544,19 @@
 				Height="30.0" />
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_ShredderTurretHubSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_GenericTurret_Deploy"
 				AudioType="soundPrepositioned" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound> 
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

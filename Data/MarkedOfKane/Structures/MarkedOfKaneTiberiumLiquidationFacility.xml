@@ -211,7 +211,7 @@
 				SpecialPowerTemplate="SpecialPowerLaunchCatalystMissile"
 				SpecialWeapon="NODCatalystMissileLauncher"
 				UnpackTime="1s"
-				UnpackSound="NOD_CatalystMissile_TargetCursor"
+				UnpackSound="AudioEvent:NOD_CatalystMissile_TargetCursor"
 				PackTime="1s"
 				StartAbilityRange="50000.0"
 				BusyForDuration="2s"
@@ -470,7 +470,7 @@
 			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
 			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_TechAssemblyPlantSelect"
+				Sound="AudioEvent:NOD_TiberiumLiquidationFacilitySelect"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>

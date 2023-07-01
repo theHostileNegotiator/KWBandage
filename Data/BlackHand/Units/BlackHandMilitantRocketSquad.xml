@@ -198,11 +198,6 @@
 						y="0" />
 				</BannerCarrierPosition>
 				<BannerCarriersAllowed>BlackHandBlackDisciple</BannerCarriersAllowed>
-				
-				<OnDeathBehavior
-					RequiredStatus="PARACHUTING">
-					<OCL>OCL_RedemptionSpawn</OCL>
-				</OnDeathBehavior>
 			</HordeContain>
 			<AudioLoopUpgrade id="NOD_BlackDisciples_Upgrade" SoundToPlay="AudioEvent:NOD_BlackDisciples_Upgrade">
 				<TriggeredBy>Upgrade_BlackHandBlackDisciplesUpgrade</TriggeredBy>

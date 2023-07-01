@@ -29,7 +29,7 @@
 		WeaponCategory="MISSILE"
 		VoicePriority="144"
 		EditorName="ZOCOMFireHawk"
-		Description="Desc:ZOCOMFireHawk"
+		Description="DESC:ZOCOMFireHawk"
 		WorldMapArmoryUpgradesAllowed="Upgrade_CeramicArmor Upgrade_FirehawkStratofighterBooster"
 		TypeDescription="Type:GDIFirehawk"
 		ShockwaveResistance="100"
@@ -1320,18 +1320,6 @@
 				StatusToClear="WEAPON_UPGRADED_01">
 				<TriggeredBy>Upgrade_SelectLoad_02</TriggeredBy>
 			</StatusBitsUpgrade>
-		<!-- Load switch with Hardpoints upgrade -->
-			<ArmorUpgrade 
-				id="ModuleTag_CeramicArmorUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE">
-				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
-			</ArmorUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ZOCOMFireHawkCeramicArmorUpgrade"
-				AddConditionFlags="USER_6">
-				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
-			</ModelConditionUpgrade>
 			<ReturnToProducerSpecialPower
 				id="ModuleTag_ReturnToProducerSpecialPower"
 				SpecialPowerTemplate="SpecialPowerReturnToProducer" />
@@ -1389,6 +1377,17 @@
 			<AudioLoopUpgrade id="GDI_FireHawk_BombLoadoutButton" SoundToPlay="AudioEvent:GDI_FireHawk_BombLoadoutButton">
 				<TriggeredBy>Upgrade_SelectLoad_02</TriggeredBy>
 			</AudioLoopUpgrade>
+			<ArmorUpgrade 
+				id="ModuleTag_CeramicArmorUpgrade"
+				Permanent="true"
+				ArmorSetFlag="PLAYER_UPGRADE">
+				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
+			</ArmorUpgrade>
+			<ModelConditionUpgrade
+				id="ModuleTag_ZOCOMFireHawkCeramicArmorUpgrade"
+				AddConditionFlags="USER_6">
+				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
+			</ModelConditionUpgrade>
 			<AudioLoopUpgrade 
 				id="ZOCOMCeramicArmorUpgradeSound" 
 				SoundToPlay="AudioEvent:GDI_Hammerhead_CeramicArmorUpgraded">

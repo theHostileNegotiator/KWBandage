@@ -437,6 +437,12 @@
 				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
 			</LevelUpUpgrade>
 			<!-- Nod Cloaking Field -->
+			<InvisibilityUpdate
+				id="ModuleTag_Invisibility"
+				UpdatePeriod="0.5s">
+				<InvisibilityNugget />
+				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
+			</InvisibilityUpdate>
 			<StealthUpgrade
 				id="ModuleTag_InvisibilityTrigger">
 				<TriggeredBy>Upgrade_CloakingFieldInvisibility</TriggeredBy>
@@ -529,13 +535,6 @@
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"
 				DetectionRange="250" />	
-			<!-- Restore Default Cloaking Field Stealth Upgrade -->
-			<InvisibilityUpdate
-				id="ModuleTag_Invisibility"
-				UpdatePeriod="0.5s">
-				<InvisibilityNugget />
-				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
-			</InvisibilityUpdate>
 		</Behaviors>
 		<AI>
 			<AIUpdate

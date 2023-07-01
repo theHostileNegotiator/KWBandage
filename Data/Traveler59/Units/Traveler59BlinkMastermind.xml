@@ -536,14 +536,6 @@
 		<AudioArraySound>
 			<AudioEntry Sound="AudioEvent:ALI_Prodigy_MoveStart" AudioType="soundMoveStart" />
 		</AudioArraySound>
-		<ShadowInfo
-			Type="DECAL"
-			SizeX="14"
-			SizeY="14"
-			Texture="ShadowI" />
-		<VisionInfo
-			VisionRange="250"
-			ShroudClearingRange="200" />
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
 			EvaEventProductionStarted="UnitConstructionStarted" 
@@ -553,12 +545,20 @@
 			EvaEventAmbushed="UnitAmbushed" 
 			EvaEventSecondDamageFarFromFirstScanRange="600"    
 			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEnemyObjectSightedEvent="EnemyCommandoDetected" 
 			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
 			EvaEventAvailableForProduction="NewConstructionOptions"
 			EvaEventBuildOnHold="BuildOnHold"
 			EvaEventBuildCancelled="BuildCancelled" 
-			EvaEventPromotedOwner="UnitPromoted"
-			EvaEnemyObjectSightedEvent="EnemyCommandoDetected" />
+			EvaEventPromotedOwner="UnitPromoted" />
+		<ShadowInfo
+			Type="DECAL"
+			SizeX="14"
+			SizeY="14"
+			Texture="ShadowI" />
+		<VisionInfo
+			VisionRange="250"
+			ShroudClearingRange="200" />
 		<CrusherInfo
 			CrushableLevel="3" />		
 	</GameObject>

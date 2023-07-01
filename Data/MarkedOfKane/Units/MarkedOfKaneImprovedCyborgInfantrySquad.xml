@@ -264,6 +264,13 @@
 				MinorRadius="25.0"
 				Height="13.0"></Shape>
 		</Geometry>
+		<EvaEvents
+			EvaEventProductionStarted="UnitConstructionStarted"
+			EvaEventDamagedOwner="UnitUnderAttack" 
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled" 
+			EvaEventPromotedOwner="UnitPromoted" /> <!-- But not sighting events!! -->
 		<VisionInfo
 			VisionRange="350"
 			ShroudClearingRange="400"
@@ -274,12 +281,5 @@
 			UseCrushAttack="false"
 			CrushableLevel="1"
 			CrusherLevel="0" />
-		<EvaEvents
-			EvaEventProductionStarted="UnitConstructionStarted"
-			EvaEventDamagedOwner="UnitUnderAttack" 
-			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventBuildOnHold="BuildOnHold"
-			EvaEventBuildCancelled="BuildCancelled" 
-			EvaEventPromotedOwner="UnitPromoted" /> <!-- But not sighting events!! -->
 	</GameObject>
 </AssetDeclaration>

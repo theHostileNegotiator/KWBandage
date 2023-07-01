@@ -209,6 +209,15 @@
 					Index="onDeath"
 					FX="FX_AVehicleExplodeScorch_AnnihilatorHusk" />
 			</FXListBehavior>				
+			<LifetimeUpdate xmlns="uri:ea.com:eala:asset"
+				id="ModuleTag_HuskLifetime"
+				MinLifetime="300s"
+				MaxLifetime="300s" />
+			<ModelConditionUpgrade
+				id="ModuleTag_AllFactionUpgrade"
+				AddConditionFlags="USER_1">
+				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
+			</ModelConditionUpgrade>
 			<EngineerContain
 				id="ModuleTag_EngineerContain"
 				NameOfVoiceToUseForFriendlyEnter="VoiceCaptureHusk"				
@@ -232,20 +241,11 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
-			<LifetimeUpdate xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_HuskLifetime"
-				MinLifetime="300s"
-				MaxLifetime="300s" />
 			<SubObjectsUpgrade
 				id="ModuleTag_ShowConversionReserveTanks"
 				ShowSubObjects="AU_RPRTRIPOD_UPGR01">
 				<TriggeredBy>Upgrade_Reaper17ConversionReserves</TriggeredBy>
 			</SubObjectsUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_AllFactionUpgrade"
-				AddConditionFlags="USER_1">
-				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
-			</ModelConditionUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -276,11 +276,6 @@
 					z = "0.0" />
 			</Shape>
 		</Geometry>
-		<ShadowInfo
-			Type="DECAL"
-			SizeX="14"
-			SizeY="14"
-			Texture="ShadowI" />
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
 			EvaEventProductionStarted="UnitConstructionStarted" 
@@ -297,6 +292,11 @@
 			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventPromotedOwner="UnitPromoted" />
 			<!-- EvaEventSecondDamageFarFromFirstOwner="UnitUnderAttackAgain"  -->
+		<ShadowInfo
+			Type="DECAL"
+			SizeX="14"
+			SizeY="14"
+			Texture="ShadowI" />
 		<VisionInfo
 			VisionRange="25"
 			ShroudClearingRange="25" />

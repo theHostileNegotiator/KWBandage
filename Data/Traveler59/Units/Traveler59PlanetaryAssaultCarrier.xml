@@ -848,16 +848,6 @@
 				SpecialPowerTemplate="SpecialPower_DeployIonStorm"
 				StartRechargeOnExit="true" />
 			<!--End Deploy Ion Storm Special Power-->
-			<AttributeModifierUpgrade
-				id="Upgrade_TravelerEngines"
-				AttributeModifier="AttributeModifier_TravelerEnginesLargeShips">
-				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
-			</AttributeModifierUpgrade>   
-			<ModelConditionUpgrade
-				id="ModuleTag_TravelerEnginesModel"
-				AddConditionFlags="USER_2">
-				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
-			</ModelConditionUpgrade>	
 			<ShieldBodyUpdate
 				id="ModuleTag_ShieldBodyUpdate" />
 			<StealthDetectorUpdate
@@ -868,6 +858,16 @@
 				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
 			</ModelConditionUpgrade>
+			<AttributeModifierUpgrade
+				id="Upgrade_TravelerEngines"
+				AttributeModifier="AttributeModifier_TravelerEnginesLargeShips">
+				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
+			</AttributeModifierUpgrade>   
+			<ModelConditionUpgrade
+				id="ModuleTag_TravelerEnginesModel"
+				AddConditionFlags="USER_2">
+				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
+			</ModelConditionUpgrade>	
 			<AudioLoopUpgrade id="ALI_TravelerEngines_Upgrade" SoundToPlay="AudioEvent:ALI_TravelerEngines_Upgrade"> 
 				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy> 
 			</AudioLoopUpgrade> 

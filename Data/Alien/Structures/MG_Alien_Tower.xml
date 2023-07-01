@@ -392,15 +392,15 @@
 			</EngineerContain>
 			<CreateObjectDie xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_AdvancedAlienBuildingDestruction" >
+				CreationList="OCL_GenericAlienBuildingDestruction" >
 				<DieMuxData
 					DeathTypes="ALL"
-					DeathTypesForbidden="DETONATED SUICIDED"/>
+					DeathTypesForbidden="DETONATED SUICIDED" />
 				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
 			</CreateObjectDie>
 			<CreateObjectDie xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_AdvancedAlienBuildingSuicide" >
+				CreationList="OCL_GenericAlienBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 		<!-- This needs to be in every Stategic Buildings XML

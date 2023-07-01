@@ -18,7 +18,7 @@
 		RadarPriority="STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="Traveler59ExplorerOutpost"
-		Description="Desc:Traveler59Outpost"
+		Description="DESC:Traveler59Outpost"
 		TypeDescription="Type:ALIENOutpost"
 		CampnessValue="2000"
 		CampnessValueRadius="300"

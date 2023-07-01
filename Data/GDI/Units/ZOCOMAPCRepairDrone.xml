@@ -133,7 +133,7 @@
 				RequireFullyHealedToDetach="true"
 				ScanForNewParentWhenDetached="true"
 				DetachWhenParentOutOfSlavedRange="true"
-				InitialAttachDelay="4.0s"
+				InitialAttachDelay="0.5s"
 				ParentStatus="UNDERGOING_REPAIR"
 				Flags="FIND_BEST_PARENT UNCONTAINED_ONLY SAME_PLAYER_ONLY ONE_ATTACH_PER_PARENT" >
 				<ObjectFilter

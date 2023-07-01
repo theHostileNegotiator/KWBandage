@@ -31,12 +31,12 @@
 		UnitCategory="VEHICLE"
 		WeaponCategory="CANNON"
 		VoicePriority="224"
-		ShockwaveResistance="100"
-		ReinvisibilityDelay="7s"
-		EditorName="BlackHandCustomWarmech"
+		EditorName="BlackHandPurifier"
 		Description="Desc:BlackHandCustomWarmech"
 		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandSecretShrinePurifyingFlame"
-		TypeDescription="Type:BlackHandCustomWarmech">
+		TypeDescription="Type:BlackHandCustomWarmech"
+		ShockwaveResistance="100"
+		ReinvisibilityDelay="7s">
 		<DisplayName>Name:BlackHandCustomWarmech</DisplayName>
 		<DisplayUpgrade>Upgrade_BlackHandSecretShrinePurifyingFlame</DisplayUpgrade>
 		<GameDependency>
@@ -52,6 +52,239 @@
 		<SkirmishAIInformation
 			UnitBuilderStandardCombatUnit="true" />
 		<Draws>
+			<!-- default laser -->
+			<LaserDraw
+				id="ModuleTag_LaserDraw1"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".03"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="20"
+				WeaponSlotID="1"
+				LaserStateID="1">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXObeliskLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXLaserOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_03" />					
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort1"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".01"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="1"
+				LaserWidth="50"
+				WeaponSlotID="1"
+				LaserStateID="1">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXRailGunCoreDistortion</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXRailGunCoreMask</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
+			<!-- commandeer'd beam -->
+			<LaserDraw
+				id="ModuleTag_LaserDraw2"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".03"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="20"
+				WeaponSlotID="1"
+				LaserStateID="2">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXObeliskLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXLaserOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_03" />					
+			</LaserDraw>
+			<LaserDraw
+				id="ModuleTag_LaserDistort2"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".01"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="1"
+				LaserWidth="50"
+				WeaponSlotID="1"
+				LaserStateID="2">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXRailGunCoreDistortion</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXRailGunCoreMask</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
+
+<!-- Veterancy -->
+			
+			<LaserDraw
+				id="ModuleTag_LaserDraw1_Veterancy"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".03"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="20"
+				WeaponSlotID="1"
+				LaserStateID="1">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXObeliskLaserHeroic</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXLaserOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_03" />					
+			</LaserDraw>			
+			<LaserDraw
+				id="ModuleTag_LaserDraw2_Veterancy"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".03"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="20"
+				WeaponSlotID="1"
+				LaserStateID="2">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXObeliskLaserHeroic</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXLaserOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					RequiredStatus="WEAPON_UPGRADED_03" />					
+			</LaserDraw>			
+
+			<SpotlightDraw
+				id="ModuleTag_Spotlight"
+				AttachToBoneInAnotherModule="s_generator"
+				RefreshTime="2.0s"
+				SweepTime="1.0s">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="FXspotlight" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="BUILD_PLACEMENT_CURSOR">
+					<Model
+						Name="" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<!-- Draw nothing when in Formation Preview -->
+					<Model
+						Name="" />
+				</ModelConditionState>
+			</SpotlightDraw>
+			
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
 				OkToChangeModelColor="true"
@@ -709,240 +942,6 @@
 						FollowBone="true" />
 				</AnimationState>
 			</ScriptedModelDraw>
-
-			<!-- default laser -->
-			<LaserDraw
-				id="ModuleTag_LaserDraw1"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".03"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate="1"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="20"
-				WeaponSlotID="1"
-				LaserStateID="1">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXObeliskLaser</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXLaserOverlay</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					ForbiddenStatus="WEAPON_UPGRADED_03" />					
-			</LaserDraw>
-			<LaserDraw
-				id="ModuleTag_LaserDistort1"
-				UseDistortionShader="true"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".01"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate="1"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="1"
-				LaserWidth="50"
-				WeaponSlotID="1"
-				LaserStateID="1">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXRailGunCoreDistortion</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXRailGunCoreMask</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-			</LaserDraw>
-			<!-- commandeer'd beam -->
-			<LaserDraw
-				id="ModuleTag_LaserDraw2"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".03"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate="1"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="20"
-				WeaponSlotID="1"
-				LaserStateID="2">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXObeliskLaser</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXLaserOverlay</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					ForbiddenStatus="WEAPON_UPGRADED_03" />					
-			</LaserDraw>
-			<LaserDraw
-				id="ModuleTag_LaserDistort2"
-				UseDistortionShader="true"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".01"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate="1"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="1"
-				LaserWidth="50"
-				WeaponSlotID="1"
-				LaserStateID="2">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXRailGunCoreDistortion</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXRailGunCoreMask</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-			</LaserDraw>
-
-<!-- Veterancy -->
-			
-			<LaserDraw
-				id="ModuleTag_LaserDraw1_Veterancy"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".03"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate="1"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="20"
-				WeaponSlotID="1"
-				LaserStateID="1">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXObeliskLaserHeroic</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXLaserOverlay</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="WEAPON_UPGRADED_03" />					
-			</LaserDraw>			
-			<LaserDraw
-				id="ModuleTag_LaserDraw2_Veterancy"
-				Texture1_UTile="1"
-				Texture1_VTile=".5"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate=".2"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_UTile="1"
-				Texture2_VTile=".03"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate="1"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="20"
-				WeaponSlotID="1"
-				LaserStateID="2">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXObeliskLaserHeroic</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXLaserOverlay</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					RequiredStatus="WEAPON_UPGRADED_03" />					
-			</LaserDraw>			
-
-			<SpotlightDraw
-				id="ModuleTag_Spotlight"
-				AttachToBoneInAnotherModule="s_generator"
-				RefreshTime="2.0s"
-				SweepTime="1.0s">
-				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT">
-					<Model
-						Name="FXspotlight" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="BUILD_PLACEMENT_CURSOR">
-					<Model
-						Name="" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FORMATION_PREVIEW">
-					<!-- Draw nothing when in Formation Preview -->
-					<Model
-						Name="" />
-				</ModelConditionState>
-			</SpotlightDraw>
-			
 			<ScriptedModelDraw
 				id="ModuleTag_DrawUpgradedFlameFX"
 				AttachToBoneInAnotherModule="FT_Pitch">
@@ -1085,6 +1084,34 @@
 			<TemporarilyDefectUpdate
 				id="ModuleTag_TemporarilyDefect"
 				DefectionFrameCount="300" />
+			<LaserState
+				id="ModuleTag_DefaultLaserState"
+				LaserId="1" />
+			<LaserState
+				id="ModuleTag_BeamLaserState"
+				LaserId="2" />
+			<Physics
+				id="ModuleTag_Physics" />
+			<ProductionUpdate
+				id="ModuleTag_ProductionUpdate" />
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_NOD_AvatarExplodeWithVoice" />
+			</FXListBehavior>
+			<DestroyDie
+				id="ModuleTag_DestroyDie">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>
+			<StatusBitsUpgrade
+				id="ModuleTag_VeterancyUpgrade"
+				StatusToSet="WEAPON_UPGRADED_03">
+				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
+			</StatusBitsUpgrade>
 			<WeaponSetUpdate
 				id="ModuleTag_WeaponSetUpdate">
 				<WeaponSlotHardpoint
@@ -1173,24 +1200,6 @@
 				RemoveConditionFlags="USER_8">
 				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
 			</ModelConditionUpgrade>
-			<LaserState
-				id="ModuleTag_DefaultLaserState"
-				LaserId="1" />
-			<LaserState
-				id="ModuleTag_BeamLaserState"
-				LaserId="2" />
-			<Physics
-				id="ModuleTag_Physics" />
-			<ProductionUpdate
-				id="ModuleTag_ProductionUpdate" />
-			<FXListBehavior
-				id="ModuleTag_FXList">
-				<DieMuxData
-					DeathTypes="ALL" />
-				<Event
-					Index="onDeath"
-					FX="FX_NOD_AvatarExplodeWithVoice" />
-			</FXListBehavior>
 			<StatusBitsUpgrade
 				id="ModuleTag_StatusBitUpgradeFor01"
 				StatusToSet="WEAPON_UPGRADED_01">
@@ -1203,16 +1212,6 @@
 				<DieMuxData
 					DeathTypes="ALL" />
 			</CreateObjectDie>
-			<DestroyDie
-				id="ModuleTag_DestroyDie">
-				<DieMuxData
-					DeathTypes="ALL" />
-			</DestroyDie>
-			<StatusBitsUpgrade
-				id="ModuleTag_VeterancyUpgrade"
-				StatusToSet="WEAPON_UPGRADED_03">
-				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
-			</StatusBitsUpgrade>
 			<AudioLoopUpgrade id="NOD_PurifyingFlame_Upgrade" SoundToPlay="Multisound:NOD_PurifyingFlame_UpgradeMS">
 				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
 			</AudioLoopUpgrade>

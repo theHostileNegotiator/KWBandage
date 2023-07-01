@@ -634,5 +634,8 @@
 		<VisionInfo
 			VisionRange="250"
 			ShroudClearingRange="300" />
+		<CrusherInfo
+			CrusherLevel="1"
+			CrushableLevel="2" />
 	</GameObject>
 </AssetDeclaration>

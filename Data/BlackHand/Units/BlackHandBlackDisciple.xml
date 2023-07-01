@@ -20,7 +20,7 @@
 		WeaponCategory="BLAST"
 		VoicePriority="10"
 		EditorName="BlackHandBlackDisciple"
-		Description="Desc:NODBlackHand"
+		Description="Desc:BlackHandBlackHand"
 		TypeDescription="Type:BlackHandBlackHand">
 		<DisplayName>Name:NODBlackHand</DisplayName>
 		<ArmorSet
@@ -555,17 +555,6 @@
 			<TemporarilyDefectUpdate
 				id="ModuleTag_TemporarilyDefect"
 				DefectionFrameCount="300" />
-			<WeaponSetUpdate>
-				<WeaponSlotHardpoint
-					ID="1"
-					AllowInterleavedFiring="false"
-					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
-					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODBlackHandFlamethrower" />
-				</WeaponSlotHardpoint>
-			</WeaponSetUpdate>
 			<StreamState
 				id="ModuleTag_StreamState"
 				StreamId="0"></StreamState>
@@ -599,6 +588,17 @@
 				id="LGAU">
 				<Key>GDI_ZoneTrooper</Key>
 			</LargeGroupAudioUpdate>
+			<WeaponSetUpdate>
+				<WeaponSlotHardpoint
+					ID="1"
+					AllowInterleavedFiring="false"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
+					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="NODBlackHandFlamethrower" />
+				</WeaponSlotHardpoint>
+			</WeaponSetUpdate>
 		</Behaviors>
 		<AI>
 			<AIUpdate

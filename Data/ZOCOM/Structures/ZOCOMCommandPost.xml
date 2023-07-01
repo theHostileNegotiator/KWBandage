@@ -22,8 +22,8 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="ZOCOMCommandPost"
-		Description="Desc:ZOCOMCommandPost"
-		TypeDescription="Type:ZOCOMCommandPost"
+		Description="DESC:ZOCOMCommandPost"
+		TypeDescription="TYPE:ZOCOMCommandPost"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">

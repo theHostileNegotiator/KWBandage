@@ -519,6 +519,6 @@
 		<CrusherInfo
 			CrusherLevel="0"
 			CrushEqualLevelProps="true"
-			/>
+			CrushableLevel="2" />
 	</GameObject>
 </AssetDeclaration>

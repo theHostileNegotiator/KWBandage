@@ -6,7 +6,7 @@
 	<!-- WarpStabilizer -->
 	<GameObject
 		id="Reaper17WarpBeacon"
-		inheritFrom="BaseStructure"
+		inheritFrom="AlienWarpBeacon"
 		SelectPortrait="Portrait_ALIENGravityStabilizer"
 		ButtonImage="Portrait_ALIENGravityStabilizer"
 		Side="Reaper17"

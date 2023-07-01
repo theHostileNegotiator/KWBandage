@@ -17,8 +17,8 @@
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS NOT_AUTOACQUIRABLE AUTO_ACQUIRABLE_BY_AI COVER CONSTRUCTION_YARD OUTPOST"
 		RadarPriority="STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
-		EditorName="ZOCOMSurveyorOutpost"
-		Description="Desc:GDIOutpost"
+		EditorName="ZOCOMOutpost"
+		Description="DESC:GDIOutpost"
 		TypeDescription="Type:GDIOutpost"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
@@ -314,8 +314,8 @@
 		<AudioArraySound>
 			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="AudioEvent:GDI_Surveyor_Deploy" AudioType="soundUnderConstruction" />
-			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
-			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

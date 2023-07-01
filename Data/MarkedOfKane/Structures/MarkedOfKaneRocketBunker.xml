@@ -439,28 +439,6 @@
 				DetectionRange="200" />
 			<StructureUnpackUpdate
 				UnpackTime="3.3s" />
-			<GatherSlavesUpdate
-				id="ModuleTag_GatherSlaves"
-				SlaveTemplate="MarkedOfKaneRocketBunkerSpawn"
-				Radius="500.0"
-				Amount="3" />
-			<CompositeStructureInfoModule
-				id="ModuleTag_CompositeStructureInfoModule"
-				ThingTemplate="MarkedOfKaneRocketBunkerSpawn"
-				Count="3"
-				BuildableDistance="150">
-				<ConnectionShadowInfo
-					Type="ALPHA_DECAL_DYNAMIC"
-					SizeX="256"
-					SizeY="32"
-					OpacityStart="0"
-					OpacityFadeInTime="3s"
-					OpacityPeak="1"
-					OpacityFadeOutTime="3s"
-					OpacityEnd="0"
-					OverrideLODVisibility="true"
-					Texture="wire" />
-			</CompositeStructureInfoModule>
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon"
 				StatusToSet="WEAPON_UPGRADED_01">
@@ -496,12 +474,13 @@
 				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
 				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
 				EvaEventForRepair="BuildingRepaired"
-				EvaEventForCapture="EnemyBuildingCaptured"
 				FXForRepair="FX_Building_Repaired" 
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
 				ImmediatelyEnabled="true">
-				<CanEnterFilter Rule="NONE">
+				<CanEnterFilter 
+					Rule="NONE"
+					Relationship="ALLIES">
 					<IncludeThing>GDIEngineer</IncludeThing>
 					<IncludeThing>NODSaboteur</IncludeThing>
 					<IncludeThing>AlienAssimilator</IncludeThing>
@@ -519,6 +498,28 @@
 			<AudioLoopUpgrade id="NOD_QuadTurrets_RocketHubUpgrade" SoundToPlay="AudioEvent:NOD_QuadTurrets_RocketHubUpgrade">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</AudioLoopUpgrade> 
+			<GatherSlavesUpdate
+				id="ModuleTag_GatherSlaves"
+				SlaveTemplate="MarkedOfKaneRocketBunkerSpawn"
+				Radius="500.0"
+				Amount="3" />
+			<CompositeStructureInfoModule
+				id="ModuleTag_CompositeStructureInfoModule"
+				ThingTemplate="MarkedOfKaneRocketBunkerSpawn"
+				Count="3"
+				BuildableDistance="150">
+				<ConnectionShadowInfo
+					Type="ALPHA_DECAL_DYNAMIC"
+					SizeX="256"
+					SizeY="32"
+					OpacityStart="0"
+					OpacityFadeInTime="3s"
+					OpacityPeak="1"
+					OpacityFadeOutTime="3s"
+					OpacityEnd="0"
+					OverrideLODVisibility="true"
+					Texture="wire" />
+			</CompositeStructureInfoModule>
 		</Behaviors>
 		<AI>
 			<AIUpdate

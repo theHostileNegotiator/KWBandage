@@ -22,7 +22,7 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="SteelTalonsBarracks"
-		Description="Desc:SteelTalonsBarracks"
+		Description="DESC:SteelTalonsBarracks"
 		TypeDescription="Type:GDIBarracks"
 		CampnessValue="2000"
 		CampnessValueRadius="300"

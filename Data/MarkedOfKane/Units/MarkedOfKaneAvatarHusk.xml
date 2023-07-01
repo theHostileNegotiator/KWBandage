@@ -14,10 +14,10 @@
 		KindOf="PRELOAD SELECTABLE CAN_CAST_REFLECTIONS IMMOBILE NOT_AUTOACQUIRABLE HUSK VALID_TARGET_FOR_C4"
 		RadarPriority="UNIT"
 		ProductionQueueType="VEHICLE"
-		ShockwaveResistance="100"
-		ReinvisibilityDelay="7s"
 		EditorName="MarkedOfKaneAvatarHusk"
-		Description="Desc:MarkedOfKaneAvatarWarmechHusk">
+		Description="Desc:MarkedOfKaneAvatarWarmechHusk"
+		ShockwaveResistance="100"
+		ReinvisibilityDelay="7s">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:AvatarWarmechHusk</DisplayName>
 		<ArmorSet

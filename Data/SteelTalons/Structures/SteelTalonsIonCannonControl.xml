@@ -21,7 +21,7 @@
 		PlacementViewAngle="225d"
 		ProductionQueueType="OTHER_STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
-		EditorName="SteelTalonsIonCannonControl"
+		EditorName="SteelTalonsionCannonControl"
 		Description="Desc:GDIIonCannon"
 		TypeDescription="Type:GDIIonCannon"
 		MaxSimultaneousOfType="1"

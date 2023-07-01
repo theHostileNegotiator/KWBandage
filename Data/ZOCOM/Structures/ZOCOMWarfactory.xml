@@ -23,7 +23,7 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="ZOCOMWarFactory"
-		Description="Desc:ZOCOMWarFactory"
+		Description="DESC:ZOCOMWarFactory"
 		TypeDescription="Type:GDIWarFactory"
 		CampnessValue="2000"
 		CampnessValueRadius="300"

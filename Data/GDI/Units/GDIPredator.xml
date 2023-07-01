@@ -26,7 +26,9 @@
 		EditorName="GDIPredator"
 		Description="Desc:GDIPredatorTank"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIArmoryRailgunTech"
-		TypeDescription="Type:GDIPredatorTank">
+		TypeDescription="Type:GDIPredatorTank"
+		ShockwaveResistance="100"
+		ReinvisibilityDelay="7s">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIPredatorTank</DisplayName>
 		<DisplayUpgrade

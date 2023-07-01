@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 <!-- Refer to Base ZOCOM APC-->
+<!-- Now considered Equivalent Unit to ZOCOM APC -->
 	<GameObject
 		id="ZOCOMAPC_Veteran"
 		SelectPortrait="Portrait_GDIAPC"
@@ -449,17 +450,6 @@
 				IdleWhenStartingPower="true">
 				<FXOffset x="25" y="0" z="0"></FXOffset>
 			</CreateAndEnterObjectSpecialPower>
-			<LevelUpUpgrade
-				id="ModuleTag_LevelUpUpgrade"
-				LevelCap="4"
-				DoFlash="false"
-				LevelsToGain="1">
-				<TriggeredBy>Upgrade_CallSupportUpgrade</TriggeredBy>
-			</LevelUpUpgrade>
-			<GrantUpgradeCreate
-				id="ModuleTag_GrantUpgradeCreate" 
-				UpgradeToGrant="Upgrade_CallSupportUpgrade"
-			/>
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon"
 				StatusToSet="WEAPON_UPGRADED_01">
@@ -537,6 +527,16 @@
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
 			</SubObjectsUpgrade>
 
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade"
+				LevelCap="4"
+				DoFlash="false"
+				LevelsToGain="1">
+				<TriggeredBy>Upgrade_CallSupportUpgrade</TriggeredBy>
+			</LevelUpUpgrade>
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantUpgradeCreate" 
+				UpgradeToGrant="Upgrade_CallSupportUpgrade"	/>
 		</Behaviors>
 		<AI>
 			<AIUpdate

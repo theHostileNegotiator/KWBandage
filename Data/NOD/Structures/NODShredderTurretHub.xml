@@ -35,11 +35,11 @@
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="NODShredderTurretHub"
 		WeaponCategory="GUN"
+		Description="Desc:NODShredderTurret"
+		TypeDescription="Type:NODShredderTurret"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
-		Description="Desc:NODShredderTurret"
-		TypeDescription="Type:NODShredderTurret">
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:NODShredderTurret</DisplayName>
 		<DisplayUpgrade>Upgrade_NODQuadTurrets</DisplayUpgrade>
 		<GameDependency>
@@ -504,12 +504,13 @@
 				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
 				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding" 
 				EvaEventForRepair="BuildingRepaired"
-				EvaEventForCapture="EnemyBuildingCaptured"
 				FXForRepair="FX_Building_Repaired" 
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
 				ImmediatelyEnabled="true">
-				<CanEnterFilter Rule="NONE">
+				<CanEnterFilter 
+					Rule="NONE"
+					Relationship="ALLIES">
 					<IncludeThing>GDIEngineer</IncludeThing>
 					<IncludeThing>NODSaboteur</IncludeThing>
 					<IncludeThing>AlienAssimilator</IncludeThing>
@@ -548,19 +549,19 @@
 				Height="30.0" />
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_ShredderTurretHubSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_GenericTurret_Deploy"
 				AudioType="soundPrepositioned" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound> 
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

@@ -22,7 +22,7 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="ZOCOMBarracks"
-		Description="Desc:ZOCOMBarracks"
+		Description="DESC:ZOCOMBarracks"
 		TypeDescription="Type:GDIBarracks"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
@@ -370,7 +370,7 @@
 			</EngineerContain>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_GenericGDIBuildingDestruction" >		
+				CreationList="OCL_GenericZOCOMBuildingDestruction" >		
 				<DieMuxData
 					DeathTypes="ALL"
 					DeathTypesForbidden="DETONATED SUICIDED" />

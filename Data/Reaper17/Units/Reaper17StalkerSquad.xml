@@ -136,40 +136,6 @@
 				DetectionRange="100" />
 			<Physics
 				id="ModuleTag_Physics"></Physics>
-			<HordeContain
-				id="ModuleTag_HordeContain"
-				FrontAngle="4.7123"
-				FlankedDelaySeconds="2.0"
-				ShowPips="false"
-				Formation="MAIN"
-				MeleeAttackLeashDistance="1"
-				Slots="3"
-				ObjectStatusOfContained=""
-				ConditionForEntry="INVALID">
-				<PassengerFilter
-					Rule="NONE"
-					Include="INFANTRY" />
-				<DieMuxData />
-				<InitialPayload
-					Name="Reaper17Stalker"
-					Count="3" />
-				<MeleeBehavior
-					Type="AMOEBA" />
-				<RankInfo
-					RankID="1"
-					UnitType="Reaper17Stalker">
-					<Position
-						X="20"
-						Y="-20" />
-					<Position
-						X="0"
-						Y="0" />
-					<Position
-						X="-20"
-						Y="20" />
-				</RankInfo>
-				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
-			</HordeContain>
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate"
 				GiveNoXP="true" />
@@ -231,6 +197,40 @@
 			<AimWeapon
 				id="ModuleTag_AimWeapon"
 				AimHighThreshold="0.5"/>
+			<HordeContain
+				id="ModuleTag_HordeContain"
+				FrontAngle="4.7123"
+				FlankedDelaySeconds="2.0"
+				ShowPips="false"
+				Formation="MAIN"
+				MeleeAttackLeashDistance="1"
+				Slots="3"
+				ObjectStatusOfContained=""
+				ConditionForEntry="INVALID">
+				<PassengerFilter
+					Rule="NONE"
+					Include="INFANTRY" />
+				<DieMuxData />
+				<InitialPayload
+					Name="Reaper17Stalker"
+					Count="3" />
+				<MeleeBehavior
+					Type="AMOEBA" />
+				<RankInfo
+					RankID="1"
+					UnitType="Reaper17Stalker">
+					<Position
+						X="20"
+						Y="-20" />
+					<Position
+						X="0"
+						Y="0" />
+					<Position
+						X="-20"
+						Y="20" />
+				</RankInfo>
+				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+			</HordeContain>
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate

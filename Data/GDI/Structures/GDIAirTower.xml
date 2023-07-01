@@ -23,12 +23,12 @@
 		PlacementViewAngle="225d"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
-		CampnessValue="2000"
-		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
 		EditorName="GDIAirTower"
 		Description="Desc:GDIAirfield"
-		TypeDescription="Type:GDIAirfield">
+		TypeDescription="Type:GDIAirfield"
+		CampnessValue="2000"
+		CampnessValueRadius="300"
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:GDIAirfield</DisplayName>
 		<ArmorSet
 			Armor="GDIAirTowerArmor"

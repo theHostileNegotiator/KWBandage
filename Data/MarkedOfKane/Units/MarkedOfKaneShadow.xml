@@ -888,8 +888,8 @@
 			</AnimationSoundClientBehavior>
 			<ModelConditionAudioLoopClientBehavior
 				id="ModuleTag_FlyingLoop">
-				<ModelConditionSound Sound="AudioEvent:NOD_ShadowSquad_RunningLoop" RequiredFlags="MOVING" ExcludedFlags="FLYING DECELERATE DYING"/>
 				<ModelConditionSound Sound="AudioEvent:NOD_ShadowSquad_FlyingIdlingLoop" RequiredFlags="FLYING" ExcludedFlags="DYING"/>
+				<ModelConditionSound Sound="AudioEvent:NOD_ShadowSquad_RunningLoop" RequiredFlags="MOVING" ExcludedFlags="FLYING DECELERATE DYING"/>
 			</ModelConditionAudioLoopClientBehavior>
 			<ModelConditionSoundSelectorClientBehavior
 				id="ModuleTag_FlyingSounds">

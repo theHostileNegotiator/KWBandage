@@ -21,11 +21,11 @@
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="BlackHandShredderTurretHub"
 		WeaponCategory="GUN"
+		Description="Desc:BlackHandShredderTurret"
+		TypeDescription="Type:BlackHandShredderTurret"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
-		Description="Desc:BlackHandShredderTurret"
-		TypeDescription="Type:BlackHandShredderTurret">
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:NODShredderTurret</DisplayName>
 		<DisplayUpgrade>Upgrade_NODQuadTurrets</DisplayUpgrade>
 		<DisplayUpgrade
@@ -443,24 +443,7 @@
 				id="ModuleTag_StealthDetect"
 				DetectionRange="200" />
 			<StructureUnpackUpdate
-				UnpackTime="1.5s" />
-			<CompositeStructureInfoModule
-				id="ModuleTag_CompositeStructureInfoModule"
-				ThingTemplate="BlackHandShredderTurret"
-				Count="3"
-				BuildableDistance="150">
-				<ConnectionShadowInfo
-					Type="ALPHA_DECAL_DYNAMIC"
-					SizeX="256"
-					SizeY="32"
-					OpacityStart="0"
-					OpacityFadeInTime="3s"
-					OpacityPeak="1"
-					OpacityFadeOutTime="3s"
-					OpacityEnd="0"
-					OverrideLODVisibility="true"
-					Texture="wire" />
-			</CompositeStructureInfoModule>		
+				UnpackTime="1.5s" />	
 			
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon_01"
@@ -477,11 +460,6 @@
 				AddConditionFlags="USER_5">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</ModelConditionUpgrade>
-			<GatherSlavesUpdate
-				id="ModuleTag_GatherSlaves"
-				SlaveTemplate="BlackHandShredderTurret"
-				Radius="500.0"
-				Amount="3" />
 			<RepairUpdate
 				id="ModuleTag_RepairUpdate">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
@@ -502,7 +480,9 @@
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
 				ImmediatelyEnabled="true">
-				<CanEnterFilter Rule="NONE">
+				<CanEnterFilter 
+					Rule="NONE"
+					Relationship="ALLIES">
 					<IncludeThing>GDIEngineer</IncludeThing>
 					<IncludeThing>NODSaboteur</IncludeThing>
 					<IncludeThing>AlienAssimilator</IncludeThing>
@@ -520,6 +500,28 @@
 			<AudioLoopUpgrade id="ChargedParticleBeamUpgrade" SoundToPlay="AudioEvent:NOD_Awakened_ChargedParticleBeamGunAvailable" RequiresAllTriggers="true">
 				<TriggeredBy>Upgrade_NodTechCenterChargedParticleBeam</TriggeredBy>
 			</AudioLoopUpgrade>
+			<CompositeStructureInfoModule
+				id="ModuleTag_CompositeStructureInfoModule"
+				ThingTemplate="BlackHandShredderTurret"
+				Count="3"
+				BuildableDistance="150">
+				<ConnectionShadowInfo
+					Type="ALPHA_DECAL_DYNAMIC"
+					SizeX="256"
+					SizeY="32"
+					OpacityStart="0"
+					OpacityFadeInTime="3s"
+					OpacityPeak="1"
+					OpacityFadeOutTime="3s"
+					OpacityEnd="0"
+					OverrideLODVisibility="true"
+					Texture="wire" />
+			</CompositeStructureInfoModule>	
+			<GatherSlavesUpdate
+				id="ModuleTag_GatherSlaves"
+				SlaveTemplate="BlackHandShredderTurret"
+				Radius="500.0"
+				Amount="3" />
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -544,19 +546,19 @@
 				Height="30.0" />
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_ShredderTurretHubSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_GenericTurret_Deploy"
 				AudioType="soundPrepositioned" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound> 
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

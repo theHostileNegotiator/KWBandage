@@ -276,19 +276,6 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
-			<SubObjectsUpgrade
-				id="ModuleTag_EMPBurstSubObject"
-				ShowSubObjects="UG_EMP">
-				<TriggeredBy>Upgrade_NODEmpBurst</TriggeredBy>
-			</SubObjectsUpgrade>
-			<SubObjectsUpgrade
-				id="ModuleTag_TibCoreMissilesSubObject"
-				ShowSubObjects="TIBCOREMISSILER TIBCOREMISSILER02">
-				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
-			</SubObjectsUpgrade>
-			<StructureUnpackUpdate
-				id="ModuleTag_StructureUnpackUpdate"
-				UnpackTime="1.5s" />						
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedDie"
 				CreationList="OCL_AdvancedMarkedOfKaneBuildingDestruction" >
@@ -302,6 +289,19 @@
 				CreationList="OCL_AdvancedMarkedOfKaneBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
+			<SubObjectsUpgrade
+				id="ModuleTag_EMPBurstSubObject"
+				ShowSubObjects="UG_EMP">
+				<TriggeredBy>Upgrade_NODEmpBurst</TriggeredBy>
+			</SubObjectsUpgrade>
+			<SubObjectsUpgrade
+				id="ModuleTag_TibCoreMissilesSubObject"
+				ShowSubObjects="TIBCOREMISSILER TIBCOREMISSILER02">
+				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
+			</SubObjectsUpgrade>
+			<StructureUnpackUpdate
+				id="ModuleTag_StructureUnpackUpdate"
+				UnpackTime="1.5s" />						
 
 			<SubObjectsUpgrade
 				id="ModuleTag_SuperChargedParticleBeamSubObject"

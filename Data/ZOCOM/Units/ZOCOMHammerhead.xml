@@ -28,7 +28,7 @@
 		WeaponCategory="GUN"
 		VoicePriority="154"
 		EditorName="ZOCOMHammerhead"
-		Description="Desc:ZOCOMHammerhead"
+		Description="DESC:ZOCOMHammerhead"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIAPAmmo Upgrade_CeramicArmor"
 		TypeDescription="Type:GDIHammerhead"
 		ShockwaveResistance="100"
@@ -1012,6 +1012,9 @@
 				StatusToClear="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
+			<AudioLoopUpgrade id="GDI_CommandPost_APammoUpgrade" SoundToPlay="AudioEvent:GDI_CommandPost_APammoUpgrade">
+				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
+			</AudioLoopUpgrade>
 			
 			<ArmorUpgrade
 				id="ModuleTag_CeramicArmorUpgrade"
@@ -1026,9 +1029,6 @@
 				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
 			</ModelConditionUpgrade>
 			
-			<AudioLoopUpgrade id="GDI_CommandPost_APammoUpgrade" SoundToPlay="AudioEvent:GDI_CommandPost_APammoUpgrade">
-				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
-			</AudioLoopUpgrade>
 			<AudioLoopUpgrade 
 				id="ZOCOMCeramicArmorUpgradeSound" 
 				SoundToPlay="AudioEvent:GDI_Hammerhead_CeramicArmorUpgraded">
@@ -1079,7 +1079,7 @@
 			<AudioEntry Sound="AudioEvent:GDI_Hammerhead_VoiceRetreat" AudioType="voiceRetreatToCastle" />
 			<AudioEntry Sound="Multisound:GDI_Hammerhead_VoiceSelectBattleMS" AudioType="voiceSelectBattle" />
 			<AudioEntry Sound="Multisound:GDI_Hammerhead_VoiceSelectMS" AudioType="voiceSelect" />
-			<NamedEntry Sound="AudioEvent:GDI_Hammerhead_VoiceEvacuate" Name="GDI_Hammerhead_VoiceEvacuate" />
+			<NamedEntry Sound="AudioEvent:GDI_Hammerhead_VoiceEvacuate" Name="InitiateMoveToPositionAndEvacuate" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry Sound="AudioEvent:GDI_Hammerhead_IdleLoop" AudioType="soundAmbient" />
@@ -1088,18 +1088,18 @@
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
-			EvaEventDamagedOwner="UnitUnderAttack"
+			EvaEventProductionStarted="UnitConstructionStarted" 
+			EvaEventDamagedOwner="UnitUnderAttack" 	
 			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
-			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"
-			EvaEventSecondDamageFarFromFirstScanRange="600"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
-			EvaEventAmbushed="UnitAmbushed"
-			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted"
+			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
+			EvaEventAmbushed="UnitAmbushed" 
+			EvaEventSecondDamageFarFromFirstScanRange="600"    
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted" 
 			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
 			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventProductionStarted="UnitConstructionStarted"
 			EvaEventBuildOnHold="BuildOnHold"
-			EvaEventBuildCancelled="BuildCancelled"
+			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventPromotedOwner="UnitPromoted" />
 		<ShadowInfo
 			Type="VOLUME" />

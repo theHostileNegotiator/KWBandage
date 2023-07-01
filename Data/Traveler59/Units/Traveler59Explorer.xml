@@ -225,6 +225,10 @@
 				id="ModuleTag_GiveUnpackUpgradeSpecialPowerUpdate"
 				SpecialPowerTemplate="SpecialPower_GrantUnpackUpgrade"
 				UpgradeToGive="Upgrade_UnPack"/>
+			<AISpecialPowerUpdate
+				id="ModuleTag_MCVBuildConyardAI"
+				CommandButtonName="Command_UnpackExplorer"
+				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
 			<ReplaceSelfUpgrade
 				id="ModuleTag_ReplaceSelf"
 				NewObjectUnpackTime="30.0s"
@@ -232,10 +236,6 @@
 				<TriggeredBy>Upgrade_UnPack</TriggeredBy>
 				<ReplacementTemplate>Traveler59MiniMCVOutpost</ReplacementTemplate>
 			</ReplaceSelfUpgrade>
-			<AISpecialPowerUpdate
-				id="ModuleTag_MCVBuildConyardAI"
-				CommandButtonName="Command_UnpackExplorer"
-				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
 		</Behaviors>
 		<AI>
 			<AIUpdate

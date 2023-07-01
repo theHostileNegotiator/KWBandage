@@ -742,7 +742,7 @@
 				PackTime=".4s"				
 				BusyForDuration="3s"
 				WhichSpecialWeapon="1"
-				TriggerSound="ZoneTrooperJumpJetFire" />
+				TriggerSound="AudioEvent:ZoneTrooperJumpJetFire" />
 			<BezierProjectile
 				id="ModuleTag_Projectile"
 				FirstHeightMin="50"

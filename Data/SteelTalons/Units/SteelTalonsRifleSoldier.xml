@@ -8,7 +8,7 @@
 	</Includes>
 	<GameObject
 		id="SteelTalonsRifleSoldier"
-		inheritFrom="BaseInfantry"
+		inheritFrom="GDIRifleSoldier"
 		SelectPortrait="Portrait_GDIRiflemanSquad"
 		ButtonImage="Portrait_GDIRiflemanSquad"
 		Side="SteelTalons"

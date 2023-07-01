@@ -710,7 +710,7 @@
 			<ModelConditionAudioLoopClientBehavior id="ModuleTag_RailgunAccelerator">
 				<ModelConditionSound Sound="AudioEvent:GDI_RailgunAccelerator_EnergyStripeLoop" RequiredFlags="USING_WEAPON_C" />
 			</ModelConditionAudioLoopClientBehavior>
-			<ModelConditionAudioLoopClientBehavior id="ModuleTag_AdaptiveArmorActivate">
+			<ModelConditionAudioLoopClientBehavior id="ModuleTag_AdaptiveArmor">
 				<ModelConditionSound Sound="AudioEvent:GDI_AdaptiveArmor_Upgrade" RequiredFlags="USER_8" />
 			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>

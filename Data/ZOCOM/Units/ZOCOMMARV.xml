@@ -3,7 +3,7 @@
 <!--Refer to GDI MARV-->
 	<GameObject
 		id="ZOCOMMARV"
-		inheritFrom="BaseVehicle"
+		inheritFrom="GDIMARV"
 		SelectPortrait="Portrait_MARV"
 		ButtonImage="Portrait_MARV"
 		Side="ZOCOM"
@@ -22,7 +22,7 @@
 		WeaponCategory="CANNON"
 		VoicePriority="246"
 		EditorName="ZOCOMMARV"
-		Description="Desc:ZOCOMMARV"
+		Description="DESC:ZOCOMMARV"
 		TypeDescription="Type:GDIMARV"
 		MaxSimultaneousOfType="1"
 		ShockwaveResistance="100"

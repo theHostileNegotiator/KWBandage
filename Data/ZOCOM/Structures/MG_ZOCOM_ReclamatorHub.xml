@@ -23,7 +23,7 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="ZOCOM_ReclamatorHub"
-		Description="Desc:ZOCOMReclamatorHub"
+		Description="DESC:ZOCOMReclamatorHub"
 		TypeDescription="Type:GDIReclamatorHub"
 		MaxSimultaneousOfType="1"
 		CampnessValue="2000"
@@ -736,8 +736,8 @@
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
-			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
-			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_LargeBuilding_LightDamage_MS" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_LargeBuilding_HeavyDamage_MS" AudioType="soundOnReallyDamaged" />
 			<AudioEntry Sound="AudioEvent:Amb_FireRubble" AudioType="soundAmbientReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents

@@ -27,12 +27,12 @@
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
 		WeaponCategory="GUN"
-		RadarPriority="NOT_ON_RADAR"
 		EditorName="BlackHandConfessorSquad"
 		Description="Desc:BlackHandConfessorSquad"
 		TypeDescription="Type:BlackHandConfessorSquad"
 		WorldMapArmoryUpgradesAllowed="Upgrade_NodTechCenterChargedParticleBeam Upgrade_BlackHandBlackDisciplesUpgrade"
-		UnitTypeIcon="ConfessorHordePip">
+		UnitTypeIcon="ConfessorHordePip"
+		RadarPriority="NOT_ON_RADAR">
 		<DisplayName>Name:BlackHandConfessorSquad</DisplayName>
 		<DisplayUpgrade>Upgrade_NodTechCenterChargedParticleBeam</DisplayUpgrade>
 		<DisplayUpgrade>Upgrade_BlackHandBlackDisciplesUpgrade</DisplayUpgrade>

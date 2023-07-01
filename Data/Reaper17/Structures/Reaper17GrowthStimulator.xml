@@ -300,6 +300,11 @@
 				DepositAmount="15"
 				GiveNoXP="true" />
 		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="1000.0" />
+		</Body>
    		<AI>
 			<AIUpdate
 				id="ModuleTag_AI"
@@ -307,11 +312,6 @@
 				AILuaEventsList="BuildingPowerFunctions">
 				</AIUpdate>
 		</AI>
-		<Body>
-			<ActiveBody
-				id="ModuleTag_Body"
-				MaxHealth="1000.0" />
-		</Body>
 		<Geometry
 			IsSmall="false">
 			<Shape

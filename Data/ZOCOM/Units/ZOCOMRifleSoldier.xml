@@ -23,7 +23,7 @@
 		WeaponCategory="GUN"
 		VoicePriority="104"
 		EditorName="ZOCOMRifleSoldier"
-		Description="Desc:ZOCOMRiflemanSquad"
+		Description="DESC:ZOCOMRiflemanSquad"
 		WorldMapArmoryUpgradesAllowed="Upgrade_ZOCOMFieldSuits Upgrade_GDIAPAmmo"
 		TypeDescription="Type:GDIRiflemanSquad">
 		<DisplayName
@@ -860,18 +860,6 @@
 				SuppressionDuration="5s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove" />
-			<ModelConditionUpgrade xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_FieldSuitsModelCondition"
-				Permanent="true"
-				AddConditionFlags="UPGRADED_ARMOR" >
-				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
-				id="ModuleTag_FieldSuitsUpgrade"
-				Permanent="true"
-				ArmorSetFlag="PLAYER_UPGRADE">
-				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
-			</ArmorUpgrade>
 			<!--xi:include
 				href="../../Includes/GDICallForTransport.xml" /-->
 			<FindCoverBehavior
@@ -944,8 +932,20 @@
 			<AudioLoopUpgrade id="GDI_CommandPost_APammoUpgrade" SoundToPlay="AudioEvent:GDI_CommandPost_APammoUpgrade">
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
 			</AudioLoopUpgrade>
+			<ModelConditionUpgrade xmlns="uri:ea.com:eala:asset"
+				id="ModuleTag_FieldSuitsModelCondition"
+				Permanent="true"
+				AddConditionFlags="UPGRADED_ARMOR" >
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
+				id="ModuleTag_FieldSuitsUpgrade"
+				Permanent="true"
+				ArmorSetFlag="PLAYER_UPGRADE">
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</ArmorUpgrade>
 			<AudioLoopUpgrade id="GDI_Armory_TiberiumFieldSuitsUpgrade" SoundToPlay="AudioEvent:GDI_Armory_TiberiumFieldSuitsUpgrade"> 
-				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy> 
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy> 
 			</AudioLoopUpgrade> 
 		</Behaviors>
 		<AI>

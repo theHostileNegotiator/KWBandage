@@ -447,23 +447,6 @@
 				DetectionRange="200" />
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<CompositeStructureInfoModule
-				id="ModuleTag_CompositeStructureInfoModule"
-				ThingTemplate="MarkedOfKaneLaserCannonSpawn"
-				Count="3"
-				BuildableDistance="150">
-				<ConnectionShadowInfo
-					Type="ALPHA_DECAL_DYNAMIC"
-					SizeX="256"
-					SizeY="32"
-					OpacityStart="0"
-					OpacityFadeInTime="3s"
-					OpacityPeak="1"
-					OpacityFadeOutTime="3s"
-					OpacityEnd="0"
-					OverrideLODVisibility="true"
-					Texture="wire" />
-			</CompositeStructureInfoModule>
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon01"
 				StatusToSet="WEAPON_UPGRADED_01">
@@ -488,11 +471,6 @@
 				<TriggeredBy>Upgrade_NODTechCenterLaserCapacitor</TriggeredBy>
 			</AttributeModifierUpgrade>
 		-->
-			<GatherSlavesUpdate
-				id="ModuleTag_GatherSlaves"
-				SlaveTemplate="MarkedOfKaneLaserCannonSpawn"
-				Radius="500.0"
-				Amount="3" /> 
 			<RepairUpdate xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_RepairUpdate">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
@@ -529,6 +507,28 @@
 			<AudioLoopUpgrade id="NOD_QuadTurrets_LaserHubUpgrade" SoundToPlay="AudioEvent:NOD_QuadTurrets_LaserHubUpgrade">
 				<TriggeredBy>Upgrade_NODQuadTurrets</TriggeredBy>
 			</AudioLoopUpgrade> 
+			<CompositeStructureInfoModule
+				id="ModuleTag_CompositeStructureInfoModule"
+				ThingTemplate="MarkedOfKaneLaserCannonSpawn"
+				Count="3"
+				BuildableDistance="150">
+				<ConnectionShadowInfo
+					Type="ALPHA_DECAL_DYNAMIC"
+					SizeX="256"
+					SizeY="32"
+					OpacityStart="0"
+					OpacityFadeInTime="3s"
+					OpacityPeak="1"
+					OpacityFadeOutTime="3s"
+					OpacityEnd="0"
+					OverrideLODVisibility="true"
+					Texture="wire" />
+			</CompositeStructureInfoModule>
+			<GatherSlavesUpdate
+				id="ModuleTag_GatherSlaves"
+				SlaveTemplate="MarkedOfKaneLaserCannonSpawn"
+				Radius="500.0"
+				Amount="3" /> 
 		</Behaviors>
 		<AI>
 			<AIUpdate

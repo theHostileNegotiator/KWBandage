@@ -282,7 +282,7 @@
 		<Body>
 			<ActiveBody
 				id="ModuleTag_Body"
-				MaxHealth="4000" />
+				MaxHealth="600" />
 		</Body>
 		<ClientBehaviors>
 			<ModelConditionAudioLoopClientBehavior

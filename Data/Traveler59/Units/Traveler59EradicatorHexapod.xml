@@ -25,9 +25,9 @@
 		EditorName="Traveler59EradicatorHexapod"
 		Description="Desc:Traveler59EradicatorHexapod"
 		TypeDescription="Type:Traveler59EradicatorHexapod"
+		MaxSimultaneousOfType="1"
 		ShockwaveResistance="100"
-		ReinvisibilityDelay="7s"
-		MaxSimultaneousOfType="1" >
+		ReinvisibilityDelay="7s">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">NAME:AlienEradicatorHexapod</DisplayName>
 		<GameDependency>

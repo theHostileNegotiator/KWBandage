@@ -545,6 +545,19 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
+			<CreateObjectDie
+				id="ModuleTag_CreateOccupiedDie"
+				CreationList="OCL_AdvancedMarkedOfKaneBuildingDestruction" >
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="DETONATED SUICIDED" />
+				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
+			</CreateObjectDie>
+			<CreateObjectDie
+				id="ModuleTag_CreateOccupiedSuicide"
+				CreationList="OCL_AdvancedMarkedOfKaneBuildingSuicide" >
+				<DieMuxData DeathTypes="SUICIDED" />
+			</CreateObjectDie>
 			
 			<!-- Cloaking field -->
 			<GrantUpgradeAreaOfEffectSpecialPower
@@ -577,19 +590,6 @@
 			/>
 
 			
-			<CreateObjectDie
-				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_AdvancedMarkedOfKaneBuildingDestruction" >
-				<DieMuxData
-					DeathTypes="ALL"
-					DeathTypesForbidden="DETONATED SUICIDED" />
-				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
-			</CreateObjectDie>
-			<CreateObjectDie
-				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_AdvancedMarkedOfKaneBuildingSuicide" >
-				<DieMuxData DeathTypes="SUICIDED" />
-			</CreateObjectDie>
 		</Behaviors>
 		<AI>
 			<AIUpdate

@@ -8,7 +8,7 @@
 		id="AlienShockTrooperSquad"
 		SelectPortrait="Portrait_ALIENShockTrooper"
 		ButtonImage="Portrait_ALIENShockTrooper"
-		Side="Alien"
+		Side="ALIEN"
 		EditorSorting="UNIT"
 		TransportSlotCount="1"
 		BuildCost="800"

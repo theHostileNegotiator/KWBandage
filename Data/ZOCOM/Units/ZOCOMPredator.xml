@@ -24,9 +24,11 @@
 		WeaponCategory="CANNON"
 		VoicePriority="184"
 		EditorName="ZOCOMPredator"
-		Description="Desc:ZOCOMPredatorTank"
+		Description="DESC:ZOCOMPredatorTank"
 		WorldMapArmoryUpgradesAllowed=""
-		TypeDescription="Type:ZOCOMPredatorTank">
+		TypeDescription="TYPE:ZOCOMPredatorTank"
+		ShockwaveResistance="100"
+		ReinvisibilityDelay="7s">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIPredatorTank</DisplayName>
 		<ArmorSet
@@ -412,7 +414,7 @@
 			<CreateAndEnterObjectSpecialPower xmlns="uri:ea.com:eala:asset"
 				id="ModuleTag_CallForTransport"
 				SpecialPowerTemplate="SpecialPowerCallForTransportZOCOM"
-				OCL="OCL_GDICallForTransportForVehicle"
+				OCL="OCL_ZOCOMCallForTransportForVehicle"
 				CreateLocation="CREATE_ABOVE_LOCATION"
 				TriggerFX="FX_GDICallForTransportFlare"
 				ChildModuleHandlesFX="true"

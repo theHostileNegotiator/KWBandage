@@ -21,8 +21,8 @@
 		WeaponCategory="CANNON"
 		VoicePriority="220"
 		EditorName="ZOCOMMammoth"
-		Description="Desc:ZOCOMMammothTank"
-		TypeDescription="Type:ZOCOMMammothTank"
+		Description="DESC:ZOCOMMammothTank"
+		TypeDescription="TYPE:ZOCOMMammothTank"
 		WorldMapArmoryUpgradesAllowed=""
 		ShockwaveResistance="100"
 		ReinvisibilityDelay="7s">

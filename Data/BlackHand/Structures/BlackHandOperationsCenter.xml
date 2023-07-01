@@ -16,7 +16,7 @@
 		BuildCost="1500"
 		BuildTime="15"
 		EnergyProduction="-10"
-		CommandSet="NODOperationsCenterCommandSet"
+		CommandSet="BlackHandOperationsCenterCommandSet"
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS FS_TECHNOLOGY POWERED  NOT_AUTOACQUIRABLE AUTO_ACQUIRABLE_BY_AI COVER FS_RADAR"
 		RadarPriority="STRUCTURE"
 		PlacementViewAngle="315d"
@@ -545,6 +545,19 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
+			<CreateObjectDie
+				id="ModuleTag_CreateOccupiedDie"
+				CreationList="OCL_AdvancedBlackHandBuildingDestruction" >
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="DETONATED SUICIDED" />
+				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
+			</CreateObjectDie>
+			<CreateObjectDie
+				id="ModuleTag_CreateOccupiedSuicide"
+				CreationList="OCL_AdvancedBlackHandBuildingSuicide" >
+				<DieMuxData DeathTypes="SUICIDED" />
+			</CreateObjectDie>
 			
 			<!-- Power Signature Scan -->
 			<SpecialPower
@@ -564,19 +577,6 @@
 				SpecialPowerRadius="999999.0"
 				SpecialPowerAIType="SPECIAL_POWER_TARGET_STEALTH"
 			/>
-			<CreateObjectDie
-				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_AdvancedBlackHandBuildingDestruction" >
-				<DieMuxData
-					DeathTypes="ALL"
-					DeathTypesForbidden="DETONATED SUICIDED" />
-				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
-			</CreateObjectDie>
-			<CreateObjectDie
-				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_AdvancedBlackHandBuildingSuicide" >
-				<DieMuxData DeathTypes="SUICIDED" />
-			</CreateObjectDie>
 		</Behaviors>
 		<AI>
 			<AIUpdate

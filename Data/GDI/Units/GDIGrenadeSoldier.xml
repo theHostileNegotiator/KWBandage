@@ -582,9 +582,9 @@
 				href="../../Includes/GDICallForTransport.xml" />
 				-->
 			<ModelConditionUpgrade xmlns="uri:ea.com:eala:asset"
-				 id="ModuleTag_ArmorCompositeModelCondition"
-				 Permanent="true"
-				 AddConditionFlags="UPGRADED_ARMOR">
+				id="ModuleTag_ArmorCompositeModelCondition"
+				Permanent="true"
+				AddConditionFlags="UPGRADED_ARMOR">
 				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
 			</ModelConditionUpgrade>
 			<ArmorUpgrade xmlns="uri:ea.com:eala:asset"
@@ -656,21 +656,6 @@
 				Height="13.0"
 				ContactPointGeneration="SQUAD_MEMBER" />
 		</Geometry>
-		<EvaEvents
-			EvaEventDieOwner="UnitLost"
-			EvaEventProductionStarted="UnitConstructionStarted" 
-			EvaEventDamagedOwner="UnitUnderAttack" 	
-			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
-			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
-			EvaEventAmbushed="UnitAmbushed" 
-			EvaEventSecondDamageFarFromFirstScanRange="600"    
-			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
-			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted" 
-			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
-			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventBuildOnHold="BuildOnHold"
-			EvaEventBuildCancelled="BuildCancelled" 
-			EvaEventPromotedOwner="UnitPromoted" />
 		<AudioArrayVoice>
 			<AudioEntry Sound="AudioEvent:GDI_GrenadierSoldier_VoiceAttack" AudioType="voiceAttack" />
 			<AudioEntry Sound="AudioEvent:GDI_GrenadierSoldier_VoiceAttackBuilding" AudioType="voiceAttackGarrisonedStructure" />
@@ -694,6 +679,21 @@
 			<AudioEntry Sound="AudioEvent:PredatorAmbientLoop" AudioType="soundAmbient" />
 		</AudioArraySound>
 	-->
+		<EvaEvents
+			EvaEventDieOwner="UnitLost"
+			EvaEventProductionStarted="UnitConstructionStarted" 
+			EvaEventDamagedOwner="UnitUnderAttack" 	
+			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
+			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
+			EvaEventAmbushed="UnitAmbushed" 
+			EvaEventSecondDamageFarFromFirstScanRange="600"    
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted" 
+			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled" 
+			EvaEventPromotedOwner="UnitPromoted" />
 		<ShadowInfo
 			Type="DECAL"
 			SizeX="14"

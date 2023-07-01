@@ -18,12 +18,12 @@
 		PlacementViewAngle="315d"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
+		EditorName="ZOCOMedicalBay"
+		Description="DESC:ZOCOMArmory"
+		TypeDescription="Type:GDIArmory"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		UnitCategory="STRUCTURE"
-		EditorName="ZOCOMMedicalBay"
-		Description="Desc:ZOCOMArmory"
-		TypeDescription="Type:GDIArmory">
+		UnitCategory="STRUCTURE">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:GDIArmory</DisplayName>
 		<GameDependency>
@@ -300,7 +300,7 @@
 			</SubObjectsUpgrade>
 			
 			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade _ZoneRaiderInjectors"
+				id="ModuleTag_Upgrade _ZoneTrooperInjectors"
 				ShowSubObjects="UG_Injector">
 				<CustomAnimAndDuration
 					AnimState="USER_4"></CustomAnimAndDuration>
@@ -516,18 +516,17 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:GDI_TechnologyCenterSelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
-
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 
 			EvaEventProductionComplete="BuildingConstructionComplete" 

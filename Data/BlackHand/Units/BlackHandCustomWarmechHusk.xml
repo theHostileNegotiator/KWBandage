@@ -180,6 +180,10 @@
 					Index="onDeath"
 					FX="FX_GDIVehicleExplodeNoScorch" />
 			</FXListBehavior>
+			<LifetimeUpdate
+				id="ModuleTag_HuskLifetime"
+				MinLifetime="300s"
+				MaxLifetime="300s" />			
 			<EngineerContain
 				id="ModuleTag_EngineerContain"
 				NameOfVoiceToUseForFriendlyEnter="VoiceCaptureHusk"
@@ -203,10 +207,6 @@
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>	
-			<LifetimeUpdate
-				id="ModuleTag_HuskLifetime"
-				MinLifetime="300s"
-				MaxLifetime="300s" />			
 <!-- somehow we need to display the upgrade the model had when it was dead -->
 			<ModelConditionUpgrade
 				id="ModuleTag_PurifierUpgrade"
@@ -260,11 +260,6 @@
 					z="0.0" />
 			</Shape>
 		</Geometry>
-		<ShadowInfo
-			Type="DECAL"
-			SizeX="14"
-			SizeY="14"
-			Texture="ShadowI" />
     <EvaEvents
       EvaEventDieOwner="UnitLost"
 			EvaEventProductionStarted="UnitConstructionStarted" 
@@ -280,6 +275,11 @@
 			EvaEventBuildOnHold="BuildOnHold"
 			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventPromotedOwner="UnitPromoted" />
+		<ShadowInfo
+			Type="DECAL"
+			SizeX="14"
+			SizeY="14"
+			Texture="ShadowI" />
 		<VisionInfo
 			VisionRange="50"
 			ShroudClearingRange="50" />

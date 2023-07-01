@@ -3,7 +3,7 @@
 <!--Refer to GDI MARV-->
 	<GameObject
 		id="SteelTalonsMARV"
-		inheritFrom="BaseVehicle"
+		inheritFrom="GDIMARV"
 		SelectPortrait="Portrait_MARV"
 		ButtonImage="Portrait_MARV"
 		Side="SteelTalons"

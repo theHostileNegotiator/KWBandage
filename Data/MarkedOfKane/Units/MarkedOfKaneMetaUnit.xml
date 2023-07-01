@@ -27,9 +27,9 @@
 		EditorName="MarkedOfKaneMetaUnit"
 		Description="Desc:MarkedOfKaneMetaUnit"
 		TypeDescription="Type:NODMetaUnit"
+		MaxSimultaneousOfType="1"
 		ShockwaveResistance="100"
-		ReinvisibilityDelay="7s"
-		MaxSimultaneousOfType="1">
+		ReinvisibilityDelay="7s">
 		<DisplayName
 			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODMetaUnit</DisplayName>
 		<GameDependency>

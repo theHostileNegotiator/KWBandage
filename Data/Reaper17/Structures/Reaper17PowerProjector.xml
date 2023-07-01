@@ -6,7 +6,7 @@
 	<!-- PowerPlant -->
 	<GameObject
 		id="Reaper17PowerProjector"
-		inheritFrom="BaseStructure"
+		inheritFrom="AlienPowerProjector"
 		SelectPortrait="Portrait_ALIENReactor"
 		ButtonImage="Portrait_ALIENReactor"
 		Side="Reaper17"
@@ -394,7 +394,7 @@
 			</CreateObjectDie>
 			<CreateObjectDie
 				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_GenericAlienBuildingSuicide" >
+				CreationList="OCL_GenericReaper17BuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
 			<PowerUpgrade

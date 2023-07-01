@@ -337,6 +337,19 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
+			<CreateObjectDie 
+				id="ModuleTag_CreateOccupiedDie"
+				CreationList="OCL_ArmorySteelTalonsBuildingDestruction" >
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="DETONATED SUICIDED" />
+				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
+			</CreateObjectDie>
+			<CreateObjectDie 
+				id="ModuleTag_CreateOccupiedSuicide"
+				CreationList="OCL_ArmorySteelTalonsBuildingSuicide" >
+				<DieMuxData DeathTypes="SUICIDED" />
+			</CreateObjectDie>	
 			<OCLSpecialPower
 				id="ModuleTag_RailgunAcceleratorPower"
 				SpecialPowerTemplate="SpecialPower_RailgunAccelerator"
@@ -355,19 +368,6 @@
 				ShowSubObjects="UG_Adaptive UG_Adaptive01 UG_Adaptive02 UG_Adaptive04">
 				<TriggeredBy>Upgrade_AdaptiveArmor</TriggeredBy>
 			</SubObjectsUpgrade>
-			<CreateObjectDie 
-				id="ModuleTag_CreateOccupiedDie"
-				CreationList="OCL_ArmorySteelTalonsBuildingDestruction" >
-				<DieMuxData
-					DeathTypes="ALL"
-					DeathTypesForbidden="DETONATED SUICIDED" />
-				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
-			</CreateObjectDie>
-			<CreateObjectDie 
-				id="ModuleTag_CreateOccupiedSuicide"
-				CreationList="OCL_ArmorySteelTalonsBuildingSuicide" >
-				<DieMuxData DeathTypes="SUICIDED" />
-			</CreateObjectDie>	
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -455,16 +455,16 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
 				Sound="AudioEvent:GDI_ArmorySelect"
 				AudioType="voiceSelect" />
-			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
-			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 		</AudioArrayVoice>
 		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
-			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventProductionStarted="BuildingConstructionStarted" 

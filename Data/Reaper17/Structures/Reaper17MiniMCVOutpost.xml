@@ -18,7 +18,7 @@
 		RadarPriority="STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		EditorName="Reaper17ExplorerOutpost"
-		Description="Desc:Reaper17Outpost"
+		Description="DESC:Reaper17Outpost"
 		TypeDescription="Type:ALIENOutpost"
 		CampnessValue="2000"
 		CampnessValueRadius="300"

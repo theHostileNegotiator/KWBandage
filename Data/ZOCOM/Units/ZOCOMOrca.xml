@@ -435,15 +435,6 @@
 			<TemporarilyDefectUpdate
 				id="ModuleTag_TemporarilyDefect"
 				DefectionFrameCount="300" />
-			<WeaponSetUpdate
-				id="ModuleTag_WeaponSetUpdate">
-				<WeaponSlotHardpoint
-					ID="1">
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="OrcaEchoCannon"  />
-				</WeaponSlotHardpoint>
-			</WeaponSetUpdate>
 			<ModelConditionUpgrade
 				id="ModuleTag_ShowThePlating"
 				Permanent="true"
@@ -591,6 +582,15 @@
 				SoundToPlay="AudioEvent:GDI_Orca_SensorPodInstalled">
 				<TriggeredBy>Upgrade_OrcaSensorPod</TriggeredBy>
 			</AudioLoopUpgrade>
+			<WeaponSetUpdate
+				id="ModuleTag_WeaponSetUpdate">
+				<WeaponSlotHardpoint
+					ID="1">
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="OrcaEchoCannon"  />
+				</WeaponSlotHardpoint>
+			</WeaponSetUpdate>
 			<ArmorUpgrade
 				id="ModuleTag_CeramicArmorUpgrade"
 				Permanent="true"
@@ -697,18 +697,18 @@
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
-			EvaEventDamagedOwner="UnitUnderAttack"
+			EvaEventProductionStarted="UnitConstructionStarted" 
+			EvaEventDamagedOwner="UnitUnderAttack" 	
 			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
-			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"
-			EvaEventSecondDamageFarFromFirstScanRange="600"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
-			EvaEventAmbushed="UnitAmbushed"
-			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted"
+			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
+			EvaEventAmbushed="UnitAmbushed" 
+			EvaEventSecondDamageFarFromFirstScanRange="600"    
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted" 
 			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
 			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventProductionStarted="UnitConstructionStarted"
 			EvaEventBuildOnHold="BuildOnHold"
-			EvaEventBuildCancelled="BuildCancelled"
+			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventPromotedOwner="UnitPromoted" />
 		<ShadowInfo
 			Type="VOLUME" 
@@ -721,5 +721,8 @@
 		<VisionInfo
 			VisionRange="275"
 			ShroudClearingRange="325" />
+		<CrusherInfo
+			CrusherLevel="1"
+			CrushableLevel="2" />
 	</GameObject>
 </AssetDeclaration>

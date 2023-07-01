@@ -20,7 +20,7 @@
 		RadarPriority="STRUCTURE"
 		ProductionQueueType="OTHER_STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
-		EditorName="ZOCOMTerraformingStation"
+		EditorName="ZOCOMterraformingStation"
 		WeaponCategory="CANNON"
 		TypeDescription="Type:GDITerraformingStation"
 		Description="Desc:GDITerraformingStation"

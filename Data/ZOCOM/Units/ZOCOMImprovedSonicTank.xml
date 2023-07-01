@@ -385,10 +385,7 @@
 			<WeaponSetUpdate
 				id="ModuleTag_Weapon01SetUpdate">
 				<WeaponSlotTurret
-					ID="1"
-					AllowInterleavedFiring="false"
-					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
-					WeaponChoiceCriteria="PREFER_MOST_DAMAGE">
+					ID="1">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="SteelShattererShockWaveCannon" />

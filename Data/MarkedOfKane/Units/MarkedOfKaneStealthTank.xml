@@ -3,7 +3,7 @@
 <!--Refer to NOD Stealth Tank-->
 	<GameObject
 		id="MarkedOfKaneStealthTank"
-		inheritFrom="BaseVehicle"
+		inheritFrom="NODStealthTank"
 		SelectPortrait="Portrait_NODStealthTank"
 		ButtonImage="Portrait_NODStealthTank"
 		Side="MarkedOfKane"
@@ -564,14 +564,6 @@
 			<AudioEntry Sound="AudioEvent:NOD_StealthTank_MoveStart" AudioType="soundMoveStart" />
 			<AudioEntry Sound="AudioEvent:NOD_StealthTank_IdleLoop" AudioType="soundAmbient" />
 		</AudioArraySound>
-		<ShadowInfo
-			Type="VOLUME" />
-		<VisionInfo
-			VisionRange="350"
-			ShroudClearingRange="400" />
-		<CrusherInfo
-			CrusherLevel="1"
-			CrushableLevel="2" />	
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
 			EvaEventProductionStarted="UnitConstructionStarted" 
@@ -587,5 +579,13 @@
 			EvaEventBuildOnHold="BuildOnHold"
 			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventPromotedOwner="UnitPromoted" />	
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="350"
+			ShroudClearingRange="400" />
+		<CrusherInfo
+			CrusherLevel="1"
+			CrushableLevel="2" />	
 	</GameObject>
 </AssetDeclaration>

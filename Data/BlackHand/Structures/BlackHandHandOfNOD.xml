@@ -21,8 +21,8 @@
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		EditorName="BlackHandHandOfNOD"
-		Description="Desc:BlackHandHandofNOD"
-		TypeDescription="Type:BlackHandHandofNod"
+		Description="Desc:BlackHandHandOfNOD"
+		TypeDescription="Type:BlackHandHandOfNOD"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">

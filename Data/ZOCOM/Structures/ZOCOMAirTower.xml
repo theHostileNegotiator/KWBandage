@@ -19,12 +19,12 @@
 		PlacementViewAngle="225d"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"	
-		CampnessValue="2000"
-		CampnessValueRadius="300"		
-		UnitCategory="STRUCTURE"
 		EditorName="ZOCOMAirTower"
 		Description="Desc:ZOCOMAirfield"
-		TypeDescription="Type:GDIAirfield">
+		TypeDescription="Type:GDIAirfield"
+		CampnessValue="2000"
+		CampnessValueRadius="300"		
+		UnitCategory="STRUCTURE">
 		<DisplayName>Name:GDIAirfield</DisplayName>
 		<ArmorSet
 			Armor="GDIAirTowerArmor"
@@ -827,43 +827,9 @@
 				<CustomAnimAndDuration
 					AnimState="USER_4"></CustomAnimAndDuration>
 				<TriggeredBy>Upgrade_FirehawkStratofighterBooster</TriggeredBy>
-			</SubObjectsUpgrade>	
-			<SubObjectsUpgrade
-				id="ModuleTag_Upgrade_CeramicArmor"
-				ShowSubObjects="UG_Ceramic UG_Ceramic01">
-				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
 			</SubObjectsUpgrade>			
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<OCLSpecialPower 
-				id="ModuleTag_OCLSpecialPowerZOCOMBombingRun"
-				SpecialPowerTemplate="SpecialPowerZOCOMBombingRun"
-				OCL="OCL_ZOCOMCommandPostBombingRun"
-				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"
-				DestinationOCL="OCL_GDICommandPostBombingRunBeacon"
-			/>			
-			<AISpecialPowerUpdate
-				id="ModuleTag_ZOCOMCommandPostBombingRunAI"
-				CommandButtonName="Command_ZOCOMCommandPostBombingRun"
-				SpecialPowerRadius="999999.0"
-				UnitKindOf="FS_POWER"
-				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"  
-			/>
-
-			<OCLSpecialPower
-				id="ModuleTag_CallSupportZOCOMBloodhound"
-				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMBloodhound"
-				TriggerFX="FX_GDICallForTransportFlare"
-				OCL="OCL_CallSupportZOCOMBloodhound"
-				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"
-			/>
-			<AISpecialPowerUpdate
-				id="ModuleTag_CommandPostCallZOCOMBloodhoundAI"
-				CommandButtonName="Command_CommandPostCallZOCOMBloodhound"
-				ReinforceDistance="400.0"
-				SpecialPowerRadius="300.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" 
-			/>
 				
 			<ArmorUpgrade
 				id="ModuleTag_SonicRepulsionFieldUpgrade"
@@ -921,6 +887,42 @@
 				id="ModuleTag_Stance"
 				StanceTemplate="Generic" />
 
+			<OCLSpecialPower
+				id="ModuleTag_CallSupportZOCOMBloodhound"
+				SpecialPowerTemplate="SpecialPowerCallSupportZOCOMBloodhound"
+				TriggerFX="FX_GDICallForTransportFlare"
+				OCL="OCL_CallSupportZOCOMBloodhound"
+				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"
+			/>
+			<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostCallZOCOMBloodhoundAI"
+				CommandButtonName="Command_CommandPostCallZOCOMBloodhound"
+				ReinforceDistance="400.0"
+				SpecialPowerRadius="300.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT" 
+			/>
+			
+			<OCLSpecialPower 
+				id="ModuleTag_OCLSpecialPowerZOCOMBombingRun"
+				SpecialPowerTemplate="SpecialPowerZOCOMBombingRun"
+				OCL="OCL_ZOCOMCommandPostBombingRun"
+				CreateLocation="CREATE_AT_EDGE_NEAR_SOURCE"
+				DestinationOCL="OCL_GDICommandPostBombingRunBeacon"
+			/>			
+			<AISpecialPowerUpdate
+				id="ModuleTag_ZOCOMCommandPostBombingRunAI"
+				CommandButtonName="Command_ZOCOMCommandPostBombingRun"
+				SpecialPowerRadius="999999.0"
+				UnitKindOf="FS_POWER"
+				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"  
+			/>
+
+			<SubObjectsUpgrade
+				id="ModuleTag_Upgrade_CeramicArmor"
+				ShowSubObjects="UG_Ceramic UG_Ceramic01">
+				<TriggeredBy>Upgrade_CeramicArmor</TriggeredBy>
+			</SubObjectsUpgrade>	
+			
     </Behaviors>
 		<AI>
 			<!-- needed for special powers -->
@@ -1046,19 +1048,17 @@
 			<AudioEntry Sound="AudioEvent:Amb_FireRubble" AudioType="soundAmbientReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
+			EvaEventProductionStarted="BuildingConstructionStarted" 
+			EvaEventProductionComplete="BuildingConstructionComplete" 
+			EvaEventDamagedOwner="StructureUnderAttack" 	
 			EvaEventSoldOwner="StructureSold"
-			EvaEventDamagedOwner="StructureUnderAttack"
-			EvaEventSecondDamageFarFromFirstScanRange="200"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
 			EvaEventRepairingOwner="StructureRepairing"
 			EvaEnemyObjectSightedEvent="EnemyCampSighted"
 			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventProductionStarted="BuildingConstructionStarted"
-			EvaEventProductionComplete="BuildingConstructionComplete"
-			EvaEventPlacementFailed="StructurePlacementFailed"
-			EvaEventCannotBuildDueToFullBuildQueue="StructureCannotBuildDueToFullBuildQueue"
+			EvaEventPlacementFailed="StructurePlacementFailed" 
+			EvaEventCannotBuildDueToFullBuildQueue="StructureCannotBuildDueToFullBuildQueue" 
 			EvaEventBuildOnHold="BuildOnHold"
-			EvaEventBuildCancelled="BuildCancelled"
+			EvaEventBuildCancelled="BuildCancelled" 
 			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
 			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
 		<ShadowInfo
