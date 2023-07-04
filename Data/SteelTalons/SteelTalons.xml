@@ -22,6 +22,7 @@
 		<Include type="all" source="Units/SteelTalonsRifleSoldierSquad.xml" />
 		<Include type="all" source="Units/SteelTalonsRifleSoldierSquad_Veteran.xml" />
 		<Include type="all" source="Units/SteelTalonsRig.xml" />
+		<Include type="all" source="Units/SteelTalonsSurveyor.xml" />
 		<Include type="all" source="Units/SteelTalonsTitan.xml" />
 		<Include type="all" source="Units/SteelTalonsV35Ox_Summoned.xml" />
 		<Include type="all" source="Units/SteelTalonsV35Ox_SummonedForVehicle.xml" />
