@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xai="uri:ea.com:eala:asset:instance">
+<!-- Will now unpack into ZOCOM Outpost -->
+	<Tags></Tags>
+	<Includes></Includes>
+	<GameObject
+		id="ZOCOMSurveyor"
+		inheritFrom="GDISurveyor"
+		SelectPortrait="Portrait_GDISurveyor"
+		ButtonImage="Portrait_GDISurveyor"
+		Side="ZOCOM"
+		EditorSorting="UNIT"
+		TransportSlotCount="1"
+		BuildCost="1500"
+		BuildTime="15"
+		CommandSet="ZOCOMSurveyorCommandSet"
+		KindOf="PRELOAD SELECTABLE CAN_CAST_REFLECTIONS SCORE VEHICLE FS_FACTORY CAN_REVERSE_MOVE EXPANSION_UNIT CAN_BE_FAVORITE_UNIT IGNORES_SELECT_ALL"
+		RadarPriority="UNIT"
+		PlacementViewAngle="315d"
+		ProductionQueueType="OTHER_STRUCTURE"
+		UnitCategory="VEHICLE"
+		VoicePriority="48"
+		EditorName="ZOCOMSurveyor"
+		Description="Desc:GDISurveyor"
+		TypeDescription="Type:GDISurveyor"
+		ShockwaveResistance="100"
+		ReinvisibilityDelay="7s">
+		<DisplayName
+			xai:joinAction="Replace">Name:GDISurveyor</DisplayName>
+		<GameDependency>
+			<RequiredObject>ZOCOMConstructionYard</RequiredObject>
+		</GameDependency>
+		<ArmorSet
+			Armor="GDISurveyorArmor"
+			DamageFX="VehicleDamageFX" />
+		<LocomotorSet
+			Locomotor="GDISurveyorLocomotor"
+			Condition="NORMAL"
+			Speed="60.0" />
+		<Draws>
+			<TruckDraw
+				id="ModuleTag_Draw"
+				LeftFrontTireBone="Bone_LFTire"
+				RightFrontTireBone="Bone_RFTire"
+				MidLeftRearTireBone="Bone_LMTire"
+				MidRightRearTireBone="Bone_RMTire"
+				LeftRearTireBone="Bone_LRTire"
+				RightRearTireBone="Bone_RRTire"
+				TireRotationMultiplier="0.1"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="GUSUV_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Model
+						Name="GUSUVR_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<Model
+						Name="GUSUV_FP" />
+				</ModelConditionState>					
+				<!--				
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="UNPACKING">
+					<Model
+						Name="GUSuvUPAK_SN" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="UNPACKING"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="GUSuvUPAK_AN" />
+				</AnimationState>
+-->
+			</TruckDraw>
+		</Draws>
+		<Behaviors>
+			<AttributeModifierPoolUpdate 
+				id="DefaultAttributeModifierPoolUpdate"/>
+			<SquishCollide
+				id ="DefaultSquishCollide"/>
+			<FireWeaponWhenDead
+				id="ModuleTag_CatalystDeathWeapon"
+				InitiallyActive="true"
+				DeathWeapon="CatalystInfantryDeathWeapon"
+				ContinueToBezierDestination="false">
+				<DieMuxData DeathTypes="CATALYST" />
+			</FireWeaponWhenDead>
+			<!--Heroic level units auto healing-->
+			<AutoHealBehavior
+				id="Upgrade_HeroicHeal"
+				InitiallyActive="false"
+				HealOnlyIfNotInCombat="false"
+				HealOnlyIfNotUnderAttack="false"
+				StartHealingDelay="1s"
+				HealingAmount="100"
+				HealingDelay=".5s">
+				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
+			</AutoHealBehavior>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCSpeed"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterSpeed</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCDamage"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterDamage">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterDamage</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="ModuleTag_AttributeModifierUpgradeMUCArmor"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterArmor">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterArmor</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Veteran"
+				LevelCap="4"
+				LevelsToGain="1">
+				<TriggeredBy>Upgrade_ProductionVeterancy_VETERAN</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Elite"
+				LevelCap="4"
+				LevelsToGain="2">
+				<TriggeredBy>Upgrade_ProductionVeterancy_ELITE</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade_Heroic"
+				LevelCap="4"
+				LevelsToGain="3">
+				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
+			</LevelUpUpgrade>
+			<!-- Nod Cloaking Field -->
+			<InvisibilityUpdate
+				id="ModuleTag_Invisibility"
+				UpdatePeriod="0.5s">
+				<InvisibilityNugget />
+				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
+			</InvisibilityUpdate>
+			<StealthUpgrade
+				id="ModuleTag_InvisibilityTrigger">
+				<TriggeredBy>Upgrade_CloakingFieldInvisibility</TriggeredBy>
+			</StealthUpgrade>
+			<TemporarilyDefectUpdate
+				id="ModuleTag_TemporarilyDefect"
+				DefectionFrameCount="300" />
+			<Physics
+				id="ModuleTag_Physics" />
+			<ProductionUpdate
+				id="ModuleTag_ProductionUpdate" />
+			<SlowDeath
+				id="ModuleTag_Death"
+				DeathObjectStatusBits="DONT_CLEAR_FOR_BUILD"
+				SinkDelay="3s"
+				SinkRate="1.0"
+				DestructionDelay="7s">
+				<OCL
+					Type="INITIAL">
+					<OCL>OCL_GDISUVDebris</OCL>
+				</OCL>
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="TOPPLED" />
+				<!-- <Sound Type="INITIAL" List="GDI_Generic_VoiceDieMS" /> -->
+				<!-- need female voice die -->
+			</SlowDeath>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_GDIVehicleExplode" />
+			</FXListBehavior>
+			<!-- special power that grants the Unpack upgrade -->
+			<SpecialPower
+				id="ModuleTag_GiveUnpackUpgradeSpecialPowerTrigger"
+				SpecialPowerTemplate="SpecialPower_GrantUnpackUpgrade"
+				UpdateModuleStartsAttack="true"/>
+			<!-- update for the Unpack upgrade special power -->
+			<GiveOrRestoreUpgradeSpecialPower xmlns="uri:ea.com:eala:asset"
+				id="ModuleTag_GiveUnpackUpgradeSpecialPowerUpdate"
+				SpecialPowerTemplate="SpecialPower_GrantUnpackUpgrade"
+				UpgradeToGive="Upgrade_UnPack"/>
+			<AISpecialPowerUpdate
+				id="ModuleTag_SurveyorDeployOutpost"
+				CommandButtonName="Command_UnPackSurveyor"
+				SpecialPowerAIType="SPECIAL_POWER_BUILD_CONYARD" />
+			<!-- No stances because there's no weapon -->
+			<CreateAndEnterObjectSpecialPower
+				id="ModuleTag_CallForTransport"
+				SpecialPowerTemplate="SpecialPowerCallForTransportZOCOM"
+				OCL="OCL_ZOCOMCallForTransportForVehicle"
+				CreateLocation="CREATE_ABOVE_LOCATION"
+				TriggerFX="FX_GDICallForTransportFlare"
+				ChildModuleHandlesFX="true"
+				IdleWhenStartingPower="true">
+				<FXOffset x="25" y="0" z="0"></FXOffset>
+			</CreateAndEnterObjectSpecialPower>
+			<ReplaceSelfUpgrade
+				id="ModuleTag_ReplaceSelf"
+				CheckBuildAssistant="true">
+				<TriggeredBy>Upgrade_UnPack</TriggeredBy>
+				<ReplacementTemplate>ZOCOMMiniMCVOutpost</ReplacementTemplate>
+			</ReplaceSelfUpgrade>
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"
+				AutoAcquireEnemiesWhenIdle="NO"></AIUpdate>
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="2000.0" />
+		</Body>
+		<ClientBehaviors>
+		<!--
+			<ModelConditionAudioLoopClientBehavior
+				id="ModuleTag_MCALCB">
+				<ModelConditionSound
+					Sound="GDI_MCVpack"
+					RequiredFlags="UNPACKING" />
+			</ModelConditionAudioLoopClientBehavior>
+		-->
+		</ClientBehaviors>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="BOX"
+				MajorRadius="20.0"
+				MinorRadius="10.0"
+				Height="15.0"
+				ContactPointGeneration="VEHICLE" />
+		</Geometry>
+		<AudioArrayVoice>
+			<AudioEntry
+				Sound="AudioEvent:GDI_Surveyor_VoiceCreate"
+				AudioType="voiceCreated" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Surveyor_VoiceMove"
+				AudioType="voiceMove" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Surveyor_VoiceRetreat"
+				AudioType="voiceRetreatToCastle" />
+			<AudioEntry
+				Sound="Multisound:GDI_Surveyor_VoiceSelectMS"
+				AudioType="voiceSelect" />
+		</AudioArrayVoice>
+		<AudioArraySound>
+			<AudioEntry
+				Sound="AudioEvent:GDI_Surveyor_MoveStart"
+				AudioType="soundMoveStart" />
+			<AudioEntry
+				Sound="AudioEvent:GDI_Surveyor_IdleLoop"
+				AudioType="soundAmbient" />
+		</AudioArraySound>
+		<EvaEvents
+			EvaEventDieOwner="UnitLost"
+			EvaEventProductionStarted="UnitConstructionStarted" 
+			EvaEventDamagedOwner="UnitUnderAttack" 	
+			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
+			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"  
+			EvaEventAmbushed="UnitAmbushed" 
+			EvaEventSecondDamageFarFromFirstScanRange="600"    
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000" 
+			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted" 
+			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled" 
+			EvaEventPromotedOwner="UnitPromoted" />
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="100"
+			ShroudClearingRange="200" />
+		<CrusherInfo
+			CrusherLevel="1" 
+			CrushableLevel="2" />
+	</GameObject>
+</AssetDeclaration>

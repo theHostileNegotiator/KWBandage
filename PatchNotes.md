@@ -501,6 +501,9 @@
 #### Doors
 1. Barracks and Warfactory doors default to the open position when healed to 100%
 	* Adjusted PARSE_DEFAULT animation state calling for the last frame of the closing animation instead of the first frame of the opening animation
+#### Surveyor
+1. Subfaction Surveyors when unpacking would create GDI Outpost instead of their own
+	* Packing and unpacking will now create the corresponding faction version
 #### Grenadier Squad
 1. AI will not use EMP Grenades ability
 	* Added modules that will allow them to use it
