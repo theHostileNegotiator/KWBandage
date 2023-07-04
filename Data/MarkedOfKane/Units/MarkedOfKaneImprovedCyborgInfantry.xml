@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!-- Changed Upgrade Sound from Railgun to SuperChargedParticleBeam -->
+<!-- Removed Railgun Upgrade Sound when upgrading SuperChargedParticleBeam -->
 <!-- Added HouseColor Texture for Cybernetic Legs Upgrade -->
 <!-- Fixed EMP Range -->
 <!-- Added new EMP Attack animation due to instant activation -->
 <!-- Fixed Transition to Idle animation A from animating the EMP weapon -->
 <!-- Fixed Model, EMP weapon and Super Charged Particle Beam weapon assigned to incorrect bone -->
 <!-- Fixed Low LOD models having incorrect weapon and added new model for the Upgraded version -->
+<!-- Fixed Cybernetic Legs upgrade showing the incorrect model in regards to the Charged Particle Beam weapon -->
+<!-- Added Cybernetic Legs upgrade sound -->
 <!-- Changed Weapon Category from GUN to CANNON -->
 	<Tags></Tags>
 	<Includes>
@@ -113,7 +115,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_3 WEAPONSET_PLAYER_UPGRADE">
 					<Model
-						Name="NUEnlightened_SKN" />
+						Name="NUEnlightenedU_SKN" />
 					<Texture
 						Original="NUEnlightened"
 						New="NUEnlightened_UGCL" />
@@ -126,7 +128,7 @@
 					ConditionsYes="USER_3">
 					
 					<Model
-						Name="NUEnlightenedU_SKN" />
+						Name="NUEnlightened_SKN" />
 					<Texture
 						Original="NUEnlightened"
 						New="NUEnlightened_UGCL" />
@@ -612,6 +614,9 @@
 				AttributeModifier="AttributeModifier_CyberneticLegs">
 				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>
 			</AttributeModifierUpgrade>
+			<AudioLoopUpgrade id="NOD_CyberneticLegs_Upgrade" SoundToPlay="AudioEvent:NOD_CyberneticLegs_Upgrade">
+				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>
+			</AudioLoopUpgrade> 	
 		</Behaviors>
 		<AI>
 			<AIUpdate

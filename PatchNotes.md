@@ -94,7 +94,7 @@
 			* BH/MOK Laser Cannon (- Laser Capacitor)
 			* BH Shredder Turret (+ Charged Particle Beams)
 			* MOK Shredder Turret (+ Super Charged Particle Beams)
-			* MOK Enlightened (- Railgun, + Super Charged Particle Beams)
+			* MOK Enlightened (- Railgun, + Cybernetic Legs)
 			* MOK Militant Rocket Squad (- Confessor, - Black Disciple)
 			* Scrin/R17/T59 Mechapede (- Forcefield Generator)
 			* T59 Annihilator Tripod (- Forcefield Generator)
@@ -927,6 +927,8 @@
 	* Swapped weapon mesh for Charged Particle Beam, upgraded model now has Low LOD version
 4. Will prioritise infantry over vehicles
 	* Changed Weapon Category from GUN to CANNON
+5. Cybernetic Legs upgrades swaps the model of the Charged Particle Beam weapon (Stock <--> Upgraded)
+	* Swapped model used for upgrade Model Conditions
 #### Commando
 1. Has directional armor allowing it to take extra damage from the side and back. Typically infantry do not have directional armor penalties
 	* Remove Directional Armor Penalty
