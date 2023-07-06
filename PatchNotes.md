@@ -1338,6 +1338,9 @@
 5. Traveler Engine Particle Effects source from the center instead of the rear
 	* Created a new bone that is positioned at the rear for the particle effects
 		* Traveler Engine Mesh now reference this bone
+#### Drone Platform
+1. Structure on it's own is not considered a 'base', which is inconsistent to the Construction Yards from GDI and Nod which are considered bases on their own.
+	* Increased Campness value from default (2000) to 5000, which is the campness value used in GlobalDefines specifically for ConYards
 #### Extractor
 1. Harvester spawn and rally point are based on the GDI Refinery which are not representative of the Extractor
 	* Changed spawn and rally point in QueueProductionExitUpdate based on the Bone Locations

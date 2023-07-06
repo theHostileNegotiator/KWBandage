@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Give ConYard CampnessValue -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:ABDronePlat.w3x" />
@@ -18,11 +19,11 @@
 		EnergyProduction="10"
 		CommandSet="AlienDronePlatformCommandSet"
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS CONSTRUCTION_YARD FS_FACTORY AUTO_ACQUIRABLE_BY_AI NOT_AUTOACQUIRABLE COVER AUTO_RALLYPOINT PROJECT_BUILDABILITY_FOR_ALLIES"
+		CampnessValue="5000"
 		RadarPriority="STRUCTURE"
 		EditorName="AlienDronePlatform"
 		Description="Desc:ALIENDronePlatform"
 		TypeDescription="Type:AlienDronePlatform"
-		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">
 		<DisplayName

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Refer to Scrin Drone Platform -->
 	<Tags></Tags>
-	<Includes>
-	</Includes>
+	<Includes></Includes>
 	<GameObject
 		id="Traveler59DronePlatform"
 		inheritFrom="AlienDronePlatform"
@@ -16,11 +16,11 @@
 		EnergyProduction="10"
 		CommandSet="Traveler59DronePlatformCommandSet"
 		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS CONSTRUCTION_YARD FS_FACTORY AUTO_ACQUIRABLE_BY_AI NOT_AUTOACQUIRABLE COVER AUTO_RALLYPOINT PROJECT_BUILDABILITY_FOR_ALLIES"
+		CampnessValue="5000"
 		RadarPriority="STRUCTURE"
 		EditorName="Traveler59DronePlatform"
 		Description="Desc:Traveler59DronePlatform"
 		TypeDescription="Type:Traveler59DronePlatform"
-		CampnessValue="2000"
 		CampnessValueRadius="300"
 		UnitCategory="STRUCTURE">
 		<DisplayName
