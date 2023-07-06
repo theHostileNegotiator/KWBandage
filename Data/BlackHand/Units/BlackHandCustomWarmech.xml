@@ -8,6 +8,7 @@
 <!-- Fixed FP model -->
 <!-- Adjusted Texture to match more with the Avatar -->
 <!-- Added footstep sound effects for Avatar 3rd Walk animation -->
+<!-- Replace death FX with Purifier version (Sound) -->
 	<Includes>
 		<Include type="all" source="ART:NUPurifier_FP.w3x" />
 		<Include type="all" source="ART:NUPurifier.xml" />
@@ -1094,14 +1095,6 @@
 				id="ModuleTag_Physics" />
 			<ProductionUpdate
 				id="ModuleTag_ProductionUpdate" />
-			<FXListBehavior
-				id="ModuleTag_FXList">
-				<DieMuxData
-					DeathTypes="ALL" />
-				<Event
-					Index="onDeath"
-					FX="FX_NOD_AvatarExplodeWithVoice" />
-			</FXListBehavior>
 			<DestroyDie
 				id="ModuleTag_DestroyDie">
 				<DieMuxData
@@ -1149,6 +1142,14 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_NOD_PurifierExplodeWithVoice" />
+			</FXListBehavior>
 			<ModelConditionUpgrade
 				id="ModuleTag_BlackHandNormalFlameUpgrade"
 				AddConditionFlags="USER_8">
@@ -1212,9 +1213,6 @@
 				<DieMuxData
 					DeathTypes="ALL" />
 			</CreateObjectDie>
-			<AudioLoopUpgrade id="NOD_PurifyingFlame_Upgrade" SoundToPlay="Multisound:NOD_PurifyingFlame_UpgradeMS">
-				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
-			</AudioLoopUpgrade>
 			<AttributeModifierAuraUpdate
 				id="ModuleTag_AttributeModifierAuraUpdate"
 				AttributeModifierName="Confessor_Militant_AttributeModifier"
@@ -1228,6 +1226,9 @@
 					Exclude="HORDE">
 				</ObjectFilter>
 			</AttributeModifierAuraUpdate>
+			<AudioLoopUpgrade id="NOD_PurifyingFlame_Upgrade" SoundToPlay="Multisound:NOD_PurifyingFlame_UpgradeMS">
+				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
+			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate

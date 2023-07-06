@@ -1015,22 +1015,24 @@
 #### Purifier
 1. Will randomly play Avatar voice sounds. (This is due to inheriting NOD Avatar and not removing sounds)
 	* Removed Avatar sound
-2. Flame weapon would not display Purifying Flame upgrade
+2. Uses Avatar death sounds, despite Purifier death sounds being available
+	* Created a copy of the Avatar death FX, referencing Purifier death voice instead.
+3. Flame weapon would not display Purifying Flame upgrade
 	* Added Upgraded Flame Tank texture
-3. Flame Weapon does not do extra damage to structures compared to the Avatar
+4. Flame Weapon does not do extra damage to structures compared to the Avatar
 	* Added Damage Scalar to weapons
-4. Flame weapon particle effects would still be used when EMPed
+5. Flame weapon particle effects would still be used when EMPed
 	* Added new state to disable particle effects when EMPed
-5. Formation Preview shows all upgrade objects instead of only the Flame object
+6. Formation Preview shows all upgrade objects instead of only the Flame object
 	* Adjusted Formation Preview Model.
 		* Changed model stance to be more like the Avatar
-6. Textures used is based of outdated Avatar texture
+7. Textures used is based of outdated Avatar texture
 	* Updated textures to better match the Avatar
-7. Heavy Damaged and Husks would look damaged, but the Flame attachment would look pristine
+8. Heavy Damaged and Husks would look damaged, but the Flame attachment would look pristine
 	* Applied texture swap to the Flame texture, for the Husk the textures replaced for damaged ones in the model
-8. The 3rd (C) walk animation in missing sound effects for footsteps
+9. The 3rd (C) walk animation in missing sound effects for footsteps
 	* Added footstep sound effects for "NUMECH_WLKC" animation
-9. Unit is supposed to have sound effects for death animations as seen in the GameObject file
+10. Unit is supposed to have sound effects for death animations as seen in the GameObject file
 	* Moved Animation sound effects to the Husk GameObject
 #### Redeemer
 1. Had an issue when NOD Confessor or BH Black Disciple are the last member of an upgraded squad of NOD Militants, BH Confessor Squad or Militant Squad entering the Redeemer will cause the unit to freeze

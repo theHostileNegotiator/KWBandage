@@ -35,6 +35,59 @@
 			<Sound Value="Multisound:VehicleExplosionSmallMS" />
 		</NuggetList>
 	</FXList>
+
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+	<FXList id="FX_NOD_PurifierExplodeWithVoice">
+		<NuggetList>
+			<ParticleSystem
+				Particle="TeraSparkBlastA"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="-0.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="AvatarExplodeFlash2"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="30.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="AvatarExplodeBlueSpark"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="30.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TeraDistortBlastA"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="30.0"/>
+			</ParticleSystem>
+
+			<ParticleSystem
+				Particle="GDIMammothExplodeDistortion">
+				<Offset x="0.0" y="0.0" z="15.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="GDIMammothExplodeFire">
+				<Offset x="0.0" y="0.0" z="15.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="GDIMammothExplodeFlash">
+				<Offset x="0.0" y="0.0" z="15.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="GDIMammothExplodeGlow">
+				<Offset x="0.0" y="0.0" z="15.0"/>
+			</ParticleSystem>
+
+			<TerrainScorch
+				Type		= "RANDOM"
+				Weather		= "NORMAL"
+				Radius		= "25" >
+				<RandomRange Low="SCORCH_9"
+							 High="SCORCH_16" />
+			</TerrainScorch>			
+			<Sound Value="AudioEvent:NOD_Purifier_VoiceDie" />
+			<Sound Value="Multisound:VehicleExplosionSmallMS" />
+		</NuggetList>
+	</FXList>
 	
 <!-- ++++ SAM Defense Upgraded Weapon +++++++++++++++++++++++++++++++++++++++ -->
 	<FXList id="FX_NOD_RocketBunker_TibCoreMissileFire">
