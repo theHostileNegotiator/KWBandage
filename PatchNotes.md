@@ -744,6 +744,8 @@
 	* Changed shader to ObjectsGDI.fx
 4. A Hardpoint subobject would appear in REALLYDAMAGED state when upgrade hasn't been purchased
 	* Fixed typo; renamed subobject UG_HARDPOINTS03Z to UG_HARDPOINTS03
+5. When destroyed, the animation of parking spaces is only dependent on the first parking space instead of it's own, leading to inconsistent visuals
+	* DYING Animation States for each Parking Space Draw references PARKINGPLACE_1, changed it to the appropriate PARINGPLACE_#.
 #### Armory
 1. If owning both GDI and ZOCOM armory and upgraded Composite Armor, subobject will be showed on both despite ZOCOM not having access. It also overlaps Field Suits subobject
 	* Removed Composite Armor upgrade references from ZOCOM Armory

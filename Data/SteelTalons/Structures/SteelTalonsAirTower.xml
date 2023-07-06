@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Upgrade SubObjects will no longer appear when Structure is a cursor-->
-<!--AI will now use Steel Talons BloodHounds-->
+<!-- Refer to GDI Airfield -->
+<!-- AI will now use Steel Talons BloodHounds -->
 	<GameObject
 		id="SteelTalonsAirTower"
 		SelectPortrait="Portrait_GDIAirfield"
@@ -314,7 +314,7 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING PARKINGPLACE_1_DOOR_OPEN">
+					ConditionsYes="DYING PARKINGPLACE_3_DOOR_OPEN">
 					<Model
 						Name="GBAirDoor02_SKN" />
 					<Texture
@@ -346,7 +346,7 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING PARKINGPLACE_1_DOOR_OPEN">
+					ConditionsYes="DYING PARKINGPLACE_3_DOOR_OPEN">
 					<Animation
 						AnimationName="GBAirDoor_OPNS"
 						AnimationMode="ONCE" />
@@ -423,7 +423,7 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING PARKINGPLACE_1_DOOR_OPEN">
+					ConditionsYes="DYING PARKINGPLACE_2_DOOR_OPEN">
 					<Model
 						Name="GBAirDoor03_SKN" />
 					<Texture
@@ -455,7 +455,7 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING PARKINGPLACE_1_DOOR_OPEN">
+					ConditionsYes="DYING PARKINGPLACE_2_DOOR_OPEN">
 					<Animation
 						AnimationName="GBAirDoor_OPNS"
 						AnimationMode="ONCE" />
@@ -532,7 +532,7 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING PARKINGPLACE_1_DOOR_OPEN">
+					ConditionsYes="DYING PARKINGPLACE_4_DOOR_OPEN">
 					<Model
 						Name="GBAirDoor04_SKN" />
 					<Texture
@@ -564,7 +564,7 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING PARKINGPLACE_1_DOOR_OPEN">
+					ConditionsYes="DYING PARKINGPLACE_4_DOOR_OPEN">
 					<Animation
 						AnimationName="GBAirDoor_OPNS"
 						AnimationMode="ONCE" />
