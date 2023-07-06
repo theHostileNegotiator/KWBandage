@@ -84,6 +84,7 @@
 			* ZOCOM Firehawk (+ Ceramic Armor)
 			* ZOCOM Guardian Cannon (- Railgun)
 			* NOD/BH/MOK SAM Turret (- Railgun, + Tiberium Core Missiles)
+			* NOD Confessor (+ Tiberium Infusion)
 			* NOD/MOK Avatar (- Purifying Flame)
 			* NOD Black Hand (- Purifying Flame)
 			* NOD Flame Tank (- Purifying Flame)
@@ -1146,6 +1147,11 @@
 	* Added Upgrade_TiberiumInfusion in WorldMapArmoryUpgradesAllowed
 6. Upgrade sound effect is applied to infantry members instead of the squad
 	* Removed upgrade sound effect from members to the squad units
+7. Unit does not fully benefit from Tiberium Infusion, missing the Health and Speed buff
+	* Added Attribute Modifier Upgrade to the Confessor
+8. The Bonus is not applied constantly, missing aproximately 4.5 seconds
+	* Reduced Attribute Modifier Aura Refresh Rate to 1 second to match the other units that provide the buff
+		* This is due to using TW timings where the Attribute Modifier duration was 6 seconds, which was changed in KW to 1.5 seconds
 #### Black Disciple
 1. Black Disciple can be upgraded with Purifying Flame. This is an issue as it would mean that Confessor Cabals have access to 3 Tech Upgrades (Charged Particle Beams + Black Disciples) where the max is 2
 	* Remove Purifying Flame upgrade to Black Disciples to ensure max tech upgrade of 2

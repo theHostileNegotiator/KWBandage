@@ -4,8 +4,11 @@
 <!-- Removed Charged Particle Beams Upgrade -->
 <!-- Changed Weapon Category from NONE to GUN -->
 <!-- Given Infantry Status -->
+<!-- Tiberium Infusion will now grant Health and Speed bonus -->
+<!-- Added sounds for Tiberium Infusion upgrade -->
 <!-- Now benefit from Tiberium Infusion when contained in an Upgraded Strike Force in Global Conquest -->
-  <GameObject
+<!-- Update Attribute Modifier Aura RefreshDelay for KW updated duration (6s, 5s -> 1.5s, 1s) -->
+	<GameObject
 		id="NODConfessor"
 		SelectPortrait="Portrait_NODConfessor"
 		ButtonImage="Portrait_NODConfessor"
@@ -585,10 +588,6 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="NODConfessorMinigun" />
 					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODConfessorChargedParticleBeam"
-						ObjectStatus="WEAPON_UPGRADED_01" />		
-					<Weapon
 						Ordering="SECONDARY_WEAPON"
 						Template="NODConfessorGrenade" />
 				</WeaponSlotHardpoint>
@@ -609,7 +608,7 @@
 			<AttributeModifierAuraUpdate
 				id="ModuleTag_AttributeModifierAuraUpdate"
 				AttributeModifierName="Confessor_Militant_AttributeModifier"
-				RefreshDelay="5.0s"
+				RefreshDelay="1.0s"
 				Range="300"
 				AffectHordeMembersOnly="true"
 				InitiallyActive="true">
@@ -628,6 +627,11 @@
 				id="LGAU">
 				<Key>NOD_Confessor</Key>
 			</LargeGroupAudioUpdate>
+			<AttributeModifierUpgrade
+				id="Upgrade_TiberiumInfusion"
+				AttributeModifier="AttributeModifier_TiberiumInfusion">
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
+			</AttributeModifierUpgrade>
 	    <!--Tiberium Infusion Armor Upgrade-->
 			<ArmorUpgrade
 				id="Upgrade_TiberiumInfusionArmor"
@@ -640,6 +644,11 @@
 				StatusToSet="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
+			<AudioLoopUpgrade
+				id="TiberiumInfusionUpgradeSound"
+				SoundToPlay="AudioEvent:NOD_TiberiumUpgrade">
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
+			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate
