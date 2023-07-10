@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xai="uri:ea.com:eala:asset:instance">
+<!-- Optimize object, remove BaseVehicle inheritance -->
+	<Tags></Tags>
+	<Includes></Includes>
+	<GameObject
+		id="NODShadowSquadBeacon"
+		SelectPortrait="Portrait_ShadowSquadBeacon"
+		ButtonImage="Portrait_ShadowSquadBeacon"
+		Side="NOD"
+		EditorSorting="UNIT"
+		CommandSet="EmptyCommandSet"
+		KindOf="SELECTABLE RESIST_EMP IGNORES_SELECT_ALL TARGETABLE IMMOBILE"
+		EditorName="NODShadowSquadBeacon"
+		Description="Desc:NODShadowSquadBeacon"
+		TypeDescription="Type:NODShadowSquadBeacon">
+		<DisplayName
+			xai:joinAction="Replace" xmlns:xai="uri:ea.com:eala:asset:instance">Name:NODShadowSquadBeacon</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<LocomotorSet
+			Locomotor="HumanLocomotor"
+			Condition="NORMAL"
+			Speed="0.0" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="NUBBeacon" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="Shocker"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="Shocker2"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="Shocker3"
+						FollowBone="true" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="Shocker4"
+						FollowBone="true" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<Physics
+				id="ModuleTag_Physics" />
+			<LifetimeUpdate
+				id="ModuleTag_Lifetime"
+				DeathType="FADED"
+				MinLifetime="120s"
+				MaxLifetime="120s" />	
+			<DestroyDie
+				id="ModuleTag_DestroyDie">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>		
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_Nod_ShadowBeaconExplosion" />
+			</FXListBehavior>
+			<ProductionUpdate
+				id="ModuleTag_ProductionUpdate"
+				GiveNoXP="true" />
+			<InvisibilityUpdate
+				id="ModuleTag_NODShadowBeaconInvisibility"
+				UpdatePeriod="0.2s"
+				Options="STARTS_ACTIVE"
+				OpacityMin="30%"
+				OpacityMax="100%">
+				<InvisibilityNugget
+					EnteringStealthFX="FX_NODStealthTransitionOn"
+					LeavingStealthFX="FX_NODStealthTransitionOff" />			
+			</InvisibilityUpdate>
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"
+				AutoAcquireEnemiesWhenIdle="YES"
+				AILuaEventsList="NODShadowSquadBeaconFunctions">
+				<UnitAITargetChooserData
+					CanPickDynamicTargets="false"
+					SympathyRange="100.0" />
+			</AIUpdate>
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_ActiveBody"
+				MaxHealth="25.0" />
+		</Body>
+		<Geometry
+			IsSmall="false">
+			<Shape
+				Type="BOX"
+				MajorRadius="20.0"
+				MinorRadius="20.0"
+				Height="13.0"></Shape>
+		</Geometry>
+		<AudioArrayVoice>
+			<AudioEntry Sound="AudioEvent:NOD_Shadow_ArtilleryBeaconSelect" AudioType="voiceSelect" />
+		</AudioArrayVoice>
+		<VisionInfo
+			VisionRange="350"
+			ShroudClearingRange="400" />
+		<CrusherInfo
+			CrushableLevel="0" />
+	</GameObject>
+</AssetDeclaration>

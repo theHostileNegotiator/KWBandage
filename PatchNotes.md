@@ -924,6 +924,8 @@
 	* Increased Shadows speed so it is faster than the squad speed
 2. Most members of the squad will attempt to fire their weapon outside of the max range after KW 1.02
 	* Reduced range of 'range finder' from 225-175 so squad will fully enter into range of their weapons (1.02 Patch refers to weapon range, not squad range)
+3. Beacon has behaviors typically attributed to units such as scoring, has BaseVehicle modules, cost and build times
+	* Removed Vehicle inheritance and changed KindOf flags, optimised the object to be more of a prop
 #### Enlightened
 1. One of the Transition to idle animation can cause the EMP weapon to detatch from the model
 	* Removed problematic and unnecessary animations channels relating to the EMP weapon bone

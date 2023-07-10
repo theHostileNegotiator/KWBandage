@@ -59,6 +59,8 @@
 		<Include type="all" source="Props/NODBlackHandFlamerProjectile.xml" />	
 		<Include type="all" source="Props/NODBunkerTruckStructurePrevention.xml" />	
 		<Include type="all" source="Props/NODNukeSeed.xml" />	
+		<Include type="all" source="Props/NODShadowSquadBeacon.xml" />	
+		<Include type="all" source="Props/NODShadowSquadBeaconProjectile.xml" />	
 		<Include type="all" source="Props/NODVeinDetonation.xml" />	
 		<Include type="all" source="Props/NODVertigoBombProjectile.xml" />	
 		<Include type="all" source="Props/NODVertigoDisruptionPod.xml" />	

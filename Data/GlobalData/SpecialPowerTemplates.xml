@@ -491,7 +491,8 @@
 		</ObjectFilter>
 		<GameDependency>
 			<ObjectFilter
-				Relationship="ALLIES">
+				Relationship="ALLIES"
+				Rule="NONE">
 				<IncludeThing>NODShadowSquadBeacon</IncludeThing>
 			</ObjectFilter>
 		</GameDependency>
