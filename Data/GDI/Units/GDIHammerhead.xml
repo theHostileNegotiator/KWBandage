@@ -9,6 +9,7 @@
 <!-- Added Status Upgrade WEAPON_UPGRADED_02 for missing factions for Non Veterancy -->
 <!-- Fixed FP Mesh Sorting -->
 <!-- Fixed Turret Bones -->
+<!-- Move firing sounds from tracers to Weapon Template -->
 	<Includes>
 		<Include type="all" source="ART:GUHamhead_ACC.w3x" />
 		<Include type="all" source="ART:GUHamhead_ATKA.w3x" />
@@ -432,8 +433,8 @@
 				WeaponSlotID="1"
 				Texture="FXTracerGDI"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDI"
-				TracerEmitFx="FX_GDI_HammerheadGunFire">
+				TracerHitFx="FX_BulletHitGDI">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFire" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -463,8 +464,8 @@
 				WeaponSlotID="1"
 				Texture="FXTracerHeroic"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIHeroic"
-				TracerEmitFx="FX_GDI_HammerheadGunFire">
+				TracerHitFx="FX_BulletHitGDIHeroic">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFire" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -495,8 +496,8 @@
 				WeaponSlotID="1"
 				Texture="FXTracerGDIAPAmmo"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIAP"
-				TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded">
+				TracerHitFx="FX_BulletHitGDIAP">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -527,8 +528,8 @@
 				WeaponSlotID="1"
 				Texture="FXTracerGDIAPAmmoHeroic"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIAPHeroic"
-				TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded">
+				TracerHitFx="FX_BulletHitGDIAPHeroic">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -560,8 +561,8 @@
 				WeaponSlotID="2"
 				Texture="FXTracerGDI"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDI"
-				TracerEmitFx="FX_GDI_HammerheadGunFire">
+				TracerHitFx="FX_BulletHitGDI">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFire" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -591,8 +592,8 @@
 				WeaponSlotID="2"
 				Texture="FXTracerHeroic"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIHeroic"
-				TracerEmitFx="FX_GDI_HammerheadGunFire">
+				TracerHitFx="FX_BulletHitGDIHeroic">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFire" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -623,8 +624,8 @@
 				WeaponSlotID="2"
 				Texture="FXTracerGDIAPAmmo"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIAP"
-				TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded">
+				TracerHitFx="FX_BulletHitGDIAP">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -655,8 +656,8 @@
 				WeaponSlotID="2"
 				Texture="FXTracerGDIAPAmmoHeroic"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIAPHeroic"
-				TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded">
+				TracerHitFx="FX_BulletHitGDIAPHeroic">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"

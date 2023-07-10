@@ -718,6 +718,8 @@
 7. Turrets do not rotate, only pitch
 	* Fixed Skeleton, adding separate turret and pitch bones
 		* Adjusted animations, turrets have more appropriate neutral position when attacking and slight pitch down in other animation states
+8. Firing sound effects come from weapon tracers rather than the weapon barrel
+	* Remove sound effects from TracerDraws and add it to the WeaponTemplate
 #### FireHawk
 1. Contrails show when in Formation Preview and when Stratofighing
 	* Changed how draws work. Particle Effects will not show under specific conditions, use PARSE_NORMAL Condition "NONE" instead of PARSE_DEFAULT

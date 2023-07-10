@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!--Refer to GDI Hammerhead-->
-<!--Added Specular and Normal map for Ceramic Armor-->
-<!--Added upgrade sound for Ceramic Armor-->
+<!-- Refer to GDI Hammerhead -->
+<!-- Added Specular and Normal map for Ceramic Armor -->
+<!-- Added upgrade sound for Ceramic Armor -->
 <!-- Added Damaged Texture for Ceramic Armor -->
 	<Includes>
 		<Include type="all" source="ART:GUHamhead_UGCA_NRM.xml" />
@@ -457,8 +457,8 @@
 				WeaponSlotID="1"
 				Texture="FXTracerGDI"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDI"
-				TracerEmitFx="FX_GDI_HammerheadGunFire">
+				TracerHitFx="FX_BulletHitGDI">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFire" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -488,8 +488,8 @@
 				WeaponSlotID="1"
 				Texture="FXTracerHeroic"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIHeroic"
-				TracerEmitFx="FX_GDI_HammerheadGunFire">
+				TracerHitFx="FX_BulletHitGDIHeroic">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFire" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -520,8 +520,8 @@
 				WeaponSlotID="1"
 				Texture="FXTracerGDIAPAmmo"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIAP"
-				TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded">
+				TracerHitFx="FX_BulletHitGDIAP">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -552,8 +552,8 @@
 				WeaponSlotID="1"
 				Texture="FXTracerGDIAPAmmoHeroic"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIAPHeroic"
-				TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded">
+				TracerHitFx="FX_BulletHitGDIAPHeroic">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -568,6 +568,7 @@
 					RequiredStatus="WEAPON_UPGRADED_01"
 					ForbiddenStatus="WEAPON_UPGRADED_02"/>
 			</TracerModelDraw>	
+			
 			<TracerModelDraw
 				id="ModuleTag_TracerModelDrawGun2"
 				MinLength="50.0"
@@ -584,8 +585,8 @@
 				WeaponSlotID="2"
 				Texture="FXTracerGDI"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDI"
-				TracerEmitFx="FX_GDI_HammerheadGunFire">
+				TracerHitFx="FX_BulletHitGDI">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFire" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -615,8 +616,8 @@
 				WeaponSlotID="2"
 				Texture="FXTracerHeroic"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIHeroic"
-				TracerEmitFx="FX_GDI_HammerheadGunFire">
+				TracerHitFx="FX_BulletHitGDIHeroic">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFire" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -647,8 +648,8 @@
 				WeaponSlotID="2"
 				Texture="FXTracerGDIAPAmmo"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIAP"
-				TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded">
+				TracerHitFx="FX_BulletHitGDIAP">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -679,8 +680,8 @@
 				WeaponSlotID="2"
 				Texture="FXTracerGDIAPAmmoHeroic"
 				UseAdditiveBlending="true"
-				TracerHitFx="FX_BulletHitGDIAPHeroic"
-				TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded">
+				TracerHitFx="FX_BulletHitGDIAPHeroic">
+				<!-- TracerEmitFx="FX_GDI_HammerheadGunFireUpgraded" -->
 				<HeadColor
 					r="1.0"
 					g="1.0"
@@ -694,7 +695,7 @@
 				<ObjectStatusValidation
 					RequiredStatus="WEAPON_UPGRADED_01"
 					ForbiddenStatus="WEAPON_UPGRADED_02"/>
-			</TracerModelDraw>		
+			</TracerModelDraw>	
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate 

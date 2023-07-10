@@ -2083,11 +2083,13 @@
 
 <!-- Use UNLIMITED_CLIP_SIZE instead -->
 <!-- Improve targeting behaviour, Reacquire per Clip instead of per Shot -->
+<!-- Move firing sounds to here from tracers -->
 	<WeaponTemplate
 		id="GDIHammerheadChaingun"
 		Name="GDIHammerheadChaingun"
 		AttackRange="300.0"
 		WeaponSpeed="999999.0"
+		FireSoundPerClip="AudioEvent:GDI_Hammerhead_gunFire"
 		FireFX="FX_GDIHammerheadChaingunAP"
 		FireVeteranFX="FX_GDIHammerheadChaingunAPHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -2123,6 +2125,7 @@
 		Name="GDIHammerheadUpgradedChaingun"
 		AttackRange="300.0"
 		WeaponSpeed="999999.0"
+		FireSoundPerClip="AudioEvent:GDI_Hammerhead_gunFireUpgraded"
 		FireFX="FX_GDIHammerheadChaingunAP"
 		FireVeteranFX="FX_GDIHammerheadChaingunAPHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
