@@ -75,6 +75,7 @@
 			* ST Rifleman (- Composite Armor)
 			* ST Missile Squad (- Composite Armor)
 			* ST Grenadier (- Composite Armor, - EMP Grenades)
+			* ST Wolverine (+ AP Ammo)
 			* ZOCOM Shatterer (- Railgun)
 			* ZOCOM Rifleman (+ Tiberium Field Suits)
 			* ZOCOM Missile Squad (+ Tiberium Field Suits)
