@@ -812,6 +812,8 @@
 #### Ion Cannon Control Center
 1. Animations don't play properly when firing the Ion Cannon
 	* Changed how the Animations work, changing Conditions and using Transition animations and increased PackTime to 8 seconds so the Satellite stays open throughout the entire Ion Cannon animation
+2. Damage impact effects are different compared to other structures
+	* Uses default Damage Effects, changed in the ArmorSet to use FactionStructureDamageFX instead
 #### Scanner Pack
 1. After the scanner packs upgrade, Unit will not aproach the range to fire their weapon. In fact they will continue their running animation but will not move.
 	* Allowed scanner pack to upgrade weapon range

@@ -34,7 +34,8 @@
 			<RequiredObject>ZOCOMArmory</RequiredObject>
 		</GameDependency>
 		<ArmorSet
-			Armor="GDIIonCannonControlArmor" />
+			Armor="GDIIonCannonControlArmor"
+			DamageFX="FactionStructureDamageFX" />
 		<ArmorSet
 			Conditions="PLAYER_UPGRADE"
 			Armor="GDIIonCannonControlSonicRepulsionFieldArmor"
