@@ -1382,6 +1382,9 @@
 #### Blue Shards
 1. Heroic units with upgrade, projectile impacts are green instead of blue
 	* Fixed FXList FX_AlienTibShardHitBlueHeroic and FX_AlienTibShardHitBlueHeroicBuilding to reference Blue effects instead of Green.
+#### Tiberium Vibration
+1. Reaper 17 variant play sounds twice.
+	* Set attribute for SpecialPower Update Module "ModuleTag_TiberiumVibrationScan" UpdateModuleStartsAttack to "true"
 #### Infestation
 1. The Tiberium Hive when destroyed will spawn a Buzzer. This does not happen with the Lightning Spike
 	* For consistency, Buzzers will no longer spawn when Tiberium Hive is destroyed

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Buzzer Swarm spawns R17 Buzzers-->
+<!-- Buzzer Swarm spawns R17 Buzzers -->
+<!-- Tiberium Vibration Scan no longer plays sound twice -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -312,7 +313,8 @@
 			</CreateObjectDie>
 			<SpecialPower
 				id="ModuleTag_TiberiumVibrationScan"
-				SpecialPowerTemplate="SpecialPower_Reaper17TiberiumVibrationScan"/>
+				SpecialPowerTemplate="SpecialPower_Reaper17TiberiumVibrationScan"
+				UpdateModuleStartsAttack="true" />
 			<RadarScanMapSpecialAbilityUpdate
 				id="ModuleTag_TiberiumVibrationScanUpdate"
 				SpecialPowerTemplate="SpecialPower_Reaper17TiberiumVibrationScan"
