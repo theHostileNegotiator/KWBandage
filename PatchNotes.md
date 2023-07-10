@@ -610,6 +610,8 @@
 	* Added DYING Model Condition State to have no Particle Systems.
 6. Particle Effects appear in Formation Preview
 	* Adjusted Draw to prevent FX in appearing in Formation Preview
+7. Tungsten Weapon uses AA Battery firing sounds instead of it's own like the stock weapon
+	* Change upgraded weapon to use the same sound effects as the stock weapon
 #### Shatterer
 1. AI will not use the Unit
 	* Added ConquerMetricsOverride for DPS and Damage Type to 300 and CANNON
