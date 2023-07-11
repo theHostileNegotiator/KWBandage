@@ -506,6 +506,9 @@
 #### Surveyor
 1. Subfaction Surveyors when unpacking would create GDI Outpost instead of their own
 	* Packing and unpacking will now create the corresponding faction version
+#### Combat Engineer
+1. Does not properly animate transitioning into supression state
+	* Fix Animation Script error in the SUPPRESSED state
 #### Grenadier Squad
 1. AI will not use EMP Grenades ability
 	* Added modules that will allow them to use it

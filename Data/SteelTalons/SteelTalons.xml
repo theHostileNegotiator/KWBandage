@@ -5,6 +5,7 @@
 		<Include type="all" source="Units/SteelTalonsAAScout.xml" />
 		<Include type="all" source="Units/SteelTalonsBehemoth.xml" />
 		<Include type="all" source="Units/SteelTalonsBehemothHusk.xml" />
+		<Include type="all" source="Units/SteelTalonsCombatEngineer.xml" />
 		<Include type="all" source="Units/SteelTalonsFirehawk.xml" />
 		<Include type="all" source="Units/SteelTalonsGrenadeSoldier.xml" />
 		<Include type="all" source="Units/SteelTalonsGrenadeSoldierSquad.xml" />
