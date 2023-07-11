@@ -1140,6 +1140,8 @@
 	* Damage is dealt from the death of Missile seed object instead of using a Delay in the weapon nugget of the launch weapon
 2. Nuke does no damage when fired and then Stasis
 	* Above fix solves this issue
+3. Master Computer Countermeasures is only supposed to remove the EMP effect from Structures as per description and hinted in code, yet it also affects Vehicles
+	* Fixed object filter to properly only affect structures
 #### Tiberium Infusion
 1. Upgrade removes Militant Rockets and Fanatics extra GUN damage type vulnerability
 	* Added the extra damage from GUN to Tiberium Infusion Armor (Created new armor for Militant Rocket)

@@ -4183,6 +4183,28 @@
 			</DamageContainedNugget>
 		</Nuggets>
 	</WeaponTemplate>
+
+<!-- Fix filter to only affect structures -->
+	<WeaponTemplate
+		id="ComputerCounterMeasures"
+		Name="ComputerCounterMeasures" >
+		<Nuggets>
+			<!-- This one only matters in multiplayer NOD vs. NOD games -->
+			<InformationWarfareNugget
+				InfoWarType="RESET_RADAR_ALL" />
+			<ParalyzeNugget
+				RemoveParalyzeType="EMP"
+				Radius="50000"
+				DurationSeconds="1s">
+				<!-- only work on this player's structures -->
+				<SpecialObjectFilter
+					Rule="NONE"
+					Relationship="SAME_PLAYER"
+					Include="STRUCTURE"
+					Exclude="UNATTACKABLE"/>
+			</ParalyzeNugget>
+		</Nuggets>
+	</WeaponTemplate>
 	
 <!-- Nuclear Missile will no longer affect units that exits the blast radius -->
 <!-- Will deal damage even if structure is under stasis field -->
