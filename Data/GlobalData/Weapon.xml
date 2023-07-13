@@ -1894,6 +1894,97 @@
 				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
+<!-- New Railgun Accelerator Version -->
+	<WeaponTemplate
+		id="GDIBattleBaseRailgun01_Accelerated"
+		Name="GDIBattleBaseRailgun01_Accelerated"
+		AttackRange="350.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="800"
+		WeaponRecoil="0d"
+		FireSound="Multisound:GDI_GuardianCannon_FireUpgradedMS"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		ShotsPerBarrel="1"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="0.4s"
+			MaxSeconds="0.4s" />
+		<ClipReloadTime
+			MinSeconds="0.75s"
+			MaxSeconds="0.75s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.75s"
+				LaserId="1"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="670.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "50%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+			</DamageNugget>
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="40"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="GDIBattleBaseRailgun02_Accelerated"
+		Name="GDIBattleBaseRailgun02_Accelerated"
+		AttackRange="350.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="800"
+		WeaponRecoil="0d"
+		FireSound="Multisound:GDI_GuardianCannon_FireUpgradedMS"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		ShotsPerBarrel="1"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="0.4s"
+			MaxSeconds="0.4s" />
+		<ClipReloadTime
+			MinSeconds="0.75s"
+			MaxSeconds="0.75s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.75s"
+				LaserId="2"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="670.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "50%">
+					<Filter
+						Rule="NONE"
+						Include="STRUCTURE" />
+				</DamageScalarDetails>
+			</DamageNugget>
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="40"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
 	
 	<WeaponTemplate
 		id="GDIGolemCannonRailgun"
@@ -1930,6 +2021,47 @@
 				DeathType="NORMAL" >
 			</DamageNugget>
 
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="40"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+<!-- New Railgun Accelerator Version -->
+	<WeaponTemplate
+		id="GDIGolemCannonRailgun_Accelerated"
+		Name="GDIGolemCannonRailgun_Accelerated"
+		AttackRange="350.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="800"
+		WeaponRecoil="0d"
+		FireSound="Multisound:GDI_GuardianCannon_FireUpgradedMS"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		ShotsPerBarrel="1"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="0.4s"
+			MaxSeconds="0.4s" />
+		<ClipReloadTime
+			MinSeconds="0.75s"
+			MaxSeconds="0.75s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.75s"
+				LaserId="0"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="670.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" >
+			</DamageNugget>
 			<SuppressionNugget
 				Radius="10.0"
 				Suppression="40"
@@ -2259,7 +2391,8 @@
 		ReAcquireDetailType="PER_CLIP"
 		DisableScatterForTargetsOnWall="true"
 		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
-		AntiMask="ANTI_GROUND" >
+		AntiMask="ANTI_GROUND"
+		ForbiddenFiringObjectStatus="WEAPON_UPGRADED_02">
 		<FiringDuration
 			MinSeconds="0.23s"
 			MaxSeconds="0.23s" />
@@ -2300,7 +2433,8 @@
 		ReAcquireDetailType="PER_CLIP"
 		DisableScatterForTargetsOnWall="true"
 		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
-		AntiMask="ANTI_GROUND" >
+		AntiMask="ANTI_GROUND"
+		ForbiddenFiringObjectStatus="WEAPON_UPGRADED_02">
 		<FiringDuration
 			MinSeconds="0.23s"
 			MaxSeconds="0.23s" />
@@ -2341,7 +2475,8 @@
 		ReAcquireDetailType="PER_CLIP"
 		DisableScatterForTargetsOnWall="true"
 		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
-		AntiMask="ANTI_GROUND" >
+		AntiMask="ANTI_GROUND"
+		ForbiddenFiringObjectStatus="WEAPON_UPGRADED_02">
 		<FiringDuration
 			MinSeconds="0.23s"
 			MaxSeconds="0.23s" />
@@ -2382,13 +2517,183 @@
 		ReAcquireDetailType="PER_CLIP"
 		DisableScatterForTargetsOnWall="true"
 		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
-		AntiMask="ANTI_GROUND" >
+		AntiMask="ANTI_GROUND"
+		ForbiddenFiringObjectStatus="WEAPON_UPGRADED_02">
 		<FiringDuration
 			MinSeconds="0.23s"
 			MaxSeconds="0.23s" />
 		<ClipReloadTime
 			MinSeconds="2.0s"
 			MaxSeconds="2.3s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="3"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="840.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
+	</WeaponTemplate>
+<!-- New Railgun Accelerator Version -->
+	<WeaponTemplate
+		id="MARVZoneTrooperWeapon01_Accelerated"
+		Name="MARVZoneTrooperWeapon01_Accelerated"
+		AttackRange="325.0"
+		MinTargetPitch="-360d"
+		MaxTargetPitch="360d"
+		WeaponSpeed="1250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		RequiredFiringObjectStatus="WEAPON_UPGRADED_02">
+		<FiringDuration
+			MinSeconds="0.11s"
+			MaxSeconds="0.11s" />
+		<ClipReloadTime
+			MinSeconds="1.0s"
+			MaxSeconds="1.15s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="0"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="840.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="MARVZoneTrooperWeapon02_Accelerated"
+		Name="MARVZoneTrooperWeapon02_Accelerated"
+		AttackRange="325.0"
+		MinTargetPitch="-360d"
+		MaxTargetPitch="360d"
+		WeaponSpeed="1250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		RequiredFiringObjectStatus="WEAPON_UPGRADED_02">
+		<FiringDuration
+			MinSeconds="0.11s"
+			MaxSeconds="0.11s" />
+		<ClipReloadTime
+			MinSeconds="1.0s"
+			MaxSeconds="1.15s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="1"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="840.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="MARVZoneTrooperWeapon03_Accelerated"
+		Name="MARVZoneTrooperWeapon03_Accelerated"
+		AttackRange="325.0"
+		MinTargetPitch="-360d"
+		MaxTargetPitch="360d"
+		WeaponSpeed="1250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		RequiredFiringObjectStatus="WEAPON_UPGRADED_02">
+		<FiringDuration
+			MinSeconds="0.11s"
+			MaxSeconds="0.11s" />
+		<ClipReloadTime
+			MinSeconds="1.0s"
+			MaxSeconds="1.15s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="2"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="840.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="MARVZoneTrooperWeapon04_Accelerated"
+		Name="MARVZoneTrooperWeapon04_Accelerated"
+		AttackRange="325.0"
+		MinTargetPitch="-360d"
+		MaxTargetPitch="360d"
+		WeaponSpeed="1250"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		RotatingTurret="true"
+		CanFireWhileMoving="true"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		RequiredFiringObjectStatus="WEAPON_UPGRADED_02">
+		<FiringDuration
+			MinSeconds="0.11s"
+			MaxSeconds="0.11s" />
+		<ClipReloadTime
+			MinSeconds="1.0s"
+			MaxSeconds="1.15s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
@@ -2449,6 +2754,50 @@
 				Rule="NONE"
 				Include="INFANTRY" />
 		</ScatterRadiusVsType>
+	</WeaponTemplate>
+
+<!-- New Railgun Accelerator Version -->
+	<WeaponTemplate
+		id="MammothTankRailCannon_Accelerated"
+		Name="MammothTankRailCannon_Accelerated"
+		AttackRange="300.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="1250"
+		WeaponRecoil="15d"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="2"
+		FireSound="Multisound:GDI_MammothTank_UpgradedCannonFireMS"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		ReAcquireDetailType="PER_CLIP"
+		ShotsPerBarrel="1"
+		DisableScatterForTargetsOnWall="true"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="0.4s"
+			MaxSeconds="0.4s" />
+		<ClipReloadTime
+			MinSeconds="1.35s"
+			MaxSeconds="1.4s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				LaserId="0"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="1200.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="2s" />
+		</Nuggets>
 	</WeaponTemplate>
 	
 <!-- Workaround to allow attacks on Husks -->
@@ -2580,6 +2929,48 @@
 		</Nuggets>
 	</WeaponTemplate>
 
+<!-- New Railgun Accelerator Version -->
+	<WeaponTemplate
+		id="GDIPredatorTankRailgun_Accelerated"
+		Name="GDIPredatorTankRailgun_Accelerated"
+		AttackRange="300.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="800"
+		WeaponRecoil="5d"
+		FireSound="AudioEvent:PredatorCannonFireUpgraded"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		ShotsPerBarrel="1"
+		ReAcquireDetailType="POST_FIRE"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="0.37s"
+			MaxSeconds="0.37s" />
+		<ClipReloadTime
+			MinSeconds="0.8s"
+			MaxSeconds="0.8s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.75s"
+				LaserId="0"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="572.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" >
+			</DamageNugget>
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="40"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
 	
 <!-- Changed Weapon Nuggets to prevent it from being removed when repaired -->
 	<WeaponTemplate
@@ -3026,6 +3417,99 @@
 				</DamageScalarDetails>
 			</DamageNugget>
 		</Nuggets>
+	</WeaponTemplate>
+
+<!-- New Railgun Accelerator Version -->
+	<WeaponTemplate
+		id="TitanCannonRailgun_Accelerated"
+		Name="TitanCannonRailgun_Accelerated"
+		AttackRange="325.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="800"
+		WeaponRecoil="5d"
+		FireSound="PredatorCannonFireUpgraded"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		ClipSize="1"
+		ShotsPerBarrel="1"
+		ReAcquireDetailType="POST_FIRE"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="0.37s"
+			MaxSeconds="0.37s" />
+		<ClipReloadTime
+			MinSeconds="0.8s"
+			MaxSeconds="0.8s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.75s"
+				LaserId="0"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="625.0"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" >
+			</DamageNugget>
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="40"
+				DurationSeconds="5s" />
+		</Nuggets>
+	</WeaponTemplate>
+
+<!-- New Railgun Accelerator Version -->
+	<WeaponTemplate
+		id="ZoneTrooperMachineGun_Accelerated"
+		Name="ZoneTrooperMachineGun_Accelerated"
+		AttackRange="300.0"
+		WeaponSpeed="999999.0"
+		PreAttackType="PER_SHOT"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		FireSound="AudioEvent:ZoneTrooperGunFire"
+		FireFX="FX_RailGunFire"
+		FireVeteranFX="FX_RailGunFireHeroic"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND"
+		CanFireWhileMoving="true"
+		AcceptableAimDelta="10d">
+		<PreAttackDelay
+			MinSeconds="0.0s"
+			MaxSeconds="0.05s" />
+		<FiringDuration
+			MinSeconds="0.9s"
+			MaxSeconds="1.1s" />
+		<ClipReloadTime
+			MinSeconds="0.11s"
+			MaxSeconds="0.13s" />
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.75s"
+				LaserId="0"
+				HitGroundFX="FX_RailGunHit"/>
+			<DamageNugget
+				Damage="210.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_RAILGUN"
+				DeathType="NORMAL" />
+			<SuppressionNugget
+				Radius="10.0"
+				Suppression="100"
+				DurationSeconds="5s" />
+		</Nuggets>
+		<ScatterRadiusVsType
+			Radius="0.0">
+			<Filter
+				Rule="NONE"
+				Include="INFANTRY" />
+		</ScatterRadiusVsType>
 	</WeaponTemplate>
 
 <!-- Added Workaround to remove the ability for EMPed units to crush -->

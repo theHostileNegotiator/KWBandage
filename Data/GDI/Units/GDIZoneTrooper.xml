@@ -5,6 +5,7 @@
 <!-- Added Status Upgrade RIDER2 for missing factions for Railgun Accelerator -->
 <!-- Fixed Skeleton Hierarchy, Scanner Packs will no longer be required to also show Power Pack subobject -->
 <!-- Utilised unused mesh for Jumpjet effect -->
+<!-- Added Railgun Accelerated weapon as part of fix to Support Power -->
 	<Includes>
 		<Include type="all" source="ART:GUZnTrpr_SKN.w3x" />
 		<Include type="all" source="ART:GUZNTRPR_2BRD.w3x" />
@@ -720,6 +721,10 @@
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="ZoneTrooperMachineGun" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="ZoneTrooperMachineGun_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_02" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<LaserState

@@ -369,6 +369,10 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIPredatorTankRailgun"
 						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="GDIPredatorTankRailgun_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
 						TurretTurnRate="200"
 						TurretPitchRate="40"

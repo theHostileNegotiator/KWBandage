@@ -74,6 +74,16 @@
 		<Modifier Type="DAMAGE_MULT" Value="250"/>
 	</AttributeModifier>
 
+<!-- Change how Railgun Accelerator Buff is applied -->
+	<AttributeModifier
+		id="AttributeModifier_RailgunAccelerator"
+		Category="NONE"
+		Duration="15s"
+		ModelConditionsSet="USING_WEAPON_C"
+		ObjectStatusToSet="WEAPON_UPGRADED_02">
+		<Modifier Type="RATE_OF_FIRE" Value="100%"/>
+	</AttributeModifier>
+
 <!-- Prevent EMP unit from being able to crush -->
 	<AttributeModifier
 		id="AttributeModifier_PreventCrush10"

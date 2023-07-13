@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Fixed Railgun Accelerators Animations-->
+<!-- Fixed Railgun Accelerators Animations -->
+<!-- Added Railgun Accelerated weapon as part of fix to Support Power -->
 	<GameObject
 		id="GDIMammoth"
 		SelectPortrait="Portrait_GDIMammothTank"
@@ -551,6 +552,10 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="MammothTankRailCannon"
 						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="MammothTankRailCannon_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
 						TurretTurnRate="60"
 						TurretPitchRate="20"
@@ -624,7 +629,7 @@
 			</SubObjectsUpgrade>
 			<StatusBitsUpgrade
 				id="ModuleTag_VeterancyUpgrade"
-				StatusToSet="WEAPON_UPGRADED_02">
+				StatusToSet="WEAPON_UPGRADED_03">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>		
 			<ModelConditionUpgrade

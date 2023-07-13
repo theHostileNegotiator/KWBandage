@@ -213,6 +213,19 @@
 					<WeaponFireFXBone 		WeaponSlotID="29" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponGN_RR_" /> 	
 					<WeaponLaunchBone 		WeaponSlotID="29" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponGN_RR_" /> 	
 					<Turret 		TurretNameKey="B_GN_Turret_TreadRR" 		TurretID="29" />
+			<!-- ZONETROOPERS ACCELERATED -->
+				 	<WeaponFireFXBone		WeaponSlotID="30"		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponZT_LF" />
+				 	<WeaponLaunchBone 		WeaponSlotID="30" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponZT_LF" /> 
+				 	<Turret	 		TurretNameKey="B_ZT_Turret_TreadLF" 		TurretID="30" />
+				 	<WeaponFireFXBone		WeaponSlotID="31" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponZT_RF" /> 	
+				 	<WeaponLaunchBone 		WeaponSlotID="31" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponZT_RF" /> 
+				 	<Turret	 		TurretNameKey="B_ZT_Turret_TreadRF" 		TurretID="31" />	 		 	
+				 	<WeaponFireFXBone 	 	WeaponSlotID="32" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponZT_LR" /> 
+				 	<WeaponLaunchBone		WeaponSlotID="32" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponZT_LR" /> 	
+				 	<Turret			TurretNameKey="B_ZT_Turret_TreadLR" 		TurretID="32" />
+				 	<WeaponFireFXBone		WeaponSlotID="33" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponZT_RR" /> 	
+				 	<WeaponLaunchBone		WeaponSlotID="33" 		WeaponSlotType="PRIMARY_WEAPON" 		BoneName="FXWeaponZT_RR" /> 	
+				 	<Turret			TurretNameKey="B_ZT_Turret_TreadRR" 		TurretID="33" />	
 				</ModelConditionState>	
 
 				<ModelConditionState 
@@ -962,6 +975,11 @@
 		<WeaponSlotTurret 	ID="27"> 	<Weapon 		Ordering="PRIMARY_WEAPON" 		Template="MARVZoneRaiderWeapon" 		Upgrade="Upgrade_MARVZoneRaiderSquadFrontRight" /> 	<TurretSettings 		TurretTurnRate="180" 		MinIdleScanTime="1.0s" 		MaxIdleScanTime="5.0s" 		MinIdleScanAngle="0.0" 		MaxIdleScanAngle="100.0" 		RecenterWhenOutOfTurnRange="false"> 		<TurretAITargetChooserData 			CanAcquireDynamicIfAssignedOutOfRange="true" /> 	</TurretSettings> </WeaponSlotTurret> 
 		<WeaponSlotTurret 	ID="28"> 	<Weapon 		Ordering="PRIMARY_WEAPON" 		Template="MARVZoneRaiderWeapon" 		Upgrade="Upgrade_MARVZoneRaiderSquadRearLeft" /> 	<TurretSettings 		TurretTurnRate="180" 		MinIdleScanTime="1.0s" 		MaxIdleScanTime="5.0s" 		MinIdleScanAngle="0.0" 		MaxIdleScanAngle="100.0" 		RecenterWhenOutOfTurnRange="false"> 		<TurretAITargetChooserData 			CanAcquireDynamicIfAssignedOutOfRange="true" /> 	</TurretSettings> </WeaponSlotTurret> 
 		<WeaponSlotTurret 	ID="29"> 	<Weapon 		Ordering="PRIMARY_WEAPON" 		Template="MARVZoneRaiderWeapon" 		Upgrade="Upgrade_MARVZoneRaiderSquadRearRight" /> 	<TurretSettings 		TurretTurnRate="180" 		MinIdleScanTime="1.0s" 		MaxIdleScanTime="5.0s" 		MinIdleScanAngle="0.0" 		MaxIdleScanAngle="100.0" 		RecenterWhenOutOfTurnRange="false"> 		<TurretAITargetChooserData 			CanAcquireDynamicIfAssignedOutOfRange="true" /> 	</TurretSettings> </WeaponSlotTurret>
+<!-- ZONE TROOPER ACCELERATED WEAPONS -->	 
+		<WeaponSlotTurret 	ID="30"> 	<Weapon 		Ordering="PRIMARY_WEAPON" 		Template="MARVZoneTrooperWeapon01_Accelerated" 		Upgrade="Upgrade_MARVZoneTrooperSquadFrontLeft" /> 	<TurretSettings 		TurretTurnRate="180" 		MinIdleScanTime="1.0s" 		MaxIdleScanTime="5.0s" 		MinIdleScanAngle="0.0" 		MaxIdleScanAngle="100.0" 		RecenterWhenOutOfTurnRange="false"	> 		<TurretAITargetChooserData 			CanAcquireDynamicIfAssignedOutOfRange="true"  			CanPickTargetsOutOfTurretAngle="true"/> 	</TurretSettings> </WeaponSlotTurret> 
+		<WeaponSlotTurret 	ID="31"> 	<Weapon 		Ordering="PRIMARY_WEAPON" 		Template="MARVZoneTrooperWeapon02_Accelerated" 		Upgrade="Upgrade_MARVZoneTrooperSquadFrontRight" /> 	<TurretSettings 		TurretTurnRate="180" 		MinIdleScanTime="1.0s" 		MaxIdleScanTime="5.0s" 		MinIdleScanAngle="0.0" 		MaxIdleScanAngle="100.0" 		RecenterWhenOutOfTurnRange="false"> 		<TurretAITargetChooserData 			CanAcquireDynamicIfAssignedOutOfRange="true"  			CanPickTargetsOutOfTurretAngle="true"/> 	</TurretSettings> </WeaponSlotTurret> 
+		<WeaponSlotTurret 	ID="32"> 	<Weapon 		Ordering="PRIMARY_WEAPON" 		Template="MARVZoneTrooperWeapon03_Accelerated" 		Upgrade="Upgrade_MARVZoneTrooperSquadRearLeft" /> 	<TurretSettings 		TurretTurnRate="180" 		MinIdleScanTime="1.0s" 		MaxIdleScanTime="5.0s" 		MinIdleScanAngle="0.0" 		MaxIdleScanAngle="100.0" 		RecenterWhenOutOfTurnRange="false"> 		<TurretAITargetChooserData 			CanAcquireDynamicIfAssignedOutOfRange="true"  			CanPickTargetsOutOfTurretAngle="true"/> 	</TurretSettings> </WeaponSlotTurret> 
+		<WeaponSlotTurret 	ID="33"> 	<Weapon 		Ordering="PRIMARY_WEAPON" 		Template="MARVZoneTrooperWeapon04_Accelerated" 		Upgrade="Upgrade_MARVZoneTrooperSquadRearRight" /> 	<TurretSettings 		TurretTurnRate="180" 		MinIdleScanTime="1.0s" 		MaxIdleScanTime="5.0s" 		MinIdleScanAngle="0.0" 		MaxIdleScanAngle="100.0" 		RecenterWhenOutOfTurnRange="false"> 		<TurretAITargetChooserData 			CanAcquireDynamicIfAssignedOutOfRange="true"  			CanPickTargetsOutOfTurretAngle="true"/> 	</TurretSettings> </WeaponSlotTurret>	
 			</WeaponSetUpdate>
 
 		<SlaughterHordeContain
@@ -1312,7 +1330,7 @@
 			<AttributeModifierUpgrade id="Upgrade_EngineerHeal04_TriggerFX" AttributeModifier="AttributeModifier_MARVEngineerUpgradeRR"> <TriggeredBy>Upgrade_MARVEngineerRearRight</TriggeredBy>
 			</AttributeModifierUpgrade>
 			
-			<StatusBitsUpgrade id="ModuleTag_VeterancyUpgrade" StatusToSet="WEAPON_UPGRADED_02"> <TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
+			<StatusBitsUpgrade id="ModuleTag_VeterancyUpgrade" StatusToSet="WEAPON_UPGRADED_03"> <TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
     <FireWeaponUpdate
         id="ModuleTag_FireWeaponUpdate">

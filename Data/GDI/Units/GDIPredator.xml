@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
-<!--Railgun Accelerator Fix-->
+<!-- Railgun Accelerator Fix -->
+<!-- Added Railgun Accelerated weapon as part of fix to Support Power -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -371,6 +372,10 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIPredatorTankRailgun"
 						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="GDIPredatorTankRailgun_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
 						TurretTurnRate="200"
 						TurretPitchRate="40"

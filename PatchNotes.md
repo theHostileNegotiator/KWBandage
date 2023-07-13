@@ -75,7 +75,9 @@
 			* ST Rifleman (- Composite Armor)
 			* ST Missile Squad (- Composite Armor)
 			* ST Grenadier (- Composite Armor, - EMP Grenades)
+			* ST Titan (+ Railgun, + Adaptive Armor)
 			* ST Wolverine (+ AP Ammo)
+			* ST Mammoth Tank (+ Adaptive Armor)
 			* ZOCOM Shatterer (- Railgun)
 			* ZOCOM Rifleman (+ Tiberium Field Suits)
 			* ZOCOM Missile Squad (+ Tiberium Field Suits)
@@ -600,6 +602,8 @@
 	* Added Laser Draw and State to the Game Object, created two identical weapons for each laser state
 8. Railgun Upgrade removes the Damage Scalar against Structures
 	* Added 50% Damage Scalar against Structures to new weapons
+9. Sound Effects don't play when Railgun Accelerator is activated unlike other objects
+	* Add ModelConditionAudioLoopClientBehavior to play RGA sound effects
 #### Slingshot
 1. There are no unique tracers for Heroic level when using Tungsten Shells
 	* Created and added tracers for Heroic Tungsten
@@ -847,6 +851,8 @@
 	* Instead of using Animations, Scripts are used
 2. Damage penalty can be removed as soon as object is healed either from Repair Drone or Repair Tool
 	* Changed weapon nuggets from DOTNugget to Multiple DamageNugget with delays to when damage is applied
+3. Power affects units weapons that are not Railguns such as the Mammoth Missile Pods due to blanket weapon buff
+	* Remove Rate Of Fire buff and added ObjectStatus which will switch the Railgun weapons to a faster firing version
 
 ### Nod:
 

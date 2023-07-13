@@ -233,11 +233,14 @@
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGolemCannon" />
-
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGolemCannonRailgun"
 						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="GDIGolemCannonRailgun_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
 						TurretTurnRate="290"
 						TurretPitchRate="100"

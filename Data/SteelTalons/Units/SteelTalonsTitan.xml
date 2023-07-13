@@ -14,6 +14,7 @@
 <!-- Added Distortion Effects to Railgun -->
 <!-- Remove TRANSPORT KindOf -->
 <!-- Cleanup Draws -->
+<!-- Added Railgun Accelerated weapon as part of fix to Support Power -->
 	<Includes>
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
@@ -584,22 +585,26 @@
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE"> 
 					<Weapon 
 						Ordering="PRIMARY_WEAPON" 	
-						Template="TitanCannon" /> 
-					<Weapon 
-						Ordering="PRIMARY_WEAPON" 	
-						Template="TitanCannonRailgun" 	
+						Template="TitanCannon" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="TitanCannonRailgun"
 						ObjectStatus="WEAPON_UPGRADED_01" />
-          			<TurretSettings 	
-						MaxDeflectionAntiClockwise="180d" 	
-						MaxDeflectionClockwise="180d" 	
-						TurretTurnRate="200" 	
-						TurretPitchRate="40" 	
-						AllowsPitch="true" 	
-						MinIdleScanTime="1.0s" 	
-						MaxIdleScanTime="5.0s" 	
-						MinIdleScanAngle="0.0" 	
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="TitanCannonRailgun_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
+          			<TurretSettings
+						MaxDeflectionAntiClockwise="180d"
+						MaxDeflectionClockwise="180d"
+						TurretTurnRate="200"
+						TurretPitchRate="40"
+						AllowsPitch="true"
+						MinIdleScanTime="1.0s"
+						MaxIdleScanTime="5.0s"
+						MinIdleScanAngle="0.0"
 						MaxIdleScanAngle="90.0">
-						<TurretAITargetChooserData 		
+						<TurretAITargetChooserData
 							CanAcquireDynamicIfAssignedOutOfRange="true" />
 					</TurretSettings>
 				</WeaponSlotTurret>
@@ -652,11 +657,6 @@
 				StatusToSet="RIDER2">
 				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
 			</StatusBitsUpgrade>
-			<AudioLoopUpgrade 
-				id="RailCannonUpgradeSound" 
-				SoundToPlay="AudioEvent:GDI_RailCannon_Upgrade">
-				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
-			</AudioLoopUpgrade>
 			<SubObjectsUpgrade
 				id="ModuleTag_AdaptiveArmorSubObject"
 				ShowSubObjects="EMP">
@@ -680,6 +680,16 @@
 				AttributeModifier="AttributeModifier_AdaptiveArmor" 
 				AttributeModifierAffectsSelf="true"
 				AttributeModifierRange="1"/>
+			<AudioLoopUpgrade
+				id="RailCannonUpgradeSound"
+				SoundToPlay="AudioEvent:GDI_RailCannon_Upgrade">
+				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
+			</AudioLoopUpgrade>
+			<AudioLoopUpgrade
+				id="AdaptiveArmorUpgradeSound"
+				SoundToPlay="AudioEvent:GDI_TechCenter_adaptiveArmorUpgrade">
+				<TriggeredBy>Upgrade_AdaptiveArmor</TriggeredBy>
+			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate 

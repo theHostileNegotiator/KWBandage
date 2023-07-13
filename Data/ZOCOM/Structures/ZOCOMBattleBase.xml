@@ -271,8 +271,12 @@
 						Template="GDIBattleBaseCannon" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="GDIGolemCannonRailgun"
-						ObjectStatus="WEAPON_UPGRADED_01" />						
+						Template="GDIBattleBaseRailgun01"
+						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="GDIBattleBaseRailgun01_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
 						NaturalTurretAngle="90d"
 						TurretTurnRate="200"
@@ -296,8 +300,12 @@
 						Template="GDIBattleBaseCannon" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="GDIGolemCannonRailgun"
-						ObjectStatus="WEAPON_UPGRADED_01" />						
+						Template="GDIBattleBaseRailgun02"
+						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="GDIBattleBaseRailgun02_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
 						NaturalTurretAngle="270d"
 						TurretTurnRate="200"
@@ -444,6 +452,9 @@
 				<Sound Sound="AudioEvent:GDI_Rig_Unpack3" Animation="GURigUPAK_AN" Frame="62" />
 				<Sound Sound="AudioEvent:GDI_Rig_Unpack2" Animation="GURigUPAK_AN" Frame="25" />
 			</AnimationSoundClientBehavior>
+			<ModelConditionAudioLoopClientBehavior id="ModuleTag_RailgunAccelerator">
+				<ModelConditionSound Sound="AudioEvent:GDI_RailgunAccelerator_EnergyStripeLoop" RequiredFlags="USING_WEAPON_C" />
+			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>
 		<Geometry>
 			<Shape

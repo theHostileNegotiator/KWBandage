@@ -5,6 +5,7 @@
 <!-- Upgrade Sounds Added -->
 <!-- Low LOD Rubble Model uses damaged textures instead of standard -->
 <!-- Added Distortion Effects to Railgun -->
+<!-- Added Railgun Accelerated weapon as part of fix to Support Power -->
 	<Includes>
 		<Include type="all" source="ART:GBGolumCan_SKN.w3x" />
 		<Include type="all" source="ART:GBGolumCan_D2AN.w3x" />
@@ -274,11 +275,14 @@
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGolemCannon" />
-
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGolemCannonRailgun"
 						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="GDIGolemCannonRailgun_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
 						TurretTurnRate="290"
 						TurretPitchRate="100"

@@ -806,6 +806,10 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="MammothTankRailCannon"
 						ObjectStatus="WEAPON_UPGRADED_01" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="MammothTankRailCannon_Accelerated"
+						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02" />
 					<TurretSettings
 						TurretTurnRate="60"
 						TurretPitchRate="20"
@@ -879,7 +883,7 @@
 			</SubObjectsUpgrade>
 			<StatusBitsUpgrade
 				id="ModuleTag_VeterancyUpgrade"
-				StatusToSet="WEAPON_UPGRADED_02">
+				StatusToSet="WEAPON_UPGRADED_03">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>		
 			<ModelConditionUpgrade
@@ -915,6 +919,11 @@
 				AttributeModifier="AttributeModifier_AdaptiveArmor" 
 				AttributeModifierAffectsSelf="true"
 				AttributeModifierRange="1"/>
+			<AudioLoopUpgrade
+				id="AdaptiveArmorUpgradeSound"
+				SoundToPlay="AudioEvent:GDI_TechCenter_adaptiveArmorUpgrade">
+				<TriggeredBy>Upgrade_AdaptiveArmor</TriggeredBy>
+			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate
