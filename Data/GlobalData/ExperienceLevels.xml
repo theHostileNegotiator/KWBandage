@@ -7667,7 +7667,31 @@
 			MaxRadius="200"
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
-	
+
+	<ExperienceLevelTemplate
+		id="ZOCOMMiniMCVOutpostExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="1500"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<LevelUpFxList
+			FxList="FX_None"
+			BoneName="NoBone" />
+		<Target>ZOCOMMiniMCVOutpost</Target>
+		<Decal
+			Texture="decal_S_level1"
+			Texture2="Decal_Struct_CO"  
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+
 	<ExperienceLevelTemplate
 		id="ZOCOMPowerPlantExperienceLevel_1"
 		RequiredExperience="1"

@@ -508,6 +508,8 @@
 #### Surveyor
 1. Subfaction Surveyors when unpacking would create GDI Outpost instead of their own
 	* Packing and unpacking will now create the corresponding faction version
+2. ZOCOM Outpost does not give experience
+	* Added ExperienceTemplate targeting the ZOCOM Outpost
 #### Combat Engineer
 1. Does not properly animate transitioning into supression state
 	* Fix Animation Script error in the SUPPRESSED state
