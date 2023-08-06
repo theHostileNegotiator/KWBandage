@@ -1015,6 +1015,7 @@
 	</WeaponTemplate>
 	
 <!-- Actual range is controlled by WeaponFireSpecialAbilityUpdate -->
+<!-- Improve explosion behavior -->
 	<WeaponTemplate
 		id="AlienStalkerTiberiumAgitation"
 		Name="AlienStalkerTiberiumAgitation"
@@ -1040,12 +1041,213 @@
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<Nuggets>
+			<!-- Everything -->
 			<ProjectileNugget
 				ProjectileTemplate="AlienTibAgitationProjectile"
-				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon"/>
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="FS_MONEY_STORAGE HARVESTER">
+					<!-- Special Case for empty Devourer Tanks -->
+					<ExcludeThing>AlienDevourerTank</ExcludeThing>
+					<ExcludeThing>Reaper17DevourerTank</ExcludeThing>
+					<ExcludeThing>Reaper17AnnihilatorTripod</ExcludeThing>
+				</SpecialObjectFilter>
+			</ProjectileNugget>
+			<!-- Tiberium Supply Storage -->
+			<!-- Completely Empty Refs, Silo, Harvester and Dev Tanks -->
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibAgitationProjectile"
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon0">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="FS_MONEY_STORAGE HARVESTER"
+					RejectStatusBitFlags="DOES_CONTAIN_TIBERIUM HAS_TIBERIUM_AMMO"
+					RejectModelCondition="MONEY_STORED_AMOUNT_1 MONEY_STORED_AMOUNT_2 MONEY_STORED_AMOUNT_3 MONEY_STORED_AMOUNT_4">
+					<!-- Include Empty Devourer Tank -->
+					<IncludeThing>AlienDevourerTank</IncludeThing>
+					<IncludeThing>Reaper17DevourerTank</IncludeThing>
+					<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>
+				</SpecialObjectFilter>
+			</ProjectileNugget>
+			<!-- 0 to 24 -->
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibAgitationProjectile"
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon1">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="FS_MONEY_STORAGE HARVESTER"
+					StatusBitFlags="DOES_CONTAIN_TIBERIUM"
+					RejectModelCondition="MONEY_STORED_AMOUNT_1 MONEY_STORED_AMOUNT_2 MONEY_STORED_AMOUNT_3 MONEY_STORED_AMOUNT_4"
+					Relationship="ALLIES ENEMIES NEUTRAL" />
+			</ProjectileNugget>
+			<!-- 25 to 49 -->
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibAgitationProjectile"
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="FS_MONEY_STORAGE HARVESTER"
+					AcceptModelCondition="MONEY_STORED_AMOUNT_1"
+					Relationship="ALLIES ENEMIES NEUTRAL" />
+			</ProjectileNugget>
+			<!-- 50 - 74 -->
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibAgitationProjectile"
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon3">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="FS_MONEY_STORAGE HARVESTER"
+					AcceptModelCondition="MONEY_STORED_AMOUNT_2"
+					Relationship="ALLIES ENEMIES NEUTRAL" />
+			</ProjectileNugget>
+			<!-- 75 - 99 -->
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibAgitationProjectile"
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon4">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="FS_MONEY_STORAGE HARVESTER"
+					AcceptModelCondition="MONEY_STORED_AMOUNT_3"
+					Relationship="ALLIES ENEMIES NEUTRAL" />
+			</ProjectileNugget>
+			<!-- 100 -->
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibAgitationProjectile"
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon5">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="FS_MONEY_STORAGE HARVESTER"
+					AcceptModelCondition="MONEY_STORED_AMOUNT_4"
+					Relationship="ALLIES ENEMIES NEUTRAL" />
+			</ProjectileNugget>
+			<!-- Devourer Tank -->
+			<ProjectileNugget
+				ProjectileTemplate="AlienTibAgitationProjectile"
+				WarheadTemplate="AlienTiberiumAgitationExplosiveWeapon">
+				<SpecialObjectFilter
+					Rule="NONE"
+					StatusBitFlags="HAS_TIBERIUM_AMMO">
+					<IncludeThing>AlienDevourerTank</IncludeThing>
+					<IncludeThing>Reaper17DevourerTank</IncludeThing>
+					<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>
+				</SpecialObjectFilter>
+			</ProjectileNugget>
 		</Nuggets>
 	</WeaponTemplate>
-	
+	<!--
+	<WeaponTemplate
+		id="AlienTiberiumAgitationExplosiveWeapon"
+		Name="AlienTiberiumAgitationExplosiveWeapon"
+		RadiusDamageAffects="ENEMIES ALLIES NEUTRALS NOT_SIMILAR"
+		FireFX="FX_TibHitFX">
+		<Nuggets>
+			<DamageNugget
+				Damage="1000.0"
+				Radius="25.0"
+				DamageType="TIBERIUM"
+				DeathType="NORMAL" >
+				<DamageScalarDetails Scalar= "200%">
+					<Filter
+						AcceptModelCondition="MONEY_STORED_AMOUNT_4" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						AcceptModelCondition="MONEY_STORED_AMOUNT_3" />
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "50%">
+					<Filter
+						AcceptModelCondition="MONEY_STORED_AMOUNT_1" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	-->
+	<WeaponTemplate
+		id="AlienTiberiumAgitationExplosiveWeapon0"
+		Name="AlienTiberiumAgitationExplosiveWeapon0"
+		RadiusDamageAffects="ENEMIES ALLIES NEUTRALS NOT_SIMILAR"
+		FireFX="FX_TibHitFX">
+		<Nuggets>
+			<DamageNugget
+				Damage="100.0"
+				Radius="25.0"
+				DamageType="TIBERIUM"
+				DeathType="NORMAL">
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="AlienTiberiumAgitationExplosiveWeapon1"
+		Name="AlienTiberiumAgitationExplosiveWeapon1"
+		RadiusDamageAffects="ENEMIES ALLIES NEUTRALS NOT_SIMILAR"
+		FireFX="FX_TibHitFX">
+		<Nuggets>
+			<DamageNugget
+				Damage="500.0"
+				Radius="25.0"
+				DamageType="TIBERIUM"
+				DeathType="NORMAL">
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="AlienTiberiumAgitationExplosiveWeapon"
+		Name="AlienTiberiumAgitationExplosiveWeapon"
+		RadiusDamageAffects="ENEMIES ALLIES NEUTRALS NOT_SIMILAR"
+		FireFX="FX_TibHitFX">
+		<Nuggets>
+			<DamageNugget
+				Damage="1000.0"
+				Radius="25.0"
+				DamageType="TIBERIUM"
+				DeathType="NORMAL">
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="AlienTiberiumAgitationExplosiveWeapon3"
+		Name="AlienTiberiumAgitationExplosiveWeapon3"
+		RadiusDamageAffects="ENEMIES ALLIES NEUTRALS NOT_SIMILAR"
+		FireFX="FX_TibHitFX">
+		<Nuggets>
+			<DamageNugget
+				Damage="1500.0"
+				Radius="25.0"
+				DamageType="TIBERIUM"
+				DeathType="NORMAL">
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="AlienTiberiumAgitationExplosiveWeapon4"
+		Name="AlienTiberiumAgitationExplosiveWeapon4"
+		RadiusDamageAffects="ENEMIES ALLIES NEUTRALS NOT_SIMILAR"
+		FireFX="FX_TibHitFX">
+		<Nuggets>
+			<DamageNugget
+				Damage="2000.0"
+				Radius="25.0"
+				DamageType="TIBERIUM"
+				DeathType="NORMAL">
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="AlienTiberiumAgitationExplosiveWeapon5"
+		Name="AlienTiberiumAgitationExplosiveWeapon5"
+		RadiusDamageAffects="ENEMIES ALLIES NEUTRALS NOT_SIMILAR"
+		FireFX="FX_TibHitFX">
+		<Nuggets>
+			<DamageNugget
+				Damage="2500.0"
+				Radius="25.0"
+				DamageType="TIBERIUM"
+				DeathType="NORMAL">
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
 <!-- Workaround to allow force firing on allied units -->
 	<!-- the short range bolts that emit from the cloud -->
 	<WeaponTemplate

@@ -1239,17 +1239,32 @@
 #### Ravager
 1. When firing or using Tiberium Agitation, projectiles or laser exits the wrong area, above it's head
 	* Animations moved weapon firing bones above it's head for some reason. Removed ChannelScalars ChannelQuaternions specific for Weapon FX Bones in all animations.
-2. Tiberium Agitation target requirements are inconsistent, it does not target Scrin Devourer Tank and BH and Mok Power Plant with Tiberium Core upgrade.
-	* Fixed targeting parameters of Tiberium Agitation. Will now target Scrin Devourer Tank, BH and Mok Power Plant with Tiberium Core upgrade. Additionally will not target units that are empty of Tiberium
-3. Blue Shards upgrade would cause the Tiberium part to disappear momentarily
+2. Tiberium Agitation target requirements are inconsistent, it does not target Scrin Devourer Tank and BH and Mok Power Plant with Tiberium Core upgrade, Tiberium Spikes and Neutral Tiberium Silo.
+	* Optimise Tiberium Agitation Special Power
+		* Improved Tiberium Agitation targeting filters. Will now target Scrin Devourer Tank, BH and MoK Power Plant with Tiberium Core upgrade, Tiberium Spikes and Neutral Tiberium Silo.
+		* Removed DOES_CONTAIN_TIBERIUM as a requirement and removed it from units that were granted through an upgrade trigger as it has hardcoded functions used for Refineries, Silos and Harvesters
+3. Tiberium Agitation does not cause differing damaging explosion depending on Tiberium Storage, rather the damage applied to objects is scaled. Additionally Tib Storage objects that contain between 0 to 25% yield will take more damage than 25% to 50% yield
+	* Weapon will fire a projectile depending on the target and it's Model State or Object Status.
+		* Weapon causes differing damaging explosion rather than the damage being scaled
+		* Can be used against empty objects (including empty Devour Tanks and Reaper Tripods) with heavily reduced damage (10%)
+		* Refineries, Silos and Harvesters that contain less than 25% Tiberium will no longer deal more damage than 25% to less than 50%
+		* Tiberium Based units and units that use Conversion Beam containing Tiberium will cause 100% damage
+		* Damage Tables
+			* 0%: 10% damage
+			* More than 0% to less than 25%: 50% damage
+			* 25% to less than 50%: 100% damage
+			* 50% to less than 75%: 150% damage
+			* 75% to less than 100%: 200% damage
+			* 100%: 250% damage
+4. Blue Shards upgrade would cause the Tiberium part to disappear momentarily
 	* Set upgrade FadeTimeInSeconds 0s
-4. Tiberium Agitation effects are incomplete
+5. Tiberium Agitation effects are incomplete
 	* Added DetonateCallsKill="true" to trigger the OnDeath effects
-5. Tiberium Agitation does not do full damage to moving units
+6. Tiberium Agitation does not do full damage to moving units
 	* Projectile would miss, added ability for projectile to 'track' targets.
-6. Unit cannot detect stealth units at close range, something that all other infantry unit can do
+7. Unit cannot detect stealth units at close range, something that all other infantry unit can do
 	* Added Stealth detection to squad
-7. AI using lower Tier heavy units would attempt to crush unit as if were a basic infantry unit despite not being able to
+8. AI using lower Tier heavy units would attempt to crush unit as if were a basic infantry unit despite not being able to
 	* Increased the squad unit crushable level to match the infantry unit
 #### Mastermind
 1. Can control subfaction base defense

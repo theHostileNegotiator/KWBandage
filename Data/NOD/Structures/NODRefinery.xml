@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Increased refund value to 700 -->
 <!-- Fixed Docking Bones for Build Model -->
+<!-- Removed initial Status Bit Upgrade that grants DOES_CONTAIN_TIBERIUM -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NBRefinery_ASN.w3x"/>
@@ -542,65 +543,6 @@
 				CreationList="OCL_GenericNODBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
-			<StatusBitsUpgrade
-				id="ModuleTag_BlackHandStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_GDIStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_NODStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_AlienStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_SteelTalonsStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_Reaper17StatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_ZOCOMStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_MarkedOfKaneStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_Traveler59StatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<AttributeModifierAuraUpdate
-					id="ModuleTag_AttributeModifierAuraUpdate"
-					AttributeModifierName="AttributeModifier_DoesContainTiberium"
-			   		RefreshDelay="0s"
-			 		Range="5"
-					InitiallyActive="true">
-					<ObjectFilter
-       					Rule="ANY"
-       					Relationship="SAME_PLAYER">
-       					<IncludeThing>NODRefinery</IncludeThing>
-	       				<IncludeThing>MarkedOfKaneRefinery</IncludeThing>
-	       				<IncludeThing>BlackHandRefinery</IncludeThing>
-					</ObjectFilter>
-			</AttributeModifierAuraUpdate>			
 		</Behaviors>
 		<AI>
 			<AIUpdate

@@ -443,7 +443,7 @@
 				TiberiumStolenPerUpdate="10"
 				DelayBetweenThefts="0.3s"
 				TiberiumCapacity="100"
-				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO DOES_CONTAIN_TIBERIUM"
+				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO"
 				ModelConditionWhenNotEmpty="USER_2"
 				StartRechargeOnExit="true" />
 			<Physics
@@ -539,7 +539,7 @@
 				TiberiumStolenPerUpdate="10"
 				DelayBetweenThefts="0.3s"
 				TiberiumCapacity="200"
-				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO DOES_CONTAIN_TIBERIUM"
+				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO"
 				ModelConditionWhenNotEmpty="USER_2"
 				StartRechargeOnExit="true" />
 			<CommandSetUpgrade

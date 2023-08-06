@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Removed DOES_CONTAIN_TIBERIUM status when upgraded -->
+<!-- Removed Initial Model Condition Upgrade -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -315,71 +317,17 @@
 				id="ModuleTag_LiquidCore">
 				<TriggeredBy>Upgrade_NODLiquidTiberiumCore</TriggeredBy>
 			</PowerUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_RemoveModelCondition"
-				AddConditionFlags="USER_1"
-				RemoveConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_NODLiquidTiberiumCore</TriggeredBy>
-			</ModelConditionUpgrade>			
-		<!--	<SubObjectsUpgrade
+			<SubObjectsUpgrade
 				id="ModuleTag_ShowTurbines">
 				<CustomAnimAndDuration
 					AnimState="USER_1"></CustomAnimAndDuration>
 				<TriggeredBy>Upgrade_NODLiquidTiberiumCore</TriggeredBy>
 			</SubObjectsUpgrade>
-		-->	
 			<StatusBitsUpgrade
 				id="ModuleTag_LiquidCore2"
-				StatusToSet="HAS_TIBERIUM_UPGRADE DOES_CONTAIN_TIBERIUM">
+				StatusToSet="HAS_TIBERIUM_UPGRADE">
 				<TriggeredBy>Upgrade_NODLiquidTiberiumCore</TriggeredBy>
 			</StatusBitsUpgrade>
-			
-			<ModelConditionUpgrade
-				id="ModuleTag_BlackHandNormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_GDINormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_NODNormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_AlienNormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_SteelTalonsNormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_Reaper17NormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_ZOCOMNormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_MarkedOfKaneNormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
-			</ModelConditionUpgrade>
-			<ModelConditionUpgrade
-				id="ModuleTag_Traveler59NormalTibPreventCondition"
-				AddConditionFlags="USER_16">
-				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
-			</ModelConditionUpgrade>
-			
 			<RepairUpdate
 				id="ModuleTag_RepairUpdate">
 				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>

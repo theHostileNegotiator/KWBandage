@@ -3,6 +3,7 @@
 <!-- Removed Steel Talons Con Yard from GameDependency -->
 <!-- Added Model Condition Upgrade USER_1 for missing factions to show Tiberium Smoke -->
 <!-- Increased refund value to 700 -->
+<!-- Removed initial Status Bit Upgrade that grants DOES_CONTAIN_TIBERIUM -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:GBRefinery.w3x" />
@@ -662,66 +663,6 @@
 				CreationList="OCL_GenericGDIBuildingSuicide" >
 				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
-				
-			<StatusBitsUpgrade
-				id="ModuleTag_BlackHandStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_GDIStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_NODStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_AlienStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_SteelTalonsStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_Reaper17StatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_ZOCOMStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_MarkedOfKaneStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_Traveler59StatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<AttributeModifierAuraUpdate
-					id="ModuleTag_AttributeModifierAuraUpdate"
-					AttributeModifierName="AttributeModifier_DoesContainTiberium"
-			   		RefreshDelay="0s"
-			 		Range="5"
-					InitiallyActive="true">
-					<ObjectFilter
-       					Rule="ANY"
-       					Relationship="SAME_PLAYER">
-       					<IncludeThing>GDIRefinery</IncludeThing>
-	       				<IncludeThing>SteelTalonsRefinery</IncludeThing>
-	       				<IncludeThing>ZOCOMRefinery</IncludeThing>
-					</ObjectFilter>
-			</AttributeModifierAuraUpdate>			
 		</Behaviors>
 		<AI>
 			<AIUpdate

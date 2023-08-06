@@ -3,6 +3,7 @@
 <!-- Change Shield Model Condition for EMP -->
 <!-- WorldMapArmoryUpgradesAllowed references Reaper 17 Forcefield Upgrade instead of Scrin -->
 <!-- Added unique Formation Preview (Stygs) -->
+<!-- Removed DOES_CONTAIN_TIBERIUM when Conversion beam has Tiberium Ammo -->
 	<Tags></Tags>
 	<Includes>
 		<Include
@@ -1396,7 +1397,7 @@
 				TiberiumStolenPerUpdate="10"
 				DelayBetweenThefts="0.3s"
 				TiberiumCapacity="100"
-				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO DOES_CONTAIN_TIBERIUM"
+				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO"
 				ModelConditionWhenNotEmpty="USER_2"
 				StartRechargeOnExit="true" />
 			<StatusBitsUpgrade

@@ -635,62 +635,35 @@
 			RequiredObjectStatusAny="AIRBORNE_TARGET" />
 	</SpecialPowerTemplate>
 	
-<!--Fixing Tiberium Agitation Targets and Requirements-->
+<!-- Improve Tiberium Agitation Filters -->
 	<SpecialPowerTemplate
 		id="TiberiumAgitationGetInRange"
 		TargetType="OBJECT"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="VoiceTiberiumAgitation"
-		Flags="NEEDS_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS NO_FORBIDDEN_MODEL_STATES"
-		RequiredTargetObjectStatus="DOES_CONTAIN_TIBERIUM"
-		DisallowedTargetModelStates="INVISIBLE_STEALTH USER_16"
+		Flags="NEEDS_OBJECT_FILTER NO_FORBIDDEN_OBJECTS NO_FORBIDDEN_MODEL_STATES"
+		DisallowedTargetModelStates="INVISIBLE_STEALTH"
 		ReloadTime="45s"
 		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
 		<ObjectFilter
 			Rule="ANY"
-			Exclude="UNATTACKABLE"
-			Include="FS_MONEY_STORAGE TIBERIUM_BASED"
-			Relationship="ENEMIES NEUTRAL ALLIES">
-			<IncludeThing>NODRefinery</IncludeThing>
-			<IncludeThing>BlackHandRefinery</IncludeThing>
-			<IncludeThing>MarkedOfKaneRefinery</IncludeThing>
-			<IncludeThing>GDIRefinery</IncludeThing>
-			<IncludeThing>SteelTalonsRefinery</IncludeThing>
-			<IncludeThing>ZOCOMRefinery</IncludeThing>
-			<IncludeThing>AlienTiberiumTower</IncludeThing>
-			<IncludeThing>Traveler59TiberiumTower</IncludeThing>
-			<IncludeThing>Reaper17TiberiumTower</IncludeThing>
-			<IncludeThing>GDITiberiumSilo</IncludeThing>
-			<IncludeThing>SteelTalonsTiberiumSilo</IncludeThing>
-			<IncludeThing>ZOCOMTiberiumSilo</IncludeThing>
-			<IncludeThing>NodTiberiumSilo</IncludeThing>
-			<IncludeThing>MarkedOfKaneTiberiumSilo</IncludeThing>
-			<IncludeThing>BlackHandTiberiumSilo</IncludeThing>
-			<IncludeThing>TiberiumSpike</IncludeThing>
-			<IncludeThing>TiberiumSilo</IncludeThing>
-			<IncludeThing>NODHarvester</IncludeThing>
-			<IncludeThing>BlackHandHarvester</IncludeThing>
-			<IncludeThing>MarkedOfKaneHarvester</IncludeThing>
-			<IncludeThing>GDIHarvester</IncludeThing>
-			<IncludeThing>SteelTalonsHeavyHarvester</IncludeThing>
-			<IncludeThing>ZOCOMHarvester</IncludeThing>
-			<IncludeThing>AlienHarvester</IncludeThing>
-			<IncludeThing>Traveler59Harvester</IncludeThing>
-			<IncludeThing>Reaper17Harvester</IncludeThing>
-			<IncludeThing>AlienSporePod</IncludeThing>
-			<IncludeThing>Traveler59SporePod</IncludeThing>
-			<IncludeThing>Reaper17GrowthStimulator</IncludeThing>
+			Relationship="ALLIES NEUTRAL ENEMIES"
+			Include="TIBERIUM_BASED HARVESTER FS_MONEY_STORAGE"
+			Exclude="UNATTACKABLE">
 			<IncludeThing>AlienDevourerTank</IncludeThing>
 			<IncludeThing>Reaper17DevourerTank</IncludeThing>
 			<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>
-			<IncludeThing>AlienCorrupter</IncludeThing>
-			<IncludeThing>Reaper17Corrupter</IncludeThing>
-			<IncludeThing>Traveler59Corrupter</IncludeThing>
-			<IncludeThing>MarkedOfKaneTiberiumTrooperSquad</IncludeThing>
-			<IncludeThing>MarkedOfKaneTiberiumTrooper</IncludeThing>
 			<IncludeThing>NodPowerPlant</IncludeThing>
 			<IncludeThing>BlackHandPowerPlant</IncludeThing>
 			<IncludeThing>MarkedOfKanePowerPlant</IncludeThing>
 		</ObjectFilter>
+		<!-- Strange Workaround have the Power Plant targeted only when upgraded -->
+		<ForbiddenObjectFilter
+			Rule="NONE"
+			RejectStatusBitFlags="HAS_TIBERIUM_UPGRADE">
+			<IncludeThing>NODPowerPlant</IncludeThing>
+			<IncludeThing>BlackHandPowerPlant</IncludeThing>
+			<IncludeThing>MarkedOfKanePowerPlant</IncludeThing>
+		</ForbiddenObjectFilter>
 	</SpecialPowerTemplate>
 	
 <!-- New Special Powers for Squad Abilities-->

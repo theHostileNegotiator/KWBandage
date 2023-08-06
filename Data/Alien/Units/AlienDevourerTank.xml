@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- Added CAN_BE_FAVORITE_UNIT KindOf Flag -->
+<!-- Removed DOES_CONTAIN_TIBERIUM when Conversion beam has Tiberium Ammo -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -466,7 +467,7 @@
 				TiberiumStolenPerUpdate="10"
 				DelayBetweenThefts="0.3s"
 				TiberiumCapacity="100"
-				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO DOES_CONTAIN_TIBERIUM"
+				ObjectStatusWhenNotEmpty="HAS_TIBERIUM_AMMO"
 				ModelConditionWhenNotEmpty="USER_2"
 				StartRechargeOnExit="true" />
 			<Physics

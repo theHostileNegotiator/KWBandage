@@ -3,6 +3,7 @@
 <!-- Increased refund value to 700 -->
 <!-- Fixed Harvester Spawn Behavior, realign spawn points -->
 <!-- Fixed Docking Bones for Build Model -->
+<!-- Removed initial Status Bit Upgrade that grants DOES_CONTAIN_TIBERIUM -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:ABTiberTowBld_SKN.w3x"/>
@@ -422,52 +423,6 @@
 			<StructureUnpackUpdate
 				id="StructureUnpackUpdate"
 				UnpackTime="2.0s" />
-							
-			<StatusBitsUpgrade
-				id="ModuleTag_BlackHandStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_GDIStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_NODStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_AlienStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_SteelTalonsStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_Reaper17StatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_ZOCOMStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_MarkedOfKaneStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_Traveler59StatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
-			</StatusBitsUpgrade>				
 		</Behaviors>
 		<Body>
 			<ActiveBody

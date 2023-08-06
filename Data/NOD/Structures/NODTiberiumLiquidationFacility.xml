@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Changed AI Target Type of Tiberium Vein from SPECIAL_POWER_SUPERWEAPON -->
 <!-- Changed how Tiberium Vein is fired. Only using OCL so resources is not deducted twice and Weapon timings are controled by the new NODVeinDetonationTrigger -->
-<!-- Added Status Upgrade DOES_CONTAIN_TIBERIUM for missing factions -->
+<!-- Removed initial Status Bit Upgrade that grants DOES_CONTAIN_TIBERIUM -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -300,52 +300,6 @@
 				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
 			</ModelConditionUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_BlackHandStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_GDIStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_NODStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_NODFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_AlienStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_SteelTalonsStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_Reaper17StatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_ZOCOMStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_MarkedOfKaneStatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="ModuleTag_Traveler59StatusForTibAgitation"
-				StatusToSet="DOES_CONTAIN_TIBERIUM">
-				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
-			</StatusBitsUpgrade>		
-			
 			<ArmorUpgrade
 				id="ModuleTag_NodLaserFencingArmorUpgrade"
 				ArmorSetFlag="PLAYER_UPGRADE">
