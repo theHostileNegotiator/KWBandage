@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes>
+
+    <!-- Washington Buildings -->
+    <Include type="all" source="DATA:Civilian/Washington_DC_DC/Buildings/DCBBun02.xml" />
+    <Include type="all" source="DATA:Civilian/Washington_DC_DC/Buildings/DCBPentaEn.xml" />
+    <Include type="all" source="DATA:Civilian/Washington_DC_DC/Buildings/DCBSen01.xml" />
+    <Include type="all" source="DATA:Civilian/Washington_DC_DC/Buildings/DCBUrban01.xml" />
+    <Include type="all" source="DATA:Civilian/Washington_DC_DC/Buildings/DCBUrban02.xml" />
+    <Include type="all" source="DATA:Civilian/Washington_DC_DC/Buildings/DCBUrban03.xml" />
+    <Include type="all" source="DATA:Civilian/Washington_DC_DC/Buildings/DCBUrban04.xml" />
+    <Include type="all" source="DATA:Civilian/Washington_DC_DC/Buildings/DCBWse06.xml" />
+    
+  </Includes>
+
+</AssetDeclaration>

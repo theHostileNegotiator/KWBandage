@@ -17,6 +17,9 @@
     <Include type="all" source="DATA:civilian/Russia_RU/props/RUWall01.xml" />
     <Include type="all" source="DATA:civilian/Russia_RU/props/RUWall02.xml" />
     <Include type="all" source="DATA:civilian/Russia_RU/props/RUWall03.xml" />
+    <Include type="all" source="DATA:civilian/Egypt_EG/Buildings/CBEgyUrba01.xml" />
+    <Include type="all" source="DATA:civilian/Egypt_EG/Buildings/CBEgyUrba02.xml" />
+    <Include type="all" source="DATA:civilian/Egypt_EG/Buildings/CBMosque.xml" />
   </Includes>
 
 </AssetDeclaration>

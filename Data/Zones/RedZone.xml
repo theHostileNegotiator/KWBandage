@@ -8,6 +8,8 @@
     <Include type="all" source="DATA:civilian/props/TiberiumShaft01.xml" />
     <Include type="all" source="DATA:civilian/props/TiberiumShaft02.xml" />
     <Include type="all" source="DATA:civilian/props/TiberiumShaft03.xml" />
+
+    <Include type="all" source="DATA:civilian/Italy_IT/Buildings/ITBShk01.xml" />
     
   </Includes>
 

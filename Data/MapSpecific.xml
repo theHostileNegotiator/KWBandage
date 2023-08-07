@@ -4,6 +4,7 @@
 		<Include type="all" source="Neutral/Neutral.xml" />
 		<Include type="all" source="DATA:Zones/RedZone.xml" />
 		<Include type="all" source="DATA:Zones/YellowZone.xml" />
+		<Include type="all" source="DATA:Zones/BlueZone.xml" />
 		<Include type="all" source="Civilian/CivilianBuildings.xml" />
 		<Include type="all" source="Alien/AlienMapSpecific.xml" />
 		<Include type="all" source="GDI/GDIMapSpecific.xml" />
