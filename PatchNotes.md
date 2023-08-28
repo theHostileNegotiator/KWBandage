@@ -808,6 +808,10 @@
 	* Increased ConquerMetricsOverrideDPS to 500
 2. Structure cannot damage Husks
 	* Performed workaround to allow unit to damage husks by adding a projectile. This workaround means that the unit can only damage targeted Husks
+3. Sonic sweep weapons deal additional damage to Emitters, as if the damage is applied twice
+	* Removed STRUCTURE KindOf flag in the Ion Storm Killer object
+		* How Linear Damage works; if the sweep collides with an object it, a weapon is fired on the object. If there are two objects stacked, it will seem like it does double damage, it also has AOE, so if close enough proximity it may also happen
+		This only happens to objects with specific KindOf flags including STRUCTURES, VEHICLES and INFANTRY
 #### Combat Support Airfield
 1. Online Games causes desyncs when Structure is created
 	* Removed POWERED_POWERS_ONLY KindOf Flag which is possibly causing Desyncs
