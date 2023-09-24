@@ -1082,6 +1082,8 @@
 	* Added Disruption Pod Mesh to Stealth Model
 3. Bombs are missing an extra sound effect when impacted
 	* Added DetonateCallsKill="true" to trigger the OnDeath effects
+4. Inside the cloaking field of the Disruption Pod, units using special abilities and a special case for Beam Cannon attack do not decloak
+	* ForbiddenConditions defaults were overriden so only TIBERIUM_VIBRATING will decloak, added the default conditions
 #### Operations Center
 1. Parts of the model are clean in Damaged States
 	* Added texture swaps for damaged states in ModuleTag_Draw_Missle
@@ -1123,6 +1125,9 @@
 #### SAM Turret
 1. Fire sounds are missing when upgraded with Tiberium Core Missiles
 	* Added fire sounds to the FireFX
+#### Disruption Tower
+1. Inside the cloaking field, units using special abilities and a special case for Beam Cannon attack do not decloak
+	* ForbiddenConditions defaults were overriden so only TIBERIUM_VIBRATING will decloak, added the default conditions
 #### Voice of Kane
 1. Has Kindof Flag BROADCASTS_INVISIBILITY which may suggest (to the AI) that it has the functionallity of a Disruption Tower
 	* Removed flag

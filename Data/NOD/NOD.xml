@@ -64,6 +64,7 @@
 		<Include type="all" source="Props/NODVeinDetonation.xml" />	
 		<Include type="all" source="Props/NODVertigoBombProjectile.xml" />	
 		<Include type="all" source="Props/NODVertigoDisruptionPod.xml" />	
+		<Include type="all" source="Props/NODVertigoDisruptionStickyPod.xml" />	
 		
 		<!--	MetaGame Strategic Buildings	-->
 		<Include type="all" source="structures/MG_NOD_DisruptionGenerator.xml" />

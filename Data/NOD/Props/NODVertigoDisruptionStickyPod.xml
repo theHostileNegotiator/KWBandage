@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!-- Adjusted Sensor decal size -->
 <!-- Fixed Invisibility Nugget Filter -->
 	<Tags></Tags>
 	<Includes>
-		<Include type="all"	source="ART:Decal_Sensor_CO.xml" />
 	</Includes>
 	<GameObject
-		id="NODVertigoDisruptionPod"
+		id="NODVertigoDisruptionStickyPod"
 		SelectPortrait="Portrait_NeutralSensorPod"
 		ButtonImage="Portrait_NeutralSensorPod"
 		Side="NOD"
@@ -15,9 +13,9 @@
 		TransportSlotCount="0"
 		CommandSet="EmptyCommandSet"
 		IsTrainable="false"
-		KindOf="PRELOAD SELECTABLE IMMOBILE NO_COLLIDE IGNORE_FOR_VICTORY"
+		KindOf="PRELOAD SELECTABLE IMMOBILE NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY"
 		RadarPriority="UNIT"
-		EditorName="NODVertigoDisruptionPod">
+		EditorName="NODVertigoDisruptionStickyPod">
 		<DisplayName>Name:AbilityDisruptionPod</DisplayName>
 		<ArmorSet
 			Armor="GDIOrcaSensorPodArmor"
@@ -35,20 +33,6 @@
 					<Model
 						Name="FXDisruptionPod" />
 				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="SELECTED">
-					<Model Name="FXDisruptionPod" />
-					<ShadowInfo
-						Type="ADDITIVE_DECAL"
-						SizeX="455"
-						SizeY="455"
-						OverrideLODVisibility="true"
-						MaxHeight="200"
-						UseHouseColor="true"
-						LocalPlayerOnly="true"
-						Texture="Decal_Sensor_CO" />
-				</ModelConditionState>
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
@@ -65,26 +49,29 @@
 					Rule="ANY"
 					Relationship="ALLIES"
 					Include="STRUCTURE INFANTRY VEHICLE AIRCRAFT">
-					<IncludeThing>NODVertigoDisruptionPod</IncludeThing>
+					<IncludeThing>NODVertigoDisruptionStickyPod</IncludeThing>
 				</BroadcastObjectFilter>
 			</InvisibilityUpdate>
 			<LifetimeUpdate
 				id="ModuleTag_LifeTime"
 				MinLifetime="120s"
 				MaxLifetime="120s" />
+			<AttachUpdate
+				id="ModuleTag_Attach"
+				Range="10.0"
+				Teleport="true"
+				UseGeometry="true"
+				DetachWhenParentHealed="false">
+				<ObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienCrystalShield</ExcludeThing>
+				</ObjectFilter>
+			</AttachUpdate>
 			<DestroyDie
 				id="ModuleTag_DestroyDie">
 				<DieMuxData
 					DeathTypes="ALL" />
 			</DestroyDie>
-			<FXListBehavior
-				id="ModuleTag_FXList">
-				<DieMuxData
-					DeathTypes="ALL" />
-				<Event
-					Index="onDeath"
-					FX="FX_Nod_DisruptionPodExplosion" />
-			</FXListBehavior>
 			<BezierProjectile
 				id="ModuleTag_BezierProjectileBehavior"
 				FirstHeightMin="5" 
@@ -94,9 +81,8 @@
 				FirstPercentIndent="33"
 				SecondPercentIndent="66"
 				OrientToFlightPath="true"
-				
 				GroundHitFX="FX_DirtHit"/>
-		</Behaviors>
+			</Behaviors>
 		<AI>
 			<AIUpdate
 				id="ModuleTag_AI"
@@ -114,13 +100,6 @@
 				MajorRadius="7.0"
 				Height="13.0"></Shape>
 		</Geometry>
-<!--		<AudioArrayVoice>
-			<AudioEntry	Sound="GDI_Orca_SensorPodGroundImpact" AudioType="voiceCreated" />
-			This didn't work!
-		</AudioArrayVoice> -->
-		<AudioArrayVoice>
-			<AudioEntry Sound="AudioEvent:NOD_Vertigo_DisruptionPodSelect" AudioType="voiceSelect" />
-		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry Sound="AudioEvent:NOD_Vertigo_DisruptionPodImpact" AudioType="soundAmbient" />
 		</AudioArraySound>

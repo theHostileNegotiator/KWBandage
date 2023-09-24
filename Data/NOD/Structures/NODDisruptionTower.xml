@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- Fixed Invisibility Nugget Filter -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -201,7 +202,7 @@
 				BroadcastRange="450"
 				UpdatePeriod="1.0s">
 				<InvisibilityNugget
-              ForbiddenStatus="TIBERIUM_VIBRATING"/>
+					ForbiddenStatus="IS_FIRING_WEAPON IS_AIMING_WEAPON SPECIAL_ABILITY_PACKING_UNPACKING_OR_USING USING_ABILITY TIBERIUM_VIBRATING" />
 				<BroadcastObjectFilter
 					Rule="ANY"
 					Relationship="ALLIES"
