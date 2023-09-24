@@ -1405,6 +1405,9 @@
 	* Swapped Specular and Normal Textures to existing textures
 3. Rubble model uses multiple Normal Meshes for the debris instead of a single Skin Mesh like the other structures
 	* Merged all meshes together to make a single Skin Mesh
+#### Plasma Missile Battery
+1. Build Up model is using the incorrect textures
+	* Fixed the references to use the correct textures
 #### Growth Stimulator
 1. When selecting structure, it will sometimes play the Growth Accelerator select sound instead of the Stimulator select sound.
 	* Removed Growth Accelerator sound effects which was due to the Stimulator inheriting the Accelerator and not removing sounds.
