@@ -248,6 +248,9 @@
 	* "SHIELDBODY_ENABLED" object status is applied permanently after purchasing Forcefield upgrade, it is still applied when they have been disabled. Instead will use the Weapon Nugget ForbiddenTargetModelCondition and use "USER_19" as the ModelCondition for Shields as it is unused as it will be added or removed depending on the state of the Forcefield
 2. Does not affect Devastator Warships and Planetary Assault Carrier with shields
 	* Added workaround for EMP effect as there is no CylinderAOE for Palalyze Nugget (AOE is a sphere by default). Weapon with Paralyze Nugget is fired from an object spawned from an OCL at a height of 140 which is the height of ships fly at.
+#### Neutral Units
+1. Viceroids and Mutant Marauders armor, in particular CANNON vulnerability is representative of general Infantry Armor before TW 1.05
+	* Reduced CANNON vulnerability to 25%
 #### Garrison Flags
 1. Nod Garrison Flags have a weird appearance, weak House Color and reflective
 	* Fixed Specular Map, removed Reflection Channel and fixed House Color Channel
@@ -1239,6 +1242,8 @@
 #### Assimilator
 1. Reaper 17 uses Scrin Assimilator instead of their own
 	* Created Reaper 17 assimilator units for Reaper 17, edited required structures and husks to support new engineer unit.
+2. Armor, in particular CANNON vulnerability is representative of general Infantry Armor before TW 1.05
+	* Reduced CANNON vulnerability to 25%
 #### Shock Trooper
 1. AI using lower Tier heavy units would attempt to crush unit as if were a basic infantry unit despite not being able to
 	* Increased the squad unit crushable level to match the infantry unit
