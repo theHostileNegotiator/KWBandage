@@ -719,7 +719,7 @@
 		</Body>
 		<ClientBehaviors>
 			<AnimationSoundClientBehavior id="ModuleTag_ASCB">
-				<Sound Sound="Bodyfall" Animation="GUEngineer_LNDA" Frame="5" />
+				<Sound Sound="AudioEvent:Bodyfall" Animation="GUEngineer_LNDA" Frame="5" />
 			</AnimationSoundClientBehavior>
 		</ClientBehaviors>
 		<Geometry
@@ -736,19 +736,19 @@
 			</Shape>
 		</Geometry>
 		<AudioArrayVoice>
-			<AudioEntry Sound="GDI_CombatEngineer_VoiceAttack" AudioType="voiceAttack" />
-			<AudioEntry Sound="GDI_CombatEngineer_VoiceCreate" AudioType="voiceCreated" />
-			<AudioEntry Sound="GDI_CombatEngineer_VoiceGarrison" AudioType="voiceGarrison" />
-			<AudioEntry Sound="GDI_CombatEngineer_VoiceMove" AudioType="voiceMove" />
-			<AudioEntry Sound="GDI_CombatEngineer_VoiceMoveAttack" AudioType="voiceAttackAfterMoving" />
-			<AudioEntry Sound="GDI_CombatEngineer_VoiceRepair" AudioType="voiceRepair" />
-			<AudioEntry Sound="GDI_CombatEngineer_VoiceRetreat" AudioType="voiceRetreatToCastle" />
-			<AudioEntry Sound="GDI_CombatEngineer_VoiceSelectMS" AudioType="voiceSelect" />
+			<AudioEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceAttack" AudioType="voiceAttack" />
+			<AudioEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceCreate" AudioType="voiceCreated" />
+			<AudioEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceGarrison" AudioType="voiceGarrison" />
+			<AudioEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceMove" AudioType="voiceMove" />
+			<AudioEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceMoveAttack" AudioType="voiceAttackAfterMoving" />
+			<AudioEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceRepair" AudioType="voiceRepair" />
+			<AudioEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceRetreat" AudioType="voiceRetreatToCastle" />
+			<AudioEntry Sound="Multisound:GDI_CombatEngineer_VoiceSelectMS" AudioType="voiceSelect" />
 			<!-- Voice for being ordered to enter and repair or capture various things. The names are defined in the 
 			     various EngineerContain modules on the target objects -->
-			<NamedEntry Sound="GDI_CombatEngineer_VoiceRepair" Name="VoiceEngineerRepair" />
-			<NamedEntry Sound="GDI_CombatEngineer_VoiceCaptureBuilding" Name="VoiceCaptureBuilding" />
-			<NamedEntry Sound="GDI_CombatEngineer_VoiceCaptureHusk" Name="VoiceCaptureHusk" />
+			<NamedEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceRepair" Name="VoiceEngineerRepair" />
+			<NamedEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceCaptureBuilding" Name="VoiceCaptureBuilding" />
+			<NamedEntry Sound="AudioEvent:GDI_CombatEngineer_VoiceCaptureHusk" Name="VoiceCaptureHusk" />
 		</AudioArrayVoice>
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
