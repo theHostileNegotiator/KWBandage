@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="instance"
+			source="DATA:BaseObjects/BaseBridge.xml" />
+	</Includes>
+	<GameObject
+		id="TestBridge_GateHouse"
+		inheritFrom="BaseBridgeGateHouse"
+		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS RESIST_EMP UNATTACKABLE BRIDGE_GATEHOUSE"
+		Side="Civilian"
+		TransportSlotCount="1"
+		CommandSet="EmptyCommandSet"
+		EditorSorting="SYSTEM"
+		RadarPriority="STRUCTURE"
+		Description="Desc:BridgeGatehouse">
+		<DisplayName>Name:BridgeGatehouse</DisplayName>
+		<ArmorSet Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="GatehouseTemp" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<EngineerContain
+				id="ModuleTag_EngineerContainBridge"
+				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
+				NameOfVoiceToUseForHostileEnter="VoiceEngineerRepair" 
+				EvaEventForRepair="BridgeRepaired"
+				EvaEventForCapture="BridgeRepaired"
+				FXForRepair="FX_Bridge_Repaired" 
+				FXForCapture="FX_Bridge_Captured" 
+				FXForCaptureAndReplace="FX_Building_Captured"
+				ImmediatelyEnabled="true">
+				<CanEnterFilter Rule="NONE">
+					<IncludeThing>GDIEngineer</IncludeThing>
+					<IncludeThing>NODSaboteur</IncludeThing>
+					<IncludeThing>AlienAssimilator</IncludeThing>
+					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
+					<IncludeThing>ZOCOMEngineer</IncludeThing>
+					<IncludeThing>BlackHandSaboteur</IncludeThing>
+					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Reaper17Assimilator</IncludeThing>
+					<IncludeThing>Traveler59Assimilator</IncludeThing>
+				</CanEnterFilter>
+			</EngineerContain>
+			<FXListBehavior id="ModuleTag_FXList">
+				<DieMuxData DeathTypes="ALL" />
+				<Event Index="onDeath" FX="FX_Bridge_Die" />
+			</FXListBehavior>
+		</Behaviors>
+		<Body>
+			<ImmortalBody
+				id="ModuleTag_ImmortalBody" 
+				MaxHealth="1.0"/>
+		</Body>
+		<Geometry
+			IsSmall="false">
+			<Shape
+				Type="BOX"
+				MajorRadius="8.0"
+				MinorRadius="8.0"
+				Height="24.0">
+				<Offset
+					x="8.0"
+					y="-70.0"
+					z="0.0" />
+			</Shape>
+		</Geometry>
+		<AudioArraySound>
+			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
+		</AudioArraySound>
+		<ShadowInfo
+			Type="VOLUME" />
+	</GameObject>
+</AssetDeclaration>

@@ -247,7 +247,7 @@
 1. Cannot destroy Devastator Warships and Planetary Assault Carrier when upgraded with Forcefields, when shields are disabled
 	* "SHIELDBODY_ENABLED" object status is applied permanently after purchasing Forcefield upgrade, it is still applied when they have been disabled. Instead will use the Weapon Nugget ForbiddenTargetModelCondition and use "USER_19" as the ModelCondition for Shields as it is unused as it will be added or removed depending on the state of the Forcefield
 2. Does not affect Devastator Warships and Planetary Assault Carrier with shields
-	* Added workaround for EMP effect as there is no CylinderAOE for Palalyze Nugget (AOE is a sphere by default). Weapon with Paralyze Nugget is fired from an object spawned from an OCL at a height of 140 which is the height of ships fly at.
+	* Added workaround for EMP effect as there is no CylinderAOE for Paralyze Nugget (AOE is a sphere by default). Weapon with Paralyze Nugget is fired from an object spawned from an OCL at a height of 140 which is the height of ships fly at.
 #### Neutral Units
 1. Viceroids and Mutant Marauders armor, in particular CANNON vulnerability is representative of general Infantry Armor before TW 1.05
 	* Reduced CANNON vulnerability to 25%
