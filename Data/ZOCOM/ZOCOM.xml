@@ -17,6 +17,8 @@
 		<Include type="all" source="Units/ZOCOMMCV.xml" />
 		<Include type="all" source="Units/ZOCOMMissileSoldier.xml" />
 		<Include type="all" source="Units/ZOCOMOrca.xml" />
+		<Include type="all" source="Units/ZOCOMPitbull.xml" />
+		<Include type="all" source="Units/ZOCOMPitbull_Veteran.xml" />
 		<Include type="all" source="Units/ZOCOMPredator.xml" />
 		<Include type="all" source="Units/ZOCOMRifleSoldier.xml" />
 		<Include type="all" source="Units/ZOCOMRig.xml" />

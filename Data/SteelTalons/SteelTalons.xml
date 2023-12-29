@@ -18,6 +18,8 @@
 		<Include type="all" source="Units/SteelTalonsMissileSoldierSquad.xml" />
 		<Include type="all" source="Units/SteelTalonsMissileSoldierSquad_Veteran.xml" />
 		<Include type="all" source="Units/SteelTalonsOrca.xml" />
+		<Include type="all" source="Units/SteelTalonsPitbull.xml" />
+		<Include type="all" source="Units/SteelTalonsPitbull_Veteran.xml" />
 		<Include type="all" source="Units/SteelTalonsRepairAPC.xml" />
 		<Include type="all" source="Units/SteelTalonsRifleSoldier.xml" />
 		<Include type="all" source="Units/SteelTalonsRifleSoldierSquad.xml" />

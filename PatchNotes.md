@@ -542,6 +542,9 @@
 	* Added ALLIES to "Radius Damage Affects" to the weapon launcher. Weapon will not damage allies unless targeted with Forced Fire
 4. Infantry may not be able to catch up to the squad while moving
 	* Reduced squad speed to match the Zone Trooper squad speed
+#### Pitbull
+1. Unit has unused and removed animations for idle and moving which was mainly used for the flag. Removed moving animation had the vehicle slighty bouncing
+	* Used existing animations and added moving animation from the TW Art Pack 1
 #### MRT
 1. Leash range of Repair Drone was not changed from KW 1.01 to 1.02, despite specified in change log
 	* Fixed leash range to 100
