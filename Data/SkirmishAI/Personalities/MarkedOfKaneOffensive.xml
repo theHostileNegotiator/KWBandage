@@ -17,7 +17,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		DesiredExcessPowerBuffer="20"
-		BaseCompactness="0.85"
+		BaseCompactness="0.95"
     DefaultThreatFindRadius="0"
     UnitBuilderCostEffectivenessWeight="1.0"
     UnitBuilderMoneyVersusTimePreference="0.5"
@@ -112,16 +112,12 @@
 
     <OpeningMove Name="MarkedOfKane_EASY" Weight="100%" Difficulty="EASY"/>
 
-    <OpeningMove Name="MarkedOfKaneStandard" Weight="30%" Difficulty="MEDIUM HARD"/>
-    <OpeningMove Name="MarkedOfKaneStandard2" Weight="30%" Difficulty="MEDIUM HARD"/>
-    <OpeningMove Name="MarkedOfKaneAvatarRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-    <OpeningMove Name="MarkedOfKaneVenomRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-    <!--OpeningMove Name="MarkedOfKaneReckonerRush" Weight="5%" Difficulty="MEDIUM HARD"/-->
-    <OpeningMove Name="MarkedOfKaneSpecterRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-    <OpeningMove Name="MarkedOfKaneOpening" Weight="25%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="MarkedOfKaneStandard" Weight="45%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="MarkedOfKaneFastTank" Weight="20%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="MarkedOfKaneFastBikeBuggy" Weight="20%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="MarkedOfKaneBikeRush" Weight="5%" Difficulty="MEDIUM HARD"/>
 
-    <OpeningMove Name="MarkedOfKaneBrutalCrane" Weight="90%" Difficulty="BRUTAL"/>
-    <OpeningMove Name="MarkedOfKaneAvatarRush" Weight="10%" Difficulty="BRUTAL"/>
+    <OpeningMove Name="MarkedOfKaneBrutalCrane" Weight="100%" Difficulty="BRUTAL"/>
 
     <States State="MarkedOfKaneOffensiveDirectAttack1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="MarkedOfKaneOffensiveDirectAttack2" Difficulty="EASY MEDIUM HARD BRUTAL"/>

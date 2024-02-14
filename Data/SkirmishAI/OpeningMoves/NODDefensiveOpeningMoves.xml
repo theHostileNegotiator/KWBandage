@@ -4,37 +4,14 @@
   <Includes>
   </Includes>
 
-  <SkirmishOpeningMove
-    id="NODSuperweaponRush"
-    Side="NOD"> <!--Power: +10-->
-    <Order Build="NODPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="NODRefinery" /> <!--Time: 30 Power: -15-->
-	<Order Build="NODPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="NODRefinery" /> <!--Time: 30 Power: -15-->
-    <Order Build="NODHandOfNOD" /> <!--Time: 5 Power: -5-->
-    <Order Time="75s" Account="PRODUCTION" Deposit="4000" />
-	<Order Build="NODPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="NODOperationsCenter" /> <!--Time: 15 Power: -10-->
-	<Order Build="NODPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="NODTechAssemblyPlant" /> <!--Time: 40 Power: -15-->
-	<Order Build="NODPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="NODTempleOfNOD" /> <!--Time: 50 Power: -20-->
-    <Order Time="195s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-     id="NODDualBarracks"
-     Side="NOD">
-    <Order Time="0s" Account="PRODUCTION" Deposit="2000" />
-    <Order Build="NODPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="NODHandOfNOD" /> <!--Time: 5 Power: -5-->
-    <Order Build="NODRefinery" />  <!--Time: 30 Power: -15-->
-	<Order Build="NODPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="NODRefinery" /> <!--Time: 30 Power: -15-->
-    <Order Build="NODHandOfNOD" /> <!--Time: 5 Power: -5-->
-	<Order Build="NODPowerPlant" /> <!--Time: 5 Power: +15-->
-    <Order Build="NODRefinery" /> <!--Time: 30 Power: -15-->
-    <Order Time="115s" />
-  </SkirmishOpeningMove>
+  <!-- NODPowerPlant  = 5  seconds Power = 15 -->
+  <!-- NODRefinery    = 30 seconds Power = 15 -->
+  <!-- NODHandOfNOD   = 5  seconds Power = 5 -->
+  <!-- NODWarFactory  = 20 seconds Power = 5 -->
+  <!-- NODOperationC  = 15 seconds Power = 10 -->
+  <!-- NODHanger      = 10 seconds Power = 5 -->
+  <!-- NODSecretShrin = 10 seconds Power = 8 -->
+  <!-- NODTechCenter  = 40 seconds Power = 15 -->
+  <!-- NODCrane       = 15 seconds Power = 10 -->
 
 </AssetDeclaration>

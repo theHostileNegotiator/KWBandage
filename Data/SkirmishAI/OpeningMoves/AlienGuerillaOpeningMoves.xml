@@ -6,21 +6,14 @@
 
   <SkirmishOpeningMove
    id="AlienStormriderRush"
-   Side="Alien"> <!--Power: +10-->
-    <Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-	<Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-	<Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienControlCenter" /> <!--Time: 15 Power: -8-->
-    <Order Build="AlienWarpBeacon" /> <!--Time: 10 Power: -7-->
-    <Order Build="AlienWarpBeacon" /> <!--Time: 10 Power: -7-->
+   Side="Alien">
+    <Order Build="AlienPowerProjector" />
+    <Order Build="AlienTiberiumTower" />
+    <Order Build="AlienTiberiumTower" />
+    <Order Build="AlienPowerProjector" />
+    <Order Build="AlienControlCenter" />
+    <Order Build="AlienWarpBeacon" />
 
-    <Order Build="AlienStormrider" />
-    <Order Build="AlienStormrider" />
-    <Order Build="AlienStormrider" />
-    <Order Build="AlienStormrider" />
     <Order Build="AlienStormrider" />
     <Order Build="AlienStormrider" />
     <Order Build="AlienStormrider" />
@@ -29,58 +22,25 @@
   </SkirmishOpeningMove>
 
   <SkirmishOpeningMove
-   id="AlienRavagerRush"
-   Side="Alien"> <!--Power: +10-->
-    <Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-	<Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-	<Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienControlCenter" /> <!--Time: 15 Power: -8-->
-    <Order Build="AlienPortal" /> <!--Time: 6 Power: -5-->
-    <Order Build="AlienPortal" /> <!--Time: 6 Power: -5-->
-	<Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienStatisChamber" /> <!--Time: 12 Power: -8-->
-    <Order Build="AlienReactor" /> <!--Time: 40 Power: -10-->
+   id="AlienDisintegratorRush"
+   Side="Alien">
+    <Order Build="AlienPowerProjector" />
+    <Order Build="AlienPortal" />
+    <Order Time="12s" Account="PRODUCTION" Deposit="1000" />
+    <Order Build="AlienTiberiumTower" />
+    <Order Time="22s" />
+    <Order Build="AlienGateway" />
+    <Order Build="AlienHarvester" />
+    <Order Build="AlienPowerProjector" />
+    <Order Build="AlienHarvester" />
 
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Build="AlienStalkerSquad" />
-    <Order Time="213s" />
+    <Order Build="AlienRazorDroneSquad" />
+    <Order Build="AlienRazorDroneSquad" />
+    <Order Build="AlienRazorDroneSquad" />
+    <Order Build="AlienRazorDroneSquad" />
+    <Order Build="AlienRazorDroneSquad" />
+    <Order Build="AlienRazorDroneSquad" />
+    <Order Time="94s" />
   </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-   id="AlienMechapedeRush"
-   Side="Alien"> <!--Power: +10-->
-	<Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-	<Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienTiberiumTower" /> <!--Time: 30 Power: -15-->
-	<Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienControlCenter" /> <!--Time: 15 Power: -8-->
-    <Order Build="AlienReactor" /> <!--Time: 40 Power: -10-->
-    <Order Build="AlienGateway" /> <!--Time: 20 Power: -6-->
-    <Order Build="AlienPowerProjector" /> <!--Time: 6 Power: +20-->
-    <Order Build="AlienGateway" /> <!--Time: 20 Power: -6-->
-
-    <Order Build="AlienCustomizableVehicle" />
-    <Order Build="AlienCustomizableVehicle" />
-    <Order Build="AlienCustomizableVehicle" />
-    <Order Build="AlienCustomizableVehicle" />
-    <Order Build="AlienCustomizableVehicle" />
-    <Order Build="AlienCustomizableVehicle" />
-    <Order Time="251s" />
-
-  </SkirmishOpeningMove>
-
 
 </AssetDeclaration>

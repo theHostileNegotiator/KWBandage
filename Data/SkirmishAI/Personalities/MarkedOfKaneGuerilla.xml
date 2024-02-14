@@ -17,7 +17,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		DesiredExcessPowerBuffer="10"
-		BaseCompactness="1.00"
+		BaseCompactness="1.10"
     DefaultThreatFindRadius="0"
     UnitBuilderCostEffectivenessWeight="1.0"
     UnitBuilderMoneyVersusTimePreference="0.5"
@@ -115,13 +115,8 @@
 
     <OpeningMove Name="MarkedOfKane_EASY" Weight="100%" Difficulty="EASY"/>
 
-    <OpeningMove Name="MarkedOfKaneStandard" Weight="8%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="MarkedOfKaneStandard2" Weight="8%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="MarkedOfKaneStandardCrane" Weight="9%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="MarkedOfKaneVenomRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <!--OpeningMove Name="MarkedOfKaneReckonerRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/-->
-    <OpeningMove Name="MarkedOfKaneSpecterRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="MarkedOfKaneOpening" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
+    <OpeningMove Name="MarkedOfKaneStandard" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
+    <OpeningMove Name="MarkedOfKaneBikeRush" Weight="60%" Difficulty="MEDIUM HARD BRUTAL"/>
 
     <States State="MarkedOfKanePowerCut" Difficulty="EASY MEDIUM HARD BRUTAL" />
     <States State="MarkedOfKaneResourceSqueeze" Difficulty="HARD BRUTAL" />

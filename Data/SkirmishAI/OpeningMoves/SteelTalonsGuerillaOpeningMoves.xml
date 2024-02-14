@@ -8,49 +8,18 @@
     id="SteelTalonsOrcaRush"
     Side="SteelTalons">
     <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsBarracks" />
+    <Order Time="12s" Account="PRODUCTION" Deposit="1000" />
     <Order Build="SteelTalonsRefinery" />
-    <Order Build="SteelTalonsRefinery" />
-    <Order Build="SteelTalonsPowerPlant" />
-    <Order Build="SteelTalonsRefinery" />
-    <Order Build="SteelTalonsPowerPlant" />
     <Order Build="SteelTalonsCommandPost" />
-    <Order Build="SteelTalonsAirTower" />
+    <Order Build="SteelTalonsPowerPlant" />
     <Order Build="SteelTalonsAirTower" />
 
     <Order Build="SteelTalonsOrca" />
     <Order Build="SteelTalonsOrca" />
     <Order Build="SteelTalonsOrca" />
     <Order Build="SteelTalonsOrca" />
-    <Order Build="SteelTalonsOrca" />
-    <Order Build="SteelTalonsOrca" />
-    <Order Build="SteelTalonsOrca" />
-    <Order Build="SteelTalonsOrca" />
-    <Order Time="190s" />
-  </SkirmishOpeningMove>
-  
-  <SkirmishOpeningMove
-    id="SteelTalonsHammerheadRush"
-    Side="SteelTalons">
-
-    <Order Build="SteelTalonsPowerPlant" />
-    <Order Build="SteelTalonsRefinery" />
-    <Order Build="SteelTalonsRefinery" />
-    <Order Build="SteelTalonsPowerPlant" />
-    <Order Build="SteelTalonsRefinery" />
-    <Order Build="SteelTalonsPowerPlant" />
-    <Order Build="SteelTalonsCommandPost" />
-    <Order Build="SteelTalonsAirTower" />
-    <Order Build="SteelTalonsAirTower" />
-
-    <Order Build="SteelTalonsHammerhead" />
-    <Order Build="SteelTalonsHammerhead" />
-    <Order Build="SteelTalonsHammerhead" />
-    <Order Build="SteelTalonsHammerhead" />
-    <Order Build="SteelTalonsHammerhead" />
-    <Order Build="SteelTalonsHammerhead" />
-    <Order Build="SteelTalonsHammerhead" />
-    <Order Build="SteelTalonsHammerhead" />
-    <Order Time="206s" />
+    <Order Time="118s" />
   </SkirmishOpeningMove>
 
   <SkirmishOpeningMove
@@ -61,10 +30,7 @@
     <Order Build="SteelTalonsRefinery" />
     <Order Build="SteelTalonsRefinery" />
     <Order Build="SteelTalonsPowerPlant" />
-    <Order Build="SteelTalonsRefinery" />
-    <Order Build="SteelTalonsPowerPlant" />
-    <Order Build="SteelTalonsWarfactory" /> 
-    <Order Build="SteelTalonsWarfactory" /> 
+    <Order Build="SteelTalonsWarfactory" />
 
     <Order Build="SteelTalonsPitbull" />
     <Order Build="SteelTalonsPitbull" />
@@ -74,11 +40,7 @@
     <Order Build="SteelTalonsPitbull" />
     <Order Build="SteelTalonsPitbull" />
     <Order Build="SteelTalonsPitbull" />
-    <Order Build="SteelTalonsPitbull" />
-    <Order Build="SteelTalonsPitbull" />
-    <Order Build="SteelTalonsPitbull" />
-    <Order Build="SteelTalonsPitbull" />
-    <Order Time="193s" />
+    <Order Time="150s" />
   </SkirmishOpeningMove>
 
 </AssetDeclaration>

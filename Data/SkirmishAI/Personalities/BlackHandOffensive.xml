@@ -19,7 +19,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		DesiredExcessPowerBuffer="20"
-		BaseCompactness="0.85"
+		BaseCompactness="0.95"
     DefaultThreatFindRadius="0"
     UnitBuilderCostEffectivenessWeight="1.0"
     UnitBuilderMoneyVersusTimePreference="0.5"
@@ -112,16 +112,13 @@
 
     <OpeningMove Name="BlackHand_EASY" Weight="100%" Difficulty="EASY"/>
 
-    <OpeningMove Name="BlackHandStandard" Weight="40%" Difficulty="MEDIUM HARD"/>
-    <OpeningMove Name="BlackHandStandard2" Weight="40%" Difficulty="MEDIUM HARD"/>
-    <OpeningMove Name="BlackHandAvatarRush" Weight="5%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="BlackHandStandard" Weight="50%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="BlackHandFastTank" Weight="20%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="BlackHandFastBikeBuggy" Weight="20%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="BlackHandBikeRush" Weight="5%" Difficulty="MEDIUM HARD"/>
     <OpeningMove Name="BlackHandFlameTankRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-    <!--OpeningMove Name="BlackHandReckonerRush" Weight="5%" Difficulty="MEDIUM HARD"/-->
-    <OpeningMove Name="BlackHandSpecterRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-    <OpeningMove Name="BlackHandRush" Weight="25%" Difficulty="MEDIUM HARD"/>
 
     <OpeningMove Name="BlackHandBrutalCrane" Weight="90%" Difficulty="BRUTAL"/>
-    <OpeningMove Name="BlackHandAvatarRush" Weight="10%" Difficulty="BRUTAL"/>
 
     <States State="BlackHandOffensiveDirectAttack1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="BlackHandOffensiveDirectAttack2" Difficulty="EASY MEDIUM HARD BRUTAL"/>

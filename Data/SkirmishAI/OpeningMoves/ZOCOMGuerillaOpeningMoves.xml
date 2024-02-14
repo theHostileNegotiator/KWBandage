@@ -8,49 +8,18 @@
     id="ZOCOMOrcaRush"
     Side="ZOCOM">
     <Order Build="ZOCOMPowerPlant" />
+    <Order Build="ZOCOMBarracks" />
+    <Order Time="12s" Account="PRODUCTION" Deposit="1000" />
     <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
     <Order Build="ZOCOMCommandPost" />
-    <Order Build="ZOCOMAirTower" />
+    <Order Build="ZOCOMPowerPlant" />
     <Order Build="ZOCOMAirTower" />
 
     <Order Build="ZOCOMOrca" />
     <Order Build="ZOCOMOrca" />
     <Order Build="ZOCOMOrca" />
     <Order Build="ZOCOMOrca" />
-    <Order Build="ZOCOMOrca" />
-    <Order Build="ZOCOMOrca" />
-    <Order Build="ZOCOMOrca" />
-    <Order Build="ZOCOMOrca" />
-    <Order Time="190s" />
-  </SkirmishOpeningMove>
-  
-  <SkirmishOpeningMove
-    id="ZOCOMHammerheadRush"
-    Side="ZOCOM">
-
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMCommandPost" />
-    <Order Build="ZOCOMAirTower" />
-    <Order Build="ZOCOMAirTower" />
-
-    <Order Build="ZOCOMHammerhead" />
-    <Order Build="ZOCOMHammerhead" />
-    <Order Build="ZOCOMHammerhead" />
-    <Order Build="ZOCOMHammerhead" />
-    <Order Build="ZOCOMHammerhead" />
-    <Order Build="ZOCOMHammerhead" />
-    <Order Build="ZOCOMHammerhead" />
-    <Order Build="ZOCOMHammerhead" />
-    <Order Time="206s" />
+    <Order Time="134s" />
   </SkirmishOpeningMove>
 
   <SkirmishOpeningMove
@@ -61,9 +30,6 @@
     <Order Build="ZOCOMRefinery" />
     <Order Build="ZOCOMRefinery" />
     <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMWarfactory" /> 
     <Order Build="ZOCOMWarfactory" /> 
 
     <Order Build="ZOCOMPitbull" />
@@ -74,11 +40,7 @@
     <Order Build="ZOCOMPitbull" />
     <Order Build="ZOCOMPitbull" />
     <Order Build="ZOCOMPitbull" />
-    <Order Build="ZOCOMPitbull" />
-    <Order Build="ZOCOMPitbull" />
-    <Order Build="ZOCOMPitbull" />
-    <Order Build="ZOCOMPitbull" />
-    <Order Time="193s" />
+    <Order Time="150s" />
   </SkirmishOpeningMove>
 
 </AssetDeclaration>

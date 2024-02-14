@@ -6,15 +6,10 @@
 
   <SkirmishOpeningMove
     id="SteelTalons_EASY"
-    Side="SteelTalons"> <!--Power: +10-->
-    <Order Build="SteelTalonsCrane" /> <!--Time: 15 Power: -10-->
-	<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-    <Order Build="SteelTalonsBarracks" /> <!--Time: 5 Power: -5-->
-    <Order Build="SteelTalonsBarracks" /> <!--Time: 5 Power: -5-->
-    <Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-    <Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-    <Order Build="SteelTalonsWarfactory" /> <!--Time: 20 Power: -7-->
-    <Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
+    Side="SteelTalons">
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsBarracks" />
+    <Order Build="SteelTalonsRefinery" />
 
     <Order Build="SteelTalonsRifleSoldierSquad" />
     <Order Build="SteelTalonsRifleSoldierSquad" />
@@ -31,84 +26,74 @@
     <Order Build="SteelTalonsRifleSoldierSquad" />
     <Order Build="SteelTalonsRifleSoldierSquad" />
     <Order Build="SteelTalonsRifleSoldierSquad" />
-    
+    <Order Time="160s"/>
+    <Order Build="SteelTalonsWarfactory" />
     <Order Time="180s" />
   </SkirmishOpeningMove>
 
-	<SkirmishOpeningMove
+  <SkirmishOpeningMove
     id="SteelTalonsStandard"
-    Side="SteelTalons"> <!--Power: +10-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsBarracks" /> <!--Time: 5 Power: -5-->
-		<Order Build="SteelTalonsRifleSoldierSquad" />
-		<Order Build="SteelTalonsRifleSoldierSquad" />
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsWarfactory" /> <!--Time: 20 Power: -7-->
-		<Order Time="99s" Account="PRODUCTION" Deposit="1000" />
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Time="173s" />
-	</SkirmishOpeningMove>
+    Side="SteelTalons">
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsBarracks" />
+    <Order Time="12s" Account="PRODUCTION" Deposit="1500" />
+    <Order Build="SteelTalonsRefinery" />
+    <Order Build="SteelTalonsWarfactory" />
+    <Order Build="SteelTalonsHeavyHarvester" />
+    <Order Build="SteelTalonsHeavyHarvester" />
+	<!-- 94s -->
+    <Order Time="99s" />
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsRefinery" />
+    <Order Time="139s" />
+    <Order Build="SteelTalonsWolverine" />
+    <Order Build="SteelTalonsWolverine" />
+    <Order Time="157s" />
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsHeavyHarvester" />
+    <Order Time="173s" />
+  </SkirmishOpeningMove>
 
-	<SkirmishOpeningMove
-    id="SteelTalonsStandard2"
-    Side="SteelTalons"> <!--Power: +10-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsWarfactory" /> <!--Time: 20 Power: -7-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Time="64s" Account="PRODUCTION" Deposit="4500" />
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsBarracks" /> <!--Time: 5 Power: -5-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Time="173s" />
-	</SkirmishOpeningMove>
 
-	<SkirmishOpeningMove
-    id="SteelTalonsStandardCrane"
-    Side="SteelTalons"> <!--Power: +10-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsBarracks" /> <!--Time: 5 Power: -5-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsCrane" /> <!--Time: 15 Power: -10-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsWarfactory" /> <!--Time: 20 Power: -7-->
-		<!--Order Time="151s" Account="PRODUCTION" Deposit="2000" /-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Time="188s" />
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
+  <SkirmishOpeningMove
     id="SteelTalonsBrutalCrane"
-    Side="SteelTalons"> <!--Power: +10-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsBarracks" /> <!--Time: 5 Power: -5-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsCrane" /> <!--Time: 15 Power: -10-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsWarfactory" /> <!--Time: 20 Power: -7-->
-		<Order Time="121s" Account="PRODUCTION" Deposit="999999" />
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsWarfactory" /> <!--Time: 20 Power: -7-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Build="SteelTalonsPowerPlant" /> <!--Time: 7 Power: +20-->
-		<Order Build="SteelTalonsBarracks" /> <!--Time: 5 Power: -5-->
-		<Order Build="SteelTalonsRefinery" /> <!--Time: 30 Power: -15-->
-		<Order Time="250s" />
-	</SkirmishOpeningMove>
-
+    Side="SteelTalons">
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsBarracks" />
+    <Order Time="12s" Account="PRODUCTION" Deposit="2500" />
+    <Order Build="SteelTalonsRefinery" />
+    <Order Build="SteelTalonsWarfactory" />
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsHeavyHarvester" />
+    <Order Build="SteelTalonsHeavyHarvester" />
+	<!-- 94s -->
+    <Order Time="94s" />
+    <Order Build="SteelTalonsRefinery" />
+    <Order Build="SteelTalonsWolverine" />
+    <Order Build="SteelTalonsWolverine" />
+    <Order Build="SteelTalonsHeavyHarvester" />
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Time="131s" />
+  </SkirmishOpeningMove>
+<!--
+  <SkirmishOpeningMove
+    id="SteelTalonsBrutalCrane"
+    Side="SteelTalons">
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsBarracks" />
+    <Order Build="SteelTalonsRefinery" />
+    <Order Build="SteelTalonsCrane" />
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsRefinery" />
+    <Order Build="SteelTalonsWarfactory" />
+    <Order Time="84s" Account="PRODUCTION" Deposit="999999" />
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsRefinery" />
+    <Order Build="SteelTalonsPowerPlant" />
+    <Order Build="SteelTalonsWarfactory" />
+    <Order Build="SteelTalonsBarracks" />
+    <Order Time="150s" />
+  </SkirmishOpeningMove>
+-->
 </AssetDeclaration>

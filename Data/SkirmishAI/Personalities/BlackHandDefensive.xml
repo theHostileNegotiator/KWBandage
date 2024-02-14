@@ -17,7 +17,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		DesiredExcessPowerBuffer="40"
-		BaseCompactness="0.65"
+		BaseCompactness="0.75"
     DefaultThreatFindRadius="0"
     UnitBuilderCostEffectivenessWeight="1.0"
     UnitBuilderMoneyVersusTimePreference="0.5"
@@ -101,8 +101,9 @@
 
     <OpeningMove Name="BlackHand_EASY" Weight="100%" Difficulty="EASY"/>
 
-    <OpeningMove Name="BlackHandStandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="BlackHandSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
+    <OpeningMove Name="BlackHandStandard" Weight="100%" Difficulty="MEDIUM HARD"/>
+
+    <OpeningMove Name="BlackHandBrutalCrane" Weight="100%" Difficulty="BRUTAL"/>
 
     <States State="BlackHandCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="BlackHandFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>

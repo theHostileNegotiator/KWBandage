@@ -8,27 +8,27 @@
 	<!--Include type="all" source="DefaultPersonality.xml"/>
 	<Include type="all" source="HuntPersonality.xml"/-->
 
-	<!--Include type="all" source="GDIOffensive.xml"/-->
+	<Include type="all" source="GDIOffensive.xml"/>
 	<Include type="all" source="NODOffensive.xml"/>
-	<!--Include type="all" source="AlienOffensive.xml"/>
-	<Include type="all" source="SteelTalonsOffensive.xml"/-->
+	<Include type="all" source="AlienOffensive.xml"/>
+	<Include type="all" source="SteelTalonsOffensive.xml"/>
 	<Include type="all" source="BlackHandOffensive.xml"/>
-	<!--Include type="all" source="Reaper17Offensive.xml"/>
-	<Include type="all" source="ZOCOMOffensive.xml"/-->
+	<Include type="all" source="Reaper17Offensive.xml"/>
+	<Include type="all" source="ZOCOMOffensive.xml"/>
 	<Include type="all" source="MarkedOfKaneOffensive.xml"/>
-	<!--Include type="all" source="Traveler59Offensive.xml"/-->
+	<Include type="all" source="Traveler59Offensive.xml"/>
 
-	<!--Include type="all" source="GDIDefensive.xml"/-->
-	<!--Include type="all" source="NODDefensive.xml"/>
+	<Include type="all" source="GDIDefensive.xml"/>
+	<Include type="all" source="NODDefensive.xml"/>
 	<Include type="all" source="AlienDefensive.xml"/>
-	<Include type="all" source="SteelTalonsDefensive.xml"/-->
+	<Include type="all" source="SteelTalonsDefensive.xml"/>
 	<Include type="all" source="BlackHandDefensive.xml"/>
-	<!--Include type="all" source="Reaper17Defensive.xml"/>
+	<Include type="all" source="Reaper17Defensive.xml"/>
 	<Include type="all" source="ZOCOMDefensive.xml"/>
 	<Include type="all" source="MarkedOfKaneDefensive.xml"/>
-	<Include type="all" source="Traveler59Defensive.xml"/-->
+	<Include type="all" source="Traveler59Defensive.xml"/>
 
-	<!--Include type="all" source="GDIOverlord.xml"/>
+	<Include type="all" source="GDIOverlord.xml"/>
 	<Include type="all" source="NODOverlord.xml"/>
 	<Include type="all" source="AlienOverlord.xml"/>
 	<Include type="all" source="SteelTalonsOverlord.xml"/>
@@ -36,27 +36,27 @@
 	<Include type="all" source="Reaper17Overlord.xml"/>
 	<Include type="all" source="ZOCOMOverlord.xml"/>
 	<Include type="all" source="MarkedOfKaneOverlord.xml"/>
-	<Include type="all" source="Traveler59Overlord.xml"/-->
+	<Include type="all" source="Traveler59Overlord.xml"/>
 
-	<!--Include type="all" source="GDIGuerilla.xml"/-->
+	<Include type="all" source="GDIGuerilla.xml"/>
 	<Include type="all" source="NODGuerilla.xml"/>
-	<!--Include type="all" source="AlienGuerilla.xml"/>
-	<Include type="all" source="SteelTalonsGuerilla.xml"/-->
+	<Include type="all" source="AlienGuerilla.xml"/>
+	<Include type="all" source="SteelTalonsGuerilla.xml"/>
 	<Include type="all" source="BlackHandGuerilla.xml"/>
-	<!--Include type="all" source="Reaper17Guerilla.xml"/>
-	<Include type="all" source="ZOCOMGuerilla.xml"/-->
+	<Include type="all" source="Reaper17Guerilla.xml"/>
+	<Include type="all" source="ZOCOMGuerilla.xml"/>
 	<Include type="all" source="MarkedOfKaneGuerilla.xml"/>
-	<!--Include type="all" source="Traveler59Guerilla.xml"/-->
+	<Include type="all" source="Traveler59Guerilla.xml"/>
 
-	<!--Include type="all" source="GDIOptimal.xml"/>
+	<Include type="all" source="GDIOptimal.xml"/>
 	<Include type="all" source="NODOptimal.xml"/>
 	<Include type="all" source="AlienOptimal.xml"/>
-	<Include type="all" source="SteelTalonsOptimal.xml"/-->
+	<Include type="all" source="SteelTalonsOptimal.xml"/>
 	<Include type="all" source="BlackHandOptimal.xml"/>
-	<!--Include type="all" source="Reaper17Optimal.xml"/>
+	<Include type="all" source="Reaper17Optimal.xml"/>
 	<Include type="all" source="ZOCOMOptimal.xml"/>
 	<Include type="all" source="MarkedOfKaneOptimal.xml"/>
-	<Include type="all" source="Traveler59Optimal.xml"/-->
+	<Include type="all" source="Traveler59Optimal.xml"/>
 
 	<!--Include type="all" source="RandomPersonalities.xml"/-->
 	

@@ -360,7 +360,7 @@
 1. Campaign AI design was not designed properly, structure based on Multiplayer AI. In TW, there are clear differences between Campaign and Multiplayer Skirmish AI in terms of structure and design.
 	* Redesign Campaign AI
 2. Multiplayer AI was not adjusted for KW 1.01 and 1.02 new economy
-	* Redesign Multiplayer AI
+	* Redesign Opening Moves and adjusted some AI states for the current balance.
 #### Scoring
 1. Some units are not valid to appear in the Favourite Units section
 	* Added KindOf Flag CAN_BE_FAVORITE_UNIT

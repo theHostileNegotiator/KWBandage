@@ -17,7 +17,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		DesiredExcessPowerBuffer="20"
-		BaseCompactness="0.85"
+		BaseCompactness="0.95"
     DefaultThreatFindRadius="0"
     UnitBuilderCostEffectivenessWeight="1.0"
     UnitBuilderMoneyVersusTimePreference="0.5"
@@ -112,15 +112,13 @@
 
     <OpeningMove Name="NOD_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="NODStandard" Weight="40%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="NODStandard2" Weight="40%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="NODAvatarRush" Weight="10%" Difficulty="MEDIUM HARD"/>
-    <OpeningMove Name="NODVenomRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-    <!--OpeningMove Name="NODReckonerRush" Weight="5%" Difficulty="MEDIUM HARD"/-->
-    <OpeningMove Name="NODSpecterRush" Weight="5%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="NODStandard" Weight="50%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="NODFastTank" Weight="20%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="NODFastBikeBuggy" Weight="20%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="NODBikeRush" Weight="9%" Difficulty="MEDIUM HARD"/>
+    <OpeningMove Name="NODFlameTankRush" Weight="1%" Difficulty="MEDIUM HARD"/>
 
-		<OpeningMove Name="NODBrutalCrane" Weight="90%" Difficulty="BRUTAL"/>
-		<OpeningMove Name="NODAvatarRush" Weight="10%" Difficulty="BRUTAL"/>
+    <OpeningMove Name="NODBrutalCrane" Weight="100%" Difficulty="BRUTAL"/>
 
     <States State="NODOffensiveDirectAttack1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="NODOffensiveDirectAttack2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
