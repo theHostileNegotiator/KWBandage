@@ -1352,15 +1352,17 @@
 1. Disintegrator visual lasers override each other. Therefore if more than one laser is firing, only the latest shot laser will show.
 	* Added new Weapons, Laser Draws and Laser States.
 		* Added Heroic Laser Effects
-2. Parts of the unit does not use Damaged textures when Really Damaged as second main texture (AUEradHex2) was not swapped to the Damaged texture.
+2. Disintegrator lasers originate from the middle of the gun rather than from the barrel
+	* Change Disintegrator WeaponLaunchBone to the corresponding FX Bone rather than the Gun Bone
+3. Parts of the unit does not use Damaged textures when Really Damaged as second main texture (AUEradHex2) was not swapped to the Damaged texture.
 	* Second texture was changed to the damaged version when Really Damaged
-3. Attacking animation play for any weapon firing instead of only the main weapon
+4. Attacking animation play for any weapon firing instead of only the main weapon
 	* Changed Animation Condition to WEAPONSLOTID_01 and AllowInterleavedFiring="true"
-4. Attacking animation would be prioritised, playing while attacking and moving, causing the legs to 'spaz' and slide across the ground. And there are no unique attack while moving animations
+5. Attacking animation would be prioritised, playing while attacking and moving, causing the legs to 'spaz' and slide across the ground. And there are no unique attack while moving animations
 	* Reordered animation conditions and priorities, attacking animations will not play while moving.
-5. Rubble Model appears to be the same as the base model with incorrect bone references
+6. Rubble Model appears to be the same as the base model with incorrect bone references
 	* Created new Rubble Model having parts missing representative of the debris models that already exists
-6. Recycling tends to be inconsistent, destroyed units may not give resources when in range of the Hexapod
+7. Recycling tends to be inconsistent, destroyed units may not give resources when in range of the Hexapod
 	* Increased Duration of AttributeModifier_Recyclotron to 1.55 seconds
 #### Drone Ship
 1. Subfaction Drone Ships when undeploying have the ability to teleport with Mastermind and Prodigy or Phased with Phasefield ability. This was not present with Base Faction, even in Tiberium Wars

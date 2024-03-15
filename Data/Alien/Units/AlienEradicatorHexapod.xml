@@ -10,6 +10,7 @@
 <!-- Adjusted recycle decal size -->
 <!-- Created Rubble Model (Using damaged model name for memory) -->
 <!-- Fixed FP Mesh Sorting and Simplified Model -->
+<!-- Change Disintegrator Launch Bone to the correct FX Bone instead of Weapon Bone -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all"	source="ART:AUEradHex_D1.w3x" />
@@ -186,27 +187,27 @@
 					<WeaponLaunchBone
 						WeaponSlotID="8"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="B_AUPLASMAGUN_RF" />
+						BoneName="FX_AUPLASMAGUN_RF" />
 					<WeaponLaunchBone
 						WeaponSlotID="9"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="B_AUPLASMAGUN_RM" />
+						BoneName="FX_AUPLASMAGUN_RM" />
 					<WeaponLaunchBone
 						WeaponSlotID="10"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="B_AUPLASMAGUN_RR" />
+						BoneName="FX_AUPLASMAGUN_RR" />
 					<WeaponLaunchBone
 						WeaponSlotID="11"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="B_AUPLASMAGUN_LF" />
+						BoneName="FX_AUPLASMAGUN_LF" />
 					<WeaponLaunchBone
 						WeaponSlotID="12"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="B_AUPLASMAGUN_LM" />
+						BoneName="FX_AUPLASMAGUN_LM" />
 					<WeaponLaunchBone
 						WeaponSlotID="13"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="B_AUPLASMAGUN_LR" />
+						BoneName="FX_AUPLASMAGUN_LR" />
 						
 				<!-- Stalker Shard Launcher -->
 					<WeaponLaunchBone
