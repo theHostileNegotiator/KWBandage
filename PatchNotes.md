@@ -1090,6 +1090,11 @@
 	* Added DetonateCallsKill="true" to trigger the OnDeath effects
 4. Inside the cloaking field of the Disruption Pod, units using special abilities and a special case for Beam Cannon attack do not decloak
 	* ForbiddenConditions defaults were overriden so only TIBERIUM_VIBRATING will decloak, added the default conditions
+5. Disruption Pod when stuck to vehicles will stutter instead of moving smoothly with the vehicle
+	* Removed IMMOBILE KindOf Flag
+6. Vertigo may unnaturally shift when attempting to use Disruption Pod at a close target
+	* Removed FaceTarget requirement for the Special Ability to mitigate the problem. Will just simply drop the pod regardless of which way it faces to the target
+		* Reduced range as it originally matched the Orca
 #### Operations Center
 1. Parts of the model are clean in Damaged States
 	* Added texture swaps for damaged states in ModuleTag_Draw_Missle

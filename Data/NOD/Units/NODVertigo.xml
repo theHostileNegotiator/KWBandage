@@ -2,6 +2,8 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- Changed so it uses only one model between no upgrades and upgrade -->
 <!-- Adjusted Stealth Model so it includes the Disruption Pod upgrade attachment and so it shares Skeleton with the base model -->
+<!-- Reduce Disruption Pod Range -->
+<!-- Remove FaceTarget requirement for Disruption Pod ability -->
 	<Tags></Tags>
 	<Includes>
 		<Include
@@ -597,6 +599,7 @@
 				SpecialPowerTemplate="SpecialPowerDisruptionPod_UnTargeted"
 				SpecialWeapon="NODVertigoDisruptionPodWeapon"
 				WhichSpecialWeapon="1"
+				FaceTarget="false"
 				StartAbilityRange="100.0" />
 			<SpecialPower
 				id="ModuleTag_TargetedDisruptionPod"
@@ -607,7 +610,8 @@
 				SpecialPowerTemplate="SpecialPowerDisruptionPod_Targeted"
 				SpecialWeapon="NODVertigoDisruptionStickyPodWeapon"
 				WhichSpecialWeapon="1"
-				StartAbilityRange="300.0" />
+				FaceTarget="false"
+				StartAbilityRange="150.0" />
 			<AudioLoopUpgrade id="NOD_DisruptionPod_Upgrade" SoundToPlay="AudioEvent:NOD_DisruptionPod_Upgrade">
 				<TriggeredBy>Upgrade_VertigoDisruptionPod</TriggeredBy>
 			</AudioLoopUpgrade> 

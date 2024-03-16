@@ -587,6 +587,7 @@
 				SpecialPowerTemplate="SpecialPowerDisruptionPod_UnTargeted"
 				SpecialWeapon="NODVertigoDisruptionPodWeapon"
 				WhichSpecialWeapon="1"
+				FaceTarget="false"
 				StartAbilityRange="100.0" />
 			<SpecialPower
 				id="ModuleTag_TargetedDisruptionPod"
@@ -597,7 +598,8 @@
 				SpecialPowerTemplate="SpecialPowerDisruptionPod_Targeted"
 				SpecialWeapon="NODVertigoDisruptionStickyPodWeapon"
 				WhichSpecialWeapon="1"
-				StartAbilityRange="300.0" />
+				FaceTarget="false"
+				StartAbilityRange="150.0" />
 			<AudioLoopUpgrade id="NOD_DisruptionPod_Upgrade" SoundToPlay="AudioEvent:NOD_DisruptionPod_Upgrade">
 				<TriggeredBy>Upgrade_VertigoDisruptionPod</TriggeredBy>
 			</AudioLoopUpgrade> 

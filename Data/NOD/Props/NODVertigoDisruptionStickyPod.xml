@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- Fixed Invisibility Nugget Filter -->
+<!-- Removed IMMOBILE KindOf Flag -->
+<!-- Removed BezierProjectile behavior -->
 	<Tags></Tags>
 	<Includes>
 	</Includes>
@@ -13,7 +15,7 @@
 		TransportSlotCount="0"
 		CommandSet="EmptyCommandSet"
 		IsTrainable="false"
-		KindOf="PRELOAD SELECTABLE IMMOBILE NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY"
+		KindOf="PRELOAD SELECTABLE NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY"
 		RadarPriority="UNIT"
 		EditorName="NODVertigoDisruptionStickyPod">
 		<DisplayName>Name:AbilityDisruptionPod</DisplayName>
@@ -72,16 +74,14 @@
 				<DieMuxData
 					DeathTypes="ALL" />
 			</DestroyDie>
-			<BezierProjectile
-				id="ModuleTag_BezierProjectileBehavior"
-				FirstHeightMin="5" 
-				FirstHeightMax="5" 
-				SecondHeightMin="5" 
-				SecondHeightMax="5" 
-				FirstPercentIndent="33"
-				SecondPercentIndent="66"
-				OrientToFlightPath="true"
-				GroundHitFX="FX_DirtHit"/>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_Nod_DisruptionPodExplosion" />
+			</FXListBehavior>
 			</Behaviors>
 		<AI>
 			<AIUpdate
