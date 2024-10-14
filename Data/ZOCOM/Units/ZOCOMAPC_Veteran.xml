@@ -532,11 +532,11 @@
 				LevelCap="4"
 				DoFlash="false"
 				LevelsToGain="1">
-				<TriggeredBy>Upgrade_CallSupportUpgrade</TriggeredBy>
+				<TriggeredBy>Upgrade_CallSupportZOCOMUpgrade</TriggeredBy>
 			</LevelUpUpgrade>
 			<GrantUpgradeCreate
-				id="ModuleTag_GrantUpgradeCreate" 
-				UpgradeToGrant="Upgrade_CallSupportUpgrade"	/>
+				id="ModuleTag_GrantZOCOMUpgradeCreate" 
+				UpgradeToGrant="Upgrade_CallSupportZOCOMUpgrade" />
 		</Behaviors>
 		<AI>
 			<AIUpdate

@@ -16,7 +16,7 @@
 		BuildTime="14"
 		CommandSet="AlienMechapedeMemberCommandSet"
 		CommandPoints="100" 
-		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE TIBERIUM_BASED CAN_HEAL_ALLIES AI_BUZZERS_CANT_ATTACH_TO_ME"
+		KindOf="PRELOAD SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAST_REFLECTIONS SCORE VEHICLE TIBERIUM_BASED AI_BUZZERS_CANT_ATTACH_TO_ME"
 		RadarPriority="UNIT"
 		ProductionQueueType="INFANTRY"
 		UnitCategory="INFANTRY"
@@ -394,13 +394,7 @@
 				id="ModuleTag_VeterancyUpgrade"
 				StatusToSet="WEAPON_UPGRADED_01">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
-			</StatusBitsUpgrade>	
-			
-      		<AudioLoopUpgrade 
-				id="ForceFieldUpgradeSound" 
-				SoundToPlay="AudioEvent:ALI_ForceField_Begin">
-        	<TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
-     		</AudioLoopUpgrade>						
+			</StatusBitsUpgrade>			
 		</Behaviors>
 		<AI>
 			<AIUpdate

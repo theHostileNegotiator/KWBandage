@@ -449,17 +449,6 @@
 				IdleWhenStartingPower="true">
 				<FXOffset x="25" y="0" z="0"></FXOffset>
 			</CreateAndEnterObjectSpecialPower>
-			<LevelUpUpgrade
-				id="ModuleTag_LevelUpUpgrade"
-				LevelCap="4"
-				DoFlash="false"
-				LevelsToGain="1">
-				<TriggeredBy>Upgrade_CallSupportUpgrade</TriggeredBy>
-			</LevelUpUpgrade>
-			<GrantUpgradeCreate
-				id="ModuleTag_GrantUpgradeCreate" 
-				UpgradeToGrant="Upgrade_CallSupportUpgrade"
-			/>
 			<StatusBitsUpgrade
 				id="ModuleTag_UpgradeWeapon"
 				StatusToSet="WEAPON_UPGRADED_01">
@@ -530,13 +519,21 @@
 			<AudioLoopUpgrade id="GDI_CommandPost_APammoUpgrade" SoundToPlay="AudioEvent:GDI_CommandPost_APammoUpgrade">
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
 			</AudioLoopUpgrade>
-
 			<SubObjectsUpgrade
 				id="ModuleTag_APCShowAPAmmoUpgrade"
 				ShowSubObjects="APC_UGAB APC_UGTURRET">
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
 			</SubObjectsUpgrade>
-
+			<LevelUpUpgrade
+				id="ModuleTag_LevelUpUpgrade"
+				LevelCap="4"
+				DoFlash="false"
+				LevelsToGain="1">
+				<TriggeredBy>Upgrade_CallSupportUpgrade</TriggeredBy>
+			</LevelUpUpgrade>
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantUpgradeCreate" 
+				UpgradeToGrant="Upgrade_CallSupportUpgrade" />
 		</Behaviors>
 		<AI>
 			<AIUpdate
