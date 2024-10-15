@@ -4,6 +4,9 @@
 <!-- Fixed structure randomly play the Growth Accelerator select sound effects instead of it's own -->
 	<Tags></Tags>
 	<Includes>
+		<Include
+			type="all"
+			source="ART:ABGrowthStim_IDLB.w3x" />
 	</Includes>
 	<GameObject
 		id="Reaper17GrowthStimulator"
@@ -126,6 +129,11 @@
 						AnimationName="ABGrowthStim_IDLA"
 						AnimationMode="ONCE"
 						AnimationPriority="30" 
+						AnimationBlendTime="15" />
+					<Animation
+						AnimationName="ABGrowthStim_IDLB"
+						AnimationMode="ONCE"
+						AnimationPriority="10" 
 						AnimationBlendTime="15" />
 				</AnimationState>
 				<AnimationState

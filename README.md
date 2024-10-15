@@ -41,5 +41,6 @@
  Lauren/Darth Jane: Assimilator Animation extractor  
  Jonwil: APT2XML Tool  
  OpenSAGE Team: OpenSAGE Blender Plugin  
- Stygs: Providing Models
+ Stygs: Providing Models and Fixes
+ Masterleaf: Fixes
  

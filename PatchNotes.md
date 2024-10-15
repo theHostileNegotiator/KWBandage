@@ -1431,6 +1431,8 @@
 #### Growth Stimulator
 1. When selecting structure, it will sometimes play the Growth Accelerator select sound instead of the Stimulator select sound.
 	* Removed Growth Accelerator sound effects which was due to the Stimulator inheriting the Accelerator and not removing sounds.
+2. The second idle animation is missing for unknown reason (from Growth Accelerator)
+	* Added idle animation B from Growth Accelerator and retarget for Stimulator.
 #### Storm Column
 1. Missile Jammer has incorrect firing effects, using the Mammoth fire FX
 	* Changed Fire FX of weapon and added Weapon Bone references in the GameObject
