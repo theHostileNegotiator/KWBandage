@@ -49785,7 +49785,26 @@
     <StringAndHash Hash="195896" Text="NUVERTSTLTH.UG_RD" />
     <StringAndHash Hash="1957224588" Text="NUWODTNK_SKN.TIBCOREMISSILE" />
     <StringAndHash Hash="1543386127" Text="BlackHandOptimalArtillery" />
+    <StringAndHash Hash="2305085637" Text="AlienFastTank" />
+    <StringAndHash Hash="3151902559" Text="AlienDisintegratorRush" />
+    <StringAndHash Hash="971272994" Text="BlackHandFastTank" />
+    <StringAndHash Hash="2051810977" Text="BlackHandFastBikeBuggy" />
+    <StringAndHash Hash="2736937827" Text="BlackHandBikeRush" />
     <StringAndHash Hash="3024069357" Text="BlackHandOffensiveArtillery" />
+    <StringAndHash Hash="3638566605" Text="GDIFastPitbull" />
+    <StringAndHash Hash="673652079" Text="MarkedOfKaneFastTank" />
+    <StringAndHash Hash="1140806983" Text="MarkedOfKaneFastBikeBuggy" />
+    <StringAndHash Hash="681788081" Text="MarkedOfKaneBikeRush" />
+    <StringAndHash Hash="1602400075" Text="NODFastTank" />
+    <StringAndHash Hash="2201811228" Text="NODFastBikeBuggy" />
+    <StringAndHash Hash="2077187512" Text="NODBikeRush" />
+    <StringAndHash Hash="671664785" Text="NODFlameTankRush" />
+    <StringAndHash Hash="2046318880" Text="Reaper17FastTank" />
+    <StringAndHash Hash="104974968" Text="Reaper17DisintegratorRush" />
+    <StringAndHash Hash="2025940353" Text="SteelTalonsFastPitbull" />
+    <StringAndHash Hash="3055002048" Text="Traveler59FastTank" />
+    <StringAndHash Hash="3641039966" Text="Traveler59DisintegratorRush" />
+    <StringAndHash Hash="2196338044" Text="ZOCOMFastPitbull" />
     <StringAndHash Hash="109599311" Text="BlackHandDefensiveArtillery" />
     <StringAndHash Hash="293035559" Text="BlackHandGuerillaArtillery" />
     <StringAndHash Hash="1714072555" Text="CM_1_3_BlackHandStructureKill_Easy" />
@@ -49985,6 +50004,7 @@
     <StringAndHash Hash="2008021067" Text="HordeSpecialRangeAttack" />
     <StringAndHash Hash="3096329578" Text="NODFlameTankFlamerUpgradedWarheadForAllies" />
     <StringAndHash Hash="1230486265" Text="SpecialPower_BlackHandConfessorCabalGrenadeTrigger" />
+    <StringAndHash Hash="452219907" Text="FX_NOD_PurifierExplodeWithVoice" />
     <StringAndHash Hash="509713241" Text="NODFlameTankFlamerWarheadForAllies" />
     <StringAndHash Hash="2642305535" Text="NODWarmechFlamerWarheadForAllies" />
     <StringAndHash Hash="3787687168" Text="NODMetaTiberiumGooWarhead" />
@@ -49998,9 +50018,11 @@
     <StringAndHash Hash="3153348202" Text="GDIMidAir_FlakHeroic" />
     <StringAndHash Hash="4349109" Text="GDIMidAir_FlashHeroic" />
     <StringAndHash Hash="876579517" Text="FX_MidAirFlakExplosionHeroic" />
+    <StringAndHash Hash="1573468815" Text="GDIGolemCannonRailgun_Accelerated" />
     <StringAndHash Hash="3553297574" Text="SpecialPower_EMPGrenadesDispatch" />
     <StringAndHash Hash="2443863816" Text="SpecialPower_EMPGrenadesTrigger" />
     <StringAndHash Hash="3889142473" Text="GUHAMHEADR.GUHELI" />
+    <StringAndHash Hash="2668187580" Text="MammothTankRailCannon_Accelerated" />
     <StringAndHash Hash="1970935184" Text="Modifier_MARVWeaponFiring" />
     <StringAndHash Hash="1748489398" Text="GUMARVCANNON_SKL" />
     <StringAndHash Hash="2513164958" Text="GUMARVCANNON_SKN.MUZZLEFLASH_01" />
@@ -50013,6 +50035,11 @@
     <StringAndHash Hash="1106190119" Text="MARVZoneTrooperWeapon02" />
     <StringAndHash Hash="485648822" Text="MARVZoneTrooperWeapon03" />
     <StringAndHash Hash="3244149267" Text="MARVZoneTrooperWeapon04" />
+    <StringAndHash Hash="429778627" Text="MARVZoneTrooperWeapon01_Accelerated" />
+    <StringAndHash Hash="608639898" Text="MARVZoneTrooperWeapon02_Accelerated" />
+    <StringAndHash Hash="2049219013" Text="MARVZoneTrooperWeapon03_Accelerated" />
+    <StringAndHash Hash="1627740723" Text="MARVZoneTrooperWeapon04_Accelerated" />
+    <StringAndHash Hash="556772373" Text="GDIPredatorTankRailgun_Accelerated" />
     <StringAndHash Hash="264651259" Text="GDIShattererShockWaveCannonWarheadForAllies" />
     <StringAndHash Hash="350248784" Text="GDISonicShockWaveCannonWarheadForAllies" />
     <StringAndHash Hash="1687113240" Text="NODAvatarFlamerWarheadForAllies" />
@@ -50030,11 +50057,13 @@
     <StringAndHash Hash="2463368237" Text="AURPRTRIPOD_FP" />
     <StringAndHash Hash="2052241206" Text="SpecialPower_Reaper17Swarm" />
     <StringAndHash Hash="640023814" Text="OCL_Reaper17Buzzers" />
+    <StringAndHash Hash="2365666939" Text="ABGROWTHSTIM_IDLB" />
     <StringAndHash Hash="2625822154" Text="AlienHarvesterArmorShieldBodyEnabled" />
     <StringAndHash Hash="3762033947" Text="AUSHARDWLKR_FP" />
     <StringAndHash Hash="116582856" Text="AttributeModifier_PreventCrush6" />
     <StringAndHash Hash="1200587428" Text="GUMamm_AAUG_D" />
     <StringAndHash Hash="2662196241" Text="GUVehicleF_AAUG_D" />
+    <StringAndHash Hash="2930506593" Text="TitanCannonRailgun_Accelerated" />
     <StringAndHash Hash="1768428231" Text="OCL_SteelTalonsTitanDebris" />
     <StringAndHash Hash="2183758691" Text="SpecialPower_Traveler59Swarm" />
     <StringAndHash Hash="406262572" Text="OCL_Traveler59Buzzers" />
@@ -50071,12 +50100,22 @@
     <StringAndHash Hash="4209219196" Text="Traveler59Buzzers" />
     <StringAndHash Hash="42169287" Text="Command_ConstructTraveler59Buzzers" />
     <StringAndHash Hash="2535335004" Text="AlienMechapedeTioxinBlastCannonWarheadForAllies" />
+    <StringAndHash Hash="3156109390" Text="AlienTiberiumAgitationExplosiveWeapon0" />
+    <StringAndHash Hash="3317955807" Text="AlienTiberiumAgitationExplosiveWeapon1" />
+    <StringAndHash Hash="213329401" Text="AlienTiberiumAgitationExplosiveWeapon3" />
+    <StringAndHash Hash="2391463600" Text="AlienTiberiumAgitationExplosiveWeapon4" />
+    <StringAndHash Hash="3852859335" Text="AlienTiberiumAgitationExplosiveWeapon5" />
     <StringAndHash Hash="336511325" Text="NODBlackHandFlamethrowerWarheadForAllies" />
     <StringAndHash Hash="3230170649" Text="NODBlackHandUpgradedFlamethrowerWarhead" />
     <StringAndHash Hash="3233998803" Text="NODBlackHandUpgradedFlamethrowerWarheadForAllies" />
     <StringAndHash Hash="297018503" Text="GDIBattleBaseRailgun01" />
+    <StringAndHash Hash="4194807312" Text="GDIBattleBaseRailgun01_Accelerated" />
     <StringAndHash Hash="1439894790" Text="GDIBattleBaseRailgun02" />
+    <StringAndHash Hash="2495534754" Text="GDIBattleBaseRailgun02_Accelerated" />
     <StringAndHash Hash="3754685046" Text="IonStormWeaponWarheadForAllies" />
+    <StringAndHash Hash="2436046794" Text="OCL_MarkedOfKaneMagneticMineAttached" />
+    <StringAndHash Hash="2453201033" Text="MagneticMineAttachWeapon" />
+    <StringAndHash Hash="1900233073" Text="ZoneTrooperMachineGun_Accelerated" />
     <StringAndHash Hash="966791776" Text="AttributeModifier_PreventCrush7_5" />
     <StringAndHash Hash="928123680" Text="HC_NUEnlightened_UGCL" />
     <StringAndHash Hash="472442113" Text="NUSILENT_EMPB" />
@@ -50100,6 +50139,8 @@
     <StringAndHash Hash="2050031954" Text="NODBunkerTruckStructurePrevention" />
     <StringAndHash Hash="3531412847" Text="VeinDetonationCreationWeapon" />
     <StringAndHash Hash="722064373" Text="NODVeinDetonationTrigger" />
+    <StringAndHash Hash="3906013209" Text="MagneticMineAttachedWeapon" />
+    <StringAndHash Hash="3025156035" Text="MarkedOfKaneMagneticMineAttached" />
     <StringAndHash Hash="4086470192" Text="GUSTLSHAT_DIEA" />
     <StringAndHash Hash="2614304432" Text="Reaper17MillipedeBody" />
     <StringAndHash Hash="4259258633" Text="Reaper17MillipedeHead" />
@@ -50169,6 +50210,7 @@
     <StringAndHash Hash="1005311058" Text="Traveler59MechapedeBodySegmentsExperienceLevel_2" />
     <StringAndHash Hash="3197274732" Text="Traveler59MechapedeBodySegmentsExperienceLevel_3" />
     <StringAndHash Hash="2212872776" Text="Traveler59MechapedeBodySegmentsExperienceLevel_4" />
+    <StringAndHash Hash="3025332741" Text="ZOCOMMiniMCVOutpostExperienceLevel_1" />
     <StringAndHash Hash="2088216678" Text="CM_2_1_GDIBombingRuns" />
     <StringAndHash Hash="3065281956" Text="CM_2_1_GDIReactiveDefense" />
     <StringAndHash Hash="3914079796" Text="CM_2_3_GDIOptimal_EASY" />

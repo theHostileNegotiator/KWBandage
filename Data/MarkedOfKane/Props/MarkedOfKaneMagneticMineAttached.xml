@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes>
+	</Includes>
+	<GameObject
+		id="MarkedOfKaneMagneticMineAttached"
+		Side="MarkedOfKane"
+		EditorSorting="MISC_MAN_MADE"
+		OcclusionDelay="0"
+		KindOf="PRELOAD SELECTABLE NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY CAN_ATTACK"
+		EditorName="MarkedOfKaneMagneticMineAttached">
+		<DisplayName>Mine</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<Physics
+				id="ModuleTag_Physics" />
+			<DestroyDie
+				id="ModuleTag_DestroyDie">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="EXPLODED"/>
+				<Event
+					Index="onDeath"
+					FX="FX_NodMagneticMinesExp_Sound" />
+			</FXListBehavior>
+			<AttachUpdate
+				id="ModuleTag_Attach"
+				Range="10.0"
+				Teleport="true"
+				UseGeometry="true"
+				DetachWhenParentHealed="false"
+				ParentStatus="RIDER_3"
+				ForbiddenParentStatus="UNDERGOING_REPAIR">
+				<ObjectFilter
+					Rule="NONE"
+					Relationship="NEUTRAL ENEMIES"
+					Include="VEHICLE">
+				</ObjectFilter>
+			</AttachUpdate>
+			<FireWeaponUpdate
+				id="ModuleTag_FireWeaponUpdate">
+				<FireWeaponNugget
+					WeaponName="MagneticMineAttachedWeapon"
+					FireDelay="0s"
+					FireInterval="1.0s" />				
+			</FireWeaponUpdate>	
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="50.0" />
+		</Body>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"
+				AutoAcquireEnemiesWhenIdle="YES">
+				<UnitAITargetChooserData
+					SympathyRange="25.0" />
+			</AIUpdate>
+		</AI>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="15.0"
+				Height="10.0"/>
+		</Geometry>
+	</GameObject>
+</AssetDeclaration>
