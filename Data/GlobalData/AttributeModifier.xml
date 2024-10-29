@@ -118,6 +118,13 @@
 		ModelConditionsSet="USER_1" >
 	</AttributeModifier>
 	
+<!-- Prevent Magnetic Mine being attackable and targeted when attached -->
+	<AttributeModifier
+		id="AttributeModifier_MagneticMineAttached"
+		ObjectStatusToSet="UNATTACKABLE"
+		Duration="1.0s">
+	</AttributeModifier>
+	
 <!-- New Mission Specific AttributeModifier to Buff ROF rather than nerf -->
 	<AttributeModifier
 		id="AttributeModifier_CM24MetaUnitBuff"

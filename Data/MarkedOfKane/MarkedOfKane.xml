@@ -55,7 +55,8 @@
 		<Include type="all" source="structures/MarkedOfKanePropagandaTower.xml" />	
 		<Include type="all" source="structures/MG_MarkedOfKane_WarmechFacility.xml" />
 		
-		<Include type="all" source="props/MarkedOfKaneMagneticMineAttached.xml" />
+		<Include type="all" source="props/MarkedOfKaneMagneticMine.xml" />
+		<Include type="all" source="props/MarkedOfKaneMagneticMineVision.xml" />
 
 	</Includes>
 </AssetDeclaration>

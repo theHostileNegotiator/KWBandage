@@ -4,12 +4,12 @@
 	<Includes>
 	</Includes>
 	<GameObject
-		id="MarkedOfKaneMagneticMineAttached"
+		id="MarkedOfKaneMagneticMineVision"
 		Side="MarkedOfKane"
 		EditorSorting="MISC_MAN_MADE"
 		OcclusionDelay="0"
-		KindOf="PRELOAD SELECTABLE NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY CAN_ATTACK"
-		EditorName="MarkedOfKaneMagneticMineAttached">
+		KindOf="STICK_TO_TERRAIN_SLOPE IGNORE_FOR_VICTORY UNATTACKABLE"
+		EditorName="MarkedOfKaneMagneticMineVision">
 		<DisplayName>Mine</DisplayName>
 		<ArmorSet
 			Armor="NoArmor" />
@@ -25,57 +25,44 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
-			<Physics
-				id="ModuleTag_Physics" />
 			<DestroyDie
 				id="ModuleTag_DestroyDie">
 				<DieMuxData
 					DeathTypes="ALL" />
 			</DestroyDie>
-			<FXListBehavior
-				id="ModuleTag_FXList">
-				<DieMuxData
-					DeathTypes="ALL"
-					DeathTypesForbidden="EXPLODED"/>
-				<Event
-					Index="onDeath"
-					FX="FX_NodMagneticMinesExp_Sound" />
-			</FXListBehavior>
+			<InvisibilityUpdate
+				id="ModuleTag_Invisibility"
+				Options="STARTS_ACTIVE">
+				<InvisibilityNugget />
+			</InvisibilityUpdate>
+			<SlavedUpdate
+				id="ModuleTag_SlavedUpdate"
+				LeashRange="20"
+				GuardMaxRange="20"
+				GuardWanderRange="20"
+				AttackRange="0"
+				UseSlaverAsControlForEvaObjectSightedEvents="false"
+				DieOnMastersDeath="true" />
+			<!-- Remove vision when parent Mine is attached -->
 			<AttachUpdate
 				id="ModuleTag_Attach"
-				Range="10.0"
+				Range="15.0"
+				CloseEnoughRange="10.0"
 				Teleport="true"
-				UseGeometry="true"
+				UseGeometry="false"
 				DetachWhenParentHealed="false"
-				ParentStatus="RIDER_3"
-				ForbiddenParentStatus="UNDERGOING_REPAIR">
+				ForbiddenParentStatus="UNATTACKABLE">
 				<ObjectFilter
-					Rule="NONE"
-					Relationship="NEUTRAL ENEMIES"
-					Include="VEHICLE">
+					Rule="NONE">
+					<IncludeThing>MarkedOfKaneMagneticMine</IncludeThing>
 				</ObjectFilter>
 			</AttachUpdate>
-			<FireWeaponUpdate
-				id="ModuleTag_FireWeaponUpdate">
-				<FireWeaponNugget
-					WeaponName="MagneticMineAttachedWeapon"
-					FireDelay="0s"
-					FireInterval="1.0s" />				
-			</FireWeaponUpdate>	
 		</Behaviors>
 		<Body>
 			<ActiveBody
 				id="ModuleTag_Body"
 				MaxHealth="50.0" />
 		</Body>
-		<AI>
-			<AIUpdate
-				id="ModuleTag_AI"
-				AutoAcquireEnemiesWhenIdle="YES">
-				<UnitAITargetChooserData
-					SympathyRange="25.0" />
-			</AIUpdate>
-		</AI>
 		<Geometry
 			IsSmall="true">
 			<Shape
@@ -83,5 +70,8 @@
 				MajorRadius="15.0"
 				Height="10.0"/>
 		</Geometry>
+		<VisionInfo
+			VisionRange="10"
+			ShroudClearingRange="10" />
 	</GameObject>
 </AssetDeclaration>

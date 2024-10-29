@@ -50113,12 +50113,11 @@
     <StringAndHash Hash="1439894790" Text="GDIBattleBaseRailgun02" />
     <StringAndHash Hash="2495534754" Text="GDIBattleBaseRailgun02_Accelerated" />
     <StringAndHash Hash="3754685046" Text="IonStormWeaponWarheadForAllies" />
-    <StringAndHash Hash="2436046794" Text="OCL_MarkedOfKaneMagneticMineAttached" />
-    <StringAndHash Hash="2453201033" Text="MagneticMineAttachWeapon" />
     <StringAndHash Hash="1900233073" Text="ZoneTrooperMachineGun_Accelerated" />
     <StringAndHash Hash="966791776" Text="AttributeModifier_PreventCrush7_5" />
     <StringAndHash Hash="928123680" Text="HC_NUEnlightened_UGCL" />
     <StringAndHash Hash="472442113" Text="NUSILENT_EMPB" />
+    <StringAndHash Hash="1940502996" Text="AttributeModifier_MagneticMineAttached" />
     <StringAndHash Hash="3161780485" Text="NODRocketMilitantArmor_TiberiumInfused" />
     <StringAndHash Hash="2877090101" Text="TibTrooperBlastCannonWarhead" />
     <StringAndHash Hash="1036322433" Text="TibTrooperBlastCannonWarheadForAllies" />
@@ -50139,8 +50138,7 @@
     <StringAndHash Hash="2050031954" Text="NODBunkerTruckStructurePrevention" />
     <StringAndHash Hash="3531412847" Text="VeinDetonationCreationWeapon" />
     <StringAndHash Hash="722064373" Text="NODVeinDetonationTrigger" />
-    <StringAndHash Hash="3906013209" Text="MagneticMineAttachedWeapon" />
-    <StringAndHash Hash="3025156035" Text="MarkedOfKaneMagneticMineAttached" />
+    <StringAndHash Hash="3875235882" Text="MarkedOfKaneMagneticMineVision" />
     <StringAndHash Hash="4086470192" Text="GUSTLSHAT_DIEA" />
     <StringAndHash Hash="2614304432" Text="Reaper17MillipedeBody" />
     <StringAndHash Hash="4259258633" Text="Reaper17MillipedeHead" />

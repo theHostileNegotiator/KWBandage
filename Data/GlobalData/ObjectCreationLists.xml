@@ -577,13 +577,4 @@
 		</CreateObject>
 	</ObjectCreationList>
 
-<!-- Create Magnetic Mine to Attach to Units -->
-	<ObjectCreationList
-		id="OCL_MarkedOfKaneMagneticMineAttached">
-		<CreateObject
-			Options="IGNORE_ALL_OBJECTS"
-			Disposition="ON_GROUND_ALIGNED">
-			<CreateObject>MarkedOfKaneMagneticMineAttached</CreateObject>
-		</CreateObject>
-	</ObjectCreationList>
 </AssetDeclaration>

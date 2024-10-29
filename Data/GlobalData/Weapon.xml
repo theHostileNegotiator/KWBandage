@@ -3003,52 +3003,9 @@
 	</WeaponTemplate>
 
 <!-- Overhaul Magnetic Mine Weapon -->
-<!-- Weapons will now cause damage to self to destroy itself on detonation,
-	 Fires weapon on the vehicle crushing -->
 	<WeaponTemplate
 		id="MagneticMineWeapon"
 		Name="MagneticMineWeapon"
-		RadiusDamageAffects="ENEMIES NEUTRALS SELF">
-		<Nuggets>
-			<DamageNugget
-				Damage="1.0"
-				Radius="0.0"
-				DamageType="MINE"
-				DeathType="EXPLODED" />
-			<DamageNugget
-				Damage="400.0"
-				Radius="20.0"
-				DelayTimeSeconds="0.0s"
-				DamageType="MINE"
-				DeathType="EXPLODED">
-				<SpecialObjectFilter
-					Rule="NONE"
-					Relationship="ALLIES">
-					<IncludeThing>MarkedOfKaneMagneticMine</IncludeThing>
-				</SpecialObjectFilter>
-			</DamageNugget>
-			<FireOnObjectsNugget
-				Radius="20.0"
-				Weapon="MagneticMineAttachWeapon">
-				<Filter
-					Rule="NONE"
-					Include="VEHICLE" />
-			</FireOnObjectsNugget>
-		</Nuggets>
-	</WeaponTemplate>
-<!-- Weapon fires an OCL on the crushing vehicle that will spawn a mine that will attach to the object -->
-	<WeaponTemplate
-		id="MagneticMineAttachWeapon"
-		Name="MagneticMineAttachWeapon"
-		RadiusDamageAffects="ENEMIES NEUTRALS">
-		<Nuggets>
-			<WeaponOCLNugget WeaponOCL="OCL_MarkedOfKaneMagneticMineAttached" />
-		</Nuggets>
-	</WeaponTemplate>
-<!-- This is fired by the attached object -->
-	<WeaponTemplate
-		id="MagneticMineAttachedWeapon"
-		Name="MagneticMineAttachedWeapon"
 		RadiusDamageAffects="ENEMIES NEUTRALS"
 		ReAcquireDetailType="PRE_FIRE">
 		<Nuggets>
@@ -3061,7 +3018,7 @@
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					StatusBitFlags="RIDER_3">
+					StatusBitFlags="RIDER3">
 				</SpecialObjectFilter>
 			</DamageNugget>
 		</Nuggets>

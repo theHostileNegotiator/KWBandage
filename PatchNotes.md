@@ -1218,9 +1218,9 @@
 #### Magnetic Mines
 1. Mines remain after being crushed, seems to act more like a continuous spike trap. It causes a weird behavior where it will do damage every tick when ever a unit is crushing and moving on the mine. The sticking damage of the mines does not stack, it will always be 16 damage per second
 	* Overhauled how magnetic mines work
-		* Mine will be removed after being crushed
-		* Chain of weapons are fired to spawn an object on the crushing vehicle
+		* Mine object will attach to target
 		* Object will attach to unit and deal damage over time
+		* Use dummy object to provide vision until attached
 #### Shadow Strike Team
 1. Marked of Kane Strike team spawns NOD Shadows instead of MOK Shadows
 	* Created new Support Power for MOK Shadows
