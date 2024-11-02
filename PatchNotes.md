@@ -305,6 +305,9 @@
 			* Shock Pods (Cursor)
 2. Superweapons and some destructive powers have an OCL to destroy trees and other props, however this also affects destroyed objects, which presents a problem to NOD turrets as they will be permanently destroyed.
 	* Delete CLEAR_REMOVABLES flag from the OCL due to the issues. Trees will still be crushed but many props will be preserved
+#### Repair Drones
+1. GDI and NOD repair drones can not repair Mechapede segments
+	* Allow repair drones to attach to Horde Members
 #### Not Transport
 1. Many objects have TRANSPORT KindOf flag, despite not being able to transport any units
 	* Remove TRANSPORT KindOf flag

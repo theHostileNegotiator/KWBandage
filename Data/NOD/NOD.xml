@@ -19,6 +19,7 @@
 		<Include type="all" source="Units/NODMilitantRocket.xml" />	
 		<Include type="all" source="Units/NODMilitantRocketSquad.xml" />	
 		<Include type="all" source="Units/NODMobileArtillery.xml" />
+		<Include type="all" source="Units/NODRepairDrone.xml" />
 		<Include type="all" source="Units/NODShadow.xml" />	
 		<Include type="all" source="Units/NODShadowSquad.xml" />	
 		<Include type="all" source="Units/NODShadowSquad_Veteran.xml" />	

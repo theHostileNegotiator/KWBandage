@@ -1,26 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!-- Leash Range now set to 100 (Refer to Patch 1.02 Notes) -->
-<!-- Speed increase so drone can keep up with MRT when transport via Ox -->
-<!-- Can no longer repair Structures, Air Units and Infantry -->
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- Can now repair Mechapede segments -->
+	<Tags></Tags>
+	<Includes>
+		<Include type="instance" source="DATA:BaseObjects/BaseRepairDrone.xml" />
+	</Includes>
 	<GameObject
-		id="ZOCOMAPCRepairDrone"
-		Side="GDI"
+		id="NODRepairDrone"
+		inheritFrom="BaseRepairDrone"
+		Side="NOD"
+		KindOf="AIRCRAFT NO_COLLIDE NOT_AUTOACQUIRABLE"
+		EditorName="NODRepairDrone"
+		Description="Desc:NODRepairDrone"
 		EditorSorting="MISC_MAN_MADE"
 		OcclusionDelay="0"
 		ShockwaveResistance="120.0"
-		KindOf="AIRCRAFT NO_COLLIDE NOT_AUTOACQUIRABLE"
-		EditorName="ZOCOMAPCRepairDrone"
-		Description="Desc:GDIRepairDrone"
-		VoicePriority="5">	
+		VoicePriority="5">
 		<DisplayName>NAME:RepairDrone</DisplayName>
 		<ArmorSet
 			Armor="NoArmor" />
 		<LocomotorSet
-			Locomotor="GDIRepairDroneLocomotor"
+			id="DefaultLocomotor"
+			Locomotor="NODRepairDroneLocomotor"
 			Condition="NORMAL"
-			Speed="175.0" />
+			Speed="75.0" />
 		<Draws>
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
@@ -28,7 +31,7 @@
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="GURprDrn_SKN" />
+						Name="NURprDrn_SKN" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
@@ -36,7 +39,7 @@
 					AllowRepeatInRandomPick="true"
 					StateName="STATE_bored">
 					<Animation
-						AnimationName="GURprDrn_IDLA"
+						AnimationName="NURprDrn_IDLA"
 						AnimationMode="ONCE" />
 				</AnimationState>
 				<!-- placeholder until we get some real art -->
@@ -45,7 +48,7 @@
 					ConditionsYes="DYING"
 					Flags="RANDOMSTART">
 					<Animation
-						AnimationName="GURprDrn_RPRA"
+						AnimationName="NURprDrn_RPRA"
 						AnimationMode="LOOP"/>
 				</AnimationState>
 				<AnimationState
@@ -53,23 +56,19 @@
 					ConditionsYes="ATTACHED"
 					Flags="RANDOMSTART">
 					<Animation
-						AnimationName="GURprDrn_RPRA"
+						AnimationName="NURprDrn_RPRA"
 						AnimationMode="LOOP"/>
 					<ParticleSysBone
-						BoneName="B_Drone03"
-						FXParticleSystemTemplate="GDIRepairDroneFlash"
+						BoneName="None"
+						FXParticleSystemTemplate="HealingFX"
 						FollowBone="true" />
-					<ParticleSysBone
-						BoneName="B_Drone03"
-						FXParticleSystemTemplate="GDIRepairDroneSparks"
-						FollowBone="true" />						
 				</AnimationState>		
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="ACCELERATE MOVING"
 					Flags="RANDOMSTART">
 					<Animation
-						AnimationName="GURprDrn_ACCL"
+						AnimationName="NURprDrn_ACCL"
 						AnimationMode="ONCE"
 						Distance="30" />
 				</AnimationState>
@@ -78,7 +77,7 @@
 					ConditionsYes="DECELERATE MOVING"
 					Flags="RANDOMSTART">
 					<Animation
-						AnimationName="GURprDrn_DECL"
+						AnimationName="NURprDrn_DECL"
 						AnimationMode="ONCE"
 						Distance="30" />
 				</AnimationState>
@@ -87,7 +86,7 @@
 					ConditionsYes="MOVING"
 					Flags="RANDOMSTART">
 					<Animation
-						AnimationName="GURprDrn_MOVA"
+						AnimationName="NURprDrn_MOVA"
 						AnimationMode="LOOP"
 						AnimationPriority="30"
 						Distance="30" />
@@ -97,15 +96,15 @@
 		<Behaviors>
 			<SlavedUpdate
 				id="ModuleTag_SlavedUpdate"
-				LeashRange="100"
-				GuardMaxRange="100"
+				LeashRange="150"
+				GuardMaxRange="150"
 				GuardWanderRange="50"
 				AttackRange="0"
 				UseSlaverAsControlForEvaObjectSightedEvents="false" />
 			<PassiveAreaEffectBehavior
 				id="ModuleTag_PassiveAreaEffect"
 				EffectRadius="0"
-				HealingPointsPerSecond="100"
+				HealingPointsPerSecond="150"
 				AffectAttached="true"
 				AffectUnderAttack="true"
 				NonStackable="false"
@@ -126,7 +125,7 @@
 			</SlowDeath>
 			<AttachUpdate
 				id="ModuleTag_Attach"
-				Range="100"
+				Range="150"
 				CloseEnoughRange="20.0"
 				Teleport="false"
 				UseGeometry="true"
@@ -134,10 +133,10 @@
 				RequireFullyHealedToDetach="true"
 				ScanForNewParentWhenDetached="true"
 				DetachWhenParentOutOfSlavedRange="true"
-				InitialAttachDelay="0.5s"
+				InitialAttachDelay="4.0s"
 				ParentStatus="UNDERGOING_REPAIR"
 				CanAttachToHordeMembers="true"
-				Flags="FIND_BEST_PARENT UNCONTAINED_ONLY SAME_PLAYER_ONLY ONE_ATTACH_PER_PARENT" >
+				Flags="FIND_BEST_PARENT UNCONTAINED_ONLY SAME_PLAYER_ONLY ONE_ATTACH_PER_PARENT">
 				<ObjectFilter
 					Rule="ANY"
 					Include="VEHICLE HUGE_VEHICLE"

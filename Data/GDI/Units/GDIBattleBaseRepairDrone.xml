@@ -1,26 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
-<!-- Leash Range now set to 100 (Refer to Patch 1.02 Notes) -->
-<!-- Speed increase so drone can keep up with MRT when transport via Ox -->
-<!-- Can no longer repair Structures, Air Units and Infantry -->
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- Can now repair Mechapede segments -->
+	<Tags></Tags>
+	<Includes>
+		<Include type="instance" source="DATA:GDI/Units/GDIRepairDrone.xml" />
+	</Includes>
 	<GameObject
-		id="ZOCOMAPCRepairDrone"
+		id="GDIBattleBaseRepairDrone"
+		inheritFrom="GDIRepairDrone"
 		Side="GDI"
+		KindOf="AIRCRAFT NO_COLLIDE NOT_AUTOACQUIRABLE"
+		EditorName="GDIBattleBaseRepairDrone"
+		Description="Desc:GDIRepairDrone"
 		EditorSorting="MISC_MAN_MADE"
 		OcclusionDelay="0"
 		ShockwaveResistance="120.0"
-		KindOf="AIRCRAFT NO_COLLIDE NOT_AUTOACQUIRABLE"
-		EditorName="ZOCOMAPCRepairDrone"
-		Description="Desc:GDIRepairDrone"
-		VoicePriority="5">	
+		VoicePriority="5">
 		<DisplayName>NAME:RepairDrone</DisplayName>
 		<ArmorSet
 			Armor="NoArmor" />
 		<LocomotorSet
 			Locomotor="GDIRepairDroneLocomotor"
 			Condition="NORMAL"
-			Speed="175.0" />
+			Speed="75.0" />
 		<Draws>
 			<ScriptedModelDraw
 				id="ModuleTag_Draw"
@@ -97,15 +99,15 @@
 		<Behaviors>
 			<SlavedUpdate
 				id="ModuleTag_SlavedUpdate"
-				LeashRange="100"
-				GuardMaxRange="100"
+				LeashRange="150"
+				GuardMaxRange="150"
 				GuardWanderRange="50"
 				AttackRange="0"
 				UseSlaverAsControlForEvaObjectSightedEvents="false" />
 			<PassiveAreaEffectBehavior
 				id="ModuleTag_PassiveAreaEffect"
 				EffectRadius="0"
-				HealingPointsPerSecond="100"
+				HealingPointsPerSecond="150"
 				AffectAttached="true"
 				AffectUnderAttack="true"
 				NonStackable="false"
@@ -126,7 +128,7 @@
 			</SlowDeath>
 			<AttachUpdate
 				id="ModuleTag_Attach"
-				Range="100"
+				Range="200"
 				CloseEnoughRange="20.0"
 				Teleport="false"
 				UseGeometry="true"
@@ -137,7 +139,7 @@
 				InitialAttachDelay="0.5s"
 				ParentStatus="UNDERGOING_REPAIR"
 				CanAttachToHordeMembers="true"
-				Flags="FIND_BEST_PARENT UNCONTAINED_ONLY SAME_PLAYER_ONLY ONE_ATTACH_PER_PARENT" >
+				Flags="FIND_BEST_PARENT UNCONTAINED_ONLY SAME_PLAYER_ONLY ONE_ATTACH_PER_PARENT">
 				<ObjectFilter
 					Rule="ANY"
 					Include="VEHICLE HUGE_VEHICLE"

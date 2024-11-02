@@ -6,6 +6,7 @@
 		<Include type="all" source="Units/GDIAAScout.xml" />
 		<Include type="all" source="Units/GDIAPC.xml" />
 		<Include type="all" source="Units/GDIAPC_Veteran.xml" />
+		<Include type="all" source="Units/GDIBattleBaseRepairDrone.xml" />
 		<Include type="all" source="Units/GDIFirehawk.xml" />
 		<Include type="all" source="Units/GDIGrenadeSoldier.xml" />
 		<Include type="all" source="Units/GDIGrenadeSoldierSquad.xml" />
@@ -19,6 +20,7 @@
 		<Include type="all" source="Units/GDIPitbull.xml" />
 		<Include type="all" source="Units/GDIPitbull_Veteran.xml" />
 		<Include type="all" source="Units/GDIPredator.xml" />
+		<Include type="all" source="Units/GDIRepairDrone.xml" />
 		<Include type="all" source="Units/GDIRifleSoldier.xml" />
 		<Include type="all" source="Units/GDIRig.xml" />
 		<Include type="all" source="Units/GDISniper.xml" />	
