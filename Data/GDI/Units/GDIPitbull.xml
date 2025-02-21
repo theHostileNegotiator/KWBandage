@@ -2,6 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 <!-- Added Animations -->
 <!-- Renamed Turret Pitch Bone -->
+<!-- Update Formation Preview Model -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:GUPitbull_ATKA.w3x" />
@@ -10,6 +11,7 @@
 		<Include type="all" source="ART:GUPitbull_SKN.w3x" />
 		<Include type="all" source="ART:GUPitbullD_SKN.w3x" />
 		<Include type="all" source="ART:GUPitbullR_SKN.w3x" />
+		<Include type="all" source="ART:GUPitbull_FP.w3x" />
 		<!-- Base Object -->
 		<Include type="instance" source="DATA:BaseObjects/BaseVehicle.xml" />
 	</Includes>

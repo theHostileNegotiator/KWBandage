@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Change Turret Model from Machine Gun turret to Rocket Pods -->
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="all"
+			source="ART:GUPitbullR02.w3x" />
+	</Includes>
+</AssetDeclaration>

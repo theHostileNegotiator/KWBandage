@@ -548,6 +548,10 @@
 #### Pitbull
 1. Unit has unused and removed animations for idle and moving which was mainly used for the flag. Removed moving animation had the vehicle slighty bouncing
 	* Used existing animations and added moving animation from the TW Art Pack 1
+2. Destruction uses model based off the old version with exposed personel, debris includes two rifleman and a machine gun turret instead of rocket pods
+	* Change destruction model, update the turret rubble model and remove personel from debris
+3. Formation Preview is based off an older version with exposed personel
+	* Update FP model so the mesh represents the current version
 #### MRT
 1. Leash range of Repair Drone was not changed from KW 1.01 to 1.02, despite specified in change log
 	* Fixed leash range to 100

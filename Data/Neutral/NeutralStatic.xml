@@ -29,6 +29,8 @@
 
 		<Include type="all" source="DATA:Neutral/Debris/GDIHammerheadDebris_06.xml" />
 
+		<Include type="all" source="DATA:Neutral/Debris/GDIPitBullDebris_02.xml" />
+
 		<Include type="all" source="DATA:Neutral/Debris/GDIZOCOMHarvesterDebris_01.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/GDIZOCOMHarvesterDebris_02.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/GDIZOCOMHarvesterDebris_03.xml" />

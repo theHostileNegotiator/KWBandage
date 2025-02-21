@@ -12,6 +12,125 @@
 		</CreateObject>
 	</ObjectCreationList>
 
+<!-- Remove the personel ejecting from vehicle since they are no longer exposed -->
+	<ObjectCreationList
+		id="OCL_GDIPitBullDebris">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="5.0"
+			MaxForceMagnitude="8.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="25d"
+			MaxForcePitch="30d">
+			<Offset
+				x="7.67"
+				y="-7.09"
+				z="3.33"></Offset>
+			<CreateObject>GDIPitBullDebris_01</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="30d"
+			MaxForcePitch="90d">
+			<Offset
+				x="0.4"
+				y="-0.0"
+				z="14.42"></Offset>
+			<CreateObject>GDIPitBullDebris_02</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="30d"
+			MaxForcePitch="90d">
+			<Offset
+				x="-10.47"
+				y="0.0"
+				z="9.59"></Offset>
+			<CreateObject>GDIPitBullDebris_03</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="30d"
+			MaxForcePitch="90d">
+			<Offset
+				x="-8.13"
+				y="7.06"
+				z="3.33"></Offset>
+			<CreateObject>GDIPitBullDebris_04</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="30d"
+			MaxForcePitch="90d">
+			<Offset
+				x="12.77"
+				y="0.0"
+				z="6.01"></Offset>
+			<CreateObject>GDIPitBullDebris_05</CreateObject>
+		</CreateObject>
+		<!--
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="4.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="50d"
+			MaxForcePitch="80d">
+			<Offset
+				x="6.77"
+				y="0.0"
+				z="6.01"></Offset>
+			<CreateObject>GDIPitBullDebris_06</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="4.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="50d"
+			MaxForcePitch="80d">
+			<Offset
+				x="6.77"
+				y="0.0"
+				z="6.01"></Offset>
+			<CreateObject>GDIPitBullDebris_07</CreateObject>
+		</CreateObject>
+		-->
+	</ObjectCreationList>
+
 <!-- Added main Hammerhead Husk -->
 	<ObjectCreationList
 		id="OCL_GDIHammerheadInitialDebris">
