@@ -868,6 +868,9 @@
 	* Changed weapon nuggets from DOTNugget to Multiple DamageNugget with delays to when damage is applied
 3. Power affects units weapons that are not Railguns such as the Mammoth Missile Pods due to blanket weapon buff
 	* Remove Rate Of Fire buff and added ObjectStatus which will switch the Railgun weapons to a faster firing version
+#### Zone Raider Drop Pod
+1. Description is incorrect
+	* Changed description to better match the Zone Trooper Drop Pod Support Power
 
 ### Nod:
 

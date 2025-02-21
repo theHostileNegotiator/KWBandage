@@ -25224,7 +25224,7 @@ TYPE:PlayerPowerZOCOMRaiderPods
 END
 
 DESC:PlayerPowerZOCOMRaiderPods
-"Launches Zone Raiders into orbit, allowing them to be deployed anywhere on the battlefield \n \n Left-click icon then left-click on target location"
+"Deploys several Veteran squads of Zone Raiders to the battlefield \n \n Left-click icon then left-click on target location"
 END
 
 NAME:PlayerPowerZOCOMBombingRun
