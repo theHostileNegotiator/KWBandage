@@ -240,6 +240,26 @@
 			* Redeemer
 			* Mechapede
 			* Eradicator Hexapod
+3. The speed of the scrolling scan effect for the new units is inconsistent with the existing units, many being too slow
+	* Edit the second UV of the FP meshes
+		* Objects Affected
+			* Titan
+			* MRT
+			* Heavy Harvester
+			* Wolverine
+			* Slingshot
+			* Shatterer
+			* Zone Shatterer
+			* Behemoth
+			* MARV
+			* Hammerhead
+			* Reckoner
+			* Mantis
+			* Specter
+			* Purifier
+			* Redeemer
+			* Mechapede
+			* Eradicator Hexapod
 #### Neutral Structures, Nod Garrison Armor and GDI Map Specific Structures
 1. All did not have proper House Color Channels after the Shader Changes
 	* Edited Specular Maps to have House Color Channel
