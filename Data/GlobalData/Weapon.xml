@@ -3652,7 +3652,7 @@
 		MaxTargetPitch="15d"
 		WeaponSpeed="800"
 		WeaponRecoil="5d"
-		FireSound="PredatorCannonFireUpgraded"
+		FireSound="AudioEvent:PredatorCannonFireUpgraded"
 		FireFX="FX_RailGunFire"
 		FireVeteranFX="FX_RailGunFireHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
