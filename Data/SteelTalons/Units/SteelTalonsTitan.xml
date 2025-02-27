@@ -15,6 +15,7 @@
 <!-- Remove TRANSPORT KindOf -->
 <!-- Cleanup Draws -->
 <!-- Added Railgun Accelerated weapon as part of fix to Support Power -->
+<!-- Add animation states to prevent idle animation inbetween shots -->
 	<Includes>
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
@@ -66,9 +67,9 @@
 				MaxRecoilDistance="10.0" 
 				RecoilDamping="2.0"
 				RecoilSettleSpeed="3.0">
-				<ModelConditionState 
+				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
-					<Model 
+					<Model
 						Name="GUVehicleF_SKN" />
 					<WeaponFireFXBone
 						WeaponSlotID="1"
@@ -91,7 +92,7 @@
 						TurretPitch="B_Tilt"
 						TurretID="1" />
 				</ModelConditionState>
-				<ModelConditionState 
+				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="REALLYDAMAGED USER_8">
 					<Model
@@ -133,14 +134,14 @@
 						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
 						FollowBone="true" />
 				</ModelConditionState>
-				<ModelConditionState 
-					ParseCondStateType="PARSE_NORMAL" 
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_8">
-					<Model 
+					<Model
 						Name="GUVehicleFAdAr" />
 				</ModelConditionState>
-				<ModelConditionState 
-					ParseCondStateType="PARSE_NORMAL" 
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED USER_7">
 					<Model
 						Name="GUVehicleF_SKN" />
@@ -202,7 +203,7 @@
 						Original="GUVehicleF_NM"
 						New="GUVehicleF_AAUG_NM" />
 				</ModelConditionState>
-				<ModelConditionState 
+				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="REALLYDAMAGED">
 					<Model
@@ -241,105 +242,105 @@
 						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
 						FollowBone="true" />
 				</ModelConditionState>
-				<ModelConditionState 
+				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="FORMATION_PREVIEW">
 					<Model
 						Name="GUVehicleF_FP" />
 				</ModelConditionState>
-				<AnimationState 
-					ParseCondStateType="PARSE_DEFAULT" 
-					StateName="STATE_bored" 
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT"
+					StateName="STATE_bored"
 					AllowRepeatInRandomPick="true"
 					Flags="RESTART_ANIM_WHEN_COMPLETE">
-					<Animation 
-						AnimationName="GUVehicleF_BIDA" 
-						AnimationMode="ONCE" 
-						AnimationBlendTime="15" 
+					<Animation
+						AnimationName="GUVehicleF_BIDA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="15"
 						AnimationPriority="40"
-						AnimationSpeedFactorMin="0.8" 
+						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
-					<Animation 
-						AnimationName="GUVehicleF_BIFA" 
-						AnimationMode="ONCE" 
-						AnimationBlendTime="15" 
+					<Animation
+						AnimationName="GUVehicleF_BIFA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="15"
 						AnimationPriority="40"
-						AnimationSpeedFactorMin="0.8" 
+						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
-					<Animation 
-						AnimationName="GUVehicleF_BIFB" 
-						AnimationMode="ONCE" 
-						AnimationBlendTime="15" 
+					<Animation
+						AnimationName="GUVehicleF_BIFB"
+						AnimationMode="ONCE"
+						AnimationBlendTime="15"
 						AnimationPriority="30"
-						AnimationSpeedFactorMin="0.8" 
+						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
-						if Prev == "STATE_Selected" or Prev == "ATNB" or Prev == "STATE_Run" then
+						if Prev == "STATE_Selected" then
 						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
 						end
 					</Script>
 				</AnimationState>
-
-				<AnimationState 
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="COMING_OUT_OF_FACTORY" 
 					StateName="STATE_built"
 					Flags="START_FRAME_FIRST">
-					<Animation 
+					<Animation
 						AnimationName="GUVehicleF_BLDA" 
 						AnimationBlendTime="0" 
 						AnimationMode="ONCE_BACKWARDS" />
-				</AnimationState>				
-				<AnimationState 
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL" 
+					ConditionsYes="DYING">
+					<Animation
+						AnimationName="GUVehicleF_DIEA" 
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="AFFECTED_BY_EMP">
-					<Animation 
+					<Animation
 						AnimationName="GUVehicleF_BIDA" 
 						AnimationMode="MANUAL" 
 						AnimationBlendTime="15" />
-					<Script>
-						Prev = CurDrawablePrevAnimationState()
-						if Prev == "STATE_Selected" or Prev == "ATNB" or Prev == "STATE_Run" then
-						CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle")
-						end
-					</Script>
 				</AnimationState>
-				<AnimationState 
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL" 
 					ConditionsYes="TURN_LEFT_HIGH_SPEED"
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
-					<Animation 
+					<Animation
 						AnimationName="GUVehicleF_RUNA" 
 						AnimationMode="LOOP" 
 						Distance="45" />
 				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_NORMAL" 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="TURN_RIGHT_HIGH_SPEED"
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
-					<Animation 
+					<Animation
 						AnimationName="GUVehicleF_RUNA" 
 						AnimationMode="LOOP" 
 						Distance="45" />
 				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_NORMAL" 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="TURN_LEFT">
-					<Animation 
+					<Animation
 						AnimationName="GUVehicleF_TRNL" 
 						AnimationMode="LOOP" />
 				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_NORMAL" 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="TURN_RIGHT">
-					<Animation 
+					<Animation
 						AnimationName="GUVehicleF_TRNR" 
 						AnimationMode="LOOP" />
 				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_NORMAL" 
-					ConditionsYes="REALLYDAMAGED MOVING" 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED MOVING"
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
 					<Animation
 						AnimationName="GUVehicleF_RUND"
@@ -362,9 +363,9 @@
 						end
 					</Script>
 				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_NORMAL" 
-					ConditionsYes="MOVING" 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="MOVING"
 					Flags="MAINTAIN_FRAME_ACROSS_STATES">
 					<Animation
 						AnimationName="GUVehicleF_RUNA"
@@ -387,84 +388,84 @@
 						end
 					</Script>
 				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_NORMAL" 
-					ConditionsYes="USING_WEAPON_A FIRING_OR_PREATTACK_A" 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FIRING_OR_PREATTACK_A"
 					FrameForPristineBonePositions="1">
-					<Animation 
-						AnimationName="GUVehicleF_ATKA" 
-						AnimationMode="ONCE" 
+					<Animation
+						AnimationName="GUVehicleF_ATKA"
+						AnimationMode="ONCE"
 						UseWeaponTiming="true" />
 				</AnimationState>
-				<AnimationState 
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL" 
-					ConditionsYes="ATTACKING" 
-					FrameForPristineBonePositions="1">
+					ConditionsYes="ATTACKING">
+					<Animation
+						AnimationName="GUVehicleF_ATKA"
+						AnimationMode="MANUAL" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="ENGAGED">
 					<Animation 
-						AnimationName="GUVehicleF_ATKA" 
+						AnimationName="GUVehicleF_AIDA" 
 						AnimationMode="MANUAL" />
 				</AnimationState>
         <!-- SELECTED -->
-				<AnimationState 
-					ParseCondStateType="PARSE_NORMAL" 
-					ConditionsYes="SELECTED" 
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="SELECTED"
 					Flags="RESTART_ANIM_WHEN_COMPLETE"
 					StateName="STATE_Selected">
-					<Animation 
-						AnimationName="GUVehicleF_AIDA" 
-						AnimationMode="ONCE" 
-						AnimationPriority="85" 
+					<Animation
+						AnimationName="GUVehicleF_AIDA"
+						AnimationMode="ONCE"
+						AnimationPriority="85"
 						AnimationBlendTime="10"
-						AnimationSpeedFactorMin="0.9" 
+						AnimationSpeedFactorMin="0.9"
 						AnimationSpeedFactorMax="1.1" />
-					<Animation 
-						AnimationName="GUVehicleF_AIDB" 
-						AnimationMode="ONCE" 
-						AnimationPriority="50" 
+					<Animation
+						AnimationName="GUVehicleF_AIDB"
+						AnimationMode="ONCE"
+						AnimationPriority="50"
 						AnimationBlendTime="10"
-						AnimationSpeedFactorMin="0.9" 
+						AnimationSpeedFactorMin="0.9"
 						AnimationSpeedFactorMax="1.1" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState()
 						if Prev == "STATE_bored" then
-						CurDrawableSetTransitionAnimState("TRANS_IdleToSelected") end
+						CurDrawableSetTransitionAnimState("TRANS_IdleToSelected")
+						end
 					</Script>
-				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_NORMAL" 
-					ConditionsYes="DYING">
-					<Animation 
-						AnimationName="GUVehicleF_DIEA" 
-						AnimationMode="ONCE" />
 				</AnimationState>
 
         <!-- TRANSITIONS -->
-				<AnimationState 
-					ParseCondStateType="PARSE_TRANSITION" 
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_built">
-					<Animation 	
-						AnimationName="GUVehicleF_BLDA" 	
+					<Animation
+						AnimationName="GUVehicleF_BLDA"
 						AnimationBlendTime="0" 	
 						AnimationMode="ONCE">
 					</Animation>
 				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_TRANSITION" 
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_IdleToSelected">
-					<Animation 
-						AnimationName="GUVehicleF_BATA" 
-						AnimationMode="ONCE" 
-						AnimationBlendTime="15" 
+					<Animation
+						AnimationName="GUVehicleF_BATA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="15"
 						AnimationSpeedFactorMin="0.9"
 						AnimationSpeedFactorMax="1.1" />
 				</AnimationState>
-				<AnimationState 
-					ParseCondStateType="PARSE_TRANSITION" 
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
 					StateName="TRANS_SelectedToIdle">
-					<Animation 
-						AnimationName="GUVehicleF_ABTA" 
-						AnimationMode="ONCE" 
-						AnimationBlendTime="15" 
+					<Animation
+						AnimationName="GUVehicleF_ABTA"
+						AnimationMode="ONCE"
+						AnimationBlendTime="15"
 						AnimationSpeedFactorMin="0.8"
 						AnimationSpeedFactorMax="1.2" />
 				</AnimationState>

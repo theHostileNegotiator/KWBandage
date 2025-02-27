@@ -601,6 +601,8 @@
 	* Changed geometry shape to cylinder
 6. Railgun missing Distortion Effect
 	* Added Laser Draw and State to the Game Object
+7. Idle animations can play in between shots while still attacking
+	* Add ENGAGED animation state to prevent idle animation from interrupting
 #### Harvester
 1. The Tiberium meter on the rear of the Harvesters shows when destroyed, conflicting with the destruction model
 	* Tiberium meter is hidden when destroyed
