@@ -105,7 +105,8 @@
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Animation
-						AnimationName="AUSurvyr_MOVA" />
+						AnimationName="AUSurvyr_MOVA"
+						AnimationMode="LOOP" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"

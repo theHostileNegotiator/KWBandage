@@ -1481,6 +1481,8 @@
 #### Explorer
 1. Reaper 17 unit is slower than the other factions
 	* Normalized speed to match the other factions
+2. Unit has an idle animation that only plays once after creation
+	* Changed default animation state to loop animation
 #### Attenuated Forcefield
 1. Scrin and Reaper 17 do not share upgrade, despite cost and time is identical
 	* Reaper 17 units and upgrade refer to Scrin shields
