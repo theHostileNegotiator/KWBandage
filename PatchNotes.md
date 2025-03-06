@@ -539,6 +539,10 @@
 #### Combat Engineer
 1. Does not properly animate transitioning into supression state
 	* Fix Animation Script error in the SUPPRESSED state
+2. Cover firing animations has incorrect priority, it is also referencing non existent animation
+	* Move "COVER SELECTED" AnimationState to be below cover attacking states
+3. Firing animation is not timed with weapon firing
+	* Change Draws and AnimationStates
 #### Grenadier Squad
 1. AI will not use EMP Grenades ability
 	* Added modules that will allow them to use it
