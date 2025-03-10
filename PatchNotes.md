@@ -433,6 +433,7 @@
 			* Tundra Triangle (BAMAP_KK03_3)
 			* Arid Remains (BAMAP_DC06_4)
 			* Coastline Chaos (MAP_MP_4_CHUCK1)
+			* Craters of Camden (EAMAP_SB05_4)
 			* Eastern Promises (BAMAP_EW08_04)
 			* Empire City (BAMAP_DC11_4)
 			* Heaven and Hell (BAMAP_RH01_4)
@@ -450,14 +451,34 @@
 2. Some Red Zone Maps are missing weather overrides to make clouds larger, lower volume of light rays and move slower
 	* Added Weather overrides for the maps based of Tiberium Wars values
 		* Maps Affected
+			* Blighted Tower (MAP_MP_2_BLACK7_redzoned)
+			* Decrepit Arena (MAP_MP_2_BLACK2_redzoned)
+			* Gunship Gauntlet (MAP_MP_2_BLACK11_redzoned)
+			* Tiber River Valley (MAP_MP_2_BLACK8)
+			* Craters of Camden (EAMAP_SB05_4)
 			* Crater of Carnage (MAP_MP_4_BLACK1)
 			* Missed Opportunity (BAMAP_SB01_4)
 			* Red Zone Rampage (MAP_MP_4_RAO)
 			* Tiberium Gardens III (MAP_MP_5_BLACK1)
 			* Dead Six (MAP_MP_6_Hayes)
 			* The Rocktagon (MAP_MP_8_BASS)
-3. Missed Opportunity (BAMAP_SB01_4) light rays do not represent the cloud formation
+3. Some Red Zone style maps light rays do not represent the cloud formation
 	* Changed cloud texure used for the map that matches the light rays
+		* Maps Affected
+			* Blighted Tower (MAP_MP_2_BLACK7_redzoned)
+			* Decrepit Arena (MAP_MP_2_BLACK2_redzoned)
+			* Missed Opportunity (BAMAP_SB01_4)
+4. Some Pre Order Bonus Maps are using the incorrect LookUpTablePostEffect texture for the Red Zone style
+	* Changed refenced texture from DCWashington_vol to BleachByPass_vol
+		* Maps Affected
+			* Blighted Tower (MAP_MP_2_BLACK7_redzoned)
+			* Decrepit Arena (MAP_MP_2_BLACK2_redzoned)
+			* Ruined River (MAP_MP_2_SIMON_B)
+5. Some Red Zone maps are using Blue Zone music set instead of Red Zone
+	* Changed refenced texture from DCWashington_vol to BleachByPass_vol
+		* Maps Affected
+			* Gunship Gauntlet (MAP_MP_2_BLACK11_redzoned)
+			* Ruined River (MAP_MP_2_SIMON_B)
 #### Global Conquest
 1. Units contained in Upgraded Strike Forces can be given upgrades that can not and should not benefited from
 	* Removed upgrade in WorldMapArmoryUpgradesAllowed

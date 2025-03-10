@@ -169,7 +169,9 @@ if exist "%cd%\Mods\%modname%\LanguagePacks" (
 			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\%%AAudio\%%AAudio.big" echo add-big %%AAudio\%%AAudio.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
 			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Streams.big" echo add-big Core\%modname%_%modversion%_Streams.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
 			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Misc.big" echo add-big Core\%modname%_%modversion%_Misc.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
-			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big" echo add-big Meta\%modname%_%modversion%_Maps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
+			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\SP\%modname%_%modversion%_SPMaps.big" echo add-big SP\%modname%_%modversion%_SPMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
+			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\MP\%modname%_%modversion%_MPMaps.big" echo add-big MP\%modname%_%modversion%_MPMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
+			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\BonusContent\%modname%_%modversion%_BonusMaps.big" echo add-big BonusContent\%modname%_%modversion%_BonusMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
 		) else (
 
 			if exist "!sdk!\Compilation\Mods\%modname%_%%A\LanguagePacks\%%A" "!sdk!\Tools\MakeBig.exe" -f "!sdk!\Compilation\Mods\%modname%_%%A\LanguagePacks\%%A" -o:"%mydocs%\%userdataleaf%\Mods\%modname%\%%AAudio\%%AAudio.big"
@@ -180,7 +182,9 @@ if exist "%cd%\Mods\%modname%\LanguagePacks" (
 			if exist "%mydocs%\%userdataleaf%\Mods\%modname%_%%A\%%AAudio\%%AAudio.big" echo add-big %%AAudio\%%AAudio.big>> "%mydocs%\%userdataleaf%\Mods\%modname%_%%A\%modname%_%modversion%.skudef"
 			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Streams.big" echo add-big ..\%modname%\Core\%modname%_%modversion%_Streams.big>> "%mydocs%\%userdataleaf%\Mods\%modname%_%%A\%modname%_%modversion%.skudef"
 			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Misc.big" echo add-big ..\%modname%\Core\%modname%_%modversion%_Misc.big>> "%mydocs%\%userdataleaf%\Mods\%modname%_%%A\%modname%_%modversion%.skudef"
-			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big" echo add-big ..\%modname%\Meta\%modname%_%modversion%_Maps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%_%%A\%modname%_%modversion%.skudef"
+			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\SP\%modname%_%modversion%_SPMaps.big" echo add-big ..\%modname%\SP\%modname%_%modversion%_SPMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%_%%A\%modname%_%modversion%.skudef"
+			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\MP\%modname%_%modversion%_MPMaps.big" echo add-big ..\%modname%\MP\%modname%_%modversion%_MPMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%_%%A\%modname%_%modversion%.skudef"
+			if exist "%mydocs%\%userdataleaf%\Mods\%modname%\BonusContent\%modname%_%modversion%_BonusMaps.big" echo add-big ..\%modname%\BonusContent\%modname%_%modversion%_BonusMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%_%%A\%modname%_%modversion%.skudef"
 		)
 	)
 	
@@ -193,7 +197,9 @@ endlocal EnableDelayedExpansion
 if not exist "%mydocs%\%userdataleaf%\Mods\%modname%\*.skudef" (
 	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Streams.big" echo add-big Core\%modname%_%modversion%_Streams.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
 	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Core\%modname%_%modversion%_Misc.big" echo add-big Core\%modname%_%modversion%_Misc.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
-	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\Meta\%modname%_%modversion%_Maps.big" echo add-big Meta\%modname%_%modversion%_Maps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
+	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\SP\%modname%_%modversion%_SPMaps.big" echo add-big SP\%modname%_%modversion%_SPMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
+	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\MP\%modname%_%modversion%_MPMaps.big" echo add-big MP\%modname%_%modversion%_MPMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
+	if exist "%mydocs%\%userdataleaf%\Mods\%modname%\BonusContent\%modname%_%modversion%_BonusMaps.big" echo add-big BonusContent\%modname%_%modversion%_BonusMaps.big>> "%mydocs%\%userdataleaf%\Mods\%modname%\%modname%_%modversion%.skudef"
 )
 
 :eof

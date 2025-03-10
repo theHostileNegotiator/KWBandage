@@ -22538,7 +22538,7 @@
 				Value="false"/>
 			<AssetIdProperty
 				Key="musicZone"
-				Value="MusicPalette_BlueZone"/>
+				Value="MusicPalette_RedZone"/>
 			<IntProperty
 				Key="weather"
 				Value="0"/>
