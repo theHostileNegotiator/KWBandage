@@ -70,6 +70,7 @@
 		<!-- Props -->
 		<Include type="all" source="Props/GDIMammothRocketPodMissileProjectile.xml" />
 		<Include type="all" source="Props/GDIOrcaSensorPod.xml" />
+		<Include type="all" source="Props/GDIOrcaSensorPodProjectile.xml" />
 		<Include type="all" source="Props/GDITerraformingStationIonStormKiller.xml" />
 		
 	</Includes>
