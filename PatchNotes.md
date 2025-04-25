@@ -1201,8 +1201,8 @@
 	* Removed flag
 2. Structure when sold or destroyed are not supposed to create an Infantry squad. However subfaction structures generates units.
 	* Removed OCL from subfaction structures
-3. Orientation of structure was not representative of the direction
-	* Rotated Mesh
+3. Orientation is incorrect and Damaged Skeletons are improper, all the bones are at the root instead of at the debris
+	* Rotated Mesh and optimised skeleton and animations
 4. It is stated that structure suppresses enemy infantry, this does not happen and there is little evidence to suggest for it to be implemented in final build
 	* Remove ability in Description string
 #### Air Support Tower

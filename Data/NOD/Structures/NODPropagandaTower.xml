@@ -4,12 +4,15 @@
 <!-- 'Morale Boosting' Aura no longer affects Squad Objects -->
 <!-- Added LocalPlayerOnly to the Propaganda Decal Shadow so it can no longer be seen by other players -->
 <!-- Adjusted propaganda decal size -->
+<!-- Fix Model -->
 	<Tags></Tags>
 	<Includes>
 		<Include type="all" source="ART:NBVoicKane.w3x" />
 		<Include type="all" source="ART:NBVoicKane_A.w3x" />
 		<Include type="all" source="ART:NBVoicKaneD2_SKN.w3x" />
+		<Include type="all" source="ART:NBVoicKaneD2_ANM.w3x" />
 		<Include type="all" source="ART:NBVoicKaneD3_SKN.w3x" />
+		<Include type="all" source="ART:NBVoicKaneD3_ANM.w3x" />
 	</Includes>
 	<GameObject
 		id="NODPropagandaTower"
