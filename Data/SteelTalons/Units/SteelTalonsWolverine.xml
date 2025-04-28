@@ -5,8 +5,10 @@
 <!-- Destroyed unit will use damaged texture -->
 <!-- Fixed FP Mesh Sorting -->
 <!-- Fixed FP scanline effect (Stygs) -->
+<!-- Update FX Mesh and Textures -->
 	<Tags></Tags>
 	<Includes>
+		<Include type="all"	source="ART:GUInfantryB_SKN.w3x" />
 		<Include type="all"	source="ART:GUInfantryB_FP.w3x" />
 	</Includes>
 	<GameObject

@@ -628,6 +628,10 @@
 	* Added Laser Draw and State to the Game Object
 7. Idle animations can play in between shots while still attacking
 	* Add ENGAGED animation state to prevent idle animation from interrupting
+8. Muzzle Flash FX has a different design, not matching the standards of other units
+	* Change Muzzle Flash FX mesh and textures to match the rest of the game
+9. There is missing Specular mapping in the dark metal areas
+	* Add Specular mapping to the dark metal material and have made the dark metal slightly brighter to match the TW/KW art style
 #### Harvester
 1. The Tiberium meter on the rear of the Harvesters shows when destroyed, conflicting with the destruction model
 	* Tiberium meter is hidden when destroyed
@@ -647,6 +651,10 @@
 	* Destroyed unit will use the damaged texture
 3. Formation Preview model flashes instead of having a scanline effect like the other units
 	* Fixed Mesh, giving second set of Texture Coordinates (Stygs)
+4. Muzzle Flash FX has a different design, not matching the standards of other units
+	* Change Muzzle Flash FX mesh and textures to match the rest of the game
+5. There is missing Specular mapping in the dark metal areas
+	* Add Specular mapping to the dark metal material and have made the dark metal slightly brighter to match the TW/KW art style
 #### Rig/Battlebase
 1. Subfaction Rigs when unpacking would create GDI Battlebase instead of their own. The same happens with Subfaction Battlebase packing GDI Rigs
 	* Packing and unpacking will now create the corresponding faction version

@@ -16,11 +16,15 @@
 <!-- Cleanup Draws -->
 <!-- Added Railgun Accelerated weapon as part of fix to Support Power -->
 <!-- Add animation states to prevent idle animation inbetween shots -->
+<!-- Update FX Mesh and Textures -->
 	<Includes>
 		<Include type="all" source="ART:GUVehicleF_SKN.w3x" />
 		<Include type="all" source="ART:GUVehicleF_SKNR.w3x" />
 		<Include type="all" source="ART:GUVehicleFAdAr.w3x" />
 		<Include type="all" source="ART:GUVehicleF_FP.w3x" />
+		<Include type="all" source="ART:GUVehicleF_D.xml" />
+		<Include type="all" source="ART:GUVehicleF_AAUG.xml" />
+		<Include type="all" source="ART:GUVehicleF_AAUG_SM.xml" />
 		<Include type="all" source="ART:GUVehicleF_AAUG_D.xml" />
 	</Includes>
 	<GameObject

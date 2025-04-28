@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Includes>
+		<Include type="all" source="ART:guvehiclef_skl.w3x"/>
+		<Include type="all" source="ART:GUVehicleF_AAUG.xml"/>
+		<Include type="all" source="ART:GUVehicleF_AAUG_SM.xml"/>
+	</Includes>
 	<W3DMesh id="GUVEHICLEFADAR.GUVEHICLEF" CastShadow="true" GeometryType="Skin">
 		<BoundingBox>
 			<Min X="-20.429592" Y="-16.938084" Z="0.098943"/>
