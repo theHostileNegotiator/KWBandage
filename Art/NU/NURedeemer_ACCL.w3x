@@ -4099,29 +4099,6 @@
 				<Frame>0.000000</Frame>
 				<Frame>0.000075</Frame>
 			</ChannelScalar>
-			<ChannelScalar Pivot="74" Type="Visibility" FirstFrame="0">
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-			</ChannelScalar>
 			<ChannelScalar Pivot="75" Type="YTranslation" FirstFrame="0">
 				<Frame>0.000000</Frame>
 				<Frame>0.000000</Frame>
@@ -4190,29 +4167,6 @@
 				<Frame>0.000000</Frame>
 				<Frame>0.000000</Frame>
 				<Frame>0.000075</Frame>
-			</ChannelScalar>
-			<ChannelScalar Pivot="88" Type="Visibility" FirstFrame="0">
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
-				<Frame>0.000000</Frame>
 			</ChannelScalar>
 			<ChannelScalar Pivot="90" Type="XTranslation" FirstFrame="0">
 				<Frame>-0.179033</Frame>

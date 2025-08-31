@@ -27601,7 +27601,7 @@
 				<Mesh>NUREDEEMER_SKN.FX_FLASHINGLIGHTL</Mesh>
 			</RenderObject>
 		</SubObject>
-		<SubObject SubObjectID="MUZZLEFLASH_02" BoneIndex="88">
+		<SubObject SubObjectID="MUZZLEFLASH_02" BoneIndex="89">
 			<RenderObject>
 				<Mesh>NUREDEEMER_SKN.MUZZLEFLASH_02</Mesh>
 			</RenderObject>

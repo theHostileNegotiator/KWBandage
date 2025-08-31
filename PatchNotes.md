@@ -774,6 +774,8 @@
 11. Main Cannon has unused animations and concepts for a Revolving Barrel and the MARV Rising FMV Cutscene showcases the MARV having a revolving barrel
 	* Separate Barrel to another draw to be able to animate at the same time as the turning and crushing animations
 	* There were no appropriate Model Condition to use for the weapon, instead weapon has Attribute Modifier applied to 'owner' which forces a Model Condition. This model condition is what triggers the animation
+8. Turret Bones that are assigned to Turret Key should not be used twice which is what happens with the Grenade Launcher and Sonic Launcher. This also prevented the Sonic Launcher turret from rotating
+	* Until there is new art for the Sonic Shell Launcher module, have the weapon be part of the same turret as the Grenade Launcher
 #### Orca
 1. When playing with Low LOD settings, Wings and Sensor Pod subobjects are missing
 	* Fixed subobject bone reference for Sonic Cannon. In the Skeleton, the Sonic Cannon Mesh reference Bone is the parent of the subobjects of the Wings and Sensor Pod. Since it is Hidden, any mesh referencing child Bones will also be hidden
@@ -1146,6 +1148,13 @@
 	* Swapped VoiceDie Audio Event in FX, removed Generic Voice Die as it was redundant
 7. Voice Move Attack
 	* Unit will now use Voice Move Attack Audio Event when targetting a unit outside of it's range, requiring it to move.
+8. Unit has Muzzle Flash FX for Machinegun modules that is not used
+	* Restore Muzzle Flash by unhiding the bone in the animations
+9. Turret Bones that are assigned to Turret Key should not be used twice which is what happens with the Flame Thrower and Tiberium Goo weapon
+	* Until there is new art for the Tiberium Thrower module, have the weapon be part of the same turret as the Flame Thrower
+		* This allows the turrets to properly rotate against targets
+10. The Rage Module electric effects were likely to only be shown when the Ability is used instead of all the time as suggested in Animation States
+	* Have the electric effect mesh hidden in all animation states except the Special Ability one.
 #### Vertigo Bomber
 1. Stealth Model uses it's own Skeleton instead of the standard version, despite sharing animations
 	* Changed Container and Mesh to refer to the standard version like the Stealth Tank
