@@ -425,6 +425,16 @@
 		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODRocketBunkerHubCreated" DebugSingleStep="false"/>
 	</EventList>
 	
+	<EventList Name="BlackHandSecretShrineFunctions" Inherit="BaseScriptFunctions">
+		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODSecretShrineCreated" DebugSingleStep="false"/>
+		<EventHandler EventName="OnPowerOutage" ScriptFunctionName="OnBlackHandSecretShrinePowerOutage" DebugSingleStep="false"/>
+		<EventHandler EventName="OnPowerRestore" ScriptFunctionName="OnBlackHandSecretShrinePowerRestored" DebugSingleStep="false"/>
+	</EventList>
+
+	<EventList Name="MarkedOfKaneSecretShrineFunctions" Inherit="BaseScriptFunctions">
+		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnNODSecretShrineCreated" DebugSingleStep="false"/>
+	</EventList>
+	
 	<EventList Name="GDIBattleBaseFunctions" Inherit="BaseScriptFunctions">
 		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnGDIBattleBaseCreated" DebugSingleStep="false"/>
 		<EventHandler EventName="UsingWeaponC"	ScriptFunctionName="OnUsingWeaponC" DebugSingleStep="false"/>

@@ -1183,6 +1183,9 @@
 2. Cybernetic legs subobject has unused idle animations associated with it which can actually be seen when transitioning betweed damage states
 	* Added idle animations to Cybernetic Legs
 		* Separated Cybernetic Legs into it's own draw so animation is more consistent
+3. The Black Disciple upgrade lights are not disabled when structure is powered down like with the Confessor upgrade lights
+	* Update LUA Scripts and Events to disable Black Disciple lights
+		* Split the scripts between factions to deal with cases of owning Secret Shrines other different factions
 #### Tech Lab
 1. AI would use the Redemption Power on friendly vehicles when it is only used on friendly infantry
 	* Changed Includes to Infantry

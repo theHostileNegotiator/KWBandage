@@ -751,6 +751,18 @@ function OnNODRocketBunkerHubCreated(self)
 	ObjectHideSubObjectPermanently( self, "TCMHUB_UPGRADE", true )
 end
 
+function OnBlackHandSecretShrinePowerOutage(self)	
+	if ObjectHasUpgrade( self, "Upgrade_BlackHandBlackDisciplesUpgrade" ) == 1 then
+		ObjectHideSubObjectPermanently( self, "BLACKDISCIPLES_GLOWS", true )	
+	end
+end
+
+function OnBlackHandSecretShrinePowerRestored(self)		 
+	if ObjectHasUpgrade( self, "Upgrade_BlackHandBlackDisciplesUpgrade" ) == 1 then
+		ObjectHideSubObjectPermanently( self, "BLACKDISCIPLES_GLOWS", false )	
+	end
+end
+
 function OnGDIBattleBaseCreated(self)
 	ObjectHideSubObjectPermanently( self, "UGRAIL_01", true )
 	ObjectHideSubObjectPermanently( self, "UGRAIL_02", true )
