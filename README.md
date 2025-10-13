@@ -8,6 +8,8 @@
  You will need to copy "static_l_common.manifest" and the "maps" folder provided in _Extras\Manifest folder and place it in WrathEd\Game Files\Manifest.  
  This will patch the Low LOD static 1.2 files rather than create a low LOD patch of the mod (If that makes sense). Therefore the low LOD settings from the vanilla game is maintained.  
  Two additional batch files have been provided, if you want to compile without the maps or with only the maps.  
+ 
+ To compile the shaders "Tools\fxc.exe /D_WW3D_ /D_WW3D_VERSION_=1 /Tfx_2_0 /nologo /Fo "Mods\KWBandage\Misc\Shaders\Compiled\SHADER.fxo" "Mods\KWBandage\Shaders\SHADER.fx""
 
  Credit is appreciated if you intend to re-use or repurpose the files.
  
@@ -18,6 +20,8 @@
  https://github.com/theHostileNegotiator/WrathEd2012/releases/tag/v0.1.10-HN-1.1  
  Is not supported on Older Builds  
  * Forked from https://github.com/Qibbi/WrathEd2012 by Lauren/Darth Jane.
+ 
+ For Shaders: DirectX SDK August 2005, fxc.exe recommended to be copied to WrathEd tools folder
  
  ### Extra Fixes
  Mechapede Spawn: Mechapede spawn can be fixed by Hex editing cnc3ep1.dat, allowing it to spawn properly at the Gateway and follow rally points. 
@@ -41,6 +45,7 @@
  Lauren/Darth Jane: Assimilator Animation extractor  
  Jonwil: APT2XML Tool  
  OpenSAGE Team: OpenSAGE Blender Plugin  
- Stygs: Providing Models and Fixes
- Masterleaf: Fixes
+ Stygs: Providing Models and Fixes  
+ Masterleaf: Fixes  
+ CCHyper: Modding Community support at EA
  
