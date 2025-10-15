@@ -1622,53 +1622,20 @@
 				<Dist>26.696711</Dist>
 			</T>
 		</Triangles>
-		<FXShader ShaderName="Tiberium.fx">
+		<FXShader ShaderName="ObjectsTiberium.fx">
 			<Constants>
-				<Texture Name="DiffuseMap">
+				<Texture Name="DiffuseTexture">
 					<Value>TibFields01</Value>
 				</Texture>
 				<Texture Name="NormalMap">
 					<Value>TibFields01_NRM</Value>
 				</Texture>
-				<Float Name="TexCoordTransform_Normal">
-					<Value>1.000000</Value>
-				</Float>
 				<Texture Name="SpecMap">
 					<Value>TibFields01_SPM</Value>
 				</Texture>
-				<Float Name="TexCoordTransform_Spec">
-					<Value>1.000000</Value>
-				</Float>
-				<Texture Name="EnvMap">
+				<Texture Name="EnvironmentTexture">
 					<Value>ChromicReflectionCube</Value>
 				</Texture>
-				<Float Name="BumpScale">
-					<Value>0.100000</Value>
-				</Float>
-				<Float Name="AmbientColor">
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-					<Value>0.000000</Value>
-				</Float>
-				<Float Name="DiffuseColor">
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-				</Float>
-				<Float Name="SpecularColor">
-					<Value>0.800000</Value>
-					<Value>0.800000</Value>
-					<Value>0.800000</Value>
-					<Value>0.000000</Value>
-				</Float>
-				<Float Name="SpecularExponent">
-					<Value>50.000000</Value>
-				</Float>
-				<Float Name="SpecMult">
-					<Value>3.000000</Value>
-				</Float>
 				<Float Name="EnvMult">
 					<Value>1.000000</Value>
 				</Float>

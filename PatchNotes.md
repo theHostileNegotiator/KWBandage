@@ -1316,6 +1316,10 @@
 
 ### Scrin:
 
+#### Tiberium Shard Units, Structures and Props
+1. Tibrium would flicker when object is moving or animating
+	* Created new shader for units, structures and projectiles
+		* This is due to Tiberium.fx having randomisation affect the glow which is seeded with bone position in world space. With this constantly chaging, the glow which uses a sine function is being fed different speed and offset, causing the flickering. The randomisation has been removed
 #### Conversion Beam
 1. Inconsistencies with Damage FX between multiple units
 	* Normalised type to GDI_RAILGUN

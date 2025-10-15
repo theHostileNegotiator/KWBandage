@@ -345,6 +345,14 @@ static const float4 DiffuseColor = float4(0.584, 0.624, 0.733, 1.0);
 static const float3 SpecularColor = float3(1.0, 1.0, 1.0);
 static const float SpecularExponent = 50.0;
 
+#elif defined(MATERIAL_PARAMS_TIBERIUM)
+// Fixed material parameters for Tiberium
+static const float BumpScale = 0.5;
+static const float3 AmbientColor = float3(0.749, 0.749, 0.749);
+static const float4 DiffuseColor = float4(0.725, 0.725, 0.725, 1.0);
+static const float3 SpecularColor = float3(1.0, 1.0, 1.0);
+static const float SpecularExponent = 50.0;
+
 #else
 // Material parameters defined by UI
 float BumpScale
@@ -401,6 +409,42 @@ bool AlphaTestEnable
 <
 	string UIName = "Alpha Test Enable";
 > = false;
+
+#if defined(MATERIAL_PARAMS_TIBERIUM) // Tiberium Parameters for Glow
+SAMPLER_2D_BEGIN( TimeGlowTexture,
+	string UIName = "Time Glow Map";
+	)
+	MinFilter = MinFilterBest;
+	MagFilter = MagFilterBest;
+	MipFilter = MipFilterBest;
+	MaxAnisotropy = 8;
+    AddressU = Wrap;
+    AddressV = Wrap;
+SAMPLER_2D_END
+
+float3 TimeGlowStrength
+<
+	string UIName = "Time Glow Color"; 
+    string UIWidget = "Slider";
+> = float3(1.0, 1.0, 1.0);
+/*
+float2 TimeGlowSpeedRange
+<
+	string UIName = "TGSpd MinRng"; 
+    string UIWidget = "Spinner";
+> = float2(1, 0.2);
+*/
+float TimeGlowSpeed
+<
+	string UIName = "Time Glow Speed"; 
+    string UIWidget = "Slider";
+> = 0.6;
+float TimeGlowActiveRatio
+<
+	string UIName = "Time Glow Active Ratio"; 
+    string UIWidget = "Slider";
+> = 0.25;
+#endif
 
 // ----------------------------------------------------------------------------
 // Ionized Hull Map
@@ -648,6 +692,11 @@ VSOutput VS(VSInputSkinningOneBoneTangentFrame InSkin,
 	// Calculate fog
 	Out.Fog = CalculateFog(Fog, worldPosition, ViewI[3]);
 
+#if defined(MATERIAL_PARAMS_TIBERIUM)
+	float strength = saturate(sin(Time * TimeGlowSpeed) * 0.5 - 0.5 + TimeGlowActiveRatio) / max(TimeGlowActiveRatio, 0.001);
+	Out.Color.w = strength * strength;
+#endif
+
 	// Alien pulse factor
 #if defined(OBJECTS_ALIEN)
 	Out.WorldNormal_AlienPulse.w = CalculateAlienPulseFactor();
@@ -731,8 +780,14 @@ float4 PS(VSOutput In, uniform int numShadows, uniform bool applyShroud,
 #endif // ION_HULL
 
 #else // !OBJECTS_ALIEN
+
+#if defined(MATERIAL_PARAMS_TIBERIUM)
+	float3 EnvBumpScale = 0.6;
+#else
+	float3 EnvBumpScale = 0.5;
+#endif
 	// Envmap calculations
-	float3 Nn = normalize(worldNormal + bumpNormal * 0.5);
+	float3 Nn = normalize(worldNormal + bumpNormal * EnvBumpScale);
 	float3 Vn = /*normalize*/(In.ReflectVector);
 	float3 reflVect = -reflect(Vn,Nn);
 	float3 envcolor = EnvMult * texCUBE( SAMPLER(EnvironmentTexture), reflVect).xyz;
@@ -770,6 +825,8 @@ float4 PS(VSOutput In, uniform int numShadows, uniform bool applyShroud,
 			color.xyz += DirectionalLight[0].Color * cloud
 #if defined(OBJECTS_ALIEN)
 				* envcolor
+#elif defined(MATERIAL_PARAMS_TIBERIUM)
+				* 0.4 * (envcolor * 6 + .75)
 #endif
 				* (diffuse * lighting.y + specularColor * lighting.z);
 		}
@@ -778,6 +835,10 @@ float4 PS(VSOutput In, uniform int numShadows, uniform bool applyShroud,
 	    	color.xyz += DirectionalLight[i].Color * (diffuse * lighting.y);
 		}
 	}
+
+#if defined(MATERIAL_PARAMS_TIBERIUM)
+	color.xyz += TimeGlowStrength * In.Color.w * tex2D( SAMPLER(TimeGlowTexture), texCoord0);
+#endif
 
 #if defined(SUPPORT_IONHULL)
 	float3 ionTexture1 = tex2D( SAMPLER(IonHullTexture), texCoord0 + time);
@@ -1174,6 +1235,8 @@ struct VSOutput_M
 	float2 TexCoord1 : TEXCOORD6;
 #if defined(OBJECTS_ALIEN)
 	float AlienPulse : TEXCOORD7;
+#elif defined(MATERIAL_PARAMS_TIBERIUM)
+	float TiberiumGlow : TEXCOORD7;
 #endif
 	float Fog : COLOR0;
 };
@@ -1235,6 +1298,11 @@ VSOutput_M VS_M(VSInputSkinningOneBoneTangentFrame InSkin,
 	Out.ShroudTexCoord = CalculateShroudTexCoord(Shroud, worldPosition);
 	Out.CloudTexCoord = CalculateCloudTexCoord(Cloud, worldPosition, Time);
 	
+#if defined(MATERIAL_PARAMS_TIBERIUM)
+	float strength = saturate(sin(Time * TimeGlowSpeed) * 0.5 - 0.5 + TimeGlowActiveRatio) / max(TimeGlowActiveRatio, 0.001);
+	Out.TiberiumGlow = strength * strength;
+#endif
+
 #if defined(SCROLL_HOUSECOLOR)
 	Out.TexCoord1 = TexCoord * TexCoordTransform_0.xy + Time * TexCoordTransform_0.zw;
 #elif defined(SUPPORT_BUILDUP)
@@ -1301,6 +1369,10 @@ float4 PS_M(VSOutput_M In, uniform bool applyShroud, uniform bool fogEnabled, un
 	float4 color;	
 	color.xyz = In.Color * diffuse;
 	color.xyz += DirectionalLight[0].Color * cloud * (diffuse * DiffuseColor * lighting.y + specularColor * lighting.z);
+
+#if defined(MATERIAL_PARAMS_TIBERIUM)
+	color.xyz += TimeGlowStrength * In.TiberiumGlow * tex2D( SAMPLER(TimeGlowTexture), In.TexCoord0);
+#endif
 
 #if defined(SCROLL_HOUSECOLOR)
 	float4 scrollTexture = tex2D( SAMPLER(ScrollingMaskTexture), In.TexCoord1);

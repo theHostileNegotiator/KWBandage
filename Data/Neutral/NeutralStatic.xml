@@ -43,6 +43,10 @@
 		<Include type="all" source="DATA:Neutral/Debris/SteelTalonsTitanDebris_04.xml" />
 		<Include type="all" source="DATA:Neutral/Debris/SteelTalonsTitanDebris_05.xml" />
 
+		<Include type="all" source="DATA:Neutral/Debris/ALIENOutSideRock1.xml" />
+		<Include type="all" source="DATA:Neutral/Debris/ALIENOutSideRock6.xml" />		
+		<Include type="all" source="DATA:Neutral/Debris/ALIENOutSideRock8.xml" />		
+		
 	</Includes>
 
 </AssetDeclaration>

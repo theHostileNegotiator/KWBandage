@@ -11422,53 +11422,20 @@
 				<Dist>0.067408</Dist>
 			</T>
 		</Triangles>
-		<FXShader ShaderName="Tiberium.fx" TechniqueIndex="0">
+		<FXShader ShaderName="ObjectsTiberium.fx" TechniqueIndex="0">
 			<Constants>
-				<Texture Name="DiffuseMap">
+				<Texture Name="DiffuseTexture">
 					<Value>TiberiumCrystal01</Value>
 				</Texture>
 				<Texture Name="NormalMap">
 					<Value>TiberiumCrystal01NRM</Value>
 				</Texture>
-				<Float Name="TexCoordTransform_Normal">
-					<Value>1.000000</Value>
-				</Float>
 				<Texture Name="SpecMap">
 					<Value>TiberiumCrystal01ALL</Value>
 				</Texture>
-				<Float Name="TexCoordTransform_Spec">
-					<Value>2.000000</Value>
-				</Float>
-				<Texture Name="EnvMap">
+				<Texture Name="EnvironmentTexture">
 					<Value>ChromicReflectionCube</Value>
 				</Texture>
-				<Float Name="BumpScale">
-					<Value>1.000000</Value>
-				</Float>
-				<Float Name="AmbientColor">
-					<Value>0.400000</Value>
-					<Value>0.400000</Value>
-					<Value>0.400000</Value>
-					<Value>0.000000</Value>
-				</Float>
-				<Float Name="DiffuseColor">
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-				</Float>
-				<Float Name="SpecularColor">
-					<Value>0.800000</Value>
-					<Value>0.800000</Value>
-					<Value>0.800000</Value>
-					<Value>0.000000</Value>
-				</Float>
-				<Float Name="SpecularExponent">
-					<Value>50.000000</Value>
-				</Float>
-				<Float Name="SpecMult">
-					<Value>3.000000</Value>
-				</Float>
 				<Float Name="EnvMult">
 					<Value>1.000000</Value>
 				</Float>
@@ -11484,9 +11451,8 @@
 					<Value>0.258824</Value>
 					<Value>0.000000</Value>
 				</Float>
-				<Float Name="TimeGlowSpeedRange">
-					<Value>1.000000</Value>
-					<Value>0.200000</Value>
+				<Float Name="TimeGlowSpeed">
+					<Value>0.600000</Value>
 				</Float>
 				<Float Name="TimeGlowActiveRatio">
 					<Value>0.250000</Value>

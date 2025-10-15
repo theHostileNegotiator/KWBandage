@@ -1,0 +1,12 @@
+//////////////////////////////////////////////////////////////////////////////
+// ©2006 Electronic Arts Inc
+//
+// FX Shader for GDI vehicles and structures. GDI infantry should use Infantry.fx
+//////////////////////////////////////////////////////////////////////////////
+
+#define SPECIFY_CUSTOM_ENVMAP 1
+#define SUPPORT_SPECMAP 1
+
+#define MATERIAL_PARAMS_TIBERIUM 1
+
+#include "Objects.fxh"

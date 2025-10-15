@@ -104,30 +104,6 @@
 			<B X="-0.925456" Y="0.260957" Z="-0.274652"/>
 			<B X="-0.925456" Y="0.260957" Z="-0.274652"/>
 		</Binormals>
-		<VertexColors>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-			<C R="1.000000" G="1.000000" B="1.000000" A="0.176471"/>
-		</VertexColors>
 		<TexCoords>
 			<T X="0.184519" Y="0.375195"/>
 			<T X="0.009176" Y="0.375195"/>
@@ -210,53 +186,20 @@
 				<Dist>0.680431</Dist>
 			</T>
 		</Triangles>
-		<FXShader ShaderName="Tiberium.fx">
+		<FXShader ShaderName="ObjectsTiberium.fx" TechniqueIndex="0">
 			<Constants>
-				<Texture Name="DiffuseMap">
+				<Texture Name="DiffuseTexture">
 					<Value>TibFields01</Value>
 				</Texture>
 				<Texture Name="NormalMap">
 					<Value>TibFields01_NRM</Value>
 				</Texture>
-				<Float Name="TexCoordTransform_Normal">
-					<Value>1.000000</Value>
-				</Float>
 				<Texture Name="SpecMap">
 					<Value>TibFields01_SPM</Value>
 				</Texture>
-				<Float Name="TexCoordTransform_Spec">
-					<Value>1.000000</Value>
-				</Float>
-				<Texture Name="EnvMap">
+				<Texture Name="EnvironmentTexture">
 					<Value>ChromicReflectionCube</Value>
 				</Texture>
-				<Float Name="BumpScale">
-					<Value>0.500000</Value>
-				</Float>
-				<Float Name="AmbientColor">
-					<Value>0.749020</Value>
-					<Value>0.749020</Value>
-					<Value>0.749020</Value>
-					<Value>0.000000</Value>
-				</Float>
-				<Float Name="DiffuseColor">
-					<Value>0.725490</Value>
-					<Value>0.725490</Value>
-					<Value>0.725490</Value>
-					<Value>1.000000</Value>
-				</Float>
-				<Float Name="SpecularColor">
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-					<Value>1.000000</Value>
-					<Value>0.000000</Value>
-				</Float>
-				<Float Name="SpecularExponent">
-					<Value>50.000000</Value>
-				</Float>
-				<Float Name="SpecMult">
-					<Value>3.000000</Value>
-				</Float>
 				<Float Name="EnvMult">
 					<Value>1.000000</Value>
 				</Float>
@@ -272,9 +215,8 @@
 					<Value>0.521569</Value>
 					<Value>0.000000</Value>
 				</Float>
-				<Float Name="TimeGlowSpeedRange">
-					<Value>1.000000</Value>
-					<Value>0.200000</Value>
+				<Float Name="TimeGlowSpeed">
+					<Value>0.600000</Value>
 				</Float>
 				<Float Name="TimeGlowActiveRatio">
 					<Value>0.250000</Value>
