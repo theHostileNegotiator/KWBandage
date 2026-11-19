@@ -120,8 +120,8 @@ Color:Blue
 "Blue"
 END
 
-Color:GondorRed
-"Gondor Red"
+Color:GondorBlue
+"Gondor Blue"
 END
 
 Color:Green
@@ -1147,7 +1147,8 @@ END
 
 URL:LotrLadder
 // Ladder web site for online play
-"http:\/\/arena.gamespy.com\/bfme\/"
+//"http:\/\/arena.gamespy.com\/bfme\/"
+"http://arena.gamespy.com/bfme/"
 END
 
 URL:LotrTOS
@@ -1213,7 +1214,7 @@ GUI:LobbyRoom
 END
 
 GUI:LobbyBeginners
-"n00bs only"
+"n00bs Only"
 END
 
 GUI:LobbyHardcore
@@ -1228,8 +1229,8 @@ GUI:LobbyTournaments
 "Tournaments"
 END
 
-GUI:Battlecast
-"Battlecast"
+GUI:LobbyBattlecast
+"BattleCast"
 END
 
 GUI:LobbyCustomMap
@@ -2811,12 +2812,12 @@ END
 
 GUI:Command&ConquerGenerals
 // context: simple ... the name of the our Game
-"Command & Conquer 3 Kane's Wrath(tm)"
+"Command & Conquer(tm) 3: Kane's Wrath"
 END
 
 GUI:FullGameName
 // context: simple ... the name of the our Game
-"Command & Conquer 3 Kane's Wrath(tm)"
+"Command & Conquer(tm) 3: Kane's Wrath"
 END
 
 GUI:VistaFirewallRuleDescription
@@ -3185,7 +3186,7 @@ APT:ShowUnitDecals
 END
 
 APT:CurrentRank
-"Current Rank"
+"Current Level"
 END
 
 TOOLTIP:Options/tooltipShowUnitDecals
@@ -3949,7 +3950,7 @@ HOTKEY:KEY_TICK
 END
 
 HOTKEY:KEY_BACKSLASH
-"\"
+"\\"
 END
 
 HOTKEY:KEY_COMMA
@@ -4760,7 +4761,7 @@ HOTKEYNAME:MGEndTurn
 End
 
 APT:TournamentModeDesc
-"Play games which will be recorded on the Ranked Ladders.\nChoose from the fields below and click Join Game to begin searching for an opponent."
+"Play games which will be recorded on the Ranked Ladders. \n Choose from the fields below and click Join Game to begin searching for an opponent."
 END
 
 APT:HeaderLoadSavedReplay
@@ -4790,7 +4791,7 @@ END
 
 APT:CustomHotkeysInstructions1
 // On options custom keyboard
-"Welcome to the Customizable Hotkeys screen. \n \n To assign a new hotkey, simply click on the slot in the wireframe image to the right or select a command via the drop down catagories above. \n \n You are allowed to assign one modifier to each key combo, either SHIFT, CTRL, or ALT."
+"Welcome to the Customizable Hotkeys screen. \n \n To assign a new hotkey, simply click on the slot in the wireframe image to the right or select a command via the drop down categories above. \n \n You are allowed to assign one modifier to each key combo, either SHIFT, CTRL, or ALT."
 END
 
 APT:PleaseEnterNewHotkey
@@ -7875,7 +7876,7 @@ WOL:CouldNotCreateChannel
 END
 
 WOL:ErrorTitle
-"Kane's Wrath Xbox Live Error"
+"Kane's Wrath Online Error"
 END
 
 WOL:LoginErrorTitle
@@ -8449,7 +8450,7 @@ TOOLTIP:OnlineShell/OnlineLogin/tooltipOnlineNickname
 "Online IDs are case sensitive"
 END
 TOOLTIP:OnlineShell/OnlineLogin/Login/Register/ButtonClip
-"You must register to play on online"
+"You must register to play online"
 END
 TOOLTIP:OnlineShell/OnlineLogin/Login/DeleteNickname/Buttonclip
 ""
@@ -8493,7 +8494,7 @@ END
 TOOLTIP:OnlineShell/OnlineQuickMatch/Searching/navSearching/WidenSearch/tooltipWidenSearch
 "Automatch will attempt to match players of similar ladder rank and connection speed. Left click this button to remove these limits and match with any player"
 END
-TOOLTIP:OnlineShell/disableButton
+Tooltip:OnlineShell/disableButton
 ""
 END
 
@@ -8508,7 +8509,7 @@ TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipNumberPlayers
 "Choose the number of players to match with"
 END
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipPing
-"Choose the acceptable opponent \n Connection speed. \n A red icon indicates a slower speed, \n a green indicates a faster speed"
+"Choose the acceptable opponent \n Connection speed. \n A red icon indicates a slower speed,\n a green indicates a faster speed"
 END
 TOOLTIP:OnlineShell/OnlineCustomMatch/Controls/buttonHost
 "Click here to host a new game"
@@ -8535,7 +8536,7 @@ TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipOffic
 "These maps are officially created or sanctioned by Electronic Arts"
 END
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipPlayerMadeMaps
-"These maps are not officially sanctioned by EA and are created by players. \n When you download a new map it will appear in this map list"
+"These maps are not officially sanctioned by EA and are created by players.\n When you download a new map it will appear in this map list"
 END
 
 // CHAT MENU
@@ -8549,7 +8550,7 @@ TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipIgnore
 "To ignore a Player, left click on \n a name and left click on the \n Ignore Player box. Ignored players or \n their messages will not be visible"
 END
 
-TOOLTIP:OnlineShell/WebSite//tooltipOfficialWebsite
+TOOLTIP:OnlineShell/WebSite
 "Left click to visit the official leader boards and get the latest game news"
 END
 TOOLTIP:OnlineShell/OnlineChat/tooltipFellowshipClubIcon
@@ -8588,7 +8589,7 @@ TOOLTIP:OnlineLobby/tooltipOfficialMaps
 "These maps are officially created or sanctioned by Electronic Arts"
 END
 TOOLTIP:OnlineLobby/tooltipPlayerMadeMaps
-"These maps are not officially sanctioned by EA and are created by players. \n When you download a new map it will appear in this map list"
+"These maps are not officially sanctioned by EA and are created by players.\n When you download a new map it will appear in this map list"
 END
 
 //Online Join Game 
@@ -8599,7 +8600,7 @@ TOOLTIP:OnlineJoin/tooltipArmy
 "Names of armies joining game"
 END
 TOOLTIP:OnlineJoin/tooltipTeam
-"Teams that are joining game.\n Teams of the same ID numbers are allies"
+"Teams that are joining game. \n Teams of the same ID numbers are allies"
 END
 TOOLTIP:OnlineJoin/tooltipColor
 "House colors of armies joining game"
@@ -9031,7 +9032,7 @@ TOOLTIP:Skirmish/tooltipGameSpeed
 END
 
 TOOLTIP:Skirmish/tooltipLevelUpBar
-"Skirmish progress for this player. \n 1 point for defeating an Easy enemy, \n 2 points for a Medium enemy,\n 3 points for a Hard enemy \nand 4 points for a map with a maximum number of Hard enemies"
+"Skirmish progress for this player. \n 1 point for defeating an Easy enemy, \n 2 points for a Medium enemy, \n 3 points for a Hard enemy \nand 4 points for a map with a maximum number of Hard enemies"
 END
 
 TOOLTIP:Skirmish/tooltipStatsBox
@@ -9105,7 +9106,7 @@ TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/OnbttnRemoveFriend/tooltipRemovef
 "To remove a Friend, left click on a name \n and left click on the Remove Friend button"
 END
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/OnbttnAddFriend/tooltipAddfriend
-"To create a Friend, left click on\n a name in the Player list, \n then left click the Add Friend box"
+"To create a Friend, left click on \n a name in the Player list, \n then left click the Add Friend box"
 END
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/OnbttnEnterText/tooltipAddfriend
 "Enter the name of the player you would like to add"
@@ -10508,7 +10509,7 @@ GUI:AgeFailedTitle
 END
 
 GUI:AgeFailed
-"You must be 13 years of age or older to play this game on online."
+"You must be 13 years of age or older to play this game online."
 END
 
 GUI:AdditionalLocalizationManagement
@@ -12771,7 +12772,7 @@ FESL:FESL105
 END
 
 FESL:FESL120
-"The user isn't entitled to play the game on online."
+"The user isn't entitled to play the game online."
 END
 
 FESL:FESL121
@@ -14284,7 +14285,7 @@ END
 ///////////////////////////////////////////////////////////////
 
 CREDITS:DevelopmentTitle1
-"COMMAND & CONQUER 3 KANE'S WRATH(tm)"
+"COMMAND & CONQUER(tm) 3: KANE'S WRATH"
 END
 
 CREDITS:DevelopmentTitle2
@@ -14632,7 +14633,7 @@ CREDITS:CommandConquerMusic
 END
 
 CREDITS:AdditionalMusic
-"Additional Music for COMMAND & CONQUER 3 KANE'S WRATH(tm)"
+"Additional Music for COMMAND & CONQUER(tm) 3: KANE'S WRATH"
 END
 
 CREDITS:ActonInstinctOriginal
@@ -14836,8 +14837,12 @@ CREDITS:MPEG
 End
 
 CREDITS:GamespyTM
-"This product contains software technology licensed\nfrom GameSpy Industries, Inc. © 1999-2007\nGameSpy Industries, Inc. All rights reserved.\nGameSpy and the "Powered by GameSpy" design are\ntrademarks of GameSpy Industries, Inc.  All rights reserved."
+"This product contains software technology licensed\nfrom GameSpy Industries, Inc. © 1999-2007\nGameSpy Industries, Inc. All rights reserved.\nGameSpy and the \"Powered by GameSpy\" design are\ntrademarks of GameSpy Industries, Inc.  All rights reserved."
 End
+
+CREDITS:ON2
+"This product contains software technology\nlicensed from On2 Technologies, Inc.\nOn2 technology © 2003 On2 Technologies, Inc.\nAll rights reserved."
+END
 
 CREDITS:Renderware
 "RenderWare is a trademark or registered\ntrademark of Criterion Software Ltd.\nPortions of this software are Copyright 1998-2008\nCriterion Software Ltd. and its Licensors."
@@ -14923,11 +14928,11 @@ Desc:TUTORIAL_INTERFACE
 End
 
 NAME:TUTORIAL_CAMERA
-"Camera Manipulation"
+"Camera Manipulation "
 End
 
 SCRIPT:TUTORIAL_CAMERA
-"Camera Manipulation"
+"Camera Manipulation "
 End
 
 NAME:TUTORIAL_SELECTION
@@ -14979,11 +14984,11 @@ SCRIPT:TUTORIAL_DEFAULT
 End
 
 NAME:TUTORIAL_Upgrades
-"Using upgrades and abilities"
+"Using upgrade and special abilities"
 End
 
 SCRIPT:TUTORIAL_Upgrades
-"Using upgrades and abilities"
+"Using upgrade and special abilities"
 End
 
 NAME:TUTORIAL_CONTEXT
@@ -15060,7 +15065,7 @@ TYPE:GDIAirfield
 "Production Structure."
 END
 DESC:GDIAirfield
-"Deploys GDI Aircraft \n Abilities: \n    » Repairs nearby Aircraft \n Unlocks Abilities: \n    » GDI Ground Units: Call for Transport \n Researches Upgrades: \n    » Hardpoints \n    » Firehawk Stratofighter Boosters \n Provides Support Powers: \n    » Bloodhounds \n    » Orca Strike"
+"Deploys GDI Aircraft \n Abilities: \n     » Repairs nearby aircraft \n Unlocks Abilities: \n      » GDI Ground Units: Call for Transport \n Researches Upgrades: \n     » Hardpoints \n     » Firehawk Stratofighter Boosters \nProvides Support Powers: \n     » Bloodhounds \n     » Orca Strike"
 END
 //-----------------------------------------------
 //-----------------------------------------------
@@ -16753,7 +16758,7 @@ END
 //ALIEN TechnologyAssembler
 //-----------------------------------------------
 NAME:ALIENTechnologyAssembler
-"Tech Assembler"
+"Technology Assembler"
 END
 TYPE:ALIENTechnologyAssembler
 "Tech Structure."
@@ -17768,7 +17773,7 @@ UpgradeType:NODConfessor
 END
 
 UpgradeDesc:NODConfessor
-"Increases the squad's effectiveness \n Throws Hallucinogenic Grenades"
+"Increases the squad's combat effectiveness \n Throws Hallucinogenic Grenades"
 END
 
 UpgradeName:ALIENPlasmaDiscLauncher
@@ -17858,7 +17863,7 @@ NAME:SuperweaponTimerIonCannon
 END
 
 DESC:SuperweaponTimerIonCannon
-"Coutdown Timer \n \n Double-click to jump to this weapon"
+"Countdown Timer \n \n Double-click to jump to this weapon"
 END
 
 NAME:SuperweaponTimerNuclearMissile
@@ -18119,7 +18124,7 @@ NAME:AbilityPitBullBombard
 END
 
 DESC:AbilityPitBullBombard
-"Bombard target location with Mortars"
+"Bombard target location with Mortars \n \n Left-click icon then left-click on target location"
 END
 
 Name:PurcahseUpgradeCompositeArmor
@@ -18243,7 +18248,7 @@ NAME:AbilityNODSpotTarget
 END
 
 DESC:AbilityNODSpotTarget
-"Spots a target on the battlefield to be bombarded from long range by Beam Cannons"
+"Spots a target on the battlefield to be bombarded from long range by Beam Cannons \n \n Left-click icon then left-click on target location"
 END
 
 NAME:AbilityRadarJam
@@ -18259,7 +18264,7 @@ NAME:AbilityWallSpan
 END
 
 DESC:AbilityWallSpan
-"Create a wall extending from the Wall Hub"
+"Create a wall extending from the Wall Hub \n \n Left-click icon then left-click to place Wall"
 END
 
 NAME:AbilityBoobyTrap
@@ -19898,7 +19903,7 @@ APT:CongratulationsPromoted
 END
 
 APT:NextRank
-"Next Level: "
+"Next Level"
 END
 
 
@@ -20409,6 +20414,11 @@ GUI:ConsoleSiegeTimer
 "Siege Timer"
 END
 
+GUI:ConsoleFlagCount
+// context: console "Flag Count" spinner label in lobby screen
+"Flags To Win"
+END
+
 GUI:ConsoleHillTime
 // context: console "Hill Time" spinner label in lobby screen
 "Hold Time"
@@ -20682,7 +20692,7 @@ END
 
 SAVELOAD:AutosaveFeatureWarning
 // context: TCR, Warn player that our game uses an autosave feature which will overwrite data
-"Command & Conquer 3 Kane's Wrath(tm) uses an autosave feature to automatically save game progress & settings and will overwrite saved games without confirmation."
+"Command & Conquer(tm) 3: Kane's Wrath uses an autosave feature to automatically save game progress & settings and will overwrite saved games without confirmation."
 END
 
 SAVELOAD:NoDeviceSelectedListFiles
@@ -21089,7 +21099,7 @@ DIALOGEVENT:MTut_TrainingOfficer61subtitle
 END
 
 DIALOGEVENT:MTut_TrainingOfficer62subtitle
-"*TRAINING OFFICER: Click on the Riflemen Squad icon to train a squad of GDI Riflemen. Click on the icon multiple times and you will train multiple squads. "
+"*TRAINING OFFICER: Click on the Rifleman Squad icon to train a squad of GDI Riflemen. Click on the icon multiple times and you will train multiple squads. "
 END
 
 DIALOGEVENT:MTut_TrainingOfficer63subtitle
@@ -21133,7 +21143,7 @@ DIALOGEVENT:MTut_TrainingOfficer72subtitle
 END
 
 DIALOGEVENT:MTut_TrainingOfficer73subtitle
-"*TRAINING OFFICER: To clear the garrisoned building, select the building and click on the "Evacuate All" button. "
+"*TRAINING OFFICER: To clear the garrisoned building, select the building and click on the \"Evacuate All\" button. "
 END
 
 DIALOGEVENT:MTut_TrainingOfficer74subtitle
@@ -21735,7 +21745,7 @@ End
 
 // This is the string shown before the lobby appears
 APT:LoadingMetagameLobby
-"Loading world data..."
+"Loading... Please wait"
 END
 
 APT:TabFreeplay
@@ -22283,8 +22293,8 @@ MgDepend:AlreadyPurchased
 "Already Purchased"
 END
 
-MgDepend:RequiresNearbyTier3Base
-"Requires Nearby Tier 3 Base"
+MgDepend:RequiresNearbyTransportObject
+"Requires Nearby Transport Object"
 END
 
 MgDepend:RequiresMCVorDronePlatform
@@ -22410,6 +22420,20 @@ NAME:StrikeForceSizeStatusLevel4
 END
 DESC:StrikeForceSizeStatusLevel4
 "This Strike Force is built around a Strategic unit such as the GDI MARV, Nod Redeemer or Scrin Eradicator."
+END
+
+TYPE:StrikeForceGeneral
+"Strike Force"
+END
+
+DESC:StrikeForceSizeStatusLevel4GDI
+"This Strike Force is built around a MARV Strategic unit."
+END
+DESC:StrikeForceSizeStatusLevel4Nod
+"This Strike Force is built around a Redeemer Strategic unit."
+END
+DESC:StrikeForceSizeStatusLevel4Scrin
+"This Strike Force is built around an Eradicator Strategic unit."
 END
 
 Name:GDIMetaBase
@@ -23004,7 +23028,7 @@ UpgradePrereq:MarkedOfKaneSuperChargedParticleBeam
 "Research at Tech Lab"
 END
 
-UpgradeType:MarkedOfKaneTechCenterSuperChargedParticleBeam
+UpgradeType:MarkedOfKaneSuperChargedParticleBeam
 "Weapon Upgrade"
 END
 
@@ -24193,7 +24217,7 @@ TYPE:Traveler59DronePlatform
 "Production Structure."
 END
 DESC:Traveler59DronePlatform
-"Enables Radar\nProvides structure production queues"
+"Enables Radar \n Provides structure production queues"
 END
 //-----------------------------------------------
 
@@ -24311,7 +24335,7 @@ END
 //Traveler59 Growth Accelerator
 //-----------------------------------------------
 TYPE:Traveler59SporePod
-"Resource Structure."
+"Advanced Resource Structure."
 END
 DESC:Traveler59SporePod
 "Place in the middle of a Tiberium Field \n Abilities: \n      » Increases Tiberium Field Regeneration"
@@ -25252,7 +25276,7 @@ UpgradeType:ZoneRaiderAutoInjectors
 END
 
 UpgradeDesc:ZoneRaiderAutoInjectors
-"Increases hit points\nHeals the squad while idle"
+"Increases hit points \n Heals the squad while idle"
 END
 
 NAME:PurchaseRaiderAutoInjectors
@@ -26839,186 +26863,6 @@ Name:MetaGameStrikeForcePatrol
 "Aggressive Stance"
 END
 
-Name:MetaGameDetailsBase
-"Base Information"
-END
-
-DESC:MetaGameDetailsBase
-"Opens the Base Information Window"
-END
-
-Name:MetaGameDetailsStrikeForce
-"Strike Force Information"
-END
-
-DESC:MetaGameDetailsStrikeForce
-"Opens the Strike Force Information Window"
-END
-
-Name:MetaGameRepairBase
-"Repair Base"
-END
-
-DESC:MetaGameRepairBase
-"Replaces all missing base structures at the end of the turn\n\nLeft-click to repair"
-END
-
-Name:MetaGameDecommissionBase
-"Decommission Base"
-END
-
-DESC:MetaGameDecommissionBase
-"Immediately sells the selected base \n Resource Level is adjusted at once\n\nLeft-click to decommission"
-END
-
-NAME:UpgradeBasePower
-"Upgrade Base Power"
-END
-
-DESC:UpgradeBasePower
-"Upgrades the base with extra Power Plants \n Additional Power Plants will be added as the base gains new tiers\n\nLeft-click to purchase"
-END
-
-Name:MetaGameResupplyStrikeForce
-"Repair Strike Force"
-END
-
-DESC:MetaGameResupplyStrikeForce
-"Replaces any missing units in the Strike Force at the end of the turn\nThe Strike Force must be within the Area of Influence of a friendly base\n\nLeft-click to repair"
-END
-
-Name:MetaGameDecommissionStrikeForce
-"Decommission Strike Force"
-END
-
-DESC:MetaGameDecommissionStrikeForce
-"Immediately sells the selected Strike Force \n Resource Level is adjusted at once\n\nLeft-click to decommission"
-END
-
-Name:MetaGameStrikeForcePatrol
-"Aggressive Stance"
-END
-
-Name:MetaGameDetailsBase
-"Base Information"
-END
-
-DESC:MetaGameDetailsBase
-"Opens the Base Information Window"
-END
-
-Name:MetaGameDetailsStrikeForce
-"Strike Force Information"
-END
-
-DESC:MetaGameDetailsStrikeForce
-"Opens the Strike Force Information Window"
-END
-
-Name:MetaGameRepairBase
-"Repair Base"
-END
-
-DESC:MetaGameRepairBase
-"Replaces all missing base structures at the end of the turn\n\nLeft-click to repair"
-END
-
-Name:MetaGameDecommissionBase
-"Decommission Base"
-END
-
-DESC:MetaGameDecommissionBase
-"Immediately sells the selected base \n Resource Level is adjusted at once\n\nLeft-click to decommission"
-END
-
-NAME:UpgradeBasePower
-"Upgrade Base Power"
-END
-
-DESC:UpgradeBasePower
-"Upgrades the base with extra Power Plants \n Additional Power Plants will be added as the base gains new tiers\n\nLeft-click to purchase"
-END
-
-Name:MetaGameResupplyStrikeForce
-"Repair Strike Force"
-END
-
-DESC:MetaGameResupplyStrikeForce
-"Replaces any missing units in the Strike Force at the end of the turn\nThe Strike Force must be within the Area of Influence of a friendly base\n\nLeft-click to repair"
-END
-
-Name:MetaGameDecommissionStrikeForce
-"Decommission Strike Force"
-END
-
-DESC:MetaGameDecommissionStrikeForce
-"Immediately sells the selected Strike Force \n Resource Level is adjusted at once\n\nLeft-click to decommission"
-END
-
-Name:MetaGameStrikeForcePatrol
-"Aggressive Stance"
-END
-
-Name:MetaGameDetailsBase
-"Base Information"
-END
-
-DESC:MetaGameDetailsBase
-"Opens the Base Information Window"
-END
-
-Name:MetaGameDetailsStrikeForce
-"Strike Force Information"
-END
-
-DESC:MetaGameDetailsStrikeForce
-"Opens the Strike Force Information Window"
-END
-
-Name:MetaGameRepairBase
-"Repair Base"
-END
-
-DESC:MetaGameRepairBase
-"Replaces all missing base structures at the end of the turn\n\nLeft-click to repair"
-END
-
-Name:MetaGameDecommissionBase
-"Decommission Base"
-END
-
-DESC:MetaGameDecommissionBase
-"Immediately sells the selected base \n Resource Level is adjusted at once\n\nLeft-click to decommission"
-END
-
-NAME:UpgradeBasePower
-"Upgrade Base Power"
-END
-
-DESC:UpgradeBasePower
-"Upgrades the base with extra Power Plants \n Additional Power Plants will be added as the base gains new tiers\n\nLeft-click to purchase"
-END
-
-Name:MetaGameResupplyStrikeForce
-"Repair Strike Force"
-END
-
-DESC:MetaGameResupplyStrikeForce
-"Replaces any missing units in the Strike Force at the end of the turn\nThe Strike Force must be within the Area of Influence of a friendly base\n\nLeft-click to repair"
-END
-
-Name:MetaGameDecommissionStrikeForce
-"Decommission Strike Force"
-END
-
-DESC:MetaGameDecommissionStrikeForce
-"Immediately sells the selected Strike Force \n Resource Level is adjusted at once\n\nLeft-click to decommission"
-END
-
-Name:MetaGameStrikeForcePatrol
-"Aggressive Stance"
-END
-
 DESC:MetaGameStrikeForcePatrol
 "Sets the Strike Force to Aggressive Stance \n      » Strike Force will automatically engage any enemy Strike Force or Base that within its Area of Influence \n      » Aggressive Stance will remain active until cancelled \n      » Aggressive Stance will cancel if Strike Force is given any other command\n\nLeft-click to activate"
 END
@@ -27384,7 +27228,7 @@ Type:NODHarbingerWarmech
 End
 
 Desc:NODHarbingerWarmech
-"Abilities:\n    » Rage Generator\n\nInfantry can permanently garrison the Redeemer to upgrade its abilities\n    Militant Squad » Gun Turret\n    Militant Rocket Squad » Rocket Turret\n    Black Hand » Flame Turret\n    Saboteur » Self Repair\n\nOnly one Redeemer may be deployed at a time"
+"Abilities: \n     » Rage Generator\n\nInfantry can permanently garrison the Redeemer to upgrade its abilities \n    Militant Squad » Gun Turret \n    Militant Rocket Squad » Rocket Turret \n    Black Hand » Flame Turret \n    Saboteur » Self Repair \n \n Only one Redeemer may be deployed at a time"
 End
 
 NAME:GDIAirSupport
@@ -29881,7 +29725,7 @@ IDB:009_Nod_Weaponry_0107_Purifier_header
 END
 
 IDB:009_Nod_Weaponry_0107_Purifier_body
-"A significantly more primitive precursor to Nod's Avata"
+"A significantly more primitive precursor to Nod's Avatar, the Purifier was inspired by Brother Marcion's first hand urban combat experience during the Second Tiberium war. After using an improvised flamethrower to rout entrenched GDI forces, saving the rest of his regiment from certain death, Marcion was declared a hero of Nod and saw his very presence have an inspirational effect on the Nod Militants that surrounded him. \n \nThe Purifier was developed to recreate that experience, representing Marcion on the battlefield in the iconic form of a hulking, flame-toting humanoid, one equipped with a subliminal projection device that would enhance the morale and righteousness of the Black Hand troops surrounding it.  While by no means as advanced or flexible as its successor, the Purifier is an effective combat unit in its own right, especially when accompanied by infantry it can 'inspire.' \n \nIronically enough, upon its initial deployment, the Purifier was the subject of no small amount of controversy, with many Black Hand hardliners decrying the use of a 'soulless machine' within a religious army that otherwise stood opposed to such devices. Marcion, seeking to prevent further schism within the Black Hand, remedied the situation by requiring each machine be blessed by a Black Hand abbot before entering the battlefield."
 END
 
 IDB:009_Nod_Weaponry_0107_Purifier_footer
@@ -30551,7 +30395,7 @@ SUBTITLE:SCRIPT:cnc3_kw_2-3-07
 END
 
 SUBTITLE:SCRIPT:cnc3_kw_2-3-08
-"While GDI revels in this "victory" we will marshal our forces and "
+"While GDI revels in this \"victory\" we will marshal our forces and "
 END
 
 SUBTITLE:SCRIPT:cnc3_kw_2-3-09
@@ -30737,7 +30581,7 @@ SUBTITLE:SCRIPT:cnc3_kw_2-6-08
 END
 
 SUBTITLE:SCRIPT:cnc3_kw_2-6-09
-"We must put all talk of "ascension" aside.  "
+"We must put all talk of \"ascension\" aside.  "
 END
 
 SUBTITLE:SCRIPT:cnc3_kw_2-6-10
@@ -30777,7 +30621,7 @@ SUBTITLE:SCRIPT:cnc3_kw_2-6-18
 END
 
 SUBTITLE:SCRIPT:cnc3_kw_2-6-19
-"And as the "killer" of Kane, he's now a hero.  "
+"And as the \"killer\" of Kane, he's now a hero.  "
 END
 
 SUBTITLE:SCRIPT:cnc3_kw_2-6-20
@@ -31125,7 +30969,7 @@ DIALOGEVENT:th1_7subtitle
 END
 
 DIALOGEVENT:th1_8subtitle
-"*[1.2]Attention!  Attention you fanatical scum![1."
+"*[1.2]Attention!  Attention you fanatical scum![1.6]Yeah, you didn't think you'd go undetected, did you?[2.0]this is GDI Steel Talon territory.[2.0]We don't take too kindly to you Nod types around here.[5.6]You best get praying to that corpse prophet of yours,[2.1]because you don't stand a chance in hell."
 END
 
 DIALOGEVENT:th1_9subtitle
@@ -31133,7 +30977,7 @@ DIALOGEVENT:th1_9subtitle
 END
 
 DIALOGEVENT:th1_10subtitle
-"*[0.8]As the Brotherhood splintered in the aftermath of my...death,[4.4]our technology was left to rot, yea"
+"*[0.8]As the Brotherhood splintered in the aftermath of my...death,[4.4]our technology was left to rot, years of research left by the wayside.[4.4]My spies have located an abandoned GDI laboratory where our Stealth Technology,[4.1]captured long ago, sits idle,[2.4]neither exploited nor understood by those narrow-minded fools.[4.3]Reclaim it for the Brotherhood."
 END
 
 
