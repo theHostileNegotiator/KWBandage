@@ -28,7 +28,6 @@
 		inheritFrom="BaseCivilianStructure"
 		CommandSet="GarrisonableNeutralBuildingCommandSet"
 		EditorName="Egypt Urban Building 01"
-        EditorSorting="STRUCTURE"
 		Browser="REGION EGYPT_EG STRUCTURE"
 		SelectPortrait="Portrait_NeutralGarrisonableStructure"
 		ButtonImage="Portrait_NeutralGarrisonableStructure"
